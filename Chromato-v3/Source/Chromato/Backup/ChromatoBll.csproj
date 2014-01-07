@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D983C652-146A-4671-9FCC-1F1E92383E3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChromatoBll</RootNamespace>
+    <AssemblyName>ChromatoBll</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\Debug\ChromatoBll.XML</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.GRAPHOCXLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\AxInterop.GRAPHOCXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.GRAPHOCXLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\Interop.GRAPHOCXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bll\AnalyParaBiz.cs" />
+    <Compile Include="bll\AntiControlBiz.cs" />
+    <Compile Include="bll\AvgPointBiz.cs" />
+    <Compile Include="bll\CalibrateBiz.cs" />
+    <Compile Include="bll\CollectionBiz.cs" />
+    <Compile Include="bll\CompareBiz.cs" />
+    <Compile Include="bll\IngredientBiz.cs" />
+    <Compile Include="bll\OffGasSumBiz.cs" />
+    <Compile Include="bll\OriginPointBiz.cs" />
+    <Compile Include="bll\ParaBiz.cs" />
+    <Compile Include="bll\PeakBiz.cs" />
+    <Compile Include="bll\PipeBiz.cs" />
+    <Compile Include="bll\RelationBiz.cs" />
+    <Compile Include="bll\SolutionBiz.cs" />
+    <Compile Include="bll\PipeConnectBiz.cs" />
+    <Compile Include="bll\TimeProcBiz.cs" />
+    <Compile Include="bll\UserBiz.cs" />
+    <Compile Include="bto\LayerBto.cs" />
+    <Compile Include="dao\AnalyParaDao.cs" />
+    <Compile Include="dao\AntiControlDao.cs" />
+    <Compile Include="dao\AvgPointDao.cs" />
+    <Compile Include="dao\CalibrateDao.cs" />
+    <Compile Include="dao\CollectionDao.cs" />
+    <Compile Include="dao\CompareDao.cs" />
+    <Compile Include="dao\IngredientDao.cs" />
+    <Compile Include="dao\OriginPointDao.cs" />
+    <Compile Include="dao\ParaDao.cs" />
+    <Compile Include="dao\PeakDao.cs" />
+    <Compile Include="dao\RelationDao.cs" />
+    <Compile Include="dao\SolutionDao.cs" />
+    <Compile Include="dao\TimeProcDao.cs" />
+    <Compile Include="dao\UserDao.cs" />
+    <Compile Include="ocx\biz\ArrowLineBiz.cs" />
+    <Compile Include="ocx\biz\BaseLineBiz.cs" />
+    <Compile Include="ocx\biz\CompareResizeBiz.cs" />
+    <Compile Include="ocx\biz\CorrectPointBiz.cs" />
+    <Compile Include="ocx\biz\ExportBmpBiz.cs" />
+    <Compile Include="ocx\biz\ManualBaseBiz.cs" />
+    <Compile Include="ocx\biz\ManualNegativeBiz.cs" />
+    <Compile Include="ocx\biz\ReserveTimeBiz.cs" />
+    <Compile Include="ocx\biz\ResizeBiz.cs" />
+    <Compile Include="ocx\biz\TransBaseBiz.cs" />
+    <Compile Include="ocx\biz\TransCompareBiz.cs" />
+    <Compile Include="ocx\biz\TransEvent.cs" />
+    <Compile Include="ocx\biz\TransHisBiz.cs" />
+    <Compile Include="ocx\biz\TransRealBiz.cs" />
+    <Compile Include="ocx\biz\TransSimuBiz.cs" />
+    <Compile Include="ocx\biz\VerticalSplitBiz.cs" />
+    <Compile Include="ocx\biz\ZoomPlotBiz.cs" />
+    <Compile Include="ocx\CompareGraphBiz.cs" />
+    <Compile Include="ocx\IdTableCorrectGraphBiz.cs" />
+    <Compile Include="ocx\inf\IArea.cs" />
+    <Compile Include="ocx\inf\IAttri.cs" />
+    <Compile Include="ocx\inf\IAxis.cs" />
+    <Compile Include="ocx\inf\IGrid.cs" />
+    <Compile Include="ocx\inf\ILabel.cs" />
+    <Compile Include="ocx\inf\ILine.cs" />
+    <Compile Include="ocx\inf\IOcxItem.cs" />
+    <Compile Include="ocx\inf\IPlot.cs" />
+    <Compile Include="ocx\inf\IShape.cs" />
+    <Compile Include="ocx\item\AreaImp.cs" />
+    <Compile Include="ocx\item\AttributImp.cs" />
+    <Compile Include="ocx\item\AxisXImp.cs" />
+    <Compile Include="ocx\item\AxisYImp.cs" />
+    <Compile Include="ocx\item\GridImp.cs" />
+    <Compile Include="ocx\item\LabelImp.cs" />
+    <Compile Include="ocx\item\LineImp.cs" />
+    <Compile Include="ocx\item\PlotImp.cs" />
+    <Compile Include="ocx\item\ShapeImp.cs" />
+    <Compile Include="ocx\OffGraphBiz.cs" />
+    <Compile Include="ocx\OnGraphBiz.cs" />
+    <Compile Include="ocx\SampleGraphBiz.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serialCom\Comm2000.cs" />
+    <Compile Include="serialCom\Comm3010.cs" />
+    <Compile Include="serialCom\CommGasAuto.cs" />
+    <Compile Include="serialCom\CommBase.cs" />
+    <Compile Include="serialCom\CommConst.cs" />
+    <Compile Include="serialCom\CommGas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="serialCom\CommPort.cs" />
+    <Compile Include="serialCom\HardBiz.cs" />
+    <Compile Include="serialCom\SerialEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChromatoTool\ChromatoTool.csproj">
+      <Project>{C9D586E6-49FD-4868-8214-3E0B1B4D6730}</Project>
+      <Name>ChromatoTool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

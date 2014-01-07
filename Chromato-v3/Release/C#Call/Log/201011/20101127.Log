@@ -1,0 +1,38 @@
+
+2010-11-27 11:56:58 515 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2010-11-27 11:56:58 531 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:56:58 546 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2010-11-27 11:56:58 546 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:56:58 546 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2010-11-27 11:56:58 546 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:56:58 562 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2010-11-27 11:56:58 562 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:56:58 625 PipeBiz HisPipeProcess hisPipe client 接入
+
+2010-11-27 11:56:58 625 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2010-11-27 11:56:58 625 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2010-11-27 11:56:58 625 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2010-11-27 11:56:58 640 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2010-11-27 11:56:58 640 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2010-11-27 11:56:58 671 ParaBiz 打?文件 文件不存在:E:\Chromato\Release\C#Call\db\201006\通道A_20100622154956.db3
+
+2010-11-27 11:56:58 703 ParaBiz 打?文件 文件不存在:E:\Chromato\Release\C#Call\db\201006\通道B_20100622154956.db3
+
+2010-11-27 11:56:58 718 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2010-11-27 11:57:38 875 CommPort CloseLoop count=0
+
+2010-11-27 11:57:38 890 CommPort Close serial port closed

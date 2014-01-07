@@ -1,0 +1,46 @@
+
+2013-06-20 13:32:47 750 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-06-20 13:32:47 765 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-06-20 13:32:47 796 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-06-20 13:32:47 796 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-06-20 13:32:47 796 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-06-20 13:32:47 812 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-06-20 13:32:47 812 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-06-20 13:32:47 812 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-06-20 13:32:47 812 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-06-20 13:32:47 828 ParaBiz 打开文件 文件不存在:E:\计算所相关开发软件\Chromato-v3-通用版\Release\C#Call\db\201010\通道A_20101010113038.db3
+
+2013-06-20 13:32:47 828 ParaBiz 打开文件 文件不存在:E:\计算所相关开发软件\Chromato-v3-通用版\Release\C#Call\db\201010\通道A_20101010105246.db3
+
+2013-06-20 13:32:47 828 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-06-20 13:35:32 312 CommPort Close serial port closed
+
+2013-06-20 13:35:32 593 CommPort OpenSict 端口“COM41”不存在。: open failed
+
+2013-06-20 13:35:32 593 CommPort Close 打开串口COM41失败 ！
+
+2013-06-20 13:37:38 812 PipeBiz CorrectPipeProcess correctPipe client 接入
+
+2013-06-20 13:37:38 828 PipeBiz CorrectPipeProcess CorrectPipeProcess 线程退出！
+
+2013-06-20 13:40:41 296 OffExportViewer ExportToCsv E:\计算所相关开发软件\Chromato-v3-通用版\Release\C#Call\Csv\200908\烃组份_01_20090811145901_Tcd1.csv

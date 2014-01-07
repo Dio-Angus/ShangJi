@@ -1,0 +1,8 @@
+F:\Chromato-v2\Source\ChromatoPrint\bin\Release\ChromatoPrint.dll
+F:\Chromato-v2\Source\ChromatoPrint\bin\Release\ChromatoPrint.pdb
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ChromatoPrint.PrintMngUser.resources
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ChromatoPrint.PrintExtBar.resources
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ChromatoPrint.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ChromatoPrint.dll
+F:\Chromato-v2\Source\ChromatoPrint\obj\Release\ChromatoPrint.pdb

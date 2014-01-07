@@ -1,0 +1,42 @@
+
+2009-05-26 12:42:12 875 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2009-05-26 12:42:13 078 PipeBiz HisPipeProcess hisPipe client 接入
+
+2009-05-26 12:42:13 078 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2009-05-26 12:42:13 093 PipeBiz RealPipeAProcess realPipe A client 接入
+
+2009-05-26 12:42:13 093 PipeBiz RealPipeAProcess RealPipeAProcess 线程退出！
+
+2009-05-26 12:42:13 093 PipeBiz RealPipeBProcess realPipe B client 接入
+
+2009-05-26 12:42:13 109 PipeBiz RealPipeBProcess RealPipeBProcess 线程退出！
+
+2009-05-26 12:47:14 406 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2009-05-26 12:47:14 609 PipeBiz HisPipeProcess hisPipe client 接入
+
+2009-05-26 12:47:14 609 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2009-05-26 12:47:14 625 PipeBiz RealPipeAProcess realPipe A client 接入
+
+2009-05-26 12:47:14 625 PipeBiz RealPipeBProcess realPipe B client 接入
+
+2009-05-26 12:47:14 640 PipeBiz RealPipeAProcess RealPipeAProcess 线程退出！
+
+2009-05-26 12:47:14 640 PipeBiz RealPipeBProcess RealPipeBProcess 线程退出！
+
+2009-05-26 18:33:32 375 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2009-05-26 18:33:32 578 PipeBiz HisPipeProcess hisPipe client 接入
+
+2009-05-26 18:33:32 578 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2009-05-26 18:33:32 593 PipeBiz RealPipeAProcess realPipe A client 接入
+
+2009-05-26 18:33:32 593 PipeBiz RealPipeAProcess RealPipeAProcess 线程退出！
+
+2009-05-26 18:33:32 609 PipeBiz RealPipeBProcess realPipe B client 接入
+
+2009-05-26 18:33:32 609 PipeBiz RealPipeBProcess RealPipeBProcess 线程退出！

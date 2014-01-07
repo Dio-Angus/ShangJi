@@ -1,0 +1,820 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChromatoPeak</name>
+    </assembly>
+    <members>
+        <member name="T:ChromatoPeak.scan.FindPeak">
+            <summary>
+            求峰的开始点,结束点
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.FindPeak.StartIndex">
+            <summary>
+            开始索引
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.FindPeak.MergeDistance">
+            <summary>
+            前峰结束点和后峰开始点合并范围(单位:点)
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.#ctor(System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.Find">
+            <summary>
+            峰的开始点,结束点寻找
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.GetPointStatus">
+            <summary>
+            计算点的状态
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.GetAvgSlope">
+            <summary>
+            计算平均斜率,开始4点无平均斜率 [1,2,3,4,5]
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.GetPeakTrend">
+            <summary>
+            计算峰的趋势
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.FilterFlat">
+            <summary>
+            把峰的平坦的趋势点变成上升或者下降趋势
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.FindYielding">
+            <summary>
+            确定可能是开始或者结束的拐点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.GetYieldingBefore(System.Int32,System.Int32)">
+            <summary>
+            向前推10个点，作为拐点
+            </summary>
+            <param name="currentIndex"></param>
+            <param name="lastIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.GetYieldingAfter(System.Int32@)">
+            <summary>
+            向后推5个点，作为拐点
+            </summary>
+            <param name="currentIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.AssembleYield">
+            <summary>
+            组合拐点成峰（只有两种特征：开始结束点，顶点）
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.MergeEndPoint">
+            <summary>
+            合并相近的结束点和开始点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.CacuReserveTime">
+            <summary>
+            重新校正保留时间（最高点）
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.FindPeak.DealLockTime">
+            <summary>
+            处理时间程序中的锁定时间
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.FindPeak._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.FindPeak._arrPeak">
+            <summary>
+             结果 PeakDto 集合体,输出列表
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.FindPeak._arrYieldingPoint">
+            <summary>
+             结果 YieldingPointDto 集合体,中间列表
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.ObtainType">
+            <summary>
+            判断峰的类型
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.ObtainType.MaxPeakHeight">
+            <summary>
+            峰高最大值(mv)
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.ObtainType.MinPeakHeight">
+            <summary>
+            峰高最小值(mv)
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.ObtainType.MinHeightTimes">
+            <summary>
+            主峰最小的峰高倍数
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.ObtainType.MaxHeightTimes">
+            <summary>
+            主峰最大的峰高倍数
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.ObtainType.#ctor(System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.ObtainType.Obtain">
+            <summary>
+            获取峰类型
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.ObtainType.IsTail(System.Collections.ArrayList)">
+            <summary>
+            判断是否为脱尾峰
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.ObtainType.IsAttachTail(ChromatoTool.dto.PeakDto,ChromatoTool.dto.PeakDto)">
+            <summary>
+            是否是拖尾峰
+            </summary>
+            <param name="peakMain"></param>
+            <param name="peakCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ChromatoPeak.scan.ObtainType._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.ObtainType._arrGroup">
+            <summary>
+            峰外层分组列表，结果 PeakDto 集合体，ArrayList嵌套
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.CacuDensity">
+            <summary>
+            计算峰的浓度
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.CacuDensity.OneHundred">
+            <summary>
+            一百
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.#ctor(System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.Cacu">
+            <summary>
+            六种浓度定量计算方法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.ClearMatch">
+            <summary>
+            非归一法清空匹配标志
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.MovePeakBySize">
+            <summary>
+            根据最小面积的要求移走某些峰
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.Normalize">
+            <summary>
+            归一法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.FixNormalize">
+            <summary>
+            修正归一法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.CacuKbAndSum">
+            <summary>
+            返回计算总和
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.FindIngreByReserveTime(ChromatoTool.dto.PeakDto)">
+            <summary>
+            在峰鉴定表中寻找保留时间最接近的成分
+            </summary>
+            <param name="dtoPeak"></param>
+            <returns>成分dto</returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.FindKB(ChromatoTool.dto.IngredientDto,ChromatoTool.dto.PeakDto,System.Double@,System.Single@)">
+            <summary>
+            根据成分表ID表的成分ID寻找对应的含量表
+            </summary>
+            <param name="dtoIngre"></param>
+            <param name="dtoPeak"></param>
+            <param name="sumFix"></param>
+            <param name="innerVal">内标物的面积（高度）</param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.FixNormalizeWithRate">
+            <summary>
+            带比例系数的修正归一法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.Inner">
+            <summary>
+            内标法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.CacuKbAndInner">
+            <summary>
+            计算K,B,返回内标值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.Outer">
+            <summary>
+            绝对标准曲线法（外标）法
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuDensity.Exponent">
+            <summary>
+            指数计算法
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity._arrPeak">
+            <summary>
+            数据集合 AvgPointDto 集合体
+            结果 PeakDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity.SampleWeight">
+            <summary>
+            样品量
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity.InnerWeight">
+            <summary>
+            内标量
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity._arrIngre">
+            <summary>
+            ID表 IngredientDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity._arrCali">
+            <summary>
+            含量表 CalibrateDto 集合体(根据IngredientDto.IngredientID嵌套)
+            </summary>定量方法ID（外标，内标，归一，指数等）
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity._dtoAnalyPara">
+            <summary>
+            分析方法
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuDensity._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.CacuCloseline">
+            <summary>
+            计算峰的闭合线
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.CacuCloseline.VoltageDistance">
+            <summary>
+            电压差(曲线上的点和直线上的点的电压差)
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.#ctor(System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.Cacu">
+            <summary>
+            设置闭合线
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.CacuLine(System.Collections.ArrayList)">
+            <summary>
+            设置一组内峰的闭合线
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.GetTailLine(ChromatoTool.dto.PeakDto,System.Int32@,System.Collections.ArrayList)">
+            <summary>
+            取得拖尾峰的下部闭合线
+            </summary>
+            <param name="dto"></param>
+            <param name="currentIndex"></param>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.GetContinuousTailLine(System.Int32,System.Int32,System.Collections.ArrayList)">
+            <summary>
+            计算连续拖尾峰的下部闭合线
+            </summary>
+            <param name="currentIndex"></param>
+            <param name="endIndex"></param>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.GetMainLine(ChromatoTool.dto.PeakDto,System.Int32,System.Single,System.Single,System.Collections.ArrayList)">
+            <summary>
+            取得主峰或者重叠峰的下部闭合线
+            </summary>
+            <param name="dto"></param>
+            <param name="currentIndex"></param>
+            <param name="k"></param>
+            <param name="b"></param>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.DealLockBaseline(System.Collections.ArrayList)">
+            <summary>
+            处理时间程序中的锁定基线
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.DealWithStartOn(ChromatoTool.dto.PeakDto)">
+            <summary>
+            开始点的锁定基线状态On
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.IsInPeak(ChromatoTool.dto.AvgPointDto@,ChromatoTool.dto.AvgPointDto)">
+            <summary>
+            取的参考点
+            该点是否在峰内,如果在峰内,取开始点作为参考点
+            如果不在峰内,取该变化点作为参考点
+            </summary>
+            <param name="dtoRef">参考点</param>
+            <param name="dtoOff">变化点</param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.DealWithEndOn(ChromatoTool.dto.PeakDto,ChromatoTool.dto.AvgPointDto)">
+            <summary>
+            结束点的锁定基线状态On
+            </summary>
+            <param name="dto"></param>
+            <param name="dtoStart"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.DealHoriBaseline(System.Collections.ArrayList)">
+            <summary>
+            处理时间程序中的水平基线
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuCloseline.DealWithTopOn(ChromatoTool.dto.PeakDto)">
+            <summary>
+            顶点的水平基线状态On
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuCloseline._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuCloseline._arrGroup">
+            <summary>
+            峰外层分组列表，结果 PeakDto 集合体，ArrayList嵌套
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.GeneralCacu">
+            <summary>
+            通用计算工具
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.GeneralCacu.GetSlope(ChromatoTool.dto.AvgPointDto,ChromatoTool.dto.AvgPointDto)">
+            <summary>
+            计算两点斜率 (微伏/分钟)
+            </summary>
+            <param name="dto1">前点</param>
+            <param name="dto2">后点</param>
+            <returns>斜率值</returns>
+        </member>
+        <member name="T:ChromatoPeak.scan.AutoGroup">
+            <summary>
+            对峰进行自动分组
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AutoGroup.GroupDistance">
+            <summary>
+            漂移等于0时的组间隔（峰宽的倍数）
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AutoGroup.GroupDistanceWithDrift">
+            <summary>
+            漂移不等于0时的组间隔（峰宽的倍数）
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AutoGroup.#ctor(System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AutoGroup.Divide">
+            <summary>
+            分割组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.AutoGroup.IsInnerGroup(ChromatoTool.dto.PeakDto,ChromatoTool.dto.PeakDto,ChromatoTool.dto.PeakDto)">
+            <summary>
+            该峰是否属于这组,true属于该组
+            </summary>
+            <param name="dtoBefore"></param>
+            <param name="dtoAfter"></param>
+            <param name="dtoFirst"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ChromatoPeak.scan.AutoGroup._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.AutoGroup._arrPeak">
+            <summary>
+             结果 PeakDto 集合体,输入列表
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.AutoGroup._arrGroup">
+            <summary>
+            峰外层分组列表，结果 PeakDto 集合体，ArrayList嵌套
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.EditAvgPoint">
+            <summary>
+            对原始数据求平均,确定各点的属性
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.EditAvgPoint.ChangeParaTime">
+            <summary>
+            变参倍数
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.EditAvgPoint._isUseTp">
+            <summary>
+            是否使用时间程序
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.GetAvgArray">
+            <summary>
+            求平均点，保存各点的属性到_arrAvg
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetDefaultInOri">
+            <summary>
+            设置原始点的默认峰宽,大于5的时候设置为5
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetPeakWideByTp">
+            <summary>
+            根据时间程序的峰宽设置峰宽
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetSlopeByTp">
+            <summary>
+            根据时间程序设置斜率
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetPwAndSlopeByTp">
+            <summary>
+            根据变参时间设置峰宽，斜率
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.GetAvg">
+            <summary>
+            根据原始点峰宽计算出平均点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetSlope">
+            <summary>
+            设置斜率
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.SetOtherProperty">
+            <summary>
+            根据时间程序设置其它属性
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.GetResult">
+            <summary>
+            取得结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.EditAvgPoint.ReCacu(System.Collections.ArrayList)">
+             <summary>
+            重新分组,计算面积,浓度
+             </summary>
+             <param name="arrPeak"></param>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._arr">
+            <summary>
+            数据集合 OriginPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._dtoAnalyPara">
+            <summary>
+            分析方法
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._timeProc">
+            <summary>
+            时间程序 TimeProcDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._arrPeak">
+            <summary>
+            结果 PeakDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint.SampleWeight">
+            <summary>
+            样品量
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint.InnerWeight">
+            <summary>
+            内标量
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._arrIngre">
+            <summary>
+            ID表 IngredientDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.EditAvgPoint._arrCali">
+            <summary>
+            含量表 CalibrateDto 集合体(根据IngredientDto.IngredientID嵌套)
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.CacuSize">
+            <summary>
+            计算峰的面积,高度
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuSize.#ctor(System.Collections.ArrayList,System.Collections.ArrayList,System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuSize.Cacu(System.Boolean)">
+            <summary>
+            计算各个峰的面积，有拖尾的情况下减去拖尾峰的面积
+            </summary>
+            <param name="isAdd">是否重新向队列追加</param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuSize.CacuHeight(System.Collections.ArrayList)">
+            <summary>
+            计算某个分组内的各个峰高
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuSize.CacuArea(System.Collections.ArrayList)">
+            <summary>
+            计算某个分组内的各个峰面积
+            </summary>
+            <param name="arr"></param>
+        </member>
+        <member name="M:ChromatoPeak.scan.CacuSize.SubstractTail(System.Int32@,System.Collections.ArrayList)">
+            <summary>
+            拖尾峰依赖的主峰或者重叠峰面积修正
+            </summary>
+            <param name="currentIndex"></param>
+            <param name="arr"></param>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuSize._arrPeak">
+            <summary>
+            数据集合 AvgPointDto 集合体
+            结果 PeakDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuSize._arr">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoPeak.scan.CacuSize._arrGroup">
+            <summary>
+            峰值分组列表
+            结果 PeakDto 集合体
+            双重ArrayList嵌套
+            </summary>
+        </member>
+        <member name="T:ChromatoPeak.scan.AnalyPeak">
+            <summary>
+            求峰的包络线
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak.GroupDistance">
+            <summary>
+            漂移等于0时的组间隔（峰宽的倍数）
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak.GroupDistanceWithDrift">
+            <summary>
+            漂移不等于0时的组间隔（峰宽的倍数）
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak.StartIndex">
+            <summary>
+            开始索引
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._dtoAvg">
+            <summary>
+            数据dto
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._arrGroup">
+            <summary>
+            峰外层分组列表，结果 PeakDto 集合体，ArrayList嵌套
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._arrPeak">
+            <summary>
+            内层峰列表
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._statusScan">
+            <summary>
+            扫描状态
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._lastStatus">
+            <summary>
+            上一次扫描状态
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._currentIndex">
+            <summary>
+            当前扫描索引
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._dtoPeak">
+            <summary>
+            当前结果dto
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._dtoCur">
+            <summary>
+            当前平均点
+            </summary>
+        </member>
+        <member name="F:ChromatoPeak.scan.AnalyPeak._bHasFirstPeak">
+            <summary>
+            拖尾峰是否存在第一个峰
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.#ctor(System.Collections.ArrayList)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.LoopPeak">
+            <summary>
+            主循环
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetPointStatus">
+            <summary>
+            计算点的状态
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetAvgSlope">
+            <summary>
+            计算平均斜率,开始4点无平均斜率 [1,2,3,4,5]
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetPeakTrend">
+            <summary>
+            计算峰的趋势
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoUpUp">
+            <summary>
+            状态1处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoUpFlat">
+            <summary>
+            状态2处理 
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoUpDown">
+            <summary>
+            状态3处理 
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoFlatFlat">
+            <summary>
+            状态4处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoDownDown">
+            <summary>
+            状态10处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoDownUp">
+            <summary>
+            状态11处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoFlatUp">
+            <summary>
+            状态12处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoDownFlat">
+            <summary>
+            状态13处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DoFlatDown">
+            <summary>
+            状态14处理
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DealWithStart">
+            <summary>
+            状态0处理 
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetPeakStart">
+            <summary>
+            取峰的开始点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetPeakEnd">
+            <summary>
+            取得峰的结束点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.IsTail">
+            <summary>
+            是否脱尾
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.GetTop">
+            <summary> 
+            得到最高点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.DealGroupEnd">
+            <summary>
+            得到结束点
+            </summary>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.IsDriftDown">
+            <summary>
+            是否在漂移点的下方
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.JudgeDrift(ChromatoTool.dto.AvgPointDto)">
+            <summary>
+            根据漂移判断组结束
+            </summary>
+            <param name="dtoFirst"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPeak.scan.AnalyPeak.IsStopSlope">
+            <summary>
+            是否满足终止斜率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ChromatoPeak.scan.AnalyPeak._arrAvg">
+            <summary>
+             平均 AvgPointDto 集合体
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,202 @@
+
+2010-11-27 11:40:34 062 AutoChromatoFrm AutoChromatoFrm_Load AutoChromatoFrm ?入
+
+2010-11-27 11:41:15 562 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2010-11-27 11:41:15 562 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:41:15 640 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2010-11-27 11:41:15 656 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:41:15 671 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2010-11-27 11:41:15 671 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:41:15 687 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2010-11-27 11:41:15 687 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:41:15 703 PipeBiz HisPipeProcess hisPipe client 接入
+
+2010-11-27 11:41:15 703 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2010-11-27 11:41:15 718 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2010-11-27 11:41:15 718 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2010-11-27 11:41:15 718 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2010-11-27 11:41:15 718 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2010-11-27 11:41:16 078 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2010-11-27 11:41:36 281 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201006\通道D_20100609084456.db3
+
+2010-11-27 11:41:36 281 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道D_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 281 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道D_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 546 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201006\通道C_20100609084456.db3
+
+2010-11-27 11:41:36 546 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道C_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 546 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道C_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 640 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201006\通道B_20100609084456.db3
+
+2010-11-27 11:41:36 640 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道B_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 640 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道B_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 812 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201006\通道A_20100609084456.db3
+
+2010-11-27 11:41:36 812 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道A_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:36 812 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201006\通道A_20100609084456.db3 没有找到?文件!
+
+2010-11-27 11:41:39 875 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201005\通道D_20100526183853.db3
+
+2010-11-27 11:41:39 875 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道D_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:39 875 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道D_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 046 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201005\通道C_20100526183853.db3
+
+2010-11-27 11:41:40 046 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道C_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 046 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道C_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 234 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201005\通道B_20100526183853.db3
+
+2010-11-27 11:41:40 234 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道B_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 234 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道B_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 421 ParaBiz 打?文件 文件不存在:E:\Chromato\bin\Debug\db\201005\通道A_20100526183853.db3
+
+2010-11-27 11:41:40 421 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道A_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:41:40 421 SqliteDbName ConnectDb 路径E:\Chromato\bin\Debug\db\201005\通道A_20100526183853.db3 没有找到?文件!
+
+2010-11-27 11:43:25 796 OnGasGroup StopSample Started
+
+2010-11-27 11:43:26 250 CommPort CloseLoop count=0
+
+2010-11-27 11:43:26 250 CommPort Close serial port closed
+
+2010-11-27 11:43:26 250 OnGasGroup StopSample Finished
+
+2010-11-27 11:44:10 593 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2010-11-27 11:44:10 609 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:44:10 656 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2010-11-27 11:44:10 656 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:44:10 671 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2010-11-27 11:44:10 671 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:44:10 671 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2010-11-27 11:44:10 671 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:44:10 671 PipeBiz HisPipeProcess hisPipe client 接入
+
+2010-11-27 11:44:10 671 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2010-11-27 11:44:10 687 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2010-11-27 11:44:10 687 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2010-11-27 11:44:10 687 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2010-11-27 11:44:10 687 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2010-11-27 11:44:10 984 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2010-11-27 11:44:42 984 OnGasGroup StopSample Started
+
+2010-11-27 11:44:43 312 CommPort CloseLoop count=0
+
+2010-11-27 11:44:43 312 CommPort Close serial port closed
+
+2010-11-27 11:44:43 312 OnGasGroup StopSample Finished
+
+2010-11-27 11:46:40 265 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2010-11-27 11:46:40 281 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:46:40 328 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2010-11-27 11:46:40 328 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:46:40 343 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2010-11-27 11:46:40 343 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:46:40 343 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2010-11-27 11:46:40 343 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 11:46:40 343 PipeBiz HisPipeProcess hisPipe client 接入
+
+2010-11-27 11:46:40 343 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2010-11-27 11:46:40 359 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2010-11-27 11:46:40 359 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2010-11-27 11:46:40 359 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2010-11-27 11:46:40 359 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2010-11-27 11:46:40 671 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2010-11-27 11:47:37 609 OnGasGroup StopSample Started
+
+2010-11-27 11:47:38 015 CommPort CloseLoop count=0
+
+2010-11-27 11:47:38 015 CommPort Close serial port closed
+
+2010-11-27 11:47:38 015 OnGasGroup StopSample Finished
+
+2010-11-27 22:23:40 484 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2010-11-27 22:23:40 515 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 22:23:40 562 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2010-11-27 22:23:40 562 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 22:23:40 578 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2010-11-27 22:23:40 578 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 22:23:40 593 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2010-11-27 22:23:40 593 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2010-11-27 22:23:40 609 PipeBiz HisPipeProcess hisPipe client 接入
+
+2010-11-27 22:23:40 609 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2010-11-27 22:23:40 625 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2010-11-27 22:23:40 625 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2010-11-27 22:23:40 625 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2010-11-27 22:23:40 625 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2010-11-27 22:23:41 203 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2010-11-27 22:35:51 750 OnGasGroup StopSample Started
+
+2010-11-27 22:35:52 000 CommPort CloseLoop count=0
+
+2010-11-27 22:35:52 000 CommPort Close serial port closed
+
+2010-11-27 22:35:52 000 OnGasGroup StopSample Finished

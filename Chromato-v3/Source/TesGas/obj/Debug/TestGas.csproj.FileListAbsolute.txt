@@ -1,0 +1,83 @@
+E:\Chromato\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.csproj.GenerateResource.Cache
+E:\Chromato\bin\Debug\TestGas.exe
+E:\Chromato\bin\Debug\TestGas.pdb
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.exe
+E:\Chromato\Source\TesGas\obj\Debug\TestGas.pdb
+F:\Chromato-v2\bin\Debug\TestGas.exe
+F:\Chromato-v2\bin\Debug\TestGas.pdb
+F:\Chromato-v2\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.exe
+F:\Chromato-v2\Source\TesGas\obj\Debug\TestGas.pdb
+F:\Chromato-v3\bin\Debug\TestGas.exe
+F:\Chromato-v3\bin\Debug\TestGas.pdb
+F:\Chromato-v3\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.csproj.GenerateResource.Cache
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.exe
+F:\Chromato-v3\Source\TesGas\obj\Debug\TestGas.pdb
+F:\Chromato-v3-通用版\bin\Debug\TestGas.exe
+F:\Chromato-v3-通用版\bin\Debug\TestGas.pdb
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.csproj.GenerateResource.Cache
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.exe
+F:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\TestGas.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\TestGas.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.csproj.GenerateResource.Cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
+D:\Chromato-v3-通用版\bin\Debug\TestGas.exe
+D:\Chromato-v3-通用版\bin\Debug\TestGas.pdb
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.exe
+D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\TestGas.exe.config
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\TestGas.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\TestGas.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.read.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.read.4.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.read.5.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\GenerateResource-ResGen.write.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
+D:\Chromato-v3-通用版\bin\Debug\TestGas.exe.config

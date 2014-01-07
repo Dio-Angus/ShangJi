@@ -1,0 +1,62 @@
+E:\Chromato\bin\Debug\ChromatoPrint.dll
+E:\Chromato\bin\Debug\ChromatoPrint.pdb
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ChromatoPrint.csproj.GenerateResource.Cache
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+E:\Chromato\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+F:\Chromato-v2\bin\Debug\ChromatoPrint.dll
+F:\Chromato-v2\bin\Debug\ChromatoPrint.pdb
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ChromatoPrint.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+F:\Chromato-v2\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+F:\Chromato-v3\bin\Debug\ChromatoPrint.dll
+F:\Chromato-v3\bin\Debug\ChromatoPrint.pdb
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ChromatoPrint.csproj.GenerateResource.Cache
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+F:\Chromato-v3\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+F:\Chromato-v3\bin\Debug\ChromatoPrint.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPrint.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPrint.dll
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPrint.pdb
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.csproj.GenerateResource.Cache
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+F:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPrint.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPrint.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPrint.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.csproj.GenerateResource.Cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+D:\Chromato-v3-通用版\bin\Debug\ChromatoPrint.dll
+D:\Chromato-v3-通用版\bin\Debug\ChromatoPrint.pdb
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoPrint.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoPrint.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintMngUser.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.PrintExtBar.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.read.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.read.4.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.write.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb

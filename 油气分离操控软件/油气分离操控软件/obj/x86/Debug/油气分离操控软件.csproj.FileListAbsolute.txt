@@ -1,0 +1,9 @@
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\bin\Debug\油气分离操控软件.exe
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\bin\Debug\油气分离操控软件.pdb
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\油气分离操控软件.Form1.resources
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\油气分离操控软件.Properties.Resources.resources
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\油气分离操控软件.exe
+c:\users\dio\documents\visual studio 2010\Projects\油气分离操控软件\油气分离操控软件\obj\x86\Debug\油气分离操控软件.pdb

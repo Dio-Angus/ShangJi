@@ -1,0 +1,179 @@
+[graphocx] 'Item should be continuous SGR use
+ItemCount=9
+BackColor=0
+
+[Item1]
+left=30
+right=630
+top=30
+bottom=330
+ColorBrush=32125 'RGB(125,125,0)
+XAxis=3
+YAxis=4
+LeftValue=-1.5
+RightValue=6.28
+TopValue=0
+BottomValue=1.2
+Zorder=1
+ItemType=1   		'CLS_AREA
+Show=0
+Clip=0
+
+[Item2]
+left=30
+right=630
+top=30
+bottom=330
+TransParent=1
+Show=1
+VertGridCount=10
+HorzGridCount=10
+outpen.Style=0  	'PS_SOLID
+outpen.Width=1
+outpen.Color=32896
+brushColor=65280
+inpen.Style=2   	'PS_DOT
+inpen.Width=1
+inpen.Color=8421376
+Zorder=2
+ItemType=2   		'CLS_GRID
+
+[Item3]
+AxisLine.Color=255	'RGB(255,0,0)
+AxisLine.Style=0	'PS_SOLID
+AxisLine.Width=1
+Align=3			'X_DIRECTION_SCALE_LEFT
+Show=1
+Direction=0		'X AXIS
+StartValue=0
+EndValue=3.1415926
+FloatFigure=2
+X=30
+Y=330
+Length=600
+OffsetX=5
+OffsetY=5
+ScaleCount=10
+ScaleLine.Color=8421504
+ScaleLine.Style=0
+ScaleLine.Width=2
+ValueColor=123456		'RGB(0,0,0)
+lablefont.Bold=0
+lablefont.Italic=0
+lablefont.Name=Times New Roman
+lablefont.Size=6
+lablefont.Underline=0
+Zorder=3
+ItemType=3   		'CLS_AXIS
+Unit=1                  'display Unit and Name 
+
+[Item4]
+AxisLine.Color=255	'RGB(255,0,0)
+AxisLine.Style=0	'PS_SOLID
+AxisLine.Width=1
+Align=0			'Y_DIRECTION_SCALE_UP
+Show=1
+Direction=1		'Y AXIS
+StartValue=0.0
+EndValue=1.2
+FloatFigure=1
+X=30
+Y=330
+Length=-300
+OffsetX=5
+OffsetY=5
+ScaleCount=10
+ScaleLine.Color=65280
+ScaleLine.Style=0
+ScaleLine.Width=2
+ValueColor=123456		'RGB(0,0,0)
+lablefont.Bold=0
+lablefont.Italic=0
+lablefont.Name=Times New Roman
+lablefont.Size=6
+lablefont.Underline=0
+Zorder=4
+ItemType=3   		'CLS_AXIS
+Unit=1                  'display Unit and Name 
+
+[Item5]
+X=60
+Y=60
+Width=0
+Height=0
+Show=1
+sShapeAttr.BorderColor=255	'RGB(255,0,0)
+sShapeAttr.FillColor=16711680	'RGB(0,0,255)
+sShapeAttr.FillPattern=0	
+sShapeAttr.AdjustX=1
+sShapeAttr.AdjustY=1
+sShapeAttr.Transparent=0
+Zorder=7
+ItemType=6   		'CLS_SHAPE
+
+[Item6]
+StartX=20
+StartY=20
+EndX=490
+EndY=20
+linepen.Style=0
+linepen.Width=1
+linepen.Color=255
+Show=1
+Zorder=6
+ItemType=5   		'CLS_LINE
+
+[Item7]
+Area=1
+DataCount=0
+dataline.Style=0
+dataline.Width=1
+dataline.Color=123456
+Show=1
+ShowMarker=0
+StartXValue=0
+StartYValue=0
+EndXValue=3.14
+EndYValue=1.12
+marker.Bordercolor=255
+marker.Borderwidth=1
+marker.Fillcolor=16711680
+marker.Size=1
+marker.Style=6		'CBR_LOZENGE_MARKER
+marker.Transparent=0
+Zorder=5
+ItemType=4   		'CLS_PLOT
+UseDashLine=0		'use dash line
+
+[Item8]
+Show=1
+X=180
+Y=100
+Align=3			'X_DIRECTION_SCALE_LEFT
+Direction=0		'0-X AXIS, 1-Y AXIS
+Text=okÄãºÃ
+ForeColor=255		'RGB(255,0,0)
+BackColor=65280'16711680	'RGB(0,0,255)
+lablefont.Bold=0
+lablefont.Italic=0
+lablefont.Name=Times New Roman
+lablefont.Size=8
+lablefont.Underline=0
+Zorder=8
+ItemType=7   		'CLS_LABEL
+
+[Item9]
+Show=0
+X=30
+Y=10
+Align=4			'X_DIRECTION_SCALE_LEFT
+Direction=0		'0-X AXIS, 1-Y AXIS
+ForeColor=255		'RGB(255,0,0)
+BackColor=65280'16711680	'RGB(0,0,255)
+lablefont.Bold=0
+lablefont.Italic=0
+lablefont.Name=Times New Roman
+lablefont.Size=8
+lablefont.Underline=0
+Zorder=9
+ItemType=8   		'CLS_ATTRIBUTE

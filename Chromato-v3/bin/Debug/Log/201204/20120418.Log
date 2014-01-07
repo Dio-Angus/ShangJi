@@ -1,0 +1,210 @@
+
+2012-04-18 14:53:13 877 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2012-04-18 14:53:13 908 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2012-04-18 14:53:13 924 PipeBiz HisPipeProcess hisPipe client 接入
+
+2012-04-18 14:53:13 924 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2012-04-18 14:53:13 940 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2012-04-18 14:53:13 940 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2012-04-18 14:53:13 940 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2012-04-18 14:53:13 940 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2012-04-18 14:53:13 955 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2012-04-18 14:53:14 330 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2012-04-18 14:53:14 330 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2012-04-18 14:53:14 330 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2012-04-18 14:53:26 362 CommPort Close serial port closed
+
+2012-04-18 14:53:27 846 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 281.25 ms 
+
+2012-04-18 14:53:29 424 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:29 627 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:29 846 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:30 065 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:30 315 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:30 533 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:30 752 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:30 971 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:31 190 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:31 408 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:31 612 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:31 830 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:32 049 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:32 268 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:32 487 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:32 705 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:32 908 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:33 127 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:33 346 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:33 565 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:33 783 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:34 002 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:34 221 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:34 424 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:34 643 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:34 862 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:35 080 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:35 283 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:35 502 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:35 721 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:35 940 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:36 158 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:36 377 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:36 596 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:36 815 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:37 033 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:37 237 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:37 455 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:37 674 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:37 893 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:38 112 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:38 330 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:38 549 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:38 752 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:38 971 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:39 190 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:39 408 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:39 627 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:39 846 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:40 065 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:42 533 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 2468.75 ms 
+
+2012-04-18 14:53:45 440 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:45 658 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:45 877 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:46 096 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:46 330 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:46 549 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:46 768 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:46 971 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:47 190 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:47 408 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:47 627 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:47 830 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:48 049 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:48 268 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:48 487 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:48 705 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:48 924 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:49 143 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:49 362 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:49 565 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:49 783 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:50 002 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:50 221 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:50 440 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:50 643 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:51 096 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:51 299 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:51 518 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:51 737 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:51 955 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:52 174 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:52 393 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 218.75 ms 
+
+2012-04-18 14:53:52 612 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 203.125 ms 
+
+2012-04-18 14:53:52 658 CommPort CloseLoop count=0
+
+2012-04-18 14:53:52 674 CommPort Close serial port closed
+
+2012-04-18 14:53:52 705 CommPort CloseLoop set _isRunLoop = false, time=1
+
+2012-04-18 14:53:52 705 CommPort CloseLoop DataProcessSmallBoardThread Join
+
+2012-04-18 14:53:52 987 CommPort DataProcessSmallBoardThread GenerateVoltage eclipse 375 ms 
+
+2012-04-18 14:53:52 987 CommPort Close serial port closed
+
+2012-04-18 14:53:52 987 CommPort DataProcessSmallBoardThread DataProcessSmallBoardThread Finished: 2012:4:18 14:53:52 987

@@ -1,0 +1,93 @@
+E:\Chromato\bin\Debug\Chromato.exe
+E:\Chromato\bin\Debug\Chromato.pdb
+E:\Chromato\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.csproj.GenerateResource.Cache
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.exe
+E:\Chromato\Source\Chromato\obj\Debug\Chromato.pdb
+E:\Chromato\bin\Debug\Chromato.xml
+F:\Chromato-v2\bin\Debug\Chromato.xml
+F:\Chromato-v2\bin\Debug\Chromato.exe
+F:\Chromato-v2\bin\Debug\Chromato.pdb
+F:\Chromato-v2\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.exe
+F:\Chromato-v2\Source\Chromato\obj\Debug\Chromato.pdb
+F:\Chromato-v3\bin\Debug\Chromato.exe
+F:\Chromato-v3\bin\Debug\Chromato.pdb
+F:\Chromato-v3\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.csproj.GenerateResource.Cache
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.exe
+F:\Chromato-v3\Source\Chromato\obj\Debug\Chromato.pdb
+F:\Chromato-v3\bin\Debug\Chromato.xml
+F:\Chromato-v3-通用版\bin\Debug\Chromato.xml
+F:\Chromato-v3-通用版\bin\Debug\Chromato.exe
+F:\Chromato-v3-通用版\bin\Debug\Chromato.pdb
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.GenerateResource.Cache
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.exe
+F:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\Chromato.xml
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\Chromato.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\Chromato.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.GenerateResource.Cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
+D:\Chromato-v3-通用版\bin\Debug\Chromato.exe
+D:\Chromato-v3-通用版\bin\Debug\Chromato.pdb
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.exe
+D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\Chromato.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\Chromato.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.csproj.ResolveComReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.WelcomeFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.ChromatoFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.SettingFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.Properties.Resources.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.gui.AboutMeFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\GenerateResource-ResGen.read.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\GenerateResource-ResGen.read.4.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\GenerateResource-ResGen.write.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
+D:\Chromato-v3-通用版\bin\Debug\Chromato.xml

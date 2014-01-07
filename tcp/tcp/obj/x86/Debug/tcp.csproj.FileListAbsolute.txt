@@ -1,0 +1,9 @@
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\bin\Debug\tcp.exe
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\bin\Debug\tcp.pdb
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\tcp.Form1.resources
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\tcp.Properties.Resources.resources
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\tcp.exe
+c:\users\dio\documents\visual studio 2010\Projects\tcp\tcp\obj\x86\Debug\tcp.pdb

@@ -1,0 +1,290 @@
+
+2011-08-15 14:45:53 500 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-08-15 14:45:53 500 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-08-15 14:45:53 531 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-15 14:45:53 546 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-08-15 14:45:53 546 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-08-15 14:45:53 562 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-08-15 14:45:53 562 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-08-15 14:45:54 437 ChromatoFrm AutoChromatoThread Sleep 2043.75 ms 
+
+2011-08-15 14:45:56 640 ChromatoFrm AutoChromatoThread Sleep 2040.625 ms 
+
+2011-08-15 14:45:58 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:00 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:03 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:46:05 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:46:07 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:46:09 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:11 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:14 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:46:16 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:46:18 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:46:20 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:22 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:24 171 OnGasGroup StopSample Started
+
+2011-08-15 14:46:25 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:46:27 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:46:29 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:46:31 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:33 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:36 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:46:38 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:46:40 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:46:42 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:44 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:47 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:46:49 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:46:51 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:46:53 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:46:55 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:46:58 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:00 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:02 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:04 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:47:06 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:47:09 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:11 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:13 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:15 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:47:17 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:47:20 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:22 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:24 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:26 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:47:28 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:47:31 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:33 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:35 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:37 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:47:39 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:47:42 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:44 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:46 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:48 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:47:50 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:47:53 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:47:55 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:47:57 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:47:59 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:01 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:04 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:48:06 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:48:08 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:48:10 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:12 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:15 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:48:17 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:48:19 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:48:21 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:23 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:26 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:48:28 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:48:30 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:48:32 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:34 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:37 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:48:39 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:48:41 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:48:43 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:45 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:48 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:48:50 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:48:52 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:48:54 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:48:56 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:48:59 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:01 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:03 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:49:05 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:49:07 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:49:10 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:12 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:14 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:49:16 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:49:18 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:49:21 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:23 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:25 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:49:27 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:49:29 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:49:32 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:34 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:36 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:49:38 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:49:40 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:49:43 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:45 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:47 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:49:49 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:49:51 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:49:54 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:49:56 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:49:58 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:50:00 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:50:02 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:50:05 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:50:07 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:50:09 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:50:11 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:50:13 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:50:16 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:50:18 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:50:20 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:50:22 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:50:24 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:50:27 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:50:29 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:50:31 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-15 14:50:33 687 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-15 14:50:35 890 ChromatoFrm AutoChromatoThread Sleep 2190.625 ms 
+
+2011-08-15 14:50:38 093 ChromatoFrm AutoChromatoThread Sleep 2187.5 ms 
+
+2011-08-15 14:50:40 296 ChromatoFrm AutoChromatoThread Sleep 2184.375 ms 
+
+2011-08-15 14:50:42 484 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 

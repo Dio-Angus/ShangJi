@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9D586E6-49FD-4868-8214-3E0B1B4D6730}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChromatoTool</RootNamespace>
+    <AssemblyName>ChromatoTool</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>..\..\bin\Debug\ChromatoTool.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="netcdf, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\netcdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="vjslib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\vjslib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db\DbConfig.cs" />
+    <Compile Include="db\SqliteDbName.cs" />
+    <Compile Include="db\SqliteHelper.cs" />
+    <Compile Include="dto\AnalyParaDto.cs" />
+    <Compile Include="dto\AntiControlDto.cs" />
+    <Compile Include="dto\AttriDto.cs" />
+    <Compile Include="dto\AuxDto.cs" />
+    <Compile Include="dto\AvgExportDto.cs" />
+    <Compile Include="dto\AvgPointDto.cs" />
+    <Compile Include="dto\CalibrateDto.cs" />
+    <Compile Include="dto\CollectionDto.cs" />
+    <Compile Include="dto\ColumnParaDto.cs" />
+    <Compile Include="dto\CompareDto.cs" />
+    <Compile Include="dto\FidDto.cs" />
+    <Compile Include="dto\IngredientDto.cs" />
+    <Compile Include="dto\OriginPointDto.cs" />
+    <Compile Include="dto\ParaDto.cs" />
+    <Compile Include="dto\ParaKeyDto.cs" />
+    <Compile Include="dto\PeakDto.cs" />
+    <Compile Include="dto\RangeDto.cs" />
+    <Compile Include="dto\RelationDto.cs" />
+    <Compile Include="dto\InjectDto.cs" />
+    <Compile Include="dto\RequestDto.cs" />
+    <Compile Include="dto\ShowChannelDto.cs" />
+    <Compile Include="dto\SolutionDto.cs" />
+    <Compile Include="dto\SolutionExportDto.cs" />
+    <Compile Include="dto\TcdDto.cs" />
+    <Compile Include="dto\TimeProcDto.cs" />
+    <Compile Include="dto\UserDto.cs" />
+    <Compile Include="dto\YieldingPointDto.cs" />
+    <Compile Include="dto\ZoomDto.cs" />
+    <Compile Include="ini\DefaultItem.cs" />
+    <Compile Include="ini\IniFile.cs" />
+    <Compile Include="ini\ProConst.cs" />
+    <Compile Include="ini\Setting.cs" />
+    <Compile Include="log\CastLog.cs" />
+    <Compile Include="log\LogEvent.cs" />
+    <Compile Include="pipe\CastPipe.cs" />
+    <Compile Include="pipe\NamedPipeNative.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="util\CastCdf.cs" />
+    <Compile Include="util\CastColor.cs" />
+    <Compile Include="util\CastCursor.cs" />
+    <Compile Include="util\CastExcel.cs" />
+    <Compile Include="util\CastString.cs" />
+    <Compile Include="util\CsvStreamFastReader.cs" />
+    <Compile Include="util\CsvStreamWriter.cs" />
+    <Compile Include="util\EnumDescription.cs" />
+    <Compile Include="util\ListViewColumnSorter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\writer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Res\magnify.cur" />
+    <EmbeddedResource Include="Res\manual.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

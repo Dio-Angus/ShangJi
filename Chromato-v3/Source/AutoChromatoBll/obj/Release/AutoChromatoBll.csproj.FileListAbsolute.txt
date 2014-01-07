@@ -1,0 +1,13 @@
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\AutoChromatoBll.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\AutoChromatoBll.pdb
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\ChromatoTool.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\vjscor.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\netcdf.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\vjsvwaux.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\System.Data.SQLite.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\vjslib.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\vjslibcw.dll
+F:\Chromato-v2\Source\AutoChromatoBll\bin\Release\ChromatoTool.pdb
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Release\AutoChromatoBll.dll
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Release\AutoChromatoBll.pdb

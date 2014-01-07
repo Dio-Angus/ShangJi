@@ -1,0 +1,822 @@
+
+2011-10-20 15:08:00 045 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 15:08:00 045 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:08:00 076 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 15:08:00 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:08:00 091 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 15:08:00 091 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:08:00 091 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 15:08:00 091 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:08:00 107 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 15:08:00 107 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 15:08:00 107 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 15:08:00 107 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 15:08:00 123 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 15:08:00 123 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 15:08:00 138 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 15:08:00 545 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 15:08:00 560 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:08:00 560 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:08:10 138 CommPort Close serial port closed
+
+2011-10-20 15:08:10 373 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 15:08:10 373 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 15:08:17 607 CommPort Close serial port closed
+
+2011-10-20 15:08:17 623 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 15:08:17 623 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 15:11:58 029 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 15:11:58 029 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:11:58 060 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 15:11:58 060 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:11:58 076 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 15:11:58 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:11:58 076 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 15:11:58 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:11:58 076 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 15:11:58 076 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 15:11:58 091 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 15:11:58 091 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 15:11:58 091 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 15:11:58 091 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 15:11:58 107 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 15:11:58 341 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 15:11:58 357 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:11:58 357 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:12:06 685 CommPort Close serial port closed
+
+2011-10-20 15:12:06 779 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 15:12:06 779 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 15:12:08 498 CommPort Close serial port closed
+
+2011-10-20 15:12:08 513 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 15:12:08 513 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 15:18:26 279 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 15:18:26 279 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:18:26 310 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 15:18:26 310 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:18:26 326 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 15:18:26 326 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:18:26 326 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 15:18:26 326 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 15:18:26 341 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 15:18:26 341 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 15:18:26 341 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 15:18:26 341 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 15:18:26 357 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 15:18:26 357 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 15:18:26 357 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 15:18:26 716 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 15:18:26 716 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:18:26 716 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 15:18:38 513 CommPort CloseLoop count=0
+
+2011-10-20 15:18:38 513 CommPort Close serial port closed
+
+2011-10-20 16:46:36 560 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 16:46:36 560 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:46:36 591 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 16:46:36 591 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:46:36 607 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 16:46:36 607 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:46:36 623 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 16:46:36 623 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:46:36 623 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 16:46:36 623 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 16:46:36 638 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 16:46:36 638 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 16:46:36 638 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 16:46:36 638 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 16:46:36 670 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 16:46:36 998 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 16:46:36 998 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:46:36 998 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:46:45 873 CommPort Close serial port closed
+
+2011-10-20 16:46:46 029 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 16:46:46 029 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 16:48:15 232 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 16:48:15 232 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:48:15 279 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 16:48:15 279 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:48:15 279 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 16:48:15 279 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:48:15 295 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 16:48:15 295 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:48:15 295 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 16:48:15 295 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 16:48:15 310 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 16:48:15 310 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 16:48:15 310 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 16:48:15 310 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 16:48:15 326 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 16:48:15 560 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 16:48:15 576 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:48:15 576 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:48:21 607 CommPort Close serial port closed
+
+2011-10-20 16:48:21 701 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 16:48:21 701 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 16:49:05 435 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 16:49:05 435 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:49:05 482 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 16:49:05 482 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:49:05 498 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 16:49:05 498 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:49:05 498 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 16:49:05 498 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:49:05 513 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 16:49:05 513 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 16:49:05 513 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 16:49:05 529 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 16:49:05 529 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 16:49:05 529 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 16:49:05 545 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 16:49:05 888 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 16:49:05 904 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:49:05 904 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:49:11 482 CommPort Close serial port closed
+
+2011-10-20 16:49:11 576 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 16:49:11 576 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 16:52:17 232 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 16:52:17 232 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:52:17 263 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 16:52:17 263 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:52:17 279 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 16:52:17 279 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:52:17 279 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 16:52:17 279 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 16:52:17 295 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 16:52:17 295 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 16:52:17 310 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 16:52:17 310 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 16:52:17 310 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 16:52:17 310 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 16:52:17 326 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 16:52:17 607 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 16:52:17 607 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:52:17 607 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 16:52:24 404 CommPort Close serial port closed
+
+2011-10-20 16:52:24 576 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 16:52:24 576 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:36:23 013 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:36:23 013 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:36:23 060 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:36:23 060 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:36:23 076 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:36:23 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:36:23 076 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:36:23 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:36:23 091 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:36:23 091 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:36:23 091 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:36:23 091 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:36:23 107 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:36:23 107 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:36:23 123 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:36:23 545 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:36:23 545 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:36:23 545 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:36:29 170 CommPort Close serial port closed
+
+2011-10-20 17:36:29 263 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:36:29 263 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:38:36 076 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:38:36 076 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:38:36 123 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:38:36 123 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:38:36 123 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:38:36 123 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:38:36 138 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:38:36 138 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:38:36 138 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:38:36 138 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:38:36 154 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:38:36 154 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:38:36 154 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:38:36 154 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:38:36 185 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:38:36 623 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:38:36 623 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:38:36 623 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:38:44 216 CommPort Close serial port closed
+
+2011-10-20 17:38:44 310 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:38:44 310 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:40:50 154 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:40:50 154 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:40:50 216 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:40:50 216 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:40:50 216 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:40:50 216 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:40:50 232 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:40:50 232 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:40:50 232 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:40:50 232 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:40:50 248 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:40:50 248 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:40:50 248 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:40:50 248 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:40:50 263 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:40:50 763 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:40:50 763 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:40:50 763 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:40:56 888 CommPort Close serial port closed
+
+2011-10-20 17:40:57 029 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:40:57 029 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:50:03 935 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:50:03 935 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:50:03 966 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:50:03 966 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:50:03 982 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:50:03 982 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:50:03 982 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:50:03 982 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:50:03 998 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:50:03 998 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:50:03 998 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:50:03 998 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:50:04 013 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:50:04 013 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:50:04 029 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:50:04 357 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:50:04 357 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:50:04 357 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:50:14 716 CommPort Close serial port closed
+
+2011-10-20 17:50:14 857 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:50:14 857 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:52:03 435 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:52:03 435 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:52:03 482 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:52:03 482 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:52:03 498 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:52:03 498 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:52:03 498 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:52:03 498 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:52:03 513 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:52:03 513 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:52:03 513 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:52:03 513 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:52:03 513 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:52:03 513 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:52:03 545 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:52:03 873 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:52:03 888 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:52:03 888 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:52:10 873 CommPort Close serial port closed
+
+2011-10-20 17:52:10 966 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:52:10 966 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 17:59:28 591 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 17:59:28 591 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:59:28 623 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 17:59:28 623 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:59:28 623 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 17:59:28 638 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:59:28 638 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 17:59:28 638 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 17:59:28 638 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 17:59:28 638 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 17:59:28 654 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 17:59:28 654 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 17:59:28 654 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 17:59:28 670 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 17:59:28 685 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 17:59:29 060 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 17:59:29 060 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:59:29 060 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 17:59:40 560 CommPort Close serial port closed
+
+2011-10-20 17:59:40 701 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 17:59:40 701 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 18:03:19 420 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 18:03:19 420 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 18:03:19 451 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 18:03:19 451 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 18:03:19 451 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 18:03:19 451 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 18:03:19 466 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 18:03:19 466 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 18:03:19 466 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 18:03:19 466 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 18:03:19 482 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 18:03:19 482 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 18:03:19 482 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 18:03:19 482 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 18:03:19 498 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 18:03:19 841 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 18:03:19 857 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 18:03:19 857 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 18:03:40 123 CommPort Close serial port closed
+
+2011-10-20 18:03:40 216 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 18:03:40 216 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 20:26:18 513 CommPort CloseLoop count=0
+
+2011-10-20 20:26:18 513 CommPort Close serial port closed
+
+2011-10-20 20:26:54 982 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 20:26:54 982 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:26:55 013 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 20:26:55 013 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:26:55 013 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 20:26:55 013 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:26:55 029 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 20:26:55 029 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:26:55 029 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 20:26:55 029 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 20:26:55 045 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 20:26:55 045 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 20:26:55 045 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 20:26:55 060 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 20:26:55 060 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 20:26:55 513 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 20:26:55 513 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 20:26:55 513 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 20:27:04 998 CommPort Close serial port closed
+
+2011-10-20 20:27:05 091 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 20:27:05 091 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 20:45:17 701 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 20:45:17 716 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:45:17 748 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 20:45:17 748 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:45:17 763 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 20:45:17 763 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:45:17 763 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 20:45:17 763 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 20:45:17 779 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 20:45:17 779 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 20:45:17 779 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 20:45:17 779 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 20:45:17 795 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 20:45:17 795 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 20:45:17 810 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 20:45:18 170 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 20:45:18 170 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 20:45:18 170 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 20:45:25 841 CommPort Close serial port closed
+
+2011-10-20 20:45:25 935 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 20:45:25 935 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:16:24 404 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 21:16:24 404 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:16:24 435 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 21:16:24 435 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:16:24 435 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 21:16:24 451 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:16:24 451 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 21:16:24 451 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:16:24 466 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 21:16:24 466 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 21:16:24 466 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 21:16:24 466 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 21:16:24 466 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 21:16:24 498 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 21:16:24 498 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 21:16:24 998 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 21:16:24 998 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 21:16:24 998 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 21:16:30 232 CommPort Close serial port closed
+
+2011-10-20 21:16:30 404 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:16:30 404 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:19:59 732 CommPort CloseLoop count=0
+
+2011-10-20 21:19:59 732 CommPort Close serial port closed
+
+2011-10-20 21:23:31 998 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-10-20 21:23:31 998 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:23:32 029 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-10-20 21:23:32 029 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:23:32 029 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-10-20 21:23:32 029 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:23:32 045 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-10-20 21:23:32 045 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-10-20 21:23:32 045 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-10-20 21:23:32 045 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-10-20 21:23:32 060 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-10-20 21:23:32 060 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-10-20 21:23:32 060 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-10-20 21:23:32 076 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-10-20 21:23:32 076 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-10-20 21:23:32 498 ParaBiz 打开文件 文件不存在:F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2011-10-20 21:23:32 498 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 21:23:32 498 SqliteDbName ConnectDb 路径F:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2011-10-20 21:23:37 513 CommPort Close serial port closed
+
+2011-10-20 21:23:37 607 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:23:37 607 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:23:59 716 CommPort Close serial port closed
+
+2011-10-20 21:23:59 732 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:23:59 732 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:02 029 CommPort Close serial port closed
+
+2011-10-20 21:24:02 045 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:02 045 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:02 701 CommPort Close serial port closed
+
+2011-10-20 21:24:02 716 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:02 716 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:03 045 CommPort Close serial port closed
+
+2011-10-20 21:24:03 060 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:03 060 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:03 388 CommPort Close serial port closed
+
+2011-10-20 21:24:03 404 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:03 404 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:03 732 CommPort Close serial port closed
+
+2011-10-20 21:24:03 748 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:03 748 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:04 076 CommPort Close serial port closed
+
+2011-10-20 21:24:04 091 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:04 091 CommPort Close 打开串口COM39失败 ！
+
+2011-10-20 21:24:04 420 CommPort Close serial port closed
+
+2011-10-20 21:24:04 435 CommPort OpenSict 端口“COM39”不存在。: open failed
+
+2011-10-20 21:24:04 435 CommPort Close 打开串口COM39失败 ！

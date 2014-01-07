@@ -1,0 +1,942 @@
+
+2011-02-08 08:59:24 890 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 08:59:24 968 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 08:59:25 000 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 08:59:25 015 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 08:59:25 015 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 08:59:25 046 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 08:59:25 062 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 08:59:25 062 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 08:59:25 109 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 08:59:25 156 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 08:59:25 906 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 09:03:13 359 CommPort Close serial port closed
+
+2011-02-08 09:03:44 187 OnGasGroup StopSample Started
+
+2011-02-08 09:03:44 640 CommPort CloseLoop count=0
+
+2011-02-08 09:03:44 718 CommPort Close serial port closed
+
+2011-02-08 09:03:44 750 CommPort CloseLoop set _isRunLoop = false, time=1
+
+2011-02-08 09:03:44 765 CommPort CloseLoop DataProcessGasBoardThread Join
+
+2011-02-08 09:03:44 781 CommPort Close serial port closed
+
+2011-02-08 09:03:44 781 CommPort DataProcessGasBoardThread DataProcessGasBoardThread Finished: 2011:2:8 9:3:44 781
+
+2011-02-08 09:03:44 781 OnGasGroup StopSample Finished
+
+2011-02-08 09:04:13 234 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 09:04:13 265 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 09:04:13 265 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 09:04:13 296 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 09:04:13 296 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 09:04:13 312 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 09:04:13 312 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 09:04:13 312 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 09:04:13 328 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 09:04:13 343 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-02-08 09:04:13 343 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 09:04:13 484 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 09:04:13 687 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 09:04:41 484 OnGasGroup StopSample Started
+
+2011-02-08 09:04:42 015 CommPort CloseLoop count=0
+
+2011-02-08 09:04:42 015 CommPort Close serial port closed
+
+2011-02-08 09:04:42 031 OnGasGroup StopSample Finished
+
+2011-02-08 10:03:27 687 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 10:03:27 765 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:03:27 781 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 10:03:27 796 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:03:27 812 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 10:03:27 812 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:03:27 828 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 10:03:27 843 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:03:27 859 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 10:03:27 890 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 10:03:28 000 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 10:03:28 156 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 10:12:48 937 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 10:12:49 000 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:12:49 015 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 10:12:49 031 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:12:49 046 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 10:12:49 046 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:12:49 062 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 10:12:49 078 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:12:49 093 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 10:12:49 140 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 10:12:49 234 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 10:12:49 390 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 10:50:45 718 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 10:50:45 781 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:50:45 796 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 10:50:45 812 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:50:45 828 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 10:50:45 843 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:50:45 859 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 10:50:45 859 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:50:45 875 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 10:50:45 921 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 10:50:46 046 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 10:50:46 046 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 10:50:46 187 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 10:52:35 750 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 10:52:35 796 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:52:35 812 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 10:52:35 812 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:52:35 828 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 10:52:35 828 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:52:35 843 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 10:52:35 843 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 10:52:35 875 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 10:52:35 906 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 10:52:36 078 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 10:52:36 093 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 10:52:36 218 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 10:52:41 203 OnGasGroup StopSample Started
+
+2011-02-08 10:52:41 593 CommPort CloseLoop count=0
+
+2011-02-08 10:52:41 593 CommPort Close serial port closed
+
+2011-02-08 10:52:41 609 OnGasGroup StopSample Finished
+
+2011-02-08 17:20:10 046 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 17:20:10 125 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:20:10 156 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 17:20:10 171 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:20:10 203 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 17:20:10 218 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:20:10 234 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 17:20:10 265 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-02-08 17:20:10 281 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 17:20:10 281 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 17:20:10 531 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 17:20:23 515 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:20:23 812 CommPort AutoChromatoThread Sleep 103.125 ms 
+
+2011-02-08 17:20:23 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:24 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:24 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:24 546 CommPort AutoChromatoThread Sleep 168.75 ms 
+
+2011-02-08 17:20:24 750 CommPort AutoChromatoThread Sleep 165.625 ms 
+
+2011-02-08 17:20:24 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:25 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:25 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:25 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:25 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:25 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:26 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:26 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:26 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:26 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:26 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:27 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:27 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:27 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:27 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:27 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:28 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:28 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:28 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:28 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:28 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:29 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:29 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:29 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:29 750 CommPort AutoChromatoThread Sleep 165.625 ms 
+
+2011-02-08 17:20:29 937 CommPort AutoChromatoThread Sleep 178.125 ms 
+
+2011-02-08 17:20:30 140 CommPort AutoChromatoThread Sleep 175 ms 
+
+2011-02-08 17:20:30 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:30 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:30 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:30 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:31 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:31 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:31 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:31 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:31 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:32 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:32 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:32 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:32 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:32 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:33 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:33 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:33 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:33 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:33 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:34 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:34 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:34 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:34 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:34 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:35 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:35 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:35 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:35 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:35 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:36 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:36 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:36 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:36 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:36 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:37 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:37 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:37 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:37 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:37 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:38 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:38 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:38 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:38 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:38 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:39 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:39 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:39 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:39 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:39 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:40 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:40 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:40 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:40 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:40 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:41 125 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:41 328 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:41 531 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:41 718 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:41 921 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:42 343 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:20:42 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:42 781 CommPort AutoChromatoThread Sleep 162.5 ms 
+
+2011-02-08 17:20:42 968 CommPort AutoChromatoThread Sleep 175 ms 
+
+2011-02-08 17:20:43 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:43 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:43 562 CommPort AutoChromatoThread Sleep 181.25 ms 
+
+2011-02-08 17:20:43 828 CommPort AutoChromatoThread Sleep 115.625 ms 
+
+2011-02-08 17:20:43 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:44 171 CommPort AutoChromatoThread Sleep 171.875 ms 
+
+2011-02-08 17:20:44 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:44 562 CommPort AutoChromatoThread Sleep 181.25 ms 
+
+2011-02-08 17:20:44 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:44 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:45 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:45 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:45 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:45 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:45 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:46 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:46 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:46 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:46 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:46 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:47 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:47 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:47 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:47 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:47 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:48 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:48 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:48 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:48 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:48 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:49 203 CommPort AutoChromatoThread Sleep 140.625 ms 
+
+2011-02-08 17:20:49 406 CommPort AutoChromatoThread Sleep 137.5 ms 
+
+2011-02-08 17:20:49 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:49 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:49 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:50 187 CommPort AutoChromatoThread Sleep 156.25 ms 
+
+2011-02-08 17:20:50 343 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:20:50 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:50 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:50 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:51 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:51 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:51 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:51 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:51 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:52 187 CommPort AutoChromatoThread Sleep 156.25 ms 
+
+2011-02-08 17:20:52 343 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:20:52 593 CommPort AutoChromatoThread Sleep 150 ms 
+
+2011-02-08 17:20:52 765 CommPort AutoChromatoThread Sleep 178.125 ms 
+
+2011-02-08 17:20:52 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:53 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:53 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:53 593 CommPort AutoChromatoThread Sleep 150 ms 
+
+2011-02-08 17:20:53 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:53 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:54 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:54 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:54 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:54 828 CommPort AutoChromatoThread Sleep 115.625 ms 
+
+2011-02-08 17:20:54 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:55 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:55 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:55 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:55 796 CommPort AutoChromatoThread Sleep 146.875 ms 
+
+2011-02-08 17:20:55 968 CommPort AutoChromatoThread Sleep 175 ms 
+
+2011-02-08 17:20:56 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:56 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:56 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:56 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:56 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:57 171 CommPort AutoChromatoThread Sleep 171.875 ms 
+
+2011-02-08 17:20:57 390 CommPort AutoChromatoThread Sleep 153.125 ms 
+
+2011-02-08 17:20:57 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:57 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:57 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:20:58 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:20:58 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:58 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:58 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:59 093 CommPort AutoChromatoThread Sleep 50 ms 
+
+2011-02-08 17:20:59 171 CommPort AutoChromatoThread Sleep 171.875 ms 
+
+2011-02-08 17:20:59 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:20:59 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:20:59 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:20:59 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:00 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:00 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:00 546 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:00 750 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:00 953 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:01 156 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:01 359 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:01 765 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:21:01 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:02 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:02 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:02 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:02 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:02 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:03 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:03 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:03 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:03 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:03 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:04 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:04 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:04 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:04 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:04 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:05 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:05 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:05 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:05 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:06 031 CommPort AutoChromatoThread Sleep 134.375 ms 
+
+2011-02-08 17:21:06 234 CommPort AutoChromatoThread Sleep 131.25 ms 
+
+2011-02-08 17:21:06 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:06 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:06 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:07 078 CommPort AutoChromatoThread Sleep 87.5 ms 
+
+2011-02-08 17:21:07 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:07 390 CommPort AutoChromatoThread Sleep 175 ms 
+
+2011-02-08 17:21:07 609 CommPort AutoChromatoThread Sleep 156.25 ms 
+
+2011-02-08 17:21:07 828 CommPort AutoChromatoThread Sleep 137.5 ms 
+
+2011-02-08 17:21:08 046 CommPort AutoChromatoThread Sleep 118.75 ms 
+
+2011-02-08 17:21:08 250 CommPort AutoChromatoThread Sleep 115.625 ms 
+
+2011-02-08 17:21:08 437 CommPort AutoChromatoThread Sleep 128.125 ms 
+
+2011-02-08 17:21:08 640 CommPort AutoChromatoThread Sleep 125 ms 
+
+2011-02-08 17:21:08 828 CommPort AutoChromatoThread Sleep 137.5 ms 
+
+2011-02-08 17:21:09 031 CommPort AutoChromatoThread Sleep 134.375 ms 
+
+2011-02-08 17:21:09 234 CommPort AutoChromatoThread Sleep 131.25 ms 
+
+2011-02-08 17:21:09 437 CommPort AutoChromatoThread Sleep 128.125 ms 
+
+2011-02-08 17:21:09 718 CommPort AutoChromatoThread Sleep 46.875 ms 
+
+2011-02-08 17:21:09 843 CommPort AutoChromatoThread Sleep 121.875 ms 
+
+2011-02-08 17:21:09 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:10 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:10 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:21:10 578 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:21:10 781 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:21:10 968 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:21:11 171 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:21:11 375 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:27:22 796 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 17:27:22 828 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:27:22 843 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 17:27:22 843 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:27:22 859 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 17:27:22 875 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:27:22 890 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 17:27:22 906 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:27:22 937 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-02-08 17:27:22 968 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 17:27:23 140 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 17:27:23 156 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 17:27:23 328 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 17:27:27 875 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:27:28 125 CommPort AutoChromatoThread Sleep 134.375 ms 
+
+2011-02-08 17:27:28 281 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:27:28 484 CommPort AutoChromatoThread Sleep 175 ms 
+
+2011-02-08 17:27:28 671 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:27:28 890 CommPort AutoChromatoThread Sleep 168.75 ms 
+
+2011-02-08 17:27:29 093 CommPort AutoChromatoThread Sleep 165.625 ms 
+
+2011-02-08 17:27:29 265 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:27:29 468 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:27:29 671 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:27:29 875 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:27:30 062 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:27:30 265 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:27:30 500 CommPort AutoChromatoThread Sleep 159.375 ms 
+
+2011-02-08 17:27:30 687 CommPort AutoChromatoThread Sleep 171.875 ms 
+
+2011-02-08 17:27:30 875 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:27:31 062 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:27:31 265 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:27:31 468 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:27:31 671 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:27:31 875 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:27:32 062 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:27:32 328 CommPort AutoChromatoThread Sleep 131.25 ms 
+
+2011-02-08 17:27:32 468 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:27:32 687 CommPort AutoChromatoThread Sleep 171.875 ms 
+
+2011-02-08 17:27:32 875 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:27:33 062 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:27:33 265 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:27:33 375 OnGasGroup StopSample Started
+
+2011-02-08 17:27:33 468 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:27:33 671 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:27:33 750 CommPort CloseLoop count=0
+
+2011-02-08 17:27:33 765 OnGasGroup StopSample Finished
+
+2011-02-08 17:27:36 921 CommPort AutoChromatoThread AutoChromatoThread Finished: 2011:2:8 17:27:36 921
+
+2011-02-08 17:28:03 859 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 17:28:03 890 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:28:03 906 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 17:28:03 921 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:28:03 921 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 17:28:03 937 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:28:03 937 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 17:28:03 953 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:28:04 000 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-02-08 17:28:04 015 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 17:28:04 203 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 17:28:04 203 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 17:28:04 343 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 17:28:05 187 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:28:05 390 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:28:05 593 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:28:05 796 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:28:06 000 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:28:06 203 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:28:06 390 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:28:06 593 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:28:10 437 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:28:12 359 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:28:12 562 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:28:12 765 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:28:12 984 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:28:13 218 CommPort AutoChromatoThread Sleep 140.625 ms 
+
+2011-02-08 17:28:13 406 CommPort AutoChromatoThread Sleep 153.125 ms 
+
+2011-02-08 17:28:13 578 CommPort AutoChromatoThread Sleep 181.25 ms 
+
+2011-02-08 17:28:13 765 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:28:13 968 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:28:14 171 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:28:16 546 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:28:18 656 OnGasGroup StopSample Started
+
+2011-02-08 17:28:19 093 CommPort CloseLoop count=0
+
+2011-02-08 17:28:19 109 OnGasGroup StopSample Finished
+
+2011-02-08 17:29:33 812 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-02-08 17:29:33 843 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:29:33 859 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-02-08 17:29:33 875 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:29:33 890 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-02-08 17:29:33 906 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:29:33 921 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-02-08 17:29:33 921 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-02-08 17:29:33 937 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-02-08 17:29:33 984 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-02-08 17:29:34 156 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-02-08 17:29:34 171 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-02-08 17:29:34 312 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-02-08 17:29:35 171 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:29:35 390 CommPort AutoChromatoThread Sleep 181.25 ms 
+
+2011-02-08 17:29:35 578 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:35 781 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:35 984 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:36 203 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:29:36 406 CommPort AutoChromatoThread Sleep 165.625 ms 
+
+2011-02-08 17:29:36 578 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:36 781 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:36 984 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:37 187 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:29:37 375 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:29:37 578 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:37 781 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:37 984 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:38 187 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:29:42 359 CommPort AutoChromatoThread Sleep 200 ms 
+
+2011-02-08 17:29:42 578 CommPort AutoChromatoThread Sleep 181.25 ms 
+
+2011-02-08 17:29:42 765 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:42 968 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:43 171 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:43 375 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:29:43 593 CommPort AutoChromatoThread Sleep 165.625 ms 
+
+2011-02-08 17:29:43 765 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:43 968 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:44 171 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:44 375 CommPort AutoChromatoThread Sleep 184.375 ms 
+
+2011-02-08 17:29:44 562 CommPort AutoChromatoThread Sleep 196.875 ms 
+
+2011-02-08 17:29:44 765 CommPort AutoChromatoThread Sleep 193.75 ms 
+
+2011-02-08 17:29:44 937 OnGasGroup StopSample Started
+
+2011-02-08 17:29:44 968 CommPort AutoChromatoThread Sleep 190.625 ms 
+
+2011-02-08 17:29:45 171 CommPort AutoChromatoThread Sleep 187.5 ms 
+
+2011-02-08 17:29:45 328 CommPort CloseLoop count=0
+
+2011-02-08 17:29:45 343 OnGasGroup StopSample Finished
+
+2011-02-08 17:29:45 375 CommPort AutoChromatoThread AutoChromatoThread Finished: 2011:2:8 17:29:45 375

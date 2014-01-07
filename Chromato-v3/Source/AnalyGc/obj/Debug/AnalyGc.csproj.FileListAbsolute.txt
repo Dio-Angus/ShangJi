@@ -1,0 +1,66 @@
+E:\Chromato\bin\Debug\AnalyGc.XML
+E:\Chromato\bin\Debug\AnalyGc.exe
+E:\Chromato\bin\Debug\AnalyGc.pdb
+E:\Chromato\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+E:\Chromato\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+E:\Chromato\Source\AnalyGc\obj\Debug\AnalyGc.csproj.GenerateResource.Cache
+E:\Chromato\Source\AnalyGc\obj\Debug\AnalyGc.exe
+E:\Chromato\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+F:\Chromato-v2\bin\Debug\AnalyGc.exe
+F:\Chromato-v2\bin\Debug\AnalyGc.pdb
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\AnalyGc.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\AnalyGc.exe
+F:\Chromato-v2\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+F:\Chromato-v3\bin\Debug\AnalyGc.exe
+F:\Chromato-v3\bin\Debug\AnalyGc.pdb
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.csproj.GenerateResource.Cache
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.exe
+F:\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+F:\Chromato-v3\bin\Debug\AnalyGc.XML
+F:\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
+F:\Chromato-v3-通用版\bin\Debug\AnalyGc.exe
+F:\Chromato-v3-通用版\bin\Debug\AnalyGc.pdb
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.csproj.GenerateResource.Cache
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
+F:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AnalyGc.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AnalyGc.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.csproj.GenerateResource.Cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+D:\Chromato-v3-通用版\bin\Debug\AnalyGc.exe
+D:\Chromato-v3-通用版\bin\Debug\AnalyGc.pdb
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
+D:\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+D:\Chromato-v3-通用版\bin\Debug\AnalyGc.exe.config
+D:\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AnalyGc.exe.config
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AnalyGc.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AnalyGc.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.read.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.write.1.tlog
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb

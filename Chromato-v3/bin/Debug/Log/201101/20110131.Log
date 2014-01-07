@@ -1,0 +1,68 @@
+
+2011-01-31 13:06:13 718 AutoChromatoFrm AutoChromatoFrm_Load AutoChromatoFrm ?入
+
+2011-01-31 13:10:55 125 AutoChromatoFrm AutoChromatoFrm_Load AutoChromatoFrm ?入
+
+2011-01-31 13:15:23 218 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-01-31 13:15:23 265 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-01-31 13:15:23 296 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-01-31 13:15:23 312 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-01-31 13:15:23 328 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-01-31 13:15:23 343 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-01-31 13:15:23 406 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-01-31 13:15:23 437 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-01-31 13:15:23 500 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-01-31 13:15:24 125 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-01-31 13:16:52 500 CommPort Close serial port closed
+
+2011-01-31 19:22:32 125 OnGasGroup StopSample Started
+
+2011-01-31 19:22:33 171 CommPort CloseLoop count=0
+
+2011-01-31 19:22:33 203 CommPort Close serial port closed
+
+2011-01-31 19:22:33 250 CommPort CloseLoop set _isRunLoop = false, time=1
+
+2011-01-31 19:22:33 484 CommPort CloseLoop DataProcessGasBoardThread Join
+
+2011-01-31 19:22:33 703 CommPort Close serial port closed
+
+2011-01-31 19:22:33 765 CommPort DataProcessGasBoardThread DataProcessGasBoardThread Finished: 2011:1:31 19:22:33 765
+
+2011-01-31 19:22:33 875 OnGasGroup StopSample Finished
+
+2011-01-31 19:30:05 968 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-01-31 19:30:06 031 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-01-31 19:30:06 046 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-01-31 19:30:06 093 PipeBiz RealPipeProcess RealPipe1Process ?程退出！
+
+2011-01-31 19:30:06 687 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-01-31 19:30:06 718 PipeBiz HisPipeProcess HisPipeProcess ?程退出！
+
+2011-01-31 19:30:06 750 PipeBiz SamplePipeProcess SamplePipeProcess ?程退出！
+
+2011-01-31 19:30:06 781 PipeBiz ComparePipeProcess ComparePipeProcess ?程退出！
+
+2011-01-31 19:30:07 843 ChromatoFrm ChromatoFrm_Load Chromato ?入
+
+2011-01-31 19:31:21 921 OnGasGroup StopSample Started
+
+2011-01-31 19:31:22 218 CommPort CloseLoop count=0
+
+2011-01-31 19:31:22 218 CommPort Close serial port closed
+
+2011-01-31 19:31:22 328 OnGasGroup StopSample Finished

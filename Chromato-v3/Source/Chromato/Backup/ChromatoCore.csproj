@@ -1,0 +1,1170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06729BC3-1EA6-4F64-B756-D1BCDB5A1B1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChromatoCore</RootNamespace>
+    <AssemblyName>ChromatoCore</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\..\bin\Debug\ChromatoCore.XML</DocumentationFile>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.GRAPHOCXLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\AxInterop.GRAPHOCXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.GRAPHOCXLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\Interop.GRAPHOCXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Release\C#Call\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auto\AutoRequest.cs" />
+    <Compile Include="Compare\CompareBottom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareBottom.Designer.cs">
+      <DependentUpon>CompareBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare\CompareColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareColor.Designer.cs">
+      <DependentUpon>CompareColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare\CompareConfigFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareConfigFrm.Designer.cs">
+      <DependentUpon>CompareConfigFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare\CompareEvent.cs" />
+    <Compile Include="Compare\CompareGraphViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareGraphViewer.Designer.cs">
+      <DependentUpon>CompareGraphViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare\CompareGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareGroup.Designer.cs">
+      <DependentUpon>CompareGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare\CompareList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare\CompareList.Designer.cs">
+      <DependentUpon>CompareList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\PwdUpdateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\PwdUpdateFrm.Designer.cs">
+      <DependentUpon>PwdUpdateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\UserEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\UserEditFrm.Designer.cs">
+      <DependentUpon>UserEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffConfigViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffConfigViewer.Designer.cs">
+      <DependentUpon>OffConfigViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffEvent.cs" />
+    <Compile Include="Off\OffGasSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffGasSum.Designer.cs">
+      <DependentUpon>OffGasSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffGasSumFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Off\OffGasSumFrm.Designer.cs">
+      <DependentUpon>OffGasSumFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffGroup.Designer.cs">
+      <DependentUpon>OffGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffItem.Designer.cs">
+      <DependentUpon>OffItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffDeductedBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffDeductedBase.Designer.cs">
+      <DependentUpon>OffDeductedBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffReportViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffReportViewer.Designer.cs">
+      <DependentUpon>OffReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnBottom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnBottom.Designer.cs">
+      <DependentUpon>OnBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnCollectionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnCollectionViewer.Designer.cs">
+      <DependentUpon>OnCollectionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnEvent.cs" />
+    <Compile Include="On\OnGasGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGasGroup.Designer.cs">
+      <DependentUpon>OnGasGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnGraphDouble.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGraphDouble.Designer.cs">
+      <DependentUpon>OnGraphDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnGraphFour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGraphFour.Designer.cs">
+      <DependentUpon>OnGraphFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnGraphSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGraphSingle.Designer.cs">
+      <DependentUpon>OnGraphSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGroup.Designer.cs">
+      <DependentUpon>OnGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnGroupBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnGroupBase.Designer.cs">
+      <DependentUpon>OnGroupBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnHardStatusViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnHardStatusViewer.Designer.cs">
+      <DependentUpon>OnHardStatusViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnList.Designer.cs">
+      <DependentUpon>OnList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleGasInfoViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleGasInfoViewer.Designer.cs">
+      <DependentUpon>SampleGasInfoViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleGraphViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleGraphViewer.Designer.cs">
+      <DependentUpon>SampleGraphViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleResult.Designer.cs">
+      <DependentUpon>SampleResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleResultViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleResultViewer.Designer.cs">
+      <DependentUpon>SampleResultViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleEvent.cs" />
+    <Compile Include="sample\SampleInfoViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleInfoViewer.Designer.cs">
+      <DependentUpon>SampleInfoViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleRemarkViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleRemarkViewer.Designer.cs">
+      <DependentUpon>SampleRemarkViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleReportViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleReportViewer.Designer.cs">
+      <DependentUpon>SampleReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleGroup.Designer.cs">
+      <DependentUpon>SampleGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleItem.Designer.cs">
+      <DependentUpon>SampleItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleList.Designer.cs">
+      <DependentUpon>SampleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleRegFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sample\SampleRegFrm.Designer.cs">
+      <DependentUpon>SampleRegFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sample\SampleUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sample\SampleUs.Designer.cs">
+      <DependentUpon>SampleUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\AntiControlViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\AntiControlViewer.Designer.cs">
+      <DependentUpon>AntiControlViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\AuxUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\AuxUser.Designer.cs">
+      <DependentUpon>AuxUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\ColumnParaUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\ColumnParaUser.Designer.cs">
+      <DependentUpon>ColumnParaUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\FidUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\FidUser.Designer.cs">
+      <DependentUpon>FidUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\InjectUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\InjectUser.Designer.cs">
+      <DependentUpon>InjectUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\TcdUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\TcdUser.Designer.cs">
+      <DependentUpon>TcdUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Col\CollectionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Col\CollectionViewer.Designer.cs">
+      <DependentUpon>CollectionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyViewer.Designer.cs">
+      <DependentUpon>AnalyViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildBase.Designer.cs">
+      <DependentUpon>AutoBuildBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildFrm.Designer.cs">
+      <DependentUpon>AutoBuildFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildGasFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\AutoBuildGasFrm.Designer.cs">
+      <DependentUpon>AutoBuildGasFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\SizeDensityFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\SizeDensityFrm.Designer.cs">
+      <DependentUpon>SizeDensityFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\SizeDensityViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\SizeDensityViewer.Designer.cs">
+      <DependentUpon>SizeDensityViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\SoluRegistryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\SoluRegistryFrm.Designer.cs">
+      <DependentUpon>SoluRegistryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\IdTableViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\IdTableViewer.Designer.cs">
+      <DependentUpon>IdTableViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\IdTableMng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\IdTableMng.Designer.cs">
+      <DependentUpon>IdTableMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\IdT\IngredientFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\IdT\IngredientFrm.Designer.cs">
+      <DependentUpon>IngredientFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyEditFrm.Designer.cs">
+      <DependentUpon>AnalyEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyMng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Ana\AnalyMng.Designer.cs">
+      <DependentUpon>AnalyMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\HeaderGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Off\OffBottom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffBottom.Designer.cs">
+      <DependentUpon>OffBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffResultViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffResultViewer.Designer.cs">
+      <DependentUpon>OffResultViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffExportViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffExportViewer.Designer.cs">
+      <DependentUpon>OffExportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Info\SoluInfoViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Info\SoluInfoViewer.Designer.cs">
+      <DependentUpon>SoluInfoViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Remark\SoluRemarkViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Remark\SoluRemarkViewer.Designer.cs">
+      <DependentUpon>SoluRemarkViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\SoluGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\SoluGroup.Designer.cs">
+      <DependentUpon>SoluGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\SoluList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\SoluList.Designer.cs">
+      <DependentUpon>SoluList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\SolutionEvent.cs" />
+    <Compile Include="solu\sUi\AimParaUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\AimParaUi.Designer.cs">
+      <DependentUpon>AimParaUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\ArithmaticUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\ArithmaticUi.Designer.cs">
+      <DependentUpon>ArithmaticUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\ArithParaUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\ArithParaUi.Designer.cs">
+      <DependentUpon>ArithParaUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\ChangeParaTimeUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\ChangeParaTimeUi.Designer.cs">
+      <DependentUpon>ChangeParaTimeUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\ColumnModelUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\ColumnModelUi.Designer.cs">
+      <DependentUpon>ColumnModelUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\DescriptionUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\DescriptionUi.Designer.cs">
+      <DependentUpon>DescriptionUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\DriftUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\DriftUi.Designer.cs">
+      <DependentUpon>DriftUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\AnalyNameUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\AnalyNameUi.Designer.cs">
+      <DependentUpon>AnalyNameUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\AnalyParaUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\AnalyParaUi.Designer.cs">
+      <DependentUpon>AnalyParaUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\MinAreaSizeUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\MinAreaSizeUi.Designer.cs">
+      <DependentUpon>MinAreaSizeUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\PeakWideUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\PeakWideUi.Designer.cs">
+      <DependentUpon>PeakWideUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\RatioUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\RatioUi.Designer.cs">
+      <DependentUpon>RatioUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\AimWayUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\AimWayUi.Designer.cs">
+      <DependentUpon>AimWayUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\sUi\SlopeUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\sUi\SlopeUi.Designer.cs">
+      <DependentUpon>SlopeUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcViewer.Designer.cs">
+      <DependentUpon>TimeProcViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabCtrl\CompareUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCtrl\CompareUser.Designer.cs">
+      <DependentUpon>CompareUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabCtrl\OfflineUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCtrl\OfflineUser.Designer.cs">
+      <DependentUpon>OfflineUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabCtrl\OnlineUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCtrl\OnlineUser.Designer.cs">
+      <DependentUpon>OnlineUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabCtrl\SampleUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCtrl\SampleUser.Designer.cs">
+      <DependentUpon>SampleUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\SoluItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\SoluItem.Designer.cs">
+      <DependentUpon>SoluItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabCtrl\SolutionUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCtrl\SolutionUser.Designer.cs">
+      <DependentUpon>SolutionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcEditFrm.Designer.cs">
+      <DependentUpon>TimeProcEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcMng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\Tp\TimeProcMng.Designer.cs">
+      <DependentUpon>TimeProcMng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\AreaUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\AreaUser.Designer.cs">
+      <DependentUpon>AreaUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\SerialUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\SerialUser.designer.cs">
+      <DependentUpon>SerialUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\GeneralUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\GeneralUser.Designer.cs">
+      <DependentUpon>GeneralUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\GridUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\GridUser.Designer.cs">
+      <DependentUpon>GridUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffGraphViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffGraphViewer.Designer.cs">
+      <DependentUpon>OffGraphViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\LabelUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\LabelUser.Designer.cs">
+      <DependentUpon>LabelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\LineUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\LineUser.Designer.cs">
+      <DependentUpon>LineUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="On\OnConfigViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="On\OnConfigViewer.Designer.cs">
+      <DependentUpon>OnConfigViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Off\OffList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Off\OffList.Designer.cs">
+      <DependentUpon>OffList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\PlotUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\PlotUser.Designer.cs">
+      <DependentUpon>PlotUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\ShapeUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\ShapeUser.Designer.cs">
+      <DependentUpon>ShapeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\XaxsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\XaxsUser.Designer.cs">
+      <DependentUpon>XaxsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uiConf\YaxsUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uiConf\YaxsUser.Designer.cs">
+      <DependentUpon>YaxsUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control\TextBoxWriter.cs" />
+    <Compile Include="control\TraceWindowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="control\HeaderGroupBox.resx">
+      <DependentUpon>HeaderGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffResultViewer.resx">
+      <DependentUpon>OffResultViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffExportViewer.resx">
+      <DependentUpon>OffExportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\ArithmaticUi.resx">
+      <DependentUpon>ArithmaticUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\ArithParaUi.resx">
+      <DependentUpon>ArithParaUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\AimWayUi.resx">
+      <DependentUpon>AimWayUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabCtrl\OfflineUser.resx">
+      <DependentUpon>OfflineUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabCtrl\OnlineUser.resx">
+      <DependentUpon>OnlineUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\AreaUser.resx">
+      <DependentUpon>AreaUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\SerialUser.resx">
+      <DependentUpon>SerialUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\GeneralUser.resx">
+      <DependentUpon>GeneralUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\GridUser.resx">
+      <DependentUpon>GridUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffGraphViewer.resx">
+      <DependentUpon>OffGraphViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\LabelUser.resx">
+      <DependentUpon>LabelUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\LineUser.resx">
+      <DependentUpon>LineUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnConfigViewer.resx">
+      <DependentUpon>OnConfigViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffList.resx">
+      <DependentUpon>OffList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\PlotUser.resx">
+      <DependentUpon>PlotUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\ShapeUser.resx">
+      <DependentUpon>ShapeUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\XaxsUser.resx">
+      <DependentUpon>XaxsUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uiConf\YaxsUser.resx">
+      <DependentUpon>YaxsUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control\TraceWindowControl.resx">
+      <DependentUpon>TraceWindowControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="On\OnGroup.resx">
+      <DependentUpon>OnGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffItem.resx">
+      <DependentUpon>OffItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnBottom.resx">
+      <DependentUpon>OnBottom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnHardStatusViewer.resx">
+      <DependentUpon>OnHardStatusViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnList.resx">
+      <DependentUpon>OnList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleGraphViewer.resx">
+      <DependentUpon>SampleGraphViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleResultViewer.resx">
+      <DependentUpon>SampleResultViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleInfoViewer.resx">
+      <DependentUpon>SampleInfoViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleRemarkViewer.resx">
+      <DependentUpon>SampleRemarkViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleReportViewer.resx">
+      <DependentUpon>SampleReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleItem.resx">
+      <DependentUpon>SampleItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleList.resx">
+      <DependentUpon>SampleList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleRegFrm.resx">
+      <DependentUpon>SampleRegFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Col\CollectionViewer.resx">
+      <DependentUpon>CollectionViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Ana\AnalyViewer.resx">
+      <DependentUpon>AnalyViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\SoluRegistryFrm.resx">
+      <DependentUpon>SoluRegistryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\IdTableViewer.resx">
+      <DependentUpon>IdTableViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\IdTableMng.resx">
+      <DependentUpon>IdTableMng.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\IngredientFrm.resx">
+      <DependentUpon>IngredientFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Ana\AnalyEditFrm.resx">
+      <DependentUpon>AnalyEditFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Ana\AnalyMng.resx">
+      <DependentUpon>AnalyMng.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffBottom.resx">
+      <DependentUpon>OffBottom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Info\SoluInfoViewer.resx">
+      <DependentUpon>SoluInfoViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Remark\SoluRemarkViewer.resx">
+      <DependentUpon>SoluRemarkViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\SoluList.resx">
+      <DependentUpon>SoluList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\AimParaUi.resx">
+      <DependentUpon>AimParaUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\ChangeParaTimeUi.resx">
+      <DependentUpon>ChangeParaTimeUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\ColumnModelUi.resx">
+      <DependentUpon>ColumnModelUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\DescriptionUi.resx">
+      <DependentUpon>DescriptionUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\DriftUi.resx">
+      <DependentUpon>DriftUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\AnalyNameUi.resx">
+      <DependentUpon>AnalyNameUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\AnalyParaUi.resx">
+      <DependentUpon>AnalyParaUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\MinAreaSizeUi.resx">
+      <DependentUpon>MinAreaSizeUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\PeakWideUi.resx">
+      <DependentUpon>PeakWideUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\RatioUi.resx">
+      <DependentUpon>RatioUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\sUi\SlopeUi.resx">
+      <DependentUpon>SlopeUi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Tp\TimeProcViewer.resx">
+      <DependentUpon>TimeProcViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabCtrl\SampleUser.resx">
+      <DependentUpon>SampleUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\SoluItem.resx">
+      <DependentUpon>SoluItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabCtrl\SolutionUser.resx">
+      <DependentUpon>SolutionUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Tp\TimeProcEditFrm.resx">
+      <DependentUpon>TimeProcEditFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\Tp\TimeProcMng.resx">
+      <DependentUpon>TimeProcMng.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Off\OffConfigViewer.resx">
+      <DependentUpon>OffConfigViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnCollectionViewer.resx">
+      <DependentUpon>OnCollectionViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\AntiControlViewer.resx">
+      <DependentUpon>AntiControlViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\AuxUser.resx">
+      <DependentUpon>AuxUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\ColumnParaUser.resx">
+      <DependentUpon>ColumnParaUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\FidUser.resx">
+      <DependentUpon>FidUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\InjectUser.resx">
+      <DependentUpon>InjectUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\TcdUser.resx">
+      <DependentUpon>TcdUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\AutoBuildFrm.resx">
+      <DependentUpon>AutoBuildFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\SizeDensityFrm.resx">
+      <DependentUpon>SizeDensityFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\SizeDensityViewer.resx">
+      <DependentUpon>SizeDensityViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoChromatoBll\AutoChromatoBll.csproj">
+      <Project>{04DBBE0A-80B6-485F-9D36-EB64FAD22F16}</Project>
+      <Name>AutoChromatoBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChromatoBll\ChromatoBll.csproj">
+      <Project>{D983C652-146A-4671-9FCC-1F1E92383E3D}</Project>
+      <Name>ChromatoBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChromatoPeak\ChromatoPeak.csproj">
+      <Project>{56D8F8DF-5A5F-48B0-86CC-260B7086D48B}</Project>
+      <Name>ChromatoPeak</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChromatoPrint\ChromatoPrint.csproj">
+      <Project>{60E98583-C43B-4C1F-8EEB-87986001272E}</Project>
+      <Name>ChromatoPrint</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChromatoTool\ChromatoTool.csproj">
+      <Project>{C9D586E6-49FD-4868-8214-3E0B1B4D6730}</Project>
+      <Name>ChromatoTool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\analysis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\divideline.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\reverse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login\LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\PwdUpdateFrm.resx">
+      <DependentUpon>PwdUpdateFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\UserEditFrm.resx">
+      <DependentUpon>UserEditFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffGasSum.resx">
+      <DependentUpon>OffGasSum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffGasSumFrm.resx">
+      <DependentUpon>OffGasSumFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffDeductedBase.resx">
+      <DependentUpon>OffDeductedBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Off\OffReportViewer.resx">
+      <DependentUpon>OffReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnGasGroup.resx">
+      <DependentUpon>OnGasGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnGraphDouble.resx">
+      <DependentUpon>OnGraphDouble.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnGraphFour.resx">
+      <DependentUpon>OnGraphFour.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="On\OnGraphSingle.resx">
+      <DependentUpon>OnGraphSingle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\rangeUpdate.ico" />
+    <Content Include="Resources\ARW03DN.ICO" />
+    <Content Include="Resources\ARW03DNred.ICO" />
+    <Content Include="Resources\ARW03LT.ICO" />
+    <Content Include="Resources\ARW03LTred.ICO" />
+    <Content Include="Resources\ARW03RT.ICO" />
+    <Content Include="Resources\ARW03RTred.ICO" />
+    <Content Include="Resources\ARW03UP.ICO" />
+    <Content Include="Resources\ARW03UPred.ICO" />
+    <Content Include="Resources\baseline.ico" />
+    <Content Include="Resources\chooseColor.ico" />
+    <EmbeddedResource Include="Resources\gather.ico" />
+    <Content Include="Resources\download.ICO" />
+    <Content Include="Resources\Exit.ICO" />
+    <Content Include="Resources\ExportCsv.ico" />
+    <Content Include="Resources\ImportCsv.ICO" />
+    <EmbeddedResource Include="Resources\OOFL.ICO" />
+    <Content Include="Resources\refresh.ico" />
+    <Content Include="Resources\regnew.ico" />
+    <EmbeddedResource Include="Resources\Start.ico" />
+    <EmbeddedResource Include="Resources\Stop.ico" />
+    <Content Include="Resources\saveas.ico" />
+    <Content Include="Resources\waste.ico" />
+    <EmbeddedResource Include="Resources\watchBaseline.ico" />
+    <Content Include="Resources\writer.ico" />
+    <EmbeddedResource Include="Compare\CompareColor.resx">
+      <DependentUpon>CompareColor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compare\CompareConfigFrm.resx">
+      <DependentUpon>CompareConfigFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compare\CompareGraphViewer.resx">
+      <DependentUpon>CompareGraphViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compare\CompareList.resx">
+      <DependentUpon>CompareList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tail.ico" />
+    <EmbeddedResource Include="Resources\zoomFit.ico" />
+    <EmbeddedResource Include="Resources\zoomInShape.ico" />
+    <EmbeddedResource Include="Resources\zoomInVerti.ico" />
+    <EmbeddedResource Include="Resources\zoomInHori.ico" />
+    <EmbeddedResource Include="sample\SampleGasInfoViewer.resx">
+      <DependentUpon>SampleGasInfoViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sample\SampleUs.resx">
+      <DependentUpon>SampleUs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\AutoBuildBase.resx">
+      <DependentUpon>AutoBuildBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\IdT\AutoBuildGasFrm.resx">
+      <DependentUpon>AutoBuildGasFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabCtrl\CompareUser.resx">
+      <DependentUpon>CompareUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

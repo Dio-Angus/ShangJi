@@ -1,0 +1,8 @@
+F:\Chromato-v2\Source\AnalyGc\bin\Release\AnalyGc.exe
+F:\Chromato-v2\Source\AnalyGc\bin\Release\AnalyGc.pdb
+F:\Chromato-v2\Source\AnalyGc\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\AnalyGc\obj\Release\AnalyGc.GcDataAnalyFrm.resources
+F:\Chromato-v2\Source\AnalyGc\obj\Release\AnalyGc.Properties.Resources.resources
+F:\Chromato-v2\Source\AnalyGc\obj\Release\AnalyGc.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\AnalyGc\obj\Release\AnalyGc.exe
+F:\Chromato-v2\Source\AnalyGc\obj\Release\AnalyGc.pdb

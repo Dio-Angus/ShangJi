@@ -1,0 +1,46 @@
+
+2011-08-03 21:44:07 328 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2011-08-03 21:44:07 343 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-03 21:44:07 375 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2011-08-03 21:44:07 375 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-03 21:44:07 390 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2011-08-03 21:44:07 390 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-03 21:44:07 390 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2011-08-03 21:44:07 390 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2011-08-03 21:44:07 406 PipeBiz HisPipeProcess hisPipe client 接入
+
+2011-08-03 21:44:07 406 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2011-08-03 21:44:07 406 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2011-08-03 21:44:07 406 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2011-08-03 21:44:07 421 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2011-08-03 21:44:07 421 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2011-08-03 21:44:07 437 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2011-08-03 21:44:08 421 ChromatoFrm AutoChromatoThread Sleep 2106.25 ms 
+
+2011-08-03 21:44:10 531 ChromatoFrm AutoChromatoThread Sleep 2196.875 ms 
+
+2011-08-03 21:44:12 734 ChromatoFrm AutoChromatoThread Sleep 2193.75 ms 
+
+2011-08-03 21:44:14 156 OnGasGroup StopSample Started
+
+2011-08-03 21:44:14 437 CommPort CloseLoop count=0
+
+2011-08-03 21:44:14 437 CommPort Close serial port closed
+
+2011-08-03 21:44:14 437 OnGasGroup StopSample Finished
+
+2011-08-03 21:44:14 937 ChromatoFrm AutoChromatoThread AutoChromatoThread Finished: 2011:8:3 21:44:14 937

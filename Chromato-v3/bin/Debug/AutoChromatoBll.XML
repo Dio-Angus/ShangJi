@@ -1,0 +1,771 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoChromatoBll</name>
+    </assembly>
+    <members>
+        <member name="F:AutoChromatoBll.dao.RequestDao._sqlHelper">
+            <summary>
+            库操作类
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RequestDao.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RequestDao.QueryRequest(ChromatoTool.dto.RequestDto)">
+            <summary>
+            查询申请
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RequestDao.InsertRequest(ChromatoTool.dto.RequestDto)">
+            <summary>
+            插入新的申请
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RequestDao.LoadAllRequest">
+            <summary>
+            查询当前的全部申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RequestDao.QueryStart(System.Collections.ArrayList)">
+            <summary>
+            查询需要启动还没有启动的请求类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.dao.SolutionDao">
+            <summary>
+            方案Dao
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.dao.SolutionDao._sqlHelper">
+            <summary>
+            库操作类
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.dao.SolutionDao._ds">
+            <summary>
+            方法数据集合
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadSolutionList">
+            <summary>
+            查询全部方案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadAllSolu">
+            <summary>
+            查询全部方案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadSoluByTime(System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="startDay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadSoluByTime(System.String,System.String)">
+            <summary>
+            查询某段时间范围的方案
+            </summary>
+            <param name="startDay"></param>
+            <param name="endDay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.InsertSolution(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            插入方案数据
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.GetSolutionInfoName(System.Int32)">
+            <summary>
+            查询方案详细内容
+            </summary>
+            <param name="SolutionID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.GetSolutionNameByID(System.Int32)">
+            <summary>
+            根据方案ID查询方案名
+            </summary>
+            <param name="soluID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.GetNewSolutionID">
+            <summary>
+            返回新的方案ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.UpdateSolution(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            更新方案到对应的数据库
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.DeleteSolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            删除方案
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.QuerySolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            根据SolutionID查询某方案信息
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadSoluByName(System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="solutionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.SolutionDao.LoadSoluByName(System.String,System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="solutionName"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.dao.RelationDao">
+            <summary>
+            索引关系Dao
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.dao.RelationDao._sqlHelper">
+            <summary>
+            库操作类
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RelationDao.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RelationDao.LoadRelationList">
+            <summary>
+            查询全部关系
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RelationDao.GetSolutionID(ChromatoTool.dto.RelationDto)">
+            <summary>
+            根据样品ID查找方案ID
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RelationDao.InsertRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            插入索引关系数据
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.RelationDao.UpdateRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            更新关系
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="F:AutoChromatoBll.dao.PeakDao._sqliteDbName">
+            <summary>
+            数据库操作对象
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.LoadPeak(System.String,ChromatoTool.dto.PeakDto@)">
+            <summary>
+            提取谱图参数
+            </summary>
+            <param name="path"></param>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.UpdatePeak(System.String,ChromatoTool.dto.PeakDto)">
+            <summary>
+            结果表中更新一个峰
+            </summary>
+            <param name="path"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.DeletePeak(System.String,System.Int32)">
+            <summary>
+            删除一条峰的结果
+            </summary>
+            <param name="path"></param>
+            <param name="peakID"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.AddPeak(System.String,ChromatoTool.dto.PeakDto)">
+            <summary>
+            结果表中追加一个峰
+            </summary>
+            <param name="path"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.LoadPeakResult(System.String)">
+            <summary>
+            查询峰的结果
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.PeakDao.LoadPrintPeakResult(System.String)">
+            <summary>
+            查询峰的结果
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.bll.SolutionBiz">
+            <summary>
+            方案逻辑
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadList">
+            <summary>
+            查询方案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadAllSolu">
+            <summary>
+            查询方案
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadSoluByTime(System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="startDay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadSoluByTime(System.String,System.String)">
+            <summary>
+            查询某段时间范围的方案
+            </summary>
+            <param name="startDay"></param>
+            <param name="endDay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.GetSolutionInfoName(System.Int32)">
+            <summary>
+            查询方案详细内容
+            </summary>
+            <param name="SolutionID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.GetSolutionNameBySampleID(ChromatoTool.dto.RelationDto)">
+            <summary>
+            查询方案名
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.GetSolutionNameByID(System.Int32)">
+            <summary>
+            查询方案名
+            </summary>
+            <param name="soluID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.GetSolutionID(ChromatoTool.dto.RelationDto)">
+            <summary>
+            查询方案ID
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.InsertSolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            插入新的方案
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.UpdateSolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            更新某方案
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.DeleteSolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            删除指定方案
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.QuerySolu(ChromatoTool.dto.SolutionDto)">
+            <summary>
+            根据SolutionID查询某方案信息
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadSoluByName(System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="solutionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.SolutionBiz.LoadSoluByName(System.String,System.String)">
+            <summary>
+            查询方案
+            </summary>
+            <param name="solutionName"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.bll.RelationBiz">
+            <summary>
+            关系的逻辑
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.RelationBiz.InsertRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            插入新的关系
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.RelationBiz.UpdateRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            更新关系
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="T:AutoChromatoBll.bll.ParaBiz">
+            <summary>
+            样品信息查询,从数据库读取
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPara(System.String)">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPickupPara(System.String)">
+            <summary>
+            查询全部的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPickupPara(System.String,System.String)">
+            <summary>
+            查询从某天开始到今天的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPickupPara(System.String,System.String,System.String)">
+            <summary>
+            查询某段时间范围的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPickupPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPara(System.String,System.String)">
+            <summary>
+            查询从某天开始到今天的样品文件
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadPara(System.String,System.String,System.String)">
+            <summary>
+            查询某段时间范围的样品文件
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.UpdateStatus(ChromatoTool.dto.ParaDto)">
+            <summary>
+            删除样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.UpdatePara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            更新样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.InsertPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            建立新样品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.UpdateParaToCollected(System.String,System.String)">
+            <summary>
+            更新样品状态为已经采集
+            </summary>
+            <param name="sampleID"></param>
+            <param name="regTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.CheckParaStatus(ChromatoTool.dto.ParaDto)">
+            <summary>
+            检查样品状态
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.ClearPara(System.String)">
+            <summary>
+            修改正在采集的样品为已采集
+            </summary>
+            <param name="status"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadParaByName(System.String)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="sampleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadParaByName(System.String,ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="sampleName"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadAllChannelPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            装载全部通道的样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.bll.ParaBiz.LoadParaByKey(ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.bll.RequestBiz">
+            <summary>
+            请求表逻辑
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.RequestBiz.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.bll.RequestBiz.InsertRequest(ChromatoTool.dto.RequestDto)">
+            <summary>
+            插入新的申请
+            </summary>
+            <param name="dto"></param>
+            <returns>0 faied, 1 exist, 2 successed</returns>
+        </member>
+        <member name="M:AutoChromatoBll.bll.RequestBiz.LoadAllRequest">
+            <summary>
+            查询当前的全部申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.dao.ParaDao">
+            <summary>
+            谱图参数访问Dao
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.dao.ParaDao._sqlHelper">
+            <summary>
+            库操作类
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPara(System.String)">
+            <summary>
+            提取列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.GetSortOrder">
+            <summary>
+            取得缺省的排序方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.GetAllowChannelID">
+            <summary>
+            获取允许的通道ID类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPara(System.String,System.String)">
+            <summary>
+            查询从某天开始到今天的样品文件
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPara(System.String,System.String,System.String)">
+            <summary>
+            查询某段时间范围的样品文件
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPickupPara(System.String)">
+            <summary>
+            查询全部的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPickupPara(System.String,System.String)">
+            <summary>
+            查询从某天开始到今天的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPickupPara(System.String,System.String,System.String)">
+            <summary>
+            查询某段时间范围的样品文件,增加IsPickup字段
+            </summary>
+            <param name="ss"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadPickupPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.UpdateStatus(ChromatoTool.dto.ParaDto)">
+            <summary>
+            保存谱图参数到对应的数据库
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.UpdatePara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            插入参数信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.InsertPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            更新样品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.UpdateParaToCollected(System.String,System.String)">
+            <summary>
+            更新样品状态为已经采集
+            </summary>
+            <param name="sampleID"></param>
+            <param name="regTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.CheckParaStatus(ChromatoTool.dto.ParaDto)">
+            <summary>
+            检查样品状态
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.ClearPara(System.String)">
+            <summary>
+            修改正在采集的样品为已采集
+            </summary>
+            <param name="status"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadParaByName(System.String)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="sampleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadParaByName(System.String,ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="sampleName"></param>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadAllChannelPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            装载全部通道的样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadParaByKey(ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadParaByStatus(ChromatoTool.dto.ParaDto)">
+            <summary>
+            根据样品ID，注册时间来查询已采集的样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.dao.ParaDao.LoadCanStartPara">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AutoChromatoBll.inf.RequestInf">
+            <summary>
+            样品注册逻辑
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.inf.RequestInf._bizSolu">
+            <summary>
+            方案逻辑
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.inf.RequestInf._bizPara">
+            <summary>
+            样品逻辑
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.inf.RequestInf._bizRelation">
+            <summary>
+            关系表逻辑
+            </summary>
+        </member>
+        <member name="F:AutoChromatoBll.inf.RequestInf._bizRequest">
+            <summary>
+            申请表逻辑
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.RegSampleInfo(ChromatoTool.dto.ParaDto,ChromatoTool.dto.RelationDto,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            申请样品注册
+            </summary>
+            <param name="dtoPara"></param>
+            <param name="dtoRelation"></param>
+            <param name="checkA"></param>
+            <param name="checkB"></param>
+            <param name="checkC"></param>
+            <param name="checkD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.IsParaNameRepetited(ChromatoTool.dto.ParaDto)">
+            <summary>
+            样品名是否重复
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.InsertParaAndRelation(ChromatoTool.dto.ParaDto,ChromatoTool.dto.RelationDto)">
+            <summary>
+            插入样品和关系
+            </summary>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadSoluList">
+            <summary>
+            取得方案信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadAllRequest">
+            <summary>
+            查询当前的全部申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.GetAnalyResult(ChromatoTool.dto.ParaDto)">
+            <summary>
+            取得分析结果
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadStartRequest(System.Collections.ArrayList@)">
+            <summary>
+            查询需要启动还没有启动的请求类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadCollectedSample(ChromatoTool.dto.ParaDto)">
+            <summary>
+            查询需要分析的样品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadPara(System.String)">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadCanStartPara">
+            <summary>
+            查询当前样品文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.InsertRequest(ChromatoTool.dto.RequestDto)">
+            <summary>
+            插入新的申请
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:AutoChromatoBll.inf.RequestInf.LoadAllChannelPara(ChromatoTool.dto.ParaDto)">
+            <summary>
+            装载全部通道的样品
+            </summary>
+            <param name="dto"></param>
+        </member>
+    </members>
+</doc>

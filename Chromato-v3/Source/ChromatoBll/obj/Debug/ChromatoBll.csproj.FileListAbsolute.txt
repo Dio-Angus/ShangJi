@@ -1,0 +1,38 @@
+E:\Chromato\bin\Debug\ChromatoBll.dll
+E:\Chromato\bin\Debug\ChromatoBll.pdb
+E:\Chromato\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+E:\Chromato\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+F:\Chromato-v2\bin\Debug\ChromatoBll.dll
+F:\Chromato-v2\bin\Debug\ChromatoBll.pdb
+F:\Chromato-v2\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+F:\Chromato-v2\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+F:\Chromato-v3\bin\Debug\ChromatoBll.dll
+F:\Chromato-v3\bin\Debug\ChromatoBll.pdb
+F:\Chromato-v3\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+F:\Chromato-v3\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+F:\Chromato-v3\bin\Debug\ChromatoBll.XML
+F:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+F:\Chromato-v3-通用版\bin\Debug\ChromatoBll.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoBll.dll
+F:\Chromato-v3-通用版\bin\Debug\ChromatoBll.pdb
+F:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoBll.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoBll.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoBll.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+D:\Chromato-v3-通用版\bin\Debug\ChromatoBll.dll
+D:\Chromato-v3-通用版\bin\Debug\ChromatoBll.pdb
+D:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+D:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoBll.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoBll.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb

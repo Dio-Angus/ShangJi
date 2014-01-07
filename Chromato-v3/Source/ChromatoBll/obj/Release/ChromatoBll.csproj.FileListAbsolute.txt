@@ -1,0 +1,15 @@
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\ChromatoBll.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\ChromatoBll.pdb
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\AxInterop.GRAPHOCXLib.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\ChromatoTool.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\Interop.GRAPHOCXLib.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\System.Data.SQLite.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\vjscor.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\vjsvwaux.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\netcdf.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\vjslib.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\vjslibcw.dll
+F:\Chromato-v2\Source\ChromatoBll\bin\Release\ChromatoTool.pdb
+F:\Chromato-v2\Source\ChromatoBll\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoBll\obj\Release\ChromatoBll.dll
+F:\Chromato-v2\Source\ChromatoBll\obj\Release\ChromatoBll.pdb

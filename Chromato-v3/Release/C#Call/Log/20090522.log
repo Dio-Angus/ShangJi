@@ -1,0 +1,3636 @@
+
+2009-05-22 20:52:06 671 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2009-05-22 20:52:06 859 PipeBiz HisPipeProcess hisPipe client 接入
+
+2009-05-22 20:52:06 859 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2009-05-22 20:52:06 906 PipeBiz RealPipeAProcess realPipe A client 接入
+
+2009-05-22 20:52:06 906 PipeBiz RealPipeAProcess RealPipeAProcess 线程退出！
+
+2009-05-22 20:52:06 906 PipeBiz RealPipeBProcess realPipe B client 接入
+
+2009-05-22 20:52:06 921 PipeBiz RealPipeBProcess RealPipeBProcess 线程退出！
+
+2009-05-22 20:53:17 937   splitterTree_SplitterMoved
+
+2009-05-22 20:53:54 718 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2009-05-22 20:53:54 921 PipeBiz HisPipeProcess hisPipe client 接入
+
+2009-05-22 20:53:54 921 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2009-05-22 20:53:54 953 PipeBiz RealPipeAProcess realPipe A client 接入
+
+2009-05-22 20:53:54 953 PipeBiz RealPipeBProcess realPipe B client 接入
+
+2009-05-22 20:53:54 953 PipeBiz RealPipeAProcess RealPipeAProcess 线程退出！
+
+2009-05-22 20:53:54 953 PipeBiz RealPipeBProcess RealPipeBProcess 线程退出！
+
+2009-05-22 20:54:20 984 TransSimuBiz SimuOnlineThread SimuOnlineThread Start: 2009:5:22 20:54:20 984
+
+2009-05-22 20:54:21 484 TransSimuBiz SimuOnlineThread eclipse time = 500
+
+2009-05-22 20:54:21 484 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 10
+
+2009-05-22 20:54:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 359.375 ms 
+
+2009-05-22 20:54:22 000 TransSimuBiz SimuOnlineThread eclipse time = 1015.625
+
+2009-05-22 20:54:22 000 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 20
+
+2009-05-22 20:54:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:23 015 TransSimuBiz SimuOnlineThread eclipse time = 2031.25
+
+2009-05-22 20:54:23 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 30
+
+2009-05-22 20:54:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:24 000 TransSimuBiz SimuOnlineThread eclipse time = 3015.625
+
+2009-05-22 20:54:24 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 40
+
+2009-05-22 20:54:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:25 000 TransSimuBiz SimuOnlineThread eclipse time = 4015.625
+
+2009-05-22 20:54:25 000 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 50
+
+2009-05-22 20:54:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:26 000 TransSimuBiz SimuOnlineThread eclipse time = 5015.625
+
+2009-05-22 20:54:26 000 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 60
+
+2009-05-22 20:54:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:27 015 TransSimuBiz SimuOnlineThread eclipse time = 6031.25
+
+2009-05-22 20:54:27 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 70
+
+2009-05-22 20:54:28 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:28 000 TransSimuBiz SimuOnlineThread eclipse time = 7015.625
+
+2009-05-22 20:54:28 000 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 80
+
+2009-05-22 20:54:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:54:29 000 TransSimuBiz SimuOnlineThread eclipse time = 8015.625
+
+2009-05-22 20:54:29 000 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 90
+
+2009-05-22 20:54:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:30 015 TransSimuBiz SimuOnlineThread eclipse time = 9031.25
+
+2009-05-22 20:54:30 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 100
+
+2009-05-22 20:54:31 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:31 015 TransSimuBiz SimuOnlineThread eclipse time = 10031.25
+
+2009-05-22 20:54:31 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 110
+
+2009-05-22 20:54:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:32 000 TransSimuBiz SimuOnlineThread eclipse time = 11015.625
+
+2009-05-22 20:54:32 015 TransSimuBiz SimuOnlineThread needCount = 6000000, EclipseCount = 120
+
+2009-05-22 20:54:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:33 015 TransSimuBiz SimuOnlineThread eclipse time = 12031.25
+
+2009-05-22 20:54:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 130
+
+2009-05-22 20:54:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:34 000 TransSimuBiz SimuOnlineThread eclipse time = 13015.625
+
+2009-05-22 20:54:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 140
+
+2009-05-22 20:54:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:54:35 000 TransSimuBiz SimuOnlineThread eclipse time = 14015.625
+
+2009-05-22 20:54:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 150
+
+2009-05-22 20:54:36 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:54:36 000 TransSimuBiz SimuOnlineThread eclipse time = 15015.625
+
+2009-05-22 20:54:36 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 160
+
+2009-05-22 20:54:37 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:37 015 TransSimuBiz SimuOnlineThread eclipse time = 16031.25
+
+2009-05-22 20:54:37 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 170
+
+2009-05-22 20:54:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:38 000 TransSimuBiz SimuOnlineThread eclipse time = 17015.625
+
+2009-05-22 20:54:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 180
+
+2009-05-22 20:54:39 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:39 000 TransSimuBiz SimuOnlineThread eclipse time = 18015.625
+
+2009-05-22 20:54:39 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 190
+
+2009-05-22 20:54:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:40 000 TransSimuBiz SimuOnlineThread eclipse time = 19015.625
+
+2009-05-22 20:54:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 200
+
+2009-05-22 20:54:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:41 015 TransSimuBiz SimuOnlineThread eclipse time = 20031.25
+
+2009-05-22 20:54:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 210
+
+2009-05-22 20:54:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:54:42 000 TransSimuBiz SimuOnlineThread eclipse time = 21015.625
+
+2009-05-22 20:54:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 220
+
+2009-05-22 20:54:43 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:43 015 TransSimuBiz SimuOnlineThread eclipse time = 22031.25
+
+2009-05-22 20:54:43 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 230
+
+2009-05-22 20:54:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:44 000 TransSimuBiz SimuOnlineThread eclipse time = 23015.625
+
+2009-05-22 20:54:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 240
+
+2009-05-22 20:54:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:54:45 015 TransSimuBiz SimuOnlineThread eclipse time = 24015.625
+
+2009-05-22 20:54:45 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 250
+
+2009-05-22 20:54:46 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:54:46 000 TransSimuBiz SimuOnlineThread eclipse time = 25015.625
+
+2009-05-22 20:54:46 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 260
+
+2009-05-22 20:54:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:47 000 TransSimuBiz SimuOnlineThread eclipse time = 26015.625
+
+2009-05-22 20:54:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 270
+
+2009-05-22 20:54:48 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:48 031 TransSimuBiz SimuOnlineThread eclipse time = 27031.25
+
+2009-05-22 20:54:48 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 280
+
+2009-05-22 20:54:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:54:49 000 TransSimuBiz SimuOnlineThread eclipse time = 28015.625
+
+2009-05-22 20:54:49 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 290
+
+2009-05-22 20:54:49 500   splitterTree_SplitterMoved
+
+2009-05-22 20:54:50 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:50 000 TransSimuBiz SimuOnlineThread eclipse time = 29015.625
+
+2009-05-22 20:54:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 300
+
+2009-05-22 20:54:50 796   splitterTree_SplitterMoved
+
+2009-05-22 20:54:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:51 000 TransSimuBiz SimuOnlineThread eclipse time = 30015.625
+
+2009-05-22 20:54:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 310
+
+2009-05-22 20:54:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:52 000 TransSimuBiz SimuOnlineThread eclipse time = 31015.625
+
+2009-05-22 20:54:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 320
+
+2009-05-22 20:54:53 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:53 015 TransSimuBiz SimuOnlineThread eclipse time = 32031.25
+
+2009-05-22 20:54:53 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 330
+
+2009-05-22 20:54:54 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:54 015 TransSimuBiz SimuOnlineThread eclipse time = 33031.25
+
+2009-05-22 20:54:54 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 340
+
+2009-05-22 20:54:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 20:54:55 000 TransSimuBiz SimuOnlineThread eclipse time = 34015.625
+
+2009-05-22 20:54:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 350
+
+2009-05-22 20:54:56 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:54:56 015 TransSimuBiz SimuOnlineThread eclipse time = 35031.25
+
+2009-05-22 20:54:56 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 360
+
+2009-05-22 20:54:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:54:57 000 TransSimuBiz SimuOnlineThread eclipse time = 36015.625
+
+2009-05-22 20:54:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 370
+
+2009-05-22 20:54:58 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:58 015 TransSimuBiz SimuOnlineThread eclipse time = 37031.25
+
+2009-05-22 20:54:58 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 380
+
+2009-05-22 20:54:59 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:54:59 031 TransSimuBiz SimuOnlineThread eclipse time = 38031.25
+
+2009-05-22 20:54:59 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 390
+
+2009-05-22 20:55:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:00 000 TransSimuBiz SimuOnlineThread eclipse time = 39015.625
+
+2009-05-22 20:55:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 400
+
+2009-05-22 20:55:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:01 000 TransSimuBiz SimuOnlineThread eclipse time = 40015.625
+
+2009-05-22 20:55:01 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 410
+
+2009-05-22 20:55:02 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:02 031 TransSimuBiz SimuOnlineThread eclipse time = 41046.875
+
+2009-05-22 20:55:02 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 420
+
+2009-05-22 20:55:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:55:03 000 TransSimuBiz SimuOnlineThread eclipse time = 42015.625
+
+2009-05-22 20:55:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 430
+
+2009-05-22 20:55:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:04 000 TransSimuBiz SimuOnlineThread eclipse time = 43015.625
+
+2009-05-22 20:55:04 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 440
+
+2009-05-22 20:55:05 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:05 031 TransSimuBiz SimuOnlineThread eclipse time = 44046.875
+
+2009-05-22 20:55:05 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 450
+
+2009-05-22 20:55:06 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:55:06 000 TransSimuBiz SimuOnlineThread eclipse time = 45015.625
+
+2009-05-22 20:55:06 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 460
+
+2009-05-22 20:55:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:07 000 TransSimuBiz SimuOnlineThread eclipse time = 46015.625
+
+2009-05-22 20:55:07 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 470
+
+2009-05-22 20:55:08 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:08 015 TransSimuBiz SimuOnlineThread eclipse time = 47031.25
+
+2009-05-22 20:55:08 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 480
+
+2009-05-22 20:55:09 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:09 000 TransSimuBiz SimuOnlineThread eclipse time = 48015.625
+
+2009-05-22 20:55:09 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 490
+
+2009-05-22 20:55:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:10 015 TransSimuBiz SimuOnlineThread eclipse time = 49031.25
+
+2009-05-22 20:55:10 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 500
+
+2009-05-22 20:55:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:11 000 TransSimuBiz SimuOnlineThread eclipse time = 50015.625
+
+2009-05-22 20:55:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 510
+
+2009-05-22 20:55:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:12 000 TransSimuBiz SimuOnlineThread eclipse time = 51015.625
+
+2009-05-22 20:55:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 520
+
+2009-05-22 20:55:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:13 000 TransSimuBiz SimuOnlineThread eclipse time = 52015.625
+
+2009-05-22 20:55:13 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 530
+
+2009-05-22 20:55:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:14 000 TransSimuBiz SimuOnlineThread eclipse time = 53015.625
+
+2009-05-22 20:55:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 540
+
+2009-05-22 20:55:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:15 000 TransSimuBiz SimuOnlineThread eclipse time = 54015.625
+
+2009-05-22 20:55:15 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 550
+
+2009-05-22 20:55:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:16 000 TransSimuBiz SimuOnlineThread eclipse time = 55015.625
+
+2009-05-22 20:55:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 560
+
+2009-05-22 20:55:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:17 000 TransSimuBiz SimuOnlineThread eclipse time = 56015.625
+
+2009-05-22 20:55:17 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 570
+
+2009-05-22 20:55:18 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:18 000 TransSimuBiz SimuOnlineThread eclipse time = 57015.625
+
+2009-05-22 20:55:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 580
+
+2009-05-22 20:55:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:19 000 TransSimuBiz SimuOnlineThread eclipse time = 58015.625
+
+2009-05-22 20:55:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 590
+
+2009-05-22 20:55:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:20 000 TransSimuBiz SimuOnlineThread eclipse time = 59015.625
+
+2009-05-22 20:55:20 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 600
+
+2009-05-22 20:55:21 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:21 000 TransSimuBiz SimuOnlineThread eclipse time = 60015.625
+
+2009-05-22 20:55:21 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 610
+
+2009-05-22 20:55:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:55:22 000 TransSimuBiz SimuOnlineThread eclipse time = 61015.625
+
+2009-05-22 20:55:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 620
+
+2009-05-22 20:55:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:55:23 015 TransSimuBiz SimuOnlineThread eclipse time = 62031.25
+
+2009-05-22 20:55:23 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 630
+
+2009-05-22 20:55:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:24 000 TransSimuBiz SimuOnlineThread eclipse time = 63015.625
+
+2009-05-22 20:55:24 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 640
+
+2009-05-22 20:55:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:25 000 TransSimuBiz SimuOnlineThread eclipse time = 64015.625
+
+2009-05-22 20:55:25 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 650
+
+2009-05-22 20:55:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:26 000 TransSimuBiz SimuOnlineThread eclipse time = 65015.625
+
+2009-05-22 20:55:26 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 660
+
+2009-05-22 20:55:27 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:27 000 TransSimuBiz SimuOnlineThread eclipse time = 66015.625
+
+2009-05-22 20:55:27 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 670
+
+2009-05-22 20:55:28 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:28 015 TransSimuBiz SimuOnlineThread eclipse time = 67031.25
+
+2009-05-22 20:55:28 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 680
+
+2009-05-22 20:55:29 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:29 015 TransSimuBiz SimuOnlineThread eclipse time = 68031.25
+
+2009-05-22 20:55:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 690
+
+2009-05-22 20:55:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:30 015 TransSimuBiz SimuOnlineThread eclipse time = 69031.25
+
+2009-05-22 20:55:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 700
+
+2009-05-22 20:55:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:31 000 TransSimuBiz SimuOnlineThread eclipse time = 70015.625
+
+2009-05-22 20:55:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 710
+
+2009-05-22 20:55:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:32 000 TransSimuBiz SimuOnlineThread eclipse time = 71015.625
+
+2009-05-22 20:55:32 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 720
+
+2009-05-22 20:55:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 671.875 ms 
+
+2009-05-22 20:55:33 015 TransSimuBiz SimuOnlineThread eclipse time = 72031.25
+
+2009-05-22 20:55:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 730
+
+2009-05-22 20:55:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:34 000 TransSimuBiz SimuOnlineThread eclipse time = 73015.625
+
+2009-05-22 20:55:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 740
+
+2009-05-22 20:55:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:35 000 TransSimuBiz SimuOnlineThread eclipse time = 74015.625
+
+2009-05-22 20:55:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 750
+
+2009-05-22 20:55:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:55:36 015 TransSimuBiz SimuOnlineThread eclipse time = 75031.25
+
+2009-05-22 20:55:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 760
+
+2009-05-22 20:55:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:37 000 TransSimuBiz SimuOnlineThread eclipse time = 76015.625
+
+2009-05-22 20:55:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 770
+
+2009-05-22 20:55:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:38 000 TransSimuBiz SimuOnlineThread eclipse time = 77015.625
+
+2009-05-22 20:55:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 780
+
+2009-05-22 20:55:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:39 015 TransSimuBiz SimuOnlineThread eclipse time = 78031.25
+
+2009-05-22 20:55:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 790
+
+2009-05-22 20:55:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:40 000 TransSimuBiz SimuOnlineThread eclipse time = 79015.625
+
+2009-05-22 20:55:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 800
+
+2009-05-22 20:55:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:55:41 015 TransSimuBiz SimuOnlineThread eclipse time = 80031.25
+
+2009-05-22 20:55:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 810
+
+2009-05-22 20:55:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:42 000 TransSimuBiz SimuOnlineThread eclipse time = 81015.625
+
+2009-05-22 20:55:42 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 820
+
+2009-05-22 20:55:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:43 000 TransSimuBiz SimuOnlineThread eclipse time = 82015.625
+
+2009-05-22 20:55:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 830
+
+2009-05-22 20:55:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:44 000 TransSimuBiz SimuOnlineThread eclipse time = 83015.625
+
+2009-05-22 20:55:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 840
+
+2009-05-22 20:55:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:45 000 TransSimuBiz SimuOnlineThread eclipse time = 84015.625
+
+2009-05-22 20:55:45 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 850
+
+2009-05-22 20:55:46 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:46 015 TransSimuBiz SimuOnlineThread eclipse time = 85031.25
+
+2009-05-22 20:55:46 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 860
+
+2009-05-22 20:55:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:47 000 TransSimuBiz SimuOnlineThread eclipse time = 86015.625
+
+2009-05-22 20:55:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 870
+
+2009-05-22 20:55:48 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:48 015 TransSimuBiz SimuOnlineThread eclipse time = 87031.25
+
+2009-05-22 20:55:48 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 880
+
+2009-05-22 20:55:49 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:49 015 TransSimuBiz SimuOnlineThread eclipse time = 88031.25
+
+2009-05-22 20:55:49 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 890
+
+2009-05-22 20:55:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:50 015 TransSimuBiz SimuOnlineThread eclipse time = 89031.25
+
+2009-05-22 20:55:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 900
+
+2009-05-22 20:55:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:51 000 TransSimuBiz SimuOnlineThread eclipse time = 90015.625
+
+2009-05-22 20:55:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 910
+
+2009-05-22 20:55:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:55:52 000 TransSimuBiz SimuOnlineThread eclipse time = 91015.625
+
+2009-05-22 20:55:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 920
+
+2009-05-22 20:55:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:53 000 TransSimuBiz SimuOnlineThread eclipse time = 92015.625
+
+2009-05-22 20:55:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 930
+
+2009-05-22 20:55:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:54 000 TransSimuBiz SimuOnlineThread eclipse time = 93015.625
+
+2009-05-22 20:55:54 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 940
+
+2009-05-22 20:55:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:55 000 TransSimuBiz SimuOnlineThread eclipse time = 94015.625
+
+2009-05-22 20:55:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 950
+
+2009-05-22 20:55:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:55:56 000 TransSimuBiz SimuOnlineThread eclipse time = 95015.625
+
+2009-05-22 20:55:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 960
+
+2009-05-22 20:55:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:57 000 TransSimuBiz SimuOnlineThread eclipse time = 96015.625
+
+2009-05-22 20:55:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 970
+
+2009-05-22 20:55:58 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:55:58 015 TransSimuBiz SimuOnlineThread eclipse time = 97031.25
+
+2009-05-22 20:55:58 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 980
+
+2009-05-22 20:55:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:55:59 000 TransSimuBiz SimuOnlineThread eclipse time = 98015.625
+
+2009-05-22 20:55:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 990
+
+2009-05-22 20:56:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:56:00 000 TransSimuBiz SimuOnlineThread eclipse time = 99015.625
+
+2009-05-22 20:56:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1000
+
+2009-05-22 20:56:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:01 000 TransSimuBiz SimuOnlineThread eclipse time = 100015.625
+
+2009-05-22 20:56:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1010
+
+2009-05-22 20:56:02 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:02 015 TransSimuBiz SimuOnlineThread eclipse time = 101031.25
+
+2009-05-22 20:56:02 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1020
+
+2009-05-22 20:56:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:03 000 TransSimuBiz SimuOnlineThread eclipse time = 102015.625
+
+2009-05-22 20:56:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1030
+
+2009-05-22 20:56:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:04 000 TransSimuBiz SimuOnlineThread eclipse time = 103015.625
+
+2009-05-22 20:56:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1040
+
+2009-05-22 20:56:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:56:05 000 TransSimuBiz SimuOnlineThread eclipse time = 104015.625
+
+2009-05-22 20:56:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1050
+
+2009-05-22 20:56:06 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:06 000 TransSimuBiz SimuOnlineThread eclipse time = 105015.625
+
+2009-05-22 20:56:06 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1060
+
+2009-05-22 20:56:07 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:07 015 TransSimuBiz SimuOnlineThread eclipse time = 106031.25
+
+2009-05-22 20:56:07 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1070
+
+2009-05-22 20:56:08 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:08 015 TransSimuBiz SimuOnlineThread eclipse time = 107031.25
+
+2009-05-22 20:56:08 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1080
+
+2009-05-22 20:56:09 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:09 015 TransSimuBiz SimuOnlineThread eclipse time = 108031.25
+
+2009-05-22 20:56:09 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1090
+
+2009-05-22 20:56:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:10 000 TransSimuBiz SimuOnlineThread eclipse time = 109015.625
+
+2009-05-22 20:56:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1100
+
+2009-05-22 20:56:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:56:11 000 TransSimuBiz SimuOnlineThread eclipse time = 110015.625
+
+2009-05-22 20:56:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1110
+
+2009-05-22 20:56:12 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:12 015 TransSimuBiz SimuOnlineThread eclipse time = 111031.25
+
+2009-05-22 20:56:12 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1120
+
+2009-05-22 20:56:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:13 000 TransSimuBiz SimuOnlineThread eclipse time = 112015.625
+
+2009-05-22 20:56:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1130
+
+2009-05-22 20:56:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:14 000 TransSimuBiz SimuOnlineThread eclipse time = 113015.625
+
+2009-05-22 20:56:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1140
+
+2009-05-22 20:56:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:56:15 000 TransSimuBiz SimuOnlineThread eclipse time = 114015.625
+
+2009-05-22 20:56:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1150
+
+2009-05-22 20:56:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:16 000 TransSimuBiz SimuOnlineThread eclipse time = 115015.625
+
+2009-05-22 20:56:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1160
+
+2009-05-22 20:56:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:56:17 000 TransSimuBiz SimuOnlineThread eclipse time = 116015.625
+
+2009-05-22 20:56:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1170
+
+2009-05-22 20:56:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:18 015 TransSimuBiz SimuOnlineThread eclipse time = 117031.25
+
+2009-05-22 20:56:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1180
+
+2009-05-22 20:56:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:19 000 TransSimuBiz SimuOnlineThread eclipse time = 118015.625
+
+2009-05-22 20:56:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1190
+
+2009-05-22 20:56:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:20 000 TransSimuBiz SimuOnlineThread eclipse time = 119015.625
+
+2009-05-22 20:56:20 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1200
+
+2009-05-22 20:56:21 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:21 015 TransSimuBiz SimuOnlineThread eclipse time = 120031.25
+
+2009-05-22 20:56:21 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1210
+
+2009-05-22 20:56:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:22 000 TransSimuBiz SimuOnlineThread eclipse time = 121015.625
+
+2009-05-22 20:56:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1220
+
+2009-05-22 20:56:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:23 015 TransSimuBiz SimuOnlineThread eclipse time = 122031.25
+
+2009-05-22 20:56:23 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1230
+
+2009-05-22 20:56:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:24 000 TransSimuBiz SimuOnlineThread eclipse time = 123015.625
+
+2009-05-22 20:56:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1240
+
+2009-05-22 20:56:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:25 000 TransSimuBiz SimuOnlineThread eclipse time = 124015.625
+
+2009-05-22 20:56:25 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1250
+
+2009-05-22 20:56:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:26 000 TransSimuBiz SimuOnlineThread eclipse time = 125015.625
+
+2009-05-22 20:56:26 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1260
+
+2009-05-22 20:56:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:27 015 TransSimuBiz SimuOnlineThread eclipse time = 126031.25
+
+2009-05-22 20:56:27 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1270
+
+2009-05-22 20:56:28 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:28 015 TransSimuBiz SimuOnlineThread eclipse time = 127031.25
+
+2009-05-22 20:56:28 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1280
+
+2009-05-22 20:56:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:29 000 TransSimuBiz SimuOnlineThread eclipse time = 128015.625
+
+2009-05-22 20:56:29 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1290
+
+2009-05-22 20:56:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:30 015 TransSimuBiz SimuOnlineThread eclipse time = 129031.25
+
+2009-05-22 20:56:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1300
+
+2009-05-22 20:56:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:31 000 TransSimuBiz SimuOnlineThread eclipse time = 130015.625
+
+2009-05-22 20:56:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1310
+
+2009-05-22 20:56:32 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:32 015 TransSimuBiz SimuOnlineThread eclipse time = 131031.25
+
+2009-05-22 20:56:32 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1320
+
+2009-05-22 20:56:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:33 015 TransSimuBiz SimuOnlineThread eclipse time = 132031.25
+
+2009-05-22 20:56:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1330
+
+2009-05-22 20:56:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:34 000 TransSimuBiz SimuOnlineThread eclipse time = 133015.625
+
+2009-05-22 20:56:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1340
+
+2009-05-22 20:56:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:35 000 TransSimuBiz SimuOnlineThread eclipse time = 134015.625
+
+2009-05-22 20:56:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1350
+
+2009-05-22 20:56:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:36 015 TransSimuBiz SimuOnlineThread eclipse time = 135031.25
+
+2009-05-22 20:56:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1360
+
+2009-05-22 20:56:37 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:37 015 TransSimuBiz SimuOnlineThread eclipse time = 136031.25
+
+2009-05-22 20:56:37 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1370
+
+2009-05-22 20:56:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:38 000 TransSimuBiz SimuOnlineThread eclipse time = 137015.625
+
+2009-05-22 20:56:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1380
+
+2009-05-22 20:56:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:39 015 TransSimuBiz SimuOnlineThread eclipse time = 138031.25
+
+2009-05-22 20:56:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1390
+
+2009-05-22 20:56:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:40 000 TransSimuBiz SimuOnlineThread eclipse time = 139015.625
+
+2009-05-22 20:56:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1400
+
+2009-05-22 20:56:41 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:41 000 TransSimuBiz SimuOnlineThread eclipse time = 140015.625
+
+2009-05-22 20:56:41 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1410
+
+2009-05-22 20:56:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:42 000 TransSimuBiz SimuOnlineThread eclipse time = 141015.625
+
+2009-05-22 20:56:42 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1420
+
+2009-05-22 20:56:43 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:43 015 TransSimuBiz SimuOnlineThread eclipse time = 142031.25
+
+2009-05-22 20:56:43 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1430
+
+2009-05-22 20:56:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:44 000 TransSimuBiz SimuOnlineThread eclipse time = 143015.625
+
+2009-05-22 20:56:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1440
+
+2009-05-22 20:56:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:45 000 TransSimuBiz SimuOnlineThread eclipse time = 144015.625
+
+2009-05-22 20:56:45 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1450
+
+2009-05-22 20:56:46 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:46 000 TransSimuBiz SimuOnlineThread eclipse time = 145015.625
+
+2009-05-22 20:56:46 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1460
+
+2009-05-22 20:56:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:47 000 TransSimuBiz SimuOnlineThread eclipse time = 146015.625
+
+2009-05-22 20:56:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1470
+
+2009-05-22 20:56:48 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:48 015 TransSimuBiz SimuOnlineThread eclipse time = 147031.25
+
+2009-05-22 20:56:48 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1480
+
+2009-05-22 20:56:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:49 000 TransSimuBiz SimuOnlineThread eclipse time = 148015.625
+
+2009-05-22 20:56:49 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1490
+
+2009-05-22 20:56:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:50 015 TransSimuBiz SimuOnlineThread eclipse time = 149031.25
+
+2009-05-22 20:56:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1500
+
+2009-05-22 20:56:51 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:51 015 TransSimuBiz SimuOnlineThread eclipse time = 150031.25
+
+2009-05-22 20:56:51 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1510
+
+2009-05-22 20:56:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:52 000 TransSimuBiz SimuOnlineThread eclipse time = 151015.625
+
+2009-05-22 20:56:52 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1520
+
+2009-05-22 20:56:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:53 000 TransSimuBiz SimuOnlineThread eclipse time = 152015.625
+
+2009-05-22 20:56:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1530
+
+2009-05-22 20:56:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:56:54 000 TransSimuBiz SimuOnlineThread eclipse time = 153015.625
+
+2009-05-22 20:56:54 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1540
+
+2009-05-22 20:56:55 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:55 015 TransSimuBiz SimuOnlineThread eclipse time = 154031.25
+
+2009-05-22 20:56:55 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1550
+
+2009-05-22 20:56:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:56 000 TransSimuBiz SimuOnlineThread eclipse time = 155015.625
+
+2009-05-22 20:56:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1560
+
+2009-05-22 20:56:57 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:56:57 015 TransSimuBiz SimuOnlineThread eclipse time = 156031.25
+
+2009-05-22 20:56:57 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1570
+
+2009-05-22 20:56:58 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:56:58 015 TransSimuBiz SimuOnlineThread eclipse time = 157031.25
+
+2009-05-22 20:56:58 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1580
+
+2009-05-22 20:56:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:56:59 000 TransSimuBiz SimuOnlineThread eclipse time = 158015.625
+
+2009-05-22 20:56:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1590
+
+2009-05-22 20:57:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:00 000 TransSimuBiz SimuOnlineThread eclipse time = 159015.625
+
+2009-05-22 20:57:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1600
+
+2009-05-22 20:57:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:01 000 TransSimuBiz SimuOnlineThread eclipse time = 160015.625
+
+2009-05-22 20:57:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1610
+
+2009-05-22 20:57:02 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:02 031 TransSimuBiz SimuOnlineThread eclipse time = 161046.875
+
+2009-05-22 20:57:02 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1620
+
+2009-05-22 20:57:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:03 000 TransSimuBiz SimuOnlineThread eclipse time = 162015.625
+
+2009-05-22 20:57:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1630
+
+2009-05-22 20:57:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:04 000 TransSimuBiz SimuOnlineThread eclipse time = 163015.625
+
+2009-05-22 20:57:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1640
+
+2009-05-22 20:57:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:05 000 TransSimuBiz SimuOnlineThread eclipse time = 164015.625
+
+2009-05-22 20:57:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1650
+
+2009-05-22 20:57:06 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:06 015 TransSimuBiz SimuOnlineThread eclipse time = 165031.25
+
+2009-05-22 20:57:06 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1660
+
+2009-05-22 20:57:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:07 000 TransSimuBiz SimuOnlineThread eclipse time = 166015.625
+
+2009-05-22 20:57:07 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1670
+
+2009-05-22 20:57:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:08 000 TransSimuBiz SimuOnlineThread eclipse time = 167015.625
+
+2009-05-22 20:57:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1680
+
+2009-05-22 20:57:09 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:09 015 TransSimuBiz SimuOnlineThread eclipse time = 168031.25
+
+2009-05-22 20:57:09 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1690
+
+2009-05-22 20:57:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:10 000 TransSimuBiz SimuOnlineThread eclipse time = 169015.625
+
+2009-05-22 20:57:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1700
+
+2009-05-22 20:57:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 20:57:11 000 TransSimuBiz SimuOnlineThread eclipse time = 170015.625
+
+2009-05-22 20:57:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1710
+
+2009-05-22 20:57:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:12 000 TransSimuBiz SimuOnlineThread eclipse time = 171015.625
+
+2009-05-22 20:57:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1720
+
+2009-05-22 20:57:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:13 000 TransSimuBiz SimuOnlineThread eclipse time = 172015.625
+
+2009-05-22 20:57:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1730
+
+2009-05-22 20:57:14 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:14 015 TransSimuBiz SimuOnlineThread eclipse time = 173031.25
+
+2009-05-22 20:57:14 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1740
+
+2009-05-22 20:57:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:15 000 TransSimuBiz SimuOnlineThread eclipse time = 174015.625
+
+2009-05-22 20:57:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1750
+
+2009-05-22 20:57:16 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:16 015 TransSimuBiz SimuOnlineThread eclipse time = 175031.25
+
+2009-05-22 20:57:16 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1760
+
+2009-05-22 20:57:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:17 000 TransSimuBiz SimuOnlineThread eclipse time = 176015.625
+
+2009-05-22 20:57:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1770
+
+2009-05-22 20:57:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:18 015 TransSimuBiz SimuOnlineThread eclipse time = 177031.25
+
+2009-05-22 20:57:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1780
+
+2009-05-22 20:57:19 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:19 015 TransSimuBiz SimuOnlineThread eclipse time = 178031.25
+
+2009-05-22 20:57:19 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1790
+
+2009-05-22 20:57:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:20 000 TransSimuBiz SimuOnlineThread eclipse time = 179015.625
+
+2009-05-22 20:57:20 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1800
+
+2009-05-22 20:57:21 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:21 015 TransSimuBiz SimuOnlineThread eclipse time = 180031.25
+
+2009-05-22 20:57:21 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1810
+
+2009-05-22 20:57:22 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:22 015 TransSimuBiz SimuOnlineThread eclipse time = 181031.25
+
+2009-05-22 20:57:22 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1820
+
+2009-05-22 20:57:23 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:23 000 TransSimuBiz SimuOnlineThread eclipse time = 182015.625
+
+2009-05-22 20:57:23 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1830
+
+2009-05-22 20:57:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:24 000 TransSimuBiz SimuOnlineThread eclipse time = 183015.625
+
+2009-05-22 20:57:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1840
+
+2009-05-22 20:57:25 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:25 015 TransSimuBiz SimuOnlineThread eclipse time = 184031.25
+
+2009-05-22 20:57:25 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1850
+
+2009-05-22 20:57:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:26 000 TransSimuBiz SimuOnlineThread eclipse time = 185015.625
+
+2009-05-22 20:57:26 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1860
+
+2009-05-22 20:57:27 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:27 000 TransSimuBiz SimuOnlineThread eclipse time = 186015.625
+
+2009-05-22 20:57:27 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1870
+
+2009-05-22 20:57:28 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:28 000 TransSimuBiz SimuOnlineThread eclipse time = 187015.625
+
+2009-05-22 20:57:28 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1880
+
+2009-05-22 20:57:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:29 000 TransSimuBiz SimuOnlineThread eclipse time = 188015.625
+
+2009-05-22 20:57:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1890
+
+2009-05-22 20:57:30 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:30 015 TransSimuBiz SimuOnlineThread eclipse time = 189031.25
+
+2009-05-22 20:57:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1900
+
+2009-05-22 20:57:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:57:31 000 TransSimuBiz SimuOnlineThread eclipse time = 190015.625
+
+2009-05-22 20:57:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1910
+
+2009-05-22 20:57:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:32 000 TransSimuBiz SimuOnlineThread eclipse time = 191015.625
+
+2009-05-22 20:57:32 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1920
+
+2009-05-22 20:57:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:33 015 TransSimuBiz SimuOnlineThread eclipse time = 192031.25
+
+2009-05-22 20:57:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1930
+
+2009-05-22 20:57:34 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:34 015 TransSimuBiz SimuOnlineThread eclipse time = 193031.25
+
+2009-05-22 20:57:34 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1940
+
+2009-05-22 20:57:35 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:35 015 TransSimuBiz SimuOnlineThread eclipse time = 194031.25
+
+2009-05-22 20:57:35 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1950
+
+2009-05-22 20:57:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:36 015 TransSimuBiz SimuOnlineThread eclipse time = 195031.25
+
+2009-05-22 20:57:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1960
+
+2009-05-22 20:57:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:57:37 000 TransSimuBiz SimuOnlineThread eclipse time = 196015.625
+
+2009-05-22 20:57:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1970
+
+2009-05-22 20:57:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:38 000 TransSimuBiz SimuOnlineThread eclipse time = 197015.625
+
+2009-05-22 20:57:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1980
+
+2009-05-22 20:57:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:39 015 TransSimuBiz SimuOnlineThread eclipse time = 198031.25
+
+2009-05-22 20:57:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 1990
+
+2009-05-22 20:57:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:40 000 TransSimuBiz SimuOnlineThread eclipse time = 199015.625
+
+2009-05-22 20:57:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2000
+
+2009-05-22 20:57:41 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:57:41 000 TransSimuBiz SimuOnlineThread eclipse time = 200015.625
+
+2009-05-22 20:57:41 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2010
+
+2009-05-22 20:57:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:42 000 TransSimuBiz SimuOnlineThread eclipse time = 201015.625
+
+2009-05-22 20:57:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2020
+
+2009-05-22 20:57:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:43 000 TransSimuBiz SimuOnlineThread eclipse time = 202015.625
+
+2009-05-22 20:57:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2030
+
+2009-05-22 20:57:44 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:44 015 TransSimuBiz SimuOnlineThread eclipse time = 203031.25
+
+2009-05-22 20:57:44 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2040
+
+2009-05-22 20:57:45 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:45 015 TransSimuBiz SimuOnlineThread eclipse time = 204031.25
+
+2009-05-22 20:57:45 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2050
+
+2009-05-22 20:57:46 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:46 015 TransSimuBiz SimuOnlineThread eclipse time = 205031.25
+
+2009-05-22 20:57:46 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2060
+
+2009-05-22 20:57:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:57:47 000 TransSimuBiz SimuOnlineThread eclipse time = 206015.625
+
+2009-05-22 20:57:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2070
+
+2009-05-22 20:57:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:48 000 TransSimuBiz SimuOnlineThread eclipse time = 207015.625
+
+2009-05-22 20:57:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2080
+
+2009-05-22 20:57:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:49 015 TransSimuBiz SimuOnlineThread eclipse time = 208031.25
+
+2009-05-22 20:57:49 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2090
+
+2009-05-22 20:57:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:57:50 015 TransSimuBiz SimuOnlineThread eclipse time = 209031.25
+
+2009-05-22 20:57:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2100
+
+2009-05-22 20:57:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:51 000 TransSimuBiz SimuOnlineThread eclipse time = 210015.625
+
+2009-05-22 20:57:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2110
+
+2009-05-22 20:57:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:52 015 TransSimuBiz SimuOnlineThread eclipse time = 211031.25
+
+2009-05-22 20:57:52 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2120
+
+2009-05-22 20:57:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:57:53 000 TransSimuBiz SimuOnlineThread eclipse time = 212015.625
+
+2009-05-22 20:57:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2130
+
+2009-05-22 20:57:54 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:57:54 015 TransSimuBiz SimuOnlineThread eclipse time = 213031.25
+
+2009-05-22 20:57:54 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2140
+
+2009-05-22 20:57:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:55 015 TransSimuBiz SimuOnlineThread eclipse time = 214031.25
+
+2009-05-22 20:57:55 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2150
+
+2009-05-22 20:57:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:57:56 000 TransSimuBiz SimuOnlineThread eclipse time = 215015.625
+
+2009-05-22 20:57:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2160
+
+2009-05-22 20:57:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:57 000 TransSimuBiz SimuOnlineThread eclipse time = 216015.625
+
+2009-05-22 20:57:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2170
+
+2009-05-22 20:57:58 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:58 000 TransSimuBiz SimuOnlineThread eclipse time = 217015.625
+
+2009-05-22 20:57:58 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2180
+
+2009-05-22 20:57:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:57:59 000 TransSimuBiz SimuOnlineThread eclipse time = 218015.625
+
+2009-05-22 20:57:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2190
+
+2009-05-22 20:58:00 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:58:00 015 TransSimuBiz SimuOnlineThread eclipse time = 219031.25
+
+2009-05-22 20:58:00 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2200
+
+2009-05-22 20:58:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:01 000 TransSimuBiz SimuOnlineThread eclipse time = 220015.625
+
+2009-05-22 20:58:01 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2210
+
+2009-05-22 20:58:02 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:02 000 TransSimuBiz SimuOnlineThread eclipse time = 221015.625
+
+2009-05-22 20:58:02 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2220
+
+2009-05-22 20:58:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:03 000 TransSimuBiz SimuOnlineThread eclipse time = 222015.625
+
+2009-05-22 20:58:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2230
+
+2009-05-22 20:58:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:04 000 TransSimuBiz SimuOnlineThread eclipse time = 223015.625
+
+2009-05-22 20:58:04 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2240
+
+2009-05-22 20:58:05 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:05 015 TransSimuBiz SimuOnlineThread eclipse time = 224031.25
+
+2009-05-22 20:58:05 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2250
+
+2009-05-22 20:58:06 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:06 015 TransSimuBiz SimuOnlineThread eclipse time = 225031.25
+
+2009-05-22 20:58:06 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2260
+
+2009-05-22 20:58:07 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:07 015 TransSimuBiz SimuOnlineThread eclipse time = 226031.25
+
+2009-05-22 20:58:07 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2270
+
+2009-05-22 20:58:08 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:08 015 TransSimuBiz SimuOnlineThread eclipse time = 227031.25
+
+2009-05-22 20:58:08 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2280
+
+2009-05-22 20:58:09 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:09 000 TransSimuBiz SimuOnlineThread eclipse time = 228015.625
+
+2009-05-22 20:58:09 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2290
+
+2009-05-22 20:58:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:10 000 TransSimuBiz SimuOnlineThread eclipse time = 229015.625
+
+2009-05-22 20:58:10 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2300
+
+2009-05-22 20:58:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:11 000 TransSimuBiz SimuOnlineThread eclipse time = 230015.625
+
+2009-05-22 20:58:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2310
+
+2009-05-22 20:58:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:12 000 TransSimuBiz SimuOnlineThread eclipse time = 231015.625
+
+2009-05-22 20:58:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2320
+
+2009-05-22 20:58:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:13 000 TransSimuBiz SimuOnlineThread eclipse time = 232015.625
+
+2009-05-22 20:58:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2330
+
+2009-05-22 20:58:14 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:58:14 015 TransSimuBiz SimuOnlineThread eclipse time = 233031.25
+
+2009-05-22 20:58:14 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2340
+
+2009-05-22 20:58:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:15 000 TransSimuBiz SimuOnlineThread eclipse time = 234015.625
+
+2009-05-22 20:58:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2350
+
+2009-05-22 20:58:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:16 000 TransSimuBiz SimuOnlineThread eclipse time = 235015.625
+
+2009-05-22 20:58:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2360
+
+2009-05-22 20:58:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:17 000 TransSimuBiz SimuOnlineThread eclipse time = 236015.625
+
+2009-05-22 20:58:17 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2370
+
+2009-05-22 20:58:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:18 015 TransSimuBiz SimuOnlineThread eclipse time = 237031.25
+
+2009-05-22 20:58:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2380
+
+2009-05-22 20:58:19 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:19 015 TransSimuBiz SimuOnlineThread eclipse time = 238031.25
+
+2009-05-22 20:58:19 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2390
+
+2009-05-22 20:58:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:20 000 TransSimuBiz SimuOnlineThread eclipse time = 239015.625
+
+2009-05-22 20:58:20 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2400
+
+2009-05-22 20:58:21 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:21 015 TransSimuBiz SimuOnlineThread eclipse time = 240031.25
+
+2009-05-22 20:58:21 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2410
+
+2009-05-22 20:58:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:22 000 TransSimuBiz SimuOnlineThread eclipse time = 241015.625
+
+2009-05-22 20:58:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2420
+
+2009-05-22 20:58:23 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:23 000 TransSimuBiz SimuOnlineThread eclipse time = 242015.625
+
+2009-05-22 20:58:23 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2430
+
+2009-05-22 20:58:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:24 000 TransSimuBiz SimuOnlineThread eclipse time = 243015.625
+
+2009-05-22 20:58:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2440
+
+2009-05-22 20:58:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:25 000 TransSimuBiz SimuOnlineThread eclipse time = 244015.625
+
+2009-05-22 20:58:25 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2450
+
+2009-05-22 20:58:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:26 000 TransSimuBiz SimuOnlineThread eclipse time = 245015.625
+
+2009-05-22 20:58:26 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2460
+
+2009-05-22 20:58:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:27 015 TransSimuBiz SimuOnlineThread eclipse time = 246031.25
+
+2009-05-22 20:58:27 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2470
+
+2009-05-22 20:58:28 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:28 000 TransSimuBiz SimuOnlineThread eclipse time = 247015.625
+
+2009-05-22 20:58:28 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2480
+
+2009-05-22 20:58:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:29 000 TransSimuBiz SimuOnlineThread eclipse time = 248015.625
+
+2009-05-22 20:58:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2490
+
+2009-05-22 20:58:30 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:30 015 TransSimuBiz SimuOnlineThread eclipse time = 249031.25
+
+2009-05-22 20:58:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2500
+
+2009-05-22 20:58:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:31 000 TransSimuBiz SimuOnlineThread eclipse time = 250015.625
+
+2009-05-22 20:58:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2510
+
+2009-05-22 20:58:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:32 000 TransSimuBiz SimuOnlineThread eclipse time = 251015.625
+
+2009-05-22 20:58:32 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2520
+
+2009-05-22 20:58:33 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:33 000 TransSimuBiz SimuOnlineThread eclipse time = 252015.625
+
+2009-05-22 20:58:33 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2530
+
+2009-05-22 20:58:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:34 000 TransSimuBiz SimuOnlineThread eclipse time = 253015.625
+
+2009-05-22 20:58:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2540
+
+2009-05-22 20:58:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:35 000 TransSimuBiz SimuOnlineThread eclipse time = 254015.625
+
+2009-05-22 20:58:35 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2550
+
+2009-05-22 20:58:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:36 015 TransSimuBiz SimuOnlineThread eclipse time = 255031.25
+
+2009-05-22 20:58:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2560
+
+2009-05-22 20:58:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:37 000 TransSimuBiz SimuOnlineThread eclipse time = 256015.625
+
+2009-05-22 20:58:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2570
+
+2009-05-22 20:58:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:38 000 TransSimuBiz SimuOnlineThread eclipse time = 257015.625
+
+2009-05-22 20:58:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2580
+
+2009-05-22 20:58:39 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:39 000 TransSimuBiz SimuOnlineThread eclipse time = 258015.625
+
+2009-05-22 20:58:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2590
+
+2009-05-22 20:58:40 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:40 015 TransSimuBiz SimuOnlineThread eclipse time = 259031.25
+
+2009-05-22 20:58:40 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2600
+
+2009-05-22 20:58:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:41 015 TransSimuBiz SimuOnlineThread eclipse time = 260031.25
+
+2009-05-22 20:58:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2610
+
+2009-05-22 20:58:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:42 000 TransSimuBiz SimuOnlineThread eclipse time = 261015.625
+
+2009-05-22 20:58:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2620
+
+2009-05-22 20:58:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:43 000 TransSimuBiz SimuOnlineThread eclipse time = 262015.625
+
+2009-05-22 20:58:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2630
+
+2009-05-22 20:58:44 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:58:44 015 TransSimuBiz SimuOnlineThread eclipse time = 263031.25
+
+2009-05-22 20:58:44 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2640
+
+2009-05-22 20:58:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:45 000 TransSimuBiz SimuOnlineThread eclipse time = 264015.625
+
+2009-05-22 20:58:45 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2650
+
+2009-05-22 20:58:46 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:46 015 TransSimuBiz SimuOnlineThread eclipse time = 265031.25
+
+2009-05-22 20:58:46 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2660
+
+2009-05-22 20:58:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:58:47 000 TransSimuBiz SimuOnlineThread eclipse time = 266015.625
+
+2009-05-22 20:58:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2670
+
+2009-05-22 20:58:48 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:48 015 TransSimuBiz SimuOnlineThread eclipse time = 267031.25
+
+2009-05-22 20:58:48 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2680
+
+2009-05-22 20:58:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:49 015 TransSimuBiz SimuOnlineThread eclipse time = 268031.25
+
+2009-05-22 20:58:49 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2690
+
+2009-05-22 20:58:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 20:58:50 015 TransSimuBiz SimuOnlineThread eclipse time = 269031.25
+
+2009-05-22 20:58:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2700
+
+2009-05-22 20:58:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:51 000 TransSimuBiz SimuOnlineThread eclipse time = 270015.625
+
+2009-05-22 20:58:51 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2710
+
+2009-05-22 20:58:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:52 015 TransSimuBiz SimuOnlineThread eclipse time = 271031.25
+
+2009-05-22 20:58:52 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2720
+
+2009-05-22 20:58:53 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:53 015 TransSimuBiz SimuOnlineThread eclipse time = 272031.25
+
+2009-05-22 20:58:53 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2730
+
+2009-05-22 20:58:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:58:54 000 TransSimuBiz SimuOnlineThread eclipse time = 273015.625
+
+2009-05-22 20:58:54 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2740
+
+2009-05-22 20:58:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:58:55 015 TransSimuBiz SimuOnlineThread eclipse time = 274015.625
+
+2009-05-22 20:58:55 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2750
+
+2009-05-22 20:58:56 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:58:56 015 TransSimuBiz SimuOnlineThread eclipse time = 275031.25
+
+2009-05-22 20:58:56 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2760
+
+2009-05-22 20:58:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:57 000 TransSimuBiz SimuOnlineThread eclipse time = 276015.625
+
+2009-05-22 20:58:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2770
+
+2009-05-22 20:58:58 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:58:58 000 TransSimuBiz SimuOnlineThread eclipse time = 277015.625
+
+2009-05-22 20:58:58 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2780
+
+2009-05-22 20:58:59 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 20:58:59 015 TransSimuBiz SimuOnlineThread eclipse time = 278031.25
+
+2009-05-22 20:58:59 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2790
+
+2009-05-22 20:59:00 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:00 015 TransSimuBiz SimuOnlineThread eclipse time = 279031.25
+
+2009-05-22 20:59:00 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2800
+
+2009-05-22 20:59:01 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:01 015 TransSimuBiz SimuOnlineThread eclipse time = 280031.25
+
+2009-05-22 20:59:01 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2810
+
+2009-05-22 20:59:02 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:02 000 TransSimuBiz SimuOnlineThread eclipse time = 281015.625
+
+2009-05-22 20:59:02 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2820
+
+2009-05-22 20:59:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:03 000 TransSimuBiz SimuOnlineThread eclipse time = 282015.625
+
+2009-05-22 20:59:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2830
+
+2009-05-22 20:59:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:04 000 TransSimuBiz SimuOnlineThread eclipse time = 283015.625
+
+2009-05-22 20:59:04 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2840
+
+2009-05-22 20:59:05 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:05 015 TransSimuBiz SimuOnlineThread eclipse time = 284031.25
+
+2009-05-22 20:59:05 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2850
+
+2009-05-22 20:59:06 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:06 015 TransSimuBiz SimuOnlineThread eclipse time = 285031.25
+
+2009-05-22 20:59:06 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2860
+
+2009-05-22 20:59:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:07 000 TransSimuBiz SimuOnlineThread eclipse time = 286015.625
+
+2009-05-22 20:59:07 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2870
+
+2009-05-22 20:59:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:08 000 TransSimuBiz SimuOnlineThread eclipse time = 287015.625
+
+2009-05-22 20:59:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2880
+
+2009-05-22 20:59:09 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:09 000 TransSimuBiz SimuOnlineThread eclipse time = 288015.625
+
+2009-05-22 20:59:09 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2890
+
+2009-05-22 20:59:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:10 000 TransSimuBiz SimuOnlineThread eclipse time = 289015.625
+
+2009-05-22 20:59:10 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2900
+
+2009-05-22 20:59:11 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:11 015 TransSimuBiz SimuOnlineThread eclipse time = 290031.25
+
+2009-05-22 20:59:11 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2910
+
+2009-05-22 20:59:12 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:12 015 TransSimuBiz SimuOnlineThread eclipse time = 291031.25
+
+2009-05-22 20:59:12 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2920
+
+2009-05-22 20:59:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:13 000 TransSimuBiz SimuOnlineThread eclipse time = 292015.625
+
+2009-05-22 20:59:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2930
+
+2009-05-22 20:59:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:14 015 TransSimuBiz SimuOnlineThread eclipse time = 293015.625
+
+2009-05-22 20:59:14 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2940
+
+2009-05-22 20:59:15 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:15 015 TransSimuBiz SimuOnlineThread eclipse time = 294031.25
+
+2009-05-22 20:59:15 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2950
+
+2009-05-22 20:59:16 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:16 015 TransSimuBiz SimuOnlineThread eclipse time = 295031.25
+
+2009-05-22 20:59:16 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2960
+
+2009-05-22 20:59:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:17 000 TransSimuBiz SimuOnlineThread eclipse time = 296015.625
+
+2009-05-22 20:59:17 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2970
+
+2009-05-22 20:59:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:18 015 TransSimuBiz SimuOnlineThread eclipse time = 297031.25
+
+2009-05-22 20:59:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2980
+
+2009-05-22 20:59:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:19 000 TransSimuBiz SimuOnlineThread eclipse time = 298015.625
+
+2009-05-22 20:59:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 2990
+
+2009-05-22 20:59:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:20 000 TransSimuBiz SimuOnlineThread eclipse time = 299015.625
+
+2009-05-22 20:59:20 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3000
+
+2009-05-22 20:59:21 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:21 000 TransSimuBiz SimuOnlineThread eclipse time = 300015.625
+
+2009-05-22 20:59:21 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3010
+
+2009-05-22 20:59:22 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:22 015 TransSimuBiz SimuOnlineThread eclipse time = 301031.25
+
+2009-05-22 20:59:22 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3020
+
+2009-05-22 20:59:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:23 015 TransSimuBiz SimuOnlineThread eclipse time = 302031.25
+
+2009-05-22 20:59:23 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3030
+
+2009-05-22 20:59:24 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:24 015 TransSimuBiz SimuOnlineThread eclipse time = 303031.25
+
+2009-05-22 20:59:24 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3040
+
+2009-05-22 20:59:25 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 20:59:25 015 TransSimuBiz SimuOnlineThread eclipse time = 304031.25
+
+2009-05-22 20:59:25 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3050
+
+2009-05-22 20:59:26 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 20:59:26 015 TransSimuBiz SimuOnlineThread eclipse time = 305031.25
+
+2009-05-22 20:59:26 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3060
+
+2009-05-22 20:59:27 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:27 000 TransSimuBiz SimuOnlineThread eclipse time = 306015.625
+
+2009-05-22 20:59:27 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3070
+
+2009-05-22 20:59:28 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:28 000 TransSimuBiz SimuOnlineThread eclipse time = 307015.625
+
+2009-05-22 20:59:28 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3080
+
+2009-05-22 20:59:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:29 000 TransSimuBiz SimuOnlineThread eclipse time = 308015.625
+
+2009-05-22 20:59:29 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3090
+
+2009-05-22 20:59:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:30 015 TransSimuBiz SimuOnlineThread eclipse time = 309031.25
+
+2009-05-22 20:59:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3100
+
+2009-05-22 20:59:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:31 000 TransSimuBiz SimuOnlineThread eclipse time = 310015.625
+
+2009-05-22 20:59:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3110
+
+2009-05-22 20:59:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:32 000 TransSimuBiz SimuOnlineThread eclipse time = 311015.625
+
+2009-05-22 20:59:32 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3120
+
+2009-05-22 20:59:33 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:33 000 TransSimuBiz SimuOnlineThread eclipse time = 312015.625
+
+2009-05-22 20:59:33 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3130
+
+2009-05-22 20:59:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:34 000 TransSimuBiz SimuOnlineThread eclipse time = 313015.625
+
+2009-05-22 20:59:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3140
+
+2009-05-22 20:59:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:35 000 TransSimuBiz SimuOnlineThread eclipse time = 314015.625
+
+2009-05-22 20:59:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3150
+
+2009-05-22 20:59:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:36 015 TransSimuBiz SimuOnlineThread eclipse time = 315031.25
+
+2009-05-22 20:59:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3160
+
+2009-05-22 20:59:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:37 000 TransSimuBiz SimuOnlineThread eclipse time = 316015.625
+
+2009-05-22 20:59:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3170
+
+2009-05-22 20:59:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:38 000 TransSimuBiz SimuOnlineThread eclipse time = 317015.625
+
+2009-05-22 20:59:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3180
+
+2009-05-22 20:59:39 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:39 000 TransSimuBiz SimuOnlineThread eclipse time = 318015.625
+
+2009-05-22 20:59:39 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3190
+
+2009-05-22 20:59:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:40 000 TransSimuBiz SimuOnlineThread eclipse time = 319015.625
+
+2009-05-22 20:59:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3200
+
+2009-05-22 20:59:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:41 015 TransSimuBiz SimuOnlineThread eclipse time = 320031.25
+
+2009-05-22 20:59:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3210
+
+2009-05-22 20:59:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:42 000 TransSimuBiz SimuOnlineThread eclipse time = 321015.625
+
+2009-05-22 20:59:42 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3220
+
+2009-05-22 20:59:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:43 000 TransSimuBiz SimuOnlineThread eclipse time = 322015.625
+
+2009-05-22 20:59:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3230
+
+2009-05-22 20:59:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:44 000 TransSimuBiz SimuOnlineThread eclipse time = 323015.625
+
+2009-05-22 20:59:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3240
+
+2009-05-22 20:59:45 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:45 015 TransSimuBiz SimuOnlineThread eclipse time = 324031.25
+
+2009-05-22 20:59:45 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3250
+
+2009-05-22 20:59:46 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:46 000 TransSimuBiz SimuOnlineThread eclipse time = 325015.625
+
+2009-05-22 20:59:46 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3260
+
+2009-05-22 20:59:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:47 000 TransSimuBiz SimuOnlineThread eclipse time = 326015.625
+
+2009-05-22 20:59:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3270
+
+2009-05-22 20:59:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:48 000 TransSimuBiz SimuOnlineThread eclipse time = 327015.625
+
+2009-05-22 20:59:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3280
+
+2009-05-22 20:59:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:49 000 TransSimuBiz SimuOnlineThread eclipse time = 328015.625
+
+2009-05-22 20:59:49 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3290
+
+2009-05-22 20:59:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:50 015 TransSimuBiz SimuOnlineThread eclipse time = 329031.25
+
+2009-05-22 20:59:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3300
+
+2009-05-22 20:59:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 20:59:51 000 TransSimuBiz SimuOnlineThread eclipse time = 330015.625
+
+2009-05-22 20:59:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3310
+
+2009-05-22 20:59:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:52 000 TransSimuBiz SimuOnlineThread eclipse time = 331015.625
+
+2009-05-22 20:59:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3320
+
+2009-05-22 20:59:53 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 20:59:53 015 TransSimuBiz SimuOnlineThread eclipse time = 332031.25
+
+2009-05-22 20:59:53 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3330
+
+2009-05-22 20:59:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:54 000 TransSimuBiz SimuOnlineThread eclipse time = 333015.625
+
+2009-05-22 20:59:54 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3340
+
+2009-05-22 20:59:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:55 000 TransSimuBiz SimuOnlineThread eclipse time = 334015.625
+
+2009-05-22 20:59:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3350
+
+2009-05-22 20:59:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 20:59:56 000 TransSimuBiz SimuOnlineThread eclipse time = 335015.625
+
+2009-05-22 20:59:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3360
+
+2009-05-22 20:59:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:57 000 TransSimuBiz SimuOnlineThread eclipse time = 336015.625
+
+2009-05-22 20:59:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3370
+
+2009-05-22 20:59:58 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 20:59:58 000 TransSimuBiz SimuOnlineThread eclipse time = 337015.625
+
+2009-05-22 20:59:58 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3380
+
+2009-05-22 20:59:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 20:59:59 000 TransSimuBiz SimuOnlineThread eclipse time = 338015.625
+
+2009-05-22 20:59:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3390
+
+2009-05-22 21:00:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:00 000 TransSimuBiz SimuOnlineThread eclipse time = 339015.625
+
+2009-05-22 21:00:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3400
+
+2009-05-22 21:00:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:01 000 TransSimuBiz SimuOnlineThread eclipse time = 340015.625
+
+2009-05-22 21:00:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3410
+
+2009-05-22 21:00:02 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:02 015 TransSimuBiz SimuOnlineThread eclipse time = 341031.25
+
+2009-05-22 21:00:02 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3420
+
+2009-05-22 21:00:03 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:00:03 015 TransSimuBiz SimuOnlineThread eclipse time = 342031.25
+
+2009-05-22 21:00:03 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3430
+
+2009-05-22 21:00:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:00:04 000 TransSimuBiz SimuOnlineThread eclipse time = 343015.625
+
+2009-05-22 21:00:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3440
+
+2009-05-22 21:00:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:05 000 TransSimuBiz SimuOnlineThread eclipse time = 344015.625
+
+2009-05-22 21:00:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3450
+
+2009-05-22 21:00:06 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:06 000 TransSimuBiz SimuOnlineThread eclipse time = 345015.625
+
+2009-05-22 21:00:06 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3460
+
+2009-05-22 21:00:07 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:07 015 TransSimuBiz SimuOnlineThread eclipse time = 346031.25
+
+2009-05-22 21:00:07 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3470
+
+2009-05-22 21:00:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:00:08 000 TransSimuBiz SimuOnlineThread eclipse time = 347015.625
+
+2009-05-22 21:00:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3480
+
+2009-05-22 21:00:09 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:00:09 015 TransSimuBiz SimuOnlineThread eclipse time = 348031.25
+
+2009-05-22 21:00:09 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3490
+
+2009-05-22 21:00:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:00:10 000 TransSimuBiz SimuOnlineThread eclipse time = 349015.625
+
+2009-05-22 21:00:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3500
+
+2009-05-22 21:00:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:11 000 TransSimuBiz SimuOnlineThread eclipse time = 350015.625
+
+2009-05-22 21:00:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3510
+
+2009-05-22 21:00:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:00:12 000 TransSimuBiz SimuOnlineThread eclipse time = 351015.625
+
+2009-05-22 21:00:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3520
+
+2009-05-22 21:00:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:13 000 TransSimuBiz SimuOnlineThread eclipse time = 352015.625
+
+2009-05-22 21:00:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3530
+
+2009-05-22 21:00:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:00:14 000 TransSimuBiz SimuOnlineThread eclipse time = 353015.625
+
+2009-05-22 21:00:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3540
+
+2009-05-22 21:00:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:00:15 000 TransSimuBiz SimuOnlineThread eclipse time = 354015.625
+
+2009-05-22 21:00:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3550
+
+2009-05-22 21:00:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:16 000 TransSimuBiz SimuOnlineThread eclipse time = 355015.625
+
+2009-05-22 21:00:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3560
+
+2009-05-22 21:00:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:00:17 000 TransSimuBiz SimuOnlineThread eclipse time = 356015.625
+
+2009-05-22 21:00:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3570
+
+2009-05-22 21:00:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:18 015 TransSimuBiz SimuOnlineThread eclipse time = 357031.25
+
+2009-05-22 21:00:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3580
+
+2009-05-22 21:00:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:00:19 000 TransSimuBiz SimuOnlineThread eclipse time = 358015.625
+
+2009-05-22 21:00:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3590
+
+2009-05-22 21:00:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:20 000 TransSimuBiz SimuOnlineThread eclipse time = 359015.625
+
+2009-05-22 21:00:20 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3600
+
+2009-05-22 21:00:21 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:00:21 000 TransSimuBiz SimuOnlineThread eclipse time = 360015.625
+
+2009-05-22 21:00:21 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3610
+
+2009-05-22 21:00:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:22 000 TransSimuBiz SimuOnlineThread eclipse time = 361015.625
+
+2009-05-22 21:00:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3620
+
+2009-05-22 21:00:23 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:23 000 TransSimuBiz SimuOnlineThread eclipse time = 362015.625
+
+2009-05-22 21:00:23 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3630
+
+2009-05-22 21:00:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 21:00:24 000 TransSimuBiz SimuOnlineThread eclipse time = 363015.625
+
+2009-05-22 21:00:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3640
+
+2009-05-22 21:00:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:25 000 TransSimuBiz SimuOnlineThread eclipse time = 364015.625
+
+2009-05-22 21:00:25 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3650
+
+2009-05-22 21:00:26 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:26 015 TransSimuBiz SimuOnlineThread eclipse time = 365031.25
+
+2009-05-22 21:00:26 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3660
+
+2009-05-22 21:00:27 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:27 000 TransSimuBiz SimuOnlineThread eclipse time = 366015.625
+
+2009-05-22 21:00:27 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3670
+
+2009-05-22 21:00:28 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:28 015 TransSimuBiz SimuOnlineThread eclipse time = 367031.25
+
+2009-05-22 21:00:28 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3680
+
+2009-05-22 21:00:29 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:29 015 TransSimuBiz SimuOnlineThread eclipse time = 368031.25
+
+2009-05-22 21:00:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3690
+
+2009-05-22 21:00:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:30 015 TransSimuBiz SimuOnlineThread eclipse time = 369031.25
+
+2009-05-22 21:00:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3700
+
+2009-05-22 21:00:31 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:00:31 015 TransSimuBiz SimuOnlineThread eclipse time = 370031.25
+
+2009-05-22 21:00:31 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3710
+
+2009-05-22 21:00:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:32 000 TransSimuBiz SimuOnlineThread eclipse time = 371015.625
+
+2009-05-22 21:00:32 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3720
+
+2009-05-22 21:00:33 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:00:33 000 TransSimuBiz SimuOnlineThread eclipse time = 372015.625
+
+2009-05-22 21:00:33 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3730
+
+2009-05-22 21:00:34 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:00:34 015 TransSimuBiz SimuOnlineThread eclipse time = 373031.25
+
+2009-05-22 21:00:34 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3740
+
+2009-05-22 21:00:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:35 000 TransSimuBiz SimuOnlineThread eclipse time = 374015.625
+
+2009-05-22 21:00:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3750
+
+2009-05-22 21:00:36 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:36 000 TransSimuBiz SimuOnlineThread eclipse time = 375015.625
+
+2009-05-22 21:00:36 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3760
+
+2009-05-22 21:00:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:37 000 TransSimuBiz SimuOnlineThread eclipse time = 376015.625
+
+2009-05-22 21:00:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3770
+
+2009-05-22 21:00:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:00:38 000 TransSimuBiz SimuOnlineThread eclipse time = 377015.625
+
+2009-05-22 21:00:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3780
+
+2009-05-22 21:00:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:00:39 015 TransSimuBiz SimuOnlineThread eclipse time = 378031.25
+
+2009-05-22 21:00:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3790
+
+2009-05-22 21:00:40 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:40 015 TransSimuBiz SimuOnlineThread eclipse time = 379031.25
+
+2009-05-22 21:00:40 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3800
+
+2009-05-22 21:00:41 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:41 000 TransSimuBiz SimuOnlineThread eclipse time = 380015.625
+
+2009-05-22 21:00:41 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3810
+
+2009-05-22 21:00:42 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:42 015 TransSimuBiz SimuOnlineThread eclipse time = 381031.25
+
+2009-05-22 21:00:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3820
+
+2009-05-22 21:00:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:43 000 TransSimuBiz SimuOnlineThread eclipse time = 382015.625
+
+2009-05-22 21:00:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3830
+
+2009-05-22 21:00:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:00:44 000 TransSimuBiz SimuOnlineThread eclipse time = 383015.625
+
+2009-05-22 21:00:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3840
+
+2009-05-22 21:00:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:45 000 TransSimuBiz SimuOnlineThread eclipse time = 384015.625
+
+2009-05-22 21:00:45 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3850
+
+2009-05-22 21:00:46 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:46 015 TransSimuBiz SimuOnlineThread eclipse time = 385031.25
+
+2009-05-22 21:00:46 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3860
+
+2009-05-22 21:00:47 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:47 015 TransSimuBiz SimuOnlineThread eclipse time = 386031.25
+
+2009-05-22 21:00:47 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3870
+
+2009-05-22 21:00:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:48 000 TransSimuBiz SimuOnlineThread eclipse time = 387015.625
+
+2009-05-22 21:00:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3880
+
+2009-05-22 21:00:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:00:49 000 TransSimuBiz SimuOnlineThread eclipse time = 388015.625
+
+2009-05-22 21:00:49 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3890
+
+2009-05-22 21:00:50 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:50 000 TransSimuBiz SimuOnlineThread eclipse time = 389015.625
+
+2009-05-22 21:00:50 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3900
+
+2009-05-22 21:00:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:00:51 000 TransSimuBiz SimuOnlineThread eclipse time = 390015.625
+
+2009-05-22 21:00:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3910
+
+2009-05-22 21:00:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:52 000 TransSimuBiz SimuOnlineThread eclipse time = 391015.625
+
+2009-05-22 21:00:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3920
+
+2009-05-22 21:00:53 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:53 015 TransSimuBiz SimuOnlineThread eclipse time = 392031.25
+
+2009-05-22 21:00:53 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3930
+
+2009-05-22 21:00:54 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:54 015 TransSimuBiz SimuOnlineThread eclipse time = 393031.25
+
+2009-05-22 21:00:54 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3940
+
+2009-05-22 21:00:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:00:55 000 TransSimuBiz SimuOnlineThread eclipse time = 394015.625
+
+2009-05-22 21:00:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3950
+
+2009-05-22 21:00:56 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:56 015 TransSimuBiz SimuOnlineThread eclipse time = 395031.25
+
+2009-05-22 21:00:56 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3960
+
+2009-05-22 21:00:57 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:00:57 015 TransSimuBiz SimuOnlineThread eclipse time = 396031.25
+
+2009-05-22 21:00:57 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3970
+
+2009-05-22 21:00:58 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:00:58 000 TransSimuBiz SimuOnlineThread eclipse time = 397015.625
+
+2009-05-22 21:00:58 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3980
+
+2009-05-22 21:00:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 21:00:59 000 TransSimuBiz SimuOnlineThread eclipse time = 398015.625
+
+2009-05-22 21:00:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 3990
+
+2009-05-22 21:01:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:00 000 TransSimuBiz SimuOnlineThread eclipse time = 399015.625
+
+2009-05-22 21:01:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4000
+
+2009-05-22 21:01:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:01 000 TransSimuBiz SimuOnlineThread eclipse time = 400015.625
+
+2009-05-22 21:01:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4010
+
+2009-05-22 21:01:02 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:02 015 TransSimuBiz SimuOnlineThread eclipse time = 401031.25
+
+2009-05-22 21:01:02 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4020
+
+2009-05-22 21:01:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:03 000 TransSimuBiz SimuOnlineThread eclipse time = 402015.625
+
+2009-05-22 21:01:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4030
+
+2009-05-22 21:01:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:01:04 000 TransSimuBiz SimuOnlineThread eclipse time = 403015.625
+
+2009-05-22 21:01:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4040
+
+2009-05-22 21:01:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:05 000 TransSimuBiz SimuOnlineThread eclipse time = 404015.625
+
+2009-05-22 21:01:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4050
+
+2009-05-22 21:01:06 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:06 015 TransSimuBiz SimuOnlineThread eclipse time = 405031.25
+
+2009-05-22 21:01:06 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4060
+
+2009-05-22 21:01:07 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:01:07 015 TransSimuBiz SimuOnlineThread eclipse time = 406031.25
+
+2009-05-22 21:01:07 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4070
+
+2009-05-22 21:01:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:08 000 TransSimuBiz SimuOnlineThread eclipse time = 407015.625
+
+2009-05-22 21:01:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4080
+
+2009-05-22 21:01:09 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:01:09 000 TransSimuBiz SimuOnlineThread eclipse time = 408015.625
+
+2009-05-22 21:01:09 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4090
+
+2009-05-22 21:01:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:10 000 TransSimuBiz SimuOnlineThread eclipse time = 409015.625
+
+2009-05-22 21:01:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4100
+
+2009-05-22 21:01:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:11 000 TransSimuBiz SimuOnlineThread eclipse time = 410015.625
+
+2009-05-22 21:01:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4110
+
+2009-05-22 21:01:12 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:12 015 TransSimuBiz SimuOnlineThread eclipse time = 411031.25
+
+2009-05-22 21:01:12 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4120
+
+2009-05-22 21:01:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:13 000 TransSimuBiz SimuOnlineThread eclipse time = 412015.625
+
+2009-05-22 21:01:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4130
+
+2009-05-22 21:01:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 21:01:14 000 TransSimuBiz SimuOnlineThread eclipse time = 413015.625
+
+2009-05-22 21:01:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4140
+
+2009-05-22 21:01:15 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:15 015 TransSimuBiz SimuOnlineThread eclipse time = 414031.25
+
+2009-05-22 21:01:15 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4150
+
+2009-05-22 21:01:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:16 000 TransSimuBiz SimuOnlineThread eclipse time = 415015.625
+
+2009-05-22 21:01:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4160
+
+2009-05-22 21:01:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:17 000 TransSimuBiz SimuOnlineThread eclipse time = 416015.625
+
+2009-05-22 21:01:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4170
+
+2009-05-22 21:01:18 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:18 000 TransSimuBiz SimuOnlineThread eclipse time = 417015.625
+
+2009-05-22 21:01:18 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4180
+
+2009-05-22 21:01:19 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:19 015 TransSimuBiz SimuOnlineThread eclipse time = 418031.25
+
+2009-05-22 21:01:19 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4190
+
+2009-05-22 21:01:20 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:01:20 015 TransSimuBiz SimuOnlineThread eclipse time = 419031.25
+
+2009-05-22 21:01:20 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4200
+
+2009-05-22 21:01:21 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:21 000 TransSimuBiz SimuOnlineThread eclipse time = 420015.625
+
+2009-05-22 21:01:21 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4210
+
+2009-05-22 21:01:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:22 000 TransSimuBiz SimuOnlineThread eclipse time = 421015.625
+
+2009-05-22 21:01:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4220
+
+2009-05-22 21:01:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:23 015 TransSimuBiz SimuOnlineThread eclipse time = 422031.25
+
+2009-05-22 21:01:23 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4230
+
+2009-05-22 21:01:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:24 000 TransSimuBiz SimuOnlineThread eclipse time = 423015.625
+
+2009-05-22 21:01:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4240
+
+2009-05-22 21:01:25 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:25 015 TransSimuBiz SimuOnlineThread eclipse time = 424031.25
+
+2009-05-22 21:01:25 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4250
+
+2009-05-22 21:01:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:26 000 TransSimuBiz SimuOnlineThread eclipse time = 425015.625
+
+2009-05-22 21:01:26 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4260
+
+2009-05-22 21:01:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:27 015 TransSimuBiz SimuOnlineThread eclipse time = 426031.25
+
+2009-05-22 21:01:27 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4270
+
+2009-05-22 21:01:28 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:28 000 TransSimuBiz SimuOnlineThread eclipse time = 427015.625
+
+2009-05-22 21:01:28 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4280
+
+2009-05-22 21:01:29 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 21:01:29 000 TransSimuBiz SimuOnlineThread eclipse time = 428015.625
+
+2009-05-22 21:01:29 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4290
+
+2009-05-22 21:01:30 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:30 000 TransSimuBiz SimuOnlineThread eclipse time = 429015.625
+
+2009-05-22 21:01:30 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4300
+
+2009-05-22 21:01:31 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:31 015 TransSimuBiz SimuOnlineThread eclipse time = 430031.25
+
+2009-05-22 21:01:31 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4310
+
+2009-05-22 21:01:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:32 000 TransSimuBiz SimuOnlineThread eclipse time = 431015.625
+
+2009-05-22 21:01:32 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4320
+
+2009-05-22 21:01:33 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:33 000 TransSimuBiz SimuOnlineThread eclipse time = 432015.625
+
+2009-05-22 21:01:33 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4330
+
+2009-05-22 21:01:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:34 000 TransSimuBiz SimuOnlineThread eclipse time = 433015.625
+
+2009-05-22 21:01:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4340
+
+2009-05-22 21:01:35 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:35 015 TransSimuBiz SimuOnlineThread eclipse time = 434031.25
+
+2009-05-22 21:01:35 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4350
+
+2009-05-22 21:01:36 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:36 000 TransSimuBiz SimuOnlineThread eclipse time = 435015.625
+
+2009-05-22 21:01:36 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4360
+
+2009-05-22 21:01:37 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:37 015 TransSimuBiz SimuOnlineThread eclipse time = 436031.25
+
+2009-05-22 21:01:37 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4370
+
+2009-05-22 21:01:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:38 000 TransSimuBiz SimuOnlineThread eclipse time = 437015.625
+
+2009-05-22 21:01:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4380
+
+2009-05-22 21:01:39 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:01:39 000 TransSimuBiz SimuOnlineThread eclipse time = 438015.625
+
+2009-05-22 21:01:39 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4390
+
+2009-05-22 21:01:40 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:40 015 TransSimuBiz SimuOnlineThread eclipse time = 439031.25
+
+2009-05-22 21:01:40 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4400
+
+2009-05-22 21:01:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:41 015 TransSimuBiz SimuOnlineThread eclipse time = 440031.25
+
+2009-05-22 21:01:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4410
+
+2009-05-22 21:01:42 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:42 015 TransSimuBiz SimuOnlineThread eclipse time = 441031.25
+
+2009-05-22 21:01:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4420
+
+2009-05-22 21:01:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:43 000 TransSimuBiz SimuOnlineThread eclipse time = 442015.625
+
+2009-05-22 21:01:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4430
+
+2009-05-22 21:01:44 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:01:44 015 TransSimuBiz SimuOnlineThread eclipse time = 443031.25
+
+2009-05-22 21:01:44 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4440
+
+2009-05-22 21:01:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:45 000 TransSimuBiz SimuOnlineThread eclipse time = 444015.625
+
+2009-05-22 21:01:45 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4450
+
+2009-05-22 21:01:46 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:46 015 TransSimuBiz SimuOnlineThread eclipse time = 445031.25
+
+2009-05-22 21:01:46 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4460
+
+2009-05-22 21:01:47 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:01:47 015 TransSimuBiz SimuOnlineThread eclipse time = 446031.25
+
+2009-05-22 21:01:47 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4470
+
+2009-05-22 21:01:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:48 000 TransSimuBiz SimuOnlineThread eclipse time = 447015.625
+
+2009-05-22 21:01:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4480
+
+2009-05-22 21:01:49 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:01:49 015 TransSimuBiz SimuOnlineThread eclipse time = 448031.25
+
+2009-05-22 21:01:49 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4490
+
+2009-05-22 21:01:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:50 015 TransSimuBiz SimuOnlineThread eclipse time = 449031.25
+
+2009-05-22 21:01:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4500
+
+2009-05-22 21:01:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:51 000 TransSimuBiz SimuOnlineThread eclipse time = 450015.625
+
+2009-05-22 21:01:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4510
+
+2009-05-22 21:01:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:52 000 TransSimuBiz SimuOnlineThread eclipse time = 451015.625
+
+2009-05-22 21:01:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4520
+
+2009-05-22 21:01:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:53 000 TransSimuBiz SimuOnlineThread eclipse time = 452015.625
+
+2009-05-22 21:01:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4530
+
+2009-05-22 21:01:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 906.25 ms 
+
+2009-05-22 21:01:54 000 TransSimuBiz SimuOnlineThread eclipse time = 453015.625
+
+2009-05-22 21:01:54 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4540
+
+2009-05-22 21:01:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:55 000 TransSimuBiz SimuOnlineThread eclipse time = 454015.625
+
+2009-05-22 21:01:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4550
+
+2009-05-22 21:01:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:01:56 000 TransSimuBiz SimuOnlineThread eclipse time = 455015.625
+
+2009-05-22 21:01:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4560
+
+2009-05-22 21:01:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:01:57 000 TransSimuBiz SimuOnlineThread eclipse time = 456015.625
+
+2009-05-22 21:01:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4570
+
+2009-05-22 21:01:58 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:01:58 015 TransSimuBiz SimuOnlineThread eclipse time = 457031.25
+
+2009-05-22 21:01:58 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4580
+
+2009-05-22 21:01:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:01:59 000 TransSimuBiz SimuOnlineThread eclipse time = 458015.625
+
+2009-05-22 21:01:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4590
+
+2009-05-22 21:02:00 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:00 015 TransSimuBiz SimuOnlineThread eclipse time = 459031.25
+
+2009-05-22 21:02:00 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4600
+
+2009-05-22 21:02:01 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:01 015 TransSimuBiz SimuOnlineThread eclipse time = 460031.25
+
+2009-05-22 21:02:01 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4610
+
+2009-05-22 21:02:02 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:02 000 TransSimuBiz SimuOnlineThread eclipse time = 461015.625
+
+2009-05-22 21:02:02 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4620
+
+2009-05-22 21:02:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:02:03 000 TransSimuBiz SimuOnlineThread eclipse time = 462015.625
+
+2009-05-22 21:02:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4630
+
+2009-05-22 21:02:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:04 000 TransSimuBiz SimuOnlineThread eclipse time = 463015.625
+
+2009-05-22 21:02:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4640
+
+2009-05-22 21:02:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:05 000 TransSimuBiz SimuOnlineThread eclipse time = 464015.625
+
+2009-05-22 21:02:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4650
+
+2009-05-22 21:02:06 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:06 000 TransSimuBiz SimuOnlineThread eclipse time = 465015.625
+
+2009-05-22 21:02:06 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4660
+
+2009-05-22 21:02:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:07 000 TransSimuBiz SimuOnlineThread eclipse time = 466015.625
+
+2009-05-22 21:02:07 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4670
+
+2009-05-22 21:02:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:08 000 TransSimuBiz SimuOnlineThread eclipse time = 467015.625
+
+2009-05-22 21:02:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4680
+
+2009-05-22 21:02:09 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:02:09 015 TransSimuBiz SimuOnlineThread eclipse time = 468031.25
+
+2009-05-22 21:02:09 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4690
+
+2009-05-22 21:02:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:10 000 TransSimuBiz SimuOnlineThread eclipse time = 469015.625
+
+2009-05-22 21:02:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4700
+
+2009-05-22 21:02:11 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:11 000 TransSimuBiz SimuOnlineThread eclipse time = 470015.625
+
+2009-05-22 21:02:11 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4710
+
+2009-05-22 21:02:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:12 000 TransSimuBiz SimuOnlineThread eclipse time = 471015.625
+
+2009-05-22 21:02:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4720
+
+2009-05-22 21:02:13 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:13 015 TransSimuBiz SimuOnlineThread eclipse time = 472031.25
+
+2009-05-22 21:02:13 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4730
+
+2009-05-22 21:02:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:14 000 TransSimuBiz SimuOnlineThread eclipse time = 473015.625
+
+2009-05-22 21:02:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4740
+
+2009-05-22 21:02:15 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:15 015 TransSimuBiz SimuOnlineThread eclipse time = 474031.25
+
+2009-05-22 21:02:15 031 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4750
+
+2009-05-22 21:02:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:16 000 TransSimuBiz SimuOnlineThread eclipse time = 475015.625
+
+2009-05-22 21:02:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4760
+
+2009-05-22 21:02:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:17 000 TransSimuBiz SimuOnlineThread eclipse time = 476015.625
+
+2009-05-22 21:02:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4770
+
+2009-05-22 21:02:18 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:18 000 TransSimuBiz SimuOnlineThread eclipse time = 477015.625
+
+2009-05-22 21:02:18 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4780
+
+2009-05-22 21:02:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:02:19 000 TransSimuBiz SimuOnlineThread eclipse time = 478015.625
+
+2009-05-22 21:02:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4790
+
+2009-05-22 21:02:20 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:20 000 TransSimuBiz SimuOnlineThread eclipse time = 479015.625
+
+2009-05-22 21:02:20 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4800
+
+2009-05-22 21:02:21 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:21 015 TransSimuBiz SimuOnlineThread eclipse time = 480031.25
+
+2009-05-22 21:02:21 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4810
+
+2009-05-22 21:02:22 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:22 015 TransSimuBiz SimuOnlineThread eclipse time = 481031.25
+
+2009-05-22 21:02:22 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4820
+
+2009-05-22 21:02:23 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:23 000 TransSimuBiz SimuOnlineThread eclipse time = 482015.625
+
+2009-05-22 21:02:23 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4830
+
+2009-05-22 21:02:24 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 890.625 ms 
+
+2009-05-22 21:02:24 015 TransSimuBiz SimuOnlineThread eclipse time = 483031.25
+
+2009-05-22 21:02:24 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4840
+
+2009-05-22 21:02:25 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:25 000 TransSimuBiz SimuOnlineThread eclipse time = 484015.625
+
+2009-05-22 21:02:25 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4850
+
+2009-05-22 21:02:26 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:26 000 TransSimuBiz SimuOnlineThread eclipse time = 485015.625
+
+2009-05-22 21:02:26 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4860
+
+2009-05-22 21:02:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:27 015 TransSimuBiz SimuOnlineThread eclipse time = 486031.25
+
+2009-05-22 21:02:27 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4870
+
+2009-05-22 21:02:28 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:28 015 TransSimuBiz SimuOnlineThread eclipse time = 487031.25
+
+2009-05-22 21:02:28 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4880
+
+2009-05-22 21:02:29 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:29 015 TransSimuBiz SimuOnlineThread eclipse time = 488031.25
+
+2009-05-22 21:02:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4890
+
+2009-05-22 21:02:30 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:30 015 TransSimuBiz SimuOnlineThread eclipse time = 489031.25
+
+2009-05-22 21:02:30 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4900
+
+2009-05-22 21:02:31 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:31 015 TransSimuBiz SimuOnlineThread eclipse time = 490031.25
+
+2009-05-22 21:02:31 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4910
+
+2009-05-22 21:02:32 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:32 015 TransSimuBiz SimuOnlineThread eclipse time = 491031.25
+
+2009-05-22 21:02:32 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4920
+
+2009-05-22 21:02:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:33 015 TransSimuBiz SimuOnlineThread eclipse time = 492031.25
+
+2009-05-22 21:02:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4930
+
+2009-05-22 21:02:34 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:34 000 TransSimuBiz SimuOnlineThread eclipse time = 493015.625
+
+2009-05-22 21:02:34 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4940
+
+2009-05-22 21:02:35 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:35 000 TransSimuBiz SimuOnlineThread eclipse time = 494015.625
+
+2009-05-22 21:02:35 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4950
+
+2009-05-22 21:02:36 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:36 015 TransSimuBiz SimuOnlineThread eclipse time = 495031.25
+
+2009-05-22 21:02:36 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4960
+
+2009-05-22 21:02:37 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:37 015 TransSimuBiz SimuOnlineThread eclipse time = 496031.25
+
+2009-05-22 21:02:37 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4970
+
+2009-05-22 21:02:38 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:38 000 TransSimuBiz SimuOnlineThread eclipse time = 497015.625
+
+2009-05-22 21:02:38 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4980
+
+2009-05-22 21:02:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 921.875 ms 
+
+2009-05-22 21:02:39 015 TransSimuBiz SimuOnlineThread eclipse time = 498031.25
+
+2009-05-22 21:02:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 4990
+
+2009-05-22 21:02:40 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:40 000 TransSimuBiz SimuOnlineThread eclipse time = 499015.625
+
+2009-05-22 21:02:40 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5000
+
+2009-05-22 21:02:41 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:41 000 TransSimuBiz SimuOnlineThread eclipse time = 500015.625
+
+2009-05-22 21:02:41 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5010
+
+2009-05-22 21:02:42 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:42 000 TransSimuBiz SimuOnlineThread eclipse time = 501015.625
+
+2009-05-22 21:02:42 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5020
+
+2009-05-22 21:02:43 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:43 000 TransSimuBiz SimuOnlineThread eclipse time = 502015.625
+
+2009-05-22 21:02:43 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5030
+
+2009-05-22 21:02:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:02:44 000 TransSimuBiz SimuOnlineThread eclipse time = 503015.625
+
+2009-05-22 21:02:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5040
+
+2009-05-22 21:02:45 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:45 000 TransSimuBiz SimuOnlineThread eclipse time = 504015.625
+
+2009-05-22 21:02:45 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5050
+
+2009-05-22 21:02:46 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:46 000 TransSimuBiz SimuOnlineThread eclipse time = 505015.625
+
+2009-05-22 21:02:46 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5060
+
+2009-05-22 21:02:47 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:47 015 TransSimuBiz SimuOnlineThread eclipse time = 506031.25
+
+2009-05-22 21:02:47 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5070
+
+2009-05-22 21:02:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:48 000 TransSimuBiz SimuOnlineThread eclipse time = 507015.625
+
+2009-05-22 21:02:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5080
+
+2009-05-22 21:02:49 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:02:49 000 TransSimuBiz SimuOnlineThread eclipse time = 508015.625
+
+2009-05-22 21:02:49 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5090
+
+2009-05-22 21:02:50 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:50 015 TransSimuBiz SimuOnlineThread eclipse time = 509031.25
+
+2009-05-22 21:02:50 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5100
+
+2009-05-22 21:02:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:51 000 TransSimuBiz SimuOnlineThread eclipse time = 510015.625
+
+2009-05-22 21:02:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5110
+
+2009-05-22 21:02:52 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:52 000 TransSimuBiz SimuOnlineThread eclipse time = 511015.625
+
+2009-05-22 21:02:52 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5120
+
+2009-05-22 21:02:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:02:53 000 TransSimuBiz SimuOnlineThread eclipse time = 512015.625
+
+2009-05-22 21:02:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5130
+
+2009-05-22 21:02:54 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:54 015 TransSimuBiz SimuOnlineThread eclipse time = 513031.25
+
+2009-05-22 21:02:54 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5140
+
+2009-05-22 21:02:55 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:02:55 015 TransSimuBiz SimuOnlineThread eclipse time = 514031.25
+
+2009-05-22 21:02:55 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5150
+
+2009-05-22 21:02:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:02:56 000 TransSimuBiz SimuOnlineThread eclipse time = 515015.625
+
+2009-05-22 21:02:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5160
+
+2009-05-22 21:02:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:02:57 000 TransSimuBiz SimuOnlineThread eclipse time = 516015.625
+
+2009-05-22 21:02:57 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5170
+
+2009-05-22 21:02:58 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:02:58 000 TransSimuBiz SimuOnlineThread eclipse time = 517015.625
+
+2009-05-22 21:02:58 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5180
+
+2009-05-22 21:02:59 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:02:59 015 TransSimuBiz SimuOnlineThread eclipse time = 518031.25
+
+2009-05-22 21:02:59 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5190
+
+2009-05-22 21:03:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:00 000 TransSimuBiz SimuOnlineThread eclipse time = 519015.625
+
+2009-05-22 21:03:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5200
+
+2009-05-22 21:03:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:01 000 TransSimuBiz SimuOnlineThread eclipse time = 520015.625
+
+2009-05-22 21:03:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5210
+
+2009-05-22 21:03:02 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:02 000 TransSimuBiz SimuOnlineThread eclipse time = 521015.625
+
+2009-05-22 21:03:02 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5220
+
+2009-05-22 21:03:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:03 000 TransSimuBiz SimuOnlineThread eclipse time = 522015.625
+
+2009-05-22 21:03:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5230
+
+2009-05-22 21:03:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:03:04 000 TransSimuBiz SimuOnlineThread eclipse time = 523015.625
+
+2009-05-22 21:03:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5240
+
+2009-05-22 21:03:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:05 000 TransSimuBiz SimuOnlineThread eclipse time = 524015.625
+
+2009-05-22 21:03:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5250
+
+2009-05-22 21:03:06 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:03:06 000 TransSimuBiz SimuOnlineThread eclipse time = 525015.625
+
+2009-05-22 21:03:06 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5260
+
+2009-05-22 21:03:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:07 000 TransSimuBiz SimuOnlineThread eclipse time = 526015.625
+
+2009-05-22 21:03:07 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5270
+
+2009-05-22 21:03:08 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:03:08 000 TransSimuBiz SimuOnlineThread eclipse time = 527015.625
+
+2009-05-22 21:03:08 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5280
+
+2009-05-22 21:03:09 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:09 015 TransSimuBiz SimuOnlineThread eclipse time = 528031.25
+
+2009-05-22 21:03:09 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5290
+
+2009-05-22 21:03:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:10 000 TransSimuBiz SimuOnlineThread eclipse time = 529015.625
+
+2009-05-22 21:03:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5300
+
+2009-05-22 21:03:11 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:11 015 TransSimuBiz SimuOnlineThread eclipse time = 530031.25
+
+2009-05-22 21:03:11 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5310
+
+2009-05-22 21:03:12 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:12 015 TransSimuBiz SimuOnlineThread eclipse time = 531031.25
+
+2009-05-22 21:03:12 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5320
+
+2009-05-22 21:03:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:13 000 TransSimuBiz SimuOnlineThread eclipse time = 532015.625
+
+2009-05-22 21:03:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5330
+
+2009-05-22 21:03:14 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:14 015 TransSimuBiz SimuOnlineThread eclipse time = 533031.25
+
+2009-05-22 21:03:14 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5340
+
+2009-05-22 21:03:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:03:15 000 TransSimuBiz SimuOnlineThread eclipse time = 534015.625
+
+2009-05-22 21:03:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5350
+
+2009-05-22 21:03:16 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:16 000 TransSimuBiz SimuOnlineThread eclipse time = 535015.625
+
+2009-05-22 21:03:16 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5360
+
+2009-05-22 21:03:17 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:17 015 TransSimuBiz SimuOnlineThread eclipse time = 536031.25
+
+2009-05-22 21:03:17 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5370
+
+2009-05-22 21:03:18 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:18 000 TransSimuBiz SimuOnlineThread eclipse time = 537015.625
+
+2009-05-22 21:03:18 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5380
+
+2009-05-22 21:03:19 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:03:19 000 TransSimuBiz SimuOnlineThread eclipse time = 538015.625
+
+2009-05-22 21:03:19 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5390
+
+2009-05-22 21:03:20 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:20 015 TransSimuBiz SimuOnlineThread eclipse time = 539031.25
+
+2009-05-22 21:03:20 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5400
+
+2009-05-22 21:03:21 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:21 000 TransSimuBiz SimuOnlineThread eclipse time = 540015.625
+
+2009-05-22 21:03:21 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5410
+
+2009-05-22 21:03:22 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:22 000 TransSimuBiz SimuOnlineThread eclipse time = 541015.625
+
+2009-05-22 21:03:22 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5420
+
+2009-05-22 21:03:23 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:23 015 TransSimuBiz SimuOnlineThread eclipse time = 542031.25
+
+2009-05-22 21:03:23 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5430
+
+2009-05-22 21:03:24 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:03:24 000 TransSimuBiz SimuOnlineThread eclipse time = 543015.625
+
+2009-05-22 21:03:24 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5440
+
+2009-05-22 21:03:25 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:25 015 TransSimuBiz SimuOnlineThread eclipse time = 544031.25
+
+2009-05-22 21:03:25 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5450
+
+2009-05-22 21:03:26 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:26 015 TransSimuBiz SimuOnlineThread eclipse time = 545031.25
+
+2009-05-22 21:03:26 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5460
+
+2009-05-22 21:03:27 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:27 015 TransSimuBiz SimuOnlineThread eclipse time = 546031.25
+
+2009-05-22 21:03:27 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5470
+
+2009-05-22 21:03:28 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:28 015 TransSimuBiz SimuOnlineThread eclipse time = 547031.25
+
+2009-05-22 21:03:28 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5480
+
+2009-05-22 21:03:29 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:29 015 TransSimuBiz SimuOnlineThread eclipse time = 548031.25
+
+2009-05-22 21:03:29 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5490
+
+2009-05-22 21:03:30 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 21:03:30 000 TransSimuBiz SimuOnlineThread eclipse time = 549015.625
+
+2009-05-22 21:03:30 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5500
+
+2009-05-22 21:03:31 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:31 000 TransSimuBiz SimuOnlineThread eclipse time = 550015.625
+
+2009-05-22 21:03:31 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5510
+
+2009-05-22 21:03:32 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 21:03:32 000 TransSimuBiz SimuOnlineThread eclipse time = 551015.625
+
+2009-05-22 21:03:32 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5520
+
+2009-05-22 21:03:33 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:33 015 TransSimuBiz SimuOnlineThread eclipse time = 552031.25
+
+2009-05-22 21:03:33 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5530
+
+2009-05-22 21:03:34 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:34 015 TransSimuBiz SimuOnlineThread eclipse time = 553031.25
+
+2009-05-22 21:03:34 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5540
+
+2009-05-22 21:03:35 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:35 015 TransSimuBiz SimuOnlineThread eclipse time = 554031.25
+
+2009-05-22 21:03:35 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5550
+
+2009-05-22 21:03:36 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 750 ms 
+
+2009-05-22 21:03:36 000 TransSimuBiz SimuOnlineThread eclipse time = 555015.625
+
+2009-05-22 21:03:36 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5560
+
+2009-05-22 21:03:37 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:37 000 TransSimuBiz SimuOnlineThread eclipse time = 556015.625
+
+2009-05-22 21:03:37 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5570
+
+2009-05-22 21:03:38 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:03:38 015 TransSimuBiz SimuOnlineThread eclipse time = 557031.25
+
+2009-05-22 21:03:38 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5580
+
+2009-05-22 21:03:39 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:39 015 TransSimuBiz SimuOnlineThread eclipse time = 558031.25
+
+2009-05-22 21:03:39 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5590
+
+2009-05-22 21:03:40 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:40 015 TransSimuBiz SimuOnlineThread eclipse time = 559031.25
+
+2009-05-22 21:03:40 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5600
+
+2009-05-22 21:03:41 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 765.625 ms 
+
+2009-05-22 21:03:41 015 TransSimuBiz SimuOnlineThread eclipse time = 560031.25
+
+2009-05-22 21:03:41 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5610
+
+2009-05-22 21:03:42 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:42 015 TransSimuBiz SimuOnlineThread eclipse time = 561031.25
+
+2009-05-22 21:03:42 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5620
+
+2009-05-22 21:03:43 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:43 015 TransSimuBiz SimuOnlineThread eclipse time = 562031.25
+
+2009-05-22 21:03:43 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5630
+
+2009-05-22 21:03:44 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:44 000 TransSimuBiz SimuOnlineThread eclipse time = 563015.625
+
+2009-05-22 21:03:44 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5640
+
+2009-05-22 21:03:45 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:45 015 TransSimuBiz SimuOnlineThread eclipse time = 564031.25
+
+2009-05-22 21:03:45 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5650
+
+2009-05-22 21:03:46 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:46 000 TransSimuBiz SimuOnlineThread eclipse time = 565015.625
+
+2009-05-22 21:03:46 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5660
+
+2009-05-22 21:03:47 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:47 000 TransSimuBiz SimuOnlineThread eclipse time = 566015.625
+
+2009-05-22 21:03:47 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5670
+
+2009-05-22 21:03:48 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:48 000 TransSimuBiz SimuOnlineThread eclipse time = 567015.625
+
+2009-05-22 21:03:48 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5680
+
+2009-05-22 21:03:49 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:49 015 TransSimuBiz SimuOnlineThread eclipse time = 568031.25
+
+2009-05-22 21:03:49 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5690
+
+2009-05-22 21:03:50 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:50 000 TransSimuBiz SimuOnlineThread eclipse time = 569015.625
+
+2009-05-22 21:03:50 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5700
+
+2009-05-22 21:03:51 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:51 000 TransSimuBiz SimuOnlineThread eclipse time = 570015.625
+
+2009-05-22 21:03:51 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5710
+
+2009-05-22 21:03:52 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:52 015 TransSimuBiz SimuOnlineThread eclipse time = 571031.25
+
+2009-05-22 21:03:52 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5720
+
+2009-05-22 21:03:53 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:53 000 TransSimuBiz SimuOnlineThread eclipse time = 572015.625
+
+2009-05-22 21:03:53 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5730
+
+2009-05-22 21:03:54 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 859.375 ms 
+
+2009-05-22 21:03:54 000 TransSimuBiz SimuOnlineThread eclipse time = 573015.625
+
+2009-05-22 21:03:54 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5740
+
+2009-05-22 21:03:55 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:55 000 TransSimuBiz SimuOnlineThread eclipse time = 574015.625
+
+2009-05-22 21:03:55 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5750
+
+2009-05-22 21:03:56 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:56 000 TransSimuBiz SimuOnlineThread eclipse time = 575015.625
+
+2009-05-22 21:03:56 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5760
+
+2009-05-22 21:03:57 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:03:57 000 TransSimuBiz SimuOnlineThread eclipse time = 576015.625
+
+2009-05-22 21:03:57 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5770
+
+2009-05-22 21:03:58 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:03:58 015 TransSimuBiz SimuOnlineThread eclipse time = 577031.25
+
+2009-05-22 21:03:58 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5780
+
+2009-05-22 21:03:59 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:03:59 000 TransSimuBiz SimuOnlineThread eclipse time = 578015.625
+
+2009-05-22 21:03:59 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5790
+
+2009-05-22 21:04:00 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:04:00 000 TransSimuBiz SimuOnlineThread eclipse time = 579015.625
+
+2009-05-22 21:04:00 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5800
+
+2009-05-22 21:04:01 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:01 000 TransSimuBiz SimuOnlineThread eclipse time = 580015.625
+
+2009-05-22 21:04:01 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5810
+
+2009-05-22 21:04:02 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:02 000 TransSimuBiz SimuOnlineThread eclipse time = 581015.625
+
+2009-05-22 21:04:02 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5820
+
+2009-05-22 21:04:03 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:04:03 000 TransSimuBiz SimuOnlineThread eclipse time = 582015.625
+
+2009-05-22 21:04:03 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5830
+
+2009-05-22 21:04:04 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 21:04:04 000 TransSimuBiz SimuOnlineThread eclipse time = 583015.625
+
+2009-05-22 21:04:04 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5840
+
+2009-05-22 21:04:05 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:05 000 TransSimuBiz SimuOnlineThread eclipse time = 584015.625
+
+2009-05-22 21:04:05 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5850
+
+2009-05-22 21:04:06 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:04:06 015 TransSimuBiz SimuOnlineThread eclipse time = 585031.25
+
+2009-05-22 21:04:06 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5860
+
+2009-05-22 21:04:07 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:07 000 TransSimuBiz SimuOnlineThread eclipse time = 586015.625
+
+2009-05-22 21:04:07 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5870
+
+2009-05-22 21:04:08 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:04:08 015 TransSimuBiz SimuOnlineThread eclipse time = 587031.25
+
+2009-05-22 21:04:08 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5880
+
+2009-05-22 21:04:09 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:09 000 TransSimuBiz SimuOnlineThread eclipse time = 588015.625
+
+2009-05-22 21:04:09 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5890
+
+2009-05-22 21:04:10 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 21:04:10 000 TransSimuBiz SimuOnlineThread eclipse time = 589015.625
+
+2009-05-22 21:04:10 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5900
+
+2009-05-22 21:04:11 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 796.875 ms 
+
+2009-05-22 21:04:11 015 TransSimuBiz SimuOnlineThread eclipse time = 590031.25
+
+2009-05-22 21:04:11 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5910
+
+2009-05-22 21:04:12 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 781.25 ms 
+
+2009-05-22 21:04:12 000 TransSimuBiz SimuOnlineThread eclipse time = 591015.625
+
+2009-05-22 21:04:12 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5920
+
+2009-05-22 21:04:13 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:13 000 TransSimuBiz SimuOnlineThread eclipse time = 592015.625
+
+2009-05-22 21:04:13 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5930
+
+2009-05-22 21:04:14 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 875 ms 
+
+2009-05-22 21:04:14 000 TransSimuBiz SimuOnlineThread eclipse time = 593015.625
+
+2009-05-22 21:04:14 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5940
+
+2009-05-22 21:04:15 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 828.125 ms 
+
+2009-05-22 21:04:15 000 TransSimuBiz SimuOnlineThread eclipse time = 594015.625
+
+2009-05-22 21:04:15 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5950
+
+2009-05-22 21:04:16 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:04:16 015 TransSimuBiz SimuOnlineThread eclipse time = 595031.25
+
+2009-05-22 21:04:16 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5960
+
+2009-05-22 21:04:17 000 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 812.5 ms 
+
+2009-05-22 21:04:17 000 TransSimuBiz SimuOnlineThread eclipse time = 596015.625
+
+2009-05-22 21:04:17 000 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5970
+
+2009-05-22 21:04:18 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:04:18 015 TransSimuBiz SimuOnlineThread eclipse time = 597031.25
+
+2009-05-22 21:04:18 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5980
+
+2009-05-22 21:04:19 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:04:19 015 TransSimuBiz SimuOnlineThread eclipse time = 598031.25
+
+2009-05-22 21:04:19 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 5990
+
+2009-05-22 21:04:20 015 TransSimuBiz SimuOnlineThread SimuOnlineThread->Sleep 843.75 ms 
+
+2009-05-22 21:04:20 015 TransSimuBiz SimuOnlineThread eclipse time = 599031.25
+
+2009-05-22 21:04:20 015 TransSimuBiz SimuOnlineThread needCount = 6000, EclipseCount = 6000
+
+2009-05-22 21:04:20 015 TransSimuBiz SimuOnlineThread SimuOnlineThread Finished: 2009:5:22 21:4:20 15

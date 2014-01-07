@@ -1,0 +1,11 @@
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\ChromatoTool.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\ChromatoTool.pdb
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\netcdf.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\System.Data.SQLite.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\vjslib.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\vjsvwaux.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\vjslibcw.dll
+F:\Chromato-v2\Source\ChromatoTool\bin\Release\vjscor.dll
+F:\Chromato-v2\Source\ChromatoTool\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoTool\obj\Release\ChromatoTool.dll
+F:\Chromato-v2\Source\ChromatoTool\obj\Release\ChromatoTool.pdb

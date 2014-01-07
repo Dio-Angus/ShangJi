@@ -1,0 +1,9 @@
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\bin\Debug\issac.exe
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\bin\Debug\issac.pdb
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\issac.Properties.Resources.resources
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\issac.exe
+c:\users\dio\documents\visual studio 2010\Projects\issac\issac\obj\x86\Debug\issac.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\issac\issac\obj\x86\Debug\issac.FrmIssac.resources

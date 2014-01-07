@@ -1,0 +1,77 @@
+﻿<project schemaVersion="1.6.0.7">
+    <assemblies>
+        <assembly assemblyPath=".\AxInterop.GRAPHOCXLib.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\Chromato.exe" xmlCommentsPath=".\Chromato.xml" commentsOnly="False" />
+        <assembly assemblyPath=".\ChromatoBll.dll" xmlCommentsPath=".\ChromatoBll.xml" commentsOnly="False" />
+        <assembly assemblyPath=".\ChromatoCore.dll" xmlCommentsPath=".\ChromatoCore.xml" commentsOnly="False" />
+        <assembly assemblyPath=".\ChromatoPeak.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\ChromatoPrint.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\ChromatoTool.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\Interop.GRAPHOCXLib.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\Microsoft.Office.Interop.Excel.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\Microsoft.Vbe.Interop.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\office.dll" xmlCommentsPath="" commentsOnly="False" />
+        <assembly assemblyPath=".\System.Data.SQLite.dll" xmlCommentsPath="" commentsOnly="False" />
+    </assemblies>
+    <namespaceSummaries>
+        <namespaceSummaryItem name="" isDocumented="False" />
+        <namespaceSummaryItem name="AxCASTSMSLib" isDocumented="True" />
+        <namespaceSummaryItem name="CASTSMSLib" isDocumented="True" />
+        <namespaceSummaryItem name="System.Data.SQLite" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.biz" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.biz.module" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.dao" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.db" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.dto" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.encrypt" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.ini" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.log" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.panel" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.serialCom" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.uiCheck" isDocumented="True" />
+        <namespaceSummaryItem name="TransCore.util" isDocumented="True" />
+        <namespaceSummaryItem name="TransOilMonitor" isDocumented="True" />
+        <namespaceSummaryItem name="TransOilMonitor.Forms" isDocumented="True" />
+    </namespaceSummaries>
+    <ProjectSummary />
+    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, Namespace, TypeParameter</MissingTags>
+    <VisibleItems>ExplicitInterfaceImplementations, InheritedMembers, InheritedFrameworkMembers, Privates, Protected, SealedProtected, PrivateFields</VisibleItems>
+    <HtmlHelp1xCompilerPath path="" />
+    <HtmlHelp2xCompilerPath path="" />
+    <OutputPath>.\Help\</OutputPath>
+    <SandcastlePath path="" />
+    <WorkingPath path="" />
+    <CleanIntermediates>True</CleanIntermediates>
+    <KeepLogFile>True</KeepLogFile>
+    <BuildLogFile path="" />
+    <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
+    <CppCommentsFixup>True</CppCommentsFixup>
+    <FrameworkVersion>2.0.50727</FrameworkVersion>
+    <IndentHtml>False</IndentHtml>
+    <Preliminary>False</Preliminary>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <RootNamespaceTitle />
+    <HelpTitle>A Sandcastle Documented Class Library</HelpTitle>
+    <HtmlHelpName>Documentation</HtmlHelpName>
+    <Language>en-US</Language>
+    <CopyrightHref />
+    <CopyrightText />
+    <FeedbackEMailAddress />
+    <FeedbackEMailLinkText />
+    <HeaderText />
+    <FooterText />
+    <ProjectLinkType>Local</ProjectLinkType>
+    <SdkLinkType>Msdn</SdkLinkType>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <PresentationStyle>Prototype</PresentationStyle>
+    <NamingMethod>Guid</NamingMethod>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <ShowFeedbackControl>False</ShowFeedbackControl>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>False</IncludeFavorites>
+    <CollectionTocStyle>Hierarchical</CollectionTocStyle>
+    <IncludeStopWordList>True</IncludeStopWordList>
+    <PlugInNamespaces>ms.vsipcc+, ms.vsexpresscc+</PlugInNamespaces>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+</project>

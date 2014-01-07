@@ -1,0 +1,379 @@
+
+2013-12-26 11:22:52 071 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-12-26 11:22:52 071 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:22:52 086 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2013-12-26 11:22:52 086 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:22:52 102 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2013-12-26 11:22:52 102 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:22:52 102 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-12-26 11:22:52 102 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:22:52 117 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-12-26 11:22:52 117 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-12-26 11:22:52 117 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-12-26 11:22:52 117 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-12-26 11:22:52 117 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-12-26 11:22:52 117 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-12-26 11:22:52 133 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-12-26 11:22:52 429 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2013-12-26 11:22:52 429 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:22:52 445 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:24:15 562 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:15 562 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:15 562 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:16 124 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3
+
+2013-12-26 11:24:16 124 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:16 124 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:16 950 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130927110632.db3
+
+2013-12-26 11:24:16 950 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130927110632.db3 没有找到该文件!
+
+2013-12-26 11:24:16 950 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130927110632.db3 没有找到该文件!
+
+2013-12-26 11:24:17 372 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:17 372 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:17 372 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:17 886 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3
+
+2013-12-26 11:24:17 886 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:17 886 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:18 495 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:24:18 495 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:18 495 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:34 641 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:34 641 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:35 000 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:35 000 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:35 811 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:24:35 811 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:35 811 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:36 450 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3
+
+2013-12-26 11:24:36 450 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:36 450 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:36 845 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:36 845 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:36 845 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:37 235 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3
+
+2013-12-26 11:24:37 235 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3 没有找到该文件!
+
+2013-12-26 11:24:37 235 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3 没有找到该文件!
+
+2013-12-26 11:24:37 745 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道C_20110730140550.db3
+
+2013-12-26 11:24:37 745 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道C_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:24:37 745 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道C_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:24:38 435 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:24:38 435 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:38 435 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:39 011 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:24:39 011 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:39 011 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:39 572 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3
+
+2013-12-26 11:24:39 572 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:24:39 572 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:24:41 101 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:24:41 117 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:41 117 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:53 098 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:53 098 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:53 098 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:53 768 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:24:53 768 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:53 768 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:54 517 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:54 533 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:54 533 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:55 079 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:24:55 079 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:55 079 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:24:55 874 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:55 874 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:55 874 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:58 277 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:24:58 277 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:58 277 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:24:58 870 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:24:58 870 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:58 870 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:24:59 509 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3
+
+2013-12-26 11:24:59 509 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:24:59 509 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:25:01 194 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:01 194 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:01 194 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:01 693 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:25:01 693 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:01 693 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:02 099 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:02 099 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:02 099 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:02 614 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:25:02 614 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:02 614 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:03 596 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:03 596 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:03 596 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:04 064 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:25:04 064 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:04 064 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:04 657 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:04 657 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:04 657 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:05 125 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:25:05 141 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:05 141 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:05 765 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:25:05 765 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:05 765 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:08 776 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:08 776 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:08 776 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:13 253 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:25:13 253 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:13 253 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:13 955 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:25:13 955 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:13 955 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:25:15 047 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3
+
+2013-12-26 11:25:15 047 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:15 047 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:15 530 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:15 530 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130925152815.db3 没有找到该文件!
+
+2013-12-26 11:25:16 030 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:25:16 030 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:25:16 030 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:02 625 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:27:02 625 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:27:02 625 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:27:03 389 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:27:03 389 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:03 389 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:04 107 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3
+
+2013-12-26 11:27:04 107 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:04 107 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:04 668 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:27:04 668 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:04 668 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:05 386 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3
+
+2013-12-26 11:27:05 386 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:05 386 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:05 729 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3
+
+2013-12-26 11:27:05 729 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:27:05 729 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926100346.db3 没有找到该文件!
+
+2013-12-26 11:27:06 353 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3
+
+2013-12-26 11:27:06 353 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:06 353 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道D_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:27:06 727 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3
+
+2013-12-26 11:27:06 727 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:06 727 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Fid1_20130925161945.db3 没有找到该文件!
+
+2013-12-26 11:27:07 476 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3
+
+2013-12-26 11:27:07 492 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3 没有找到该文件!
+
+2013-12-26 11:27:07 492 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926150419.db3 没有找到该文件!
+
+2013-12-26 11:27:07 944 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3
+
+2013-12-26 11:27:07 944 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:27:07 944 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201309\通道Tcd1_20130926093118.db3 没有找到该文件!
+
+2013-12-26 11:28:29 783 CommPort Close serial port closed
+
+2013-12-26 11:28:30 033 CommPort OpenSict PortName 不能为空。
+参数名: PortName: open failed
+
+2013-12-26 11:28:30 033 CommPort Close 打开串口失败 ！
+
+2013-12-26 11:29:28 691 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-12-26 11:29:28 691 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-12-26 11:29:28 722 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-12-26 11:29:28 738 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-12-26 11:29:28 738 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-12-26 11:29:28 738 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-12-26 11:29:28 738 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-12-26 11:29:28 738 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-12-26 11:29:28 738 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-12-26 11:29:28 754 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-12-26 11:29:28 910 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2013-12-26 11:29:28 910 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:29:28 910 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-12-26 11:34:43 512   splitterTree_SplitterMoved
+
+2013-12-26 11:52:34 962 CommPort CloseLoop count=0
+
+2013-12-26 11:52:34 962 CommPort Close serial port closed

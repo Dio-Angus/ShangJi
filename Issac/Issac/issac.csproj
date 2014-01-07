@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB79B597-0504-4248-94FA-A107FBA50307}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>issac</RootNamespace>
+    <AssemblyName>issac</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Isaac.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmIssac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIssac.Designer.cs">
+      <DependentUpon>FrmIssac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Isaac.ico" />
+    <Content Include="资源\消耗\0_The_Fool.bmp" />
+    <Content Include="资源\消耗\2_Of_Clubs.bmp" />
+    <Content Include="资源\消耗\2_Of_Diamonds.bmp" />
+    <Content Include="资源\消耗\2_Of_Hearts.bmp" />
+    <Content Include="资源\消耗\2_Of_Spades.bmp" />
+    <Content Include="资源\消耗\III_The Empress.bmp" />
+    <Content Include="资源\消耗\II_The_High_Priestess.bmp" />
+    <Content Include="资源\消耗\IV_The_Emperor.bmp" />
+    <Content Include="资源\消耗\IX_The_Hermit.bmp" />
+    <Content Include="资源\消耗\I_The_Magician.bmp" />
+    <Content Include="资源\消耗\The_Joker.bmp" />
+    <Content Include="资源\消耗\VIII_Justice.bmp" />
+    <Content Include="资源\消耗\VII_The_Chariot_%28flipped%29.bmp" />
+    <Content Include="资源\消耗\VI_The_Lovers.bmp" />
+    <Content Include="资源\消耗\V_The_Hierophant.bmp" />
+    <Content Include="资源\消耗\XIII_Death.bmp" />
+    <Content Include="资源\消耗\XII_The_Hanged_Man.bmp" />
+    <Content Include="资源\消耗\XIV_The_Tower.bmp" />
+    <Content Include="资源\消耗\XIX_The_Sun.bmp" />
+    <Content Include="资源\消耗\XI_Strength.bmp" />
+    <Content Include="资源\消耗\XVIII_The_Moon.bmp" />
+    <Content Include="资源\消耗\XVII_The_Stars.bmp" />
+    <Content Include="资源\消耗\XVI_Temperance.bmp" />
+    <Content Include="资源\消耗\XV_The_Devil.bmp" />
+    <Content Include="资源\消耗\XXI_The_World-flipped.bmp" />
+    <Content Include="资源\消耗\XX_Judgement.bmp" />
+    <Content Include="资源\消耗\X_Wheel_of_Fortune.bmp" />
+    <Content Include="资源\被动\1_UP.bmp" />
+    <Content Include="资源\被动\3_Dollar_Bill.bmp" />
+    <Content Include="资源\被动\9_Volt.bmp" />
+    <Content Include="资源\被动\Abel.bmp" />
+    <Content Include="资源\被动\Ankh.bmp" />
+    <Content Include="资源\被动\A_Dollar.bmp" />
+    <Content Include="资源\被动\A_Lump_Of_Coal.bmp" />
+    <Content Include="资源\被动\A_Quarter.bmp" />
+    <Content Include="资源\被动\Bloody_Lust.bmp" />
+    <Content Include="资源\被动\Blood_Bag.bmp" />
+    <Content Include="资源\被动\Blood_Of_The_Martyr.bmp" />
+    <Content Include="资源\被动\Bobby-Bomb.bmp" />
+    <Content Include="资源\被动\Bobs_Curse.bmp" />
+    <Content Include="资源\被动\Bomb_Bag.bmp" />
+    <Content Include="资源\被动\Boom.bmp" />
+    <Content Include="资源\被动\Box.bmp" />
+    <Content Include="资源\被动\Breakfast.bmp" />
+    <Content Include="资源\被动\Brimstone.bmp" />
+    <Content Include="资源\被动\Brother_Bobby.bmp" />
+    <Content Include="资源\被动\Bucket_Of_Lard.bmp" />
+    <Content Include="资源\被动\Bum_Friend.bmp" />
+    <Content Include="资源\被动\Cat-O-Nine-Tails.bmp" />
+    <Content Include="资源\被动\Celtic_Cross.bmp" />
+    <Content Include="资源\被动\Charm_Of_The_Vampire.bmp" />
+    <Content Include="资源\被动\Chemical_Peel.bmp" />
+    <Content Include="资源\被动\Chocolate_Milk.bmp" />
+    <Content Include="资源\被动\Cube_Of_Meat.bmp" />
+    <Content Include="资源\被动\Cupids_Arrow.bmp" />
+    <Content Include="资源\被动\Daddy_Longlegs.bmp" />
+    <Content Include="资源\被动\Dead_Bird.bmp" />
+    <Content Include="资源\被动\Dead_Cat.bmp" />
+    <Content Include="资源\被动\Dead_Dove.bmp" />
+    <Content Include="资源\被动\Demon_Baby.bmp" />
+    <Content Include="资源\被动\Dessert.bmp" />
+    <Content Include="资源\被动\Dinner.bmp" />
+    <Content Include="资源\被动\Distant_Admiration.bmp" />
+    <Content Include="资源\被动\Dr_Fetus.bmp" />
+    <Content Include="资源\被动\Epic_Fetus.bmp" />
+    <Content Include="资源\被动\Fate.bmp" />
+    <Content Include="资源\被动\Forever_Alone.bmp" />
+    <Content Include="资源\被动\Ghost_Baby.bmp" />
+    <Content Include="资源\被动\Growth_Hormones.bmp" />
+    <Content Include="资源\被动\Guardian_Angel.bmp" />
+    <Content Include="资源\被动\Guppys_Hair_Icon.bmp" />
+    <Content Include="资源\被动\Guppys_Tail.bmp" />
+    <Content Include="资源\被动\Habit.bmp" />
+    <Content Include="资源\被动\Halo_Of_Flies.bmp" />
+    <Content Include="资源\被动\Harlequin_Icon.bmp" />
+    <Content Include="资源\被动\Holy_Grail.bmp" />
+    <Content Include="资源\被动\Holy_Water.bmp" />
+    <Content Include="资源\被动\Infestation.bmp" />
+    <Content Include="资源\被动\IPECAC.bmp" />
+    <Content Include="资源\被动\Jesus_Juice.bmp" />
+    <Content Include="资源\被动\Little_CHAD.bmp" />
+    <Content Include="资源\被动\Little_Chubby.bmp" />
+    <Content Include="资源\被动\Little_Gish.bmp" />
+    <Content Include="资源\被动\Little_Steve.bmp" />
+    <Content Include="资源\被动\Lokis_Horns.bmp" />
+    <Content Include="资源\被动\Lord_Of_The_Pit.bmp" />
+    <Content Include="资源\被动\Lucky_Foot.bmp" />
+    <Content Include="资源\被动\Lunch.bmp" />
+    <Content Include="资源\被动\Magic_8_Ball.bmp" />
+    <Content Include="资源\被动\Magic_Mushroom.bmp" />
+    <Content Include="资源\被动\Magneto.bmp" />
+    <Content Include="资源\被动\Maxs_Head.bmp" />
+    <Content Include="资源\被动\MEAT.bmp" />
+    <Content Include="资源\被动\Mini_Mushroom.bmp" />
+    <Content Include="资源\被动\Mitre.bmp" />
+    <Content Include="资源\被动\Moms_Coin_Purse.bmp" />
+    <Content Include="资源\被动\Moms_Contacts.bmp" />
+    <Content Include="资源\被动\Moms_Eye.bmp" />
+    <Content Include="资源\被动\Moms_Heels.bmp" />
+    <Content Include="资源\被动\Moms_Knife.bmp" />
+    <Content Include="资源\被动\Moms_Lipstick.bmp" />
+    <Content Include="资源\被动\Moms_Purse.bmp" />
+    <Content Include="资源\被动\Moms_Underwear.bmp" />
+    <Content Include="资源\被动\Money_Equals_Power.bmp" />
+    <Content Include="资源\被动\Mr_Mega.bmp" />
+    <Content Include="资源\被动\Mutant_Spider.bmp" />
+    <Content Include="资源\被动\My_Reflection.bmp" />
+    <Content Include="资源\被动\Number_One.bmp" />
+    <Content Include="资源\被动\Odd_Mushroom_%28Large%29.bmp" />
+    <Content Include="资源\被动\Odd_Mushroom_%28Thin%29.bmp" />
+    <Content Include="资源\被动\Ouija_Board.bmp" />
+    <Content Include="资源\被动\Pageant_Boy.bmp" />
+    <Content Include="资源\被动\Pentagram.bmp" />
+    <Content Include="资源\被动\PHD.bmp" />
+    <Content Include="资源\被动\Polyphemus.bmp" />
+    <Content Include="资源\被动\Pyro.bmp" />
+    <Content Include="资源\被动\Rainbow_Baby.bmp" />
+    <Content Include="资源\被动\Raw_Liver.bmp" />
+    <Content Include="资源\被动\Robo-Baby.bmp" />
+    <Content Include="资源\被动\Roid_Rage.bmp" />
+    <Content Include="资源\被动\Rosary.bmp" />
+    <Content Include="资源\被动\Rotten_Meat.bmp" />
+    <Content Include="资源\被动\Sack_Of_Pennies.bmp" />
+    <Content Include="资源\被动\Sacred_Heart.bmp" />
+    <Content Include="资源\被动\Sacrificial_Dagger.bmp" />
+    <Content Include="资源\被动\Scapular.bmp" />
+    <Content Include="资源\被动\Sister_Maggy.bmp" />
+    <Content Include="资源\被动\Skatole.bmp" />
+    <Content Include="资源\被动\Skeleton_Key.bmp" />
+    <Content Include="资源\被动\SMB_Super_Fan.bmp" />
+    <Content Include="资源\被动\Speed_Ball.bmp" />
+    <Content Include="资源\被动\Spelunker_Hat.bmp" />
+    <Content Include="资源\被动\Spiders_Bite.bmp" />
+    <Content Include="资源\被动\Spirit_Of_The_Night.bmp" />
+    <Content Include="资源\被动\Spoon_Bender.bmp" />
+    <Content Include="资源\被动\Squeezy.bmp" />
+    <Content Include="资源\被动\Steam_Sale.bmp" />
+    <Content Include="资源\被动\Stem_Cells.bmp" />
+    <Content Include="资源\被动\Steven.bmp" />
+    <Content Include="资源\被动\Stigmata.bmp" />
+    <Content Include="资源\被动\Super_Bandage.bmp" />
+    <Content Include="资源\被动\Technology.bmp" />
+    <Content Include="资源\被动\Technology_2.bmp" />
+    <Content Include="资源\被动\The_Battery.bmp" />
+    <Content Include="资源\被动\The_Belt.bmp" />
+    <Content Include="资源\被动\The_Black_Bean.bmp" />
+    <Content Include="资源\被动\The_Common_Cold.bmp" />
+    <Content Include="资源\被动\The_Compass.bmp" />
+    <Content Include="资源\被动\The_Halo.bmp" />
+    <Content Include="资源\被动\The_Inner_Eye.bmp" />
+    <Content Include="资源\被动\The_Ladder.bmp" />
+    <Content Include="资源\被动\The_Mark.bmp" />
+    <Content Include="资源\被动\The_Mulligan.bmp" />
+    <Content Include="资源\被动\The_Pact.bmp" />
+    <Content Include="资源\被动\The_Parasite.bmp" />
+    <Content Include="资源\被动\The_Peeper.bmp" />
+    <Content Include="资源\被动\The_Relic.bmp" />
+    <Content Include="资源\被动\The_Sad_Onion.bmp" />
+    <Content Include="资源\被动\The_Small_Rock.bmp" />
+    <Content Include="资源\被动\The_Virus.bmp" />
+    <Content Include="资源\被动\The_Wafer.bmp" />
+    <Content Include="资源\被动\Toothpicks.bmp" />
+    <Content Include="资源\被动\Tough_Love.bmp" />
+    <Content Include="资源\被动\Transcendence.bmp" />
+    <Content Include="资源\被动\Treasure_Map.bmp" />
+    <Content Include="资源\被动\Whore_Of_Babylon.bmp" />
+    <Content Include="资源\被动\Wiggle_Worm.bmp" />
+    <Content Include="资源\被动\Wire_Coat_Hanger.bmp" />
+    <Content Include="资源\被动\Wooden_Spoon.bmp" />
+    <Content Include="资源\被动\XRay-Vision.bmp" />
+    <Content Include="资源\被动\《3.bmp" />
+    <EmbeddedResource Include="FrmIssac.resx">
+      <DependentUpon>FrmIssac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="资源\主动.xlsx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="资源\主动\Anarchist_Cookbook.bmp" />
+    <Content Include="资源\主动\A_Pony.bmp" />
+    <Content Include="资源\主动\Best_Friend.bmp" />
+    <Content Include="资源\主动\Blood_Rights.bmp" />
+    <Content Include="资源\主动\Bobs_Rotten_Head.bmp" />
+    <Content Include="资源\主动\Book_Of_Revelations.bmp" />
+    <Content Include="资源\主动\Book_Of_Shadows.bmp" />
+    <Content Include="资源\主动\Crack_The_Sky.bmp" />
+    <Content Include="资源\主动\Crystal_Ball.bmp" />
+    <Content Include="资源\主动\D20.bmp" />
+    <Content Include="资源\主动\Dads_Key.bmp" />
+    <Content Include="资源\主动\Dead_Sea_Scrolls.bmp" />
+    <Content Include="资源\主动\Deck_Of_Cards.bmp" />
+    <Content Include="资源\主动\Doctors_Remote.bmp" />
+    <Content Include="资源\主动\Forget_Me_Now.bmp" />
+    <Content Include="资源\主动\Guppys_Head.bmp" />
+    <Content Include="资源\主动\Guppys_Paw.bmp" />
+    <Content Include="资源\主动\IV_Bag.bmp" />
+    <Content Include="资源\主动\Kamikaze.bmp" />
+    <Content Include="资源\主动\Lemon_Mishap.bmp" />
+    <Content Include="资源\主动\Moms_Bottle_Of_Pills.bmp" />
+    <Content Include="资源\主动\Moms_Bra.bmp" />
+    <Content Include="资源\主动\Moms_Pad.bmp" />
+    <Content Include="资源\主动\Monster_Manuel.bmp" />
+    <Content Include="资源\主动\Monstros_Tooth.bmp" />
+    <Content Include="资源\主动\Mr_Boom.bmp" />
+    <Content Include="资源\主动\My_Little_Unicorn.bmp" />
+    <Content Include="资源\主动\Notched_Axe.bmp" />
+    <Content Include="资源\主动\Portable_Slot.bmp" />
+    <Content Include="资源\主动\Prayer_Card.bmp" />
+    <Content Include="资源\主动\Razor_Blade.bmp" />
+    <Content Include="资源\主动\Remote_Detonator.bmp" />
+    <Content Include="资源\主动\Shoop_Da_Whoop.bmp" />
+    <Content Include="资源\主动\Spider_Butt.bmp" />
+    <Content Include="资源\主动\Tammys_Head.bmp" />
+    <Content Include="资源\主动\Telepathy_For_Dummies.bmp" />
+    <Content Include="资源\主动\Teleport.bmp" />
+    <Content Include="资源\主动\The_Bean.bmp" />
+    <Content Include="资源\主动\The_Bible.bmp" />
+    <Content Include="资源\主动\The_Book_Of_Belial.bmp" />
+    <Content Include="资源\主动\The_Book_Of_Sin.bmp" />
+    <Content Include="资源\主动\The_Candle.bmp" />
+    <Content Include="资源\主动\The_Dice.bmp" />
+    <Content Include="资源\主动\The_Gamekid.bmp" />
+    <Content Include="资源\主动\The_Hourglass.bmp" />
+    <Content Include="资源\主动\The_Nail.bmp" />
+    <Content Include="资源\主动\The_Necronomicon.bmp" />
+    <Content Include="资源\主动\The_Pinking_Shears.bmp" />
+    <Content Include="资源\主动\The_Poop.bmp" />
+    <Content Include="资源\主动\We_Need_To_Go_Deeper.bmp" />
+    <Content Include="资源\主动\White_Pony.bmp" />
+    <Content Include="资源\主动\Yum_Heart.bmp" />
+    <Content Include="资源\携带\A _Missing_Page.bmp" />
+    <Content Include="资源\携带\Ace_of_spades.bmp" />
+    <Content Include="资源\携带\Bloody_Penny.bmp" />
+    <Content Include="资源\携带\Blue_Soul.bmp" />
+    <Content Include="资源\携带\Burnt_Penny.bmp" />
+    <Content Include="资源\携带\Cains_Eye.bmp" />
+    <Content Include="资源\携带\Cancer.bmp" />
+    <Content Include="资源\携带\Childs_Heart.bmp" />
+    <Content Include="资源\携带\Counterfeit_Penny.bmp" />
+    <Content Include="资源\携带\Cursed_Skull.bmp" />
+    <Content Include="资源\携带\Curved_Horn.bmp" />
+    <Content Include="资源\携带\Eves_Bird_Foot.bmp" />
+    <Content Include="资源\携带\Fish_Head.bmp" />
+    <Content Include="资源\携带\Flattened_Penny.bmp" />
+    <Content Include="资源\携带\Goat_Hoof.bmp" />
+    <Content Include="资源\携带\Isaacs_Fork.bmp" />
+    <Content Include="资源\携带\Isaacs_Head.bmp" />
+    <Content Include="资源\携带\Judas_Tongue.bmp" />
+    <Content Include="资源\携带\Liberty_Cap.bmp" />
+    <Content Include="资源\携带\Lucky_Toe.bmp" />
+    <Content Include="资源\携带\Maggys_Faith.bmp" />
+    <Content Include="资源\携带\Match_Stick.bmp" />
+    <Content Include="资源\携带\Moms_Pearl.bmp" />
+    <Content Include="资源\携带\Pinky_Eye.bmp" />
+    <Content Include="资源\携带\Push_Pin.bmp" />
+    <Content Include="资源\携带\Red_Patch.bmp" />
+    <Content Include="资源\携带\Rusted_Key.bmp" />
+    <Content Include="资源\携带\Safety_Cap.bmp" />
+    <Content Include="资源\携带\Samsons_Lock.bmp" />
+    <Content Include="资源\携带\The_Left_Hand.bmp" />
+    <Content Include="资源\携带\The_Polaroid.bmp" />
+    <Content Include="资源\携带\The_Tick.bmp" />
+    <Content Include="资源\携带\Umbilical_Cord.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

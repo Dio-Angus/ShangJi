@@ -1,0 +1,13 @@
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\TestNetCdf.exe
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\TestNetCdf.pdb
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\netcdf.dll
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\vjslib.dll
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\vjscor.dll
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\vjslibcw.dll
+F:\Chromato-v2\Source\TestNetCdf\bin\Release\vjsvwaux.dll
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\TestNetCdf.Form1.resources
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\TestNetCdf.Properties.Resources.resources
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\TestNetCdf.csproj.GenerateResource.Cache
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\TestNetCdf.exe
+F:\Chromato-v2\Source\TestNetCdf\obj\Release\TestNetCdf.pdb

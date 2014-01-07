@@ -1,0 +1,38 @@
+E:\Chromato\bin\Debug\ChromatoTool.dll
+E:\Chromato\bin\Debug\ChromatoTool.pdb
+E:\Chromato\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+E:\Chromato\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+F:\Chromato-v2\bin\Debug\ChromatoTool.dll
+F:\Chromato-v2\bin\Debug\ChromatoTool.pdb
+F:\Chromato-v2\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+F:\Chromato-v2\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+F:\Chromato-v3\bin\Debug\ChromatoTool.dll
+F:\Chromato-v3\bin\Debug\ChromatoTool.pdb
+F:\Chromato-v3\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+F:\Chromato-v3\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+F:\Chromato-v3\bin\Debug\ChromatoTool.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoTool.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoTool.dll
+F:\Chromato-v3-通用版\bin\Debug\ChromatoTool.pdb
+F:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+F:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoTool.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoTool.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoTool.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+D:\Chromato-v3-通用版\bin\Debug\ChromatoTool.dll
+D:\Chromato-v3-通用版\bin\Debug\ChromatoTool.pdb
+D:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+D:\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoTool.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoTool.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoTool\obj\Debug\ChromatoTool.pdb

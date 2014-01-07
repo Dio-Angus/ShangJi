@@ -1,0 +1,108 @@
+
+2013-09-16 13:36:31 314 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-09-16 13:36:31 366 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-09-16 13:36:31 367 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:36:31 387 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:36:31 397 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-09-16 13:36:31 398 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-09-16 13:36:31 401 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-09-16 13:36:31 402 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-09-16 13:36:31 405 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-09-16 13:36:31 406 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-09-16 13:36:31 412 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-09-16 13:36:31 796 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2013-09-16 13:36:31 801 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 13:36:31 802 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 13:47:52 937 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-09-16 13:47:52 944 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:47:52 977 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2013-09-16 13:47:52 978 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:47:52 981 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2013-09-16 13:47:52 983 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:47:52 998 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-09-16 13:47:53 000 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 13:47:53 007 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-09-16 13:47:53 007 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-09-16 13:47:53 012 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-09-16 13:47:53 012 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-09-16 13:47:53 015 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-09-16 13:47:53 016 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-09-16 13:47:53 027 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-09-16 13:47:53 238 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2013-09-16 13:47:53 240 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 13:47:53 241 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 13:55:25 797 CommPort CloseLoop count=0
+
+2013-09-16 13:55:25 799 CommPort Close serial port closed
+
+2013-09-16 15:08:28 578 PipeBiz RealPipeProcess realPipe: A client 接入
+
+2013-09-16 15:08:28 582 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 15:08:28 617 PipeBiz RealPipeProcess realPipe: B client 接入
+
+2013-09-16 15:08:28 618 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 15:08:28 621 PipeBiz RealPipeProcess realPipe: C client 接入
+
+2013-09-16 15:08:28 622 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 15:08:28 625 PipeBiz RealPipeProcess realPipe: D client 接入
+
+2013-09-16 15:08:28 626 PipeBiz RealPipeProcess RealPipe1Process 线程退出！
+
+2013-09-16 15:08:28 633 PipeBiz HisPipeProcess hisPipe client 接入
+
+2013-09-16 15:08:28 634 PipeBiz HisPipeProcess HisPipeProcess 线程退出！
+
+2013-09-16 15:08:28 637 PipeBiz SamplePipeProcess samplePipe client 接入
+
+2013-09-16 15:08:28 637 PipeBiz SamplePipeProcess SamplePipeProcess 线程退出！
+
+2013-09-16 15:08:28 639 PipeBiz ComparePipeProcess comparePipe client 接入
+
+2013-09-16 15:08:28 641 PipeBiz ComparePipeProcess ComparePipeProcess 线程退出！
+
+2013-09-16 15:08:28 668 ChromatoFrm ChromatoFrm_Load Chromato 载入
+
+2013-09-16 15:08:28 862 ParaBiz 打开文件 文件不存在:D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3
+
+2013-09-16 15:08:28 865 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 15:08:28 866 SqliteDbName ConnectDb 路径D:\Chromato-v3-通用版\bin\Debug\db\201107\通道B_20110730140550.db3 没有找到该文件!
+
+2013-09-16 15:09:45 596 CommPort CloseLoop count=0
+
+2013-09-16 15:09:45 597 CommPort Close serial port closed

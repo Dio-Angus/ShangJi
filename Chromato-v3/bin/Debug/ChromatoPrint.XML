@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChromatoPrint</name>
+    </assembly>
+    <members>
+        <member name="T:ChromatoPrint.PrintMngUser">
+            <summary>
+            打印管理的用户控件
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.PrintBar_Load(System.Object,System.EventArgs)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.AddExtra(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="propertyName"></param>
+            <param name="property"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.LoadSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.SaveSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.theParent_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            父窗口关闭事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ChromatoPrint.PrintMngUser.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintMngUser.NamePrepend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintMngUser.Extras">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ChromatoPrint.DetailItem">
+            <summary>
+            打印详细设定
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.DetailItem.#ctor(System.String)">
+            <summary>
+            构造
+            </summary>
+            <param name="formName"></param>
+        </member>
+        <member name="M:ChromatoPrint.DetailItem.openBaseKey">
+            <summary>
+            注册表加入信息
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.DetailItem.SaveForm">
+            <summary>
+            窗口配置信息保存到注册表
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.DetailItem.Top">
+            <summary>
+            上边界
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.DetailItem.Left">
+            <summary>
+            左边界
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.DetailItem.Width">
+            <summary>
+            宽度
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.DetailItem.Height">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.DetailItem.WindowState">
+            <summary>
+            窗口状态
+            </summary>
+        </member>
+        <member name="T:ChromatoPrint.ZoomConst">
+            <summary>
+            放大倍数用常数
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Fit">
+            <summary>
+            适合
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Blank">
+            <summary>
+            空
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Point">
+            <summary>
+            小数点
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Zero">
+            <summary>
+            零
+            </summary>
+        </member>
+        <member name="T:ChromatoPrint.PrintExtBar">
+            <summary>
+            打印扩展工具条
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.pDoc">
+            <summary>
+            打印的文档
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.prvControl">
+            <summary>
+            打印预览控件
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.isDesign">
+            <summary>
+            标志
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.usPrint">
+            <summary>
+            打印管理的用户控件
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.noOfPages">
+            <summary>
+            页号
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.systemChange">
+            <summary>
+            系统变化的标志
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintExtBar.isLandscape">
+            <summary>
+            是否横向打印的标志
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.CheckButtons">
+            <summary>
+            初期化工具条里面的按钮
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.SetZoom">
+            <summary>
+            设置放大倍数
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.LoadDefaults">
+            <summary>
+            装载缺省的设置
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.document_EndPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            结束打印的事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.document_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            打印当前页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.document_BeginPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            开始打印的事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbPrint_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中打印按钮，调用关联文档对象来打印
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbPrintProperties_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中打印属性按钮，显示属性窗口
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tscmbZoom_TextUpdate(System.Object,System.EventArgs)">
+            <summary>
+            改变放大倍数
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.number_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            数字键按下
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tscmbZoom_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            放大倍数选项改变
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tscmbZoom_Leave(System.Object,System.EventArgs)">
+            <summary>
+            放大倍数选项焦点离开
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbFirstPage_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中第一页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbLastPage_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中最后一页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbNextPage_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中下一页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbPrevPage_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中上一页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tstxtPageNo_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            页码改变
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbSinglePage_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中显示单页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbTwoPages_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中显示双页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.tsbMultiplePages_Click(System.Object,System.EventArgs)">
+            <summary>
+            点中显示多页
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:ChromatoPrint.PrintExtBar.PrintPropertiesChanged">
+            <summary>
+            属性改变事件
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintExtBar.IsLandscape">
+            <summary>
+            水平放大
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintExtBar.PreviewControl">
+            <summary>
+            打印预览控件
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintExtBar.Document">
+            <summary>
+            关联文档
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintExtBar.Zoom">
+            <summary>
+            放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintExtBar.PrintMngUser">
+            <summary>
+            打印管理对象
+            </summary>
+        </member>
+        <member name="T:printPropertiesChanged">
+            <summary>
+            打印属性改变代理
+            </summary>
+        </member>
+        <member name="T:ChromatoPrint.TransLateUtil">
+            <summary>
+            打印工具
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateInt(System.Object)">
+            <summary>
+            把列转换为整数
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateBool(System.Object)">
+            <summary>
+            把列转换为Bool
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateDecimal(System.Object)">
+            <summary>
+            把列转换为Decimal
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateDouble(System.Object)">
+            <summary>
+            把列转换为Double
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateDate(System.Object)">
+            <summary>
+            把列转换为日期
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.translateString(System.Object)">
+            <summary>
+            把列转换为字符串
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.combineDateTime(System.Object,System.Object)">
+            <summary>
+            把列转换为日期和时间的组合
+            </summary>
+            <param name="columnDate"></param>
+            <param name="columnTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.confirm(System.String)">
+            <summary>
+            消息确认
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.confirmWithCancel(System.String)">
+            <summary>
+            取消消息确认
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.printLine(System.Drawing.Printing.PrintPageEventArgs,System.String,System.Drawing.Font,System.Single,System.Single,System.Single,System.Boolean,System.Drawing.Brush)">
+            <summary>
+            打印行
+            </summary>
+            <param name="e"></param>
+            <param name="line"></param>
+            <param name="theFont"></param>
+            <param name="xPos"></param>
+            <param name="yPos"></param>
+            <param name="maxWidth"></param>
+            <param name="rightAlign"></param>
+            <param name="printColour"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.calcTextRectangle(System.Drawing.Printing.PrintPageEventArgs,System.Drawing.Font,System.Single,System.Single,System.Single,System.String)">
+            <summary>
+            计算文本打印的大小
+            </summary>
+            <param name="e"></param>
+            <param name="theFont"></param>
+            <param name="xPos"></param>
+            <param name="yPos"></param>
+            <param name="maxWidth"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoPrint.TransLateUtil.noOfPrintLines(System.Drawing.Printing.PrintPageEventArgs,System.Drawing.Font,System.Single,System.String)">
+            <summary>
+            计算需要打印的行数
+            </summary>
+            <param name="e"></param>
+            <param name="theFont"></param>
+            <param name="maxWidth"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

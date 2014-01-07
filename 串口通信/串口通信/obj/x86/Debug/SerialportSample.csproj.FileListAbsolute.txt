@@ -1,0 +1,9 @@
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\bin\Debug\串口通信.exe
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\bin\Debug\串口通信.pdb
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\SerialportSample.SerialportSampleForm.resources
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\串口通信.Properties.Resources.resources
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\串口通信.exe
+c:\users\dio\documents\visual studio 2010\Projects\串口通信\串口通信\obj\x86\Debug\串口通信.pdb

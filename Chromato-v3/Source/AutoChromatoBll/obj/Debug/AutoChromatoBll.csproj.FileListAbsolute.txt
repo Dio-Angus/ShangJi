@@ -1,0 +1,38 @@
+E:\Chromato\bin\Debug\AutoChromatoBll.dll
+E:\Chromato\bin\Debug\AutoChromatoBll.pdb
+E:\Chromato\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+E:\Chromato\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+F:\Chromato-v2\bin\Debug\AutoChromatoBll.dll
+F:\Chromato-v2\bin\Debug\AutoChromatoBll.pdb
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+F:\Chromato-v2\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+F:\Chromato-v3\bin\Debug\AutoChromatoBll.dll
+F:\Chromato-v3\bin\Debug\AutoChromatoBll.pdb
+F:\Chromato-v3\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+F:\Chromato-v3\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+F:\Chromato-v3\bin\Debug\AutoChromatoBll.XML
+F:\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.XML
+F:\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.dll
+F:\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.pdb
+F:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+F:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+D:\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.dll
+D:\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.pdb
+D:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+D:\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\AutoChromatoBll.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AutoChromatoBll\obj\Debug\AutoChromatoBll.pdb

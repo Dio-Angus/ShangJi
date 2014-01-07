@@ -1,0 +1,13 @@
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\ChromatoPeak.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\ChromatoPeak.pdb
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\ChromatoTool.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\vjscor.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\netcdf.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\vjsvwaux.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\System.Data.SQLite.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\vjslib.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\vjslibcw.dll
+F:\Chromato-v2\Source\ChromatoPeak\bin\Release\ChromatoTool.pdb
+F:\Chromato-v2\Source\ChromatoPeak\obj\Release\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoPeak\obj\Release\ChromatoPeak.dll
+F:\Chromato-v2\Source\ChromatoPeak\obj\Release\ChromatoPeak.pdb

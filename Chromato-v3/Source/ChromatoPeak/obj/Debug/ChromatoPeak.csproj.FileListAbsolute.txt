@@ -1,0 +1,38 @@
+E:\Chromato\bin\Debug\ChromatoPeak.dll
+E:\Chromato\bin\Debug\ChromatoPeak.pdb
+E:\Chromato\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+E:\Chromato\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+E:\Chromato\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+F:\Chromato-v2\bin\Debug\ChromatoPeak.dll
+F:\Chromato-v2\bin\Debug\ChromatoPeak.pdb
+F:\Chromato-v2\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v2\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+F:\Chromato-v2\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+F:\Chromato-v3\bin\Debug\ChromatoPeak.dll
+F:\Chromato-v3\bin\Debug\ChromatoPeak.pdb
+F:\Chromato-v3\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+F:\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+F:\Chromato-v3\bin\Debug\ChromatoPeak.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPeak.XML
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPeak.dll
+F:\Chromato-v3-通用版\bin\Debug\ChromatoPeak.pdb
+F:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+F:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+F:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPeak.XML
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPeak.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\bin\Debug\ChromatoPeak.pdb
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+E:\计算所相关开发软件\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+D:\Chromato-v3-通用版\bin\Debug\ChromatoPeak.dll
+D:\Chromato-v3-通用版\bin\Debug\ChromatoPeak.pdb
+D:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+D:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+D:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoPeak.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\bin\Debug\ChromatoPeak.pdb
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
+\\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
