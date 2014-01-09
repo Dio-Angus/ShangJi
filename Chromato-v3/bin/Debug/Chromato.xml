@@ -4,88 +4,6 @@
         <name>Chromato</name>
     </assembly>
     <members>
-        <member name="T:Chromato.gui.SettingFrm">
-            <summary>
-            配置画面
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.#ctor(ChromatoCore.tabCtrl.OnlineUser)">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.AddPanel">
-            <summary>
-            パネルを追加
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.frmSetting_Load(System.Object,System.EventArgs)">
-            <summary>
-            加载
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.InitTreeCategory">
-            <summary>
-            ツリーを初期
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.InitPanel">
-            <summary>
-            パネルを初期
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.UnVisibleAllPanels">
-            <summary>
-            全てパネルを表示しない
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.tvOption_BeforeSelect(System.Object,System.Windows.Forms.TreeViewCancelEventArgs)">
-            <summary>
-            選択まえに
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.tvOption_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
-            <summary>
-            ツリーのノードを選択
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.btnOK_Click(System.Object,System.EventArgs)">
-            <summary>
-            OK事件
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.btnCancel_Click(System.Object,System.EventArgs)">
-            <summary>
-            Cancel事件
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="F:Chromato.gui.SettingFrm.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:Chromato.gui.SettingFrm.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="T:Chromato.gui.WelcomeFrm">
             <summary>
             欢迎画面
@@ -239,25 +157,26 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:Chromato.Properties.Resources">
-            <summary>
-              一个强类型的资源类，用于查找本地化的字符串等。
-            </summary>
-        </member>
-        <member name="P:Chromato.Properties.Resources.ResourceManager">
-            <summary>
-              返回此类使用的缓存的 ResourceManager 实例。
-            </summary>
-        </member>
-        <member name="P:Chromato.Properties.Resources.Culture">
-            <summary>
-              使用此强类型资源类，为所有资源查找
-              重写当前线程的 CurrentUICulture 属性。
-            </summary>
-        </member>
         <member name="T:Chromato.gui.ChromatoFrm">
             <summary>
             主窗体
+            </summary>
+        </member>
+        <member name="F:Chromato.gui.ChromatoFrm.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.ChromatoFrm.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Chromato.gui.ChromatoFrm.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
             </summary>
         </member>
         <member name="F:Chromato.gui.ChromatoFrm._tabSample">
@@ -600,27 +519,108 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="F:Chromato.gui.ChromatoFrm.components">
-            <summary>
-            必需的设计器变量。
-            </summary>
-        </member>
-        <member name="M:Chromato.gui.ChromatoFrm.Dispose(System.Boolean)">
-            <summary>
-            清理所有正在使用的资源。
-            </summary>
-            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
-        </member>
-        <member name="M:Chromato.gui.ChromatoFrm.InitializeComponent">
-            <summary>
-            设计器支持所需的方法 - 不要
-            使用代码编辑器修改此方法的内容。
-            </summary>
-        </member>
         <member name="T:Chromato.gui.ChromatoFrm.CrossThreadOperationControl">
             <summary> 
             跨线程控件代理
             </summary> 
+        </member>
+        <member name="T:Chromato.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Chromato.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Chromato.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="T:Chromato.gui.SettingFrm">
+            <summary>
+            配置画面
+            </summary>
+        </member>
+        <member name="F:Chromato.gui.SettingFrm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.#ctor(ChromatoCore.tabCtrl.OnlineUser)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.AddPanel">
+            <summary>
+            パネルを追加
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.frmSetting_Load(System.Object,System.EventArgs)">
+            <summary>
+            加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.InitTreeCategory">
+            <summary>
+            ツリーを初期
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.InitPanel">
+            <summary>
+            パネルを初期
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.UnVisibleAllPanels">
+            <summary>
+            全てパネルを表示しない
+            </summary>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.tvOption_BeforeSelect(System.Object,System.Windows.Forms.TreeViewCancelEventArgs)">
+            <summary>
+            選択まえに
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.tvOption_AfterSelect(System.Object,System.Windows.Forms.TreeViewEventArgs)">
+            <summary>
+            ツリーのノードを選択
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            OK事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Chromato.gui.SettingFrm.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cancel事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="M:Chromato.Program.Main">
             <summary>

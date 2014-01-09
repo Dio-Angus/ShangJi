@@ -4,74 +4,6 @@
         <name>ChromatoPrint</name>
     </assembly>
     <members>
-        <member name="T:ChromatoPrint.PrintMngUser">
-            <summary>
-            打印管理的用户控件
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.#ctor">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.PrintBar_Load(System.Object,System.EventArgs)">
-            <summary>
-            加载窗体
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.AddExtra(System.String,System.Object)">
-            <summary>
-            
-            </summary>
-            <param name="propertyName"></param>
-            <param name="property"></param>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.LoadSettings">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.SaveSettings">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.theParent_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
-            <summary>
-            父窗口关闭事件
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="F:ChromatoPrint.PrintMngUser.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:ChromatoPrint.PrintMngUser.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="P:ChromatoPrint.PrintMngUser.NamePrepend">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:ChromatoPrint.PrintMngUser.Extras">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:ChromatoPrint.DetailItem">
             <summary>
             打印详细设定
@@ -118,51 +50,14 @@
             窗口状态
             </summary>
         </member>
-        <member name="T:ChromatoPrint.ZoomConst">
+        <member name="T:printPropertiesChanged">
             <summary>
-            放大倍数用常数
-            </summary>
-        </member>
-        <member name="F:ChromatoPrint.ZoomConst.Fit">
-            <summary>
-            适合
-            </summary>
-        </member>
-        <member name="F:ChromatoPrint.ZoomConst.Blank">
-            <summary>
-            空
-            </summary>
-        </member>
-        <member name="F:ChromatoPrint.ZoomConst.Point">
-            <summary>
-            小数点
-            </summary>
-        </member>
-        <member name="F:ChromatoPrint.ZoomConst.Zero">
-            <summary>
-            零
+            打印属性改变代理
             </summary>
         </member>
         <member name="T:ChromatoPrint.PrintExtBar">
             <summary>
             打印扩展工具条
-            </summary>
-        </member>
-        <member name="F:ChromatoPrint.PrintExtBar.components">
-            <summary> 
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:ChromatoPrint.PrintExtBar.Dispose(System.Boolean)">
-            <summary> 
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:ChromatoPrint.PrintExtBar.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
-            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="F:ChromatoPrint.PrintExtBar.pDoc">
@@ -339,6 +234,23 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="F:ChromatoPrint.PrintExtBar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ChromatoPrint.PrintExtBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="E:ChromatoPrint.PrintExtBar.PrintPropertiesChanged">
             <summary>
             属性改变事件
@@ -369,9 +281,97 @@
             打印管理对象
             </summary>
         </member>
-        <member name="T:printPropertiesChanged">
+        <member name="T:ChromatoPrint.PrintMngUser">
             <summary>
-            打印属性改变代理
+            打印管理的用户控件
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.PrintMngUser.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.PrintBar_Load(System.Object,System.EventArgs)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.AddExtra(System.String,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="propertyName"></param>
+            <param name="property"></param>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.LoadSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.SaveSettings">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ChromatoPrint.PrintMngUser.theParent_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+            <summary>
+            父窗口关闭事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:ChromatoPrint.PrintMngUser.NamePrepend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ChromatoPrint.PrintMngUser.Extras">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ChromatoPrint.ZoomConst">
+            <summary>
+            放大倍数用常数
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Fit">
+            <summary>
+            适合
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Blank">
+            <summary>
+            空
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Point">
+            <summary>
+            小数点
+            </summary>
+        </member>
+        <member name="F:ChromatoPrint.ZoomConst.Zero">
+            <summary>
+            零
             </summary>
         </member>
         <member name="T:ChromatoPrint.TransLateUtil">

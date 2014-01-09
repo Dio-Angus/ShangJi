@@ -64,3 +64,14 @@ D:\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.write.1.tlog
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.exe.config
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.XML
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.exe
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.GcDataAnalyFrm.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.Properties.Resources.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.exe
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\AnalyGc.pdb

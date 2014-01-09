@@ -1,6 +1,6 @@
 ﻿namespace ChromatoCore.solu.AntiCon
 {
-    partial class ColumnParaUser
+    partial class NetworkBoardUser
     {
         /// <summary> 
         /// 必需的设计器变量。

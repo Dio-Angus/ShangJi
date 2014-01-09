@@ -19,7 +19,7 @@ namespace ChromatoCore.solu.AntiCon
     /// <summary>
     /// 柱箱参数视图
     /// </summary>
-    public partial class ColumnParaUser : UserControl
+    public partial class NetworkBoardUser : UserControl
     {
 
         #region 变量
@@ -37,7 +37,7 @@ namespace ChromatoCore.solu.AntiCon
         /// <summary>
         /// 构造
         /// </summary>
-        public ColumnParaUser(AntiControlDto dto)
+        public NetworkBoardUser(AntiControlDto dto)
         {
             InitializeComponent();
             this._dtoAntiControl = dto;

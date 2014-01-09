@@ -41,9 +41,14 @@ namespace ChromatoCore.solu.AntiCon
         private bool _isFirst = true;
 
         /// <summary>
-        /// 色谱柱参数
+        /// 网络板参数
         /// </summary>
-        private ColumnParaUser _viewColumnPara = null;
+        private NetworkBoardUser _viewNetworkBoard = null;
+
+        /// <summary>
+        /// 加热源参数
+        /// </summary>
+        private HeatingSourceUser _viewHeatingSource = null;
 
         /// <summary>
         /// 进样口参数
@@ -102,13 +107,14 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private void AddViewer()
         {
-            this._viewColumnPara = new ColumnParaUser(this._dtoAntiControl);
+            this._viewNetworkBoard = new NetworkBoardUser(this._dtoAntiControl);
+            this._viewHeatingSource = new HeatingSourceUser(this._dtoAntiControl);
             this._viewSampleEntry = new InjectUser(this._dtoAntiControl);
             this._viewTcd = new TcdUser(this._dtoAntiControl);
             this._viewFid = new FidUser(this._dtoAntiControl);
             this._viewAux = new AuxUser(this._dtoAntiControl);
 
-            this.Controls.Add(this._viewColumnPara);
+            this.Controls.Add(this._viewNetworkBoard);
             this.Controls.Add(this._viewSampleEntry);
             this.Controls.Add(this._viewTcd);
             this.Controls.Add(this._viewFid);
@@ -138,15 +144,19 @@ namespace ChromatoCore.solu.AntiCon
             this.tvAntiControl.DrawNode += new DrawTreeNodeEventHandler(this.tvAntiControl_DrawNode);
 
             // first level
-            TreeNode rnColumnPara = new TreeNode();
+            TreeNode rnNetworkBoard = new TreeNode();
+            TreeNode rnHeatingSource = new TreeNode();
             TreeNode rnSampleEntry = new TreeNode();
             TreeNode rnTcd = new TreeNode();
             TreeNode rnFid = new TreeNode();
             TreeNode rnAux = new TreeNode();
 
             //親ノードのテキストを作成 
-            rnColumnPara.Text = AntiControl.ColumnPara;
-            rnColumnPara.Name = AntiControl.ColumnPara;
+            rnNetworkBoard.Text = AntiControl.NetworkBoard;
+            rnNetworkBoard.Name = AntiControl.NetworkBoard;
+
+            rnHeatingSource.Text = AntiControl.HeatingSource;
+            rnHeatingSource.Name = AntiControl.HeatingSource;
 
             rnSampleEntry.Text = AntiControl.SampleEntry;
             rnSampleEntry.Name = AntiControl.SampleEntry;
@@ -161,7 +171,8 @@ namespace ChromatoCore.solu.AntiCon
             rnAux.Name = AntiControl.Aux;
 
             //親ノードをTreeViewに追加
-            tvAntiControl.Nodes.Add(rnColumnPara);
+            tvAntiControl.Nodes.Add(rnNetworkBoard);
+            tvAntiControl.Nodes.Add(rnHeatingSource);
             tvAntiControl.Nodes.Add(rnSampleEntry);
             tvAntiControl.Nodes.Add(rnTcd);
             tvAntiControl.Nodes.Add(rnFid);
@@ -174,7 +185,7 @@ namespace ChromatoCore.solu.AntiCon
             tvAntiControl.CheckBoxes = false;
 
             // 根ノードを選択
-            tvAntiControl.SelectedNode = rnColumnPara;
+            tvAntiControl.SelectedNode = rnNetworkBoard;
 
         }
 
@@ -186,20 +197,23 @@ namespace ChromatoCore.solu.AntiCon
 
             //パネルのロケーションを設定する
             Point pt = new Point(100, 10);
-            this._viewColumnPara.Location = pt;
+            this._viewNetworkBoard.Location = pt;
+            this._viewHeatingSource.Location = pt;
             this._viewSampleEntry.Location = pt;
             this._viewTcd.Location = pt;
             this._viewFid.Location = pt;
             this._viewAux.Location = pt;
 
             Size sz = new Size(460, 240);
-            this._viewColumnPara.Size = sz;
+            this._viewNetworkBoard.Size = sz;
+            this._viewHeatingSource.Size = sz;
             this._viewSampleEntry.Size = sz;
             this._viewTcd.Size = sz;
             this._viewFid.Size = sz;
             this._viewAux.Size = sz;
 
-            this._viewColumnPara.BringToFront();
+            this._viewNetworkBoard.BringToFront();
+            this._viewHeatingSource.BringToFront();
             this._viewSampleEntry.BringToFront();
             this._viewTcd.BringToFront();
             this._viewFid.BringToFront();
@@ -211,7 +225,8 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private void UnVisibleAllPanels()
         {
-            this._viewColumnPara.Visible = false;
+            this._viewNetworkBoard.Visible = false;
+            this._viewHeatingSource.Visible = false;
             this._viewSampleEntry.Visible = false;
             this._viewTcd.Visible = false;
             this._viewFid.Visible = false;
@@ -224,7 +239,7 @@ namespace ChromatoCore.solu.AntiCon
         #region 树的表示
 
         /// <summary>
-        /// 選択まえに
+        /// 选中时
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -238,20 +253,23 @@ namespace ChromatoCore.solu.AntiCon
             switch (this.tvAntiControl.SelectedNode.Name)
             {
                 // Root
-                case AntiControl.ColumnPara:
+                case AntiControl.NetworkBoard:
                     break;
                 // LineIn
                 case AntiControl.SampleEntry:
                     break;
              }
 
-            this.tvAntiControl.SelectedNode.BackColor = Color.FromArgb(255, 255, 192);
-            this.tvAntiControl.SelectedNode.ForeColor = Color.Black;
+            foreach (TreeNode Node in this.tvAntiControl.Nodes)
+            {
+                Node.BackColor = Color.White;
+                Node.ForeColor = Color.Black;
+            }
 
         }
 
         /// <summary>
-        /// ツリーのノードを選択
+        /// 选中之后
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -267,8 +285,12 @@ namespace ChromatoCore.solu.AntiCon
             switch (e.Node.Name)
             {
 
-                case AntiControl.ColumnPara:
-                    this._viewColumnPara.Visible = true;
+                case AntiControl.NetworkBoard:
+                    this._viewNetworkBoard.Visible = true;
+                    break;
+
+                case AntiControl.HeatingSource:
+                    this._viewHeatingSource.Visible = true;
                     break;
 
                 case AntiControl.SampleEntry:
@@ -375,7 +397,8 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAntiControlName.Text = this._dtoAntiControl.AntiControlName;
             this.LoadControlStyle(true);
 
-            this._viewColumnPara.LoadView(antiControlID);
+            this._viewNetworkBoard.LoadView(antiControlID);
+            this._viewHeatingSource.LoadView(antiControlID);
             this._viewSampleEntry.LoadView(antiControlID);
             this._viewAux.LoadView(antiControlID);
             this._viewFid.LoadView(antiControlID);
@@ -403,7 +426,8 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAntiControlName.Text = "新建立反控方法";
             this._dtoAntiControl.AntiControlName = this.txtAntiControlName.Text;
 
-            this._viewColumnPara.LoadNew();
+            this._viewNetworkBoard.LoadNew();
+            this._viewHeatingSource.LoadNew();
             this._viewSampleEntry.LoadNew();
             this._viewAux.LoadNew();
             this._viewFid.LoadNew();
@@ -425,7 +449,8 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAntiControlName.Text = this._dtoAntiControl.AntiControlName;
             this.LoadControlStyle(false);
 
-            this._viewColumnPara.LoadEdit();
+            this._viewNetworkBoard.LoadEdit();
+            this._viewHeatingSource.LoadEdit();
             this._viewSampleEntry.LoadEdit();
             this._viewAux.LoadEdit();
             this._viewFid.LoadEdit();
@@ -446,7 +471,8 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAntiControlName.Text = this._dtoAntiControl.AntiControlName + DateTime.Now.ToString("_yyyyMMdd");
             this.LoadControlStyle(true);
 
-            this._viewColumnPara.LoadSaveAs();
+            this._viewNetworkBoard.LoadSaveAs();
+            this._viewHeatingSource.LoadSaveAs();
             this._viewSampleEntry.LoadSaveAs();
             this._viewAux.LoadSaveAs();
             this._viewFid.LoadSaveAs();

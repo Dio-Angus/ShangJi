@@ -81,3 +81,16 @@ D:\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.exe
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TesGas\obj\Debug\TestGas.pdb
 D:\Chromato-v3-通用版\bin\Debug\TestGas.exe.config
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestGas.exe.config
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestGas.exe
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestGas.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.RegUser.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.ResultUser.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.StartUser.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.TestGasFrm.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.Properties.Resources.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.exe
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TesGas\obj\Debug\TestGas.pdb

@@ -329,11 +329,17 @@
     <Compile Include="solu\AntiCon\AuxUser.Designer.cs">
       <DependentUpon>AuxUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="solu\AntiCon\ColumnParaUser.cs">
+    <Compile Include="solu\AntiCon\HeatingSourceUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="solu\AntiCon\ColumnParaUser.Designer.cs">
-      <DependentUpon>ColumnParaUser.cs</DependentUpon>
+    <Compile Include="solu\AntiCon\HeatingSourceUser.Designer.cs">
+      <DependentUpon>HeatingSourceUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\NetworkBoardUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\NetworkBoardUser.Designer.cs">
+      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
     </Compile>
     <Compile Include="solu\AntiCon\FidUser.cs">
       <SubType>UserControl</SubType>
@@ -738,6 +744,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\HeatingSourceUser.resx">
+      <DependentUpon>HeatingSourceUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="solu\sUi\ArithmaticUi.resx">
       <DependentUpon>ArithmaticUi.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1008,8 +1017,8 @@
       <DependentUpon>AuxUser.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="solu\AntiCon\ColumnParaUser.resx">
-      <DependentUpon>ColumnParaUser.cs</DependentUpon>
+    <EmbeddedResource Include="solu\AntiCon\NetworkBoardUser.resx">
+      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="solu\AntiCon\FidUser.resx">

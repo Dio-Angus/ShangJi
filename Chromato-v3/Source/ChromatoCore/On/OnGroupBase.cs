@@ -8,7 +8,7 @@
 //---------------------------------------------------------------------------*/
 
 using System.Windows.Forms;
-using ChromatoTool.ini;
+using ChromatoTool.ini; 
 using ChromatoTool.pipe;
 using ChromatoBll.ocx.biz;
 using ChromatoTool.dto;

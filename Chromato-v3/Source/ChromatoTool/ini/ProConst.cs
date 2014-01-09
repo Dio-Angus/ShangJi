@@ -786,7 +786,8 @@ namespace ChromatoTool.ini
     /// </summary>
     public class AntiControl
     {
-        public const String ColumnPara = "柱箱";
+        public const String NetworkBoard = "网络板";
+        public const String HeatingSource = "加热源";
         public const String SampleEntry = "进样口";
         public const String Tcd = "TCD";
         public const String Fid = "FID";

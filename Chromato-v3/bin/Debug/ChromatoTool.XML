@@ -4,6 +4,922 @@
         <name>ChromatoTool</name>
     </assembly>
     <members>
+        <member name="T:ChromatoTool.ini.DefaultColor">
+            <summary>
+            缺省曲线颜色
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultColor.MaxColor">
+            <summary>
+            最大数量
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultColor.ForeColor">
+            <summary>
+            前景色
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.ini.DefaultColor.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.MainTreeText">
+            <summary>
+            主树节点显示名称
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeText.Sample">
+            <summary>
+            样品
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeText.Solution">
+            <summary>
+            方案
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeText.Online">
+            <summary>
+            采集
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeText.Offline">
+            <summary>
+            分析
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeText.Compare">
+            <summary>
+            比较
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.MainTreeName">
+            <summary>
+            主树节点内部名称
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeName.Sample">
+            <summary>
+            样品
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeName.Solution">
+            <summary>
+            方案
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeName.Online">
+            <summary>
+            采集
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeName.Offline">
+            <summary>
+            分析
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.MainTreeName.Compare">
+            <summary>
+            比较
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.ConfigTreeName">
+            <summary>
+            配置树名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.AutoChromatoTreeName">
+            <summary>
+            测试树名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.SampleTab">
+            <summary>
+            样品Tab显示名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.SolutionTab">
+            <summary>
+            方案Tab显示名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.CollectionTab">
+            <summary>
+            采集Tab显示名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.OffProcessTab">
+            <summary>
+            分析Tab显示名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.IdChannel">
+            <summary>
+            通道号
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.IdChannel.Blank">
+            <summary>
+            Blank
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.IdChannel.Tcd1">
+            <summary>
+            通道Tcd1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.IdChannel.Tcd2">
+            <summary>
+            通道Tcd2
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.IdChannel.Fid1">
+            <summary>
+            通道Fid1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.IdChannel.Fid2">
+            <summary>
+            通道Fid2
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.Offline">
+            <summary>
+            离线参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.PlotType">
+            <summary>
+            曲线类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.FullScreenTime">
+            <summary>
+            满屏时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.AutoScale">
+            <summary>
+            是否自动坐标范围
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.ShowMaxY">
+            <summary>
+            Y轴显示最大值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.ShowMinY">
+            <summary>
+            Y轴显示最小值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.ShowMaxX">
+            <summary>
+            X轴显示最大值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.ShowMinX">
+            <summary>
+            X轴显示最小值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Offline.ShowMarker">
+            <summary>
+            是否显示marker
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.CompareConfig">
+            <summary>
+            离线参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.PlotType">
+            <summary>
+            曲线类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.FullScreenTime">
+            <summary>
+            满屏时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.AutoScale">
+            <summary>
+            是否自动坐标范围
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.ShowMaxY">
+            <summary>
+            Y轴显示最大值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.ShowMinY">
+            <summary>
+            Y轴显示最小值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.ShowMaxX">
+            <summary>
+            X轴显示最大值
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.CompareConfig.ShowMinX">
+            <summary>
+            X轴显示最小值
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.General">
+            <summary>
+            常规参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.Frequent">
+            <summary>
+            频率,每秒钟产生的点数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.MoveUnit">
+            <summary>
+            水平移动单位,1像素,n像素
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ArrowColor">
+             <summary>
+            十字光标颜色
+             </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.PackDb">
+            <summary>
+            数据库是否加密
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.SaveMaxCount">
+            <summary>
+            缓冲区到达最大值，进行保存释放
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ObjectLink">
+            <summary>
+            是否是模拟数据
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.TraceLog">
+            <summary>
+            是否显示日志
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.AutoLoad">
+            <summary>
+            是否自动载入完成后文件
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ShowCount">
+            <summary>
+            显示点数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ArrowStyle">
+            <summary>
+            十字光标类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.OpenArrow">
+            <summary>
+            开启十字光标标志
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.PlotType">
+            <summary>
+            模拟曲线类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.SolutionPeak">
+            <summary>
+            使用状态机
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.DgvBackColor">
+            <summary>
+            DataGridView背景色
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.AutoName">
+            <summary>
+            采集文件自动命名
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.NeedLogin">
+            <summary>
+            是否需要登陆
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.UserID">
+             <summary>
+            用户名
+             </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.StatusBar">
+            <summary>
+            是否显示状态条
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ShowDebugPage">
+            <summary>
+            是否显示调试画面
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.ScanPeriod">
+            <summary>
+            刷新频率
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.General.LinkObject">
+            <summary>
+            下位机对象
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.LinkObject.SimuGc">
+            <summary>
+            模拟GC
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.LinkObject.SmallBoard">
+            <summary>
+            小板卡
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.LinkObject.BigBoard">
+            <summary>
+            大板卡
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.LinkObject.ChannelGas">
+            <summary>
+            通道气板卡
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.LinkObject.AutoChromatoGas">
+            <summary>
+            自动分析通道气板卡
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.General.StyleArrow">
+            <summary>
+            光标类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.StyleArrow.Small">
+            <summary>
+            小
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.General.StyleArrow.Big">
+            <summary>
+            大
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.ShowChannel">
+            <summary>
+            显示通道
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ShowChannel.A">
+            <summary>
+            是否实时显示Tcd1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ShowChannel.B">
+            <summary>
+            是否实时显示B
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ShowChannel.C">
+            <summary>
+            是否实时显示C
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ShowChannel.D">
+            <summary>
+            是否实时显示D
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ShowChannel.Syn">
+            <summary>
+            是否同步
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.Port">
+            <summary>
+            端口设定
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.tag">
+            <summary>
+            信息传输方式，0为COM，1为TCP
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.SictPort">
+            <summary>
+            Ai模块串口
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.BaudRate">
+            <summary>
+            传输波特率
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.Ip">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.PortNum">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.DataBits">
+            <summary>
+            传输数据位
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.Parity">
+            <summary>
+            传输奇偶校验
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.StopBits">
+            <summary>
+            传输停止位
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Port.Handshake">
+            <summary>
+            握手
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.SerialOption">
+            <summary>
+            串口选项
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.AppendToSend">
+            <summary>
+            传送末尾追加数据
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.HexSend">
+            <summary>
+            16进制发送
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.HexReceive">
+            <summary>
+            16进制接收
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.MonoFont">
+            <summary>
+            单色
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.LocalEcho">
+            <summary>
+            本地回显
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.StayOnTop">
+            <summary>
+            停靠在上部
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.FilterUseCase">
+            <summary>
+            大小写过滤
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.LogFileName">
+            <summary>
+            日志文件名
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.TimerInterval">
+            <summary>
+            读写超时间隔
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.SerialOption.AppendType">
+            <summary>
+            追加类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendNothing">
+            <summary>
+            不追加
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendCR">
+            <summary>
+            追加回车
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendLF">
+            <summary>
+            追加换行
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendCRLF">
+            <summary>
+            追加回车换行
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultAnaly">
+            <summary>
+            缺省分析方法
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.ColumuModel">
+            <summary>
+            色谱柱型号
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.Drift">
+            <summary>
+            漂移
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.MinAreaSize">
+            <summary>
+            最小面积
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.ParaChangeTime">
+            <summary>
+            变参时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.Ratio">
+            <summary>
+            比率
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.AimPara">
+            <summary>
+            对准参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.AimWay">
+            <summary>
+            对准参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.ArithmaticParameter">
+            <summary>
+            对准参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.Arithmatic">
+            <summary>
+            对准参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.TimeWindow">
+            <summary>
+            时间窗(1 - 100)
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAnaly.FixWay">
+            <summary>
+            校正方法
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultCollection">
+            <summary>
+            缺省采集方法
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.StopTime">
+            <summary>
+            停止时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.ShowMaxY">
+            <summary>
+            显示上限
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.ShowMinY">
+            <summary>
+            显示下限
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.FullScreenTime">
+            <summary>
+            满屏时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.AutoSlope">
+            <summary>
+            自动斜率
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.BackColor">
+            <summary>
+            背景颜色
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultCollection.ForeColor">
+            <summary>
+            曲线颜色
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultIdTable">
+            <summary>
+            缺省的ID表参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.TimeBand">
+            <summary>
+            时间带(min)
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.SampleWeight">
+            <summary>
+            样品量
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.Density">
+            <summary>
+            浓度
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.PeakHeight">
+            <summary>
+            高度
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.PeakSize">
+            <summary>
+            面积
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.FactorOne">
+            <summary>
+            因子1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.FactorTwo">
+            <summary>
+            因子2
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.ReserveTime">
+            <summary>
+            保留时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultIdTable.IngredientName">
+            <summary>
+            成分名
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.AntiControl">
+            <summary>
+            反控方法树名称
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.Polarity">
+            <summary>
+            极性正负
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Polarity.Positive">
+            <summary>
+            正
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.Polarity.Nagative">
+            <summary>
+            负
+            </summary>
+        </member>
+        <!-- 对于成员“T:ChromatoTool.ini.TcdOnOff”忽略有格式错误的 XML 注释 -->
+        <member name="F:ChromatoTool.ini.TcdOnOff.On">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.TcdOnOff.Off">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultColumnPara">
+            <summary>
+            缺省反控方法->柱箱参数
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultInject">
+            <summary>
+            缺省反控方法->进样口参数
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultInject.InitTemp">
+            <summary>
+            初始温度
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultInject.AlertTemp">
+            <summary>
+            报警温度
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultInject.InjectTime">
+            <summary>
+            进样时间
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultInject.ColumnType">
+            <summary>
+            柱类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultInject.InjectMode">
+            <summary>
+            进样模式
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultAux">
+            <summary>
+            缺省反控方法->AUX
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAux.InitTempAux1">
+            <summary>
+            初始温度1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAux.AlertTempAux1">
+            <summary>
+            报警温度1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAux.InitTempAux2">
+            <summary>
+            初始温度2
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.DefaultAux.AlertTempAux2">
+            <summary>
+            报警温度2
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultFid">
+            <summary>
+            缺省反控方法->FID
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultTcd">
+            <summary>
+            缺省反控方法->TCD
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DbConfig">
+            <summary>
+            Dbの配置
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultSampleInfo">
+            <summary>
+            缺省样品信息
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.TypeOfPeak">
+            <summary>
+            峰的类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.TypeOfPeak.Main">
+            <summary>
+            主峰
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.TypeOfPeak.Overlap">
+            <summary>
+            重叠峰
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.TypeOfPeak.Tail">
+            <summary>
+            拖尾峰
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.GcChannel">
+            <summary>
+            GC通道板卡状态
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GcChannel.Tcd1">
+            <summary>
+            通道Tcd1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GcChannel.Tcd2">
+            <summary>
+            通道Tcd2
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GcChannel.Fid1">
+            <summary>
+            通道Fid1
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GcChannel.Fid2">
+            <summary>
+            通道Fid2
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.GasChannel">
+            <summary>
+            通道气的通道类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.A">
+            <summary>
+            通道A
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.B">
+            <summary>
+            通道B
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.C">
+            <summary>
+            通道C
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.D">
+            <summary>
+            通道D
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.E">
+            <summary>
+            通道E
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.GasChannel.F">
+            <summary>
+            通道F
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.ExportFlag">
+            <summary>
+            导出内容
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ExportFlag.Solution">
+            <summary>
+            使用方案
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ExportFlag.Result">
+            <summary>
+            分析结果
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.ExportFlag.Data">
+            <summary>
+            原始数据"
+            </summary>
+        </member>
         <member name="T:ChromatoTool.dto.ParaDto">
             <summary>
             谱图的信息表
@@ -72,6 +988,66 @@
         <member name="P:ChromatoTool.dto.ParaDto.Remark">
             <summary>
             备注
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.CollectionDto">
+            <summary>
+            采集方法表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.CollectionID">
+            <summary>
+            采集方法ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.CollectionName">
+            <summary>
+            采集方法名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.StopTime">
+            <summary>
+            停止时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.ShowMaxY">
+            <summary>
+            Y最大值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.ShowMinY">
+            <summary>
+            Y最小值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.FullScreenTime">
+            <summary>
+            满屏时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.AutoSlope">
+            <summary>
+            是否自动斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.ForeColor">
+            <summary>
+            曲线颜色
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CollectionDto.BackColor">
+            <summary>
+            背景色
             </summary>
         </member>
         <member name="T:ChromatoTool.dto.AntiControlDto">
@@ -152,6 +1128,1209 @@
         <member name="P:ChromatoTool.dto.CompareDto.CollectTime">
             <summary>
             采集时间
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.util.CastCdf">
+            <summary>
+            数据导出到NetCdf工具
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.util.CastCdf.ExportToCdf(System.Collections.ArrayList,System.Data.DataTable,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="arrPlot"></param>
+            <param name="dtResult"></param>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:ChromatoTool.util.CastCdf.Export(System.Collections.ArrayList,System.String)">
+            <summary>
+            导出ArrayList到NetCdf
+            </summary>
+            <param name="arr"></param>
+            <param name="filepath"></param>
+        </member>
+        <member name="T:ChromatoTool.log.ReportLogArgs">
+            <summary>
+            传递给主线程的日志参数类
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.log.ReportLogArgs.#ctor(System.String)">
+            <summary>
+            构造
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="P:ChromatoTool.log.ReportLogArgs._var">
+            <summary>
+            日至字符串
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.SolutionDto">
+            <summary>
+            方案表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.SolutionID">
+            <summary>
+            方案ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.SolutionName">
+            <summary>
+            方案名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.RegisterTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.CollectionID">
+            <summary>
+            采集方法ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.AnalyParaID">
+            <summary>
+            分析方法ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.AntiMethodID">
+            <summary>
+            反控方法ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.IDTableID">
+            <summary>
+            ID表ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.TimeProcID">
+            <summary>
+            时间程序ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionDto.IsUseTimeProc">
+            <summary>
+            是否使用时间程序
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.AnalyParaDto">
+            <summary>
+            方法表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.AnalyParaID">
+            <summary>
+            方法ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.AnalyName">
+            <summary>
+            方法名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.ArithmaticID">
+            <summary>
+            定量方法ID（外标，内标，归一，指数等）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.ArithmaticPara">
+            <summary>
+            定量参数（面积，高度）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.AimPara">
+            <summary>
+            对准参数（时间窗，时间带）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.AimWay">
+            <summary>
+            对准方法（绝对，相对）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.ColumuModel">
+            <summary>
+            色谱柱型号
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.Description">
+            <summary>
+            描述（用于哪种物质的方法）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.Drift">
+            <summary>
+            漂移
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.MinAreaSize">
+            <summary>
+            最小面积
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.ParaChangeTime">
+            <summary>
+            变参时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.Ratio">
+            <summary>
+            比例系数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.TimeWindow">
+            <summary>
+            时间窗（百分数）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AnalyParaDto.FixWay">
+            <summary>
+            校正方法
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.pipe.NamedPipeNative">
+            <summary>
+            命名管道API封装类
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.INVALID_HANDLE_VALUE">
+            <summary>
+            无效句柄
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_DUPLEX">
+            <summary>
+            数据双工通信
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_INBOUND">
+            <summary>
+            接收数据
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_OUTBOUND">
+            <summary>
+            发送数据
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_TYPE_BYTE">
+            <summary>
+            字节类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_TYPE_MESSAGE">
+            <summary>
+            消息类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_WAIT">
+            <summary>
+            等待
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_NOWAIT">
+            <summary>
+            不等待
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.ERROR_PIPE_CONNECTED">
+            <summary>
+            连接超时错误代码
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.pipe.NamedPipeNative.ERROR_NO_DATA">
+            <summary>
+            无数据错误代码
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.CreateNamedPipe(System.String,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.IntPtr)">
+            <summary>
+            创建命名管道
+            </summary>
+            <param name="lpName"></param>
+            <param name="dwOpenMode"></param>
+            <param name="dwPipeMode"></param>
+            <param name="nMaxInstances"></param>
+            <param name="nOutBufferSize"></param>
+            <param name="nInBufferSize"></param>
+            <param name="nDefaultTimeOut"></param>
+            <param name="pipeSecurityDescriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.ConnectNamedPipe(System.IntPtr,System.Threading.Overlapped)">
+            <summary>
+            连接命名管道
+            </summary>
+            <param name="hHandle"></param>
+            <param name="lpOverlapped"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.CreateFile(System.String,System.UInt32,System.UInt32,System.Security.Permissions.SecurityAttribute,System.UInt32,System.UInt32,System.UInt32)">
+            <summary>
+            创建文件
+            </summary>
+            <param name="lpFileName"></param>
+            <param name="dwDesiredAccess"></param>
+            <param name="dwShareMode"></param>
+            <param name="attr"></param>
+            <param name="dwCreationDisposition"></param>
+            <param name="dwFlagsAndAttributes"></param>
+            <param name="hTemplateFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.ReadFile(System.IntPtr,System.Byte[],System.UInt32,System.Byte[],System.UInt32)">
+            <summary>
+            读文件
+            </summary>
+            <param name="hHandle"></param>
+            <param name="lpBuffer"></param>
+            <param name="nNumberOfBytesToRead"></param>
+            <param name="lpNumberOfBytesRead"></param>
+            <param name="lpOverlapped"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.WriteFile(System.IntPtr,System.Byte[],System.UInt32,System.Byte[],System.UInt32)">
+            <summary>
+            写文件
+            </summary>
+            <param name="hHandle"></param>
+            <param name="lpBuffer"></param>
+            <param name="nNumberOfBytesToWrite"></param>
+            <param name="lpNumberOfBytesWritten"></param>
+            <param name="lpOverlapped"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.DisconnectNamedPipe(System.IntPtr)">
+            <summary>
+            断开命名管道
+            </summary>
+            <param name="hHandle"></param>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.CloseHandle(System.IntPtr)">
+            <summary>
+            关闭句柄
+            </summary>
+            <param name="hHandle"></param>
+        </member>
+        <member name="M:ChromatoTool.pipe.NamedPipeNative.GetLastError">
+            <summary>
+            获取错误代码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ChromatoTool.dto.TimeProcDto">
+            <summary>
+            时间程序表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.TPid">
+            <summary>
+            时间程序ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.TPName">
+            <summary>
+            时间程序名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.SerialID">
+            <summary>
+            动作ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.ActionName">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.StartTime">
+            <summary>
+            起始时间 分
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.StopTime">
+            <summary>
+            结束时间 分
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.IsCmd">
+            <summary>
+            是否是命令值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.TimeProcDto.TpValue">
+            <summary>
+            命令值
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.pipe.CastPipe">
+            <summary>
+            管道处理类
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.#ctor">
+            <summary>
+            无参构造函数
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.#ctor(System.String)">
+            <summary>
+            有参构造函数
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.Dispose">
+            <summary>
+            释放
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.CreatePipe">
+            <summary>
+            创建管道 
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.WriteString(System.String)">
+            <summary>
+            写字符串
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.WriteInt(System.Int32)">
+            <summary>
+            写整数
+            </summary>
+            <param name="iValueCount"></param>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.WriteFloat(System.Single)">
+            <summary>
+            写浮点数
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadCurveData">
+            <summary>
+            读取曲线数据
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadTextInfo">
+            <summary>
+            读取文本信息
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadData">
+            <summary>
+            读数据
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadString(System.IntPtr)">
+            <summary>
+            读字符串
+            </summary>
+            <param name="HPipe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadBytes(System.IntPtr)">
+            <summary>
+            读字节数组
+            </summary>
+            <param name="HPipe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadFloat(System.IntPtr)">
+            <summary>
+            读单精度小数
+            </summary>
+            <param name="HPipe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadDouble(System.IntPtr)">
+            <summary>
+            读双精度小数
+            </summary>
+            <param name="HPipe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.pipe.CastPipe.ReadInt(System.IntPtr)">
+            <summary>
+            读整数
+            </summary>
+            <param name="HPipe"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ChromatoTool.pipe.CastPipe._pipeFullName">
+            <summary>
+            管道名全称
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.pipe.CastPipe._hPipe">
+            <summary>
+            管道句柄
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.RelationDto">
+            <summary>
+            索引关系
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RelationDto.SampleID">
+            <summary>
+            样品ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RelationDto.SolutionID">
+            <summary>
+            方案ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RelationDto.RegisterTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.OriginPointDto">
+            <summary>
+            点的信息
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.OriginPointDto.Voltage">
+            <summary>
+            电压值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.OriginPointDto.Moment">
+            <summary>
+            时刻(相对于0)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.OriginPointDto.Index">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.OriginPointDto.AvgPeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.OriginPointDto.SettingSlope">
+            <summary>
+            设定斜率
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.CalibrateDto">
+            <summary>
+            含量表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.IDTableID">
+            <summary>
+            ID表ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.IngredientID">
+            <summary>
+            成分ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.CalibrateID">
+            <summary>
+            含量ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.SampleID">
+            <summary>
+            样品ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.PeakSize">
+            <summary>
+            峰面积
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.PeakHeight">
+            <summary>
+            峰高
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.Density">
+            <summary>
+            标样浓度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.FactorOne">
+            <summary>
+            响应因子F1
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.FactorTwo">
+            <summary>
+            响应因子F2
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.DensityTemp">
+            <summary>
+            标样浓度中间变量
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.SizeHeight">
+            <summary>
+            峰面积/高度中间变量
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.CalibrateDto.SampleWeight">
+            <summary>
+            样品量
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.util.CastCursor">
+            <summary>
+            光标工具
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.util.CastCursor.LoadCursor(System.String)">
+            <summary>
+            装载光标
+            </summary>
+            <param name="resourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ChromatoTool.dto.SolutionExportDto">
+            <summary>
+            方案导出的存储单元
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.dto.SolutionExportDto._isUseTp">
+            <summary>
+            是否使用时间程序
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto._dtoAnalyPara">
+            <summary>
+            分析方法
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto._timeProc">
+            <summary>
+            时间程序 TimeProcDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto.SampleWeight">
+            <summary>
+            样品量
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto.InnerWeight">
+            <summary>
+            内标量
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto._arrIngre">
+            <summary>
+            ID表 IngredientDto 集合体
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.SolutionExportDto._arrCali">
+            <summary>
+            含量表 CalibrateDto 集合体(根据IngredientDto.IngredientID嵌套)
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.AvgPointDto">
+            <summary>
+            平均点表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.Voltage">
+            <summary>
+            电压值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.Moment">
+            <summary>
+            时刻(相对于0)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.Index">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.SettingSlope">
+            <summary>
+            设定斜率参数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.Drift">
+            <summary>
+            漂移
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.PointType">
+            <summary>
+            数据点属性
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.UorD">
+            <summary>
+            符合设定斜率的程度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.minArea">
+            <summary>
+            最小面积
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.ParaChangeTime">
+            <summary>
+            变参时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.isTimeLock">
+            <summary>
+            无需峰削除(锁定时间)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.isBaselineLock">
+            <summary>
+            基线锁定
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.isRevertNegative">
+            <summary>
+            负峰翻转
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.isHoriBaseline">
+            <summary>
+            水平基线
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.isTailProcess">
+            <summary>
+            拖尾峰处理
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.StatusPoint">
+            <summary>
+            每点的状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.StatusAvgSlope">
+            <summary>
+            平均斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgPointDto.TrendPeak">
+            <summary>
+            峰的趋势
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.AttriDto">
+            <summary>
+            属性Dto
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.util.EnumDescription">
+            <summary>
+            把枚举值按照指定的文本显示
+            <remarks>
+            一般通过枚举值的ToString()可以得到变量的文本，
+            但是有时候需要的到与之对应的更充分的文本，
+            这个类帮助达到此目的
+            Date: 2006-3-25 
+            Author: dearzp@hotmail.com
+            </remarks>
+            </summary>
+            <example>
+            [EnumDescription("中文数字")]
+            enum MyEnum
+            {
+            	[EnumDescription("数字一")]
+            	One = 1, 
+            
+            	[EnumDescription("数字二")]
+            	Two, 
+            
+            	[EnumDescription("数字三")]
+            	Three
+            }
+            EnumDescription.GetEnumText(typeof(MyEnum));
+            EnumDescription.GetFieldText(MyEnum.Two);
+            EnumDescription.GetFieldTexts(typeof(MyEnum)); 
+            </example>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.#ctor(System.String,System.Int32)">
+            <summary>
+            描述枚举值
+            </summary>
+            <param name="enumDisplayText">描述内容</param>
+            <param name="enumRank">排列顺序</param>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.#ctor(System.String)">
+            <summary>
+            描述枚举值，默认排序为5
+            </summary>
+            <param name="enumDisplayText">描述内容</param>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.GetEnumText(System.Type)">
+            <summary>
+            得到对枚举的描述文本
+            </summary>
+            <param name="enumType">枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.GetFieldText(System.Object)">
+            <summary>
+            获得指定枚举类型中，指定值的描述文本。
+            </summary>
+            <param name="enumValue">枚举值，不要作任何类型转换</param>
+            <returns>描述字符串</returns>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.GetFieldTexts(System.Type)">
+            <summary>
+            得到枚举类型定义的所有文本，按定义的顺序返回
+            </summary>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <param name="enumType">枚举类型</param>
+            <returns>所有定义的文本</returns>
+        </member>
+        <member name="M:ChromatoTool.util.EnumDescription.GetFieldTexts(System.Type,ChromatoTool.util.EnumDescription.SortType)">
+            <summary>
+            得到枚举类型定义的所有文本
+            </summary>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <param name="enumType">枚举类型</param>
+            <param name="sortType">指定排序类型</param>
+            <returns>所有定义的文本</returns>
+        </member>
+        <member name="T:ChromatoTool.util.EnumDescription.SortType">
+            <summary>
+            排序类型
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.util.EnumDescription.SortType.Default">
+             <summary>
+            按枚举顺序默认排序
+             </summary>
+        </member>
+        <member name="F:ChromatoTool.util.EnumDescription.SortType.DisplayText">
+            <summary>
+            按描述值排序
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.util.EnumDescription.SortType.Rank">
+            <summary>
+            按排序熵
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.TcdDto">
+            <summary>
+            反控方法->TCD
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.RangeDto">
+            <summary>
+            放大缩小的坐标范围
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.StartValX">
+            <summary>
+            起点X方向值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.StartValY">
+            <summary>
+            起点Y方向值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.EndValX">
+            <summary>
+            终点X方向值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.EndValY">
+            <summary>
+            终点Y方向值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.StartPosX">
+            <summary>
+            起点X方向坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.StartPosY">
+            <summary>
+            起点Y方向坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.EndPosX">
+            <summary>
+            终点X方向坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RangeDto.EndPosY">
+            <summary>
+            终点Y方向坐标
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.FidDto">
+            <summary>
+            反控方法->FID
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.util.ListViewColumnSorter">
+            <summary>
+            继承自IComparer
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.util.ListViewColumnSorter.ColumnToSort">
+            <summary>
+            指定按照哪个列排序
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.util.ListViewColumnSorter.OrderOfSort">
+            <summary>
+            指定排序的方式
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.util.ListViewColumnSorter.ObjectCompare">
+            <summary>
+            声明CaseInsensitiveComparer类对象，
+            参见ms-help://MS.VSCC.2003/MS.MSDNQTR.2003FEB.2052/cpref/html/frlrfSystemCollectionsCaseInsensitiveComparerClassTopic.htm
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.util.ListViewColumnSorter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.util.ListViewColumnSorter.Compare(System.Object,System.Object)">
+            <summary>
+            重写IComparer接口.
+            </summary>
+            <param name="x">要比较的第一个对象</param>
+            <param name="y">要比较的第二个对象</param>
+            <returns>比较的结果.如果相等返回0，如果x大于y返回1，如果x小于y返回-1</returns>
+        </member>
+        <member name="P:ChromatoTool.util.ListViewColumnSorter.SortColumn">
+            <summary>
+            获取或设置按照哪一列排序.
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.util.ListViewColumnSorter.Order">
+            <summary>
+            获取或设置排序方式.
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.log.CastLog">
+            <summary>
+            日志文件
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.log.CastLog.FileName">
+            <summary>
+            日志文件名
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.log.CastLog.lbRealLog">
+            <summary>
+            实时显示日志控件
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.log.CastLog.bHasList">
+            <summary>
+            是否显示到列表中
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.log.CastLog.Logger(System.String,System.String,System.String)">
+            <summary>
+            写日志到日志文件
+            </summary>
+            <param name="className">类名</param>
+            <param name="optFlg">操作标志</param>
+            <param name="msg">内容</param>
+        </member>
+        <member name="M:ChromatoTool.log.CastLog.LoggerTemp(System.String)">
+            <summary>
+            写数据到临时文件
+            </summary>
+            <param name="msg">内容</param>
+        </member>
+        <member name="T:ChromatoTool.dto.InjectDto">
+            <summary>
+            反控方法->进样口表
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.AuxDto">
+            <summary>
+            反控方法->AUX
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.util.CastColor">
+            <summary>
+            .NET和C++的颜色转换
+            </summary>
+        </member>
+        <member name="M:ChromatoTool.util.CastColor.GetCustomColor(System.Drawing.Color)">
+            <summary>
+            Color转COLOREF
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoTool.util.CastColor.GetArgbColor(System.Int32)">
+            <summary>
+             COLOREF转Color
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ChromatoTool.dto.ZoomDto">
+            <summary>
+            区域原始Dto
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.PeakDto">
+            <summary>
+            峰的信息
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.SampleID">
+            <summary>
+            样品ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.PeakID">
+            <summary>
+            峰ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.StartPointIndex">
+            <summary>
+            开始点Index
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.EndPointIndex">
+            <summary>
+            结束点Index
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.ReserveTime">
+            <summary>
+            保留时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.TopPointIndex">
+            <summary>
+            峰最高点Index
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.BaseK">
+            <summary>
+            基线斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.BaseB">
+            <summary>
+            基线截距
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.PeakName">
+            <summary>
+            峰组分名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.AreaSize">
+            <summary>
+            峰面积
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.PeakHeight">
+            <summary>
+            峰高
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.Density">
+            <summary>
+            浓度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.PeakType">
+            <summary>
+            峰类型
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.GroupID">
+            <summary>
+            组号
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.IsStartDown">
+            <summary>
+            起点是否在曲线下方（否则在曲线上）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.IsEndDown">
+            <summary>
+            终点是否在曲线下方（否则在曲线上）
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.StartVoltage">
+            <summary>
+            封闭线起始点Y坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.EndVoltage">
+            <summary>
+            封闭线终点Y坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.StartMoment">
+            <summary>
+            封闭线起始点X坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.EndMoment">
+            <summary>
+            封闭线终点X坐标
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.StartPointCloseIndex">
+            <summary>
+            封闭线开始点Index
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.EndPointCloseIndex">
+            <summary>
+            封闭线结束点Index
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.IsManual">
+            <summary>
+            是否进行了手动处理(手动垂直切割，手动基线)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.PeakStep">
+            <summary>
+            状态经历步骤
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.PeakDto.IsManualTail">
+            <summary>
+            是否进行了手动脱尾
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.YieldingPointDto">
+            <summary>
+            拐点的信息
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.YieldingPointDto.AttriYielding">
+            <summary>
+            拐点状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.YieldingPointDto.Index">
+            <summary>
+            拐点在arrAvg中的索引
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.ShowChannelDto">
+            <summary>
+            采集窗口是否显示采集通道
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ShowChannelDto.A">
+            <summary>
+            A
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ShowChannelDto.B">
+            <summary>
+            B
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ShowChannelDto.C">
+            <summary>
+            C
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ShowChannelDto.D">
+            <summary>
+            D
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.RequestDto">
+            <summary>
+            申请表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RequestDto.regSampleName">
+            <summary>
+            申请样品名
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RequestDto.SampleID">
+            <summary>
+            真实样品ID (通道A_YYYYMMDDhhmmss)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RequestDto.RegisterTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.RequestDto.Status">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.ParaKeyDto">
+            <summary>
+            样品的信息主键列表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ParaKeyDto.SampleID">
+            <summary>
+            样品ID
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.ParaKeyDto.RegisterTime">
+            <summary>
+            注册时间
             </summary>
         </member>
         <member name="T:ChromatoTool.db.SqliteDbName">
@@ -363,19 +2542,14 @@
             <param name="arr"></param>
             <returns></returns>
         </member>
-        <member name="T:ChromatoTool.dto.YieldingPointDto">
+        <member name="T:ChromatoTool.ini.IniFile">
             <summary>
-            拐点的信息
+            Read/Write values to an ini file
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.YieldingPointDto.AttriYielding">
+        <member name="F:ChromatoTool.ini.IniFile._path">
             <summary>
-            拐点状态
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.YieldingPointDto.Index">
-            <summary>
-            拐点在arrAvg中的索引
+            路径
             </summary>
         </member>
         <member name="T:ChromatoTool.db.SqliteHelper">
@@ -555,159 +2729,109 @@
             <param name="ds"></param>
             <param name="tableName"></param>
         </member>
-        <member name="T:ChromatoTool.dto.OriginPointDto">
+        <member name="T:ChromatoTool.dto.ColumnParaDto">
             <summary>
-            点的信息
+            反控方法->柱箱表
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.OriginPointDto.Voltage">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.BalanceTime">
             <summary>
-            电压值
+            平衡时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.OriginPointDto.Moment">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.InitTemp">
             <summary>
-            时刻(相对于0)
+            初温
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.OriginPointDto.Index">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.MaintainTime">
             <summary>
-            序号
+            维持时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.OriginPointDto.AvgPeakWide">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.AlertTemp">
             <summary>
-            峰宽
+            报警温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.OriginPointDto.SettingSlope">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.ColumnCount">
             <summary>
-            设定斜率
+            柱箱恒升阶数
             </summary>
         </member>
-        <member name="T:ChromatoTool.dto.AnalyParaDto">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol1">
             <summary>
-            方法表
+            1阶速率
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.AnalyParaID">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol1">
             <summary>
-            方法ID
+            1阶温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.AnalyName">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol1">
             <summary>
-            方法名
+            1阶恒温时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.ArithmaticID">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol2">
             <summary>
-            定量方法ID（外标，内标，归一，指数等）
+            2阶速率
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.ArithmaticPara">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol2">
             <summary>
-            定量参数（面积，高度）
+            2阶温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.AimPara">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol2">
             <summary>
-            对准参数（时间窗，时间带）
+            2阶恒温时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.AimWay">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol3">
             <summary>
-            对准方法（绝对，相对）
+            3阶速率
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.ColumuModel">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol3">
             <summary>
-            色谱柱型号
+            3阶温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.Description">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol3">
             <summary>
-            描述（用于哪种物质的方法）
+            3阶恒温时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.PeakWide">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol4">
             <summary>
-            峰宽
+            4阶速率
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.Slope">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol4">
             <summary>
-            斜率
+            4阶温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.Drift">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol4">
             <summary>
-            漂移
+            4阶恒温时间
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.MinAreaSize">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol5">
             <summary>
-            最小面积
+            5阶速率
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.ParaChangeTime">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol5">
             <summary>
-            变参时间
+            5阶温度
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.Ratio">
+        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol5">
             <summary>
-            比例系数
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.TimeWindow">
-            <summary>
-            时间窗（百分数）
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AnalyParaDto.FixWay">
-            <summary>
-            校正方法
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.SolutionExportDto">
-            <summary>
-            方案导出的存储单元
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.dto.SolutionExportDto._isUseTp">
-            <summary>
-            是否使用时间程序
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto._dtoAnalyPara">
-            <summary>
-            分析方法
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto._timeProc">
-            <summary>
-            时间程序 TimeProcDto 集合体
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto.SampleWeight">
-            <summary>
-            样品量
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto.InnerWeight">
-            <summary>
-            内标量
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto._arrIngre">
-            <summary>
-            ID表 IngredientDto 集合体
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionExportDto._arrCali">
-            <summary>
-            含量表 CalibrateDto 集合体(根据IngredientDto.IngredientID嵌套)
+            5阶恒温时间
             </summary>
         </member>
         <member name="T:ChromatoTool.util.CsvStreamWriter">
@@ -754,6 +2878,61 @@
             <param name="sw"></param>
             <param name="dtoSoluExport"></param>
             <param name="filePath"></param>
+        </member>
+        <member name="T:ChromatoTool.dto.AvgExportDto">
+            <summary>
+            平均点导出数据单元
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.Voltage">
+            <summary>
+            电压值
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.Moment">
+            <summary>
+            时刻(相对于0)
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.Index">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.PeakWide">
+            <summary>
+            峰宽
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.SettingSlope">
+            <summary>
+            设定斜率参数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.Drift">
+            <summary>
+            漂移
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.Slope">
+            <summary>
+            斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.StatusPoint">
+            <summary>
+            每点的状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.StatusAvgSlope">
+            <summary>
+            平均斜率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AvgExportDto.TrendPeak">
+            <summary>
+            峰的趋势
+            </summary>
         </member>
         <member name="T:ChromatoTool.util.CastString">
             <summary>
@@ -815,40 +2994,6 @@
             </summary>
             <param name="value">字符串</param>
             <returns>true:是 false 否</returns>
-        </member>
-        <member name="T:ChromatoTool.log.CastLog">
-            <summary>
-            日志文件
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.log.CastLog.FileName">
-            <summary>
-            日志文件名
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.log.CastLog.lbRealLog">
-            <summary>
-            实时显示日志控件
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.log.CastLog.bHasList">
-            <summary>
-            是否显示到列表中
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.log.CastLog.Logger(System.String,System.String,System.String)">
-            <summary>
-            写日志到日志文件
-            </summary>
-            <param name="className">类名</param>
-            <param name="optFlg">操作标志</param>
-            <param name="msg">内容</param>
-        </member>
-        <member name="M:ChromatoTool.log.CastLog.LoggerTemp(System.String)">
-            <summary>
-            写数据到临时文件
-            </summary>
-            <param name="msg">内容</param>
         </member>
         <member name="T:ChromatoTool.ini.DefaultItem">
             <summary>
@@ -2160,1394 +4305,24 @@
             已经放完
             </summary>
         </member>
-        <member name="T:ChromatoTool.dto.CalibrateDto">
+        <member name="T:ChromatoTool.dto.UserDto">
             <summary>
-            含量表
+            用户表
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.IDTableID">
+        <member name="P:ChromatoTool.dto.UserDto.UserID">
             <summary>
-            ID表ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.IngredientID">
-            <summary>
-            成分ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.CalibrateID">
-            <summary>
-            含量ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.SampleID">
-            <summary>
-            样品ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.PeakSize">
-            <summary>
-            峰面积
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.PeakHeight">
-            <summary>
-            峰高
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.Density">
-            <summary>
-            标样浓度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.FactorOne">
-            <summary>
-            响应因子F1
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.FactorTwo">
-            <summary>
-            响应因子F2
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.DensityTemp">
-            <summary>
-            标样浓度中间变量
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.SizeHeight">
-            <summary>
-            峰面积/高度中间变量
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CalibrateDto.SampleWeight">
-            <summary>
-            样品量
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.pipe.CastPipe">
-            <summary>
-            管道处理类
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.#ctor">
-            <summary>
-            无参构造函数
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.#ctor(System.String)">
-            <summary>
-            有参构造函数
-            </summary>
-            <param name="name"></param>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.Finalize">
-            <summary>
-            析构函数
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.Dispose">
-            <summary>
-            释放
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.CreatePipe">
-            <summary>
-            创建管道 
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.WriteString(System.String)">
-            <summary>
-            写字符串
-            </summary>
-            <param name="str"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.WriteInt(System.Int32)">
-            <summary>
-            写整数
-            </summary>
-            <param name="iValueCount"></param>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.WriteFloat(System.Single)">
-            <summary>
-            写浮点数
-            </summary>
-            <param name="p"></param>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadCurveData">
-            <summary>
-            读取曲线数据
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadTextInfo">
-            <summary>
-            读取文本信息
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadData">
-            <summary>
-            读数据
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadString(System.IntPtr)">
-            <summary>
-            读字符串
-            </summary>
-            <param name="HPipe"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadBytes(System.IntPtr)">
-            <summary>
-            读字节数组
-            </summary>
-            <param name="HPipe"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadFloat(System.IntPtr)">
-            <summary>
-            读单精度小数
-            </summary>
-            <param name="HPipe"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadDouble(System.IntPtr)">
-            <summary>
-            读双精度小数
-            </summary>
-            <param name="HPipe"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.CastPipe.ReadInt(System.IntPtr)">
-            <summary>
-            读整数
-            </summary>
-            <param name="HPipe"></param>
-            <returns></returns>
-        </member>
-        <member name="P:ChromatoTool.pipe.CastPipe._pipeFullName">
-            <summary>
-            管道名全称
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.pipe.CastPipe._hPipe">
-            <summary>
-            管道句柄
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.ZoomDto">
-            <summary>
-            区域原始Dto
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.ColumnParaDto">
-            <summary>
-            反控方法->柱箱表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.BalanceTime">
-            <summary>
-            平衡时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.InitTemp">
-            <summary>
-            初温
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.MaintainTime">
-            <summary>
-            维持时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.AlertTemp">
-            <summary>
-            报警温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.ColumnCount">
-            <summary>
-            柱箱恒升阶数
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol1">
-            <summary>
-            1阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol1">
-            <summary>
-            1阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol1">
-            <summary>
-            1阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol2">
-            <summary>
-            2阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol2">
-            <summary>
-            2阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol2">
-            <summary>
-            2阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol3">
-            <summary>
-            3阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol3">
-            <summary>
-            3阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol3">
-            <summary>
-            3阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol4">
-            <summary>
-            4阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol4">
-            <summary>
-            4阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol4">
-            <summary>
-            4阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol5">
-            <summary>
-            5阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol5">
-            <summary>
-            5阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol5">
-            <summary>
-            5阶恒温时间
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.PeakDto">
-            <summary>
-            峰的信息
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.SampleID">
-            <summary>
-            样品ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.PeakID">
-            <summary>
-            峰ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.StartPointIndex">
-            <summary>
-            开始点Index
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.EndPointIndex">
-            <summary>
-            结束点Index
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.ReserveTime">
-            <summary>
-            保留时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.TopPointIndex">
-            <summary>
-            峰最高点Index
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.BaseK">
-            <summary>
-            基线斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.BaseB">
-            <summary>
-            基线截距
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.PeakName">
-            <summary>
-            峰组分名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.AreaSize">
-            <summary>
-            峰面积
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.PeakHeight">
-            <summary>
-            峰高
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.Density">
-            <summary>
-            浓度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.PeakType">
-            <summary>
-            峰类型
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.GroupID">
-            <summary>
-            组号
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.IsStartDown">
-            <summary>
-            起点是否在曲线下方（否则在曲线上）
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.IsEndDown">
-            <summary>
-            终点是否在曲线下方（否则在曲线上）
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.StartVoltage">
-            <summary>
-            封闭线起始点Y坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.EndVoltage">
-            <summary>
-            封闭线终点Y坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.StartMoment">
-            <summary>
-            封闭线起始点X坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.EndMoment">
-            <summary>
-            封闭线终点X坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.StartPointCloseIndex">
-            <summary>
-            封闭线开始点Index
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.EndPointCloseIndex">
-            <summary>
-            封闭线结束点Index
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.IsManual">
-            <summary>
-            是否进行了手动处理(手动垂直切割，手动基线)
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.PeakStep">
-            <summary>
-            状态经历步骤
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.PeakDto.IsManualTail">
-            <summary>
-            是否进行了手动脱尾
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.util.CastColor">
-            <summary>
-            .NET和C++的颜色转换
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.util.CastColor.GetCustomColor(System.Drawing.Color)">
-            <summary>
-            Color转COLOREF
-            </summary>
-            <param name="color"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.util.CastColor.GetArgbColor(System.Int32)">
-            <summary>
-             COLOREF转Color
-            </summary>
-            <param name="color"></param>
-            <returns></returns>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultColor">
-            <summary>
-            缺省曲线颜色
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultColor.MaxColor">
-            <summary>
-            最大数量
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultColor.ForeColor">
-            <summary>
-            前景色
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.ini.DefaultColor.#ctor">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.MainTreeText">
-            <summary>
-            主树节点显示名称
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeText.Sample">
-            <summary>
-            样品
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeText.Solution">
-            <summary>
-            方案
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeText.Online">
-            <summary>
-            采集
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeText.Offline">
-            <summary>
-            分析
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeText.Compare">
-            <summary>
-            比较
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.MainTreeName">
-            <summary>
-            主树节点内部名称
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeName.Sample">
-            <summary>
-            样品
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeName.Solution">
-            <summary>
-            方案
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeName.Online">
-            <summary>
-            采集
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeName.Offline">
-            <summary>
-            分析
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.MainTreeName.Compare">
-            <summary>
-            比较
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.ConfigTreeName">
-            <summary>
-            配置树名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.AutoChromatoTreeName">
-            <summary>
-            测试树名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.SampleTab">
-            <summary>
-            样品Tab显示名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.SolutionTab">
-            <summary>
-            方案Tab显示名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.CollectionTab">
-            <summary>
-            采集Tab显示名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.OffProcessTab">
-            <summary>
-            分析Tab显示名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.IdChannel">
-            <summary>
-            通道号
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IdChannel.Blank">
-            <summary>
-            Blank
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IdChannel.Tcd1">
-            <summary>
-            通道Tcd1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IdChannel.Tcd2">
-            <summary>
-            通道Tcd2
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IdChannel.Fid1">
-            <summary>
-            通道Fid1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IdChannel.Fid2">
-            <summary>
-            通道Fid2
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.Offline">
-            <summary>
-            离线参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.PlotType">
-            <summary>
-            曲线类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.FullScreenTime">
-            <summary>
-            满屏时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.AutoScale">
-            <summary>
-            是否自动坐标范围
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.ShowMaxY">
-            <summary>
-            Y轴显示最大值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.ShowMinY">
-            <summary>
-            Y轴显示最小值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.ShowMaxX">
-            <summary>
-            X轴显示最大值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.ShowMinX">
-            <summary>
-            X轴显示最小值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Offline.ShowMarker">
-            <summary>
-            是否显示marker
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.CompareConfig">
-            <summary>
-            离线参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.PlotType">
-            <summary>
-            曲线类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.FullScreenTime">
-            <summary>
-            满屏时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.AutoScale">
-            <summary>
-            是否自动坐标范围
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.ShowMaxY">
-            <summary>
-            Y轴显示最大值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.ShowMinY">
-            <summary>
-            Y轴显示最小值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.ShowMaxX">
-            <summary>
-            X轴显示最大值
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.CompareConfig.ShowMinX">
-            <summary>
-            X轴显示最小值
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.General">
-            <summary>
-            常规参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.Frequent">
-            <summary>
-            频率,每秒钟产生的点数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.MoveUnit">
-            <summary>
-            水平移动单位,1像素,n像素
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ArrowColor">
-             <summary>
-            十字光标颜色
-             </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.PackDb">
-            <summary>
-            数据库是否加密
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.SaveMaxCount">
-            <summary>
-            缓冲区到达最大值，进行保存释放
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ObjectLink">
-            <summary>
-            是否是模拟数据
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.TraceLog">
-            <summary>
-            是否显示日志
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.AutoLoad">
-            <summary>
-            是否自动载入完成后文件
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ShowCount">
-            <summary>
-            显示点数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ArrowStyle">
-            <summary>
-            十字光标类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.OpenArrow">
-            <summary>
-            开启十字光标标志
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.PlotType">
-            <summary>
-            模拟曲线类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.SolutionPeak">
-            <summary>
-            使用状态机
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.DgvBackColor">
-            <summary>
-            DataGridView背景色
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.AutoName">
-            <summary>
-            采集文件自动命名
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.NeedLogin">
-            <summary>
-            是否需要登陆
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.UserID">
-             <summary>
             用户名
-             </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.StatusBar">
-            <summary>
-            是否显示状态条
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ShowDebugPage">
-            <summary>
-            是否显示调试画面
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.ScanPeriod">
-            <summary>
-            刷新频率
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.General.LinkObject">
-            <summary>
-            下位机对象
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.LinkObject.SimuGc">
-            <summary>
-            模拟GC
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.LinkObject.SmallBoard">
-            <summary>
-            小板卡
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.LinkObject.BigBoard">
-            <summary>
-            大板卡
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.LinkObject.ChannelGas">
-            <summary>
-            通道气板卡
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.LinkObject.AutoChromatoGas">
-            <summary>
-            自动分析通道气板卡
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.General.StyleArrow">
-            <summary>
-            光标类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.StyleArrow.Small">
-            <summary>
-            小
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.General.StyleArrow.Big">
-            <summary>
-            大
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.ShowChannel">
-            <summary>
-            显示通道
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ShowChannel.A">
-            <summary>
-            是否实时显示Tcd1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ShowChannel.B">
-            <summary>
-            是否实时显示B
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ShowChannel.C">
-            <summary>
-            是否实时显示C
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ShowChannel.D">
-            <summary>
-            是否实时显示D
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ShowChannel.Syn">
-            <summary>
-            是否同步
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.Port">
-            <summary>
-            端口设定
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.tag">
-            <summary>
-            信息传输方式，0为COM，1为TCP
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.SictPort">
-            <summary>
-            Ai模块串口
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.BaudRate">
-            <summary>
-            传输波特率
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.Ip">
-            <summary>
-            IP
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.PortNum">
-            <summary>
-            端口
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.DataBits">
-            <summary>
-            传输数据位
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.Parity">
-            <summary>
-            传输奇偶校验
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.StopBits">
-            <summary>
-            传输停止位
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Port.Handshake">
-            <summary>
-            握手
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.SerialOption">
-            <summary>
-            串口选项
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.AppendToSend">
-            <summary>
-            传送末尾追加数据
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.HexSend">
-            <summary>
-            16进制发送
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.HexReceive">
-            <summary>
-            16进制接收
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.MonoFont">
-            <summary>
-            单色
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.LocalEcho">
-            <summary>
-            本地回显
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.StayOnTop">
-            <summary>
-            停靠在上部
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.FilterUseCase">
-            <summary>
-            大小写过滤
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.LogFileName">
-            <summary>
-            日志文件名
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.TimerInterval">
-            <summary>
-            读写超时间隔
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.SerialOption.AppendType">
-            <summary>
-            追加类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendNothing">
-            <summary>
-            不追加
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendCR">
-            <summary>
-            追加回车
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendLF">
-            <summary>
-            追加换行
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.SerialOption.AppendType.AppendCRLF">
-            <summary>
-            追加回车换行
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultAnaly">
-            <summary>
-            缺省分析方法
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.ColumuModel">
-            <summary>
-            色谱柱型号
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.Description">
-            <summary>
-            描述
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.PeakWide">
-            <summary>
-            峰宽
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.Slope">
-            <summary>
-            斜率
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.Drift">
-            <summary>
-            漂移
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.MinAreaSize">
-            <summary>
-            最小面积
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.ParaChangeTime">
-            <summary>
-            变参时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.Ratio">
-            <summary>
-            比率
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.AimPara">
-            <summary>
-            对准参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.AimWay">
-            <summary>
-            对准参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.ArithmaticParameter">
-            <summary>
-            对准参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.Arithmatic">
-            <summary>
-            对准参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.TimeWindow">
-            <summary>
-            时间窗(1 - 100)
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAnaly.FixWay">
-            <summary>
-            校正方法
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultCollection">
-            <summary>
-            缺省采集方法
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.PeakWide">
-            <summary>
-            峰宽
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.Slope">
-            <summary>
-            斜率
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.StopTime">
-            <summary>
-            停止时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.ShowMaxY">
-            <summary>
-            显示上限
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.ShowMinY">
-            <summary>
-            显示下限
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.FullScreenTime">
-            <summary>
-            满屏时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.AutoSlope">
-            <summary>
-            自动斜率
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.BackColor">
-            <summary>
-            背景颜色
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultCollection.ForeColor">
-            <summary>
-            曲线颜色
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultIdTable">
-            <summary>
-            缺省的ID表参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.TimeBand">
-            <summary>
-            时间带(min)
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.SampleWeight">
-            <summary>
-            样品量
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.Density">
-            <summary>
-            浓度
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.PeakHeight">
-            <summary>
-            高度
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.PeakSize">
-            <summary>
-            面积
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.FactorOne">
-            <summary>
-            因子1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.FactorTwo">
-            <summary>
-            因子2
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.ReserveTime">
-            <summary>
-            保留时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultIdTable.IngredientName">
-            <summary>
-            成分名
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.AntiControl">
-            <summary>
-            反控方法树名称
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.Polarity">
-            <summary>
-            极性正负
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Polarity.Positive">
-            <summary>
-            正
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.Polarity.Nagative">
-            <summary>
-            负
-            </summary>
-        </member>
-        <!-- 对于成员“T:ChromatoTool.ini.TcdOnOff”忽略有格式错误的 XML 注释 -->
-        <member name="F:ChromatoTool.ini.TcdOnOff.On">
-            <summary>
-            启动
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.TcdOnOff.Off">
-            <summary>
-            关闭
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultColumnPara">
-            <summary>
-            缺省反控方法->柱箱参数
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultInject">
-            <summary>
-            缺省反控方法->进样口参数
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultInject.InitTemp">
-            <summary>
-            初始温度
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultInject.AlertTemp">
-            <summary>
-            报警温度
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultInject.InjectTime">
-            <summary>
-            进样时间
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultInject.ColumnType">
-            <summary>
-            柱类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultInject.InjectMode">
-            <summary>
-            进样模式
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultAux">
-            <summary>
-            缺省反控方法->AUX
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAux.InitTempAux1">
-            <summary>
-            初始温度1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAux.AlertTempAux1">
-            <summary>
-            报警温度1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAux.InitTempAux2">
-            <summary>
-            初始温度2
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.DefaultAux.AlertTempAux2">
-            <summary>
-            报警温度2
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultFid">
-            <summary>
-            缺省反控方法->FID
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultTcd">
-            <summary>
-            缺省反控方法->TCD
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DbConfig">
-            <summary>
-            Dbの配置
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.DefaultSampleInfo">
-            <summary>
-            缺省样品信息
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.TypeOfPeak">
-            <summary>
-            峰的类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.TypeOfPeak.Main">
-            <summary>
-            主峰
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.TypeOfPeak.Overlap">
-            <summary>
-            重叠峰
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.TypeOfPeak.Tail">
-            <summary>
-            拖尾峰
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.GcChannel">
-            <summary>
-            GC通道板卡状态
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GcChannel.Tcd1">
-            <summary>
-            通道Tcd1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GcChannel.Tcd2">
-            <summary>
-            通道Tcd2
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GcChannel.Fid1">
-            <summary>
-            通道Fid1
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GcChannel.Fid2">
-            <summary>
-            通道Fid2
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.GasChannel">
-            <summary>
-            通道气的通道类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.A">
-            <summary>
-            通道A
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.B">
-            <summary>
-            通道B
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.C">
-            <summary>
-            通道C
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.D">
-            <summary>
-            通道D
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.E">
-            <summary>
-            通道E
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.GasChannel.F">
-            <summary>
-            通道F
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.ExportFlag">
-            <summary>
-            导出内容
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ExportFlag.Solution">
-            <summary>
-            使用方案
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ExportFlag.Result">
-            <summary>
-            分析结果
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.ExportFlag.Data">
-            <summary>
-            原始数据"
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.ShowChannelDto">
-            <summary>
-            采集窗口是否显示采集通道
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ShowChannelDto.A">
-            <summary>
-            A
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ShowChannelDto.B">
-            <summary>
-            B
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ShowChannelDto.C">
-            <summary>
-            C
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ShowChannelDto.D">
-            <summary>
-            D
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.ParaKeyDto">
-            <summary>
-            样品的信息主键列表
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.ParaKeyDto.SampleID">
+        <member name="P:ChromatoTool.dto.UserDto.ChineseName">
             <summary>
-            样品ID
+            中文名
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.ParaKeyDto.RegisterTime">
+        <member name="P:ChromatoTool.dto.UserDto.Password">
             <summary>
-            注册时间
+            密码
             </summary>
         </member>
         <member name="T:ChromatoTool.dto.IngredientDto">
@@ -3593,746 +4368,6 @@
         <member name="P:ChromatoTool.dto.IngredientDto.IsMatch">
             <summary>
             是否匹配过(2010/05/06)
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.util.ListViewColumnSorter">
-            <summary>
-            继承自IComparer
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.util.ListViewColumnSorter.ColumnToSort">
-            <summary>
-            指定按照哪个列排序
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.util.ListViewColumnSorter.OrderOfSort">
-            <summary>
-            指定排序的方式
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.util.ListViewColumnSorter.ObjectCompare">
-            <summary>
-            声明CaseInsensitiveComparer类对象，
-            参见ms-help://MS.VSCC.2003/MS.MSDNQTR.2003FEB.2052/cpref/html/frlrfSystemCollectionsCaseInsensitiveComparerClassTopic.htm
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.util.ListViewColumnSorter.#ctor">
-            <summary>
-            构造函数
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.util.ListViewColumnSorter.Compare(System.Object,System.Object)">
-            <summary>
-            重写IComparer接口.
-            </summary>
-            <param name="x">要比较的第一个对象</param>
-            <param name="y">要比较的第二个对象</param>
-            <returns>比较的结果.如果相等返回0，如果x大于y返回1，如果x小于y返回-1</returns>
-        </member>
-        <member name="P:ChromatoTool.util.ListViewColumnSorter.SortColumn">
-            <summary>
-            获取或设置按照哪一列排序.
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.util.ListViewColumnSorter.Order">
-            <summary>
-            获取或设置排序方式.
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.IniFile">
-            <summary>
-            Read/Write values to an ini file
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.ini.IniFile._path">
-            <summary>
-            路径
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.SolutionDto">
-            <summary>
-            方案表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.SolutionID">
-            <summary>
-            方案ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.SolutionName">
-            <summary>
-            方案名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.RegisterTime">
-            <summary>
-            注册时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.CollectionID">
-            <summary>
-            采集方法ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.AnalyParaID">
-            <summary>
-            分析方法ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.AntiMethodID">
-            <summary>
-            反控方法ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.IDTableID">
-            <summary>
-            ID表ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.TimeProcID">
-            <summary>
-            时间程序ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.Remark">
-            <summary>
-            备注
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.SolutionDto.IsUseTimeProc">
-            <summary>
-            是否使用时间程序
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.RequestDto">
-            <summary>
-            申请表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RequestDto.regSampleName">
-            <summary>
-            申请样品名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RequestDto.SampleID">
-            <summary>
-            真实样品ID (通道A_YYYYMMDDhhmmss)
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RequestDto.RegisterTime">
-            <summary>
-            注册时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RequestDto.Status">
-            <summary>
-            注册时间
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.InjectDto">
-            <summary>
-            反控方法->进样口表
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.log.ReportLogArgs">
-            <summary>
-            传递给主线程的日志参数类
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.log.ReportLogArgs.#ctor(System.String)">
-            <summary>
-            构造
-            </summary>
-            <param name="m"></param>
-        </member>
-        <member name="P:ChromatoTool.log.ReportLogArgs._var">
-            <summary>
-            日至字符串
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.TimeProcDto">
-            <summary>
-            时间程序表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.TPid">
-            <summary>
-            时间程序ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.TPName">
-            <summary>
-            时间程序名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.SerialID">
-            <summary>
-            动作ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.ActionName">
-            <summary>
-            类型
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.StartTime">
-            <summary>
-            起始时间 分
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.StopTime">
-            <summary>
-            结束时间 分
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.IsCmd">
-            <summary>
-            是否是命令值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.TimeProcDto.TpValue">
-            <summary>
-            命令值
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.TcdDto">
-            <summary>
-            反控方法->TCD
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.RelationDto">
-            <summary>
-            索引关系
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RelationDto.SampleID">
-            <summary>
-            样品ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RelationDto.SolutionID">
-            <summary>
-            方案ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RelationDto.RegisterTime">
-            <summary>
-            注册时间
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.FidDto">
-            <summary>
-            反控方法->FID
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.util.CastCdf">
-            <summary>
-            数据导出到NetCdf工具
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.util.CastCdf.ExportToCdf(System.Collections.ArrayList,System.Data.DataTable,System.String)">
-            <summary>
-            导出
-            </summary>
-            <param name="arrPlot"></param>
-            <param name="dtResult"></param>
-            <param name="filePath"></param>
-        </member>
-        <member name="M:ChromatoTool.util.CastCdf.Export(System.Collections.ArrayList,System.String)">
-            <summary>
-            导出ArrayList到NetCdf
-            </summary>
-            <param name="arr"></param>
-            <param name="filepath"></param>
-        </member>
-        <member name="T:ChromatoTool.pipe.NamedPipeNative">
-            <summary>
-            命名管道API封装类
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.INVALID_HANDLE_VALUE">
-            <summary>
-            无效句柄
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_DUPLEX">
-            <summary>
-            数据双工通信
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_INBOUND">
-            <summary>
-            接收数据
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_ACCESS_OUTBOUND">
-            <summary>
-            发送数据
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_TYPE_BYTE">
-            <summary>
-            字节类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_TYPE_MESSAGE">
-            <summary>
-            消息类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_WAIT">
-            <summary>
-            等待
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.PIPE_NOWAIT">
-            <summary>
-            不等待
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.ERROR_PIPE_CONNECTED">
-            <summary>
-            连接超时错误代码
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.pipe.NamedPipeNative.ERROR_NO_DATA">
-            <summary>
-            无数据错误代码
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.CreateNamedPipe(System.String,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.IntPtr)">
-            <summary>
-            创建命名管道
-            </summary>
-            <param name="lpName"></param>
-            <param name="dwOpenMode"></param>
-            <param name="dwPipeMode"></param>
-            <param name="nMaxInstances"></param>
-            <param name="nOutBufferSize"></param>
-            <param name="nInBufferSize"></param>
-            <param name="nDefaultTimeOut"></param>
-            <param name="pipeSecurityDescriptor"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.ConnectNamedPipe(System.IntPtr,System.Threading.Overlapped)">
-            <summary>
-            连接命名管道
-            </summary>
-            <param name="hHandle"></param>
-            <param name="lpOverlapped"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.CreateFile(System.String,System.UInt32,System.UInt32,System.Security.Permissions.SecurityAttribute,System.UInt32,System.UInt32,System.UInt32)">
-            <summary>
-            创建文件
-            </summary>
-            <param name="lpFileName"></param>
-            <param name="dwDesiredAccess"></param>
-            <param name="dwShareMode"></param>
-            <param name="attr"></param>
-            <param name="dwCreationDisposition"></param>
-            <param name="dwFlagsAndAttributes"></param>
-            <param name="hTemplateFile"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.ReadFile(System.IntPtr,System.Byte[],System.UInt32,System.Byte[],System.UInt32)">
-            <summary>
-            读文件
-            </summary>
-            <param name="hHandle"></param>
-            <param name="lpBuffer"></param>
-            <param name="nNumberOfBytesToRead"></param>
-            <param name="lpNumberOfBytesRead"></param>
-            <param name="lpOverlapped"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.WriteFile(System.IntPtr,System.Byte[],System.UInt32,System.Byte[],System.UInt32)">
-            <summary>
-            写文件
-            </summary>
-            <param name="hHandle"></param>
-            <param name="lpBuffer"></param>
-            <param name="nNumberOfBytesToWrite"></param>
-            <param name="lpNumberOfBytesWritten"></param>
-            <param name="lpOverlapped"></param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.DisconnectNamedPipe(System.IntPtr)">
-            <summary>
-            断开命名管道
-            </summary>
-            <param name="hHandle"></param>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.CloseHandle(System.IntPtr)">
-            <summary>
-            关闭句柄
-            </summary>
-            <param name="hHandle"></param>
-        </member>
-        <member name="M:ChromatoTool.pipe.NamedPipeNative.GetLastError">
-            <summary>
-            获取错误代码
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:ChromatoTool.dto.CollectionDto">
-            <summary>
-            采集方法表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.CollectionID">
-            <summary>
-            采集方法ID
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.CollectionName">
-            <summary>
-            采集方法名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.PeakWide">
-            <summary>
-            峰宽
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.Slope">
-            <summary>
-            斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.StopTime">
-            <summary>
-            停止时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.ShowMaxY">
-            <summary>
-            Y最大值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.ShowMinY">
-            <summary>
-            Y最小值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.FullScreenTime">
-            <summary>
-            满屏时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.AutoSlope">
-            <summary>
-            是否自动斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.ForeColor">
-            <summary>
-            曲线颜色
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.CollectionDto.BackColor">
-            <summary>
-            背景色
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.AvgPointDto">
-            <summary>
-            平均点表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.Voltage">
-            <summary>
-            电压值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.Moment">
-            <summary>
-            时刻(相对于0)
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.Index">
-            <summary>
-            序号
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.PeakWide">
-            <summary>
-            峰宽
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.Slope">
-            <summary>
-            斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.SettingSlope">
-            <summary>
-            设定斜率参数
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.Drift">
-            <summary>
-            漂移
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.PointType">
-            <summary>
-            数据点属性
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.UorD">
-            <summary>
-            符合设定斜率的程度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.minArea">
-            <summary>
-            最小面积
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.ParaChangeTime">
-            <summary>
-            变参时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.isTimeLock">
-            <summary>
-            无需峰削除(锁定时间)
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.isBaselineLock">
-            <summary>
-            基线锁定
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.isRevertNegative">
-            <summary>
-            负峰翻转
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.isHoriBaseline">
-            <summary>
-            水平基线
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.isTailProcess">
-            <summary>
-            拖尾峰处理
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.StatusPoint">
-            <summary>
-            每点的状态
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.StatusAvgSlope">
-            <summary>
-            平均斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgPointDto.TrendPeak">
-            <summary>
-            峰的趋势
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.util.CastCursor">
-            <summary>
-            光标工具
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.util.CastCursor.LoadCursor(System.String)">
-            <summary>
-            装载光标
-            </summary>
-            <param name="resourceName"></param>
-            <returns></returns>
-        </member>
-        <member name="T:ChromatoTool.dto.UserDto">
-            <summary>
-            用户表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.UserDto.UserID">
-            <summary>
-            用户名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.UserDto.ChineseName">
-            <summary>
-            中文名
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.UserDto.Password">
-            <summary>
-            密码
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.AuxDto">
-            <summary>
-            反控方法->AUX
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.ini.Setting">
-            <summary>
-            程序配置信息读写类
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.ini.Setting.Read">
-            <summary>
-            从配置文件载入信息
-            </summary>
-        </member>
-        <member name="M:ChromatoTool.ini.Setting.Write">
-            <summary>
-            写入配置文件
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.AvgExportDto">
-            <summary>
-            平均点导出数据单元
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.Voltage">
-            <summary>
-            电压值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.Moment">
-            <summary>
-            时刻(相对于0)
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.Index">
-            <summary>
-            序号
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.PeakWide">
-            <summary>
-            峰宽
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.SettingSlope">
-            <summary>
-            设定斜率参数
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.Drift">
-            <summary>
-            漂移
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.Slope">
-            <summary>
-            斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.StatusPoint">
-            <summary>
-            每点的状态
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.StatusAvgSlope">
-            <summary>
-            平均斜率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.AvgExportDto.TrendPeak">
-            <summary>
-            峰的趋势
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.util.EnumDescription">
-            <summary>
-            把枚举值按照指定的文本显示
-            <remarks>
-            一般通过枚举值的ToString()可以得到变量的文本，
-            但是有时候需要的到与之对应的更充分的文本，
-            这个类帮助达到此目的
-            Date: 2006-3-25 
-            Author: dearzp@hotmail.com
-            </remarks>
-            </summary>
-            <example>
-            [EnumDescription("中文数字")]
-            enum MyEnum
-            {
-            	[EnumDescription("数字一")]
-            	One = 1, 
-            
-            	[EnumDescription("数字二")]
-            	Two, 
-            
-            	[EnumDescription("数字三")]
-            	Three
-            }
-            EnumDescription.GetEnumText(typeof(MyEnum));
-            EnumDescription.GetFieldText(MyEnum.Two);
-            EnumDescription.GetFieldTexts(typeof(MyEnum)); 
-            </example>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.#ctor(System.String,System.Int32)">
-            <summary>
-            描述枚举值
-            </summary>
-            <param name="enumDisplayText">描述内容</param>
-            <param name="enumRank">排列顺序</param>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.#ctor(System.String)">
-            <summary>
-            描述枚举值，默认排序为5
-            </summary>
-            <param name="enumDisplayText">描述内容</param>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.GetEnumText(System.Type)">
-            <summary>
-            得到对枚举的描述文本
-            </summary>
-            <param name="enumType">枚举类型</param>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.GetFieldText(System.Object)">
-            <summary>
-            获得指定枚举类型中，指定值的描述文本。
-            </summary>
-            <param name="enumValue">枚举值，不要作任何类型转换</param>
-            <returns>描述字符串</returns>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.GetFieldTexts(System.Type)">
-            <summary>
-            得到枚举类型定义的所有文本，按定义的顺序返回
-            </summary>
-            <exception cref="T:System.NotSupportedException"></exception>
-            <param name="enumType">枚举类型</param>
-            <returns>所有定义的文本</returns>
-        </member>
-        <member name="M:ChromatoTool.util.EnumDescription.GetFieldTexts(System.Type,ChromatoTool.util.EnumDescription.SortType)">
-            <summary>
-            得到枚举类型定义的所有文本
-            </summary>
-            <exception cref="T:System.NotSupportedException"></exception>
-            <param name="enumType">枚举类型</param>
-            <param name="sortType">指定排序类型</param>
-            <returns>所有定义的文本</returns>
-        </member>
-        <member name="T:ChromatoTool.util.EnumDescription.SortType">
-            <summary>
-            排序类型
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.util.EnumDescription.SortType.Default">
-             <summary>
-            按枚举顺序默认排序
-             </summary>
-        </member>
-        <member name="F:ChromatoTool.util.EnumDescription.SortType.DisplayText">
-            <summary>
-            按描述值排序
-            </summary>
-        </member>
-        <member name="F:ChromatoTool.util.EnumDescription.SortType.Rank">
-            <summary>
-            按排序熵
             </summary>
         </member>
         <member name="T:ChromatoTool.util.CastExcel">
@@ -4446,54 +4481,19 @@
             开始行号
             </summary>
         </member>
-        <member name="T:ChromatoTool.dto.RangeDto">
+        <member name="T:ChromatoTool.ini.Setting">
             <summary>
-            放大缩小的坐标范围
+            程序配置信息读写类
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.RangeDto.StartValX">
+        <member name="M:ChromatoTool.ini.Setting.Read">
             <summary>
-            起点X方向值
+            从配置文件载入信息
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.RangeDto.StartValY">
+        <member name="M:ChromatoTool.ini.Setting.Write">
             <summary>
-            起点Y方向值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.EndValX">
-            <summary>
-            终点X方向值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.EndValY">
-            <summary>
-            终点Y方向值
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.StartPosX">
-            <summary>
-            起点X方向坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.StartPosY">
-            <summary>
-            起点Y方向坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.EndPosX">
-            <summary>
-            终点X方向坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.RangeDto.EndPosY">
-            <summary>
-            终点Y方向坐标
-            </summary>
-        </member>
-        <member name="T:ChromatoTool.dto.AttriDto">
-            <summary>
-            属性Dto
+            写入配置文件
             </summary>
         </member>
     </members>
