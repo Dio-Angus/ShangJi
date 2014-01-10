@@ -88,10 +88,11 @@
     <Compile Include="dto\AvgPointDto.cs" />
     <Compile Include="dto\CalibrateDto.cs" />
     <Compile Include="dto\CollectionDto.cs" />
-    <Compile Include="dto\ColumnParaDto.cs" />
+    <Compile Include="dto\HeatingSourceDto.cs" />
     <Compile Include="dto\CompareDto.cs" />
     <Compile Include="dto\FidDto.cs" />
     <Compile Include="dto\IngredientDto.cs" />
+    <Compile Include="dto\NetworkBoardDto.cs" />
     <Compile Include="dto\OriginPointDto.cs" />
     <Compile Include="dto\ParaDto.cs" />
     <Compile Include="dto\ParaKeyDto.cs" />

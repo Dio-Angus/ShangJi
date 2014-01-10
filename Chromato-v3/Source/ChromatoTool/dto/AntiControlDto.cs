@@ -25,11 +25,16 @@ namespace ChromatoTool.dto
         /// 反控方法名
         /// </summary>
         public String AntiControlName { get; set; }
+
+        /// <summary>
+        /// 网络板参数
+        /// </summary>
+        public NetworkBoardDto dtoNetworkBorad { get; set; }
         
         /// <summary>
-        /// 柱箱参数
+        /// 加热源参数
         /// </summary>
-        public ColumnParaDto dtoColumnPara { get; set; }
+        public HeatingSourceDto dtoHeatingSource { get; set; }
 
         /// <summary>
         /// 进样口参数

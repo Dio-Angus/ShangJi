@@ -831,7 +831,7 @@ namespace ChromatoTool.ini
     /// <summary>
     /// 缺省反控方法->柱箱参数
     /// </summary>
-    public class DefaultColumnPara
+    public class DefaultHeatingSource
     {
 
         public static Single BalanceTime = 5;

@@ -335,12 +335,6 @@
     <Compile Include="solu\AntiCon\HeatingSourceUser.Designer.cs">
       <DependentUpon>HeatingSourceUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="solu\AntiCon\NetworkBoardUser.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="solu\AntiCon\NetworkBoardUser.Designer.cs">
-      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="solu\AntiCon\FidUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -352,6 +346,12 @@
     </Compile>
     <Compile Include="solu\AntiCon\InjectUser.Designer.cs">
       <DependentUpon>InjectUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\NetworkBoardUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\NetworkBoardUser.Designer.cs">
+      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
     </Compile>
     <Compile Include="solu\AntiCon\TcdUser.cs">
       <SubType>UserControl</SubType>
@@ -744,9 +744,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="solu\AntiCon\HeatingSourceUser.resx">
-      <DependentUpon>HeatingSourceUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="solu\sUi\ArithmaticUi.resx">
       <DependentUpon>ArithmaticUi.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1017,8 +1014,8 @@
       <DependentUpon>AuxUser.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="solu\AntiCon\NetworkBoardUser.resx">
-      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
+    <EmbeddedResource Include="solu\AntiCon\HeatingSourceUser.resx">
+      <DependentUpon>HeatingSourceUser.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="solu\AntiCon\FidUser.resx">

@@ -107,29 +107,29 @@ namespace ChromatoTool.ini
             DefaultIdTable.ReserveTime = Convert.ToSingle(ini.ReadValue("DefaultIdTable", "ReserveTime", DefaultIdTable.ReserveTime.ToString()));
             DefaultIdTable.IngredientName = ini.ReadValue("DefaultIdTable", "IngredientName", DefaultIdTable.IngredientName);
 
-            DefaultColumnPara.BalanceTime = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "BalanceTime", DefaultColumnPara.BalanceTime.ToString()));
-            DefaultColumnPara.InitTemp = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "InitTemp", DefaultColumnPara.InitTemp.ToString()));
-            DefaultColumnPara.MaintainTime = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "MaintainTime", DefaultColumnPara.MaintainTime.ToString()));
-            DefaultColumnPara.AlertTemp = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "AlertTemp", DefaultColumnPara.AlertTemp.ToString()));
-            DefaultColumnPara.ColumnCount = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "ColumnCount", DefaultColumnPara.ColumnCount.ToString()));
+            DefaultHeatingSource.BalanceTime = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "BalanceTime", DefaultHeatingSource.BalanceTime.ToString()));
+            DefaultHeatingSource.InitTemp = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "InitTemp", DefaultHeatingSource.InitTemp.ToString()));
+            DefaultHeatingSource.MaintainTime = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "MaintainTime", DefaultHeatingSource.MaintainTime.ToString()));
+            DefaultHeatingSource.AlertTemp = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "AlertTemp", DefaultHeatingSource.AlertTemp.ToString()));
+            DefaultHeatingSource.ColumnCount = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "ColumnCount", DefaultHeatingSource.ColumnCount.ToString()));
 
-            DefaultColumnPara.RateCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol1", DefaultColumnPara.RateCol1.ToString()));
-            DefaultColumnPara.RateCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol2", DefaultColumnPara.RateCol2.ToString()));
-            DefaultColumnPara.RateCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol3", DefaultColumnPara.RateCol3.ToString()));
-            DefaultColumnPara.RateCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol4", DefaultColumnPara.RateCol4.ToString()));
-            DefaultColumnPara.RateCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol5", DefaultColumnPara.RateCol5.ToString()));
+            DefaultHeatingSource.RateCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol1", DefaultHeatingSource.RateCol1.ToString()));
+            DefaultHeatingSource.RateCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol2", DefaultHeatingSource.RateCol2.ToString()));
+            DefaultHeatingSource.RateCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol3", DefaultHeatingSource.RateCol3.ToString()));
+            DefaultHeatingSource.RateCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol4", DefaultHeatingSource.RateCol4.ToString()));
+            DefaultHeatingSource.RateCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "RateCol5", DefaultHeatingSource.RateCol5.ToString()));
 
-            DefaultColumnPara.TempCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol1", DefaultColumnPara.TempCol1.ToString()));
-            DefaultColumnPara.TempCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol2", DefaultColumnPara.TempCol2.ToString()));
-            DefaultColumnPara.TempCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol3", DefaultColumnPara.TempCol3.ToString()));
-            DefaultColumnPara.TempCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol4", DefaultColumnPara.TempCol4.ToString()));
-            DefaultColumnPara.TempCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol5", DefaultColumnPara.TempCol5.ToString()));
+            DefaultHeatingSource.TempCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol1", DefaultHeatingSource.TempCol1.ToString()));
+            DefaultHeatingSource.TempCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol2", DefaultHeatingSource.TempCol2.ToString()));
+            DefaultHeatingSource.TempCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol3", DefaultHeatingSource.TempCol3.ToString()));
+            DefaultHeatingSource.TempCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol4", DefaultHeatingSource.TempCol4.ToString()));
+            DefaultHeatingSource.TempCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempCol5", DefaultHeatingSource.TempCol5.ToString()));
 
-            DefaultColumnPara.TempTimeCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol1", DefaultColumnPara.TempTimeCol1.ToString()));
-            DefaultColumnPara.TempTimeCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol2", DefaultColumnPara.TempTimeCol2.ToString()));
-            DefaultColumnPara.TempTimeCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol3", DefaultColumnPara.TempTimeCol3.ToString()));
-            DefaultColumnPara.TempTimeCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol4", DefaultColumnPara.TempTimeCol4.ToString()));
-            DefaultColumnPara.TempTimeCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol5", DefaultColumnPara.TempTimeCol5.ToString()));
+            DefaultHeatingSource.TempTimeCol1 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol1", DefaultHeatingSource.TempTimeCol1.ToString()));
+            DefaultHeatingSource.TempTimeCol2 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol2", DefaultHeatingSource.TempTimeCol2.ToString()));
+            DefaultHeatingSource.TempTimeCol3 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol3", DefaultHeatingSource.TempTimeCol3.ToString()));
+            DefaultHeatingSource.TempTimeCol4 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol4", DefaultHeatingSource.TempTimeCol4.ToString()));
+            DefaultHeatingSource.TempTimeCol5 = Convert.ToSingle(ini.ReadValue("DefaultColumnPara", "TempTimeCol5", DefaultHeatingSource.TempTimeCol5.ToString()));
 
             DefaultInject.AlertTemp = Convert.ToSingle(ini.ReadValue("DefaultInject", "AlertTemp", DefaultInject.AlertTemp.ToString()));
             DefaultInject.InitTemp = Convert.ToSingle(ini.ReadValue("DefaultInject", "InitTemp", DefaultInject.InitTemp.ToString()));
@@ -289,29 +289,29 @@ namespace ChromatoTool.ini
             ini.WriteValue("DefaultIdTable", "IngredientName", DefaultIdTable.IngredientName);
 
             // 缺省反控方法写入
-            ini.WriteValue("DefaultColumnPara", "BalanceTime", DefaultColumnPara.BalanceTime.ToString());
-            ini.WriteValue("DefaultColumnPara", "InitTemp", DefaultColumnPara.InitTemp.ToString());
-            ini.WriteValue("DefaultColumnPara", "MaintainTime", DefaultColumnPara.MaintainTime.ToString());
-            ini.WriteValue("DefaultColumnPara", "AlertTemp", DefaultColumnPara.AlertTemp.ToString());
-            ini.WriteValue("DefaultColumnPara", "ColumnCount", DefaultColumnPara.ColumnCount.ToString());
+            ini.WriteValue("DefaultColumnPara", "BalanceTime", DefaultHeatingSource.BalanceTime.ToString());
+            ini.WriteValue("DefaultColumnPara", "InitTemp", DefaultHeatingSource.InitTemp.ToString());
+            ini.WriteValue("DefaultColumnPara", "MaintainTime", DefaultHeatingSource.MaintainTime.ToString());
+            ini.WriteValue("DefaultColumnPara", "AlertTemp", DefaultHeatingSource.AlertTemp.ToString());
+            ini.WriteValue("DefaultColumnPara", "ColumnCount", DefaultHeatingSource.ColumnCount.ToString());
 
-            ini.WriteValue("DefaultColumnPara", "RateCol1", DefaultColumnPara.RateCol1.ToString());
-            ini.WriteValue("DefaultColumnPara", "RateCol2", DefaultColumnPara.RateCol2.ToString());
-            ini.WriteValue("DefaultColumnPara", "RateCol3", DefaultColumnPara.RateCol3.ToString());
-            ini.WriteValue("DefaultColumnPara", "RateCol4", DefaultColumnPara.RateCol4.ToString());
-            ini.WriteValue("DefaultColumnPara", "RateCol5", DefaultColumnPara.RateCol5.ToString());
+            ini.WriteValue("DefaultColumnPara", "RateCol1", DefaultHeatingSource.RateCol1.ToString());
+            ini.WriteValue("DefaultColumnPara", "RateCol2", DefaultHeatingSource.RateCol2.ToString());
+            ini.WriteValue("DefaultColumnPara", "RateCol3", DefaultHeatingSource.RateCol3.ToString());
+            ini.WriteValue("DefaultColumnPara", "RateCol4", DefaultHeatingSource.RateCol4.ToString());
+            ini.WriteValue("DefaultColumnPara", "RateCol5", DefaultHeatingSource.RateCol5.ToString());
 
-            ini.WriteValue("DefaultColumnPara", "TempCol1", DefaultColumnPara.TempCol1.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempCol2", DefaultColumnPara.TempCol2.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempCol3", DefaultColumnPara.TempCol3.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempCol4", DefaultColumnPara.TempCol4.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempCol5", DefaultColumnPara.TempCol5.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempCol1", DefaultHeatingSource.TempCol1.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempCol2", DefaultHeatingSource.TempCol2.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempCol3", DefaultHeatingSource.TempCol3.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempCol4", DefaultHeatingSource.TempCol4.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempCol5", DefaultHeatingSource.TempCol5.ToString());
 
-            ini.WriteValue("DefaultColumnPara", "TempTimeCol1", DefaultColumnPara.TempTimeCol1.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempTimeCol2", DefaultColumnPara.TempTimeCol2.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempTimeCol3", DefaultColumnPara.TempTimeCol3.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempTimeCol4", DefaultColumnPara.TempTimeCol4.ToString());
-            ini.WriteValue("DefaultColumnPara", "TempTimeCol5", DefaultColumnPara.TempTimeCol5.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempTimeCol1", DefaultHeatingSource.TempTimeCol1.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempTimeCol2", DefaultHeatingSource.TempTimeCol2.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempTimeCol3", DefaultHeatingSource.TempTimeCol3.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempTimeCol4", DefaultHeatingSource.TempTimeCol4.ToString());
+            ini.WriteValue("DefaultColumnPara", "TempTimeCol5", DefaultHeatingSource.TempTimeCol5.ToString());
 
             ini.WriteValue("DefaultInject", "AlertTemp", DefaultInject.AlertTemp.ToString());
             ini.WriteValue("DefaultInject", "InitTemp", DefaultInject.InitTemp.ToString());

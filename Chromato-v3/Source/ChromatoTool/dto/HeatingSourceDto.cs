@@ -14,7 +14,7 @@ namespace ChromatoTool.dto
     /// <summary>
     /// 反控方法->柱箱表
     /// </summary>
-    public class ColumnParaDto
+    public class HeatingSourceDto
     {
         /// <summary>
         /// 平衡时间

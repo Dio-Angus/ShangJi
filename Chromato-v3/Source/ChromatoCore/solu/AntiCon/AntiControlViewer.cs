@@ -115,6 +115,7 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux = new AuxUser(this._dtoAntiControl);
 
             this.Controls.Add(this._viewNetworkBoard);
+            this.Controls.Add(this._viewHeatingSource);
             this.Controls.Add(this._viewSampleEntry);
             this.Controls.Add(this._viewTcd);
             this.Controls.Add(this._viewFid);
