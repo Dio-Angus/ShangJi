@@ -740,9 +740,14 @@
             关闭
             </summary>
         </member>
-        <member name="T:ChromatoTool.ini.DefaultColumnPara">
+        <member name="T:ChromatoTool.ini.DefaultNetworkBoard">
             <summary>
-            缺省反控方法->柱箱参数
+            缺省反控方法->网络板
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.ini.DefaultHeatingSource">
+            <summary>
+            缺省反控方法->加热源
             </summary>
         </member>
         <member name="T:ChromatoTool.ini.DefaultInject">
@@ -1065,9 +1070,14 @@
             反控方法名
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AntiControlDto.dtoColumnPara">
+        <member name="P:ChromatoTool.dto.AntiControlDto.dtoNetworkBorad">
             <summary>
-            柱箱参数
+            网络板参数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AntiControlDto.dtoHeatingSource">
+            <summary>
+            加热源参数
             </summary>
         </member>
         <member name="P:ChromatoTool.dto.AntiControlDto.dtoInject">
@@ -1306,6 +1316,11 @@
             校正方法
             </summary>
         </member>
+        <member name="T:ChromatoTool.dto.NetworkBoardDto">
+            <summary>
+            反控方法→网络板
+            </summary>
+        </member>
         <member name="T:ChromatoTool.pipe.NamedPipeNative">
             <summary>
             命名管道API封装类
@@ -1479,6 +1494,111 @@
         <member name="P:ChromatoTool.dto.TimeProcDto.TpValue">
             <summary>
             命令值
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.HeatingSourceDto">
+            <summary>
+            反控方法->柱箱表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.BalanceTime">
+            <summary>
+            平衡时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.InitTemp">
+            <summary>
+            初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.MaintainTime">
+            <summary>
+            维持时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.AlertTemp">
+            <summary>
+            报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.ColumnCount">
+            <summary>
+            柱箱恒升阶数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.RateCol1">
+            <summary>
+            1阶速率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempCol1">
+            <summary>
+            1阶温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempTimeCol1">
+            <summary>
+            1阶恒温时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.RateCol2">
+            <summary>
+            2阶速率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempCol2">
+            <summary>
+            2阶温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempTimeCol2">
+            <summary>
+            2阶恒温时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.RateCol3">
+            <summary>
+            3阶速率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempCol3">
+            <summary>
+            3阶温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempTimeCol3">
+            <summary>
+            3阶恒温时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.RateCol4">
+            <summary>
+            4阶速率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempCol4">
+            <summary>
+            4阶温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempTimeCol4">
+            <summary>
+            4阶恒温时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.RateCol5">
+            <summary>
+            5阶速率
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempCol5">
+            <summary>
+            5阶温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TempTimeCol5">
+            <summary>
+            5阶恒温时间
             </summary>
         </member>
         <member name="T:ChromatoTool.pipe.CastPipe">
@@ -2728,111 +2848,6 @@
             </summary>
             <param name="ds"></param>
             <param name="tableName"></param>
-        </member>
-        <member name="T:ChromatoTool.dto.ColumnParaDto">
-            <summary>
-            反控方法->柱箱表
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.BalanceTime">
-            <summary>
-            平衡时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.InitTemp">
-            <summary>
-            初温
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.MaintainTime">
-            <summary>
-            维持时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.AlertTemp">
-            <summary>
-            报警温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.ColumnCount">
-            <summary>
-            柱箱恒升阶数
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol1">
-            <summary>
-            1阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol1">
-            <summary>
-            1阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol1">
-            <summary>
-            1阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol2">
-            <summary>
-            2阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol2">
-            <summary>
-            2阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol2">
-            <summary>
-            2阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol3">
-            <summary>
-            3阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol3">
-            <summary>
-            3阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol3">
-            <summary>
-            3阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol4">
-            <summary>
-            4阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol4">
-            <summary>
-            4阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol4">
-            <summary>
-            4阶恒温时间
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.RateCol5">
-            <summary>
-            5阶速率
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempCol5">
-            <summary>
-            5阶温度
-            </summary>
-        </member>
-        <member name="P:ChromatoTool.dto.ColumnParaDto.TempTimeCol5">
-            <summary>
-            5阶恒温时间
-            </summary>
         </member>
         <member name="T:ChromatoTool.util.CsvStreamWriter">
             <summary>

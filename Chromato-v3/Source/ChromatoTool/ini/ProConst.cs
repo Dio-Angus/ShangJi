@@ -828,8 +828,15 @@ namespace ChromatoTool.ini
         public static String Off = "关闭";
     }
 
+        /// <summary>
+    /// 缺省反控方法->网络板
+    /// </summary>
+    public class DefaultNetworkBoard
+    {
+    }
+
     /// <summary>
-    /// 缺省反控方法->柱箱参数
+    /// 缺省反控方法->加热源
     /// </summary>
     public class DefaultHeatingSource
     {

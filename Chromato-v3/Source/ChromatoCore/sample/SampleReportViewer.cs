@@ -394,7 +394,7 @@ namespace ChromatoCore.sample
             AntiControlDto dtoAnti = new AntiControlDto();
             dtoAnti.AntiControlID = dtoSolu.AntiMethodID;
             bizAnti.GetMethodByID(dtoAnti);
-            String columnStep = String.Format("升温状态：{0}",EnumDescription.GetFieldText((StepType)dtoAnti.dtoColumnPara.ColumnCount + 1));
+            String columnStep = String.Format("升温状态：{0}",EnumDescription.GetFieldText((StepType)dtoAnti.dtoHeatingSource .ColumnCount + 1));
 
             height = TransLateUtil.printLine(e, soluName, fontInfo, lineLeft, currentPosition, lineWidth / 2, false, Brushes.Black);
             height = TransLateUtil.printLine(e, columnStep, fontInfo, lineLeft + MaxDistance, currentPosition, lineWidth / 2, false, Brushes.Black);

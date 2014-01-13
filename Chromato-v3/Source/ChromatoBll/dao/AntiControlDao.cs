@@ -111,6 +111,9 @@ namespace ChromatoBll.dao
             }
 
             dto.AntiControlName = ds.Tables[0].Rows[0]["AntiControlName"].ToString();
+
+            dto.dtoNetworkBorad = new NetworkBoardDto();
+
             dto.dtoHeatingSource = new HeatingSourceDto();
             dto.dtoHeatingSource .BalanceTime = Convert.ToSingle(ds.Tables[0].Rows[0]["BalanceTime"].ToString());
             dto.dtoHeatingSource .InitTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tcpInitTemp"].ToString());
@@ -132,6 +135,7 @@ namespace ChromatoBll.dao
             dto.dtoHeatingSource .TempTimeCol3 = Convert.ToSingle(ds.Tables[0].Rows[0]["TempTimeCol3"].ToString());
             dto.dtoHeatingSource .TempTimeCol4 = Convert.ToSingle(ds.Tables[0].Rows[0]["TempTimeCol4"].ToString());
             dto.dtoHeatingSource .TempTimeCol5 = Convert.ToSingle(ds.Tables[0].Rows[0]["TempTimeCol5"].ToString());
+
 
             dto.dtoInject = new InjectDto();
             dto.dtoInject.AlertTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tseAlertTemp"].ToString());
@@ -188,26 +192,26 @@ namespace ChromatoBll.dao
             bool bRet = this._sqlHelper.ExecuteSql(sql);
 
             sql = "UPDATE [T_ColumnPara] SET "
-                + "BalanceTime = '" + dto.dtoColumnPara.BalanceTime + "', "
-                + "InitTemp = '" + dto.dtoColumnPara.InitTemp + "', "
-                + "MaintainTime = '" + dto.dtoColumnPara.MaintainTime + "', "
-                + "AlertTemp = '" + dto.dtoColumnPara.AlertTemp + "', "
-                + "ColumnCount = '" + dto.dtoColumnPara.ColumnCount + "', "
-                + "RateCol1 = '" + dto.dtoColumnPara.RateCol1 + "', "
-                + "RateCol2 = '" + dto.dtoColumnPara.RateCol2 + "', "
-                + "RateCol3 = '" + dto.dtoColumnPara.RateCol3 + "', "
-                + "RateCol4 = '" + dto.dtoColumnPara.RateCol4 + "', "
-                + "RateCol5 = '" + dto.dtoColumnPara.RateCol5 + "', "
-                + "TempCol1 = '" + dto.dtoColumnPara.TempCol1 + "', "
-                + "TempCol2 = '" + dto.dtoColumnPara.TempCol2 + "', "
-                + "TempCol3 = '" + dto.dtoColumnPara.TempCol3 + "', "
-                + "TempCol4 = '" + dto.dtoColumnPara.TempCol4 + "', "
-                + "TempCol5 = '" + dto.dtoColumnPara.TempCol5 + "', "
-                + "TempTimeCol1 = '" + dto.dtoColumnPara.TempTimeCol1 + "', "
-                + "TempTimeCol2 = '" + dto.dtoColumnPara.TempTimeCol2 + "', "
-                + "TempTimeCol3 = '" + dto.dtoColumnPara.TempTimeCol3 + "', "
-                + "TempTimeCol4 = '" + dto.dtoColumnPara.TempTimeCol4 + "', "
-                + "TempTimeCol5 = '" + dto.dtoColumnPara.TempTimeCol5 + "' " 
+                + "BalanceTime = '" + dto.dtoHeatingSource .BalanceTime + "', "
+                + "InitTemp = '" + dto.dtoHeatingSource .InitTemp + "', "
+                + "MaintainTime = '" + dto.dtoHeatingSource .MaintainTime + "', "
+                + "AlertTemp = '" + dto.dtoHeatingSource .AlertTemp + "', "
+                + "ColumnCount = '" + dto.dtoHeatingSource .ColumnCount + "', "
+                + "RateCol1 = '" + dto.dtoHeatingSource .RateCol1 + "', "
+                + "RateCol2 = '" + dto.dtoHeatingSource .RateCol2 + "', "
+                + "RateCol3 = '" + dto.dtoHeatingSource .RateCol3 + "', "
+                + "RateCol4 = '" + dto.dtoHeatingSource .RateCol4 + "', "
+                + "RateCol5 = '" + dto.dtoHeatingSource .RateCol5 + "', "
+                + "TempCol1 = '" + dto.dtoHeatingSource .TempCol1 + "', "
+                + "TempCol2 = '" + dto.dtoHeatingSource .TempCol2 + "', "
+                + "TempCol3 = '" + dto.dtoHeatingSource .TempCol3 + "', "
+                + "TempCol4 = '" + dto.dtoHeatingSource .TempCol4 + "', "
+                + "TempCol5 = '" + dto.dtoHeatingSource .TempCol5 + "', "
+                + "TempTimeCol1 = '" + dto.dtoHeatingSource .TempTimeCol1 + "', "
+                + "TempTimeCol2 = '" + dto.dtoHeatingSource .TempTimeCol2 + "', "
+                + "TempTimeCol3 = '" + dto.dtoHeatingSource .TempTimeCol3 + "', "
+                + "TempTimeCol4 = '" + dto.dtoHeatingSource .TempTimeCol4 + "', "
+                + "TempTimeCol5 = '" + dto.dtoHeatingSource .TempTimeCol5 + "' " 
                 
                 + "Where AntiControlID = " + dto.AntiControlID;
             bRet = this._sqlHelper.ExecuteSql(sql);
@@ -314,26 +318,26 @@ namespace ChromatoBll.dao
             + "InitTemp,RateCol1,RateCol2,RateCol3,RateCol4,RateCol5,TempCol1,TempCol2,TempCol3,TempCol4,TempCol5,"
             + "TempTimeCol1,TempTimeCol2,TempTimeCol3,TempTimeCol4,TempTimeCol5) VALUES ('"
                 + dto.AntiControlID + "','"
-                + dto.dtoColumnPara.AlertTemp + "','"
-                + dto.dtoColumnPara.BalanceTime + "','"
-                + dto.dtoColumnPara.MaintainTime + "','"
-                + dto.dtoColumnPara.ColumnCount + "','"
-                + dto.dtoColumnPara.InitTemp + "','"
-                + dto.dtoColumnPara.RateCol1 + "','"
-                + dto.dtoColumnPara.RateCol2 + "','"
-                + dto.dtoColumnPara.RateCol3 + "','"
-                + dto.dtoColumnPara.RateCol4 + "','"
-                + dto.dtoColumnPara.RateCol5 + "','"
-                + dto.dtoColumnPara.TempCol1 + "','"
-                + dto.dtoColumnPara.TempCol2 + "','"
-                + dto.dtoColumnPara.TempCol3 + "','"
-                + dto.dtoColumnPara.TempCol4 + "','"
-                + dto.dtoColumnPara.TempCol5 + "','"
-                + dto.dtoColumnPara.TempTimeCol1 + "','"
-                + dto.dtoColumnPara.TempTimeCol2 + "','"
-                + dto.dtoColumnPara.TempTimeCol3 + "','"
-                + dto.dtoColumnPara.TempTimeCol4 + "','"
-                + dto.dtoColumnPara.TempTimeCol5 + "')";
+                + dto.dtoHeatingSource .AlertTemp + "','"
+                + dto.dtoHeatingSource .BalanceTime + "','"
+                + dto.dtoHeatingSource .MaintainTime + "','"
+                + dto.dtoHeatingSource .ColumnCount + "','"
+                + dto.dtoHeatingSource .InitTemp + "','"
+                + dto.dtoHeatingSource .RateCol1 + "','"
+                + dto.dtoHeatingSource .RateCol2 + "','"
+                + dto.dtoHeatingSource .RateCol3 + "','"
+                + dto.dtoHeatingSource .RateCol4 + "','"
+                + dto.dtoHeatingSource .RateCol5 + "','"
+                + dto.dtoHeatingSource .TempCol1 + "','"
+                + dto.dtoHeatingSource .TempCol2 + "','"
+                + dto.dtoHeatingSource .TempCol3 + "','"
+                + dto.dtoHeatingSource .TempCol4 + "','"
+                + dto.dtoHeatingSource .TempCol5 + "','"
+                + dto.dtoHeatingSource .TempTimeCol1 + "','"
+                + dto.dtoHeatingSource .TempTimeCol2 + "','"
+                + dto.dtoHeatingSource .TempTimeCol3 + "','"
+                + dto.dtoHeatingSource .TempTimeCol4 + "','"
+                + dto.dtoHeatingSource .TempTimeCol5 + "')";
             bRet = _sqlHelper.ExecuteSql(sqlStr);
 
             sqlStr = "INSERT INTO T_Inject(AntiControlID,AlertTemp,InitTemp,ColumnType1,ColumnType2,ColumnType3,"

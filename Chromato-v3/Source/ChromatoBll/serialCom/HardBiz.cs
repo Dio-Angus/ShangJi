@@ -686,53 +686,53 @@ namespace ChromatoBll.serialCom
         {
             StringBuilder para = new StringBuilder();
             //初温
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "01" + this.ConvertToBcd(dto.dtoColumnPara.InitTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "01" + this.ConvertToBcd(dto.dtoHeatingSource .InitTemp.ToString()) + Version3010.FrameEnd);
             //报警温度
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "02" + this.ConvertToBcd(dto.dtoColumnPara.AlertTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "02" + this.ConvertToBcd(dto.dtoHeatingSource .AlertTemp.ToString()) + Version3010.FrameEnd);
             //初温维持时间
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "03" + this.ConvertToBcd(dto.dtoColumnPara.MaintainTime.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "03" + this.ConvertToBcd(dto.dtoHeatingSource .MaintainTime.ToString()) + Version3010.FrameEnd);
             //平衡时间
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "04" + this.ConvertToBcd(dto.dtoColumnPara.BalanceTime.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "04" + this.ConvertToBcd(dto.dtoHeatingSource .BalanceTime.ToString()) + Version3010.FrameEnd);
             //程升阶数
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "05" + this.ConvertToBcd(dto.dtoColumnPara.ColumnCount.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "05" + this.ConvertToBcd(dto.dtoHeatingSource .ColumnCount.ToString()) + Version3010.FrameEnd);
 
-            if (0 < dto.dtoColumnPara.ColumnCount)
+            if (0 < dto.dtoHeatingSource .ColumnCount)
             {
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "16" + this.ConvertToBcd(dto.dtoColumnPara.RateCol1.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "17" + this.ConvertToBcd(dto.dtoColumnPara.TempCol1.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "18" + this.ConvertToBcd(dto.dtoColumnPara.TempTimeCol1.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "16" + this.ConvertToBcd(dto.dtoHeatingSource .RateCol1.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "17" + this.ConvertToBcd(dto.dtoHeatingSource .TempCol1.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "18" + this.ConvertToBcd(dto.dtoHeatingSource .TempTimeCol1.ToString()) + Version3010.FrameEnd);
                 CommPort.Instance.Send(para.ToString(), true);
             }
-            if (1 < dto.dtoColumnPara.ColumnCount)
+            if (1 < dto.dtoHeatingSource .ColumnCount)
             {
                 para.Remove(0, para.Length);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "19" + this.ConvertToBcd(dto.dtoColumnPara.RateCol2.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1A" + this.ConvertToBcd(dto.dtoColumnPara.TempCol2.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1B" + this.ConvertToBcd(dto.dtoColumnPara.TempTimeCol2.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "19" + this.ConvertToBcd(dto.dtoHeatingSource .RateCol2.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1A" + this.ConvertToBcd(dto.dtoHeatingSource .TempCol2.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1B" + this.ConvertToBcd(dto.dtoHeatingSource .TempTimeCol2.ToString()) + Version3010.FrameEnd);
                 CommPort.Instance.Send(para.ToString(), true);
             }
-            if (2 < dto.dtoColumnPara.ColumnCount)
+            if (2 < dto.dtoHeatingSource .ColumnCount)
             {
                 para.Remove(0, para.Length);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1C" + this.ConvertToBcd(dto.dtoColumnPara.RateCol3.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1D" + this.ConvertToBcd(dto.dtoColumnPara.TempCol3.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1E" + this.ConvertToBcd(dto.dtoColumnPara.TempTimeCol3.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1C" + this.ConvertToBcd(dto.dtoHeatingSource .RateCol3.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1D" + this.ConvertToBcd(dto.dtoHeatingSource .TempCol3.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1E" + this.ConvertToBcd(dto.dtoHeatingSource .TempTimeCol3.ToString()) + Version3010.FrameEnd);
                 CommPort.Instance.Send(para.ToString(), true);
             }
-            if (3 < dto.dtoColumnPara.ColumnCount)
+            if (3 < dto.dtoHeatingSource .ColumnCount)
             {
                 para.Remove(0, para.Length);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1F" + this.ConvertToBcd(dto.dtoColumnPara.RateCol4.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "20" + this.ConvertToBcd(dto.dtoColumnPara.TempCol4.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "21" + this.ConvertToBcd(dto.dtoColumnPara.TempTimeCol4.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "1F" + this.ConvertToBcd(dto.dtoHeatingSource .RateCol4.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "20" + this.ConvertToBcd(dto.dtoHeatingSource .TempCol4.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "21" + this.ConvertToBcd(dto.dtoHeatingSource .TempTimeCol4.ToString()) + Version3010.FrameEnd);
                 CommPort.Instance.Send(para.ToString(), true);
             }
-            if (4 < dto.dtoColumnPara.ColumnCount)
+            if (4 < dto.dtoHeatingSource .ColumnCount)
             {
                 para.Remove(0, para.Length);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "22" + this.ConvertToBcd(dto.dtoColumnPara.RateCol5.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "23" + this.ConvertToBcd(dto.dtoColumnPara.TempCol5.ToString()) + Version3010.FrameEnd);
-                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "24" + this.ConvertToBcd(dto.dtoColumnPara.TempTimeCol5.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "22" + this.ConvertToBcd(dto.dtoHeatingSource .RateCol5.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "23" + this.ConvertToBcd(dto.dtoHeatingSource .TempCol5.ToString()) + Version3010.FrameEnd);
+                para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.ColumnTemp + "24" + this.ConvertToBcd(dto.dtoHeatingSource .TempTimeCol5.ToString()) + Version3010.FrameEnd);
                 CommPort.Instance.Send(para.ToString(), true);
             }
 

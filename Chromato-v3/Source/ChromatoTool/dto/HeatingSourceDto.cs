@@ -8,6 +8,7 @@
 //---------------------------------------------------------------------------*/
 
 using System;
+using ChromatoTool.ini;
 
 namespace ChromatoTool.dto
 {

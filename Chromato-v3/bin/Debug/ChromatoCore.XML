@@ -2666,6 +2666,48 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="F:ChromatoCore.solu.AntiCon.NetworkBoardUser._dtoAntiControl">
+            <summary>
+            分析方法dto
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.#ctor(ChromatoTool.dto.AntiControlDto)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadView(System.Int32)">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadEdit">
+            <summary>
+            编辑当前反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadSaveAs">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.NetworkBoardUser.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
         <member name="T:ChromatoCore.sample.SampleRemarkViewer">
             <summary>
             样品备注编辑和显示
@@ -4402,6 +4444,214 @@
             <summary>
             显示编辑窗口
             </summary>
+        </member>
+        <member name="T:ChromatoCore.solu.AntiCon.HeatingSourceUser">
+            <summary>
+            柱箱参数视图
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.HeatingSourceUser.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.HeatingSourceUser._dtoAntiControl">
+            <summary>
+            分析方法dto
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.#ctor(ChromatoTool.dto.AntiControlDto)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadEvent">
+            <summary>
+            装载事件
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadView(System.Int32)">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadViewOrSaveAs">
+            <summary>
+            查看或者复制
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadControlStyle(System.Boolean)">
+            <summary>
+            装载控件的风格
+            </summary>
+            <param name="isReadOnly"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadNew">
+            <summary>
+            新建立反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadEdit">
+            <summary>
+            编辑当前反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadSaveAs">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtBalanceTime_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            平衡时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtInitTemp_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            初   温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtMaintainTime_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            维持时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtAlertTemp_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            报警温度焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtColumnCount_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL程升介数焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-1程升速率焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-2程升速率焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol3_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-3程升速率焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol4_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-4程升速率焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol5_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-5程升速率焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-1程升恒温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-2程升恒温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol3_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-3程升恒温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol4_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-4程升恒温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol5_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-5程升恒温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-1程升恒温时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-2程升恒温时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol3_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-3程升恒温时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol4_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-4程升恒温时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol5_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            COL-5程升恒温时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="T:ChromatoCore.sample.SampleReportViewer">
             <summary>
@@ -12849,256 +13099,6 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
-        </member>
-        <member name="T:ChromatoCore.solu.AntiCon.HeatingSourceUser">
-            <summary>
-            柱箱参数视图
-            </summary>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.HeatingSourceUser._dtoAntiControl">
-            <summary>
-            分析方法dto
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.#ctor(ChromatoTool.dto.AntiControlDto)">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadEvent">
-            <summary>
-            装载事件
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadView(System.Int32)">
-            <summary>
-            显示反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadViewOrSaveAs">
-            <summary>
-            查看或者复制
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadControlStyle(System.Boolean)">
-            <summary>
-            装载控件的风格
-            </summary>
-            <param name="isReadOnly"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadNew">
-            <summary>
-            新建立反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadEdit">
-            <summary>
-            编辑当前反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadSaveAs">
-            <summary>
-            显示反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtBalanceTime_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            平衡时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtInitTemp_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            初   温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtMaintainTime_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            维持时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtAlertTemp_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            报警温度焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtColumnCount_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL程升介数焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol1_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-1程升速率焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol2_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-2程升速率焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol3_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-3程升速率焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol4_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-4程升速率焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtRateCol5_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-5程升速率焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol1_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-1程升恒温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol2_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-2程升恒温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol3_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-3程升恒温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol4_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-4程升恒温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempCol5_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-5程升恒温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol1_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-1程升恒温时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol2_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-2程升恒温时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol3_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-3程升恒温时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol4_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-4程升恒温时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtTempTimeCol5_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            COL-5程升恒温时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.HeatingSourceUser.components">
-            <summary> 
-            必需的设计器变量。
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.Dispose(System.Boolean)">
-            <summary> 
-            清理所有正在使用的资源。
-            </summary>
-            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.InitializeComponent">
-            <summary> 
-            设计器支持所需的方法 - 不要
-            使用代码编辑器修改此方法的内容。
-            </summary>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.NetworkBoardUser._dtoAntiControl">
-            <summary>
-            分析方法dto
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.#ctor(ChromatoTool.dto.AntiControlDto)">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadView(System.Int32)">
-            <summary>
-            显示反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadEdit">
-            <summary>
-            编辑当前反控的信息
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadSaveAs">
-            <summary>
-            显示反控的信息
-            </summary>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.NetworkBoardUser.components">
-            <summary> 
-            必需的设计器变量。
-            </summary>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.Dispose(System.Boolean)">
-            <summary> 
-            清理所有正在使用的资源。
-            </summary>
-            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.InitializeComponent">
-            <summary> 
-            设计器支持所需的方法 - 不要
-            使用代码编辑器修改此方法的内容。
-            </summary>
         </member>
     </members>
 </doc>

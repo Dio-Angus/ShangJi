@@ -19,7 +19,7 @@ namespace ChromatoTool.dto
     /// <summary>
     /// 反控方法→网络板
     /// </summary>
-    class NetworkBoardDto
+    public class NetworkBoardDto
     {
     }
 }
