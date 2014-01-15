@@ -7388,6 +7388,48 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="F:ChromatoCore.solu.AntiCon.FpdUser.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.FpdUser._dtoAntiControl">
+            <summary>
+            分析方法dto
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.#ctor(ChromatoTool.dto.AntiControlDto)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.LoadView(System.Int32)">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.LoadEdit">
+            <summary>
+            编辑当前反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FpdUser.LoadSaveAs">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
         <member name="T:ChromatoCore.On.OnList">
             <summary>
             在线样品列表窗体
@@ -11794,6 +11836,48 @@
             使用代码编辑器修改此方法的内容。
             </summary>
         </member>
+        <member name="F:ChromatoCore.solu.AntiCon.EcdUser._dtoAntiControl">
+            <summary>
+            分析方法dto
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.#ctor(ChromatoTool.dto.AntiControlDto)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.LoadView(System.Int32)">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.LoadEdit">
+            <summary>
+            编辑当前反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.LoadSaveAs">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.EcdUser.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.EcdUser.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
         <member name="T:ChromatoCore.Auto.AutoRequest">
             <summary>
             自动色谱线程
@@ -12983,6 +13067,16 @@
         <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewAux">
             <summary>
             Aux参数
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewEcd">
+            <summary>
+            Ecd参数
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewFpd">
+            <summary>
+            Fpd参数
             </summary>
         </member>
         <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._bizAntiControl">

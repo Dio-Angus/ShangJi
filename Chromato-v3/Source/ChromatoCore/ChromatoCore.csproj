@@ -329,6 +329,18 @@
     <Compile Include="solu\AntiCon\AuxUser.Designer.cs">
       <DependentUpon>AuxUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="solu\AntiCon\EcdUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\EcdUser.Designer.cs">
+      <DependentUpon>EcdUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solu\AntiCon\FpdUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\FpdUser.Designer.cs">
+      <DependentUpon>FpdUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="solu\AntiCon\HeatingSourceUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -743,6 +755,12 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\EcdUser.resx">
+      <DependentUpon>EcdUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\FpdUser.resx">
+      <DependentUpon>FpdUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="solu\AntiCon\NetworkBoardUser.resx">
       <DependentUpon>NetworkBoardUser.cs</DependentUpon>

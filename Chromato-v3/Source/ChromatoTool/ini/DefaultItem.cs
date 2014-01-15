@@ -1333,6 +1333,16 @@ namespace ChromatoTool.ini
     /// </summary>
     public enum AntiControlType
     {
+        NetworkBoard = 0,
+        HeatingSource = 1,
+        SampleEntry = 2,
+        AUX = 4,
+        FID = 5,
+        TCD = 6,
+        ECD = 7,
+        FPD = 8,
+
+        /*
         Fid1 = 0,
         Fid2 = 1,
         Tcd1 = 2,
@@ -1342,7 +1352,7 @@ namespace ChromatoTool.ini
         Injecter2 = 6,
         Injecter3 = 7,
         HeatingSource = 8,
-
+        */
 
     }
 

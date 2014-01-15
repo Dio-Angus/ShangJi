@@ -682,7 +682,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Fid1);
+           // eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Fid1);
             this.DownloadClicked(this, eve);
         }
 
@@ -695,7 +695,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Fid2);
+            //eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Fid2);
             this.DownloadClicked(this, eve);
         }
 
@@ -708,7 +708,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Tcd1);
+            //eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Tcd1);
             this.DownloadClicked(this, eve);
         }
 
@@ -721,7 +721,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Tcd2);
+           // eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Tcd2);
             this.DownloadClicked(this, eve);
         }
 
@@ -734,7 +734,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Aux);
+           // eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Aux);
             this.DownloadClicked(this, eve);
         }
 
@@ -747,7 +747,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter1);
+           // eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter1);
             this.DownloadClicked(this, eve);
         }
 
@@ -760,7 +760,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter2);
+           // eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter2);
             this.DownloadClicked(this, eve);
         }
 
@@ -773,7 +773,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter3);
+            //eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.Injecter3);
             this.DownloadClicked(this, eve);
         }
 

@@ -792,7 +792,8 @@ namespace ChromatoTool.ini
         public const String Tcd = "TCD";
         public const String Fid = "FID";
         public const String Aux = "AUX";
-
+        public const String Ecd = "ECD";
+        public const String Fpd = "FPD";
     }
 
     /// <summary>
@@ -833,6 +834,30 @@ namespace ChromatoTool.ini
     /// </summary>
     public class DefaultNetworkBoard
     {
+        public static String GateIP;
+        public static String SourceIP;
+        public static String MAC;
+        public static String Mask;
+
+        public static String Socket0Address;
+        public static String Socket0AimIP;
+        public static String Socket0AimAddress;
+        public static Single Socket0WorkMode;
+
+        public static String Socket1Address;
+        public static String Socket1AimIP;
+        public static String Socket1AimAddress;
+        public static Single Socket1WorkMode;
+
+        public static String Socket2Address;
+        public static String Socket2AimIP;
+        public static String Socket2AimAddress;
+        public static Single Socket2WorkMode;
+
+        public static String Socket3Address;
+        public static String Socket3AimIP;
+        public static String Socket3AimAddress;
+        public static Single Socket3WorkMode;
     }
 
     /// <summary>

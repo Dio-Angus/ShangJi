@@ -2677,6 +2677,136 @@
             煤矿气板卡串口接收到启动命令事件
             </summary>
         </member>
+        <member name="T:ChromatoBll.serialCom.baseCommand">
+            <summary>
+            基础指令
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.head_1">
+            <summary>
+            数据包头1
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.head_2">
+            <summary>
+            数据包头2
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.length">
+            <summary>
+            数据包尺寸
+            </summary>
+        </member>
+        <member name="T:ChromatoBll.serialCom.addressCommand">
+            <summary>
+            类别指令
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.PC">
+            <summary>
+            PC地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.HeatControl">
+            <summary>
+            温控地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FID1">
+            <summary>
+            FID1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FID2">
+            <summary>
+            FID2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCD1">
+            <summary>
+            TCD1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCD2">
+            <summary>
+            TCD2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FLOW">
+            <summary>
+            FLOW地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.ControlBoard">
+            <summary>
+            控制板地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.RS232">
+            <summary>
+            RS232地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.NetworkBoard">
+            <summary>
+            网络板地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FIDShare">
+            <summary>
+            FID公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCDShare">
+            <summary>
+            TCD公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.COL">
+            <summary>
+            COL地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.AUX1">
+            <summary>
+            AUX1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.AUX2">
+            <summary>
+            AUX2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ1">
+            <summary>
+            INJ1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ2">
+            <summary>
+            INJ2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ3">
+            <summary>
+            INJ3地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJShare">
+            <summary>
+            INJ公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FPD">
+            <summary>
+            FPD地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.ECD">
+            <summary>
+            ECD地址
+            </summary>
+        </member>
         <member name="F:ChromatoBll.dao.IngredientDao._sqlHelper">
             <summary>
             库操作类
@@ -6567,277 +6697,6 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="T:ChromatoBll.bll.CompareBiz">
-            <summary>
-            图比较的逻辑
-            </summary>
-        </member>
-        <member name="F:ChromatoBll.bll.CompareBiz._daoCompare">
-            <summary>
-            参数Dao
-            </summary>
-        </member>
-        <member name="F:ChromatoBll.bll.CompareBiz._arr">
-            <summary>
-            编辑和新建时需要保存的比较表dto
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.#ctor">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.LoadCompare">
-            <summary>
-            选择比较表
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.UpdateCompare(ChromatoTool.dto.CompareDto)">
-            <summary>
-            更新比较表
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.UpdateShow(ChromatoTool.dto.CompareDto)">
-            <summary>
-            更新比较表
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.DeleteCompare(ChromatoTool.dto.CompareDto)">
-            <summary>
-            删除比较表中数据
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.InsertToArr(ChromatoTool.dto.CompareDto)">
-            <summary>
-            追加一条到比较表
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.CompareBiz.GetCompareArr">
-            <summary>
-            取得列表
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:ChromatoBll.ocx.item.ShapeImp">
-            <summary>
-            矩形实现类
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.ocx.item.ShapeImp.#ctor(AxGRAPHOCXLib.AxGraphOcx)">
-            <summary>
-            构造
-            </summary>
-            <param name="axOcx"></param>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.ocx">
-            <summary>
-            控件对象
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.id">
-            <summary>
-            序号
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.X">
-            <summary>
-            矩形起点X坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.Y">
-            <summary>
-            矩形起点Y坐标
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.Height">
-            <summary>
-            矩形高度
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.Width">
-            <summary>
-            矩形宽度
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.Show">
-            <summary>
-            矩形是否显示
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.Transparent">
-            <summary>
-            矩形是否透明
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.FillPattern">
-            <summary>
-            矩形起点填充模式
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.FillColor">
-            <summary>
-            矩形填充颜色
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.BorderColor">
-            <summary>
-            矩形边框颜色
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.AdjustX">
-            <summary>
-            矩形水平微调像素
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.AdjustY">
-            <summary>
-            矩形垂直微调像素
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.ocx.item.ShapeImp.ZorderOcx">
-            <summary>
-            矩形Z方向序号
-            </summary>
-        </member>
-        <member name="T:ChromatoBll.bll.TimeProcBiz">
-            <summary>
-            时间程序的逻辑
-            </summary>
-        </member>
-        <member name="F:ChromatoBll.bll.TimeProcBiz.daoTimeProc">
-            <summary>
-            参数Dao
-            </summary>
-        </member>
-        <member name="F:ChromatoBll.bll.TimeProcBiz._arr">
-            <summary>
-            编辑和新建时需要保存的时间程序dto
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.#ctor">
-            <summary>
-            构造
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadTimeProc">
-            <summary>
-            选择全部时间程序
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadMethodName">
-            <summary>
-            选择全部时间程序
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadTimeProcByID(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            选择全部时间程序
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewTimeProcID">
-            <summary>
-            取得新的时间程序ID
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewSerialID(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            取得新的序列号ID
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.DeleteSerial(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            删除方法
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.DeleteTimeProc(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            删除方法
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateTimeProc(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            更新时间程序到对应的数据库
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertMethod(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            插入时间程序信息
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateTPName(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            更新时间程序名到对应的数据库
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateMethod(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            更新方法
-            </summary>
-            <param name="dtoTimeProc"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertArray">
-            <summary>
-            插入队列中的方法
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateArray(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            更新列表
-            </summary>
-            <param name="dtoTimeProc"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewSerialIdInArray(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            在列表中计算新的ID
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertToArray(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            插入列表
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.RemoveSerial(ChromatoTool.dto.TimeProcDto)">
-            <summary>
-            删除列表中dto
-            </summary>
-            <param name="dtoTimeProc"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.TimeProcBiz.GetTpArray">
-            <summary>
-            取得列表
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:ChromatoBll.bll.RelationBiz">
-            <summary>
-            关系的逻辑
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.bll.RelationBiz.InsertRelation(ChromatoTool.dto.RelationDto)">
-            <summary>
-            插入新的关系
-            </summary>
-            <param name="dto"></param>
-        </member>
-        <member name="M:ChromatoBll.bll.RelationBiz.UpdateRelation(ChromatoTool.dto.RelationDto)">
-            <summary>
-            更新关系
-            </summary>
-            <param name="dto"></param>
-        </member>
         <member name="F:ChromatoBll.serialCom.CommandMaker.instance">
             <summary>
             实例名
@@ -7382,9 +7241,273 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTime11111">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJType">
             <summary>
             3.17 INJ3进样模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUXAllData">
+            <summary>
+            4.1 AUX读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUXAllData">
+            <summary>
+            4.2 AUX设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX1InitialTem">
+            <summary>
+            4.3 AUX1初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX1AlarmTem">
+            <summary>
+            4.4 AUX1报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX2InitialTem">
+            <summary>
+            4.5 AUX2初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX2AlarmTem">
+            <summary>
+            4.6 AUX2报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFIDAllData">
+            <summary>
+            5.1 FID读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFIDAllData">
+            <summary>
+            5.2 FID设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID1Zero">
+            <summary>
+            5.3 FID1调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetFID1Zero">
+            <summary>
+            5.4 FID1回零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID2Zero">
+            <summary>
+            5.5 FID2调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetFID2Zero">
+            <summary>
+            5.6 FID2回零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1InitialTem">
+            <summary>
+            5.7 FID1初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1AlarmTem">
+            <summary>
+            5.8 FID1报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1Polarity">
+            <summary>
+            5.9 FID1极性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1Ap">
+            <summary>
+            5.10 FID1放大倍数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2InitialTem">
+            <summary>
+            5.11 FID2初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2AlarmTem">
+            <summary>
+            5.12 FID2报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2Polarity">
+            <summary>
+            5.13 FID2极性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2Ap">
+            <summary>
+            5.14 FID2放大倍数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCDAllData">
+            <summary>
+            6.1 TCD读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCDAllData">
+            <summary>
+            6.2 TCD设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD1Zero">
+            <summary>
+            6.3 TCD1调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetTCD1Zero">
+            <summary>
+            6.4 TCD1回零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.TCD1Open">
+            <summary>
+            6.5 TCD1电流开启命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD2Zero">
+            <summary>
+            6.6 TCD2调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetTCD2Zero">
+            <summary>
+            6.7 TCD2回零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.TCD2Open">
+            <summary>
+            6.8 TCD2电流开启命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1InitialTem">
+            <summary>
+            6.9 TCD1初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1AlarmTem">
+            <summary>
+            6.10 TCD1报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1Polarity">
+            <summary>
+            6.11 TCD1极性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1Electricity">
+            <summary>
+            6.12 TCD1电流
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2InitialTem">
+            <summary>
+            6.13 TCD2初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2AlarmTem">
+            <summary>
+            6.14 TCD2报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2Polarity">
+            <summary>
+            6.15 TCD2极性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2Electricity">
+            <summary>
+            6.16 TCD2电流
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getECDAllData">
+            <summary>
+            7.1 ECD读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDAllData">
+            <summary>
+            7.2 ECD设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDZero">
+            <summary>
+            7.3 ECD调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetECDZero">
+            <summary>
+            7.4 ECD回零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.ECDElectricity">
+            <summary>
+            7.5 ECD电流命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.ECDRange">
+            <summary>
+            7.6 ECD量程命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFPDZero">
+            <summary>
+            8.1 FPD调零命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.resetFPDZero">
+            <summary>
+            8.2 FPD回零命令
             </summary>
             <returns></returns>
         </member>
@@ -7398,135 +7521,276 @@
             唯一实例
             </summary>
         </member>
-        <member name="T:ChromatoBll.serialCom.baseCommand">
+        <member name="T:ChromatoBll.bll.CompareBiz">
             <summary>
-            基础指令
+            图比较的逻辑
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.baseCommand.head_1">
+        <member name="F:ChromatoBll.bll.CompareBiz._daoCompare">
             <summary>
-            数据包头1
+            参数Dao
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.baseCommand.head_2">
+        <member name="F:ChromatoBll.bll.CompareBiz._arr">
             <summary>
-            数据包头2
+            编辑和新建时需要保存的比较表dto
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.baseCommand.length">
+        <member name="M:ChromatoBll.bll.CompareBiz.#ctor">
             <summary>
-            数据包尺寸
+            构造
             </summary>
         </member>
-        <member name="T:ChromatoBll.serialCom.addressCommand">
+        <member name="M:ChromatoBll.bll.CompareBiz.LoadCompare">
             <summary>
-            类别指令
+            选择比较表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.CompareBiz.UpdateCompare(ChromatoTool.dto.CompareDto)">
+            <summary>
+            更新比较表
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.PC">
+        <member name="M:ChromatoBll.bll.CompareBiz.UpdateShow(ChromatoTool.dto.CompareDto)">
             <summary>
-            PC地址
+            更新比较表
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.HeatControl">
+        <member name="M:ChromatoBll.bll.CompareBiz.DeleteCompare(ChromatoTool.dto.CompareDto)">
             <summary>
-            温控地址
+            删除比较表中数据
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.CompareBiz.InsertToArr(ChromatoTool.dto.CompareDto)">
+            <summary>
+            追加一条到比较表
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.FID1">
+        <member name="M:ChromatoBll.bll.CompareBiz.GetCompareArr">
             <summary>
-            FID1地址
+            取得列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ChromatoBll.ocx.item.ShapeImp">
+            <summary>
+            矩形实现类
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.FID2">
+        <member name="M:ChromatoBll.ocx.item.ShapeImp.#ctor(AxGRAPHOCXLib.AxGraphOcx)">
             <summary>
-            FID2地址
+            构造
+            </summary>
+            <param name="axOcx"></param>
+        </member>
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.ocx">
+            <summary>
+            控件对象
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.TCD1">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.id">
             <summary>
-            TCD1地址
+            序号
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.TCD2">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.X">
             <summary>
-            TCD2地址
+            矩形起点X坐标
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.FLOW">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.Y">
             <summary>
-            FLOW地址
+            矩形起点Y坐标
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.ControlBoard">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.Height">
             <summary>
-            控制板地址
+            矩形高度
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.RS232">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.Width">
             <summary>
-            RS232地址
+            矩形宽度
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.NetworkBoard">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.Show">
             <summary>
-            网络板地址
+            矩形是否显示
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.FIDShare">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.Transparent">
             <summary>
-            FID公共地址
+            矩形是否透明
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.TCDShare">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.FillPattern">
             <summary>
-            TCD公共地址
+            矩形起点填充模式
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.COL">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.FillColor">
             <summary>
-            COL地址
+            矩形填充颜色
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.AUX1">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.BorderColor">
             <summary>
-            AUX1地址
+            矩形边框颜色
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.AUX2">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.AdjustX">
             <summary>
-            AUX2地址
+            矩形水平微调像素
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.INJ1">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.AdjustY">
             <summary>
-            INJ1地址
+            矩形垂直微调像素
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.INJ2">
+        <member name="P:ChromatoBll.ocx.item.ShapeImp.ZorderOcx">
             <summary>
-            INJ2地址
+            矩形Z方向序号
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.INJ3">
+        <member name="T:ChromatoBll.bll.TimeProcBiz">
             <summary>
-            INJ3地址
+            时间程序的逻辑
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.INJShare">
+        <member name="F:ChromatoBll.bll.TimeProcBiz.daoTimeProc">
             <summary>
-            INJ公共地址
+            参数Dao
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.FPD">
+        <member name="F:ChromatoBll.bll.TimeProcBiz._arr">
             <summary>
-            FPD地址
+            编辑和新建时需要保存的时间程序dto
             </summary>
         </member>
-        <member name="F:ChromatoBll.serialCom.addressCommand.ECD">
+        <member name="M:ChromatoBll.bll.TimeProcBiz.#ctor">
             <summary>
-            ECD地址
+            构造
             </summary>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadTimeProc">
+            <summary>
+            选择全部时间程序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadMethodName">
+            <summary>
+            选择全部时间程序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.LoadTimeProcByID(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            选择全部时间程序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewTimeProcID">
+            <summary>
+            取得新的时间程序ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewSerialID(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            取得新的序列号ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.DeleteSerial(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            删除方法
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.DeleteTimeProc(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            删除方法
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateTimeProc(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            更新时间程序到对应的数据库
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertMethod(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            插入时间程序信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateTPName(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            更新时间程序名到对应的数据库
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateMethod(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            更新方法
+            </summary>
+            <param name="dtoTimeProc"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertArray">
+            <summary>
+            插入队列中的方法
+            </summary>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.UpdateArray(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            更新列表
+            </summary>
+            <param name="dtoTimeProc"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.GetNewSerialIdInArray(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            在列表中计算新的ID
+            </summary>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.InsertToArray(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            插入列表
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.RemoveSerial(ChromatoTool.dto.TimeProcDto)">
+            <summary>
+            删除列表中dto
+            </summary>
+            <param name="dtoTimeProc"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.TimeProcBiz.GetTpArray">
+            <summary>
+            取得列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ChromatoBll.bll.RelationBiz">
+            <summary>
+            关系的逻辑
+            </summary>
+        </member>
+        <member name="M:ChromatoBll.bll.RelationBiz.InsertRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            插入新的关系
+            </summary>
+            <param name="dto"></param>
+        </member>
+        <member name="M:ChromatoBll.bll.RelationBiz.UpdateRelation(ChromatoTool.dto.RelationDto)">
+            <summary>
+            更新关系
+            </summary>
+            <param name="dto"></param>
         </member>
     </members>
 </doc>

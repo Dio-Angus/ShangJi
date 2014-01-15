@@ -370,7 +370,7 @@ namespace ChromatoBll.serialCom
             }
 
             switch (type)
-            {
+            {/*
                 case AntiControlType.Fid1:
                     this.DownloadFid1(dtoAnti);
                     break;
@@ -397,7 +397,7 @@ namespace ChromatoBll.serialCom
                     break;
                 case AntiControlType.HeatingSource:
                     this.DownloadColumn(dtoAnti);
-                    break;
+                    break;*/
             }
         }
 

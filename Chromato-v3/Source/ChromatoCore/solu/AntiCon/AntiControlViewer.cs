@@ -71,6 +71,16 @@ namespace ChromatoCore.solu.AntiCon
         private AuxUser _viewAux = null;
 
         /// <summary>
+        /// Ecd参数
+        /// </summary>
+        private EcdUser _viewEcd = null;
+
+        /// <summary>
+        /// Fpd参数
+        /// </summary>
+        private FpdUser _viewFpd = null;
+
+        /// <summary>
         /// 分析方法逻辑
         /// </summary>
         private AntiControlBiz _bizAntiControl = null;
@@ -113,6 +123,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd = new TcdUser(this._dtoAntiControl);
             this._viewFid = new FidUser(this._dtoAntiControl);
             this._viewAux = new AuxUser(this._dtoAntiControl);
+            this._viewEcd = new EcdUser(this._dtoAntiControl);
+            this._viewFpd = new FpdUser(this._dtoAntiControl);
 
             this.Controls.Add(this._viewNetworkBoard);
             this.Controls.Add(this._viewHeatingSource);
@@ -120,7 +132,8 @@ namespace ChromatoCore.solu.AntiCon
             this.Controls.Add(this._viewTcd);
             this.Controls.Add(this._viewFid);
             this.Controls.Add(this._viewAux);
-
+            this.Controls.Add(this._viewEcd);
+            this.Controls.Add(this._viewFpd);            
         }
         
         /// <summary>
@@ -151,6 +164,9 @@ namespace ChromatoCore.solu.AntiCon
             TreeNode rnTcd = new TreeNode();
             TreeNode rnFid = new TreeNode();
             TreeNode rnAux = new TreeNode();
+            TreeNode rnEcd = new TreeNode();
+            TreeNode rnFpd = new TreeNode();
+
 
             //親ノードのテキストを作成 
             rnNetworkBoard.Text = AntiControl.NetworkBoard;
@@ -171,6 +187,12 @@ namespace ChromatoCore.solu.AntiCon
             rnAux.Text = AntiControl.Aux;
             rnAux.Name = AntiControl.Aux;
 
+            rnEcd.Text = AntiControl.Ecd;
+            rnEcd.Name = AntiControl.Ecd;
+
+            rnFpd.Text = AntiControl.Fpd;
+            rnFpd.Name = AntiControl.Fpd;
+
             //親ノードをTreeViewに追加
             tvAntiControl.Nodes.Add(rnNetworkBoard);
             tvAntiControl.Nodes.Add(rnHeatingSource);
@@ -178,6 +200,8 @@ namespace ChromatoCore.solu.AntiCon
             tvAntiControl.Nodes.Add(rnTcd);
             tvAntiControl.Nodes.Add(rnFid);
             tvAntiControl.Nodes.Add(rnAux);
+            tvAntiControl.Nodes.Add(rnEcd);
+            tvAntiControl.Nodes.Add(rnFpd);
 
             //全展開する
             tvAntiControl.ExpandAll();
@@ -204,6 +228,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Location = pt;
             this._viewFid.Location = pt;
             this._viewAux.Location = pt;
+            this._viewEcd.Location = pt;
+            this._viewFpd.Location = pt;
 
             Size sz = new Size(460, 240);
             this._viewNetworkBoard.Size = sz;
@@ -212,6 +238,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Size = sz;
             this._viewFid.Size = sz;
             this._viewAux.Size = sz;
+            this._viewEcd.Size = sz;
+            this._viewFpd.Size = sz;
 
             this._viewNetworkBoard.BringToFront();
             this._viewHeatingSource.BringToFront();
@@ -219,6 +247,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.BringToFront();
             this._viewFid.BringToFront();
             this._viewAux.BringToFront();
+            this._viewEcd.BringToFront();
+            this._viewFpd.BringToFront();
         }
 
         /// <summary>
@@ -232,6 +262,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Visible = false;
             this._viewFid.Visible = false;
             this._viewAux.Visible = false;
+            this._viewEcd.Visible = false;
+            this._viewFpd.Visible = false;
         }
 
         #endregion
@@ -308,6 +340,14 @@ namespace ChromatoCore.solu.AntiCon
 
                 case AntiControl.Aux:
                     this._viewAux.Visible = true;
+                    break;
+
+                case AntiControl.Ecd:
+                    this._viewEcd.Visible = true;
+                    break;
+
+                case AntiControl.Fpd:
+                    this._viewFpd.Visible = true;
                     break;
 
                 default:
@@ -404,6 +444,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadView(antiControlID);
             this._viewFid.LoadView(antiControlID);
             this._viewTcd.LoadView(antiControlID);
+            this._viewEcd.LoadView(antiControlID);
+            this._viewFpd.LoadView(antiControlID);
         }
 
         /// <summary>
@@ -433,7 +475,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadNew();
             this._viewFid.LoadNew();
             this._viewTcd.LoadNew();
-
+            this._viewEcd.LoadNew();
+            this._viewFpd.LoadNew();
         }
 
         /// <summary>
@@ -456,6 +499,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadEdit();
             this._viewFid.LoadEdit();
             this._viewTcd.LoadEdit();
+            this._viewEcd.LoadEdit();
+            this._viewFpd.LoadEdit();
         }
 
         /// <summary>
@@ -478,6 +523,8 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadSaveAs();
             this._viewFid.LoadSaveAs();
             this._viewTcd.LoadSaveAs();
+            this._viewEcd.LoadSaveAs();
+            this._viewFpd.LoadSaveAs();
         }
 
         /// <summary>
