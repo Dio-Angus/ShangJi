@@ -44,10 +44,10 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbTimerInterval = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmbTimerInterval = new System.Windows.Forms.ComboBox();
             this.ｇｂＯｔｈｅｒ.SuspendLayout();
             this.gbOption.SuspendLayout();
             this.gbConfig.SuspendLayout();
@@ -227,6 +227,24 @@
             this.textBox1.TabIndex = 13;
             this.textBox1.Text = "192.168.1.80";
             // 
+            // cmbTimerInterval
+            // 
+            this.cmbTimerInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTimerInterval.FormattingEnabled = true;
+            this.cmbTimerInterval.Location = new System.Drawing.Point(99, 102);
+            this.cmbTimerInterval.Name = "cmbTimerInterval";
+            this.cmbTimerInterval.Size = new System.Drawing.Size(77, 20);
+            this.cmbTimerInterval.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 105);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "定时器间隔";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -244,24 +262,6 @@
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "目的Ip地址";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 105);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 12);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "定时器间隔";
-            // 
-            // cmbTimerInterval
-            // 
-            this.cmbTimerInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTimerInterval.FormattingEnabled = true;
-            this.cmbTimerInterval.Location = new System.Drawing.Point(99, 102);
-            this.cmbTimerInterval.Name = "cmbTimerInterval";
-            this.cmbTimerInterval.Size = new System.Drawing.Size(77, 20);
-            this.cmbTimerInterval.TabIndex = 7;
             // 
             // TcpUser
             // 

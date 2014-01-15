@@ -151,6 +151,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="serialCom\Comm2000.cs" />
     <Compile Include="serialCom\Comm3010.cs" />
+    <Compile Include="serialCom\Command.cs" />
+    <Compile Include="serialCom\CommandMaker.cs" />
     <Compile Include="serialCom\CommGasAuto.cs" />
     <Compile Include="serialCom\CommBase.cs" />
     <Compile Include="serialCom\CommConst.cs" />

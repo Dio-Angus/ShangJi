@@ -3365,9 +3365,9 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.HardBiz.GetColumnPara(ChromatoTool.dto.AntiControlDto)">
+        <member name="M:ChromatoBll.serialCom.HardBiz.GetHeatingSource(ChromatoTool.dto.AntiControlDto)">
             <summary>
-            取得柱箱参数
+            取得加热源参数
             </summary>
             <param name="dto"></param>
             <returns></returns>
@@ -6837,6 +6837,696 @@
             更新关系
             </summary>
             <param name="dto"></param>
+        </member>
+        <member name="F:ChromatoBll.serialCom.CommandMaker.instance">
+            <summary>
+            实例名
+            </summary>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllNetworkData">
+            <summary>
+            1.1 读取所有网络参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllNetworkData">
+            <summary>
+            1.2 设置所有网络参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.restartNetworkBoard">
+            <summary>
+            1.3 设置网络板重启
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllInstrumentData">
+            <summary>
+            1.4 读取所有仪器参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.stopGetAllNetworkData">
+            <summary>
+            1.5 停止读取所有仪器参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.toConnect">
+            <summary>
+            1.6 联机命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.toDisconnect">
+            <summary>
+            1.7 脱机命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.GCStart">
+            <summary>
+            1.8 GC启动命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.GCStop">
+            <summary>
+            1.9 GC停止命令
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getGateway">
+            <summary>
+            1.10 读取网关IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSubnetMask">
+            <summary>
+            1.11 读取子网掩码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getMAC">
+            <summary>
+            1.12 读取MAC地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getIP">
+            <summary>
+            1.13 读取源IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket0Address">
+            <summary>
+            1.14 读取Socket0端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket0AimIP">
+            <summary>
+            1.15 读取Socket0目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket0AimAddress">
+            <summary>
+            1.16 读取Socket0目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket0">
+            <summary>
+            1.17 读取Socket0工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket1Address">
+            <summary>
+            1.18 读取Socket1端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket1AimIP">
+            <summary>
+            1.19 读取Socket1目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket1AimAddress">
+            <summary>
+            1.20 读取Socket1目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket1">
+            <summary>
+            1.21 读取Socket1工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket2Address">
+            <summary>
+            1.22 读取Socket2端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket2AimIP">
+            <summary>
+            1.23 读取Socket2目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket2AimAddress">
+            <summary>
+            1.24 读取Socket2目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket2">
+            <summary>
+            1.25 读取Socket2工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket3Address">
+            <summary>
+            1.26 读取Socket3端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket3AimIP">
+            <summary>
+            1.27 读取Socket3目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket3AimAddress">
+            <summary>
+            1.28 读取Socket3目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getSocket3">
+            <summary>
+            1.29 读取Socket3工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setGateway">
+            <summary>
+            1.30 设置网关IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSubnetMask">
+            <summary>
+            1.31 设置子网掩码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setMAC">
+            <summary>
+            1.32 设置MAC地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setIP">
+            <summary>
+            1.33 设置源IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket0Address">
+            <summary>
+            1.34 设置Socket0端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket0AimIP">
+            <summary>
+            1.35 设置Socket0目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket0AimAddress">
+            <summary>
+            1.36 设置Socket0目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket0">
+            <summary>
+            1.37 设置Socket0工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket1Address">
+            <summary>
+            1.38 设置Socket1端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket1AimIP">
+            <summary>
+            1.39 设置Socket1目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket1AimAddress">
+            <summary>
+            1.40 设置Socket1目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket1">
+            <summary>
+            1.41 设置Socket1工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket2Address">
+            <summary>
+            1.42 设置Socket2端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket2AimIP">
+            <summary>
+            1.43 设置Socket2目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket2AimAddress">
+            <summary>
+            1.44 设置Socket2目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket2">
+            <summary>
+            1.45 设置Socket2工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket3Address">
+            <summary>
+            1.46 设置Socket3端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket3AimIP">
+            <summary>
+            1.47 设置Socket3目的IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket3AimAddress">
+            <summary>
+            1.48 设置Socket3目的端口地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setSocket3">
+            <summary>
+            1.49 设置Socket3工作模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllCOLData">
+            <summary>
+            2.1 COL读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllCOLData">
+            <summary>
+            2.2 COL设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getHeatingSourceStatus">
+            <summary>
+            2.3 GC加热源加热状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllcolData">
+            <summary>
+            2.4 GC加热源加热使能状态 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLInitialTem">
+            <summary>
+            2.5 COL初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLAlarmTem">
+            <summary>
+            2.6 COL报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLInitialTemLastTime">
+            <summary>
+            2.7 COL初温维持时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLBalanceTime">
+            <summary>
+            2.8 COL平衡时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLRise">
+            <summary>
+            2.9 COL程升阶数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1Velocity">
+            <summary>
+            2.10 COL-1程升速率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1ConstantTem">
+            <summary>
+            2.11 COL-1程升恒温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1ConstantTemLastTime">
+            <summary>
+            2.12 COL-1程恒温时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2Velocity">
+            <summary>
+            2.13 COL-2程升速率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2ConstantTem">
+            <summary>
+            2.14 COL-2程升恒温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2ConstantTemLastTime">
+            <summary>
+            2.15 COL-2程恒温时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3Velocity">
+            <summary>
+            2.16 COL-3程升速率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3ConstantTem">
+            <summary>
+            2.17 COL-3程升恒温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3ConstantTemLastTime">
+            <summary>
+            2.18 COL-3程恒温时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4Velocity">
+            <summary>
+            2.19 COL-4程升速率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4ConstantTem">
+            <summary>
+            2.20 COL-4程升恒温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4ConstantTemLastTime">
+            <summary>
+            2.21 COL-4程恒温时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5Velocity">
+            <summary>
+            2.22 COL-5程升速率
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5ConstantTem">
+            <summary>
+            2.23 COL-5程升恒温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5ConstantTemLastTime">
+            <summary>
+            2.24 COL-5程恒温时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllINJData">
+            <summary>
+            3.1 进样口读取所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllINJData">
+            <summary>
+            3.2 进样口设置所有参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1InitialTem">
+            <summary>
+            3.3 INJ1初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1AlarmTem">
+            <summary>
+            3.4 INJ1报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1ColumnType">
+            <summary>
+            3.5 INJ1柱类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1Time">
+            <summary>
+            3.6 INJ1进样时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1Type">
+            <summary>
+            3.7 INJ1进样模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2InitialTem">
+            <summary>
+            3.8 INJ2初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2AlarmTem">
+            <summary>
+            3.9 INJ2报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2ColumnType">
+            <summary>
+            3.10 INJ2柱类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2Time">
+            <summary>
+            3.11 INJ2进样时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2Type">
+            <summary>
+            3.12 INJ2进样模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3InitialTem">
+            <summary>
+            3.13 INJ3初温
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3AlarmTem">
+            <summary>
+            3.14 INJ3报警温度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3ColumnType">
+            <summary>
+            3.15 INJ3柱类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3Time">
+            <summary>
+            3.16 INJ3进样时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommandMaker.getTime11111">
+            <summary>
+            3.17 INJ3进样模式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ChromatoBll.serialCom.CommandMaker.LinkGc">
+            <summary>
+            连接GC标志
+            </summary>
+        </member>
+        <member name="P:ChromatoBll.serialCom.CommandMaker.Instance">
+            <summary>
+            唯一实例
+            </summary>
+        </member>
+        <member name="T:ChromatoBll.serialCom.baseCommand">
+            <summary>
+            基础指令
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.head_1">
+            <summary>
+            数据包头1
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.head_2">
+            <summary>
+            数据包头2
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.baseCommand.length">
+            <summary>
+            数据包尺寸
+            </summary>
+        </member>
+        <member name="T:ChromatoBll.serialCom.addressCommand">
+            <summary>
+            类别指令
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.PC">
+            <summary>
+            PC地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.HeatControl">
+            <summary>
+            温控地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FID1">
+            <summary>
+            FID1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FID2">
+            <summary>
+            FID2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCD1">
+            <summary>
+            TCD1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCD2">
+            <summary>
+            TCD2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FLOW">
+            <summary>
+            FLOW地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.ControlBoard">
+            <summary>
+            控制板地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.RS232">
+            <summary>
+            RS232地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.NetworkBoard">
+            <summary>
+            网络板地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FIDShare">
+            <summary>
+            FID公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.TCDShare">
+            <summary>
+            TCD公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.COL">
+            <summary>
+            COL地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.AUX1">
+            <summary>
+            AUX1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.AUX2">
+            <summary>
+            AUX2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ1">
+            <summary>
+            INJ1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ2">
+            <summary>
+            INJ2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJ3">
+            <summary>
+            INJ3地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.INJShare">
+            <summary>
+            INJ公共地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FPD">
+            <summary>
+            FPD地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.ECD">
+            <summary>
+            ECD地址
+            </summary>
         </member>
     </members>
 </doc>

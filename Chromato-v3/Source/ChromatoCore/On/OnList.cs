@@ -786,7 +786,7 @@ namespace ChromatoCore.On
         {
             OnDownloadActionArgs eve = null;
 
-            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.ColumnPara);
+            eve = new OnDownloadActionArgs(this._dtoPara, AntiControlType.HeatingSource);
             this.DownloadClicked(this, eve);
         }
 

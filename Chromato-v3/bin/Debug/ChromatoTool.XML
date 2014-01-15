@@ -1316,11 +1316,6 @@
             校正方法
             </summary>
         </member>
-        <member name="T:ChromatoTool.dto.NetworkBoardDto">
-            <summary>
-            反控方法→网络板
-            </summary>
-        </member>
         <member name="T:ChromatoTool.pipe.NamedPipeNative">
             <summary>
             命名管道API封装类
@@ -1494,6 +1489,11 @@
         <member name="P:ChromatoTool.dto.TimeProcDto.TpValue">
             <summary>
             命令值
+            </summary>
+        </member>
+        <member name="T:ChromatoTool.dto.NetworkBoardDto">
+            <summary>
+            反控方法→网络板
             </summary>
         </member>
         <member name="T:ChromatoTool.dto.HeatingSourceDto">
@@ -4213,6 +4213,11 @@
         <member name="F:ChromatoTool.ini.StopSampleReason.ShutDown">
             <summary>
             关闭进程
+            </summary>
+        </member>
+        <member name="F:ChromatoTool.ini.StopSampleReason.IPChange">
+            <summary>
+            IP变化
             </summary>
         </member>
         <member name="T:ChromatoTool.ini.ChannelID">

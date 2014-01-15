@@ -744,6 +744,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\NetworkBoardUser.resx">
+      <DependentUpon>NetworkBoardUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="solu\sUi\ArithmaticUi.resx">
       <DependentUpon>ArithmaticUi.cs</DependentUpon>
       <SubType>Designer</SubType>

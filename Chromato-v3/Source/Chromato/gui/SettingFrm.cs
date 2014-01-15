@@ -9,9 +9,9 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using ChromatoTool.ini;
-using ChromatoCore.uiConf;
 using ChromatoCore.tabCtrl;
+using ChromatoCore.uiConf;
+using ChromatoTool.ini;
 
 
 

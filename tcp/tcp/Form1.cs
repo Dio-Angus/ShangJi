@@ -509,7 +509,6 @@ namespace tcp
         }
         #endregion
 
-
         #region 写控制
         private void btSetData_Click(object sender, EventArgs e)
         {
@@ -929,6 +928,8 @@ namespace tcp
             }
         }
         #endregion
+
+        #region 方法
 
         private void send(string s)
         {
@@ -1461,6 +1462,8 @@ namespace tcp
             }
             else return "0";  
         }
+
+        #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {

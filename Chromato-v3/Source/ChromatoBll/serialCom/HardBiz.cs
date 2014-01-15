@@ -395,7 +395,7 @@ namespace ChromatoBll.serialCom
                 case AntiControlType.Injecter3:
                     this.DownloadInj3(dtoAnti);
                     break;
-                case AntiControlType.ColumnPara:
+                case AntiControlType.HeatingSource:
                     this.DownloadColumn(dtoAnti);
                     break;
             }
@@ -498,7 +498,7 @@ namespace ChromatoBll.serialCom
         private void DownloadColumn(AntiControlDto dtoAnti)
         {
             StringBuilder para = null;
-            para = this.GetColumnPara(dtoAnti);
+            para = this.GetHeatingSource(dtoAnti);
         }
 
         /// <summary>
@@ -678,11 +678,11 @@ namespace ChromatoBll.serialCom
         }
 
         /// <summary>
-        /// 取得柱箱参数
+        /// 取得加热源参数
         /// </summary>
         /// <param name="dto"></param>
         /// <returns></returns>
-        private StringBuilder GetColumnPara(AntiControlDto dto)
+        private StringBuilder GetHeatingSource(AntiControlDto dto)
         {
             StringBuilder para = new StringBuilder();
             //初温

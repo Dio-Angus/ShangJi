@@ -1341,7 +1341,8 @@ namespace ChromatoTool.ini
         Injecter1 = 5,
         Injecter2 = 6,
         Injecter3 = 7,
-        ColumnPara = 8
+        HeatingSource = 8,
+
 
     }
 
@@ -1518,6 +1519,11 @@ namespace ChromatoTool.ini
         /// </summary>
         [EnumDescription("关闭进程")]
         ShutDown = 1,
+        /// <summary>
+        /// IP变化
+        /// </summary>
+        [EnumDescription("关闭进程")]
+        IPChange = 2,   
     }
 
     /// <summary>

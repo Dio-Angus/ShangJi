@@ -835,3 +835,4 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCo
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.HeatingSourceUser.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.NetworkBoardUser.resources

@@ -241,8 +241,8 @@ namespace ChromatoBll.serialCom
                     _sictPort.DataBits = Port.DataBits;
                     _sictPort.StopBits = Port.StopBits;
                     _sictPort.Handshake = Port.Handshake;
-                    _sictPort.ReadTimeout = SerialOption.TimerInterval;
-                    _sictPort.WriteTimeout = SerialOption.TimerInterval;
+                    ns.ReadTimeout = SerialOption.TimerInterval;
+                    ns.WriteTimeout = SerialOption.TimerInterval;
 
                     client = new TcpClient(Port.Ip, Port.PortNum);
                     ns = client.GetStream();
@@ -262,11 +262,12 @@ namespace ChromatoBll.serialCom
         /// </summary>
         public void Close()
         {
+            if (Port.tag == 0)
+                //关闭串口
+                _sictPort.Close();
 
-            //关闭串口
-            _sictPort.Close();
 
-            CastLog.Logger("CommPort", "Close", "serial port closed");
+            CastLog.Logger("CommPort/Ip", "Close", "serial port closed");
 
             //清空缓存
             //this._sictRead.Remove(0, this._sictRead.Length);
@@ -280,7 +281,7 @@ namespace ChromatoBll.serialCom
         {
             get
             {
-                return _sictPort.IsOpen;
+                return _sictPort.IsOpen || ns.DataAvailable;
             }
         }
 
@@ -299,7 +300,7 @@ namespace ChromatoBll.serialCom
 
             CastLog.bHasList = false;
             int count = 0;
-            CastLog.Logger("CommPort", "CloseLoop", String.Format("count={0}", count++));
+            CastLog.Logger("CommPort/Ip", "CloseLoop", String.Format("count={0}", count++));
 
             switch (General.ObjectLink)
             {
@@ -319,12 +320,12 @@ namespace ChromatoBll.serialCom
                     {
                         this._isRunLoop = false;
                         Thread.Sleep(20);
-                        CastLog.Logger("CommPort", "CloseLoop", String.Format("set _isRunLoop = false, time={0}", count++));
+                        CastLog.Logger("CommPort/Ip", "CloseLoop", String.Format("set _isRunLoop = false, time={0}", count++));
                     }
 
                     if (null != _processThread)
                     {
-                        CastLog.Logger("CommPort", "CloseLoop", _processThread.Name + " Join");
+                        CastLog.Logger("CommPort/Ip", "CloseLoop", _processThread.Name + " Join");
                         _processThread.Join();	//block until exits
                         _processThread = null;
                     }
