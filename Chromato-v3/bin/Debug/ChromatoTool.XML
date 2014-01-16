@@ -1070,7 +1070,7 @@
             反控方法名
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.AntiControlDto.dtoNetworkBorad">
+        <member name="P:ChromatoTool.dto.AntiControlDto.dtoNetworkBoard">
             <summary>
             网络板参数
             </summary>
@@ -1098,6 +1098,16 @@
         <member name="P:ChromatoTool.dto.AntiControlDto.dtoFid">
             <summary>
             氢离子检测器参数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AntiControlDto.dtoEcd">
+            <summary>
+            Ecd检测器
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.AntiControlDto.dtoFpd">
+            <summary>
+            Fpd检测器
             </summary>
         </member>
         <member name="T:ChromatoTool.dto.CompareDto">
@@ -1496,9 +1506,119 @@
             反控方法→网络板
             </summary>
         </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.GateIP">
+            <summary>
+            网关IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.SourceIP">
+            <summary>
+            源IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.MAC">
+            <summary>
+            本机物理地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Mask">
+            <summary>
+            子网掩码
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket0Address">
+            <summary>
+            Socket0端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket0AimIP">
+            <summary>
+            Socket0目的IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket0AimAddress">
+            <summary>
+            Socket0目的端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket0WorkMode">
+            <summary>
+            Socket0工作模式
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket1Address">
+            <summary>
+            Socket1端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket1AimIP">
+            <summary>
+            Socket1目的IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket1AimAddress">
+            <summary>
+            Socket1目的端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket1WorkMode">
+            <summary>
+            Socket1工作模式
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket2Address">
+            <summary>
+            Socket2端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket2AimIP">
+            <summary>
+            Socket2目的IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket2AimAddress">
+            <summary>
+            Socket2目的端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket2WorkMode">
+            <summary>
+            Socket2工作模式
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket3Address">
+            <summary>
+            Socket3端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket3AimIP">
+            <summary>
+            Socket3目的IP地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket3AimAddress">
+            <summary>
+            Socket3目的端口地址
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.NetworkBoardDto.Socket3WorkMode">
+            <summary>
+            Socket3工作模式
+            </summary>
+        </member>
         <member name="T:ChromatoTool.dto.HeatingSourceDto">
             <summary>
             反控方法->柱箱表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.HeatingState">
+            <summary>
+            加热状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.EnablingState">
+            <summary>
+            加热使能状态
             </summary>
         </member>
         <member name="P:ChromatoTool.dto.HeatingSourceDto.BalanceTime">

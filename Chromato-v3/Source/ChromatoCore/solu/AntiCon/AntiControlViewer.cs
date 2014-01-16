@@ -13,6 +13,7 @@ using ChromatoTool.ini;
 using System.Drawing;
 using ChromatoBll.bll;
 using System;
+using System.Text;
 
 namespace ChromatoCore.solu.AntiCon
 {
@@ -53,7 +54,7 @@ namespace ChromatoCore.solu.AntiCon
         /// <summary>
         /// 进样口参数
         /// </summary>
-        private InjectUser _viewSampleEntry = null;
+        private InjectUser _viewInject = null;
 
         /// <summary>
         /// Tcd参数
@@ -90,6 +91,8 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private AntiControlDto _dtoAntiControl = null;
 
+        private ChromatoBll.serialCom.CommandMaker _makeCommand = new ChromatoBll.serialCom.CommandMaker();
+
 
         #endregion
 
@@ -119,7 +122,7 @@ namespace ChromatoCore.solu.AntiCon
         {
             this._viewNetworkBoard = new NetworkBoardUser(this._dtoAntiControl);
             this._viewHeatingSource = new HeatingSourceUser(this._dtoAntiControl);
-            this._viewSampleEntry = new InjectUser(this._dtoAntiControl);
+            this._viewInject = new InjectUser(this._dtoAntiControl);
             this._viewTcd = new TcdUser(this._dtoAntiControl);
             this._viewFid = new FidUser(this._dtoAntiControl);
             this._viewAux = new AuxUser(this._dtoAntiControl);
@@ -128,7 +131,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this.Controls.Add(this._viewNetworkBoard);
             this.Controls.Add(this._viewHeatingSource);
-            this.Controls.Add(this._viewSampleEntry);
+            this.Controls.Add(this._viewInject);
             this.Controls.Add(this._viewTcd);
             this.Controls.Add(this._viewFid);
             this.Controls.Add(this._viewAux);
@@ -175,8 +178,8 @@ namespace ChromatoCore.solu.AntiCon
             rnHeatingSource.Text = AntiControl.HeatingSource;
             rnHeatingSource.Name = AntiControl.HeatingSource;
 
-            rnSampleEntry.Text = AntiControl.SampleEntry;
-            rnSampleEntry.Name = AntiControl.SampleEntry;
+            rnSampleEntry.Text = AntiControl.Inject;
+            rnSampleEntry.Name = AntiControl.Inject;
 
             rnTcd.Text = AntiControl.Tcd;
             rnTcd.Name = AntiControl.Tcd;
@@ -224,7 +227,7 @@ namespace ChromatoCore.solu.AntiCon
             Point pt = new Point(100, 10);
             this._viewNetworkBoard.Location = pt;
             this._viewHeatingSource.Location = pt;
-            this._viewSampleEntry.Location = pt;
+            this._viewInject.Location = pt;
             this._viewTcd.Location = pt;
             this._viewFid.Location = pt;
             this._viewAux.Location = pt;
@@ -234,7 +237,7 @@ namespace ChromatoCore.solu.AntiCon
             Size sz = new Size(460, 240);
             this._viewNetworkBoard.Size = sz;
             this._viewHeatingSource.Size = sz;
-            this._viewSampleEntry.Size = sz;
+            this._viewInject.Size = sz;
             this._viewTcd.Size = sz;
             this._viewFid.Size = sz;
             this._viewAux.Size = sz;
@@ -243,7 +246,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this._viewNetworkBoard.BringToFront();
             this._viewHeatingSource.BringToFront();
-            this._viewSampleEntry.BringToFront();
+            this._viewInject.BringToFront();
             this._viewTcd.BringToFront();
             this._viewFid.BringToFront();
             this._viewAux.BringToFront();
@@ -258,7 +261,7 @@ namespace ChromatoCore.solu.AntiCon
         {
             this._viewNetworkBoard.Visible = false;
             this._viewHeatingSource.Visible = false;
-            this._viewSampleEntry.Visible = false;
+            this._viewInject.Visible = false;
             this._viewTcd.Visible = false;
             this._viewFid.Visible = false;
             this._viewAux.Visible = false;
@@ -289,7 +292,7 @@ namespace ChromatoCore.solu.AntiCon
                 case AntiControl.NetworkBoard:
                     break;
                 // LineIn
-                case AntiControl.SampleEntry:
+                case AntiControl.Inject:
                     break;
              }
 
@@ -326,8 +329,8 @@ namespace ChromatoCore.solu.AntiCon
                     this._viewHeatingSource.Visible = true;
                     break;
 
-                case AntiControl.SampleEntry:
-                    this._viewSampleEntry.Visible = true;
+                case AntiControl.Inject:
+                    this._viewInject.Visible = true;
                     break;
 
                 case AntiControl.Tcd:
@@ -440,7 +443,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this._viewNetworkBoard.LoadView(antiControlID);
             this._viewHeatingSource.LoadView(antiControlID);
-            this._viewSampleEntry.LoadView(antiControlID);
+            this._viewInject.LoadView(antiControlID);
             this._viewAux.LoadView(antiControlID);
             this._viewFid.LoadView(antiControlID);
             this._viewTcd.LoadView(antiControlID);
@@ -471,7 +474,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this._viewNetworkBoard.LoadNew();
             this._viewHeatingSource.LoadNew();
-            this._viewSampleEntry.LoadNew();
+            this._viewInject.LoadNew();
             this._viewAux.LoadNew();
             this._viewFid.LoadNew();
             this._viewTcd.LoadNew();
@@ -495,7 +498,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this._viewNetworkBoard.LoadEdit();
             this._viewHeatingSource.LoadEdit();
-            this._viewSampleEntry.LoadEdit();
+            this._viewInject.LoadEdit();
             this._viewAux.LoadEdit();
             this._viewFid.LoadEdit();
             this._viewTcd.LoadEdit();
@@ -519,7 +522,7 @@ namespace ChromatoCore.solu.AntiCon
 
             this._viewNetworkBoard.LoadSaveAs();
             this._viewHeatingSource.LoadSaveAs();
-            this._viewSampleEntry.LoadSaveAs();
+            this._viewInject.LoadSaveAs();
             this._viewAux.LoadSaveAs();
             this._viewFid.LoadSaveAs();
             this._viewTcd.LoadSaveAs();
@@ -569,7 +572,129 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.AntiControlName = this.txtAntiControlName.Text;
         }
 
-        #endregion
+        /// <summary>
+        /// 写入反控数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btWrite_Click(object sender, EventArgs e)
+        {
+            String para = null;
+            switch (this.tvAntiControl.SelectedNode.Name)
+            {
+                case AntiControl.NetworkBoard:
+                    para = _makeCommand.setAllNetworkData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewNetworkBoard.LoadSaveAs();
+                    break;
+                case AntiControl.HeatingSource:
+                    para = _makeCommand.setAllCOLData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewHeatingSource.LoadSaveAs();
+                    break;
+                case AntiControl.Inject:
+                    para = _makeCommand.setAllINJData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewInject.LoadSaveAs();
+                    break;
+                case AntiControl.Aux:
+                    para = _makeCommand.setAUXAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewAux.LoadSaveAs();
+                    break;
+                case AntiControl.Fid:
+                    para = _makeCommand.setFIDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewFid.LoadSaveAs();
+                    break;
+                case AntiControl.Tcd:
+                    para = _makeCommand.setTCDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewTcd.LoadSaveAs();
+                    break;
+                case AntiControl.Ecd:
+                    para = _makeCommand.setECDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewEcd.LoadSaveAs();
+                    break;
+                case AntiControl.Fpd:
+                    para = _makeCommand.setFPDZero();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewFpd.LoadSaveAs();
+                    break;
+            }
+        }
 
+        /// <summary>
+        /// 刷新反控信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btRefresh_Click(object sender, EventArgs e)
+        {
+            String para = null;
+            switch (this.tvAntiControl.SelectedNode.Name)
+            {
+                case AntiControl.NetworkBoard:
+                    para = _makeCommand.getAllNetworkData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewNetworkBoard.LoadSaveAs();
+                    break;
+                case AntiControl.HeatingSource:
+                    para = _makeCommand.getAllCOLData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewHeatingSource.LoadSaveAs();
+                    break;
+                case AntiControl.Inject:
+                    para = _makeCommand.getAllINJData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewInject.LoadSaveAs();
+                    break;
+                case AntiControl.Aux:
+                    para = _makeCommand.getAUXAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewAux.LoadSaveAs();
+                    break;
+                case AntiControl.Fid:
+                    para = _makeCommand.getFIDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewFid.LoadSaveAs();
+                    break;
+                case AntiControl.Tcd:
+                    para = _makeCommand.getTCDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewTcd.LoadSaveAs();
+                    break;
+                case AntiControl.Ecd:
+                    para = _makeCommand.getECDAllData();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewEcd.LoadSaveAs();
+                    break;
+                case AntiControl.Fpd:
+                    para = _makeCommand.setFPDZero();
+                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                    System.Threading.Thread.Sleep(1000);  //1秒
+                    this._viewFpd.LoadSaveAs();
+                    break;
+
+            }
+        }
+
+        #endregion
     }
 }

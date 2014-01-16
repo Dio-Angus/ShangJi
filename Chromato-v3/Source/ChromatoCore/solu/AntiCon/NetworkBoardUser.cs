@@ -25,7 +25,6 @@ namespace ChromatoCore.solu.AntiCon
         {
             InitializeComponent();
             this._dtoAntiControl = dto;
-            //this.LoadEvent();
         }
 
         #region 方法
@@ -39,42 +38,42 @@ namespace ChromatoCore.solu.AntiCon
             //this.LoadControlStyle(true);
         }
 
-        /*// <summary>
-        /// 查看或者复制
+        // <summary>
+        /// 从缓冲区导入
         /// </summary>
         private void LoadViewOrSaveAs()
         {
-            if (null == this._dtoAntiControl.dtoColumnPara)
+            if (null == this._dtoAntiControl.dtoNetworkBoard)
             {
                 return;
             }
-            this.txtBalanceTime.Text = this._dtoAntiControl.dtoColumnPara.BalanceTime.ToString();
-            this.txtInitTemp.Text = this._dtoAntiControl.dtoColumnPara.InitTemp.ToString();
-            this.txtMaintainTime.Text = this._dtoAntiControl.dtoColumnPara.MaintainTime.ToString();
-            this.txtAlertTemp.Text = this._dtoAntiControl.dtoColumnPara.AlertTemp.ToString();
-            this.txtColumnCount.Text = this._dtoAntiControl.dtoColumnPara.ColumnCount.ToString();
+            this.tbGateIP.Text = this._dtoAntiControl.dtoNetworkBoard.GateIP;
+            this.tbSourceIP.Text = this._dtoAntiControl.dtoNetworkBoard.SourceIP;
+            this.tbMAC.Text = this._dtoAntiControl.dtoNetworkBoard.MAC;
+            this.tbMask.Text = this._dtoAntiControl.dtoNetworkBoard.Mask;
 
-            this.txtRateCol1.Text = this._dtoAntiControl.dtoColumnPara.RateCol1.ToString();
-            this.txtRateCol2.Text = this._dtoAntiControl.dtoColumnPara.RateCol2.ToString();
-            this.txtRateCol3.Text = this._dtoAntiControl.dtoColumnPara.RateCol3.ToString();
-            this.txtRateCol4.Text = this._dtoAntiControl.dtoColumnPara.RateCol4.ToString();
-            this.txtRateCol5.Text = this._dtoAntiControl.dtoColumnPara.RateCol5.ToString();
+            this.tbSocket0Address.Text = this._dtoAntiControl.dtoNetworkBoard.Socket0Address;
+            this.tbSocket0AimIP.Text = this._dtoAntiControl.dtoNetworkBoard.Socket0AimIP;
+            this.tbSocket0AimAddress.Text = this._dtoAntiControl.dtoNetworkBoard.Socket0AimAddress;
+            this.cbSocket0WorkMode.SelectedIndex = Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket0WorkMode);
 
-            this.txtTempCol1.Text = this._dtoAntiControl.dtoColumnPara.TempCol1.ToString();
-            this.txtTempCol2.Text = this._dtoAntiControl.dtoColumnPara.TempCol2.ToString();
-            this.txtTempCol3.Text = this._dtoAntiControl.dtoColumnPara.TempCol3.ToString();
-            this.txtTempCol4.Text = this._dtoAntiControl.dtoColumnPara.TempCol4.ToString();
-            this.txtTempCol5.Text = this._dtoAntiControl.dtoColumnPara.TempCol5.ToString();
+            this.tbSocket1Address.Text = this._dtoAntiControl.dtoNetworkBoard.Socket1Address;
+            this.tbSocket1AimIP.Text = this._dtoAntiControl.dtoNetworkBoard.Socket1AimIP;
+            this.tbSocket1AimAddress.Text = this._dtoAntiControl.dtoNetworkBoard.Socket1AimAddress;
+            this.cbSocket1WorkMode.SelectedIndex = Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket1WorkMode);
 
-            this.txtTempTimeCol1.Text = this._dtoAntiControl.dtoColumnPara.TempTimeCol1.ToString();
-            this.txtTempTimeCol2.Text = this._dtoAntiControl.dtoColumnPara.TempTimeCol2.ToString();
-            this.txtTempTimeCol3.Text = this._dtoAntiControl.dtoColumnPara.TempTimeCol3.ToString();
-            this.txtTempTimeCol4.Text = this._dtoAntiControl.dtoColumnPara.TempTimeCol4.ToString();
-            this.txtTempTimeCol5.Text = this._dtoAntiControl.dtoColumnPara.TempTimeCol5.ToString();
+            this.tbSocket2Address.Text = this._dtoAntiControl.dtoNetworkBoard.Socket2Address;
+            this.tbSocket2AimIP.Text = this._dtoAntiControl.dtoNetworkBoard.Socket2AimIP;
+            this.tbSocket2AimAddress.Text = this._dtoAntiControl.dtoNetworkBoard.Socket2AimAddress;
+            this.cbSocket2WorkMode.SelectedIndex = Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket2WorkMode);
 
+            this.tbSocket3Address.Text = this._dtoAntiControl.dtoNetworkBoard.Socket3Address;
+            this.tbSocket3AimIP.Text = this._dtoAntiControl.dtoNetworkBoard.Socket3AimIP;
+            this.tbSocket3AimAddress.Text = this._dtoAntiControl.dtoNetworkBoard.Socket3AimAddress;
+            this.cbSocket3WorkMode.SelectedIndex = Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket3WorkMode);
         }
 
-        /// <summary>
+       /* /// <summary>
         /// 装载控件的风格
         /// </summary>
         /// <param name="isReadOnly"></param>
@@ -127,78 +126,49 @@ namespace ChromatoCore.solu.AntiCon
             this.txtTempTimeCol3.BackColor = isReadOnly ? Color.Beige : Color.White;
             this.txtTempTimeCol4.BackColor = isReadOnly ? Color.Beige : Color.White;
             this.txtTempTimeCol5.BackColor = isReadOnly ? Color.Beige : Color.White;
-        }
+        }*/
 
         /// <summary>
-        /// 新建立反控的信息
+        /// 导入缺省数据到缓冲区
         /// </summary>
         public void LoadNew()
         {
-
-            this.LoadControlStyle(false);
-
-
-            if (null == this._dtoAntiControl.dtoColumnPara)
+            if (null == this._dtoAntiControl.dtoNetworkBoard)
             {
-                this._dtoAntiControl.dtoColumnPara = new ColumnParaDto();
+                this._dtoAntiControl.dtoNetworkBoard = new NetworkBoardDto();
             }
-            this._dtoAntiControl.dtoColumnPara.BalanceTime = DefaultColumnPara.BalanceTime;
-            this._dtoAntiControl.dtoColumnPara.InitTemp = DefaultColumnPara.InitTemp;
-            this._dtoAntiControl.dtoColumnPara.MaintainTime = DefaultColumnPara.MaintainTime;
-            this._dtoAntiControl.dtoColumnPara.AlertTemp = DefaultColumnPara.AlertTemp;
-            this._dtoAntiControl.dtoColumnPara.ColumnCount = DefaultColumnPara.ColumnCount;
+            this._dtoAntiControl.dtoNetworkBoard.GateIP=DefaultNetworkBoard.GateIP;
+            this._dtoAntiControl.dtoNetworkBoard.SourceIP=DefaultNetworkBoard.SourceIP;
+            this._dtoAntiControl.dtoNetworkBoard.MAC=DefaultNetworkBoard.MAC;
+            this._dtoAntiControl.dtoNetworkBoard.Mask=DefaultNetworkBoard.Mask;
 
-            this._dtoAntiControl.dtoColumnPara.RateCol1 = DefaultColumnPara.RateCol1;
-            this._dtoAntiControl.dtoColumnPara.RateCol2 = DefaultColumnPara.RateCol2;
-            this._dtoAntiControl.dtoColumnPara.RateCol3 = DefaultColumnPara.RateCol3;
-            this._dtoAntiControl.dtoColumnPara.RateCol4 = DefaultColumnPara.RateCol4;
-            this._dtoAntiControl.dtoColumnPara.RateCol5 = DefaultColumnPara.RateCol5;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0Address=DefaultNetworkBoard.Socket0Address;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimIP=DefaultNetworkBoard.Socket0AimIP;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimAddress=DefaultNetworkBoard.Socket0AimAddress;
+            Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket0WorkMode);
 
-            this._dtoAntiControl.dtoColumnPara.TempCol1 = DefaultColumnPara.TempCol1;
-            this._dtoAntiControl.dtoColumnPara.TempCol2 = DefaultColumnPara.TempCol2;
-            this._dtoAntiControl.dtoColumnPara.TempCol3 = DefaultColumnPara.TempCol3;
-            this._dtoAntiControl.dtoColumnPara.TempCol4 = DefaultColumnPara.TempCol4;
-            this._dtoAntiControl.dtoColumnPara.TempCol5 = DefaultColumnPara.TempCol5;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1Address = DefaultNetworkBoard.Socket1Address;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimIP = DefaultNetworkBoard.Socket1AimIP;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimAddress = DefaultNetworkBoard.Socket1AimAddress;
+            Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket1WorkMode);
 
-            this._dtoAntiControl.dtoColumnPara.TempTimeCol1 = DefaultColumnPara.TempTimeCol1;
-            this._dtoAntiControl.dtoColumnPara.TempTimeCol2 = DefaultColumnPara.TempTimeCol2;
-            this._dtoAntiControl.dtoColumnPara.TempTimeCol3 = DefaultColumnPara.TempTimeCol3;
-            this._dtoAntiControl.dtoColumnPara.TempTimeCol4 = DefaultColumnPara.TempTimeCol4;
-            this._dtoAntiControl.dtoColumnPara.TempTimeCol5 = DefaultColumnPara.TempTimeCol5;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2Address = DefaultNetworkBoard.Socket2Address;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimIP = DefaultNetworkBoard.Socket2AimIP;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimAddress = DefaultNetworkBoard.Socket2AimAddress;
+            Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket2WorkMode);
 
-            this.txtBalanceTime.Text = DefaultColumnPara.BalanceTime.ToString();
-            this.txtInitTemp.Text = DefaultColumnPara.InitTemp.ToString();
-            this.txtMaintainTime.Text = DefaultColumnPara.MaintainTime.ToString();
-            this.txtAlertTemp.Text = DefaultColumnPara.AlertTemp.ToString();
-            this.txtColumnCount.Text = DefaultColumnPara.ColumnCount.ToString();
-
-            this.txtRateCol1.Text = DefaultColumnPara.RateCol1.ToString();
-            this.txtRateCol2.Text = DefaultColumnPara.RateCol2.ToString();
-            this.txtRateCol3.Text = DefaultColumnPara.RateCol3.ToString();
-            this.txtRateCol4.Text = DefaultColumnPara.RateCol4.ToString();
-            this.txtRateCol5.Text = DefaultColumnPara.RateCol5.ToString();
-
-            this.txtTempCol1.Text = DefaultColumnPara.TempCol1.ToString();
-            this.txtTempCol2.Text = DefaultColumnPara.TempCol2.ToString();
-            this.txtTempCol3.Text = DefaultColumnPara.TempCol3.ToString();
-            this.txtTempCol4.Text = DefaultColumnPara.TempCol4.ToString();
-            this.txtTempCol5.Text = DefaultColumnPara.TempCol5.ToString();
-
-            this.txtTempTimeCol1.Text = DefaultColumnPara.TempTimeCol1.ToString();
-            this.txtTempTimeCol2.Text = DefaultColumnPara.TempTimeCol2.ToString();
-            this.txtTempTimeCol3.Text = DefaultColumnPara.TempTimeCol3.ToString();
-            this.txtTempTimeCol4.Text = DefaultColumnPara.TempTimeCol4.ToString();
-            this.txtTempTimeCol5.Text = DefaultColumnPara.TempTimeCol5.ToString();
-        }*/
-        public void LoadNew()
-        { }
+            this._dtoAntiControl.dtoNetworkBoard.Socket3Address = DefaultNetworkBoard.Socket3Address;
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimIP = DefaultNetworkBoard.Socket3AimIP;
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimAddress = DefaultNetworkBoard.Socket3AimAddress;
+            Convert.ToInt32(this._dtoAntiControl.dtoNetworkBoard.Socket3WorkMode);
+        }
 
         /// <summary>
         /// 编辑当前反控的信息
         /// </summary>
         public void LoadEdit()
         {
-           // this.LoadViewOrSaveAs();
+            this.LoadViewOrSaveAs();
             //this.LoadControlStyle(false);
         }
 
@@ -207,8 +177,395 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         public void LoadSaveAs()
         {
-          //  this.LoadViewOrSaveAs();
+            this.LoadViewOrSaveAs();
             //this.LoadControlStyle(true);
+        }
+
+        /// <summary>
+        /// 导出到缓冲区
+        /// </summary>
+        public void Export()
+        {
+            this._dtoAntiControl.dtoNetworkBoard.GateIP = this.tbGateIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.SourceIP = this.tbSourceIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.MAC = this.tbMAC.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Mask = this.tbMask.Text;
+
+            this._dtoAntiControl.dtoNetworkBoard.Socket0Address = this.tbSocket0Address.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimIP = this.tbSocket0AimIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimAddress = this.tbSocket0AimAddress.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket0WorkMode = this.cbSocket0WorkMode.SelectedIndex;
+
+            this._dtoAntiControl.dtoNetworkBoard.Socket1Address = this.tbSocket1Address.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimIP = this.tbSocket1AimIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimAddress = this.tbSocket1AimAddress.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket1WorkMode = this.cbSocket1WorkMode.SelectedIndex;
+
+            this._dtoAntiControl.dtoNetworkBoard.Socket2Address = this.tbSocket2Address.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimIP = this.tbSocket2AimIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimAddress = this.tbSocket2AimAddress.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket2WorkMode = this.cbSocket2WorkMode.SelectedIndex;
+
+            this._dtoAntiControl.dtoNetworkBoard.Socket3Address = this.tbSocket3Address.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimIP = this.tbSocket3AimIP.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimAddress = this.tbSocket3AimAddress.Text;
+            this._dtoAntiControl.dtoNetworkBoard.Socket3WorkMode = this.cbSocket3WorkMode.SelectedIndex;
+        }
+
+        #endregion
+
+        #region 合法性检测，存入Dto中转
+
+        /// <summary>
+        /// GateIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbGateIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbGateIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbGateIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbGateIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbGateIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.GateIP = this.tbGateIP.Text;
+        }
+
+        /// <summary>
+        /// SourceIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSourceIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSourceIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSourceIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSourceIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSourceIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.SourceIP = this.tbSourceIP.Text;
+        }
+
+        /// <summary>
+        /// MAC合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbMAC_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbMAC.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbMAC.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbMAC.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbMAC.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.MAC = this.tbMAC.Text;
+        }
+
+        /// <summary>
+        /// Mask合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbMask_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbMask.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbMask.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbMask.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbMask.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Mask = this.tbMask.Text;
+        }
+
+        /// <summary>
+        /// Socket0Address合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket0Address_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket0Address.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket0Address.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket0Address.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket0Address.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket0Address = this.tbSocket0Address.Text;
+        }
+
+        /// <summary>
+        /// Socket0AimIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket0AimIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket0AimIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket0AimIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket0AimIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket0AimIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimIP = this.tbSocket0AimIP.Text;
+        }
+
+        /// <summary>
+        /// Socket0AimAddress合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket0AimAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket0AimAddress.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket0AimAddress.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket0AimAddress.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket0AimAddress.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket0AimAddress = this.tbSocket0AimAddress.Text;
+        }
+
+        /// <summary>
+        /// Socket1Address合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket1Address_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket1Address.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket1Address.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket1Address.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket1Address.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket1Address = this.tbSocket1Address.Text;
+        }
+
+        /// <summary>
+        /// Socket1AimIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket1AimIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket1AimIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket1AimIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket1AimIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket1AimIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimIP = this.tbSocket1AimIP.Text;
+        }
+
+        /// <summary>
+        /// Socket1AimAddress合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket1AimAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket1AimAddress.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket1AimAddress.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket1AimAddress.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket1AimAddress.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket1AimAddress = this.tbSocket1AimAddress.Text;
+        }
+
+        /// <summary>
+        /// Socket2Address合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket2Address_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket2Address.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket2Address.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket2Address.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket2Address.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket2Address = this.tbSocket2Address.Text;
+        }
+
+        /// <summary>
+        /// Socket2AimIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket2AimIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket2AimIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket2AimIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket2AimIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket2AimIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimIP = this.tbSocket2AimIP.Text;
+        }
+
+        /// <summary>
+        /// Socket2AimAddress合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket2AimAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket2AimAddress.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket2AimAddress.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket2AimAddress.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket2AimAddress.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket2AimAddress = this.tbSocket2AimAddress.Text;
+        }
+
+        /// <summary>
+        /// Socket3Address合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket3Address_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket3Address.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket3Address.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket3Address.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket3Address.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket3Address = this.tbSocket3Address.Text;
+        }
+
+        /// <summary>
+        /// Socket3AimIP合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket3AimIP_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket3AimIP.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket3AimIP.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket3AimIP.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket3AimIP.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimIP = this.tbSocket3AimIP.Text;
+        }
+
+        /// <summary>
+        /// Socket3AimAddress合法性检测
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbSocket3AimAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbSocket3AimAddress.Text))
+            {
+                MessageBox.Show("输入不能为空！");
+                this.tbSocket3AimAddress.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.tbSocket3AimAddress.Text))
+            {
+                MessageBox.Show("输入不是数值！");
+                this.tbSocket3AimAddress.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoNetworkBoard.Socket3AimAddress = this.tbSocket3AimAddress.Text;
         }
 
         #endregion

@@ -24,86 +24,86 @@ namespace ChromatoTool.dto
         /// <summary>
         /// 网关IP地址
         /// </summary>
-        public static String GateIP;
+        public  String GateIP{ get; set; }
         /// <summary>
         /// 源IP地址
         /// </summary>
-        public static String SourceIP;
+        public  String SourceIP{ get; set; }
         /// <summary>
         /// 本机物理地址
         /// </summary>
-        public static String MAC;
+        public  String MAC{ get; set; }
         /// <summary>
         /// 子网掩码
         /// </summary>
-        public static String Mask;
+        public  String Mask{ get; set; }
 
         /// <summary>
         /// Socket0端口地址
         /// </summary>
-        public static String Socket0Address;
+        public  String Socket0Address{ get; set; }
         /// <summary>
         /// Socket0目的IP地址
         /// </summary>
-        public static String Socket0AimIP;
+        public  String Socket0AimIP{ get; set; }
         /// <summary>
         /// Socket0目的端口地址
         /// </summary>
-        public static String Socket0AimAddress;
+        public  String Socket0AimAddress{ get; set; }
         /// <summary>
         /// Socket0工作模式
         /// </summary>
-        public static Single Socket0WorkMode;
+        public  Single Socket0WorkMode{ get; set; }
 
         /// <summary>
         /// Socket1端口地址
         /// </summary>
-        public static String Socket1Address;
+        public  String Socket1Address{ get; set; }
         /// <summary>
         /// Socket1目的IP地址
         /// </summary>
-        public static String Socket1AimIP;
+        public  String Socket1AimIP{ get; set; }
         /// <summary>
         /// Socket1目的端口地址
         /// </summary>
-        public static String Socket1AimAddress;
+        public  String Socket1AimAddress{ get; set; }
         /// <summary>
         /// Socket1工作模式
         /// </summary>
-        public static Single Socket1WorkMode;
+        public  Single Socket1WorkMode{ get; set; }
         
         /// <summary>
         /// Socket2端口地址
         /// </summary>
-        public static String Socket2Address;
+        public  String Socket2Address{ get; set; }
         /// <summary>
         /// Socket2目的IP地址
         /// </summary>
-        public static String Socket2AimIP;
+        public  String Socket2AimIP{ get; set; }
         /// <summary>
         /// Socket2目的端口地址
         /// </summary>
-        public static String Socket2AimAddress;
+        public  String Socket2AimAddress{ get; set; }
         /// <summary>
         /// Socket2工作模式
         /// </summary>
-        public static Single Socket2WorkMode;
+        public  Single Socket2WorkMode{ get; set; }
 
         /// <summary>
         /// Socket3端口地址
         /// </summary>
-        public static String Socket3Address;
+        public  String Socket3Address{ get; set; }
         /// <summary>
         /// Socket3目的IP地址
         /// </summary>
-        public static String Socket3AimIP;
+        public  String Socket3AimIP{ get; set; }
         /// <summary>
         /// Socket3目的端口地址
         /// </summary>
-        public static String Socket3AimAddress;
+        public  String Socket3AimAddress{ get; set; }
         /// <summary>
         /// Socket3工作模式
         /// </summary>
-        public static Single Socket3WorkMode;
+        public  Single Socket3WorkMode{ get; set; }
     }
 }

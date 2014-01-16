@@ -29,7 +29,7 @@ namespace ChromatoTool.dto
         /// <summary>
         /// 网络板参数
         /// </summary>
-        public NetworkBoardDto dtoNetworkBorad { get; set; }
+        public NetworkBoardDto dtoNetworkBoard { get; set; }
         
         /// <summary>
         /// 加热源参数
@@ -55,6 +55,16 @@ namespace ChromatoTool.dto
         /// 氢离子检测器参数
         /// </summary>
         public FidDto dtoFid { get; set; }
+
+        /// <summary>
+        /// Ecd检测器
+        /// </summary>
+        public EcdDto dtoEcd { get; set; }
+
+        /// <summary>
+        /// Fpd检测器
+        /// </summary>
+        public FpdDto dtoFpd { get; set; }
 
     }
 }

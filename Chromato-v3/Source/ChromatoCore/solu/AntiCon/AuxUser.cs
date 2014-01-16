@@ -67,7 +67,7 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadView(int antiControlID)
         {
             this.LoadViewOrSaveAs();
-            this.LoadControlStyle(true);
+            //this.LoadControlStyle(true);
         }
 
         /// <summary>

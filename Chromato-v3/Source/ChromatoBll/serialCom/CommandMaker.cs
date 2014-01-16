@@ -15,7 +15,7 @@ using ChromatoTool.util;
 
 namespace ChromatoBll.serialCom
 {
-    class CommandMaker
+    public class CommandMaker
     {
         #region 变量
 

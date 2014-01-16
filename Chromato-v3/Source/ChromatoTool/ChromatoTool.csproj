@@ -88,6 +88,8 @@
     <Compile Include="dto\AvgPointDto.cs" />
     <Compile Include="dto\CalibrateDto.cs" />
     <Compile Include="dto\CollectionDto.cs" />
+    <Compile Include="dto\EcdDto.cs" />
+    <Compile Include="dto\FpdDto.cs" />
     <Compile Include="dto\HeatingSourceDto.cs" />
     <Compile Include="dto\CompareDto.cs" />
     <Compile Include="dto\FidDto.cs" />

@@ -42,6 +42,7 @@ namespace ChromatoCore.solu.AntiCon
             InitializeComponent();
             this._dtoAntiControl = dto;
             this.LoadEvent();
+            //this.LoadControlStyle(true);
         }
 
         /// <summary>
@@ -49,6 +50,8 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private void LoadEvent()
         {
+            this.tbHeatingState.TextChanged += new EventHandler(tbHeatingState_TextChanged);
+            this.tbEnablingState.TextChanged += new EventHandler(tbEnablingState_TextChanged);
             this.txtBalanceTime.TextChanged += new System.EventHandler(this.txtBalanceTime_TextChanged);
             this.txtInitTemp.TextChanged += new System.EventHandler(this.txtInitTemp_TextChanged);
             this.txtMaintainTime.TextChanged += new System.EventHandler(this.txtMaintainTime_TextChanged);
@@ -87,11 +90,11 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadView(int antiControlID)
         {
             this.LoadViewOrSaveAs();
-            this.LoadControlStyle(true);
+
         }
 
         /// <summary>
-        /// 查看或者复制
+        /// 从缓冲区导入
         /// </summary>
         private void LoadViewOrSaveAs()
         {
@@ -99,6 +102,8 @@ namespace ChromatoCore.solu.AntiCon
             {
                 return;
             }
+            this.tbHeatingState.Text = this._dtoAntiControl.dtoHeatingSource.HeatingState;
+            this.tbEnablingState.Text = this._dtoAntiControl.dtoHeatingSource.EnablingState;
             this.txtBalanceTime.Text = this._dtoAntiControl.dtoHeatingSource .BalanceTime.ToString();
             this.txtInitTemp.Text = this._dtoAntiControl.dtoHeatingSource .InitTemp.ToString();
             this.txtMaintainTime.Text = this._dtoAntiControl.dtoHeatingSource .MaintainTime.ToString();
@@ -123,6 +128,38 @@ namespace ChromatoCore.solu.AntiCon
             this.txtTempTimeCol4.Text = this._dtoAntiControl.dtoHeatingSource .TempTimeCol4.ToString();
             this.txtTempTimeCol5.Text = this._dtoAntiControl.dtoHeatingSource .TempTimeCol5.ToString();
            
+        }
+
+        /// <summary>
+        /// 导出到缓冲区
+        /// </summary>
+        public void Export()
+        {
+            this._dtoAntiControl.dtoHeatingSource.HeatingState = this.tbHeatingState.Text;
+            this._dtoAntiControl.dtoHeatingSource.EnablingState = this.tbEnablingState.Text;
+            this._dtoAntiControl.dtoHeatingSource.BalanceTime = Convert.ToInt32(this.txtBalanceTime.Text);
+            this._dtoAntiControl.dtoHeatingSource.InitTemp = Convert.ToInt32(this.txtInitTemp.Text);
+            this._dtoAntiControl.dtoHeatingSource.MaintainTime = Convert.ToInt32(this.txtMaintainTime.Text);
+            this._dtoAntiControl.dtoHeatingSource.AlertTemp = Convert.ToInt32(this.txtAlertTemp.Text);
+            this._dtoAntiControl.dtoHeatingSource.ColumnCount = Convert.ToInt32(this.txtColumnCount.Text);
+
+            this._dtoAntiControl.dtoHeatingSource.RateCol1 = Convert.ToInt32(this.txtRateCol1.Text);
+            this._dtoAntiControl.dtoHeatingSource.RateCol2 = Convert.ToInt32(this.txtRateCol2.Text);
+            this._dtoAntiControl.dtoHeatingSource.RateCol3 = Convert.ToInt32(this.txtRateCol3.Text);
+            this._dtoAntiControl.dtoHeatingSource.RateCol4 = Convert.ToInt32(this.txtRateCol4.Text);
+            this._dtoAntiControl.dtoHeatingSource.RateCol5 = Convert.ToInt32(this.txtRateCol5.Text);
+
+            this._dtoAntiControl.dtoHeatingSource.TempCol1 = Convert.ToInt32(this.txtTempCol1.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempCol2 = Convert.ToInt32(this.txtTempCol2.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempCol3 = Convert.ToInt32(this.txtTempCol3.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempCol4 = Convert.ToInt32(this.txtTempCol4.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempCol5 = Convert.ToInt32(this.txtTempCol5.Text);
+
+            this._dtoAntiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToInt32(this.txtTempTimeCol1.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToInt32(this.txtTempTimeCol2.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempTimeCol3 = Convert.ToInt32(this.txtTempTimeCol3.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempTimeCol4 = Convert.ToInt32(this.txtTempTimeCol4.Text);
+            this._dtoAntiControl.dtoHeatingSource.TempTimeCol5 = Convert.ToInt32(this.txtTempTimeCol5.Text);
         }
 
         /// <summary>
@@ -181,18 +218,16 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
-        /// 新建立反控的信息
+        /// 导入缺省数据到缓冲区
         /// </summary>
         public void LoadNew()
         {
-
-            this.LoadControlStyle(false);
-
-
             if (null == this._dtoAntiControl.dtoHeatingSource )
             {
                 this._dtoAntiControl.dtoHeatingSource  = new HeatingSourceDto();
             }
+            this._dtoAntiControl.dtoHeatingSource.HeatingState = DefaultHeatingSource.HeatingState;
+            this._dtoAntiControl.dtoHeatingSource.EnablingState = DefaultHeatingSource.EnablingState;
             this._dtoAntiControl.dtoHeatingSource .BalanceTime = DefaultHeatingSource.BalanceTime;
             this._dtoAntiControl.dtoHeatingSource .InitTemp = DefaultHeatingSource.InitTemp;
             this._dtoAntiControl.dtoHeatingSource .MaintainTime = DefaultHeatingSource.MaintainTime;
@@ -216,31 +251,9 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.dtoHeatingSource .TempTimeCol3 = DefaultHeatingSource.TempTimeCol3;
             this._dtoAntiControl.dtoHeatingSource .TempTimeCol4 = DefaultHeatingSource.TempTimeCol4;
             this._dtoAntiControl.dtoHeatingSource .TempTimeCol5 = DefaultHeatingSource.TempTimeCol5;
-
-            this.txtBalanceTime.Text = DefaultHeatingSource.BalanceTime.ToString();
-            this.txtInitTemp.Text = DefaultHeatingSource.InitTemp.ToString();
-            this.txtMaintainTime.Text = DefaultHeatingSource.MaintainTime.ToString();
-            this.txtAlertTemp.Text = DefaultHeatingSource.AlertTemp.ToString();
-            this.txtColumnCount.Text = DefaultHeatingSource.ColumnCount.ToString();
-
-            this.txtRateCol1.Text = DefaultHeatingSource.RateCol1.ToString();
-            this.txtRateCol2.Text = DefaultHeatingSource.RateCol2.ToString();
-            this.txtRateCol3.Text = DefaultHeatingSource.RateCol3.ToString();
-            this.txtRateCol4.Text = DefaultHeatingSource.RateCol4.ToString();
-            this.txtRateCol5.Text = DefaultHeatingSource.RateCol5.ToString();
-
-            this.txtTempCol1.Text = DefaultHeatingSource.TempCol1.ToString();
-            this.txtTempCol2.Text = DefaultHeatingSource.TempCol2.ToString();
-            this.txtTempCol3.Text = DefaultHeatingSource.TempCol3.ToString();
-            this.txtTempCol4.Text = DefaultHeatingSource.TempCol4.ToString();
-            this.txtTempCol5.Text = DefaultHeatingSource.TempCol5.ToString();
-
-            this.txtTempTimeCol1.Text = DefaultHeatingSource.TempTimeCol1.ToString();
-            this.txtTempTimeCol2.Text = DefaultHeatingSource.TempTimeCol2.ToString();
-            this.txtTempTimeCol3.Text = DefaultHeatingSource.TempTimeCol3.ToString();
-            this.txtTempTimeCol4.Text = DefaultHeatingSource.TempTimeCol4.ToString();
-            this.txtTempTimeCol5.Text = DefaultHeatingSource.TempTimeCol5.ToString();
         }
+
+
 
         /// <summary>
         /// 编辑当前反控的信息
@@ -248,7 +261,7 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadEdit()
         {
             this.LoadViewOrSaveAs();
-            this.LoadControlStyle(false);
+
         }
 
         /// <summary>
@@ -257,13 +270,45 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadSaveAs()
         {
             this.LoadViewOrSaveAs();
-            this.LoadControlStyle(true);
+
         }
 
         #endregion
 
 
         #region 事件
+
+        /// <summary>
+        /// 平衡时间焦点离开事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbHeatingState_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbHeatingState.Text))
+            {
+                MessageBox.Show("平衡时间不能为空！", "平衡时间");
+                this.tbHeatingState.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoHeatingSource.HeatingState = this.tbHeatingState.Text;
+        }
+
+        /// <summary>
+        /// 平衡时间焦点离开事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tbEnablingState_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.tbEnablingState.Text))
+            {
+                MessageBox.Show("平衡时间不能为空！", "平衡时间");
+                this.tbEnablingState.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoHeatingSource.EnablingState = this.tbEnablingState.Text;
+        }
 
         /// <summary>
         /// 平衡时间焦点离开事件，合法性检验
@@ -438,7 +483,7 @@ namespace ChromatoCore.solu.AntiCon
                 this.txtRateCol3.Focus();
                 return;
             }
-            this._dtoAntiControl.dtoHeatingSource .RateCol3 = Convert.ToSingle(this.txtRateCol3.Text);
+            this._dtoAntiControl.dtoHeatingSource.RateCol3 = Convert.ToSingle(this.txtRateCol3.Text);
         }
 
         /// <summary>

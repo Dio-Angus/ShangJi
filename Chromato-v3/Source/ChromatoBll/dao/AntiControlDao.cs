@@ -112,7 +112,7 @@ namespace ChromatoBll.dao
 
             dto.AntiControlName = ds.Tables[0].Rows[0]["AntiControlName"].ToString();
 
-            dto.dtoNetworkBorad = new NetworkBoardDto();
+            dto.dtoNetworkBoard = new NetworkBoardDto();
 
             dto.dtoHeatingSource = new HeatingSourceDto();
             dto.dtoHeatingSource .BalanceTime = Convert.ToSingle(ds.Tables[0].Rows[0]["BalanceTime"].ToString());

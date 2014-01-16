@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.tbIP = new System.Windows.Forms.TextBox();
+            this.tbGateIP = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbSourceIP = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,12 +71,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "网关IP";
             // 
-            // tbIP
+            // tbGateIP
             // 
-            this.tbIP.Location = new System.Drawing.Point(108, 18);
-            this.tbIP.Name = "tbIP";
-            this.tbIP.Size = new System.Drawing.Size(100, 21);
-            this.tbIP.TabIndex = 1;
+            this.tbGateIP.Location = new System.Drawing.Point(108, 18);
+            this.tbGateIP.Name = "tbGateIP";
+            this.tbGateIP.Size = new System.Drawing.Size(100, 21);
+            this.tbGateIP.TabIndex = 1;
+            this.tbGateIP.TextChanged += new System.EventHandler(this.tbGateIP_TextChanged);
             // 
             // label2
             // 
@@ -93,6 +94,7 @@
             this.tbSourceIP.Name = "tbSourceIP";
             this.tbSourceIP.Size = new System.Drawing.Size(100, 21);
             this.tbSourceIP.TabIndex = 1;
+            this.tbSourceIP.TextChanged += new System.EventHandler(this.tbSourceIP_TextChanged);
             // 
             // label3
             // 
@@ -118,6 +120,7 @@
             this.tbMAC.Name = "tbMAC";
             this.tbMAC.Size = new System.Drawing.Size(100, 21);
             this.tbMAC.TabIndex = 1;
+            this.tbMAC.TextChanged += new System.EventHandler(this.tbMAC_TextChanged);
             // 
             // tbMask
             // 
@@ -125,6 +128,7 @@
             this.tbMask.Name = "tbMask";
             this.tbMask.Size = new System.Drawing.Size(100, 21);
             this.tbMask.TabIndex = 1;
+            this.tbMask.TextChanged += new System.EventHandler(this.tbMask_TextChanged);
             // 
             // label5
             // 
@@ -168,6 +172,7 @@
             this.tbSocket0Address.Name = "tbSocket0Address";
             this.tbSocket0Address.Size = new System.Drawing.Size(100, 21);
             this.tbSocket0Address.TabIndex = 1;
+            this.tbSocket0Address.TextChanged += new System.EventHandler(this.tbSocket0Address_TextChanged);
             // 
             // tbSocket0AimIP
             // 
@@ -175,6 +180,7 @@
             this.tbSocket0AimIP.Name = "tbSocket0AimIP";
             this.tbSocket0AimIP.Size = new System.Drawing.Size(100, 21);
             this.tbSocket0AimIP.TabIndex = 1;
+            this.tbSocket0AimIP.TextChanged += new System.EventHandler(this.tbSocket0AimIP_TextChanged);
             // 
             // tbSocket0AimAddress
             // 
@@ -182,6 +188,7 @@
             this.tbSocket0AimAddress.Name = "tbSocket0AimAddress";
             this.tbSocket0AimAddress.Size = new System.Drawing.Size(100, 21);
             this.tbSocket0AimAddress.TabIndex = 1;
+            this.tbSocket0AimAddress.TextChanged += new System.EventHandler(this.tbSocket0AimAddress_TextChanged);
             // 
             // tbSocket1Address
             // 
@@ -189,6 +196,7 @@
             this.tbSocket1Address.Name = "tbSocket1Address";
             this.tbSocket1Address.Size = new System.Drawing.Size(100, 21);
             this.tbSocket1Address.TabIndex = 1;
+            this.tbSocket1Address.TextChanged += new System.EventHandler(this.tbSocket1Address_TextChanged);
             // 
             // tbSocket1AimIP
             // 
@@ -196,6 +204,7 @@
             this.tbSocket1AimIP.Name = "tbSocket1AimIP";
             this.tbSocket1AimIP.Size = new System.Drawing.Size(100, 21);
             this.tbSocket1AimIP.TabIndex = 1;
+            this.tbSocket1AimIP.TextChanged += new System.EventHandler(this.tbSocket1AimIP_TextChanged);
             // 
             // tbSocket1AimAddress
             // 
@@ -203,6 +212,7 @@
             this.tbSocket1AimAddress.Name = "tbSocket1AimAddress";
             this.tbSocket1AimAddress.Size = new System.Drawing.Size(100, 21);
             this.tbSocket1AimAddress.TabIndex = 1;
+            this.tbSocket1AimAddress.TextChanged += new System.EventHandler(this.tbSocket1AimAddress_TextChanged);
             // 
             // tbSocket2Address
             // 
@@ -210,6 +220,7 @@
             this.tbSocket2Address.Name = "tbSocket2Address";
             this.tbSocket2Address.Size = new System.Drawing.Size(100, 21);
             this.tbSocket2Address.TabIndex = 1;
+            this.tbSocket2Address.TextChanged += new System.EventHandler(this.tbSocket2Address_TextChanged);
             // 
             // tbSocket2AimIP
             // 
@@ -217,6 +228,7 @@
             this.tbSocket2AimIP.Name = "tbSocket2AimIP";
             this.tbSocket2AimIP.Size = new System.Drawing.Size(100, 21);
             this.tbSocket2AimIP.TabIndex = 1;
+            this.tbSocket2AimIP.TextChanged += new System.EventHandler(this.tbSocket2AimIP_TextChanged);
             // 
             // tbSocket2AimAddress
             // 
@@ -224,6 +236,7 @@
             this.tbSocket2AimAddress.Name = "tbSocket2AimAddress";
             this.tbSocket2AimAddress.Size = new System.Drawing.Size(100, 21);
             this.tbSocket2AimAddress.TabIndex = 1;
+            this.tbSocket2AimAddress.TextChanged += new System.EventHandler(this.tbSocket2AimAddress_TextChanged);
             // 
             // tbSocket3Address
             // 
@@ -231,6 +244,7 @@
             this.tbSocket3Address.Name = "tbSocket3Address";
             this.tbSocket3Address.Size = new System.Drawing.Size(100, 21);
             this.tbSocket3Address.TabIndex = 1;
+            this.tbSocket3Address.TextChanged += new System.EventHandler(this.tbSocket3Address_TextChanged);
             // 
             // tbSocket3AimIP
             // 
@@ -238,6 +252,7 @@
             this.tbSocket3AimIP.Name = "tbSocket3AimIP";
             this.tbSocket3AimIP.Size = new System.Drawing.Size(100, 21);
             this.tbSocket3AimIP.TabIndex = 1;
+            this.tbSocket3AimIP.TextChanged += new System.EventHandler(this.tbSocket3AimIP_TextChanged);
             // 
             // tbSocket3AimAddress
             // 
@@ -245,6 +260,7 @@
             this.tbSocket3AimAddress.Name = "tbSocket3AimAddress";
             this.tbSocket3AimAddress.Size = new System.Drawing.Size(100, 21);
             this.tbSocket3AimAddress.TabIndex = 1;
+            this.tbSocket3AimAddress.TextChanged += new System.EventHandler(this.tbSocket3AimAddress_TextChanged);
             // 
             // label9
             // 
@@ -353,7 +369,7 @@
             this.Controls.Add(this.tbMask);
             this.Controls.Add(this.tbSourceIP);
             this.Controls.Add(this.tbMAC);
-            this.Controls.Add(this.tbIP);
+            this.Controls.Add(this.tbGateIP);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -376,7 +392,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbIP;
+        private System.Windows.Forms.TextBox tbGateIP;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbSourceIP;
         private System.Windows.Forms.Label label3;

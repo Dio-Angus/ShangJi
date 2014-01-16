@@ -2681,6 +2681,12 @@
             显示反控的信息
             </summary>
         </member>
+        <!-- 对于成员“M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadViewOrSaveAs”忽略有格式错误的 XML 注释 -->
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadNew">
+            <summary>
+            导入缺省数据到缓冲区
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.LoadEdit">
             <summary>
             编辑当前反控的信息
@@ -2690,6 +2696,123 @@
             <summary>
             显示反控的信息
             </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.Export">
+            <summary>
+            导出到缓冲区
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbGateIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            GateIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSourceIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            SourceIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbMAC_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            MAC合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbMask_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Mask合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket0Address_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket0Address合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket0AimIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket0AimIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket0AimAddress_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket0AimAddress合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket1Address_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket1Address合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket1AimIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket1AimIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket1AimAddress_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket1AimAddress合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket2Address_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket2Address合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket2AimIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket2AimIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket2AimAddress_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket2AimAddress合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket3Address_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket3Address合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket3AimIP_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket3AimIP合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.NetworkBoardUser.tbSocket3AimAddress_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Socket3AimAddress合法性检测
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:ChromatoCore.solu.AntiCon.NetworkBoardUser.components">
             <summary> 
@@ -4489,7 +4612,12 @@
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadViewOrSaveAs">
             <summary>
-            查看或者复制
+            从缓冲区导入
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.Export">
+            <summary>
+            导出到缓冲区
             </summary>
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadControlStyle(System.Boolean)">
@@ -4500,7 +4628,7 @@
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadNew">
             <summary>
-            新建立反控的信息
+            导入缺省数据到缓冲区
             </summary>
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadEdit">
@@ -4512,6 +4640,20 @@
             <summary>
             显示反控的信息
             </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.tbHeatingState_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            平衡时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.tbEnablingState_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            平衡时间焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtBalanceTime_TextChanged(System.Object,System.EventArgs)">
             <summary>
@@ -13049,7 +13191,7 @@
             加热源参数
             </summary>
         </member>
-        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewSampleEntry">
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewInject">
             <summary>
             进样口参数
             </summary>
@@ -13190,6 +13332,20 @@
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.txtAntiControlName_TextChanged(System.Object,System.EventArgs)">
             <summary>
             反控方法名焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.btWrite_Click(System.Object,System.EventArgs)">
+            <summary>
+            写入反控数据
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.btRefresh_Click(System.Object,System.EventArgs)">
+            <summary>
+            刷新反控信息
             </summary>
             <param name="sender"></param>
             <param name="e"></param>

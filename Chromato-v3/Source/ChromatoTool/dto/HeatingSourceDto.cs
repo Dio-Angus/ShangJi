@@ -18,6 +18,14 @@ namespace ChromatoTool.dto
     public class HeatingSourceDto
     {
         /// <summary>
+        /// 加热状态
+        /// </summary>
+        public String HeatingState{ get; set; }
+        /// <summary>
+        /// 加热使能状态
+        /// </summary>
+        public String EnablingState { get; set; }
+        /// <summary>
         /// 平衡时间
         /// </summary>
         public Single BalanceTime { get; set; }

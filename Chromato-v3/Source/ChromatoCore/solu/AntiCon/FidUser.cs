@@ -48,6 +48,7 @@ namespace ChromatoCore.solu.AntiCon
             InitializeComponent();
             this._dtoAntiControl = dto;
             this.LoadEvent();
+            //this.LoadControlStyle(false);
         }
 
         /// <summary>
@@ -69,7 +70,6 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         public void LoadView(int antiControlID)
         {
-            this.LoadControlStyle(true);
 
             if (null == this._dtoAntiControl.dtoFid)
             {
@@ -162,8 +162,6 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadNew()
         {
 
-            this.LoadControlStyle(false);
-
             if (null == this._dtoAntiControl.dtoFid)
             {
                 this._dtoAntiControl.dtoFid = new FidDto();
@@ -209,7 +207,6 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadEdit()
         {
 
-            this.LoadControlStyle(false);
             
             if (null == this._dtoAntiControl.dtoFid)
             {
@@ -272,7 +269,6 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadSaveAs()
         {
 
-            this.LoadControlStyle(true);
             if (null == this._dtoAntiControl.dtoFid)
             {
                 return;

@@ -788,7 +788,7 @@ namespace ChromatoTool.ini
     {
         public const String NetworkBoard = "网络板";
         public const String HeatingSource = "加热源";
-        public const String SampleEntry = "进样口";
+        public const String Inject = "进样口";
         public const String Tcd = "TCD";
         public const String Fid = "FID";
         public const String Aux = "AUX";
@@ -865,7 +865,8 @@ namespace ChromatoTool.ini
     /// </summary>
     public class DefaultHeatingSource
     {
-
+        public static String HeatingState="";
+        public static String EnablingState=""; 
         public static Single BalanceTime = 5;
         public static Single InitTemp = 6;
         public static Single MaintainTime = 7;

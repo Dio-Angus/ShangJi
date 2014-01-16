@@ -48,6 +48,7 @@ namespace ChromatoCore.solu.AntiCon
             InitializeComponent();
             this._dtoAntiControl = dto;
             this.LoadEvent();
+            //this.LoadControlStyle(false);
         }
 
         /// <summary>
@@ -89,7 +90,6 @@ namespace ChromatoCore.solu.AntiCon
             this.LoadRadioBtn();
             this.LoadViewComboBox();
             this.LoadTextBox();
-            this.LoadControlStyle(true);
         }
 
         /// <summary>
@@ -157,7 +157,6 @@ namespace ChromatoCore.solu.AntiCon
             this.LoadRadioBtn();
             this.LoadTextBox();
             this.LoadViewComboBox();
-            this.LoadControlStyle(false);
         }
 
         /// <summary>

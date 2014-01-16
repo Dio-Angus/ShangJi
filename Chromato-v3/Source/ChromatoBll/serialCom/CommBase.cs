@@ -15,6 +15,7 @@ using Microsoft.VisualBasic;
 using ChromatoBll.ocx.biz;
 using System.Text;
 using System.Net.Sockets;
+using ChromatoBll.serialCom;
 
 
 namespace ChromatoBll.serialCom
