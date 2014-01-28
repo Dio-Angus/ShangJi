@@ -819,7 +819,27 @@ namespace ChromatoCore.solu.AntiCon
                             + transformDigit(_dtoAntiControl.dtoFid.PolarityK2.ToString(), 1) + transformDigit(_dtoAntiControl.dtoFid.MagnifyFactorK2.ToString(), 1);                       
                     return data1+data2;
                 case AntiControl.Tcd:
-                    return "";
+                    if (_dtoAntiControl.dtoTcd.TcdIndex == 0)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.TCD1
+                            + transformDigit(_dtoAntiControl.dtoTcd.InitTemp1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoTcd.AlertTemp1.ToString(), 3)
+                            + _dtoAntiControl.dtoTcd.PolarityOne.ToString() + transformDigit(_dtoAntiControl.dtoTcd.CurrentOne.ToString(), 3)
+                            + ChromatoBll.serialCom.addressCommand.TCD2
+                            + transformDigit(_dtoAntiControl.dtoTcd.InitTemp2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoTcd.AlertTemp2.ToString(), 3)
+                            + _dtoAntiControl.dtoTcd.PolarityTwo.ToString() + transformDigit(_dtoAntiControl.dtoTcd.CurrentTwo.ToString(), 3);
+                    }
+                    else if (_dtoAntiControl.dtoTcd.TcdIndex == 1)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.TCD1
+                            + transformDigit(_dtoAntiControl.dtoTcd.InitTemp1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoTcd.AlertTemp1.ToString(), 3)
+                            + _dtoAntiControl.dtoTcd.PolarityOne.ToString() + transformDigit(_dtoAntiControl.dtoTcd.CurrentOne.ToString(), 3);
+                    }
+                    else// if (_dtoAntiControl.dtoTcd.TcdIndex == 2)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.TCD2
+                            + transformDigit(_dtoAntiControl.dtoTcd.InitTemp2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoTcd.AlertTemp2.ToString(), 3)
+                            + _dtoAntiControl.dtoTcd.PolarityTwo.ToString() + transformDigit(_dtoAntiControl.dtoTcd.CurrentTwo.ToString(), 3);
+                    }
                 case AntiControl.Ecd:
                     return "";
                 case AntiControl.Fpd:
@@ -862,7 +882,7 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
-        /// 转化为i个字节
+        /// 将数据的每一位按ASCii码转化为i个字节
         /// </summary>
         /// <param name="Digit"></param>
         /// <param name="i"></param>
@@ -872,24 +892,41 @@ namespace ChromatoCore.solu.AntiCon
             switch (i)
             {
                 case 1:
-                    Digit = Convert.ToInt32(Digit).ToString("X2");
+                    Digit = transformAscii(Digit.PadLeft(1, ' '));
                     break;
                 case 2:
-                    Digit = Convert.ToInt32(Digit).ToString("X4");
+                    Digit = transformAscii(Digit.PadLeft(2, ' '));
                     break;
                 case 3:
-                    Digit = Convert.ToInt32(Digit).ToString("X6");
+                    Digit = transformAscii(Digit.PadLeft(3, ' '));
                     break;
                 case 4:
-                    Digit = Convert.ToInt32(Digit).ToString("X8");
+                    Digit = transformAscii(Digit.PadLeft(4, ' '));
                     break;
                 case 6:
-                    Digit = Convert.ToInt32(Digit).ToString("X12");
+                    Digit = transformAscii(Digit.PadLeft(6, ' '));
                     break;
                 default:
                     break;
             }
             return Digit;
+        }
+
+        /// <summary>
+        /// 字符串转化为Ascii码
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        private string transformAscii(string s)
+        {
+            byte[] array = new byte[1];
+            array = System.Text.Encoding.ASCII.GetBytes(s);
+            s = null;
+            foreach (byte a in array)
+            {
+                s += a.ToString("X2");
+            }
+            return s;
         }
 
         /// <summary>

@@ -292,9 +292,9 @@ namespace tcp
         {
             try
             {
-                send("aa 55 02 03 14");
-                string a = ns.ReadByte().ToString();
-                MessageBox.Show(a);
+                //send("aa 55 02 03 14");
+               // string a = ns.ReadByte().ToString();
+                //MessageBox.Show(a);
                 //网关IP地址
                 send("aa 55 02 00 00");
                 get(1);

@@ -140,7 +140,9 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAlertTempAux2.BackColor = isReadOnly ? Color.Beige : Color.White;
         }
 
-        //导出到缓冲区
+        /// <summary>
+        /// 导出到缓冲区
+        /// </summary>
         public void Export()
         {
             if (this.cbAux1.Checked == true && this.cbAux2.Checked == true)

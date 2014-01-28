@@ -57,8 +57,6 @@ namespace ChromatoCore.solu.AntiCon
             this.txtInitTemp2.TextChanged += new System.EventHandler(this.txtInitTemp2_TextChanged);
             this.txtCurrentTcd1.TextChanged += new System.EventHandler(this.txtCurrentTcd1_TextChanged);
             this.txtCurrentTcd2.TextChanged += new System.EventHandler(this.txtCurrentTcd2_TextChanged);
-            this.txtAlertTcd1.TextChanged += new System.EventHandler(this.txtAlertTcd1_TextChanged);
-            this.txtAlertTcd2.TextChanged += new System.EventHandler(this.txtAlertTcd2_TextChanged);
         }
         #endregion
 
@@ -82,20 +80,86 @@ namespace ChromatoCore.solu.AntiCon
             {
                 return;
             }
-            this.txtInitTemp1.Text = this._dtoAntiControl.dtoTcd.InitTemp1.ToString();
-            this.txtAlertTemp1.Text = this._dtoAntiControl.dtoTcd.AlertTemp1.ToString();
 
-            this.txtInitTemp2.Text = this._dtoAntiControl.dtoTcd.InitTemp2.ToString();
-            this.txtAlertTemp2.Text = this._dtoAntiControl.dtoTcd.AlertTemp2.ToString();
+            if (this._dtoAntiControl.dtoTcd.TcdIndex == 0)
+            {
+                this.cbTCD1.Checked = true;
+                this.cbTCD2.Checked = true;
 
-            this.txtCurrentTcd1.Text = this._dtoAntiControl.dtoTcd.CurrentOne.ToString();
-            this.txtCurrentTcd2.Text = this._dtoAntiControl.dtoTcd.CurrentTwo.ToString();
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = true;
+                
+                this.txtInitTemp1.Text = this._dtoAntiControl.dtoTcd.InitTemp1.ToString();
+                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoTcd.AlertTemp1.ToString();
 
-            this.cbxPolarityTcd1.Checked = this._dtoAntiControl.dtoTcd.PolarityOne;
-            this.cbxPolarityTcd2.Checked = this._dtoAntiControl.dtoTcd.PolarityTwo;
+                this.txtInitTemp2.Text = this._dtoAntiControl.dtoTcd.InitTemp2.ToString();
+                this.txtAlertTemp2.Text = this._dtoAntiControl.dtoTcd.AlertTemp2.ToString();
 
-            this.cbxPolarityTcd1.Text = this.cbxPolarityTcd1.Checked ? Polarity.Positive : Polarity.Nagative;
-            this.cbxPolarityTcd2.Text = this.cbxPolarityTcd2.Checked ? Polarity.Positive : Polarity.Nagative;
+                this.txtCurrentTcd1.Text = this._dtoAntiControl.dtoTcd.CurrentOne.ToString();
+                this.txtCurrentTcd2.Text = this._dtoAntiControl.dtoTcd.CurrentTwo.ToString();
+
+                this.cbxPolarityTcd1.Checked = this._dtoAntiControl.dtoTcd.PolarityOne;
+                this.cbxPolarityTcd2.Checked = this._dtoAntiControl.dtoTcd.PolarityTwo;
+
+                this.cbxPolarityTcd1.Text = this.cbxPolarityTcd1.Checked ? Polarity.Positive : Polarity.Nagative;
+                this.cbxPolarityTcd2.Text = this.cbxPolarityTcd2.Checked ? Polarity.Positive : Polarity.Nagative;
+            }
+            else if (this._dtoAntiControl.dtoTcd.TcdIndex == 1)
+            {
+                this.cbTCD1.Checked = true;
+                this.cbTCD2.Checked = false;
+
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = false;
+
+                this.txtInitTemp1.Text = this._dtoAntiControl.dtoTcd.InitTemp1.ToString();
+                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoTcd.AlertTemp1.ToString();
+                this.txtCurrentTcd1.Text = this._dtoAntiControl.dtoTcd.CurrentOne.ToString();
+                this.cbxPolarityTcd1.Checked = this._dtoAntiControl.dtoTcd.PolarityOne;
+                this.cbxPolarityTcd1.Text = this.cbxPolarityTcd1.Checked ? Polarity.Positive : Polarity.Nagative;
+            }
+            else //if(this._dtoAntiControl.dtoTcd.TcdIndex == 2)
+            {
+                this.cbTCD1.Checked = false;
+                this.cbTCD2.Checked = true;
+
+                gbTCD1.Enabled = false;
+                gbTCD2.Enabled = true;
+
+                this.txtInitTemp2.Text = this._dtoAntiControl.dtoTcd.InitTemp2.ToString();
+                this.txtAlertTemp2.Text = this._dtoAntiControl.dtoTcd.AlertTemp2.ToString();
+                this.txtCurrentTcd2.Text = this._dtoAntiControl.dtoTcd.CurrentTwo.ToString();
+                this.cbxPolarityTcd2.Checked = this._dtoAntiControl.dtoTcd.PolarityTwo;
+                this.cbxPolarityTcd2.Text = this.cbxPolarityTcd2.Checked ? Polarity.Positive : Polarity.Nagative;
+            }
+        }
+
+        /// <summary>
+        /// 导出到缓冲区
+        /// </summary>
+        public void Export()
+        {
+            if (this.cbTCD1.Checked == true && this.cbTCD2.Checked == true)
+            {
+                _dtoAntiControl.dtoTcd.TcdIndex = 0;
+            }
+            else if (this.cbTCD1.Checked == true && this.cbTCD2.Checked == false)
+            {
+                _dtoAntiControl.dtoTcd.TcdIndex = 1;
+            }
+            else if (this.cbTCD1.Checked == false && this.cbTCD2.Checked == true)
+            {
+                _dtoAntiControl.dtoTcd.TcdIndex = 2;
+            }
+            _dtoAntiControl.dtoTcd.InitTemp1 = Convert.ToSingle(this.txtInitTemp1.Text);
+            _dtoAntiControl.dtoTcd.InitTemp2 = Convert.ToSingle(this.txtInitTemp2.Text);
+            _dtoAntiControl.dtoTcd.AlertTemp1 = Convert.ToSingle(this.txtAlertTemp1.Text);
+            _dtoAntiControl.dtoTcd.AlertTemp2 = Convert.ToSingle(this.txtAlertTemp2.Text);
+            _dtoAntiControl.dtoTcd.CurrentOne = Convert.ToSingle(this.txtCurrentTcd1.Text);
+            _dtoAntiControl.dtoTcd.CurrentTwo = Convert.ToSingle(this.txtCurrentTcd2.Text);
+            _dtoAntiControl.dtoTcd.PolarityOne = this.cbxPolarityTcd1.Checked;
+            _dtoAntiControl.dtoTcd.PolarityTwo = this.cbxPolarityTcd2.Checked;
+
         }
 
         /// <summary>
@@ -138,6 +202,9 @@ namespace ChromatoCore.solu.AntiCon
                 this._dtoAntiControl.dtoTcd = new TcdDto();
             }
 
+            this.cbTCD1.Checked = true;
+            this.cbTCD2.Checked = true;
+
             this.txtInitTemp1.Text = DefaultTcd.InitTemp1.ToString();
             this.txtAlertTemp1.Text = DefaultTcd.AlertTemp1.ToString();
             this.txtInitTemp2.Text = DefaultTcd.InitTemp2.ToString();
@@ -147,6 +214,8 @@ namespace ChromatoCore.solu.AntiCon
             this.txtCurrentTcd2.Text = DefaultTcd.CurrentTwo.ToString();
             this.cbxPolarityTcd1.Checked = DefaultTcd.PolarityOne;
             this.cbxPolarityTcd2.Checked = DefaultTcd.PolarityTwo;
+
+            this._dtoAntiControl.dtoTcd.TcdIndex = 0;
 
             this._dtoAntiControl.dtoTcd.InitTemp1 = DefaultTcd.InitTemp1;
             this._dtoAntiControl.dtoTcd.AlertTemp1 = DefaultTcd.AlertTemp1;
@@ -200,28 +269,6 @@ namespace ChromatoCore.solu.AntiCon
         {
             this.cbxPolarityTcd2.Text = this.cbxPolarityTcd2.Checked ? Polarity.Positive : Polarity.Nagative;
             this._dtoAntiControl.dtoTcd.PolarityTwo = this.cbxPolarityTcd2.Checked;
-        }
-
-        /// <summary>
-        /// 启动关闭1命令变更
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cbxCmdTcd1_CheckedChanged(object sender, EventArgs e)
-        {
-            this.cbxCmdTcd1.Text = this.cbxCmdTcd1.Checked ? TcdOnOff.On : TcdOnOff.Off;
-            this._dtoAntiControl.dtoTcd.OnOffOne = this.cbxCmdTcd1.Checked;
-        }
-
-        /// <summary>
-        /// 启动关闭2命令变更
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cbxCmdTcd2_CheckedChanged(object sender, EventArgs e)
-        {
-            this.cbxCmdTcd2.Text = this.cbxCmdTcd2.Checked ? TcdOnOff.On : TcdOnOff.Off;
-            this._dtoAntiControl.dtoTcd.OnOffTwo = this.cbxCmdTcd2.Checked;
         }
 
         /// <summary>
@@ -357,52 +404,66 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
-        /// TCD1 报警数据焦点离开事件，合法性检验
+        /// TCD1选择框勾选事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtAlertTcd1_TextChanged(object sender, EventArgs e)
+        private void cbTCD1_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(this.txtAlertTcd1.Text))
+            if (cbTCD1.Checked == false && cbTCD2.Checked == false)
             {
-                MessageBox.Show("TCD1 报警数据不能为空！", "TCD1 报警数据");
-                this.txtAlertTcd1.Focus();
-                return;
+                cbTCD1.Checked = true;
+
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = false;
             }
-            if (!CastString.IsNumeric(this.txtAlertTcd1.Text))
+            else if (cbTCD1.Checked == true && cbTCD2.Checked == false)
             {
-                MessageBox.Show("TCD1 报警数据不是数值！", "TCD1 报警数据");
-                this.txtAlertTcd1.Focus();
-                return;
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = false;
             }
-            this._dtoAntiControl.dtoTcd.AlertOne = Convert.ToSingle(this.txtAlertTcd1.Text);
+            else if (cbTCD1.Checked == false && cbTCD2.Checked == true)
+            {
+                gbTCD1.Enabled = false;
+                gbTCD2.Enabled = true;
+            }
+            else if (cbTCD1.Checked == true && cbTCD2.Checked == true)
+            {
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = true;
+            }
         }
 
         /// <summary>
-        /// TCD2 报警数据焦点离开事件，合法性检验
+        /// TCD2选择框勾选事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtAlertTcd2_TextChanged(object sender, EventArgs e)
+        private void cbTCD2_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(this.txtAlertTcd2.Text))
+            if (cbTCD1.Checked == false && cbTCD2.Checked == false)
             {
-                MessageBox.Show("TCD2 报警数据不能为空！", "TCD2 报警数据");
-                this.txtAlertTcd2.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.txtAlertTcd2.Text))
-            {
-                MessageBox.Show("TCD2 报警数据不是数值！", "TCD2 报警数据");
-                this.txtAlertTcd2.Focus();
-                return;
-            }
-            this._dtoAntiControl.dtoTcd.AlertTwo = Convert.ToSingle(this.txtAlertTcd2.Text);
-        }
+                cbTCD2.Checked = true;
 
+                gbTCD1.Enabled = false;
+                gbTCD2.Enabled = true;
+            }
+            else if (cbTCD1.Checked == true && cbTCD2.Checked == false)
+            {
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = false;
+            }
+            else if (cbTCD1.Checked == false && cbTCD2.Checked == true)
+            {
+                gbTCD1.Enabled = false;
+                gbTCD2.Enabled = true;
+            }
+            else if (cbTCD1.Checked == true && cbTCD2.Checked == true)
+            {
+                gbTCD1.Enabled = true;
+                gbTCD2.Enabled = true;
+            }
+        }      
         #endregion
-
-
-
     }
 }

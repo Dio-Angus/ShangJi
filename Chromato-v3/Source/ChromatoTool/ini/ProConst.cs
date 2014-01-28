@@ -990,6 +990,8 @@ namespace ChromatoTool.ini
     /// </summary>
     public class DefaultTcd
     {
+        public static int TcdIndex = 0;
+
         public static Single InitTemp1 = 20;
         public static Single AlertTemp1 = 30;
 

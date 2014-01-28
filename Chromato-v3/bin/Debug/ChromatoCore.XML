@@ -930,6 +930,11 @@
             查看或者复制
             </summary>
         </member>
+        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.Export">
+            <summary>
+            导出到缓冲区
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.TcdUser.LoadControlStyle(System.Boolean)">
             <summary>
             装载控件的风格
@@ -961,20 +966,6 @@
         <member name="M:ChromatoCore.solu.AntiCon.TcdUser.cbxPolarityTcd2_CheckedChanged(System.Object,System.EventArgs)">
             <summary>
             极性2变更
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.cbxCmdTcd1_CheckedChanged(System.Object,System.EventArgs)">
-            <summary>
-            启动关闭1命令变更
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.cbxCmdTcd2_CheckedChanged(System.Object,System.EventArgs)">
-            <summary>
-            启动关闭2命令变更
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -1021,16 +1012,16 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.txtAlertTcd1_TextChanged(System.Object,System.EventArgs)">
+        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.cbTCD1_Click(System.Object,System.EventArgs)">
             <summary>
-            TCD1 报警数据焦点离开事件，合法性检验
+            TCD1选择框勾选事件
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.txtAlertTcd2_TextChanged(System.Object,System.EventArgs)">
+        <member name="M:ChromatoCore.solu.AntiCon.TcdUser.cbTCD2_Click(System.Object,System.EventArgs)">
             <summary>
-            TCD2 报警数据焦点离开事件，合法性检验
+            TCD2选择框勾选事件
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -12979,6 +12970,11 @@
             </summary>
             <param name="isReadOnly"></param>
         </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AuxUser.Export">
+            <summary>
+            导出到缓冲区
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.AuxUser.LoadNew">
             <summary>
             新建立反控的信息
@@ -13426,10 +13422,17 @@
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.transformDigit(System.String,System.Int32)">
             <summary>
-            转化为i个字节
+            将数据的每一位按ASCii码转化为i个字节
             </summary>
             <param name="Digit"></param>
             <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.transformAscii(System.String)">
+            <summary>
+            字符串转化为Ascii码
+            </summary>
+            <param name="s"></param>
             <returns></returns>
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.getHeatingSourceData(ChromatoTool.dto.HeatingSourceDto)">

@@ -16,6 +16,8 @@ namespace ChromatoTool.dto
     /// </summary>
     public class TcdDto
     {
+        public int TcdIndex { get; set; }//0=同时，1=Tcd1，2=Tcd2
+
         public Single InitTemp1 { get; set; }
         public Single AlertTemp1 { get; set; }
 
