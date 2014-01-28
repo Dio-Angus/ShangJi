@@ -142,12 +142,14 @@ namespace ChromatoTool.ini
             DefaultAux.InitTempAux1 = Convert.ToSingle(ini.ReadValue("DefaultAux", "InitTempAux1", DefaultAux.InitTempAux1.ToString()));
             DefaultAux.InitTempAux2 = Convert.ToSingle(ini.ReadValue("DefaultAux", "InitTempAux2", DefaultAux.InitTempAux2.ToString()));
 
-            DefaultFid.InitTemp = Convert.ToSingle(ini.ReadValue("DefaultFid", "InitTemp", DefaultFid.InitTemp.ToString()));
-            DefaultFid.AlertTemp = Convert.ToSingle(ini.ReadValue("DefaultFid", "AlertTemp", DefaultFid.AlertTemp.ToString()));
-            DefaultFid.MagnifyFactorOne = Convert.ToInt32(ini.ReadValue("DefaultFid", "MagnifyFactorOne", DefaultFid.MagnifyFactorOne.ToString()));
-            DefaultFid.MagnifyFactorTwo = Convert.ToInt32(ini.ReadValue("DefaultFid", "MagnifyFactorTwo", DefaultFid.MagnifyFactorTwo.ToString()));
-            DefaultFid.PolarityOne = Convert.ToBoolean(ini.ReadValue("DefaultFid", "PolarityOne", DefaultFid.PolarityOne.ToString()));
-            DefaultFid.PolarityTwo = Convert.ToBoolean(ini.ReadValue("DefaultFid", "PolarityTwo", DefaultFid.PolarityTwo.ToString()));
+            DefaultFid.InitTemp1= Convert.ToSingle(ini.ReadValue("DefaultFid", "InitTemp1", DefaultFid.InitTemp1.ToString()));
+            DefaultFid.AlertTemp1 = Convert.ToSingle(ini.ReadValue("DefaultFid", "AlertTemp1", DefaultFid.AlertTemp1.ToString()));
+            DefaultFid.InitTemp2 = Convert.ToSingle(ini.ReadValue("DefaultFid", "InitTemp2", DefaultFid.InitTemp2.ToString()));
+            DefaultFid.AlertTemp2 = Convert.ToSingle(ini.ReadValue("DefaultFid", "AlertTemp2", DefaultFid.AlertTemp2.ToString()));
+            DefaultFid.MagnifyFactor1 = Convert.ToInt32(ini.ReadValue("DefaultFid", "MagnifyFactorOne", DefaultFid.MagnifyFactor1.ToString()));
+            DefaultFid.MagnifyFactor2 = Convert.ToInt32(ini.ReadValue("DefaultFid", "MagnifyFactorTwo", DefaultFid.MagnifyFactor2.ToString()));
+            DefaultFid.Polarity1 = Convert.ToBoolean(ini.ReadValue("DefaultFid", "PolarityOne", DefaultFid.Polarity1.ToString()));
+            DefaultFid.Polarity2 = Convert.ToBoolean(ini.ReadValue("DefaultFid", "PolarityTwo", DefaultFid.Polarity2.ToString()));
 
             DefaultTcd.InitTemp1 = Convert.ToSingle(ini.ReadValue("DefaultTcd", "InitTemp1", DefaultTcd.InitTemp1.ToString()));
             DefaultTcd.AlertTemp1 = Convert.ToSingle(ini.ReadValue("DefaultTcd", "AlertTemp1", DefaultTcd.AlertTemp1.ToString()));
@@ -324,12 +326,14 @@ namespace ChromatoTool.ini
             ini.WriteValue("DefaultAux", "InitTempAux1", DefaultAux.InitTempAux1.ToString());
             ini.WriteValue("DefaultAux", "InitTempAux2", DefaultAux.InitTempAux2.ToString());
 
-            ini.WriteValue("DefaultFid", "AlertTemp", DefaultFid.AlertTemp.ToString());
-            ini.WriteValue("DefaultFid", "InitTemp", DefaultFid.InitTemp.ToString());
-            ini.WriteValue("DefaultFid", "MagnifyFactorOne", DefaultFid.MagnifyFactorOne.ToString());
-            ini.WriteValue("DefaultFid", "MagnifyFactorTwo", DefaultFid.MagnifyFactorTwo.ToString());
-            ini.WriteValue("DefaultFid", "PolarityOne", DefaultFid.PolarityOne.ToString());
-            ini.WriteValue("DefaultFid", "PolarityTwo", DefaultFid.PolarityTwo.ToString());
+            ini.WriteValue("DefaultFid", "AlertTemp1", DefaultFid.AlertTemp1.ToString());
+            ini.WriteValue("DefaultFid", "InitTemp1", DefaultFid.InitTemp1.ToString());
+            ini.WriteValue("DefaultFid", "AlertTemp2", DefaultFid.AlertTemp2.ToString());
+            ini.WriteValue("DefaultFid", "InitTemp2", DefaultFid.InitTemp2.ToString());
+            ini.WriteValue("DefaultFid", "MagnifyFactor1", DefaultFid.MagnifyFactor1.ToString());
+            ini.WriteValue("DefaultFid", "MagnifyFactor2", DefaultFid.MagnifyFactor2.ToString());
+            ini.WriteValue("DefaultFid", "Polarity1", DefaultFid.Polarity1.ToString());
+            ini.WriteValue("DefaultFid", "Polarity2", DefaultFid.Polarity2.ToString());
 
             ini.WriteValue("DefaultTcd", "AlertTemp1", DefaultTcd.AlertTemp1.ToString());
             ini.WriteValue("DefaultTcd", "InitTemp1", DefaultTcd.InitTemp1.ToString());

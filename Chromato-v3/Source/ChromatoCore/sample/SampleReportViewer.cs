@@ -415,11 +415,11 @@ namespace ChromatoCore.sample
                     break;
                 case IdChannel.Fid1:
                 case GasChannel.B:
-                    para = String.Format("初温：{0}℃   放大倍数：{1}", dtoAnti.dtoFid.InitTemp, EnumDescription.GetFieldText((Magnify)dtoAnti.dtoFid.MagnifyFactorOne));
+                    para = String.Format("初温：{0}℃   放大倍数：{1}", dtoAnti.dtoFid.InitTemp1, EnumDescription.GetFieldText((Magnify)dtoAnti.dtoFid.MagnifyFactor1));
                     break;
                 case IdChannel.Fid2:
                 case GasChannel.D:
-                    para = String.Format("初温：{0}℃   放大倍数：{1}", dtoAnti.dtoFid.InitTemp, EnumDescription.GetFieldText((Magnify)dtoAnti.dtoFid.MagnifyFactorTwo));
+                    para = String.Format("初温：{0}℃   放大倍数：{1}", dtoAnti.dtoFid.InitTemp1, EnumDescription.GetFieldText((Magnify)dtoAnti.dtoFid.MagnifyFactor2));
                     break;
             }
 
@@ -432,7 +432,7 @@ namespace ChromatoCore.sample
 
             //输出样品类型和进样口温度
             String sampleType = String.Format("样品类型：{0}",EnumDescription.GetFieldText(this._dtoPara.SampleType));
-            String injectTemp = String.Format("进样口温度：{0}℃", dtoAnti.dtoInject.InitTemp);
+            String injectTemp = String.Format("进样口温度：{0}℃", dtoAnti.dtoInject.InitTemp1);
 
             height = TransLateUtil.printLine(e, sampleType, fontInfo, lineLeft, currentPosition, lineWidth / 2, false, Brushes.Black);
             height = TransLateUtil.printLine(e, injectTemp, fontInfo, lineLeft + MaxDistance, currentPosition, lineWidth / 2, false, Brushes.Black);

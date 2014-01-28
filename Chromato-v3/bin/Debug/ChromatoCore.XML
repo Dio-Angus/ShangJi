@@ -4620,12 +4620,6 @@
             导出到缓冲区
             </summary>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadControlStyle(System.Boolean)">
-            <summary>
-            装载控件的风格
-            </summary>
-            <param name="isReadOnly"></param>
-        </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.LoadNew">
             <summary>
             导入缺省数据到缓冲区
@@ -4683,9 +4677,9 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtColumnCount_TextChanged(System.Object,System.EventArgs)">
+        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtColumnCount_Validated(System.Object,System.EventArgs)">
             <summary>
-            COL程升介数焦点离开事件，合法性检验
+            COL程升阶数焦点离开事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -10496,6 +10490,11 @@
             显示反控的信息
             </summary>
         </member>
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.Export">
+            <summary>
+            读取缓冲区
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.InjectUser.LoadRadioBtn">
             <summary>
             装载选项按钮
@@ -10538,16 +10537,44 @@
             初始化约束条件
             </summary>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtAlertTemp_TextChanged(System.Object,System.EventArgs)">
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtAlertTemp1_TextChanged(System.Object,System.EventArgs)">
             <summary>
-            报警温度文字改变事件，合法性检验
+            INJ1报警温度文字改变事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtInitTemp_TextChanged(System.Object,System.EventArgs)">
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtAlertTemp2_TextChanged(System.Object,System.EventArgs)">
             <summary>
-            初   温文字改变事件，合法性检验
+            INJ2报警温度文字改变事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtAlertTemp3_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            INJ3报警温度文字改变事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtInitTemp1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            INJ1初温文字改变事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtInitTemp2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            INJ2初温文字改变事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.InjectUser.txtInitTemp3_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            INJ3初温文字改变事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -12656,6 +12683,11 @@
             查看或者复制
             </summary>
         </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FidUser.Export">
+            <summary>
+            导出数据到缓冲区
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.FidUser.LoadControlStyle(System.Boolean)">
             <summary>
             装载控件的风格
@@ -12707,14 +12739,28 @@
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtAlertTemp1_TextChanged(System.Object,System.EventArgs)">
             <summary>
-            报警温度焦点离开事件，合法性检验
+            FID1报警温度焦点离开事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtInitTemp1_TextChanged(System.Object,System.EventArgs)">
             <summary>
-            初   温焦点离开事件，合法性检验
+            FID1初   温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtAlertTemp2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            FID2报警温度焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtInitTemp2_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            FID2初   温焦点离开事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -12972,6 +13018,20 @@
         <member name="M:ChromatoCore.solu.AntiCon.AuxUser.txtInitTempAux2_TextChanged(System.Object,System.EventArgs)">
             <summary>
             Aux2 初温焦点离开事件，合法性检验
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AuxUser.cbAux1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Aux1选择框勾选事件
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AuxUser.cbAux2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Aux2选择框勾选事件
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -13338,7 +13398,7 @@
         </member>
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.btWrite_Click(System.Object,System.EventArgs)">
             <summary>
-            写入反控数据
+            修改反控数据
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -13349,6 +13409,35 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.transformIP(System.String)">
+            <summary>
+            IP地址转化为16进制字符串
+            </summary>
+            <param name="IP"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.transformMAC(System.String)">
+            <summary>
+            MAC地址转化为16进制字符串
+            </summary>
+            <param name="MAC"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.transformDigit(System.String,System.Int32)">
+            <summary>
+            转化为i个字节
+            </summary>
+            <param name="Digit"></param>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.getHeatingSourceData(ChromatoTool.dto.HeatingSourceDto)">
+            <summary>
+            加热源数据生成
+            </summary>
+            <param name="dtoHeatingSource"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>

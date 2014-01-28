@@ -22,8 +22,8 @@ namespace ChromatoTool.dto
         public Single InitTemp2 { get; set; }
         public Single AlertTemp2 { get; set; }
 
-        public Single CurrentOne { get; set; }
-        public bool PolarityOne { get; set; }
+        public Single CurrentOne { get; set; }//电流  
+        public bool PolarityOne { get; set; }//极性
         public Single AlertOne { get; set; }
         public bool OnOffOne { get; set; }
 

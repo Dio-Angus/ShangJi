@@ -50,6 +50,11 @@
             this.ctxMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
+            this.gbQuery = new System.Windows.Forms.GroupBox();
+            this.dtPickerQuery = new System.Windows.Forms.DateTimePicker();
+            this.dtPickerQueryEndDay = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbxQuery = new System.Windows.Forms.ComboBox();
             this.tsSample = new System.Windows.Forms.ToolStrip();
             this.tsBtnRefresh = new System.Windows.Forms.ToolStripButton();
             this.tsBtnStart = new System.Windows.Forms.ToolStripButton();
@@ -66,20 +71,15 @@
             this.tsInj2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsInj3 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsColumnPara = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewConfig = new ChromatoCore.On.OnConfigViewer();
             this.splitterGraph = new System.Windows.Forms.Splitter();
-            this.gbQuery = new System.Windows.Forms.GroupBox();
-            this.dtPickerQuery = new System.Windows.Forms.DateTimePicker();
-            this.dtPickerQueryEndDay = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbxQuery = new System.Windows.Forms.ComboBox();
+            this.viewConfig = new ChromatoCore.On.OnConfigViewer();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSampleInfo)).BeginInit();
             this.ctxMenu.SuspendLayout();
             this.splitContainerMain.Panel1.SuspendLayout();
             this.splitContainerMain.Panel2.SuspendLayout();
             this.splitContainerMain.SuspendLayout();
-            this.tsSample.SuspendLayout();
             this.gbQuery.SuspendLayout();
+            this.tsSample.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvSampleInfo
@@ -90,7 +90,7 @@
             this.dgvSampleInfo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -114,7 +114,7 @@
             this.dgvSampleInfo.ContextMenuStrip = this.ctxMenu;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("SimSun", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Cyan;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.InfoText;
@@ -128,7 +128,7 @@
             this.dgvSampleInfo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlDark;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -136,7 +136,7 @@
             this.dgvSampleInfo.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSampleInfo.RowHeadersVisible = false;
             this.dgvSampleInfo.RowHeadersWidth = 15;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dgvSampleInfo.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSampleInfo.RowTemplate.Height = 23;
             this.dgvSampleInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -260,12 +260,12 @@
             this.ctxMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsRefresh});
             this.ctxMenu.Name = "ctxMenu";
-            this.ctxMenu.Size = new System.Drawing.Size(95, 26);
+            this.ctxMenu.Size = new System.Drawing.Size(99, 26);
             // 
             // tsRefresh
             // 
             this.tsRefresh.Name = "tsRefresh";
-            this.tsRefresh.Size = new System.Drawing.Size(94, 22);
+            this.tsRefresh.Size = new System.Drawing.Size(98, 22);
             this.tsRefresh.Text = "刷新";
             this.tsRefresh.Click += new System.EventHandler(this.tsRefresh_Click);
             // 
@@ -293,6 +293,55 @@
             this.splitContainerMain.Size = new System.Drawing.Size(900, 214);
             this.splitContainerMain.TabIndex = 7;
             // 
+            // gbQuery
+            // 
+            this.gbQuery.Controls.Add(this.dtPickerQuery);
+            this.gbQuery.Controls.Add(this.dtPickerQueryEndDay);
+            this.gbQuery.Controls.Add(this.label2);
+            this.gbQuery.Controls.Add(this.cbxQuery);
+            this.gbQuery.Location = new System.Drawing.Point(3, 0);
+            this.gbQuery.Name = "gbQuery";
+            this.gbQuery.Size = new System.Drawing.Size(417, 44);
+            this.gbQuery.TabIndex = 8;
+            this.gbQuery.TabStop = false;
+            // 
+            // dtPickerQuery
+            // 
+            this.dtPickerQuery.Location = new System.Drawing.Point(171, 12);
+            this.dtPickerQuery.Name = "dtPickerQuery";
+            this.dtPickerQuery.Size = new System.Drawing.Size(119, 21);
+            this.dtPickerQuery.TabIndex = 6;
+            // 
+            // dtPickerQueryEndDay
+            // 
+            this.dtPickerQueryEndDay.Location = new System.Drawing.Point(294, 12);
+            this.dtPickerQueryEndDay.Name = "dtPickerQueryEndDay";
+            this.dtPickerQueryEndDay.Size = new System.Drawing.Size(119, 21);
+            this.dtPickerQueryEndDay.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "样品查询:";
+            // 
+            // cbxQuery
+            // 
+            this.cbxQuery.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxQuery.FormattingEnabled = true;
+            this.cbxQuery.Items.AddRange(new object[] {
+            "指定日",
+            "指定开始日",
+            "最近两周",
+            "全部"});
+            this.cbxQuery.Location = new System.Drawing.Point(71, 13);
+            this.cbxQuery.Name = "cbxQuery";
+            this.cbxQuery.Size = new System.Drawing.Size(96, 20);
+            this.cbxQuery.TabIndex = 0;
+            // 
             // tsSample
             // 
             this.tsSample.BackColor = System.Drawing.SystemColors.Info;
@@ -307,7 +356,7 @@
             this.tsDownload});
             this.tsSample.Location = new System.Drawing.Point(423, 5);
             this.tsSample.Name = "tsSample";
-            this.tsSample.Size = new System.Drawing.Size(205, 39);
+            this.tsSample.Size = new System.Drawing.Size(238, 39);
             this.tsSample.TabIndex = 6;
             this.tsSample.Text = "toolStrip1";
             // 
@@ -375,65 +424,56 @@
             // tsFid1
             // 
             this.tsFid1.Name = "tsFid1";
-            this.tsFid1.Size = new System.Drawing.Size(130, 22);
+            this.tsFid1.Size = new System.Drawing.Size(136, 22);
             this.tsFid1.Text = "Fid检测器1";
             // 
             // tsFid2
             // 
             this.tsFid2.Name = "tsFid2";
-            this.tsFid2.Size = new System.Drawing.Size(130, 22);
+            this.tsFid2.Size = new System.Drawing.Size(136, 22);
             this.tsFid2.Text = "Fid检测器2";
             // 
             // tsTcd1
             // 
             this.tsTcd1.Name = "tsTcd1";
-            this.tsTcd1.Size = new System.Drawing.Size(130, 22);
+            this.tsTcd1.Size = new System.Drawing.Size(136, 22);
             this.tsTcd1.Text = "Tcd检测器1";
             // 
             // tsTcd2
             // 
             this.tsTcd2.Name = "tsTcd2";
-            this.tsTcd2.Size = new System.Drawing.Size(130, 22);
+            this.tsTcd2.Size = new System.Drawing.Size(136, 22);
             this.tsTcd2.Text = "Tcd检测器2";
             // 
             // tsAux
             // 
             this.tsAux.Name = "tsAux";
-            this.tsAux.Size = new System.Drawing.Size(130, 22);
+            this.tsAux.Size = new System.Drawing.Size(136, 22);
             this.tsAux.Text = "辅助";
             // 
             // tsInj1
             // 
             this.tsInj1.Name = "tsInj1";
-            this.tsInj1.Size = new System.Drawing.Size(130, 22);
+            this.tsInj1.Size = new System.Drawing.Size(136, 22);
             this.tsInj1.Text = "进样口1";
             // 
             // tsInj2
             // 
             this.tsInj2.Name = "tsInj2";
-            this.tsInj2.Size = new System.Drawing.Size(130, 22);
+            this.tsInj2.Size = new System.Drawing.Size(136, 22);
             this.tsInj2.Text = "进样口2";
             // 
             // tsInj3
             // 
             this.tsInj3.Name = "tsInj3";
-            this.tsInj3.Size = new System.Drawing.Size(130, 22);
+            this.tsInj3.Size = new System.Drawing.Size(136, 22);
             this.tsInj3.Text = "进样口3";
             // 
             // tsColumnPara
             // 
             this.tsColumnPara.Name = "tsColumnPara";
-            this.tsColumnPara.Size = new System.Drawing.Size(130, 22);
+            this.tsColumnPara.Size = new System.Drawing.Size(136, 22);
             this.tsColumnPara.Text = "柱箱";
-            // 
-            // viewConfig
-            // 
-            this.viewConfig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.viewConfig.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewConfig.Location = new System.Drawing.Point(450, 0);
-            this.viewConfig.Name = "viewConfig";
-            this.viewConfig.Size = new System.Drawing.Size(450, 160);
-            this.viewConfig.TabIndex = 0;
             // 
             // splitterGraph
             // 
@@ -448,54 +488,14 @@
             this.splitterGraph.TabIndex = 31;
             this.splitterGraph.TabStop = false;
             // 
-            // gbQuery
+            // viewConfig
             // 
-            this.gbQuery.Controls.Add(this.dtPickerQuery);
-            this.gbQuery.Controls.Add(this.dtPickerQueryEndDay);
-            this.gbQuery.Controls.Add(this.label2);
-            this.gbQuery.Controls.Add(this.cbxQuery);
-            this.gbQuery.Location = new System.Drawing.Point(3, 0);
-            this.gbQuery.Name = "gbQuery";
-            this.gbQuery.Size = new System.Drawing.Size(417, 44);
-            this.gbQuery.TabIndex = 8;
-            this.gbQuery.TabStop = false;
-            // 
-            // dtPickerQuery
-            // 
-            this.dtPickerQuery.Location = new System.Drawing.Point(171, 12);
-            this.dtPickerQuery.Name = "dtPickerQuery";
-            this.dtPickerQuery.Size = new System.Drawing.Size(119, 21);
-            this.dtPickerQuery.TabIndex = 6;
-            // 
-            // dtPickerQueryEndDay
-            // 
-            this.dtPickerQueryEndDay.Location = new System.Drawing.Point(294, 12);
-            this.dtPickerQueryEndDay.Name = "dtPickerQueryEndDay";
-            this.dtPickerQueryEndDay.Size = new System.Drawing.Size(119, 21);
-            this.dtPickerQueryEndDay.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "样品查询:";
-            // 
-            // cbxQuery
-            // 
-            this.cbxQuery.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxQuery.FormattingEnabled = true;
-            this.cbxQuery.Items.AddRange(new object[] {
-            "指定日",
-            "指定开始日",
-            "最近两周",
-            "全部"});
-            this.cbxQuery.Location = new System.Drawing.Point(71, 13);
-            this.cbxQuery.Name = "cbxQuery";
-            this.cbxQuery.Size = new System.Drawing.Size(96, 20);
-            this.cbxQuery.TabIndex = 0;
+            this.viewConfig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewConfig.Location = new System.Drawing.Point(450, 0);
+            this.viewConfig.Name = "viewConfig";
+            this.viewConfig.Size = new System.Drawing.Size(450, 160);
+            this.viewConfig.TabIndex = 0;
             // 
             // OnList
             // 
@@ -513,10 +513,10 @@
             this.splitContainerMain.Panel1.PerformLayout();
             this.splitContainerMain.Panel2.ResumeLayout(false);
             this.splitContainerMain.ResumeLayout(false);
-            this.tsSample.ResumeLayout(false);
-            this.tsSample.PerformLayout();
             this.gbQuery.ResumeLayout(false);
             this.gbQuery.PerformLayout();
+            this.tsSample.ResumeLayout(false);
+            this.tsSample.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -56,8 +56,12 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private void LoadEvent()
         {
-            this.txtAlertTemp.TextChanged += new System.EventHandler(this.txtAlertTemp_TextChanged);
-            this.txtInitTemp.TextChanged += new System.EventHandler(this.txtInitTemp_TextChanged);
+            this.txtAlertTemp1.TextChanged += new System.EventHandler(this.txtAlertTemp1_TextChanged);
+            this.txtAlertTemp2.TextChanged += new System.EventHandler(this.txtAlertTemp2_TextChanged);
+            this.txtAlertTemp3.TextChanged += new System.EventHandler(this.txtAlertTemp3_TextChanged);
+            this.txtInitTemp1.TextChanged += new System.EventHandler(this.txtInitTemp1_TextChanged);
+            this.txtInitTemp2.TextChanged += new System.EventHandler(this.txtInitTemp2_TextChanged);
+            this.txtInitTemp3.TextChanged += new System.EventHandler(this.txtInitTemp3_TextChanged);
             this.txtInjectTime1.TextChanged += new System.EventHandler(this.txtInjectTime1_TextChanged);
             this.txtInjectTime2.TextChanged += new System.EventHandler(this.txtInjectTime2_TextChanged);
             this.txtInjectTime3.TextChanged += new System.EventHandler(this.txtInjectTime3_TextChanged);
@@ -103,26 +107,35 @@ namespace ChromatoCore.solu.AntiCon
                 this._dtoAntiControl.dtoInject = new InjectDto(); ;
             }
 
-            this.txtInitTemp.Text = DefaultInject.InitTemp.ToString();
-            this.txtAlertTemp.Text = DefaultInject.AlertTemp.ToString();
-            
+            this.txtInitTemp1.Text = DefaultInject.InitTemp.ToString();
+            this.txtInitTemp2.Text = DefaultInject.InitTemp.ToString();
+            this.txtInitTemp3.Text = DefaultInject.InitTemp.ToString();
+            this.txtAlertTemp1.Text = DefaultInject.AlertTemp.ToString();
+            this.txtAlertTemp2.Text = DefaultInject.AlertTemp.ToString();
+            this.txtAlertTemp3.Text = DefaultInject.AlertTemp.ToString();
+
             this.txtInjectTime1.Text = DefaultInject.InjectTime.ToString();
             this.txtInjectTime2.Text = DefaultInject.InjectTime.ToString();
             this.txtInjectTime3.Text = DefaultInject.InjectTime.ToString();
-            this._dtoAntiControl.dtoInject.InitTemp = DefaultInject.InitTemp;
-            this._dtoAntiControl.dtoInject.AlertTemp = DefaultInject.AlertTemp;
+
+            this._dtoAntiControl.dtoInject.InitTemp1 = DefaultInject.InitTemp;
+            this._dtoAntiControl.dtoInject.InitTemp2 = DefaultInject.InitTemp;
+            this._dtoAntiControl.dtoInject.InitTemp3 = DefaultInject.InitTemp;
+            this._dtoAntiControl.dtoInject.AlertTemp1 = DefaultInject.AlertTemp;
+            this._dtoAntiControl.dtoInject.AlertTemp2 = DefaultInject.AlertTemp;
+            this._dtoAntiControl.dtoInject.AlertTemp3 = DefaultInject.AlertTemp;
             
             this._dtoAntiControl.dtoInject.InjectTime1 = (int)DefaultInject.InjectTime;
             this._dtoAntiControl.dtoInject.InjectTime2 = (int)DefaultInject.InjectTime;
             this._dtoAntiControl.dtoInject.InjectTime3 = (int)DefaultInject.InjectTime;
 
-            this._dtoAntiControl.dtoInject.ColumnType1 = DefaultInject.ColumnType;
-            this._dtoAntiControl.dtoInject.ColumnType2 = DefaultInject.ColumnType;
-            this._dtoAntiControl.dtoInject.ColumnType3 = DefaultInject.ColumnType;
+            this._dtoAntiControl.dtoInject.ColumnType1 = (int)DefaultInject.ColumnType;
+            this._dtoAntiControl.dtoInject.ColumnType2 = (int)DefaultInject.ColumnType;
+            this._dtoAntiControl.dtoInject.ColumnType3 = (int)DefaultInject.ColumnType;
 
-            this._dtoAntiControl.dtoInject.InjectMode1 = DefaultInject.InjectMode;
-            this._dtoAntiControl.dtoInject.InjectMode2 = DefaultInject.InjectMode;
-            this._dtoAntiControl.dtoInject.InjectMode3 = DefaultInject.InjectMode;
+            this._dtoAntiControl.dtoInject.InjectMode1 = (int)DefaultInject.InjectMode;
+            this._dtoAntiControl.dtoInject.InjectMode2 = (int)DefaultInject.InjectMode;
+            this._dtoAntiControl.dtoInject.InjectMode3 = (int)DefaultInject.InjectMode;
 
             this.LoadRadioBtn();
             this.LoadNewComboBox();
@@ -160,36 +173,46 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
+        /// 读取缓冲区
+        /// </summary>
+        public void Export()
+        {   
+            LoadTextBox();
+            LoadRadioBtn();
+            LoadEditComboBox();
+        }
+
+        /// <summary>
         /// 装载选项按钮
         /// </summary>
         private void LoadRadioBtn()
         {
             switch (this._dtoAntiControl.dtoInject.ColumnType1)
             {
-                case TypeColumn.Fill:
+                case (int)TypeColumn.Fill:
                     this.rbFill1.Checked = true;
                     break;
-                case TypeColumn.Capillary:
+                case (int)TypeColumn.Capillary:
                     this.rbCapillary1.Checked = true;
                     break;
             }
 
             switch (this._dtoAntiControl.dtoInject.ColumnType2)
             {
-                case TypeColumn.Fill:
+                case (int)TypeColumn.Fill:
                     this.rbFill2.Checked = true;
                     break;
-                case TypeColumn.Capillary:
+                case (int)TypeColumn.Capillary:
                     this.rbCapillary2.Checked = true;
                     break;
             }
 
             switch (this._dtoAntiControl.dtoInject.ColumnType3)
             {
-                case TypeColumn.Fill:
+                case (int)TypeColumn.Fill:
                     this.rbFill3.Checked = true;
                     break;
-                case TypeColumn.Capillary:
+                case (int)TypeColumn.Capillary:
                     this.rbCapillary3.Checked = true;
                     break;
             }
@@ -202,7 +225,7 @@ namespace ChromatoCore.solu.AntiCon
         {
             //装载进样模式1
             this.cmbInjectMode1.Items.Clear();
-            switch (this._dtoAntiControl.dtoInject.InjectMode1)
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode1)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -217,7 +240,7 @@ namespace ChromatoCore.solu.AntiCon
 
             //装载进样模式2
             this.cmbInjectMode2.Items.Clear();
-            switch (this._dtoAntiControl.dtoInject.InjectMode2)
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode2)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -232,7 +255,7 @@ namespace ChromatoCore.solu.AntiCon
 
             //装载进样模式3
             this.cmbInjectMode3.Items.Clear();
-            switch (this._dtoAntiControl.dtoInject.InjectMode3)
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode3)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -299,8 +322,12 @@ namespace ChromatoCore.solu.AntiCon
             {
                 return;
             }
-            this.txtInitTemp.Text = this._dtoAntiControl.dtoInject.InitTemp.ToString();
-            this.txtAlertTemp.Text = this._dtoAntiControl.dtoInject.AlertTemp.ToString();
+            this.txtInitTemp1.Text = this._dtoAntiControl.dtoInject.InitTemp1.ToString();
+            this.txtInitTemp2.Text = this._dtoAntiControl.dtoInject.InitTemp2.ToString();
+            this.txtInitTemp3.Text = this._dtoAntiControl.dtoInject.InitTemp3.ToString();
+            this.txtAlertTemp1.Text = this._dtoAntiControl.dtoInject.AlertTemp1.ToString();
+            this.txtAlertTemp2.Text = this._dtoAntiControl.dtoInject.AlertTemp2.ToString();
+            this.txtAlertTemp3.Text = this._dtoAntiControl.dtoInject.AlertTemp3.ToString();
             this.txtInjectTime1.Text = this._dtoAntiControl.dtoInject.InjectTime1.ToString();
             this.txtInjectTime2.Text = this._dtoAntiControl.dtoInject.InjectTime2.ToString();
             this.txtInjectTime3.Text = this._dtoAntiControl.dtoInject.InjectTime3.ToString();
@@ -312,8 +339,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="isReadOnly"></param>
         private void LoadControlStyle(bool isReadOnly)
         {
-            this.txtInitTemp.ReadOnly = isReadOnly;
-            this.txtAlertTemp.ReadOnly = isReadOnly;
+            this.txtInitTemp1.ReadOnly = isReadOnly;
+            this.txtInitTemp2.ReadOnly = isReadOnly;
+            this.txtInitTemp3.ReadOnly = isReadOnly;
+            this.txtAlertTemp1.ReadOnly = isReadOnly;
+            this.txtAlertTemp2.ReadOnly = isReadOnly;
+            this.txtAlertTemp3.ReadOnly = isReadOnly;
             this.txtInjectTime1.ReadOnly = isReadOnly;
             this.txtInjectTime2.ReadOnly = isReadOnly;
             this.txtInjectTime3.ReadOnly = isReadOnly;
@@ -326,8 +357,8 @@ namespace ChromatoCore.solu.AntiCon
             this.rbCapillary2.Enabled = this.rbCapillary2.Checked;
             this.rbCapillary3.Enabled = this.rbCapillary3.Checked;
 
-            this.txtInitTemp.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtAlertTemp.BackColor = isReadOnly ? Color.Beige : Color.White;
+            this.txtInitTemp1.BackColor = isReadOnly ? Color.Beige : Color.White;
+            this.txtAlertTemp1.BackColor = isReadOnly ? Color.Beige : Color.White;
 
             this.txtInjectTime1.BackColor = isReadOnly ? Color.Beige : Color.White;
             this.txtInjectTime2.BackColor = isReadOnly ? Color.Beige : Color.White;
@@ -368,47 +399,136 @@ namespace ChromatoCore.solu.AntiCon
         #region 文本框事件
 
         /// <summary>
-        /// 报警温度文字改变事件，合法性检验
+        /// INJ1报警温度文字改变事件，合法性检验
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtAlertTemp_TextChanged(object sender, EventArgs e)
+        private void txtAlertTemp1_TextChanged(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(this.txtAlertTemp.Text))
+            if (String.IsNullOrEmpty(this.txtAlertTemp1.Text))
             {
                 MessageBox.Show("报警温度不能为空！", "报警温度");
-                this.txtAlertTemp.Focus();
+                this.txtAlertTemp1.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.txtAlertTemp.Text))
+            if (!CastString.IsNumeric(this.txtAlertTemp1.Text))
             {
                 MessageBox.Show("报警温度不是数值！", "报警温度");
-                this.txtAlertTemp.Focus();
+                this.txtAlertTemp1.Focus();
                 return;
             }
-            this._dtoAntiControl.dtoInject.AlertTemp = Convert.ToSingle(this.txtAlertTemp.Text);
+            this._dtoAntiControl.dtoInject.AlertTemp1 = Convert.ToSingle(this.txtAlertTemp1.Text);
+        }
+
+
+        /// <summary>
+        /// INJ2报警温度文字改变事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtAlertTemp2_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.txtAlertTemp2.Text))
+            {
+                MessageBox.Show("报警温度不能为空！", "报警温度");
+                this.txtAlertTemp2.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.txtAlertTemp2.Text))
+            {
+                MessageBox.Show("报警温度不是数值！", "报警温度");
+                this.txtAlertTemp2.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoInject.AlertTemp2 = Convert.ToSingle(this.txtAlertTemp2.Text);
         }
 
         /// <summary>
-        /// 初   温文字改变事件，合法性检验
+        /// INJ3报警温度文字改变事件，合法性检验
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtInitTemp_TextChanged(object sender, EventArgs e)
+        private void txtAlertTemp3_TextChanged(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(this.txtInitTemp.Text))
+            if (String.IsNullOrEmpty(this.txtAlertTemp3.Text))
+            {
+                MessageBox.Show("报警温度不能为空！", "报警温度");
+                this.txtAlertTemp3.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.txtAlertTemp3.Text))
+            {
+                MessageBox.Show("报警温度不是数值！", "报警温度");
+                this.txtAlertTemp3.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoInject.AlertTemp3 = Convert.ToSingle(this.txtAlertTemp3.Text);
+        }
+
+        /// <summary>
+        /// INJ1初温文字改变事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtInitTemp1_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.txtInitTemp1.Text))
             {
                 MessageBox.Show("初温不能为空！", "初   温");
-                this.txtInitTemp.Focus();
+                this.txtInitTemp1.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.txtInitTemp.Text))
+            if (!CastString.IsNumeric(this.txtInitTemp1.Text))
             {
                 MessageBox.Show("初温不是数值！", "初   温");
-                this.txtInitTemp.Focus();
+                this.txtInitTemp1.Focus();
                 return;
             }
-            this._dtoAntiControl.dtoInject.InitTemp = Convert.ToSingle(this.txtInitTemp.Text);
+            this._dtoAntiControl.dtoInject.InitTemp1 = Convert.ToSingle(this.txtInitTemp1.Text);
+        }
+
+        /// <summary>
+        /// INJ2初温文字改变事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtInitTemp2_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.txtInitTemp2.Text))
+            {
+                MessageBox.Show("初温不能为空！", "初   温");
+                this.txtInitTemp2.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.txtInitTemp2.Text))
+            {
+                MessageBox.Show("初温不是数值！", "初   温");
+                this.txtInitTemp2.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoInject.InitTemp2 = Convert.ToSingle(this.txtInitTemp2.Text);
+        }
+
+        /// <summary>
+        /// INJ3初温文字改变事件，合法性检验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtInitTemp3_TextChanged(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(this.txtInitTemp3.Text))
+            {
+                MessageBox.Show("初温不能为空！", "初   温");
+                this.txtInitTemp3.Focus();
+                return;
+            }
+            if (!CastString.IsNumeric(this.txtInitTemp3.Text))
+            {
+                MessageBox.Show("初温不是数值！", "初   温");
+                this.txtInitTemp3.Focus();
+                return;
+            }
+            this._dtoAntiControl.dtoInject.InitTemp3 = Convert.ToSingle(this.txtInitTemp3.Text);
         }
 
         /// <summary>
@@ -489,12 +609,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbFill1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType1 == TypeColumn.Fill)
+            if (this._dtoAntiControl.dtoInject.ColumnType1 == (int)TypeColumn.Fill)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType1 = TypeColumn.Fill;
+            this._dtoAntiControl.dtoInject.ColumnType1 = (int)TypeColumn.Fill;
 
             this.cmbInjectMode1.Enabled = false;
             this.txtInjectTime1.Enabled = false;
@@ -507,12 +627,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbCapillary1_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType1 == TypeColumn.Capillary)
+            if (this._dtoAntiControl.dtoInject.ColumnType1 == (int)TypeColumn.Capillary)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType1 = TypeColumn.Capillary;
+            this._dtoAntiControl.dtoInject.ColumnType1 = (int)TypeColumn.Capillary;
 
             this.cmbInjectMode1.Enabled = true;
             this.txtInjectTime1.Enabled = true;
@@ -525,12 +645,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbFill2_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType2 == TypeColumn.Fill)
+            if (this._dtoAntiControl.dtoInject.ColumnType2 == (int)TypeColumn.Fill)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType2 = TypeColumn.Fill;
+            this._dtoAntiControl.dtoInject.ColumnType2 = (int)TypeColumn.Fill;
 
             this.cmbInjectMode2.Enabled = false;
             this.txtInjectTime2.Enabled = false;
@@ -543,12 +663,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbCapillary2_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType2 == TypeColumn.Capillary)
+            if (this._dtoAntiControl.dtoInject.ColumnType2 == (int)TypeColumn.Capillary)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType2 = TypeColumn.Capillary;
+            this._dtoAntiControl.dtoInject.ColumnType2 = (int)TypeColumn.Capillary;
 
             this.cmbInjectMode2.Enabled = true;
             this.txtInjectTime2.Enabled = true;
@@ -561,12 +681,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbFill3_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType3 == TypeColumn.Fill)
+            if (this._dtoAntiControl.dtoInject.ColumnType3 == (int)TypeColumn.Fill)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType3 = TypeColumn.Fill;
+            this._dtoAntiControl.dtoInject.ColumnType3 = (int)TypeColumn.Fill;
 
             this.cmbInjectMode3.Enabled = false;
             this.txtInjectTime3.Enabled = false;
@@ -579,12 +699,12 @@ namespace ChromatoCore.solu.AntiCon
         /// <param name="e"></param>
         private void rbCapillary3_CheckedChanged(object sender, EventArgs e)
         {
-            if (this._dtoAntiControl.dtoInject.ColumnType3 == TypeColumn.Capillary)
+            if (this._dtoAntiControl.dtoInject.ColumnType3 == (int)TypeColumn.Capillary)
             {
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.ColumnType3 = TypeColumn.Capillary;
+            this._dtoAntiControl.dtoInject.ColumnType3 = (int)TypeColumn.Capillary;
 
             this.cmbInjectMode3.Enabled = true;
             this.txtInjectTime3.Enabled = true;
@@ -613,8 +733,8 @@ namespace ChromatoCore.solu.AntiCon
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.InjectMode1 = (ModeInject)this.cmbInjectMode1.SelectedIndex;
-            switch (this._dtoAntiControl.dtoInject.InjectMode1)
+            this._dtoAntiControl.dtoInject.InjectMode1 = this.cmbInjectMode1.SelectedIndex;
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode1)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -643,9 +763,9 @@ namespace ChromatoCore.solu.AntiCon
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.InjectMode2 = (ModeInject)this.cmbInjectMode2.SelectedIndex;
+            this._dtoAntiControl.dtoInject.InjectMode2 = this.cmbInjectMode2.SelectedIndex;
 
-            switch (this._dtoAntiControl.dtoInject.InjectMode2)
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode2)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -674,9 +794,9 @@ namespace ChromatoCore.solu.AntiCon
                 return;
             }
 
-            this._dtoAntiControl.dtoInject.InjectMode3 = (ModeInject)this.cmbInjectMode3.SelectedIndex;
+            this._dtoAntiControl.dtoInject.InjectMode3 = this.cmbInjectMode3.SelectedIndex;
 
-            switch (this._dtoAntiControl.dtoInject.InjectMode3)
+            switch ((ModeInject)this._dtoAntiControl.dtoInject.InjectMode3)
             {
                 case ModeInject.NoTributary:
                 case ModeInject.Tributary:
@@ -689,6 +809,5 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         #endregion
-
     }
 }

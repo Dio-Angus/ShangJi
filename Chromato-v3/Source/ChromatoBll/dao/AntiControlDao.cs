@@ -138,14 +138,14 @@ namespace ChromatoBll.dao
 
 
             dto.dtoInject = new InjectDto();
-            dto.dtoInject.AlertTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tseAlertTemp"].ToString());
-            dto.dtoInject.InitTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tseInitTemp"].ToString());
-            dto.dtoInject.ColumnType1 = (TypeColumn)Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType1"].ToString());
-            dto.dtoInject.ColumnType2 = (TypeColumn)Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType2"].ToString());
-            dto.dtoInject.ColumnType3 = (TypeColumn)Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType3"].ToString());
-            dto.dtoInject.InjectMode1 = (ModeInject)Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode1"].ToString());
-            dto.dtoInject.InjectMode2 = (ModeInject)Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode2"].ToString());
-            dto.dtoInject.InjectMode3 = (ModeInject)Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode3"].ToString());
+            dto.dtoInject.AlertTemp1 = Convert.ToSingle(ds.Tables[0].Rows[0]["tseAlertTemp"].ToString());
+            dto.dtoInject.InitTemp1 = Convert.ToSingle(ds.Tables[0].Rows[0]["tseInitTemp"].ToString());
+            dto.dtoInject.ColumnType1 = Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType1"].ToString());
+            dto.dtoInject.ColumnType2 = Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType2"].ToString());
+            dto.dtoInject.ColumnType3 = Convert.ToInt32(ds.Tables[0].Rows[0]["ColumnType3"].ToString());
+            dto.dtoInject.InjectMode1 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode1"].ToString());
+            dto.dtoInject.InjectMode2 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode2"].ToString());
+            dto.dtoInject.InjectMode3 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectMode3"].ToString());
             dto.dtoInject.InjectTime1 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectTime1"].ToString());
             dto.dtoInject.InjectTime2 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectTime2"].ToString());
             dto.dtoInject.InjectTime3 = Convert.ToInt32(ds.Tables[0].Rows[0]["InjectTime3"].ToString());
@@ -157,12 +157,12 @@ namespace ChromatoBll.dao
             dto.dtoAux.InitTempAux2 = Convert.ToSingle(ds.Tables[0].Rows[0]["InitTempAux2"].ToString());
 
             dto.dtoFid = new FidDto();
-            dto.dtoFid.AlertTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tfAlertTemp"].ToString());
-            dto.dtoFid.InitTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["tfInitTemp"].ToString());
-            dto.dtoFid.MagnifyFactorOne = Convert.ToInt32(ds.Tables[0].Rows[0]["MagnifyFactorOne"].ToString());
-            dto.dtoFid.MagnifyFactorTwo = Convert.ToInt32(ds.Tables[0].Rows[0]["MagnifyFactorTwo"].ToString());
-            dto.dtoFid.PolarityOne = Convert.ToBoolean(ds.Tables[0].Rows[0]["tfPolarityOne"].ToString());
-            dto.dtoFid.PolarityTwo = Convert.ToBoolean(ds.Tables[0].Rows[0]["tfPolarityTwo"].ToString());
+            dto.dtoFid.AlertTemp1 = Convert.ToSingle(ds.Tables[0].Rows[0]["tfAlertTemp"].ToString());
+            dto.dtoFid.InitTemp1 = Convert.ToSingle(ds.Tables[0].Rows[0]["tfInitTemp"].ToString());
+            dto.dtoFid.MagnifyFactor1 = Convert.ToInt32(ds.Tables[0].Rows[0]["MagnifyFactorOne"].ToString());
+            dto.dtoFid.MagnifyFactor2 = Convert.ToInt32(ds.Tables[0].Rows[0]["MagnifyFactorTwo"].ToString());
+            dto.dtoFid.Polarity1 = Convert.ToBoolean(ds.Tables[0].Rows[0]["tfPolarityOne"].ToString());
+            dto.dtoFid.Polarity2 = Convert.ToBoolean(ds.Tables[0].Rows[0]["tfPolarityTwo"].ToString());
 
             dto.dtoTcd = new TcdDto();
             dto.dtoTcd.AlertTemp1 = Convert.ToSingle(ds.Tables[0].Rows[0]["ttAlertTemp1"].ToString());
@@ -217,8 +217,8 @@ namespace ChromatoBll.dao
             bRet = this._sqlHelper.ExecuteSql(sql);
 
             sql = "UPDATE [T_Inject] SET "
-                + "AlertTemp = '" + dto.dtoInject.AlertTemp + "', "
-                + "InitTemp = '" + dto.dtoInject.InitTemp + "', "
+                + "AlertTemp = '" + dto.dtoInject.AlertTemp1 + "', "
+                + "InitTemp = '" + dto.dtoInject.InitTemp1 + "', "
                 + "InjectMode1 = '" + (int)dto.dtoInject.InjectMode1 + "', "
                 + "InjectMode2 = '" + (int)dto.dtoInject.InjectMode2 + "', "
                 + "InjectMode3 = '" + (int)dto.dtoInject.InjectMode3 + "', "
@@ -239,14 +239,14 @@ namespace ChromatoBll.dao
                + "Where AntiControlID = " + dto.AntiControlID;
             bRet = this._sqlHelper.ExecuteSql(sql);
 
-            int polarityOne = (dto.dtoFid.PolarityOne) ? 1 : 0;
-            int polarityTwo = (dto.dtoFid.PolarityTwo) ? 1 : 0;
+            int polarityOne = (dto.dtoFid.Polarity1) ? 1 : 0;
+            int polarityTwo = (dto.dtoFid.Polarity2) ? 1 : 0;
 
             sql = "UPDATE [T_Fid] SET "
-                + "AlertTemp = '" + dto.dtoFid.AlertTemp + "', "
-                + "InitTemp = '" + dto.dtoFid.InitTemp + "', "
-                + "MagnifyFactorOne = '" + dto.dtoFid.MagnifyFactorOne + "', "
-                + "MagnifyFactorTwo = '" + dto.dtoFid.MagnifyFactorTwo + "', "
+                + "AlertTemp = '" + dto.dtoFid.AlertTemp1 + "', "
+                + "InitTemp = '" + dto.dtoFid.InitTemp1 + "', "
+                + "MagnifyFactorOne = '" + dto.dtoFid.MagnifyFactor1 + "', "
+                + "MagnifyFactorTwo = '" + dto.dtoFid.MagnifyFactor2 + "', "
                 + "PolarityOne = '" + polarityOne + "', "
                 + "PolarityTwo = '" + polarityTwo + "' "
                + "Where AntiControlID = " + dto.AntiControlID;
@@ -343,8 +343,8 @@ namespace ChromatoBll.dao
             sqlStr = "INSERT INTO T_Inject(AntiControlID,AlertTemp,InitTemp,ColumnType1,ColumnType2,ColumnType3,"
                 + "InjectMode1,InjectMode2,InjectMode3,InjectTime1,InjectTime2,InjectTime3) VALUES ('"
                 + dto.AntiControlID + "','"
-                + dto.dtoInject.AlertTemp + "','"
-                + dto.dtoInject.InitTemp + "','"
+                + dto.dtoInject.AlertTemp1 + "','"
+                + dto.dtoInject.InitTemp1 + "','"
                 + (int)dto.dtoInject.ColumnType1 + "','"
                 + (int)dto.dtoInject.ColumnType2 + "','"
                 + (int)dto.dtoInject.ColumnType3 + "','"
@@ -365,16 +365,16 @@ namespace ChromatoBll.dao
                 + dto.dtoAux.InitTempAux2 + "')";
             bRet = _sqlHelper.ExecuteSql(sqlStr);
 
-            int polarityOne = (dto.dtoFid.PolarityOne) ? 1 : 0;
-            int polarityTwo = (dto.dtoFid.PolarityTwo) ? 1 : 0;
+            int polarityOne = (dto.dtoFid.Polarity1) ? 1 : 0;
+            int polarityTwo = (dto.dtoFid.Polarity2) ? 1 : 0;
 
             sqlStr = "INSERT INTO T_Fid(AntiControlID,AlertTemp,InitTemp,MagnifyFactorOne,MagnifyFactorTwo,"
                 + "PolarityOne,PolarityTwo) VALUES ('"
                 + dto.AntiControlID + "','"
-                + dto.dtoFid.AlertTemp + "','"
-                + dto.dtoFid.InitTemp + "','"
-                + dto.dtoFid.MagnifyFactorOne + "','"
-                + dto.dtoFid.MagnifyFactorTwo + "','"
+                + dto.dtoFid.AlertTemp1 + "','"
+                + dto.dtoFid.InitTemp1 + "','"
+                + dto.dtoFid.MagnifyFactor1 + "','"
+                + dto.dtoFid.MagnifyFactor2 + "','"
                 + polarityOne + "','"
                 + polarityTwo + "')";
             bRet = _sqlHelper.ExecuteSql(sqlStr);

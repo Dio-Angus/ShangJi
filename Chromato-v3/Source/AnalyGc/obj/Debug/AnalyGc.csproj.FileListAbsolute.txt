@@ -65,7 +65,6 @@ D:\Chromato-v3-通用版\bin\Debug\AnalyGc.XML
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.exe
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\AnalyGc\obj\Debug\AnalyGc.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.exe.config
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.XML
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.exe
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\AnalyGc.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\AnalyGc\obj\Debug\ResolveAssemblyReference.cache

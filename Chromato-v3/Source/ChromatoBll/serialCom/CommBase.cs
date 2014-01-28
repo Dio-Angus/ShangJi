@@ -16,6 +16,8 @@ using ChromatoBll.ocx.biz;
 using System.Text;
 using System.Net.Sockets;
 using ChromatoBll.serialCom;
+using System.Windows.Forms;
+using System.Collections.Generic;
 
 
 namespace ChromatoBll.serialCom
@@ -379,12 +381,12 @@ namespace ChromatoBll.serialCom
         #endregion
 
 
-        #region 接収数据
+        #region 接收数据
 
         /// <summary>
         /// 清除串口数据
         /// </summary>
-        protected void ClearSict()
+        public void ClearSict()
         {
             TimeSpan waitTime = new TimeSpan(0, 0, 0, 0, 50);
             byte[] readBuffer = new byte[this._sictPort.ReadBufferSize + 1];
@@ -416,48 +418,722 @@ namespace ChromatoBll.serialCom
         /// <summary>
         /// 从SICT串口读取数据
         /// </summary>
-        protected void ReadSict()
+        public StringBuilder ReadSict()
         {
             TimeSpan waitTime = new TimeSpan(0, 0, 0, 0, 50);
             byte[] readBuffer = new byte[this._sictPort.ReadBufferSize + 1];
             String temp = "";
             this._tSictCount = 0;
-
             //Thread.Sleep(waitTime);
-
-            while (CommConst.AI_ALLOW_COUNT > this._tSictCount)
+            try
             {
-                try
-                {
-                    int count = 0;                 
-                    if(Port.tag==0)
-                        count = this._sictPort.Read(readBuffer, 0, this._sictPort.ReadBufferSize);                   
-                    else if(Port.tag==1)
-                        count = this.ns.Read(readBuffer,0,this._sictPort.ReadBufferSize);
+                int count = 0;
+                if (Port.tag == 0)
+                    count = this._sictPort.Read(readBuffer, 0, this._sictPort.ReadBufferSize);
+                else if (Port.tag == 1)
+                    count = this.ns.Read(readBuffer, 0, this._sictPort.ReadBufferSize);
 
-                    for (int i = 0; i < count; i++)
+                for (int i = 0; i < count; i++)
+                {
+                    //convert byte to Hex string, "35" -> "23" "173" -> "AD"
+                    temp = Conversion.Hex(readBuffer[i]);
+                    if (2 > temp.Length)
                     {
-                        //convert byte to Hex string, "35" -> "23" "173" -> "AD"
-                        temp = Conversion.Hex(readBuffer[i]);
-                        if (2 > temp.Length)
-                        {
-                            //校验码添0
-                            temp = "0" + temp;
-                        }
-                        this._sictRead.Append(temp);
+                        //校验码添0
+                        temp = "0" + temp;
                     }
+                    this._sictRead.Append(temp);
+                }
+                return _sictRead;
 
-                }
-                catch (TimeoutException)
-                {
-                    Thread.Sleep(waitTime);
-                }
-                catch
-                {
-                    Thread.Sleep(waitTime);
-                }
-                this._tSictCount++;
             }
+            catch (TimeoutException)
+            {
+                Thread.Sleep(waitTime);
+                return null;
+            }
+            catch
+            {
+                Thread.Sleep(waitTime);
+                return null;
+            }
+        }
+        #endregion
+
+        
+        #region 接收分析数据 by Dio
+        /// <summary>
+        /// 分析数据
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        public void AnalyseResult(ChromatoTool.dto.AntiControlDto _antiControl)
+        {
+            byte[] buffer = Receive();
+            if (buffer[0].ToString("X2") != "AA" || buffer[1].ToString("X2") != "55")
+            {
+                return;
+            }
+            else
+            {
+                switch (buffer[3].ToString("X2"))
+                {
+                    case "03"://网络板
+                        AnalyseNetwork(_antiControl,buffer);
+                        break;
+                    case "21"://加热源，进样口，AUX
+                        AnalyseHeatingBoard(_antiControl,buffer);
+                        break;
+                    case "40":
+                    case "41":
+                    case "42":
+                    case "43":
+                    case "44"://FID(公共,1,2,K1,K2)
+                        AnalyseFID(_antiControl, buffer);
+                        break;
+                    case "50":
+                    case "51":
+                    case "52"://TCD(公共,1,2)
+                        AnalyseTCD(_antiControl, buffer);
+                        break;
+                    case "72"://ECD
+                        AnalyseECD(_antiControl, buffer);
+                        break;
+                    case "71"://FPD
+                        AnalyseFPD(_antiControl, buffer);
+                        break;
+                    case "FF"://错误
+                        MessageBox.Show("读取失败");
+                        return;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 接收串口数据
+        /// </summary>
+        /// <returns></returns>
+        private byte[] Receive()
+        {
+            byte[] buffer = null;
+            if (Port.tag == 0)
+            {
+                int a;
+                a = this._sictPort.ReadByte();
+                a = this._sictPort.ReadByte();
+                a = this._sictPort.ReadByte();
+                a = this._sictPort.ReadByte();
+
+                this._sictPort.Read(buffer, 0, 10000);
+            }
+            else if (Port.tag == 1)
+                this.ns.Read(buffer, 0, 10000);
+            return buffer;
+        }
+
+        /// <summary>
+        /// 分析网络板
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseNetwork(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
+            switch (buffer[4].ToString("X2"))
+            {
+                case "14":
+                    if(buffer[2].ToString("X2")=="38")
+                    {
+                        _antiControl.dtoNetworkBoard.GateIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                            + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                        _antiControl.dtoNetworkBoard.Mask = buffer[9].ToString("") + "." + buffer[10].ToString("")
+                            + "." + buffer[11].ToString("") + "." + buffer[12].ToString("");
+                        _antiControl.dtoNetworkBoard.MAC = buffer[13].ToString("X2") + "-" + buffer[14].ToString("X2")
+                            + "-" + buffer[15].ToString("X2") + "-" + buffer[16].ToString("X2")
+                            + "-" + buffer[17].ToString("X2") + "-" + buffer[18].ToString("X2");
+                        _antiControl.dtoNetworkBoard.SourceIP = buffer[19].ToString("") + "." + buffer[20].ToString("")
+                            + "." + buffer[21].ToString("") + "." + buffer[22].ToString("");
+
+                        _antiControl.dtoNetworkBoard.Socket0Address = (buffer[23] * 256 + buffer[24]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket0AimIP = buffer[25].ToString("") + "." + buffer[26].ToString("")
+                            + "." + buffer[27].ToString("") + "." + buffer[28].ToString("");
+                        _antiControl.dtoNetworkBoard.Socket0AimAddress = (buffer[29] * 256 + buffer[30]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket0WorkMode = buffer[31];
+
+                        _antiControl.dtoNetworkBoard.Socket1Address = (buffer[32] * 256 + buffer[33]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket1AimIP = buffer[34].ToString("") + "." + buffer[35].ToString("")
+                            + "." + buffer[36].ToString("") + "." + buffer[37].ToString("");
+                        _antiControl.dtoNetworkBoard.Socket1AimAddress = (buffer[38] * 256 + buffer[39]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket1WorkMode = buffer[40];
+
+                        _antiControl.dtoNetworkBoard.Socket2Address = (buffer[41] * 256 + buffer[42]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket2AimIP = buffer[43].ToString("") + "." + buffer[44].ToString("")
+                            + "." + buffer[45].ToString("") + "." + buffer[46].ToString("");
+                        _antiControl.dtoNetworkBoard.Socket2AimAddress = (buffer[47] * 256 + buffer[48]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket2WorkMode = buffer[49];
+
+                        _antiControl.dtoNetworkBoard.Socket3Address = (buffer[50] * 256 + buffer[51]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket3AimIP = buffer[52].ToString("") + "." + buffer[53].ToString("")
+                            + "." + buffer[54].ToString("") + "." + buffer[55].ToString("");
+                        _antiControl.dtoNetworkBoard.Socket3AimAddress = (buffer[56] * 256 + buffer[57]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket3WorkMode = buffer[58];
+                    }
+                    break;   
+                case "00":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.GateIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "01":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.Mask = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "02":
+                    if (buffer[2].ToString("X2") == "08")
+                    {
+                        _antiControl.dtoNetworkBoard.MAC = buffer[5].ToString("X2") + "-" + buffer[6].ToString("X2")
+                            + "-" + buffer[7].ToString("X2") + "-" + buffer[8].ToString("X2")
+                            + "-" + buffer[9].ToString("X2") + "-" + buffer[10].ToString("X2");
+                    }
+                    break;
+                case "03":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.SourceIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+
+                    //socket0
+                case "04":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket0Address = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "05":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket0AimIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "06":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket0AimAddress = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "07":
+                    if (buffer[2].ToString("X2") == "03")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket0WorkMode = buffer[5];
+                    }
+                    break;
+
+                //socket1
+                case "08":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket1Address = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "09":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket1AimIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "0A":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket1AimAddress = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "0B":
+                    if (buffer[2].ToString("X2") == "03")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket1WorkMode = buffer[5];
+                    }
+                    break;
+
+                //socket2
+                case "0C":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket2Address = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "0D":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket2AimIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "0E":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket2AimAddress = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "0F":
+                    if (buffer[2].ToString("X2") == "03")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket2WorkMode = buffer[5];
+                    }
+                    break;
+
+                //socket3
+                case "10":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket3Address = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "11":
+                    if (buffer[2].ToString("X2") == "06")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket3AimIP = buffer[5].ToString("") + "." + buffer[6].ToString("")
+                                                   + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
+                    }
+                    break;
+                case "12":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket3AimAddress = buffer[5].ToString("") + "." + buffer[6].ToString("");
+                    }
+                    break;
+                case "13":
+                    if (buffer[2].ToString("X2") == "03")
+                    {
+                        _antiControl.dtoNetworkBoard.Socket3WorkMode = buffer[5];
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 分析加热源，进样口，AUX
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseHeatingBoard(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
+            switch (buffer[4].ToString("X2"))
+            {
+                //加热源
+                case "00":
+                    if (buffer[2].ToString("X2") == "11")//无程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7]*256*256+buffer[8]*256+buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10]*256*256+buffer[11]*256+buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount= buffer[19];
+                    }
+                    if (buffer[2].ToString("X2") == "1B")//一阶程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7] * 256 * 256 + buffer[8] * 256 + buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10] * 256 * 256 + buffer[11] * 256 + buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        //COL1
+                        _antiControl.dtoHeatingSource.RateCol1 = buffer[20] * 256 * 256 * 256 + buffer[21] * 256 * 256 + buffer[22] * 256 + buffer[23];
+                        _antiControl.dtoHeatingSource.TempCol1 = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];                        
+                    }
+                    if (buffer[2].ToString("X2") == "25")//二阶程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7] * 256 * 256 + buffer[8] * 256 + buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10] * 256 * 256 + buffer[11] * 256 + buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        //COL1
+                        _antiControl.dtoHeatingSource.RateCol1 = buffer[20] * 256 * 256 * 256 + buffer[21] * 256 * 256 + buffer[22] * 256 + buffer[23];
+                        _antiControl.dtoHeatingSource.TempCol1 = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];
+                        //COL2
+                        _antiControl.dtoHeatingSource.RateCol2 = buffer[30] * 256 * 256 * 256 + buffer[31] * 256 * 256 + buffer[32] * 256 + buffer[33];
+                        _antiControl.dtoHeatingSource.TempCol2 = buffer[34] * 256 * 256 + buffer[35] * 256 + buffer[36];
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = buffer[37] * 256 * 256 + buffer[38] * 256 + buffer[39];
+                    }
+                    if (buffer[2].ToString("X2") == "2F")//三阶程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7] * 256 * 256 + buffer[8] * 256 + buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10] * 256 * 256 + buffer[11] * 256 + buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        //COL1
+                        _antiControl.dtoHeatingSource.RateCol1 = buffer[20] * 256 * 256 * 256 + buffer[21] * 256 * 256 + buffer[22] * 256 + buffer[23];
+                        _antiControl.dtoHeatingSource.TempCol1 = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];
+                        //COL2
+                        _antiControl.dtoHeatingSource.RateCol2 = buffer[30] * 256 * 256 * 256 + buffer[31] * 256 * 256 + buffer[32] * 256 + buffer[33];
+                        _antiControl.dtoHeatingSource.TempCol2 = buffer[34] * 256 * 256 + buffer[35] * 256 + buffer[36];
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = buffer[37] * 256 * 256 + buffer[38] * 256 + buffer[39];
+                        //COL3
+                        _antiControl.dtoHeatingSource.RateCol3 = buffer[40] * 256 * 256 * 256 + buffer[41] * 256 * 256 + buffer[42] * 256 + buffer[43];
+                        _antiControl.dtoHeatingSource.TempCol3 = buffer[44] * 256 * 256 + buffer[45] * 256 + buffer[46];
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = buffer[47] * 256 * 256 + buffer[48] * 256 + buffer[49];
+                    }
+                    if (buffer[2].ToString("X2") == "39")//四阶程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7] * 256 * 256 + buffer[8] * 256 + buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10] * 256 * 256 + buffer[11] * 256 + buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        //COL1
+                        _antiControl.dtoHeatingSource.RateCol1 = buffer[20] * 256 * 256 * 256 + buffer[21] * 256 * 256 + buffer[22] * 256 + buffer[23];
+                        _antiControl.dtoHeatingSource.TempCol1 = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];
+                        //COL2
+                        _antiControl.dtoHeatingSource.RateCol2 = buffer[30] * 256 * 256 * 256 + buffer[31] * 256 * 256 + buffer[32] * 256 + buffer[33];
+                        _antiControl.dtoHeatingSource.TempCol2 = buffer[34] * 256 * 256 + buffer[35] * 256 + buffer[36];
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = buffer[37] * 256 * 256 + buffer[38] * 256 + buffer[39];
+                        //COL3
+                        _antiControl.dtoHeatingSource.RateCol3 = buffer[40] * 256 * 256 * 256 + buffer[41] * 256 * 256 + buffer[42] * 256 + buffer[43];
+                        _antiControl.dtoHeatingSource.TempCol3 = buffer[44] * 256 * 256 + buffer[45] * 256 + buffer[46];
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = buffer[47] * 256 * 256 + buffer[48] * 256 + buffer[49];
+                        //COL4
+                        _antiControl.dtoHeatingSource.RateCol4 = buffer[50] * 256 * 256 * 256 + buffer[51] * 256 * 256 + buffer[52] * 256 + buffer[53];
+                        _antiControl.dtoHeatingSource.TempCol4 = buffer[54] * 256 * 256 + buffer[55] * 256 + buffer[56];
+                        _antiControl.dtoHeatingSource.TempTimeCol4= buffer[57] * 256 * 256 + buffer[58] * 256 + buffer[59];
+                    }
+                    if (buffer[2].ToString("X2") == "43")//五阶程升
+                    {
+                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
+                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        _antiControl.dtoHeatingSource.InitTemp = buffer[7] * 256 * 256 + buffer[8] * 256 + buffer[9];
+                        _antiControl.dtoHeatingSource.AlertTemp = buffer[10] * 256 * 256 + buffer[11] * 256 + buffer[12];
+                        _antiControl.dtoHeatingSource.MaintainTime = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoHeatingSource.BalanceTime = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        //COL1
+                        _antiControl.dtoHeatingSource.RateCol1 = buffer[20] * 256 * 256 * 256 + buffer[21] * 256 * 256 + buffer[22] * 256 + buffer[23];
+                        _antiControl.dtoHeatingSource.TempCol1 = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];
+                        //COL2
+                        _antiControl.dtoHeatingSource.RateCol2 = buffer[30] * 256 * 256 * 256 + buffer[31] * 256 * 256 + buffer[32] * 256 + buffer[33];
+                        _antiControl.dtoHeatingSource.TempCol2 = buffer[34] * 256 * 256 + buffer[35] * 256 + buffer[36];
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = buffer[37] * 256 * 256 + buffer[38] * 256 + buffer[39];
+                        //COL3
+                        _antiControl.dtoHeatingSource.RateCol3 = buffer[40] * 256 * 256 * 256 + buffer[41] * 256 * 256 + buffer[42] * 256 + buffer[43];
+                        _antiControl.dtoHeatingSource.TempCol3 = buffer[44] * 256 * 256 + buffer[45] * 256 + buffer[46];
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = buffer[47] * 256 * 256 + buffer[48] * 256 + buffer[49];
+                        //COL4
+                        _antiControl.dtoHeatingSource.RateCol4 = buffer[50] * 256 * 256 * 256 + buffer[51] * 256 * 256 + buffer[52] * 256 + buffer[53];
+                        _antiControl.dtoHeatingSource.TempCol4 = buffer[54] * 256 * 256 + buffer[55] * 256 + buffer[56];
+                        _antiControl.dtoHeatingSource.TempTimeCol4 = buffer[57] * 256 * 256 + buffer[58] * 256 + buffer[59];
+                        //COL5
+                        _antiControl.dtoHeatingSource.RateCol4 = buffer[60] * 256 * 256 * 256 + buffer[61] * 256 * 256 + buffer[62] * 256 + buffer[63];
+                        _antiControl.dtoHeatingSource.TempCol4 = buffer[64] * 256 * 256 + buffer[65] * 256 + buffer[66];
+                        _antiControl.dtoHeatingSource.TempTimeCol4 = buffer[67] * 256 * 256 + buffer[68] * 256 + buffer[69];
+                    }
+                    break;
+                //进样口
+                case "80":
+                    if (buffer[2].ToString("X2") == "23")
+                    {
+                        //INJ1
+                        _antiControl.dtoInject.InitTemp1 = buffer[5] * 256 * 256 + buffer[6] * 256 + buffer[7];
+                        _antiControl.dtoInject.AlertTemp1 = buffer[8] * 256 * 256 + buffer[9] * 256 + buffer[10];
+                        _antiControl.dtoInject.ColumnType1 = buffer[11];
+                        _antiControl.dtoInject.InjectTime1 = buffer[12] * 256 * 256 + buffer[13] * 256 + buffer[14];
+                        _antiControl.dtoInject.InjectMode1 = buffer[15];
+                        //INJ2
+                        _antiControl.dtoInject.InitTemp2 = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+                        _antiControl.dtoInject.AlertTemp2 = buffer[19] * 256 * 256 + buffer[20] * 256 + buffer[21];
+                        _antiControl.dtoInject.ColumnType2 = buffer[22];
+                        _antiControl.dtoInject.InjectTime2 = buffer[23] * 256 * 256 + buffer[24] * 256 + buffer[25];
+                        _antiControl.dtoInject.InjectMode2 = buffer[26];
+                        //INJ3
+                        _antiControl.dtoInject.InitTemp3 = buffer[27] * 256 * 256 + buffer[28] * 256 + buffer[29];
+                        _antiControl.dtoInject.AlertTemp3 = buffer[30] * 256 * 256 + buffer[31] * 256 + buffer[32];
+                        _antiControl.dtoInject.ColumnType3 = buffer[33];
+                        _antiControl.dtoInject.InjectTime3 = buffer[34] * 256 * 256 + buffer[35] * 256 + buffer[36];
+                        _antiControl.dtoInject.InjectMode3 = buffer[37];
+                    }
+                    break;
+                //AUX
+                case "A0":
+                    if (buffer[2].ToString("X2") == "09")
+                    {
+                        //AUX1
+                        if (buffer[5].ToString("X2") == "23")
+                        {
+                            _antiControl.dtoAux.InitTempAux1 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                            _antiControl.dtoAux.AlertTempAux1 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+                            _antiControl.dtoAux.UserIndex = 1;
+                        }
+                        //AUX2
+                        if (buffer[5].ToString("X2") == "24")
+                        {
+                            _antiControl.dtoAux.InitTempAux2 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                            _antiControl.dtoAux.AlertTempAux2 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+                            _antiControl.dtoAux.UserIndex = 2;
+                        }
+                    }
+                    //AUX1&&AUX2
+                    if (buffer[2].ToString("X2") == "10")
+                    {
+                        _antiControl.dtoAux.InitTempAux1 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                        _antiControl.dtoAux.AlertTempAux1 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+
+                        _antiControl.dtoAux.InitTempAux2 = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        _antiControl.dtoAux.AlertTempAux2 = buffer[16] * 256 * 256 + buffer[17] * 256 + buffer[18];
+
+                        _antiControl.dtoAux.UserIndex = 0;
+                    }
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 分析FID
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseFID(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
+            if (buffer[3].ToString("X2") == "40" && buffer[4].ToString("X2") == "00")
+            {
+                List<string> address = new List<string>();
+                switch (buffer[2].ToString("X2"))
+                {
+                    case "0B":
+                        address.Clear();
+                        address.Add( SortFID(_antiControl, buffer, 5));
+
+                        if (address[0] == addressCommand.FID1)
+                        {
+                            _antiControl.dtoFid.FID1Used = true;
+                        }
+                        else _antiControl.dtoFid.FID1Used = false;
+
+                        if (address[0] == addressCommand.FID2)
+                        {
+                            _antiControl.dtoFid.FID2Used = true;
+                        }
+                        else _antiControl.dtoFid.FID2Used = false;
+
+                        if (address[0] == addressCommand.FIDK1)
+                        {
+                            _antiControl.dtoFid.FIDK1Used = true;
+                        }
+                        else _antiControl.dtoFid.FIDK1Used = false;
+
+                        if (address[0] == addressCommand.FIDK2)
+                        {
+                            _antiControl.dtoFid.FIDK2Used = true;
+                        }
+                        else _antiControl.dtoFid.FIDK2Used = false;
+
+                        break;
+                    case "14":
+                        address.Clear();
+                        address.Add( SortFID(_antiControl, buffer, 5));
+                        address.Add(SortFID(_antiControl, buffer, 14));
+                        if (address[0] == addressCommand.FID1 || address[1] == addressCommand.FID1)
+                        {
+                            _antiControl.dtoFid.FID1Used = true;
+                        }
+                        else _antiControl.dtoFid.FID1Used = false;
+
+                        if (address[0]== addressCommand.FID2 || address[1] == addressCommand.FID2)
+                        {
+                            _antiControl.dtoFid.FID2Used = true;
+                        }
+                        else _antiControl.dtoFid.FID2Used = false;
+
+                        if (address[0] == addressCommand.FIDK1 || address[1] == addressCommand.FIDK1)
+                        {
+                            _antiControl.dtoFid.FIDK1Used = true;
+                        }
+                        else _antiControl.dtoFid.FIDK1Used = false;
+
+                        if (address[0] == addressCommand.FIDK2 || address[1] == addressCommand.FIDK2)
+                        {
+                            _antiControl.dtoFid.FIDK2Used = true;
+                        }
+                        else _antiControl.dtoFid.FIDK2Used = false;
+
+                        break;
+                    case "1D":
+                        address.Clear();
+                        address.Add(SortFID(_antiControl, buffer, 5));
+                        address.Add(SortFID(_antiControl, buffer, 14));
+                        address.Add(SortFID(_antiControl, buffer, 23));
+
+                        if (address[0] == addressCommand.FID1 || address[1] == addressCommand.FID1 || address[2] == addressCommand.FID1)
+                        { _antiControl.dtoFid.FID1Used = true; }
+                        else _antiControl.dtoFid.FID1Used = false;
+
+                        if (address[0] == addressCommand.FID2 || address[1] == addressCommand.FID2 || address[2] == addressCommand.FID2)
+                        { _antiControl.dtoFid.FID2Used = true; }
+                        else _antiControl.dtoFid.FID2Used = false;
+
+                        if (address[0] == addressCommand.FIDK1 || address[1] == addressCommand.FIDK1 || address[2] == addressCommand.FIDK1)
+                        { _antiControl.dtoFid.FIDK1Used = true; }
+                        else _antiControl.dtoFid.FIDK1Used = false;
+
+                        if (address[0] == addressCommand.FIDK2 || address[1] == addressCommand.FIDK2 || address[2] == addressCommand.FIDK2)
+                        { _antiControl.dtoFid.FIDK2Used = true; }
+                        else _antiControl.dtoFid.FIDK2Used = false;
+
+                        break;
+                    case "26":
+                        SortFID(_antiControl, buffer, 5);
+                        SortFID(_antiControl, buffer, 14);
+                        SortFID(_antiControl, buffer, 23);
+                        SortFID(_antiControl, buffer, 32);
+                        _antiControl.dtoFid.FID1Used = true;
+                        _antiControl.dtoFid.FID2Used = true;
+                        _antiControl.dtoFid.FIDK1Used = true;
+                        _antiControl.dtoFid.FIDK2Used = true;
+                        break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// FID分类
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        /// <param name="i"></param>
+        private string SortFID(ChromatoTool.dto.AntiControlDto _antiControl,Byte[] buffer,int i)
+        {
+            switch (buffer[i].ToString("X2"))
+            {
+                //FID1
+                case "41":
+                    _antiControl.dtoFid.InitTemp1 = buffer[i + 1] * 256 * 256 + buffer[i + 2] * 256 + buffer[i + 3];
+                    _antiControl.dtoFid.AlertTemp1 = buffer[i + 4] * 256 * 256 + buffer[i + 5] * 256 + buffer[i + 6];
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 8];
+                    return buffer[i].ToString("X2");
+                    break;
+                //FID2
+                case "42":
+                    _antiControl.dtoFid.InitTemp2 = buffer[i + 1] * 256 * 256 + buffer[i + 2] * 256 + buffer[i + 3];
+                    _antiControl.dtoFid.AlertTemp2 = buffer[i + 4] * 256 * 256 + buffer[i + 5] * 256 + buffer[i + 6];
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 8];
+                    return buffer[i].ToString("X2");
+                    break;
+                //FIDK1
+                case "43":
+                    _antiControl.dtoFid.InitTempK1 = buffer[i + 1] * 256 * 256 + buffer[i + 2] * 256 + buffer[i + 3];
+                    _antiControl.dtoFid.AlertTempK1 = buffer[i + 4] * 256 * 256 + buffer[i + 5] * 256 + buffer[i + 6];
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 8];
+                    return buffer[i].ToString("X2");
+                    break;
+                //FIDK2
+                case "44":
+                    _antiControl.dtoFid.InitTempK2 = buffer[i + 1] * 256 * 256 + buffer[i + 2] * 256 + buffer[i + 3];
+                    _antiControl.dtoFid.AlertTempK2 = buffer[i + 4] * 256 * 256 + buffer[i + 5] * 256 + buffer[i + 6];
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 7];
+                    return buffer[i].ToString("X2");
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 8];
+                    break;
+                default:
+                    return buffer[i].ToString("X2");
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 分析TCD
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseTCD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
+            if (buffer[4].ToString()=="00")
+            {
+                switch (buffer[2].ToString())
+                {
+                    case "0D":
+                        if (buffer[5].ToString() == "51")//TCD1
+                        {
+                            _antiControl.dtoTcd.InitTemp1 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                            _antiControl.dtoTcd.AlertTemp1 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+                            _antiControl.dtoTcd.PolarityOne = (buffer[12] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentOne = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        }
+                        if (buffer[5].ToString() == "52")//TCD2
+                        {
+                            _antiControl.dtoTcd.InitTemp2 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                            _antiControl.dtoTcd.AlertTemp2 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+                            _antiControl.dtoTcd.PolarityTwo = (buffer[12] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentTwo = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+                        }
+                        break;
+                    case "18"://TCD1+TCD2
+                        _antiControl.dtoTcd.InitTemp1 = buffer[6] * 256 * 256 + buffer[7] * 256 + buffer[8];
+                            _antiControl.dtoTcd.AlertTemp1 = buffer[9] * 256 * 256 + buffer[10] * 256 + buffer[11];
+                            _antiControl.dtoTcd.PolarityOne = (buffer[12] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentOne = buffer[13] * 256 * 256 + buffer[14] * 256 + buffer[15];
+
+                        _antiControl.dtoTcd.InitTemp2 = buffer[17] * 256 * 256 + buffer[18] * 256 + buffer[19];
+                            _antiControl.dtoTcd.AlertTemp2 = buffer[20] * 256 * 256 + buffer[21] * 256 + buffer[22];
+                            _antiControl.dtoTcd.PolarityTwo = (buffer[23] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentTwo = buffer[24] * 256 * 256 + buffer[25] * 256 + buffer[26];
+                        break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 分析ECD
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseECD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
+            if (buffer[4].ToString() == "00")
+            {
+                if (buffer[2].ToString() == "08")
+                {
+                    //电流
+                    _antiControl.dtoEcd.Current = buffer[5] * 256 * 256 + buffer[6] * 256 + buffer[7];
+                    //量程
+                    _antiControl.dtoEcd.Capacity = buffer[8] * 256 * 256 + buffer[9] * 256 + buffer[10];
+                }
+            }
+        }
+
+        /// <summary>
+        /// 分析FPD
+        /// </summary>
+        /// <param name="_antiControl"></param>
+        /// <param name="buffer"></param>
+        private void AnalyseFPD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
+        {
         }
 
         #endregion

@@ -1,7 +1,7 @@
 ﻿/*-----------------------------------------------------------------------------
 //  FILE NAME       : CommandMaker.cs
-//  FUNCTION        : 通信指令
-//  AUTHOR          : xingxiaolux(2014/01/014)
+//  FUNCTION        : 反控通信指令
+//  AUTHOR          : 邢小璐(2014/01/014)
 //  VERSION         : V2.0
 //  ---------------------------------------------------------------------------
 //---------------------------------------------------------------------------*/
@@ -28,7 +28,7 @@ namespace ChromatoBll.serialCom
 
         #region 初期
 
-        /// <summary>
+        /*// <summary>
         /// 实例名
         /// </summary>
         static readonly CommandMaker instance = new CommandMaker();
@@ -42,13 +42,16 @@ namespace ChromatoBll.serialCom
             {
                 return instance;
             }
-        }
+        }*/
+
+        private AntiControlDto _antiControlDto = null;
 
         /// <summary>
         /// 构造
         /// </summary>
-        public CommandMaker()
+        public CommandMaker(AntiControlDto antiControlDto)
         {
+            _antiControlDto = antiControlDto;
         }
 
         #endregion
@@ -70,10 +73,10 @@ namespace ChromatoBll.serialCom
         /// 1.2 设置所有网络参数
         /// </summary>
         /// <returns></returns>
-        public string setAllNetworkData()
+        public string setAllNetworkData(string data)
         {
-            string para = baseCommand.head_1 + baseCommand.head_2 + "XX" + addressCommand.NetworkBoard
-                + "54";//+，，，，more
+            string para = baseCommand.head_1 + baseCommand.head_2 + "38" + addressCommand.NetworkBoard
+                + "54" + data;//54字节的data
             return para;
         }
 
@@ -615,10 +618,36 @@ namespace ChromatoBll.serialCom
         /// 2.2 COL设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setAllCOLData()
+        public string setAllCOLData(string data)
         {
-            string para = baseCommand.head_1 + baseCommand.head_2 + "XX" + addressCommand.HeatControl
-                + "40";//more
+            string length;
+            switch (_antiControlDto.dtoHeatingSource.ColumnCount.ToString("X2"))
+            {
+                case "00":
+                    length = "11";
+                    break;
+                case "01":
+                    length = "1B";
+                    break;
+                case "02":
+                    length = "25";
+                    break;
+                case "03":
+                    length = "2F";
+                    break;
+                case "04":
+                    length = "39";
+                    break;
+                case "05":
+                    length = "43";
+                    break;
+                default:
+                    length = "11";
+                    break;
+            }
+
+            string para = baseCommand.head_1 + baseCommand.head_2 + length + addressCommand.HeatControl
+                + "40" +data ;//根据程升阶数不同，字节数不同
             return para;
         }
 
@@ -627,7 +656,7 @@ namespace ChromatoBll.serialCom
         /// 2.3 GC加热源加热状态
         /// </summary>
         /// <returns></returns>
-        public string getHeatingSourceStatus()
+        public string setHeatingSourceStatus()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "01";//加热状态字more
@@ -639,7 +668,7 @@ namespace ChromatoBll.serialCom
         /// 2.4 GC加热源加热使能状态 
         /// </summary>
         /// <returns></returns>
-        public string getAllcolData()
+        public string setAllcolData()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "02";//加热使能状态字more
@@ -650,7 +679,7 @@ namespace ChromatoBll.serialCom
         /// 2.5 COL初温
         /// </summary>
         /// <returns></returns>
-        public string getCOLInitialTem()
+        public string setCOLInitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "16";//三个字节more
@@ -661,7 +690,7 @@ namespace ChromatoBll.serialCom
         /// 2.6 COL报警温度
         /// </summary>
         /// <returns></returns>
-        public string getCOLAlarmTem()
+        public string setCOLAlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "17";//3个字节more
@@ -672,7 +701,7 @@ namespace ChromatoBll.serialCom
         /// 2.7 COL初温维持时间
         /// </summary>
         /// <returns></returns>
-        public string getCOLInitialTemLastTime()
+        public string setCOLInitialTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "18";//3个字节more
@@ -683,7 +712,7 @@ namespace ChromatoBll.serialCom
         /// 2.8 COL平衡时间
         /// </summary>
         /// <returns></returns>
-        public string getCOLBalanceTime()
+        public string setCOLBalanceTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "19";//3个字节more
@@ -694,7 +723,7 @@ namespace ChromatoBll.serialCom
         /// 2.9 COL程升阶数
         /// </summary>
         /// <returns></returns>
-        public string getCOLRise()
+        public string setCOLRise()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "1A";//1个字节more
@@ -705,7 +734,7 @@ namespace ChromatoBll.serialCom
         /// 2.10 COL-1程升速率
         /// </summary>
         /// <returns></returns>
-        public string getCOL1Velocity()
+        public string setCOL1Velocity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "06" + addressCommand.HeatControl
                 + "1B";//4个字节more
@@ -716,7 +745,7 @@ namespace ChromatoBll.serialCom
         /// 2.11 COL-1程升恒温
         /// </summary>
         /// <returns></returns>
-        public string getCOL1ConstantTem()
+        public string setCOL1ConstantTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "1C";//3个字节more
@@ -727,7 +756,7 @@ namespace ChromatoBll.serialCom
         /// 2.12 COL-1程恒温时间
         /// </summary>
         /// <returns></returns>
-        public string getCOL1ConstantTemLastTime()
+        public string setCOL1ConstantTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "1D";//3个字节more
@@ -738,7 +767,7 @@ namespace ChromatoBll.serialCom
         /// 2.13 COL-2程升速率
         /// </summary>
         /// <returns></returns>
-        public string getCOL2Velocity()
+        public string setCOL2Velocity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "06" + addressCommand.HeatControl
                 + "1E";//4个字节more
@@ -749,7 +778,7 @@ namespace ChromatoBll.serialCom
         /// 2.14 COL-2程升恒温
         /// </summary>
         /// <returns></returns>
-        public string getCOL2ConstantTem()
+        public string setCOL2ConstantTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "1F";//3个字节more
@@ -760,7 +789,7 @@ namespace ChromatoBll.serialCom
         /// 2.15 COL-2程恒温时间
         /// </summary>
         /// <returns></returns>
-        public string getCOL2ConstantTemLastTime()
+        public string setCOL2ConstantTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "20";//3个字节more
@@ -771,7 +800,7 @@ namespace ChromatoBll.serialCom
         /// 2.16 COL-3程升速率
         /// </summary>
         /// <returns></returns>
-        public string getCOL3Velocity()
+        public string setCOL3Velocity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "06" + addressCommand.HeatControl
                 + "21";//4个字节more
@@ -782,7 +811,7 @@ namespace ChromatoBll.serialCom
         /// 2.17 COL-3程升恒温
         /// </summary>
         /// <returns></returns>
-        public string getCOL3ConstantTem()
+        public string setCOL3ConstantTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "22";//3个字节more
@@ -793,7 +822,7 @@ namespace ChromatoBll.serialCom
         /// 2.18 COL-3程恒温时间
         /// </summary>
         /// <returns></returns>
-        public string getCOL3ConstantTemLastTime()
+        public string setCOL3ConstantTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "23";//3个字节more
@@ -804,7 +833,7 @@ namespace ChromatoBll.serialCom
         /// 2.19 COL-4程升速率
         /// </summary>
         /// <returns></returns>
-        public string getCOL4Velocity()
+        public string setCOL4Velocity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "06" + addressCommand.HeatControl
                 + "24";//4个字节more
@@ -815,7 +844,7 @@ namespace ChromatoBll.serialCom
         /// 2.20 COL-4程升恒温
         /// </summary>
         /// <returns></returns>
-        public string getCOL4ConstantTem()
+        public string setCOL4ConstantTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "25";//3个字节more
@@ -826,7 +855,7 @@ namespace ChromatoBll.serialCom
         /// 2.21 COL-4程恒温时间
         /// </summary>
         /// <returns></returns>
-        public string getCOL4ConstantTemLastTime()
+        public string setCOL4ConstantTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "26";//3个字节more
@@ -837,7 +866,7 @@ namespace ChromatoBll.serialCom
         /// 2.22 COL-5程升速率
         /// </summary>
         /// <returns></returns>
-        public string getCOL5Velocity()
+        public string setCOL5Velocity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "06" + addressCommand.HeatControl
                 + "27";//4个字节more
@@ -848,7 +877,7 @@ namespace ChromatoBll.serialCom
         /// 2.23 COL-5程升恒温
         /// </summary>
         /// <returns></returns>
-        public string getCOL5ConstantTem()
+        public string setCOL5ConstantTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "28";//3个字节more
@@ -859,7 +888,7 @@ namespace ChromatoBll.serialCom
         /// 2.24 COL-5程恒温时间
         /// </summary>
         /// <returns></returns>
-        public string getCOL5ConstantTemLastTime()
+        public string setCOL5ConstantTemLastTime()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "29";//3个字节more
@@ -885,10 +914,10 @@ namespace ChromatoBll.serialCom
         /// 3.2 进样口设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setAllINJData()
+        public string setAllINJData(string data)
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "23" + addressCommand.HeatControl
-                + "C0";//加33个字节more
+                + "C0" + data;//33个字节的data
             return para;
         }
 
@@ -896,7 +925,7 @@ namespace ChromatoBll.serialCom
         /// 3.3 INJ1初温
         /// </summary>
         /// <returns></returns>
-        public string getINJ1InitialTem()
+        public string setINJ1InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "07";//加3个字节more
@@ -907,7 +936,7 @@ namespace ChromatoBll.serialCom
         /// 3.4 INJ1报警温度
         /// </summary>
         /// <returns></returns>
-        public string getINJ1AlarmTem()
+        public string setINJ1AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "08";//3个字节more
@@ -918,7 +947,7 @@ namespace ChromatoBll.serialCom
         /// 3.5 INJ1柱类型
         /// </summary>
         /// <returns></returns>
-        public string getINJ1ColumnType()
+        public string setINJ1ColumnType()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "09";//1个字节more
@@ -929,7 +958,7 @@ namespace ChromatoBll.serialCom
         /// 3.6 INJ1进样时间
         /// </summary>
         /// <returns></returns>
-        public string getINJ1Time()
+        public string setINJ1Time()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "0A";//3个字节more
@@ -940,7 +969,7 @@ namespace ChromatoBll.serialCom
         /// 3.7 INJ1进样模式
         /// </summary>
         /// <returns></returns>
-        public string getINJ1Type()
+        public string setINJ1Type()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "0B";//1个字节more
@@ -951,7 +980,7 @@ namespace ChromatoBll.serialCom
         /// 3.8 INJ2初温
         /// </summary>
         /// <returns></returns>
-        public string getINJ2InitialTem()
+        public string setINJ2InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "0C";//加33个字节more
@@ -962,7 +991,7 @@ namespace ChromatoBll.serialCom
         /// 3.9 INJ2报警温度
         /// </summary>
         /// <returns></returns>
-        public string getINJ2AlarmTem()
+        public string setINJ2AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "0D";//3个字节more
@@ -973,7 +1002,7 @@ namespace ChromatoBll.serialCom
         /// 3.10 INJ2柱类型
         /// </summary>
         /// <returns></returns>
-        public string getINJ2ColumnType()
+        public string setINJ2ColumnType()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "0E";//1个字节more
@@ -984,7 +1013,7 @@ namespace ChromatoBll.serialCom
         /// 3.11 INJ2进样时间
         /// </summary>
         /// <returns></returns>
-        public string getINJ2Time()
+        public string setINJ2Time()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "0F";//3个字节more
@@ -995,7 +1024,7 @@ namespace ChromatoBll.serialCom
         /// 3.12 INJ2进样模式
         /// </summary>
         /// <returns></returns>
-        public string getINJ2Type()
+        public string setINJ2Type()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "10";//1个字节more
@@ -1006,7 +1035,7 @@ namespace ChromatoBll.serialCom
         /// 3.13 INJ3初温
         /// </summary>
         /// <returns></returns>
-        public string getINJ3InitialTem()
+        public string setINJ3InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "11";//加33个字节more
@@ -1017,7 +1046,7 @@ namespace ChromatoBll.serialCom
         /// 3.14 INJ3报警温度
         /// </summary>
         /// <returns></returns>
-        public string getINJ3AlarmTem()
+        public string setINJ3AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "12";//3个字节more
@@ -1028,7 +1057,7 @@ namespace ChromatoBll.serialCom
         /// 3.15 INJ3柱类型
         /// </summary>
         /// <returns></returns>
-        public string getINJ3ColumnType()
+        public string setINJ3ColumnType()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "13";//3个字节more
@@ -1039,7 +1068,7 @@ namespace ChromatoBll.serialCom
         /// 3.16 INJ3进样时间
         /// </summary>
         /// <returns></returns>
-        public string getINJ3Time()
+        public string setINJ3Time()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "14";//3个字节more
@@ -1050,7 +1079,7 @@ namespace ChromatoBll.serialCom
         /// 3.17 INJ3进样模式
         /// </summary>
         /// <returns></returns>
-        public string getINJType()
+        public string setINJType()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.HeatControl
                 + "15";//3个字节more
@@ -1076,10 +1105,23 @@ namespace ChromatoBll.serialCom
         /// 4.2 AUX设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setAUXAllData()
+        public string setAUXAllData(string data)
         {
-            string para = baseCommand.head_1 + baseCommand.head_2 + "XX" + addressCommand.HeatControl
-                + "E0";//more
+            string length = "10";
+            switch (_antiControlDto.dtoAux.UserIndex)
+            {
+                case 0:
+                    length = "10";
+                    break;
+                case 1:
+                    length = "09";
+                    break;
+                    length = "09";
+                case 2:
+                    break;
+            }
+            string para = baseCommand.head_1 + baseCommand.head_2 + length + addressCommand.HeatControl
+                + "E0" + data;//data字节数跟开启的AUX有关
             return para;
         }
 
@@ -1087,7 +1129,7 @@ namespace ChromatoBll.serialCom
         /// 4.3 AUX1初温
         /// </summary>
         /// <returns></returns>
-        public string getAUX1InitialTem()
+        public string setAUX1InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "03";//加3个字节more
@@ -1098,7 +1140,7 @@ namespace ChromatoBll.serialCom
         /// 4.4 AUX1报警温度
         /// </summary>
         /// <returns></returns>
-        public string getAUX1AlarmTem()
+        public string setAUX1AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "04";//3个字节more
@@ -1109,7 +1151,7 @@ namespace ChromatoBll.serialCom
         /// 4.5 AUX2初温
         /// </summary>
         /// <returns></returns>
-        public string getAUX2InitialTem()
+        public string setAUX2InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "05";//加3个字节more
@@ -1120,7 +1162,7 @@ namespace ChromatoBll.serialCom
         /// 4.6 AUX2报警温度
         /// </summary>
         /// <returns></returns>
-        public string getAUX2AlarmTem()
+        public string setAUX2AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.HeatControl
                 + "06";//3个字节more
@@ -1146,10 +1188,10 @@ namespace ChromatoBll.serialCom
         /// 5.2 FID设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setFIDAllData()
+        public string setFIDAllData(string data)
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "XX" + addressCommand.FIDShare
-                + "40";//more
+                + "40";//data的字节数和开启的FID有关
             return para;
         }
 
@@ -1201,7 +1243,7 @@ namespace ChromatoBll.serialCom
         /// 5.7 FID1初温
         /// </summary>
         /// <returns></returns>
-        public string getFID1InitialTem()
+        public string setFID1InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.FID1
                 + "03";//加3个字节more
@@ -1212,7 +1254,7 @@ namespace ChromatoBll.serialCom
         /// 5.8 FID1报警温度
         /// </summary>
         /// <returns></returns>
-        public string getFID1AlarmTem()
+        public string setFID1AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.FID1
                 + "04";//3个字节more
@@ -1223,7 +1265,7 @@ namespace ChromatoBll.serialCom
         /// 5.9 FID1极性
         /// </summary>
         /// <returns></returns>
-        public string getFID1Polarity()
+        public string setFID1Polarity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.FID1
                 + "05";//1个字节more
@@ -1234,7 +1276,7 @@ namespace ChromatoBll.serialCom
         /// 5.10 FID1放大倍数
         /// </summary>
         /// <returns></returns>
-        public string getFID1Ap()
+        public string setFID1Ap()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.FID1
                 + "06";//1个字节more
@@ -1245,7 +1287,7 @@ namespace ChromatoBll.serialCom
         /// 5.11 FID2初温
         /// </summary>
         /// <returns></returns>
-        public string getFID2InitialTem()
+        public string setFID2InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.FID2
                 + "03";//加3个字节more
@@ -1256,7 +1298,7 @@ namespace ChromatoBll.serialCom
         /// 5.12 FID2报警温度
         /// </summary>
         /// <returns></returns>
-        public string getFID2AlarmTem()
+        public string setFID2AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.FID2
                 + "04";//3个字节more
@@ -1267,7 +1309,7 @@ namespace ChromatoBll.serialCom
         /// 5.13 FID2极性
         /// </summary>
         /// <returns></returns>
-        public string getFID2Polarity()
+        public string setFID2Polarity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.FID2
                 + "05";//1个字节more
@@ -1278,7 +1320,7 @@ namespace ChromatoBll.serialCom
         /// 5.14 FID2放大倍数
         /// </summary>
         /// <returns></returns>
-        public string getFID2Ap()
+        public string setFID2Ap()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.FID2
                 + "06";//1个字节more
@@ -1304,10 +1346,10 @@ namespace ChromatoBll.serialCom
         /// 6.2 TCD设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setTCDAllData()
+        public string setTCDAllData(string data)
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "0C" + addressCommand.TCDShare
-                + "40";//10个字节more
+                + "40" + data;//10个字节data
             return para;
         }
 
@@ -1381,7 +1423,7 @@ namespace ChromatoBll.serialCom
         /// 6.9 TCD1初温
         /// </summary>
         /// <returns></returns>
-        public string getTCD1InitialTem()
+        public string setTCD1InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.TCD1
                 + "04";//加3个字节more
@@ -1392,7 +1434,7 @@ namespace ChromatoBll.serialCom
         /// 6.10 TCD1报警温度
         /// </summary>
         /// <returns></returns>
-        public string getTCD1AlarmTem()
+        public string setTCD1AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.TCD1
                 + "05";//3个字节more
@@ -1403,7 +1445,7 @@ namespace ChromatoBll.serialCom
         /// 6.11 TCD1极性
         /// </summary>
         /// <returns></returns>
-        public string getTCD1Polarity()
+        public string setTCD1Polarity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.TCD1
                 + "06";//加1个字节more
@@ -1414,7 +1456,7 @@ namespace ChromatoBll.serialCom
         /// 6.12 TCD1电流
         /// </summary>
         /// <returns></returns>
-        public string getTCD1Electricity()
+        public string setTCD1Electricity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.TCD1
                 + "07";//3个字节more
@@ -1425,7 +1467,7 @@ namespace ChromatoBll.serialCom
         /// 6.13 TCD2初温
         /// </summary>
         /// <returns></returns>
-        public string getTCD2InitialTem()
+        public string setTCD2InitialTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.TCD2
                 + "04";//加3个字节more
@@ -1436,7 +1478,7 @@ namespace ChromatoBll.serialCom
         /// 6.14 TCD2报警温度
         /// </summary>
         /// <returns></returns>
-        public string getTCD2AlarmTem()
+        public string setTCD2AlarmTem()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.TCD2
                 + "05";//3个字节more
@@ -1447,7 +1489,7 @@ namespace ChromatoBll.serialCom
         /// 6.15 TCD2极性
         /// </summary>
         /// <returns></returns>
-        public string getTCD2Polarity()
+        public string setTCD2Polarity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "03" + addressCommand.TCD2
                 + "06";//加1个字节more
@@ -1458,7 +1500,7 @@ namespace ChromatoBll.serialCom
         /// 6.16 TCD2电流
         /// </summary>
         /// <returns></returns>
-        public string getTCD2Electricity()
+        public string setTCD2Electricity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "0A" + addressCommand.TCD2
                 + "07";//8个字节more
@@ -1484,10 +1526,10 @@ namespace ChromatoBll.serialCom
         /// 7.2 ECD设置所有参数
         /// </summary>
         /// <returns></returns>
-        public string setECDAllData()
+        public string setECDAllData(string data)
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "08" + addressCommand.ECD
-                + "40";//6个字节more
+                + "40" + data;//6个字节data
             return para;
         }
 
@@ -1517,7 +1559,7 @@ namespace ChromatoBll.serialCom
         /// 7.5 ECD电流命令
         /// </summary>
         /// <returns></returns>
-        public string ECDElectricity()
+        public string setECDElectricity()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.ECD
                 + "03";//3个字节more
@@ -1528,7 +1570,7 @@ namespace ChromatoBll.serialCom
         /// 7.6 ECD量程命令
         /// </summary>
         /// <returns></returns>
-        public string ECDRange()
+        public string setECDRange()
         {
             string para = baseCommand.head_1 + baseCommand.head_2 + "05" + addressCommand.ECD
                 + "04";//3个字节more

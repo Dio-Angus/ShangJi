@@ -56,6 +56,16 @@ namespace ChromatoBll.serialCom
         public const string FID2 = "42";
 
         /// <summary>
+        /// FIDK1地址
+        /// </summary>
+        public const string FIDK1 = "43";
+
+        /// <summary>
+        /// FIDK2地址
+        /// </summary>
+        public const string FIDK2 = "44";
+
+        /// <summary>
         /// TCD1地址
         /// </summary>
         public const string TCD1 = "51";

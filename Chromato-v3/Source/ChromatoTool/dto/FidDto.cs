@@ -16,13 +16,77 @@ namespace ChromatoTool.dto
     /// </summary>
     public class FidDto
     {
-        public Single InitTemp { get; set; }
-        public Single AlertTemp { get; set; }
-        public Int32 MagnifyFactorOne { get; set; }
-        public bool PolarityOne { get; set; }
+        public bool FID1Used { get; set; }
+        public bool FID2Used { get; set; }
+        public bool FIDK1Used { get; set; }
+        public bool FIDK2Used { get; set; }
 
-        public Int32 MagnifyFactorTwo { get; set; }
-        public bool PolarityTwo { get; set; }
+        /// <summary>
+        /// FID1初温
+        /// </summary>
+        public Single InitTemp1 { get; set; }
+        /// <summary>
+        /// FID1报警温度
+        /// </summary>
+        public Single AlertTemp1 { get; set; }
+        /// <summary>
+        /// FID1放大倍数
+        /// </summary>
+        public Int32 MagnifyFactor1 { get; set; }
+        /// <summary>
+        /// FID1极性
+        /// </summary>
+        public bool Polarity1 { get; set; }
 
+        /// <summary>
+        /// FID2初温
+        /// </summary>
+        public Single InitTemp2 { get; set; }
+        /// <summary>
+        /// FID2报警温度
+        /// </summary>
+        public Single AlertTemp2 { get; set; }
+        /// <summary>
+        /// FID2放大倍数    
+        /// </summary>
+        public Int32 MagnifyFactor2 { get; set; }
+        /// <summary>
+        /// FID2极性
+        /// </summary>
+        public bool Polarity2 { get; set; }
+
+        /// <summary>
+        /// FIDK1初温
+        /// </summary>
+        public Single InitTempK1 { get; set; }
+        /// <summary>
+        /// FIDK1报警温度
+        /// </summary>
+        public Single AlertTempK1 { get; set; }
+        /// <summary>
+        /// FIDK1放大倍数
+        /// </summary>
+        public Int32 MagnifyFactorK1 { get; set; }
+        /// <summary>
+        /// FIDK1极性
+        /// </summary>
+        public bool PolarityK1 { get; set; }
+
+        /// <summary>
+        /// FIDK2初温
+        /// </summary>
+        public Single InitTempK2 { get; set; }
+        /// <summary>
+        /// FIDK2报警温度
+        /// </summary>
+        public Single AlertTempK2 { get; set; }
+        /// <summary>
+        /// FIDK2放大倍数
+        /// </summary>
+        public Int32 MagnifyFactorK2 { get; set; }
+        /// <summary>
+        /// FIDK2极性
+        /// </summary>
+        public bool PolarityK2 { get; set; }
     }
 }

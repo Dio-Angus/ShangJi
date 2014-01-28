@@ -71,14 +71,14 @@
             // 
             // txtTempTimeCol5
             // 
-            this.txtTempTimeCol5.Location = new System.Drawing.Point(309, 138);
+            this.txtTempTimeCol5.Location = new System.Drawing.Point(309, 135);
             this.txtTempTimeCol5.Name = "txtTempTimeCol5";
             this.txtTempTimeCol5.Size = new System.Drawing.Size(78, 21);
             this.txtTempTimeCol5.TabIndex = 20;
             // 
             // txtTempCol5
             // 
-            this.txtTempCol5.Location = new System.Drawing.Point(192, 139);
+            this.txtTempCol5.Location = new System.Drawing.Point(191, 136);
             this.txtTempCol5.Name = "txtTempCol5";
             this.txtTempCol5.Size = new System.Drawing.Size(78, 21);
             this.txtTempCol5.TabIndex = 19;
@@ -95,7 +95,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(216, 11);
+            this.label18.Location = new System.Drawing.Point(214, 11);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(29, 12);
             this.label18.TabIndex = 119;
@@ -104,7 +104,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(100, 97);
+            this.label19.Location = new System.Drawing.Point(96, 10);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(29, 12);
             this.label19.TabIndex = 118;
@@ -112,21 +112,21 @@
             // 
             // txtRateCol5
             // 
-            this.txtRateCol5.Location = new System.Drawing.Point(76, 225);
+            this.txtRateCol5.Location = new System.Drawing.Point(72, 135);
             this.txtRateCol5.Name = "txtRateCol5";
             this.txtRateCol5.Size = new System.Drawing.Size(78, 21);
             this.txtRateCol5.TabIndex = 18;
             // 
             // txtTempTimeCol4
             // 
-            this.txtTempTimeCol4.Location = new System.Drawing.Point(309, 111);
+            this.txtTempTimeCol4.Location = new System.Drawing.Point(309, 108);
             this.txtTempTimeCol4.Name = "txtTempTimeCol4";
             this.txtTempTimeCol4.Size = new System.Drawing.Size(78, 21);
             this.txtTempTimeCol4.TabIndex = 17;
             // 
             // txtTempCol4
             // 
-            this.txtTempCol4.Location = new System.Drawing.Point(192, 112);
+            this.txtTempCol4.Location = new System.Drawing.Point(191, 109);
             this.txtTempCol4.Name = "txtTempCol4";
             this.txtTempCol4.Size = new System.Drawing.Size(78, 21);
             this.txtTempCol4.TabIndex = 16;
@@ -134,7 +134,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 207);
+            this.label8.Location = new System.Drawing.Point(21, 111);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 12);
             this.label8.TabIndex = 115;
@@ -142,21 +142,21 @@
             // 
             // txtRateCol4
             // 
-            this.txtRateCol4.Location = new System.Drawing.Point(76, 198);
+            this.txtRateCol4.Location = new System.Drawing.Point(72, 108);
             this.txtRateCol4.Name = "txtRateCol4";
             this.txtRateCol4.Size = new System.Drawing.Size(78, 21);
             this.txtRateCol4.TabIndex = 15;
             // 
             // txtTempTimeCol3
             // 
-            this.txtTempTimeCol3.Location = new System.Drawing.Point(309, 84);
+            this.txtTempTimeCol3.Location = new System.Drawing.Point(309, 81);
             this.txtTempTimeCol3.Name = "txtTempTimeCol3";
             this.txtTempTimeCol3.Size = new System.Drawing.Size(78, 21);
             this.txtTempTimeCol3.TabIndex = 14;
             // 
             // txtTempCol3
             // 
-            this.txtTempCol3.Location = new System.Drawing.Point(192, 85);
+            this.txtTempCol3.Location = new System.Drawing.Point(191, 82);
             this.txtTempCol3.Name = "txtTempCol3";
             this.txtTempCol3.Size = new System.Drawing.Size(78, 21);
             this.txtTempCol3.TabIndex = 13;
@@ -164,7 +164,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(23, 180);
+            this.label13.Location = new System.Drawing.Point(21, 84);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 12);
             this.label13.TabIndex = 109;
@@ -172,21 +172,21 @@
             // 
             // txtRateCol3
             // 
-            this.txtRateCol3.Location = new System.Drawing.Point(76, 171);
+            this.txtRateCol3.Location = new System.Drawing.Point(72, 81);
             this.txtRateCol3.Name = "txtRateCol3";
             this.txtRateCol3.Size = new System.Drawing.Size(78, 21);
             this.txtRateCol3.TabIndex = 12;
             // 
             // txtTempTimeCol2
             // 
-            this.txtTempTimeCol2.Location = new System.Drawing.Point(309, 57);
+            this.txtTempTimeCol2.Location = new System.Drawing.Point(309, 54);
             this.txtTempTimeCol2.Name = "txtTempTimeCol2";
             this.txtTempTimeCol2.Size = new System.Drawing.Size(78, 21);
             this.txtTempTimeCol2.TabIndex = 11;
             // 
             // txtTempCol2
             // 
-            this.txtTempCol2.Location = new System.Drawing.Point(192, 58);
+            this.txtTempCol2.Location = new System.Drawing.Point(191, 55);
             this.txtTempCol2.Name = "txtTempCol2";
             this.txtTempCol2.Size = new System.Drawing.Size(78, 21);
             this.txtTempCol2.TabIndex = 10;
@@ -194,7 +194,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 153);
+            this.label4.Location = new System.Drawing.Point(21, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 12);
             this.label4.TabIndex = 103;
@@ -202,42 +202,42 @@
             // 
             // txtRateCol2
             // 
-            this.txtRateCol2.Location = new System.Drawing.Point(76, 144);
+            this.txtRateCol2.Location = new System.Drawing.Point(72, 54);
             this.txtRateCol2.Name = "txtRateCol2";
             this.txtRateCol2.Size = new System.Drawing.Size(78, 21);
             this.txtRateCol2.TabIndex = 9;
             // 
             // txtTempTimeCol1
             // 
-            this.txtTempTimeCol1.Location = new System.Drawing.Point(309, 30);
+            this.txtTempTimeCol1.Location = new System.Drawing.Point(309, 27);
             this.txtTempTimeCol1.Name = "txtTempTimeCol1";
             this.txtTempTimeCol1.Size = new System.Drawing.Size(78, 21);
             this.txtTempTimeCol1.TabIndex = 8;
             // 
             // txtTempCol1
             // 
-            this.txtTempCol1.Location = new System.Drawing.Point(192, 31);
+            this.txtTempCol1.Location = new System.Drawing.Point(191, 28);
             this.txtTempCol1.Name = "txtTempCol1";
             this.txtTempCol1.Size = new System.Drawing.Size(78, 21);
             this.txtTempCol1.TabIndex = 7;
             // 
             // txtBalanceTime
             // 
-            this.txtBalanceTime.Location = new System.Drawing.Point(82, 60);
+            this.txtBalanceTime.Location = new System.Drawing.Point(82, 53);
             this.txtBalanceTime.Name = "txtBalanceTime";
             this.txtBalanceTime.Size = new System.Drawing.Size(62, 21);
             this.txtBalanceTime.TabIndex = 3;
             // 
             // txtAlertTemp
             // 
-            this.txtAlertTemp.Location = new System.Drawing.Point(224, 60);
+            this.txtAlertTemp.Location = new System.Drawing.Point(224, 53);
             this.txtAlertTemp.Name = "txtAlertTemp";
             this.txtAlertTemp.Size = new System.Drawing.Size(64, 21);
             this.txtAlertTemp.TabIndex = 4;
             // 
             // txtInitTemp
             // 
-            this.txtInitTemp.Location = new System.Drawing.Point(224, 33);
+            this.txtInitTemp.Location = new System.Drawing.Point(224, 29);
             this.txtInitTemp.Name = "txtInitTemp";
             this.txtInitTemp.Size = new System.Drawing.Size(64, 21);
             this.txtInitTemp.TabIndex = 2;
@@ -245,7 +245,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 126);
+            this.label2.Location = new System.Drawing.Point(21, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 94;
@@ -254,7 +254,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 233);
+            this.label12.Location = new System.Drawing.Point(21, 137);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(35, 12);
             this.label12.TabIndex = 90;
@@ -263,7 +263,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(300, 63);
+            this.label7.Location = new System.Drawing.Point(300, 56);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 12);
             this.label7.TabIndex = 87;
@@ -271,7 +271,7 @@
             // 
             // txtRateCol1
             // 
-            this.txtRateCol1.Location = new System.Drawing.Point(76, 117);
+            this.txtRateCol1.Location = new System.Drawing.Point(72, 27);
             this.txtRateCol1.Name = "txtRateCol1";
             this.txtRateCol1.Size = new System.Drawing.Size(78, 21);
             this.txtRateCol1.TabIndex = 6;
@@ -279,7 +279,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(159, 67);
+            this.label14.Location = new System.Drawing.Point(159, 60);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 12);
             this.label14.TabIndex = 93;
@@ -287,7 +287,7 @@
             // 
             // txtColumnCount
             // 
-            this.txtColumnCount.Location = new System.Drawing.Point(388, 60);
+            this.txtColumnCount.Location = new System.Drawing.Point(388, 53);
             this.txtColumnCount.Name = "txtColumnCount";
             this.txtColumnCount.Size = new System.Drawing.Size(78, 21);
             this.txtColumnCount.TabIndex = 5;
@@ -295,7 +295,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 39);
+            this.label3.Location = new System.Drawing.Point(165, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 86;
@@ -304,7 +304,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 67);
+            this.label1.Location = new System.Drawing.Point(11, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 89;
@@ -312,7 +312,7 @@
             // 
             // txtMaintainTime
             // 
-            this.txtMaintainTime.Location = new System.Drawing.Point(82, 33);
+            this.txtMaintainTime.Location = new System.Drawing.Point(82, 29);
             this.txtMaintainTime.Name = "txtMaintainTime";
             this.txtMaintainTime.Size = new System.Drawing.Size(62, 21);
             this.txtMaintainTime.TabIndex = 1;
@@ -320,7 +320,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 39);
+            this.label20.Location = new System.Drawing.Point(11, 35);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 12);
             this.label20.TabIndex = 124;
@@ -332,17 +332,28 @@
             this.gbStep.Controls.Add(this.txtTempTimeCol5);
             this.gbStep.Controls.Add(this.label18);
             this.gbStep.Controls.Add(this.txtTempCol5);
+            this.gbStep.Controls.Add(this.label8);
+            this.gbStep.Controls.Add(this.label19);
+            this.gbStep.Controls.Add(this.label13);
+            this.gbStep.Controls.Add(this.label4);
             this.gbStep.Controls.Add(this.txtTempTimeCol1);
+            this.gbStep.Controls.Add(this.txtRateCol5);
             this.gbStep.Controls.Add(this.txtTempTimeCol2);
             this.gbStep.Controls.Add(this.txtTempTimeCol3);
+            this.gbStep.Controls.Add(this.txtRateCol4);
+            this.gbStep.Controls.Add(this.label2);
             this.gbStep.Controls.Add(this.txtTempCol4);
+            this.gbStep.Controls.Add(this.label12);
             this.gbStep.Controls.Add(this.txtTempTimeCol4);
+            this.gbStep.Controls.Add(this.txtRateCol3);
             this.gbStep.Controls.Add(this.txtTempCol1);
             this.gbStep.Controls.Add(this.txtTempCol2);
+            this.gbStep.Controls.Add(this.txtRateCol2);
             this.gbStep.Controls.Add(this.txtTempCol3);
-            this.gbStep.Location = new System.Drawing.Point(0, 86);
+            this.gbStep.Controls.Add(this.txtRateCol1);
+            this.gbStep.Location = new System.Drawing.Point(0, 78);
             this.gbStep.Name = "gbStep";
-            this.gbStep.Size = new System.Drawing.Size(466, 166);
+            this.gbStep.Size = new System.Drawing.Size(466, 163);
             this.gbStep.TabIndex = 6;
             this.gbStep.TabStop = false;
             this.gbStep.Text = "程升设置";
@@ -387,22 +398,11 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMaintainTime);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.txtRateCol5);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtRateCol4);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.txtRateCol3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRateCol2);
             this.Controls.Add(this.txtBalanceTime);
             this.Controls.Add(this.tbEnablingState);
             this.Controls.Add(this.txtAlertTemp);
             this.Controls.Add(this.txtInitTemp);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtRateCol1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtColumnCount);
@@ -410,7 +410,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbStep);
             this.Name = "HeatingSourceUser";
-            this.Size = new System.Drawing.Size(469, 255);
+            this.Size = new System.Drawing.Size(469, 248);
             this.gbStep.ResumeLayout(false);
             this.gbStep.PerformLayout();
             this.ResumeLayout(false);

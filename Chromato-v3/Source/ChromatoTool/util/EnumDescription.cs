@@ -174,7 +174,7 @@ namespace ChromatoTool.util
                 cachedEnum.Add(enumType.FullName, (EnumDescription[])edAL.ToArray(typeof(EnumDescription)));
             }
             descriptions = (EnumDescription[])cachedEnum[enumType.FullName];
-            if (descriptions.Length <= 0) throw new NotSupportedException("枚举类型[" + enumType.Name + "]未定义属性EnumValueDescription");
+            //if (descriptions.Length <= 0) throw new NotSupportedException("枚举类型[" + enumType.Name + "]未定义属性EnumValueDescription");
 
             //按指定的属性冒泡排序
             for (int m = 0; m < descriptions.Length; m++)

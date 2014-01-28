@@ -871,7 +871,7 @@ namespace ChromatoTool.ini
         public static Single InitTemp = 6;
         public static Single MaintainTime = 7;
         public static Single AlertTemp = 8;
-        public static Single ColumnCount = 9;
+        public static Single ColumnCount = 5;
 
         public static Single RateCol1 = 1;
         public static Single TempCol1 = 1;
@@ -932,6 +932,10 @@ namespace ChromatoTool.ini
     public class DefaultAux
     {
         /// <summary>
+        /// 初始使用情况，0代表两个都用
+        /// </summary>
+        public static int UserIndex = 0;
+        /// <summary>
         /// 初始温度1
         /// </summary>
         public static Single InitTempAux1 = 20;
@@ -955,14 +959,30 @@ namespace ChromatoTool.ini
     /// </summary>
     public class DefaultFid
     {
-        public static Single InitTemp = 20;
-        public static Single AlertTemp = 20;
+        public static bool FID1Used = true;
+        public static bool FID2Used = true;
+        public static bool FIDK1Used = false;
+        public static bool FIDK2Used = false;
 
-        public static Int32 MagnifyFactorOne = 1;
-        public static bool PolarityOne = true;
+        public static Single InitTemp1 = 20;
+        public static Single AlertTemp1 = 20;
+        public static Int32 MagnifyFactor1 = 1;
+        public static bool Polarity1 = true;
 
-        public static Int32 MagnifyFactorTwo = 2;
-        public static bool PolarityTwo = true;
+        public static Single InitTemp2 = 20;
+        public static Single AlertTemp2 = 20;
+        public static Int32 MagnifyFactor2 = 2;
+        public static bool Polarity2 = true;
+
+        public static Single InitTempK1 = 20;
+        public static Single AlertTempK1 = 20;
+        public static Int32 MagnifyFactorK1 = 1;
+        public static bool PolarityK1 = true;
+
+        public static Single InitTempK2 = 20;
+        public static Single AlertTempK2 = 20;
+        public static Int32 MagnifyFactorK2 = 2;
+        public static bool PolarityK2 = true;
     }
 
     /// <summary>

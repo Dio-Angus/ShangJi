@@ -785,6 +785,11 @@
             缺省反控方法->AUX
             </summary>
         </member>
+        <member name="F:ChromatoTool.ini.DefaultAux.UserIndex">
+            <summary>
+            初始使用情况，0代表两个都用
+            </summary>
+        </member>
         <member name="F:ChromatoTool.ini.DefaultAux.InitTempAux1">
             <summary>
             初始温度1
@@ -2251,6 +2256,86 @@
             反控方法->FID
             </summary>
         </member>
+        <member name="P:ChromatoTool.dto.FidDto.InitTemp1">
+            <summary>
+            FID1初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.AlertTemp1">
+            <summary>
+            FID1报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactor1">
+            <summary>
+            FID1放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.Polarity1">
+            <summary>
+            FID1极性
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.InitTemp2">
+            <summary>
+            FID2初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.AlertTemp2">
+            <summary>
+            FID2报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactor2">
+            <summary>
+            FID2放大倍数    
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.Polarity2">
+            <summary>
+            FID2极性
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.InitTempK1">
+            <summary>
+            FIDK1初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.AlertTempK1">
+            <summary>
+            FIDK1报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactorK1">
+            <summary>
+            FIDK1放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.PolarityK1">
+            <summary>
+            FIDK1极性
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.InitTempK2">
+            <summary>
+            FIDK2初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.AlertTempK2">
+            <summary>
+            FIDK2报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactorK2">
+            <summary>
+            FIDK2放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.PolarityK2">
+            <summary>
+            FIDK2极性
+            </summary>
+        </member>
         <member name="T:ChromatoTool.util.ListViewColumnSorter">
             <summary>
             继承自IComparer
@@ -2295,6 +2380,16 @@
             获取或设置排序方式.
             </summary>
         </member>
+        <member name="P:ChromatoTool.dto.EcdDto.Current">
+            <summary>
+            电流
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.EcdDto.Capacity">
+             <summary>
+            量程 
+             </summary>
+        </member>
         <member name="T:ChromatoTool.log.CastLog">
             <summary>
             日志文件
@@ -2332,6 +2427,81 @@
         <member name="T:ChromatoTool.dto.InjectDto">
             <summary>
             反控方法->进样口表
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InitTemp1">
+            <summary>
+            INJ1初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.AlertTemp1">
+            <summary>
+            INJ1报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.ColumnType1">
+            <summary>
+            INJ1柱类型
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectTime1">
+            <summary>
+            INJ1进样时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectMode1">
+            <summary>
+            INJ1进样模式
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InitTemp2">
+            <summary>
+            INJ2初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.AlertTemp2">
+            <summary>
+            INJ2报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.ColumnType2">
+            <summary>
+            INJ2柱类型
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectTime2">
+            <summary>
+            INJ2进样时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectMode2">
+            <summary>
+            INJ2进样模式
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InitTemp3">
+            <summary>
+            INJ3初温
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.AlertTemp3">
+            <summary>
+            INJ3报警温度
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.ColumnType3">
+            <summary>
+            INJ3柱类型
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectTime3">
+            <summary>
+            INJ3进样时间
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.InjectDto.InjectMode3">
+            <summary>
+            INJ3进样模式
             </summary>
         </member>
         <member name="T:ChromatoTool.dto.AuxDto">

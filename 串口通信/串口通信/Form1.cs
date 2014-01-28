@@ -180,6 +180,16 @@ namespace SerialportSample
             labelGetCount.Text = "Get:0";
             labelSendCount.Text = "Send:0";
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(this.textBox1.Text) * 10 % 10 != 0)
+            {
+                MessageBox.Show("COL程升阶数应为整数", "COL程升阶数");
+                this.textBox1.Focus();
+                return;
+            }
+        }
     }
 }
 

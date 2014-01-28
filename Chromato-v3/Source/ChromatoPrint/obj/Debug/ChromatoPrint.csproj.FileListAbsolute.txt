@@ -60,7 +60,6 @@ D:\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\GenerateResource-ResGen.write.1.tlog
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.dll
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPrint\obj\Debug\ChromatoPrint.pdb
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPrint.XML
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPrint.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPrint.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPrint\obj\Debug\ResolveAssemblyReference.cache

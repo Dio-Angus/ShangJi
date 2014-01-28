@@ -16,6 +16,8 @@ namespace ChromatoTool.dto
     /// </summary>
     public class AuxDto
     {
+        public int UserIndex { get; set; }
+
         public Single InitTempAux1 { get; set; }
         public Single AlertTempAux1 { get; set; }
 

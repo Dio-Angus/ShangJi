@@ -36,9 +36,9 @@ D:\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoBll.XML
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoBll.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoBll.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoBll\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoBll\obj\Debug\ChromatoBll.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoBll\obj\Debug\ChromatoBll.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoBll.XML

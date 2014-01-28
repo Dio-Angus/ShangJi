@@ -2419,6 +2419,68 @@
             从SICT串口读取数据
             </summary>
         </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseResult(ChromatoTool.dto.AntiControlDto)">
+            <summary>
+            分析数据
+            </summary>
+            <param name="_antiControl"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.Receive">
+            <summary>
+            接收串口数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseNetwork(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析网络板
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseHeatingBoard(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析加热源，进样口，AUX
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseFID(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析FID
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.SortFID(ChromatoTool.dto.AntiControlDto,System.Byte[],System.Int32)">
+            <summary>
+            FID分类
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseTCD(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析TCD
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseECD(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析ECD
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseFPD(ChromatoTool.dto.AntiControlDto,System.Byte[])">
+            <summary>
+            分析FPD
+            </summary>
+            <param name="_antiControl"></param>
+            <param name="buffer"></param>
+        </member>
         <member name="M:ChromatoBll.serialCom.CommBase.delspace(System.String)">
             <summary>
             remove space in string
@@ -2720,6 +2782,16 @@
         <member name="F:ChromatoBll.serialCom.addressCommand.FID2">
             <summary>
             FID2地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FIDK1">
+            <summary>
+            FIDK1地址
+            </summary>
+        </member>
+        <member name="F:ChromatoBll.serialCom.addressCommand.FIDK2">
+            <summary>
+            FIDK2地址
             </summary>
         </member>
         <member name="F:ChromatoBll.serialCom.addressCommand.TCD1">
@@ -6697,12 +6769,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="F:ChromatoBll.serialCom.CommandMaker.instance">
-            <summary>
-            实例名
-            </summary>
-        </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.#ctor">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.#ctor(ChromatoTool.dto.AntiControlDto)">
             <summary>
             构造
             </summary>
@@ -6713,7 +6780,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllNetworkData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllNetworkData(System.String)">
             <summary>
             1.2 设置所有网络参数
             </summary>
@@ -7007,139 +7074,139 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllCOLData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllCOLData(System.String)">
             <summary>
             2.2 COL设置所有参数
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getHeatingSourceStatus">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setHeatingSourceStatus">
             <summary>
             2.3 GC加热源加热状态
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getAllcolData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllcolData">
             <summary>
             2.4 GC加热源加热使能状态 
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLInitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOLInitialTem">
             <summary>
             2.5 COL初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLAlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOLAlarmTem">
             <summary>
             2.6 COL报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLInitialTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOLInitialTemLastTime">
             <summary>
             2.7 COL初温维持时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLBalanceTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOLBalanceTime">
             <summary>
             2.8 COL平衡时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOLRise">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOLRise">
             <summary>
             2.9 COL程升阶数
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1Velocity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL1Velocity">
             <summary>
             2.10 COL-1程升速率
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1ConstantTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL1ConstantTem">
             <summary>
             2.11 COL-1程升恒温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL1ConstantTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL1ConstantTemLastTime">
             <summary>
             2.12 COL-1程恒温时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2Velocity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL2Velocity">
             <summary>
             2.13 COL-2程升速率
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2ConstantTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL2ConstantTem">
             <summary>
             2.14 COL-2程升恒温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL2ConstantTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL2ConstantTemLastTime">
             <summary>
             2.15 COL-2程恒温时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3Velocity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL3Velocity">
             <summary>
             2.16 COL-3程升速率
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3ConstantTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL3ConstantTem">
             <summary>
             2.17 COL-3程升恒温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL3ConstantTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL3ConstantTemLastTime">
             <summary>
             2.18 COL-3程恒温时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4Velocity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL4Velocity">
             <summary>
             2.19 COL-4程升速率
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4ConstantTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL4ConstantTem">
             <summary>
             2.20 COL-4程升恒温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL4ConstantTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL4ConstantTemLastTime">
             <summary>
             2.21 COL-4程恒温时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5Velocity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL5Velocity">
             <summary>
             2.22 COL-5程升速率
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5ConstantTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL5ConstantTem">
             <summary>
             2.23 COL-5程升恒温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getCOL5ConstantTemLastTime">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setCOL5ConstantTemLastTime">
             <summary>
             2.24 COL-5程恒温时间
             </summary>
@@ -7151,97 +7218,97 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllINJData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAllINJData(System.String)">
             <summary>
             3.2 进样口设置所有参数
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ1InitialTem">
             <summary>
             3.3 INJ1初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ1AlarmTem">
             <summary>
             3.4 INJ1报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1ColumnType">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ1ColumnType">
             <summary>
             3.5 INJ1柱类型
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1Time">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ1Time">
             <summary>
             3.6 INJ1进样时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ1Type">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ1Type">
             <summary>
             3.7 INJ1进样模式
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ2InitialTem">
             <summary>
             3.8 INJ2初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ2AlarmTem">
             <summary>
             3.9 INJ2报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2ColumnType">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ2ColumnType">
             <summary>
             3.10 INJ2柱类型
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2Time">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ2Time">
             <summary>
             3.11 INJ2进样时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ2Type">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ2Type">
             <summary>
             3.12 INJ2进样模式
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ3InitialTem">
             <summary>
             3.13 INJ3初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ3AlarmTem">
             <summary>
             3.14 INJ3报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3ColumnType">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ3ColumnType">
             <summary>
             3.15 INJ3柱类型
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJ3Time">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJ3Time">
             <summary>
             3.16 INJ3进样时间
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getINJType">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setINJType">
             <summary>
             3.17 INJ3进样模式
             </summary>
@@ -7253,31 +7320,31 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUXAllData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUXAllData(System.String)">
             <summary>
             4.2 AUX设置所有参数
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX1InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUX1InitialTem">
             <summary>
             4.3 AUX1初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX1AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUX1AlarmTem">
             <summary>
             4.4 AUX1报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX2InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUX2InitialTem">
             <summary>
             4.5 AUX2初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getAUX2AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setAUX2AlarmTem">
             <summary>
             4.6 AUX2报警温度
             </summary>
@@ -7289,7 +7356,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setFIDAllData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFIDAllData(System.String)">
             <summary>
             5.2 FID设置所有参数
             </summary>
@@ -7319,49 +7386,49 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID1InitialTem">
             <summary>
             5.7 FID1初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID1AlarmTem">
             <summary>
             5.8 FID1报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1Polarity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID1Polarity">
             <summary>
             5.9 FID1极性
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID1Ap">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID1Ap">
             <summary>
             5.10 FID1放大倍数
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID2InitialTem">
             <summary>
             5.11 FID2初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID2AlarmTem">
             <summary>
             5.12 FID2报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2Polarity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID2Polarity">
             <summary>
             5.13 FID2极性
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getFID2Ap">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setFID2Ap">
             <summary>
             5.14 FID2放大倍数
             </summary>
@@ -7373,7 +7440,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCDAllData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCDAllData(System.String)">
             <summary>
             6.2 TCD设置所有参数
             </summary>
@@ -7415,49 +7482,49 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD1InitialTem">
             <summary>
             6.9 TCD1初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD1AlarmTem">
             <summary>
             6.10 TCD1报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1Polarity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD1Polarity">
             <summary>
             6.11 TCD1极性
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD1Electricity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD1Electricity">
             <summary>
             6.12 TCD1电流
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2InitialTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD2InitialTem">
             <summary>
             6.13 TCD2初温
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2AlarmTem">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD2AlarmTem">
             <summary>
             6.14 TCD2报警温度
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2Polarity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD2Polarity">
             <summary>
             6.15 TCD2极性
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.getTCD2Electricity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setTCD2Electricity">
             <summary>
             6.16 TCD2电流
             </summary>
@@ -7469,7 +7536,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDAllData">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDAllData(System.String)">
             <summary>
             7.2 ECD设置所有参数
             </summary>
@@ -7487,13 +7554,13 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.ECDElectricity">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDElectricity">
             <summary>
             7.5 ECD电流命令
             </summary>
             <returns></returns>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommandMaker.ECDRange">
+        <member name="M:ChromatoBll.serialCom.CommandMaker.setECDRange">
             <summary>
             7.6 ECD量程命令
             </summary>
@@ -7514,11 +7581,6 @@
         <member name="P:ChromatoBll.serialCom.CommandMaker.LinkGc">
             <summary>
             连接GC标志
-            </summary>
-        </member>
-        <member name="P:ChromatoBll.serialCom.CommandMaker.Instance">
-            <summary>
-            唯一实例
             </summary>
         </member>
         <member name="T:ChromatoBll.bll.CompareBiz">

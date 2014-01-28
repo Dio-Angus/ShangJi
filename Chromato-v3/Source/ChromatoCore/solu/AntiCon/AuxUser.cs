@@ -79,6 +79,43 @@ namespace ChromatoCore.solu.AntiCon
             {
                 return;
             }
+
+            switch (this._dtoAntiControl.dtoAux.InitTempAux1.ToString())
+            {
+                case "0":
+                    this.cbAux1.Checked = true;
+                    this.cbAux2.Checked = true;
+
+                    txtInitTempAux1.Enabled = true;
+                    txtAlertTempAux1.Enabled = true;
+
+                    txtInitTempAux1.Enabled = true;
+                    txtAlertTempAux1.Enabled = true;
+                    break;
+                case "1":
+                    this.cbAux1.Checked = true;
+                    this.cbAux2.Checked = false;
+
+                    txtInitTempAux1.Enabled = true;
+                    txtAlertTempAux1.Enabled = true;
+
+                    txtInitTempAux1.Enabled = false;
+                    txtAlertTempAux1.Enabled = false;
+                    break;
+                case "2":
+                    this.cbAux1.Checked = false;
+                    this.cbAux2.Checked = true;
+
+                    txtInitTempAux1.Enabled = false;
+                    txtAlertTempAux1.Enabled = false;
+
+                    txtInitTempAux1.Enabled = true;
+                    txtAlertTempAux1.Enabled = true;
+                    break;
+                default:
+                    break;
+            }
+
             this.txtInitTempAux1.Text = this._dtoAntiControl.dtoAux.InitTempAux1.ToString();
             this.txtAlertTempAux1.Text = this._dtoAntiControl.dtoAux.AlertTempAux1.ToString();
 
@@ -103,6 +140,28 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAlertTempAux2.BackColor = isReadOnly ? Color.Beige : Color.White;
         }
 
+        //导出到缓冲区
+        public void Export()
+        {
+            if (this.cbAux1.Checked == true && this.cbAux2.Checked == true)
+            {
+                _dtoAntiControl.dtoAux.UserIndex = 0;
+            }
+            else if (this.cbAux1.Checked == true && this.cbAux2.Checked == false)
+            {
+                _dtoAntiControl.dtoAux.UserIndex = 1;
+            }
+            else if (this.cbAux1.Checked == false && this.cbAux2.Checked == true)
+            {
+                _dtoAntiControl.dtoAux.UserIndex = 2;
+            }
+            _dtoAntiControl.dtoAux.InitTempAux1 = Convert.ToSingle(this.txtInitTempAux1.Text);
+            _dtoAntiControl.dtoAux.InitTempAux2 = Convert.ToSingle(this.txtInitTempAux2.Text);
+            _dtoAntiControl.dtoAux.AlertTempAux1= Convert.ToSingle(this.txtAlertTempAux1.Text);
+            _dtoAntiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(this.txtAlertTempAux2.Text);
+
+        }
+
         /// <summary>
         /// 新建立反控的信息
         /// </summary>
@@ -115,6 +174,8 @@ namespace ChromatoCore.solu.AntiCon
             {
                 this._dtoAntiControl.dtoAux = new AuxDto();
             }
+
+            this._dtoAntiControl.dtoAux.UserIndex = DefaultAux.UserIndex;
 
             this._dtoAntiControl.dtoAux.AlertTempAux1 = DefaultAux.AlertTempAux1;
             this._dtoAntiControl.dtoAux.AlertTempAux2 = DefaultAux.AlertTempAux2;
@@ -239,9 +300,93 @@ namespace ChromatoCore.solu.AntiCon
             }
             this._dtoAntiControl.dtoAux.InitTempAux2 = Convert.ToSingle(this.txtInitTempAux2.Text);
         }
+        
+        /// <summary>
+        /// Aux1选择框勾选事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbAux1_Click(object sender, EventArgs e)
+        {
+            if (cbAux1.Checked == false && cbAux2.Checked == false)
+            {
+                cbAux1.Checked = true;
 
+                txtInitTempAux1.Enabled = true;
+                txtAlertTempAux1.Enabled = true;
+
+                txtInitTempAux2.Enabled = false;
+                txtAlertTempAux2.Enabled = false;
+            }
+            else if (cbAux1.Checked == true && cbAux2.Checked == false)
+            {
+                txtInitTempAux1.Enabled = true;
+                txtAlertTempAux1.Enabled = true;
+
+                txtInitTempAux2.Enabled = false;
+                txtAlertTempAux2.Enabled = false;
+            }
+            else if (cbAux1.Checked == false && cbAux2.Checked == true)
+            {
+                txtInitTempAux1.Enabled = false;
+                txtAlertTempAux1.Enabled = false;
+
+                txtInitTempAux2.Enabled = true;
+                txtAlertTempAux2.Enabled = true;
+            }
+            else if (cbAux1.Checked == true && cbAux2.Checked == true)
+            {
+                txtInitTempAux1.Enabled = true;
+                txtAlertTempAux1.Enabled = true;
+
+                txtInitTempAux2.Enabled = true;
+                txtAlertTempAux2.Enabled = true;
+            }
+        }
+
+        /// <summary>
+        /// Aux2选择框勾选事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbAux2_Click(object sender, EventArgs e)
+        {
+            if (cbAux1.Checked == false && cbAux2.Checked == false)
+            {
+                cbAux2.Checked = true;
+
+                txtInitTempAux1.Enabled = false;
+                txtAlertTempAux1.Enabled = false;
+
+                txtInitTempAux2.Enabled = true;
+                txtAlertTempAux2.Enabled = true;
+            }
+            else if (cbAux1.Checked == true && cbAux2.Checked == false)
+            {
+                txtInitTempAux1.Enabled = true;
+                txtAlertTempAux1.Enabled = true;
+
+                txtInitTempAux2.Enabled = false;
+                txtAlertTempAux2.Enabled = false;
+            }
+            else if (cbAux1.Checked == false && cbAux2.Checked == true)
+            {
+                txtInitTempAux1.Enabled = false;
+                txtAlertTempAux1.Enabled = false;
+
+                txtInitTempAux2.Enabled = true;
+                txtAlertTempAux2.Enabled = true;
+            }
+            else if (cbAux1.Checked == true && cbAux2.Checked == true)
+            {
+                txtInitTempAux1.Enabled = true;
+                txtAlertTempAux1.Enabled = true;
+
+                txtInitTempAux2.Enabled = true;
+                txtAlertTempAux2.Enabled = true;
+            }
+        }
         #endregion
-
 
     }
 }

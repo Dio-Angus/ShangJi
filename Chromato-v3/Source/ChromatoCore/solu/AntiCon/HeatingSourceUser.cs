@@ -56,7 +56,7 @@ namespace ChromatoCore.solu.AntiCon
             this.txtInitTemp.TextChanged += new System.EventHandler(this.txtInitTemp_TextChanged);
             this.txtMaintainTime.TextChanged += new System.EventHandler(this.txtMaintainTime_TextChanged);
             this.txtAlertTemp.TextChanged += new System.EventHandler(this.txtAlertTemp_TextChanged);
-            this.txtColumnCount.TextChanged += new System.EventHandler(this.txtColumnCount_TextChanged);
+            this.txtColumnCount.Validated += new System.EventHandler(this.txtColumnCount_Validated);
 
             this.txtRateCol1.TextChanged += new System.EventHandler(this.txtRateCol1_TextChanged);
             this.txtRateCol2.TextChanged += new System.EventHandler(this.txtRateCol2_TextChanged);
@@ -110,6 +110,139 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAlertTemp.Text = this._dtoAntiControl.dtoHeatingSource .AlertTemp.ToString();
             this.txtColumnCount.Text = this._dtoAntiControl.dtoHeatingSource .ColumnCount.ToString();
 
+            if (Convert.ToInt32(this.txtColumnCount.Text) == 0)
+            {
+                txtRateCol1.Enabled = false;
+                txtTempCol1.Enabled = false;
+                txtTempTimeCol1.Enabled = false;
+
+                txtRateCol2.Enabled = false;
+                txtTempCol2.Enabled = false;
+                txtTempTimeCol2.Enabled = false;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 1)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = false;
+                txtTempCol2.Enabled = false;
+                txtTempTimeCol2.Enabled = false;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 2)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 3)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 4)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = true;
+                txtTempCol4.Enabled = true;
+                txtTempTimeCol4.Enabled = true;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 5)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = true;
+                txtTempCol4.Enabled = true;
+                txtTempTimeCol4.Enabled = true;
+
+                txtRateCol5.Enabled = true;
+                txtTempCol5.Enabled = true;
+                txtTempTimeCol5.Enabled = true;
+            }
+
             this.txtRateCol1.Text = this._dtoAntiControl.dtoHeatingSource .RateCol1.ToString();
             this.txtRateCol2.Text = this._dtoAntiControl.dtoHeatingSource .RateCol2.ToString();
             this.txtRateCol3.Text = this._dtoAntiControl.dtoHeatingSource .RateCol3.ToString();
@@ -160,61 +293,6 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.dtoHeatingSource.TempTimeCol3 = Convert.ToInt32(this.txtTempTimeCol3.Text);
             this._dtoAntiControl.dtoHeatingSource.TempTimeCol4 = Convert.ToInt32(this.txtTempTimeCol4.Text);
             this._dtoAntiControl.dtoHeatingSource.TempTimeCol5 = Convert.ToInt32(this.txtTempTimeCol5.Text);
-        }
-
-        /// <summary>
-        /// 装载控件的风格
-        /// </summary>
-        /// <param name="isReadOnly"></param>
-        private void LoadControlStyle(bool isReadOnly)
-        {
-            this.txtBalanceTime.ReadOnly = isReadOnly;
-            this.txtInitTemp.ReadOnly = isReadOnly;
-            this.txtMaintainTime.ReadOnly = isReadOnly;
-            this.txtAlertTemp.ReadOnly = isReadOnly;
-            this.txtColumnCount.ReadOnly = isReadOnly;
-
-            this.txtRateCol1.ReadOnly = isReadOnly;
-            this.txtRateCol2.ReadOnly = isReadOnly;
-            this.txtRateCol3.ReadOnly = isReadOnly;
-            this.txtRateCol4.ReadOnly = isReadOnly;
-            this.txtRateCol5.ReadOnly = isReadOnly;
-
-            this.txtTempCol1.ReadOnly = isReadOnly;
-            this.txtTempCol2.ReadOnly = isReadOnly;
-            this.txtTempCol3.ReadOnly = isReadOnly;
-            this.txtTempCol4.ReadOnly = isReadOnly;
-            this.txtTempCol5.ReadOnly = isReadOnly;
-
-            this.txtTempTimeCol1.ReadOnly = isReadOnly;
-            this.txtTempTimeCol2.ReadOnly = isReadOnly;
-            this.txtTempTimeCol3.ReadOnly = isReadOnly;
-            this.txtTempTimeCol4.ReadOnly = isReadOnly;
-            this.txtTempTimeCol5.ReadOnly = isReadOnly;
-
-            this.txtBalanceTime.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtInitTemp.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtMaintainTime.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtAlertTemp.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtColumnCount.BackColor = isReadOnly ? Color.Beige : Color.White;
-
-            this.txtRateCol1.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtRateCol2.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtRateCol3.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtRateCol4.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtRateCol5.BackColor = isReadOnly ? Color.Beige : Color.White;
-
-            this.txtTempCol1.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempCol2.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempCol3.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempCol4.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempCol5.BackColor = isReadOnly ? Color.Beige : Color.White;
-
-            this.txtTempTimeCol1.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempTimeCol2.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempTimeCol3.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempTimeCol4.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.txtTempTimeCol5.BackColor = isReadOnly ? Color.Beige : Color.White;
         }
 
         /// <summary>
@@ -392,31 +470,177 @@ namespace ChromatoCore.solu.AntiCon
             if (!CastString.IsNumeric(this.txtAlertTemp.Text))
             {
                 MessageBox.Show("报警温度不是数值！", "报警温度");
-                this.txtAlertTemp.Focus();
+                this.txtAlertTemp.Focus(); 
                 return;
             }
             this._dtoAntiControl.dtoHeatingSource .AlertTemp = Convert.ToSingle(this.txtAlertTemp.Text);
         }
 
         /// <summary>
-        /// COL程升介数焦点离开事件，合法性检验
+        /// COL程升阶数焦点离开事件，合法性检验
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void txtColumnCount_TextChanged(object sender, EventArgs e)
+        private void txtColumnCount_Validated(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(this.txtColumnCount.Text))
             {
-                MessageBox.Show("COL程升介数不能为空！", "COL程升介数");
+                MessageBox.Show("COL程升阶数不能为空！", "COL程升阶数");
                 this.txtColumnCount.Focus();
                 return;
             }
             if (!CastString.IsNumeric(this.txtColumnCount.Text))
             {
-                MessageBox.Show("COL程升介数不是数值！", "COL程升介数");
+                MessageBox.Show("COL程升阶数不是数值！", "COL程升阶数");
+                this.txtColumnCount.Focus();
+                return;
+            }     
+            if (Convert.ToSingle(this.txtColumnCount.Text) * 10 % 10 != 0)
+            {
+                MessageBox.Show("COL程升阶数应为整数", "COL程升阶数");
                 this.txtColumnCount.Focus();
                 return;
             }
+            if (Convert.ToInt32(this.txtColumnCount.Text) < 0 || Convert.ToInt32(this.txtColumnCount.Text) > 5)
+            {
+                MessageBox.Show("COL程升阶数应在0到5之间","COL程升阶数");
+                this.txtColumnCount.Focus();
+                return;
+            }
+
+            if (Convert.ToInt32(this.txtColumnCount.Text) == 0)
+            {
+                txtRateCol1.Enabled = false;
+                txtTempCol1.Enabled = false;
+                txtTempTimeCol1.Enabled = false;
+
+                txtRateCol2.Enabled = false;
+                txtTempCol2.Enabled = false;
+                txtTempTimeCol2.Enabled = false;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 1)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = false;
+                txtTempCol2.Enabled = false;
+                txtTempTimeCol2.Enabled = false;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 2)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = false;
+                txtTempCol3.Enabled = false;
+                txtTempTimeCol3.Enabled = false;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 3)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = false;
+                txtTempCol4.Enabled = false;
+                txtTempTimeCol4.Enabled = false;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 4)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = true;
+                txtTempCol4.Enabled = true;
+                txtTempTimeCol4.Enabled = true;
+
+                txtRateCol5.Enabled = false;
+                txtTempCol5.Enabled = false;
+                txtTempTimeCol5.Enabled = false;
+            }
+            else if (Convert.ToInt32(this.txtColumnCount.Text) == 5)
+            {
+                txtRateCol1.Enabled = true;
+                txtTempCol1.Enabled = true;
+                txtTempTimeCol1.Enabled = true;
+
+                txtRateCol2.Enabled = true;
+                txtTempCol2.Enabled = true;
+                txtTempTimeCol2.Enabled = true;
+
+                txtRateCol3.Enabled = true;
+                txtTempCol3.Enabled = true;
+                txtTempTimeCol3.Enabled = true;
+
+                txtRateCol4.Enabled = true;
+                txtTempCol4.Enabled = true;
+                txtTempTimeCol4.Enabled = true;
+
+                txtRateCol5.Enabled = true;
+                txtTempCol5.Enabled = true;
+                txtTempTimeCol5.Enabled = true;
+            }
+
             this._dtoAntiControl.dtoHeatingSource .ColumnCount = Convert.ToSingle(this.txtColumnCount.Text);
         }
 

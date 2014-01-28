@@ -91,8 +91,7 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private AntiControlDto _dtoAntiControl = null;
 
-        private ChromatoBll.serialCom.CommandMaker _makeCommand = new ChromatoBll.serialCom.CommandMaker();
-
+        private ChromatoBll.serialCom.CommandMaker _makeCommand = null;
 
         #endregion
 
@@ -108,6 +107,7 @@ namespace ChromatoCore.solu.AntiCon
             this._accessM = am;
             this._bizAntiControl = new AntiControlBiz();
             this._dtoAntiControl = new AntiControlDto();
+            this._makeCommand = new ChromatoBll.serialCom.CommandMaker(_dtoAntiControl);
 
             this.LoadEvent();
             this.AddViewer();
@@ -573,63 +573,104 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
-        /// 写入反控数据
+        /// 修改反控数据
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btWrite_Click(object sender, EventArgs e)
         {
-            String para = null;
-            switch (this.tvAntiControl.SelectedNode.Name)
+            try
             {
-                case AntiControl.NetworkBoard:
-                    para = _makeCommand.setAllNetworkData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewNetworkBoard.LoadSaveAs();
-                    break;
-                case AntiControl.HeatingSource:
-                    para = _makeCommand.setAllCOLData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewHeatingSource.LoadSaveAs();
-                    break;
-                case AntiControl.Inject:
-                    para = _makeCommand.setAllINJData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewInject.LoadSaveAs();
-                    break;
-                case AntiControl.Aux:
-                    para = _makeCommand.setAUXAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewAux.LoadSaveAs();
-                    break;
-                case AntiControl.Fid:
-                    para = _makeCommand.setFIDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewFid.LoadSaveAs();
-                    break;
-                case AntiControl.Tcd:
-                    para = _makeCommand.setTCDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewTcd.LoadSaveAs();
-                    break;
-                case AntiControl.Ecd:
-                    para = _makeCommand.setECDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewEcd.LoadSaveAs();
-                    break;
-                case AntiControl.Fpd:
-                    para = _makeCommand.setFPDZero();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewFpd.LoadSaveAs();
-                    break;
+                if (MessageBox.Show("是否修改反控数据？", "确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    String para = null;
+                    String reply = null;
+                    switch (this.tvAntiControl.SelectedNode.Name)
+                    {
+                        case AntiControl.NetworkBoard:
+                            _viewNetworkBoard.Export();
+                            para = _makeCommand.setAllNetworkData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            //自动重启
+                            para = _makeCommand.restartNetworkBoard();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("自动重启失败", "错误");
+                            else MessageBox.Show("自动重启成功", "设置");
+                            break;
+                        case AntiControl.HeatingSource:
+                            _viewHeatingSource.Export();
+                            para = _makeCommand.setAllCOLData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                        case AntiControl.Inject:
+                            _viewInject.Export();
+                            para = _makeCommand.setAllINJData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                        case AntiControl.Aux:
+                            _viewAux.Export();
+                            para = _makeCommand.setAUXAllData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                        case AntiControl.Fid:
+                            _viewFid.Export();
+                            para = _makeCommand.setFIDAllData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            break;
+                        case AntiControl.Tcd:
+                            //_viewTcd.Export();
+                            para = _makeCommand.setTCDAllData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                        case AntiControl.Ecd:
+                            //_viewEcd.Export();
+                            para = _makeCommand.setECDAllData(getData());
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                        case AntiControl.Fpd:
+                            //_viewFpd.Export();
+                            para = _makeCommand.setFPDZero();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
+                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
+                            else MessageBox.Show("设置成功", "设置");
+                            break;
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("设置出错");
             }
         }
 
@@ -638,61 +679,304 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btRefresh_Click(object sender, EventArgs e)
+        private  void btRefresh_Click(object sender, EventArgs e)
         {
-            String para = null;
+            try
+            {
+                ChromatoBll.serialCom.CommPort.Instance.Open();
+                if (MessageBox.Show("是否刷新反控数据？", "确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    String para = null;
+                    switch (this.tvAntiControl.SelectedNode.Name)
+                    {
+                        case AntiControl.NetworkBoard:
+                            para = _makeCommand.getAllNetworkData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                           // System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
+                            this._viewNetworkBoard.LoadSaveAs();
+                            break;
+                        case AntiControl.HeatingSource:
+                            para = _makeCommand.getAllCOLData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewHeatingSource.LoadSaveAs();
+                            break;
+                        case AntiControl.Inject:
+                            para = _makeCommand.getAllINJData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewInject.LoadSaveAs();
+                            break;
+                        case AntiControl.Aux:
+                            para = _makeCommand.getAUXAllData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewAux.LoadSaveAs();
+                            break;
+                        case AntiControl.Fid:
+                            para = _makeCommand.getFIDAllData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewFid.LoadSaveAs();
+                            break;
+                        case AntiControl.Tcd:
+                            para = _makeCommand.getTCDAllData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewTcd.LoadSaveAs();
+                            break;
+                        case AntiControl.Ecd:
+                            para = _makeCommand.getECDAllData();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewEcd.LoadSaveAs();
+                            break;
+                        case AntiControl.Fpd:
+                            para = _makeCommand.setFPDZero();
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            System.Threading.Thread.Sleep(1000);  //1秒
+                            this._viewFpd.LoadSaveAs();
+                            break;
+
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("刷新出错");
+            }
+        }
+
+        private string getData()
+        {
             switch (this.tvAntiControl.SelectedNode.Name)
             {
                 case AntiControl.NetworkBoard:
-                    para = _makeCommand.getAllNetworkData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewNetworkBoard.LoadSaveAs();
-                    break;
-                case AntiControl.HeatingSource:
-                    para = _makeCommand.getAllCOLData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewHeatingSource.LoadSaveAs();
-                    break;
-                case AntiControl.Inject:
-                    para = _makeCommand.getAllINJData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewInject.LoadSaveAs();
-                    break;
-                case AntiControl.Aux:
-                    para = _makeCommand.getAUXAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewAux.LoadSaveAs();
-                    break;
-                case AntiControl.Fid:
-                    para = _makeCommand.getFIDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewFid.LoadSaveAs();
-                    break;
-                case AntiControl.Tcd:
-                    para = _makeCommand.getTCDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewTcd.LoadSaveAs();
-                    break;
-                case AntiControl.Ecd:
-                    para = _makeCommand.getECDAllData();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewEcd.LoadSaveAs();
-                    break;
-                case AntiControl.Fpd:
-                    para = _makeCommand.setFPDZero();
-                    ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
-                    System.Threading.Thread.Sleep(1000);  //1秒
-                    this._viewFpd.LoadSaveAs();
-                    break;
+                    return transformIP(_dtoAntiControl.dtoNetworkBoard.GateIP)+transformIP(_dtoAntiControl.dtoNetworkBoard.Mask)
+                        +transformMAC(_dtoAntiControl.dtoNetworkBoard.MAC)+transformIP(_dtoAntiControl.dtoNetworkBoard.SourceIP)
+                        //socket0
+                        +transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket0Address,2)+transformIP(_dtoAntiControl.dtoNetworkBoard.Socket0AimIP)
+                        +transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket0AimAddress,2)+transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket0WorkMode.ToString(),1)
+                        //socket1
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket1Address, 2) + transformIP(_dtoAntiControl.dtoNetworkBoard.Socket1AimIP)
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket1AimAddress, 2) + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket1WorkMode.ToString(), 1)
+                        //socket2
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket2Address, 2) + transformIP(_dtoAntiControl.dtoNetworkBoard.Socket2AimIP)
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket2AimAddress, 2) + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket2WorkMode.ToString(), 1)
+                        //socket3
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket3Address, 2) + transformIP(_dtoAntiControl.dtoNetworkBoard.Socket3AimIP)
+                        + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket3AimAddress, 2) + transformDigit(_dtoAntiControl.dtoNetworkBoard.Socket3WorkMode.ToString(), 1);
 
+                case AntiControl.HeatingSource:
+                    return getHeatingSourceData(_dtoAntiControl.dtoHeatingSource);
+
+                case AntiControl.Inject:
+                    return transformDigit(_dtoAntiControl.dtoInject.InitTemp1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoInject.AlertTemp1.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.ColumnType1.ToString(), 1) + transformDigit(_dtoAntiControl.dtoInject.InjectTime1.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.InjectMode1.ToString(), 1)
+                        + transformDigit(_dtoAntiControl.dtoInject.InitTemp2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoInject.AlertTemp2.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.ColumnType2.ToString(), 1) + transformDigit(_dtoAntiControl.dtoInject.InjectTime2.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.InjectMode2.ToString(), 1)
+                        + transformDigit(_dtoAntiControl.dtoInject.InitTemp3.ToString(), 3) + transformDigit(_dtoAntiControl.dtoInject.AlertTemp3.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.ColumnType3.ToString(), 1) + transformDigit(_dtoAntiControl.dtoInject.InjectTime3.ToString(), 3)
+                        + transformDigit(_dtoAntiControl.dtoInject.InjectMode3.ToString(), 1);
+
+                case AntiControl.Aux:
+                    if (_dtoAntiControl.dtoAux.UserIndex == 0)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.AUX1
+                            + transformDigit(_dtoAntiControl.dtoAux.InitTempAux1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoAux.AlertTempAux1.ToString(), 3)
+                            + ChromatoBll.serialCom.addressCommand.AUX2
+                            + transformDigit(_dtoAntiControl.dtoAux.InitTempAux2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoAux.AlertTempAux2.ToString(), 3);
+                    }
+                    else if (_dtoAntiControl.dtoAux.UserIndex == 1)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.AUX1
+                            + transformDigit(_dtoAntiControl.dtoAux.InitTempAux1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoAux.AlertTempAux1.ToString(), 3);
+                    }
+                    else// if (_dtoAntiControl.dtoAux.UserIndex == 2)
+                    {
+                        return ChromatoBll.serialCom.addressCommand.AUX2
+                            + transformDigit(_dtoAntiControl.dtoAux.InitTempAux2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoAux.AlertTempAux2.ToString(), 3);
+                    }
+
+                case AntiControl.Fid:
+                    string data1, data2;
+                    if (_dtoAntiControl.dtoFid.FID1Used)
+                        data1 = ChromatoBll.serialCom.addressCommand.FID1
+                            + transformDigit(_dtoAntiControl.dtoFid.InitTemp1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoFid.AlertTemp1.ToString(), 3)
+                            + transformDigit(_dtoAntiControl.dtoFid.Polarity1.ToString(), 1) + transformDigit(_dtoAntiControl.dtoFid.MagnifyFactor1.ToString(), 1);
+                    else data1 = ChromatoBll.serialCom.addressCommand.FIDK1
+                            + transformDigit(_dtoAntiControl.dtoFid.InitTempK1.ToString(), 3) + transformDigit(_dtoAntiControl.dtoFid.AlertTempK1.ToString(), 3)
+                            + transformDigit(_dtoAntiControl.dtoFid.PolarityK1.ToString(), 1) + transformDigit(_dtoAntiControl.dtoFid.MagnifyFactorK1.ToString(), 1);
+                    if (_dtoAntiControl.dtoFid.FID2Used)
+                        data2 = ChromatoBll.serialCom.addressCommand.FID2
+                            + transformDigit(_dtoAntiControl.dtoFid.InitTemp2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoFid.AlertTemp2.ToString(), 3)
+                            + transformDigit(_dtoAntiControl.dtoFid.Polarity2.ToString(), 1) + transformDigit(_dtoAntiControl.dtoFid.MagnifyFactor2.ToString(), 1);
+                    else data2 = ChromatoBll.serialCom.addressCommand.FIDK2
+                            + transformDigit(_dtoAntiControl.dtoFid.InitTempK2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoFid.AlertTempK2.ToString(), 3)
+                            + transformDigit(_dtoAntiControl.dtoFid.PolarityK2.ToString(), 1) + transformDigit(_dtoAntiControl.dtoFid.MagnifyFactorK2.ToString(), 1);                       
+                    return data1+data2;
+                case AntiControl.Tcd:
+                    return "";
+                case AntiControl.Ecd:
+                    return "";
+                case AntiControl.Fpd:
+                    return "";
+                default:
+                    return "";
             }
+        }
+
+        /// <summary>
+        /// IP地址转化为16进制字符串
+        /// </summary>
+        /// <param name="IP"></param>
+        /// <returns></returns>
+        private string transformIP(string IP)
+        { 
+            string[] IPArray=IP.Split('.');
+            IP = "";
+            foreach (string ip in IPArray)
+            {
+                IP += Convert.ToInt32(ip).ToString("X2");
+            }
+            return IP;
+        }
+
+        /// <summary>
+        /// MAC地址转化为16进制字符串
+        /// </summary>
+        /// <param name="MAC"></param>
+        /// <returns></returns>
+        private string transformMAC(string MAC)
+        {
+            string[] MACArray = MAC.Split('-');
+            MAC = "";
+            foreach (string mac in MACArray)
+            {
+                MAC += Convert.ToInt32(mac).ToString("X2");
+            }
+            return MAC;
+        }
+
+        /// <summary>
+        /// 转化为i个字节
+        /// </summary>
+        /// <param name="Digit"></param>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        public string transformDigit(string Digit, int i)
+        {
+            switch (i)
+            {
+                case 1:
+                    Digit = Convert.ToInt32(Digit).ToString("X2");
+                    break;
+                case 2:
+                    Digit = Convert.ToInt32(Digit).ToString("X4");
+                    break;
+                case 3:
+                    Digit = Convert.ToInt32(Digit).ToString("X6");
+                    break;
+                case 4:
+                    Digit = Convert.ToInt32(Digit).ToString("X8");
+                    break;
+                case 6:
+                    Digit = Convert.ToInt32(Digit).ToString("X12");
+                    break;
+                default:
+                    break;
+            }
+            return Digit;
+        }
+
+        /// <summary>
+        /// 加热源数据生成
+        /// </summary>
+        /// <param name="dtoHeatingSource"></param>
+        /// <returns></returns>
+        private string getHeatingSourceData(HeatingSourceDto dtoHeatingSource)
+        {
+            string baseData = transformDigit(dtoHeatingSource.HeatingState, 1) + transformDigit(dtoHeatingSource.EnablingState, 1)
+                + transformDigit(dtoHeatingSource.InitTemp.ToString(), 3) + transformDigit(dtoHeatingSource.AlertTemp.ToString(), 3)
+                + transformDigit(dtoHeatingSource.MaintainTime.ToString(), 3) + transformDigit(dtoHeatingSource.BalanceTime.ToString(), 3)
+                + transformDigit(dtoHeatingSource.ColumnCount.ToString(), 1);
+            StringBuilder extraData = null;
+            switch (transformDigit(dtoHeatingSource.ColumnCount.ToString(), 1))
+            {
+                case "00":
+                    break;
+                case "01":
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
+                    break;
+                case "02":
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
+                    break;
+                case "03":
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
+                    break;
+                case "04":
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol4.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol4.ToString(), 3));
+                    break;
+                case "05":
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol4.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol4.ToString(), 3));
+
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol5.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempCol5.ToString(), 3));
+                    extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol5.ToString(), 3));
+                    break;
+                default:
+                    break;
+            }
+            return baseData + extraData.ToString();
         }
 
         #endregion

@@ -383,7 +383,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "NetworkBoardUser";
-            this.Size = new System.Drawing.Size(487, 257);
+            this.Size = new System.Drawing.Size(481, 239);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -65,7 +65,6 @@ D:\Chromato-v3-通用版\Source\TestNetCdf\obj\Debug\TestNetCdf.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\TestNetCdf\obj\Debug\TestNetCdf.pdb
 D:\Chromato-v3-通用版\bin\Debug\TestNetCdf.exe.config
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestNetCdf.exe.config
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestNetCdf.XML
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestNetCdf.exe
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\TestNetCdf.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\TestNetCdf\obj\Debug\ResolveAssemblyReference.cache

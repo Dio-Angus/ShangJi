@@ -36,76 +36,102 @@
             this.txtInitTempAux1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.cbAux1 = new System.Windows.Forms.CheckBox();
+            this.cbAux2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txtAlertTempAux2
             // 
-            this.txtAlertTempAux2.Location = new System.Drawing.Point(130, 109);
+            this.txtAlertTempAux2.Location = new System.Drawing.Point(144, 156);
             this.txtAlertTempAux2.Name = "txtAlertTempAux2";
-            this.txtAlertTempAux2.Size = new System.Drawing.Size(78, 19);
+            this.txtAlertTempAux2.Size = new System.Drawing.Size(78, 21);
             this.txtAlertTempAux2.TabIndex = 4;
             // 
             // txtInitTempAux2
             // 
-            this.txtInitTempAux2.Location = new System.Drawing.Point(130, 86);
+            this.txtInitTempAux2.Location = new System.Drawing.Point(144, 133);
             this.txtInitTempAux2.Name = "txtInitTempAux2";
-            this.txtInitTempAux2.Size = new System.Drawing.Size(78, 19);
+            this.txtInitTempAux2.Size = new System.Drawing.Size(78, 21);
             this.txtInitTempAux2.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 113);
+            this.label1.Location = new System.Drawing.Point(43, 160);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 12);
+            this.label1.Size = new System.Drawing.Size(95, 12);
             this.label1.TabIndex = 68;
             this.label1.Text = "Aux2 报警温度：";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 95);
+            this.label2.Location = new System.Drawing.Point(61, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 12);
+            this.label2.Size = new System.Drawing.Size(77, 12);
             this.label2.TabIndex = 67;
             this.label2.Text = "Aux2 初 温：";
             // 
             // txtAlertTempAux1
             // 
-            this.txtAlertTempAux1.Location = new System.Drawing.Point(130, 48);
+            this.txtAlertTempAux1.Location = new System.Drawing.Point(144, 95);
             this.txtAlertTempAux1.Name = "txtAlertTempAux1";
-            this.txtAlertTempAux1.Size = new System.Drawing.Size(78, 19);
+            this.txtAlertTempAux1.Size = new System.Drawing.Size(78, 21);
             this.txtAlertTempAux1.TabIndex = 2;
             // 
             // txtInitTempAux1
             // 
-            this.txtInitTempAux1.Location = new System.Drawing.Point(130, 25);
+            this.txtInitTempAux1.Location = new System.Drawing.Point(144, 72);
             this.txtInitTempAux1.Name = "txtInitTempAux1";
-            this.txtInitTempAux1.Size = new System.Drawing.Size(78, 19);
+            this.txtInitTempAux1.Size = new System.Drawing.Size(78, 21);
             this.txtInitTempAux1.TabIndex = 1;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(29, 52);
+            this.label14.Location = new System.Drawing.Point(43, 99);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 12);
+            this.label14.Size = new System.Drawing.Size(95, 12);
             this.label14.TabIndex = 64;
             this.label14.Text = "Aux1 报警温度：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 34);
+            this.label3.Location = new System.Drawing.Point(61, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 12);
+            this.label3.Size = new System.Drawing.Size(77, 12);
             this.label3.TabIndex = 63;
             this.label3.Text = "Aux1 初 温：";
+            // 
+            // cbAux1
+            // 
+            this.cbAux1.AutoSize = true;
+            this.cbAux1.Location = new System.Drawing.Point(45, 30);
+            this.cbAux1.Name = "cbAux1";
+            this.cbAux1.Size = new System.Drawing.Size(49, 16);
+            this.cbAux1.TabIndex = 69;
+            this.cbAux1.Text = "Aux1";
+            this.cbAux1.UseVisualStyleBackColor = true;
+            this.cbAux1.CheckedChanged += new System.EventHandler(this.cbAux1_Click);
+            // 
+            // cbAux2
+            // 
+            this.cbAux2.AutoSize = true;
+            this.cbAux2.Location = new System.Drawing.Point(100, 30);
+            this.cbAux2.Name = "cbAux2";
+            this.cbAux2.Size = new System.Drawing.Size(49, 16);
+            this.cbAux2.TabIndex = 69;
+            this.cbAux2.Text = "Aux2";
+            this.cbAux2.UseVisualStyleBackColor = true;
+            this.cbAux2.CheckedChanged += new System.EventHandler(this.cbAux2_Click);
             // 
             // AuxUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cbAux2);
+            this.Controls.Add(this.cbAux1);
             this.Controls.Add(this.txtAlertTempAux2);
             this.Controls.Add(this.txtInitTempAux2);
             this.Controls.Add(this.label1);
@@ -131,6 +157,8 @@
         private System.Windows.Forms.TextBox txtInitTempAux1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox cbAux1;
+        private System.Windows.Forms.CheckBox cbAux2;
 
     }
 }

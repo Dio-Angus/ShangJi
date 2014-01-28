@@ -529,15 +529,15 @@ namespace ChromatoBll.serialCom
         private StringBuilder GetFID1Para(AntiControlDto dto)
         {
             StringBuilder para = new StringBuilder();
-            String temp = dto.dtoFid.PolarityOne ? "01" : "00";
+            String temp = dto.dtoFid.Polarity1 ? "01" : "00";
             //初温
-            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "01" + this.ConvertToBcd(dto.dtoFid.InitTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "01" + this.ConvertToBcd(dto.dtoFid.InitTemp1.ToString()) + Version3010.FrameEnd);
             //报警温度
-            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "02" + this.ConvertToBcd(dto.dtoFid.AlertTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "02" + this.ConvertToBcd(dto.dtoFid.AlertTemp1.ToString()) + Version3010.FrameEnd);
             //极性
             para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "03" + temp + Version3010.FrameEnd);
             //放大倍数
-            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "04" + String.Format("{0:D2}", dto.dtoFid.MagnifyFactorOne) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.FID1 + PcCommand.FID1 + "04" + String.Format("{0:D2}", dto.dtoFid.MagnifyFactor1) + Version3010.FrameEnd);
 
             return para;
         }
@@ -550,11 +550,11 @@ namespace ChromatoBll.serialCom
         private StringBuilder GetFID2Para(AntiControlDto dto)
         {
             StringBuilder para = new StringBuilder();
-            String temp = dto.dtoFid.PolarityTwo ? "01" : "00";
-            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "01" + this.ConvertToBcd(dto.dtoFid.InitTemp.ToString()) + Version3010.FrameEnd);
-            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "02" + this.ConvertToBcd(dto.dtoFid.AlertTemp.ToString()) + Version3010.FrameEnd);
+            String temp = dto.dtoFid.Polarity2 ? "01" : "00";
+            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "01" + this.ConvertToBcd(dto.dtoFid.InitTemp1.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "02" + this.ConvertToBcd(dto.dtoFid.AlertTemp1.ToString()) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "03" + temp + Version3010.FrameEnd);
-            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "04" + String.Format("{0:D2}", dto.dtoFid.MagnifyFactorTwo) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.FID2 + PcCommand.FID2 + "04" + String.Format("{0:D2}", dto.dtoFid.MagnifyFactor2) + Version3010.FrameEnd);
 
             return para;
         }
@@ -630,9 +630,9 @@ namespace ChromatoBll.serialCom
         {
             StringBuilder para = new StringBuilder();
             //初温
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ1 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ1 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp1.ToString()) + Version3010.FrameEnd);
             //报警温度
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ1 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ1 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp1.ToString()) + Version3010.FrameEnd);
             //柱类型
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ1 + "03" + String.Format("{0:D2}", (int)dto.dtoInject.ColumnType1) + Version3010.FrameEnd);
             //进样时间
@@ -651,8 +651,8 @@ namespace ChromatoBll.serialCom
         private StringBuilder GetInject2Para(AntiControlDto dto)
         {
             StringBuilder para = new StringBuilder();
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp.ToString()) + Version3010.FrameEnd);
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp1.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp1.ToString()) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "03" + String.Format("{0:D2}", (int)dto.dtoInject.ColumnType2) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "04" + this.ConvertToBcd(dto.dtoInject.InjectTime2.ToString()) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ2 + "00" + String.Format("{0:D2}", (int)dto.dtoInject.InjectMode2) + Version3010.FrameEnd);
@@ -668,8 +668,8 @@ namespace ChromatoBll.serialCom
         private StringBuilder GetInject3Para(AntiControlDto dto)
         {
             StringBuilder para = new StringBuilder();
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp.ToString()) + Version3010.FrameEnd);
-            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "01" + this.ConvertToBcd(dto.dtoInject.InitTemp1.ToString()) + Version3010.FrameEnd);
+            para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "02" + this.ConvertToBcd(dto.dtoInject.AlertTemp1.ToString()) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "03" + String.Format("{0:D2}", (int)dto.dtoInject.ColumnType3) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "04" + this.ConvertToBcd(dto.dtoInject.InjectTime3.ToString()) + Version3010.FrameEnd);
             para.Append(Version3010.DataStart + ModuleAddress.TempControl + PcCommand.INJ3 + "00" + String.Format("{0:D2}", (int)dto.dtoInject.InjectMode3) + Version3010.FrameEnd);

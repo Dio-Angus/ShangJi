@@ -45,6 +45,7 @@
             this.checkBoxHexView = new System.Windows.Forms.CheckBox();
             this.labelGetCount = new System.Windows.Forms.Label();
             this.checkBoxNewlineSend = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -114,6 +115,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.txGet);
             this.groupBox1.Controls.Add(this.checkBoxNewlineGet);
             this.groupBox1.Location = new System.Drawing.Point(26, 50);
@@ -220,6 +222,14 @@
             this.checkBoxNewlineSend.Text = "New line";
             this.checkBoxNewlineSend.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(365, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // SerialportSampleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -267,6 +277,7 @@
         private System.Windows.Forms.Label labelGetCount;
         private System.Windows.Forms.CheckBox checkBoxNewlineSend;
         private System.Windows.Forms.TextBox txGet;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
