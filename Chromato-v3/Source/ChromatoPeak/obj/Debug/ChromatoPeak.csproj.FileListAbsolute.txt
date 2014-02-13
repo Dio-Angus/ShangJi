@@ -41,4 +41,3 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\Chromat
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPeak.XML

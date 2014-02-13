@@ -184,6 +184,9 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.dtoAux.InitTempAux1 = DefaultAux.InitTempAux1;
             this._dtoAntiControl.dtoAux.InitTempAux2 = DefaultAux.InitTempAux2;
 
+            this.cbAux1.Checked = true;
+            this.cbAux2.Checked = true;
+
             this.txtAlertTempAux1.Text = DefaultAux.AlertTempAux1.ToString();
             this.txtInitTempAux1.Text = DefaultAux.InitTempAux1.ToString();
 

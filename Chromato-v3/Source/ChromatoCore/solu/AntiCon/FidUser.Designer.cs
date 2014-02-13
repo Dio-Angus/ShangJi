@@ -146,6 +146,11 @@
             // 
             this.cmbMagnifyFactorFid1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMagnifyFactorFid1.FormattingEnabled = true;
+            this.cmbMagnifyFactorFid1.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
             this.cmbMagnifyFactorFid1.Location = new System.Drawing.Point(99, 35);
             this.cmbMagnifyFactorFid1.Name = "cmbMagnifyFactorFid1";
             this.cmbMagnifyFactorFid1.Size = new System.Drawing.Size(234, 20);
@@ -156,6 +161,11 @@
             // 
             this.cmbMagnifyFactorFid2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMagnifyFactorFid2.FormattingEnabled = true;
+            this.cmbMagnifyFactorFid2.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3"});
             this.cmbMagnifyFactorFid2.Location = new System.Drawing.Point(100, 37);
             this.cmbMagnifyFactorFid2.Name = "cmbMagnifyFactorFid2";
             this.cmbMagnifyFactorFid2.Size = new System.Drawing.Size(234, 20);

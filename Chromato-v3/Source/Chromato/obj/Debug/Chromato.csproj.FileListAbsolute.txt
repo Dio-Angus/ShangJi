@@ -91,7 +91,6 @@ D:\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.exe
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\Chromato\obj\Debug\Chromato.pdb
 D:\Chromato-v3-通用版\bin\Debug\Chromato.xml
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\Chromato.xml
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\Chromato.exe
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\Chromato.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\Chromato\obj\Debug\ResolveAssemblyReference.cache
@@ -105,3 +104,4 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\Chromato\o
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\Chromato\obj\Debug\GenerateResource-ResGen.write.1.tlog
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\Chromato\obj\Debug\Chromato.exe
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\Chromato\obj\Debug\Chromato.pdb
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\Chromato.xml
