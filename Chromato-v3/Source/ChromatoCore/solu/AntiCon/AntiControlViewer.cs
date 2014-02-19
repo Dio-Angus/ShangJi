@@ -691,55 +691,56 @@ namespace ChromatoCore.solu.AntiCon
                     {
                         case AntiControl.NetworkBoard:
                             para = _makeCommand.getAllNetworkData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                            // System.Threading.Thread.Sleep(1000);  //1秒
                             ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewNetworkBoard.LoadSaveAs();
                             break;
                         case AntiControl.HeatingSource:
                             para = _makeCommand.getAllCOLData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewHeatingSource.LoadSaveAs();
                             break;
                         case AntiControl.Inject:
                             para = _makeCommand.getAllINJData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewInject.LoadSaveAs();
                             break;
                         case AntiControl.Aux:
                             para = _makeCommand.getAUXAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewAux.LoadSaveAs();
                             break;
                         case AntiControl.Fid:
                             para = _makeCommand.getFIDAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewFid.LoadSaveAs();
                             break;
                         case AntiControl.Tcd:
                             para = _makeCommand.getTCDAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewTcd.LoadSaveAs();
                             break;
                         case AntiControl.Ecd:
                             para = _makeCommand.getECDAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewEcd.LoadSaveAs();
                             break;
                         case AntiControl.Fpd:
                             para = _makeCommand.setFPDZero();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString(), true);
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
                             this._viewFpd.LoadSaveAs();
                             break;
 
                     }
+                    ChromatoBll.serialCom.CommPort.Instance.Close();
                 }
             }
             catch

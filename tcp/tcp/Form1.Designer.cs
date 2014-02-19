@@ -98,6 +98,7 @@
             this.column0 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView1 = new System.Windows.Forms.ListView();
             this.btLink = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -841,11 +842,19 @@
             this.btLink.UseVisualStyleBackColor = true;
             this.btLink.Click += new System.EventHandler(this.btLink_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(784, 21);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 21);
+            this.textBox3.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 558);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.comboBox5);
@@ -959,6 +968,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ColumnHeader column0;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

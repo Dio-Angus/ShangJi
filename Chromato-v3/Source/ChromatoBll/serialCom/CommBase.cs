@@ -519,12 +519,6 @@ namespace ChromatoBll.serialCom
             byte[] buffer = null;
             if (Port.tag == 0)
             {
-                int a;
-                a = this._sictPort.ReadByte();
-                a = this._sictPort.ReadByte();
-                a = this._sictPort.ReadByte();
-                a = this._sictPort.ReadByte();
-
                 this._sictPort.Read(buffer, 0, 10000);
             }
             else if (Port.tag == 1)
@@ -1183,7 +1177,6 @@ namespace ChromatoBll.serialCom
         /// <param name="isHex"></param>
         public void Send(string data, bool isHex)
         {
-
             byte[] bytes = null;
 
             if (this.IsOpen)
@@ -1214,6 +1207,53 @@ namespace ChromatoBll.serialCom
 
             }
         }
+
+        public void Send(string s)
+        {
+            try
+            {
+                List<string> sArr = new List<string>();
+                for (int i = 0; i < s.Length % 2 + 1; i++)
+                {
+                    sArr.Add(s.Substring(2 * i, 2));
+                }
+                List<byte> buffer = new List<byte>();
+                for (int i = 0; i < sArr.Count; i++)
+                {
+                    Byte bit;
+                    if (this.IsByte(sArr[i], out bit))
+                    {
+                        buffer.Add(bit);
+                    }
+                } 
+                if (Port.tag == 0)//RS-232方式
+                {
+                    _sictPort.Write(buffer.ToArray(), 0, buffer.Count);
+                }
+                if (Port.tag == 1)//以太网方式
+                {
+                    ns.Write(buffer.ToArray(), 0, buffer.Count);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("发送出错");
+            }
+        }
+
+        private bool IsByte(string s, out byte bit)
+        {
+            try
+            {
+                bit = byte.Parse(s, System.Globalization.NumberStyles.AllowHexSpecifier);
+                return true;
+            }
+            catch
+            {
+                bit = default(byte);
+                return false;
+            }
+        } 
 
         /// <summary>
         /// 写串口

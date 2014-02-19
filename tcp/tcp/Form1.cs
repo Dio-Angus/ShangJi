@@ -39,7 +39,7 @@ namespace tcp
         public Form1()
         {
             InitializeComponent();
-
+            
             //初始化下拉串口名称列表框  
             string[] ports = SerialPort.GetPortNames();  
             Array.Sort(ports);  
@@ -145,6 +145,10 @@ namespace tcp
                         b = 1;
                     }
                 }
+
+                send("aa 55 02 03 00");
+                get(1);
+                setMessage(this.Data[0], textBox3, 0);
             }
 
             catch (Exception ex)
