@@ -72,16 +72,6 @@ namespace ChromatoCore.solu.AntiCon
         private AuxUser _viewAux = null;
 
         /// <summary>
-        /// Ecd参数
-        /// </summary>
-        private EcdUser _viewEcd = null;
-
-        /// <summary>
-        /// Fpd参数
-        /// </summary>
-        private FpdUser _viewFpd = null;
-
-        /// <summary>
         /// 分析方法逻辑
         /// </summary>
         private AntiControlBiz _bizAntiControl = null;
@@ -126,17 +116,13 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd = new TcdUser(this._dtoAntiControl);
             this._viewFid = new FidUser(this._dtoAntiControl);
             this._viewAux = new AuxUser(this._dtoAntiControl);
-            this._viewEcd = new EcdUser(this._dtoAntiControl);
-            this._viewFpd = new FpdUser(this._dtoAntiControl);
 
             this.Controls.Add(this._viewNetworkBoard);
             this.Controls.Add(this._viewHeatingSource);
             this.Controls.Add(this._viewInject);
             this.Controls.Add(this._viewTcd);
             this.Controls.Add(this._viewFid);
-            this.Controls.Add(this._viewAux);
-            this.Controls.Add(this._viewEcd);
-            this.Controls.Add(this._viewFpd);            
+            this.Controls.Add(this._viewAux);         
         }
         
         /// <summary>
@@ -167,8 +153,6 @@ namespace ChromatoCore.solu.AntiCon
             TreeNode rnTcd = new TreeNode();
             TreeNode rnFid = new TreeNode();
             TreeNode rnAux = new TreeNode();
-            TreeNode rnEcd = new TreeNode();
-            TreeNode rnFpd = new TreeNode();
 
 
             //親ノードのテキストを作成 
@@ -190,11 +174,6 @@ namespace ChromatoCore.solu.AntiCon
             rnAux.Text = AntiControl.Aux;
             rnAux.Name = AntiControl.Aux;
 
-            rnEcd.Text = AntiControl.Ecd;
-            rnEcd.Name = AntiControl.Ecd;
-
-            rnFpd.Text = AntiControl.Fpd;
-            rnFpd.Name = AntiControl.Fpd;
 
             //親ノードをTreeViewに追加
             tvAntiControl.Nodes.Add(rnNetworkBoard);
@@ -203,8 +182,6 @@ namespace ChromatoCore.solu.AntiCon
             tvAntiControl.Nodes.Add(rnTcd);
             tvAntiControl.Nodes.Add(rnFid);
             tvAntiControl.Nodes.Add(rnAux);
-            tvAntiControl.Nodes.Add(rnEcd);
-            tvAntiControl.Nodes.Add(rnFpd);
 
             //全展開する
             tvAntiControl.ExpandAll();
@@ -231,8 +208,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Location = pt;
             this._viewFid.Location = pt;
             this._viewAux.Location = pt;
-            this._viewEcd.Location = pt;
-            this._viewFpd.Location = pt;
 
             Size sz = new Size(460, 240);
             this._viewNetworkBoard.Size = sz;
@@ -241,8 +216,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Size = sz;
             this._viewFid.Size = sz;
             this._viewAux.Size = sz;
-            this._viewEcd.Size = sz;
-            this._viewFpd.Size = sz;
 
             this._viewNetworkBoard.BringToFront();
             this._viewHeatingSource.BringToFront();
@@ -250,8 +223,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.BringToFront();
             this._viewFid.BringToFront();
             this._viewAux.BringToFront();
-            this._viewEcd.BringToFront();
-            this._viewFpd.BringToFront();
         }
 
         /// <summary>
@@ -265,8 +236,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd.Visible = false;
             this._viewFid.Visible = false;
             this._viewAux.Visible = false;
-            this._viewEcd.Visible = false;
-            this._viewFpd.Visible = false;
         }
 
         #endregion
@@ -345,13 +314,6 @@ namespace ChromatoCore.solu.AntiCon
                     this._viewAux.Visible = true;
                     break;
 
-                case AntiControl.Ecd:
-                    this._viewEcd.Visible = true;
-                    break;
-
-                case AntiControl.Fpd:
-                    this._viewFpd.Visible = true;
-                    break;
 
                 default:
                     break;
@@ -447,8 +409,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadView(antiControlID);
             this._viewFid.LoadView(antiControlID);
             this._viewTcd.LoadView(antiControlID);
-            this._viewEcd.LoadView(antiControlID);
-            this._viewFpd.LoadView(antiControlID);
         }
 
         /// <summary>
@@ -478,8 +438,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadNew();
             this._viewFid.LoadNew();
             this._viewTcd.LoadNew();
-            this._viewEcd.LoadNew();
-            this._viewFpd.LoadNew();
         }
 
         /// <summary>
@@ -502,8 +460,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadEdit();
             this._viewFid.LoadEdit();
             this._viewTcd.LoadEdit();
-            this._viewEcd.LoadEdit();
-            this._viewFpd.LoadEdit();
         }
 
         /// <summary>
@@ -526,8 +482,6 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadSaveAs();
             this._viewFid.LoadSaveAs();
             this._viewTcd.LoadSaveAs();
-            this._viewEcd.LoadSaveAs();
-            this._viewFpd.LoadSaveAs();
         }
 
         /// <summary>
@@ -647,24 +601,7 @@ namespace ChromatoCore.solu.AntiCon
                             if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
                             else MessageBox.Show("设置成功", "设置");
                             break;
-                        case AntiControl.Ecd:
-                            //_viewEcd.Export();
-                            para = _makeCommand.setECDAllData(getData());
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
-                            System.Threading.Thread.Sleep(1000);  //1秒
-                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
-                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
-                            else MessageBox.Show("设置成功", "设置");
-                            break;
-                        case AntiControl.Fpd:
-                            //_viewFpd.Export();
-                            para = _makeCommand.setFPDZero();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para, true);
-                            System.Threading.Thread.Sleep(1000);  //1秒
-                            reply = ChromatoBll.serialCom.CommPort.Instance.ReadSict().ToString();
-                            if (reply.Substring(6, 9) != para.Substring(6, 9)) MessageBox.Show("设置失败", "错误");
-                            else MessageBox.Show("设置成功", "设置");
-                            break;
+                        
                     }
                 }
             }
@@ -684,6 +621,9 @@ namespace ChromatoCore.solu.AntiCon
             try
             {
                 ChromatoBll.serialCom.CommPort.Instance.Open();
+                
+                ChromatoBll.serialCom.CommPort.Instance.Send("AA55020380");
+                ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                 if (MessageBox.Show("是否刷新反控数据？", "确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
                     String para = null;
@@ -700,43 +640,36 @@ namespace ChromatoCore.solu.AntiCon
                             para = _makeCommand.getAllCOLData();
                             ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewHeatingSource.LoadSaveAs();
                             break;
                         case AntiControl.Inject:
                             para = _makeCommand.getAllINJData();
                             ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewInject.LoadSaveAs();
                             break;
                         case AntiControl.Aux:
                             para = _makeCommand.getAUXAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
-                            System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );                          
+                            System.Threading.Thread.Sleep(1000);  //1秒  
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewAux.LoadSaveAs();
                             break;
                         case AntiControl.Fid:
                             para = _makeCommand.getFIDAllData();
                             ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewFid.LoadSaveAs();
                             break;
                         case AntiControl.Tcd:
                             para = _makeCommand.getTCDAllData();
                             ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
                             System.Threading.Thread.Sleep(1000);  //1秒
+                            ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewTcd.LoadSaveAs();
-                            break;
-                        case AntiControl.Ecd:
-                            para = _makeCommand.getECDAllData();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
-                            System.Threading.Thread.Sleep(1000);  //1秒
-                            this._viewEcd.LoadSaveAs();
-                            break;
-                        case AntiControl.Fpd:
-                            para = _makeCommand.setFPDZero();
-                            ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
-                            System.Threading.Thread.Sleep(1000);  //1秒
-                            this._viewFpd.LoadSaveAs();
                             break;
 
                     }
@@ -841,10 +774,6 @@ namespace ChromatoCore.solu.AntiCon
                             + transformDigit(_dtoAntiControl.dtoTcd.InitTemp2.ToString(), 3) + transformDigit(_dtoAntiControl.dtoTcd.AlertTemp2.ToString(), 3)
                             + _dtoAntiControl.dtoTcd.PolarityTwo.ToString() + transformDigit(_dtoAntiControl.dtoTcd.CurrentTwo.ToString(), 3);
                     }
-                case AntiControl.Ecd:
-                    return "";
-                case AntiControl.Fpd:
-                    return "";
                 default:
                     return "";
             }

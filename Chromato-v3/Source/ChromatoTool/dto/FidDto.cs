@@ -88,5 +88,26 @@ namespace ChromatoTool.dto
         /// FIDK2极性
         /// </summary>
         public bool PolarityK2 { get; set; }
+
+
+
+        /// <summary>
+        /// ECD放大倍数
+        /// </summary>
+        public Int32 MagnifyFactorECD { get; set; }
+        /// <summary>
+        /// ECD极性
+        /// </summary>
+        public bool PolarityECD { get; set; }
+
+        /// <summary>
+        /// FPD放大倍数
+        /// </summary>
+        public Int32 MagnifyFactorFPD { get; set; }
+        /// <summary>
+        /// FPD极性
+        /// </summary>
+        public bool PolarityFPD { get; set; }
+
     }
 }

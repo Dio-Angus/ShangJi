@@ -207,7 +207,7 @@
             // cbxPolarityTcd2
             // 
             this.cbxPolarityTcd2.AutoSize = true;
-            this.cbxPolarityTcd2.Location = new System.Drawing.Point(84, 70);
+            this.cbxPolarityTcd2.Location = new System.Drawing.Point(106, 73);
             this.cbxPolarityTcd2.Name = "cbxPolarityTcd2";
             this.cbxPolarityTcd2.Size = new System.Drawing.Size(37, 16);
             this.cbxPolarityTcd2.TabIndex = 9;
@@ -225,6 +225,7 @@
             // cbTCD1
             // 
             this.cbTCD1.AutoSize = true;
+            this.cbTCD1.Enabled = false;
             this.cbTCD1.Location = new System.Drawing.Point(48, 13);
             this.cbTCD1.Name = "cbTCD1";
             this.cbTCD1.Size = new System.Drawing.Size(49, 16);
@@ -236,6 +237,7 @@
             // cbTCD2
             // 
             this.cbTCD2.AutoSize = true;
+            this.cbTCD2.Enabled = false;
             this.cbTCD2.Location = new System.Drawing.Point(133, 13);
             this.cbTCD2.Name = "cbTCD2";
             this.cbTCD2.Size = new System.Drawing.Size(49, 16);

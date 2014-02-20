@@ -57,9 +57,7 @@ namespace ChromatoCore.solu.AntiCon
         private void LoadEvent()
         {
             this.txtAlertTemp1.TextChanged += new System.EventHandler(this.txtAlertTemp1_TextChanged);
-            this.txtAlertTemp2.TextChanged += new System.EventHandler(this.txtAlertTemp2_TextChanged);
             this.txtInitTemp1.TextChanged += new System.EventHandler(this.txtInitTemp1_TextChanged);
-            this.txtInitTemp2.TextChanged += new System.EventHandler(this.txtInitTemp2_TextChanged);
         }
 
         #endregion
@@ -80,7 +78,6 @@ namespace ChromatoCore.solu.AntiCon
 
             this.LoadViewOrSaveAs();
             this.cmbMagnifyFactorFid1.Items.Clear();
-            this.cmbMagnifyFactorFid2.Items.Clear();
 
             switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor1)
             {
@@ -99,24 +96,7 @@ namespace ChromatoCore.solu.AntiCon
 
             }
 
-            switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor2)
-            {
-                case Magnify.Zero:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
-                    break;
-                case Magnify.One:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.One));
-                    break;
-                case Magnify.Two:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
-                    break;
-                case Magnify.Three:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
-                    break;
-
-            }
             this.cmbMagnifyFactorFid1.SelectedIndex = 0;
-            this.cmbMagnifyFactorFid2.SelectedIndex = 0;
 
         }
 
@@ -127,7 +107,7 @@ namespace ChromatoCore.solu.AntiCon
         {
             if (this._dtoAntiControl.dtoFid.FID1Used)
             {
-                this.cb1.SelectedIndex = 0;
+                this.gb1.Text="FID1";
                 this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTemp1.ToString();
                 this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTemp1.ToString();
                 this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactor1;
@@ -136,7 +116,7 @@ namespace ChromatoCore.solu.AntiCon
             }
             else if (this._dtoAntiControl.dtoFid.FIDK1Used)
             {
-                this.cb1.SelectedIndex = 1;
+                this.gb1.Text = "FIDK1";
                 this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTempK1.ToString();
                 this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTempK1.ToString();
                 this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactorK1;
@@ -144,23 +124,23 @@ namespace ChromatoCore.solu.AntiCon
                 this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
             }
 
-            if (this._dtoAntiControl.dtoFid.FID2Used)
+            else if (this._dtoAntiControl.dtoFid.FID2Used)
             {
-                this.cb2.SelectedIndex = 0;
-                this.txtInitTemp2.Text = this._dtoAntiControl.dtoFid.InitTemp2.ToString();
-                this.txtAlertTemp2.Text = this._dtoAntiControl.dtoFid.AlertTemp2.ToString();
-                this.cmbMagnifyFactorFid2.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactor2;
-                this.cbxPolarityFid2.Checked = this._dtoAntiControl.dtoFid.Polarity2;
-                this.cbxPolarityFid2.Text = this.cbxPolarityFid2.Checked ? Polarity.Positive : Polarity.Nagative;
+                this.gb1.Text = "FID2";
+                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTemp2.ToString();
+                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTemp2.ToString();
+                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactor2;
+                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.Polarity2;
+                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
             }
             else if (this._dtoAntiControl.dtoFid.FIDK2Used)
             {
-                this.cb2.SelectedIndex = 0;
-                this.txtInitTemp2.Text = this._dtoAntiControl.dtoFid.InitTempK2.ToString();
-                this.txtAlertTemp2.Text = this._dtoAntiControl.dtoFid.AlertTempK2.ToString();
-                this.cmbMagnifyFactorFid2.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactorK2;
-                this.cbxPolarityFid2.Checked = this._dtoAntiControl.dtoFid.PolarityK2;
-                this.cbxPolarityFid2.Text = this.cbxPolarityFid2.Checked ? Polarity.Positive : Polarity.Nagative;
+                this.gb1.Text = "FIDK2";
+                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTempK2.ToString();
+                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTempK2.ToString();
+                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactorK2;
+                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.PolarityK2;
+                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
             }
         }
 
@@ -169,7 +149,7 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         public void Export()
         {
-            switch(this.cb1.Text)
+            switch(this.gb1.Text)
             {
                 case "Fid1":
                     this._dtoAntiControl.dtoFid.FID1Used = true;
@@ -187,24 +167,21 @@ namespace ChromatoCore.solu.AntiCon
                     this._dtoAntiControl.dtoFid.MagnifyFactorK1 = cmbMagnifyFactorFid1.SelectedIndex;
                     this._dtoAntiControl.dtoFid.PolarityK1 = this.cbxPolarityFid1.Checked;
                     break;
-            }
-            switch (this.cb2.Text)
-            {
                 case "Fid2":
                     this._dtoAntiControl.dtoFid.FID2Used = true;
                     this._dtoAntiControl.dtoFid.FIDK2Used = false;
-                    this._dtoAntiControl.dtoFid.InitTemp2 = Convert.ToSingle(this.txtInitTemp2.Text);
-                    this._dtoAntiControl.dtoFid.AlertTemp2 = Convert.ToSingle(this.txtAlertTemp2.Text);
-                    this._dtoAntiControl.dtoFid.MagnifyFactor2 = cmbMagnifyFactorFid2.SelectedIndex;
-                    this._dtoAntiControl.dtoFid.Polarity2 = this.cbxPolarityFid2.Checked;
+                    this._dtoAntiControl.dtoFid.InitTemp2 = Convert.ToSingle(this.txtInitTemp1.Text);
+                    this._dtoAntiControl.dtoFid.AlertTemp2 = Convert.ToSingle(this.txtAlertTemp1.Text);
+                    this._dtoAntiControl.dtoFid.MagnifyFactor2 = cmbMagnifyFactorFid1.SelectedIndex;
+                    this._dtoAntiControl.dtoFid.Polarity2 = this.cbxPolarityFid1.Checked;
                     break;
                 case "FidK2":
                     this._dtoAntiControl.dtoFid.FID2Used = false;
                     this._dtoAntiControl.dtoFid.FIDK2Used = true;
-                    this._dtoAntiControl.dtoFid.InitTempK2 = Convert.ToSingle(this.txtInitTemp2.Text);
-                    this._dtoAntiControl.dtoFid.AlertTempK2 = Convert.ToSingle(this.txtAlertTemp2.Text);
-                    this._dtoAntiControl.dtoFid.MagnifyFactorK2 = cmbMagnifyFactorFid2.SelectedIndex;
-                    this._dtoAntiControl.dtoFid.PolarityK2 = this.cbxPolarityFid2.Checked;
+                    this._dtoAntiControl.dtoFid.InitTempK2 = Convert.ToSingle(this.txtInitTemp1.Text);
+                    this._dtoAntiControl.dtoFid.AlertTempK2 = Convert.ToSingle(this.txtAlertTemp1.Text);
+                    this._dtoAntiControl.dtoFid.MagnifyFactorK2 = cmbMagnifyFactorFid1.SelectedIndex;
+                    this._dtoAntiControl.dtoFid.PolarityK2 = this.cbxPolarityFid1.Checked;
                     break;
             }
         }
@@ -216,18 +193,14 @@ namespace ChromatoCore.solu.AntiCon
         public void LoadControlStyle(bool isReadOnly)
         {
             this.txtInitTemp1.ReadOnly = isReadOnly;
-            this.txtInitTemp2.ReadOnly = isReadOnly;
             this.txtAlertTemp1.ReadOnly = isReadOnly;
-            this.txtAlertTemp2.ReadOnly = isReadOnly;
 
             this.cbxPolarityFid1.Enabled = !isReadOnly;
-            this.cbxPolarityFid2.Enabled = !isReadOnly;
 
             this.txtInitTemp1.BackColor = isReadOnly ? Color.Beige : Color.White;
             this.txtAlertTemp1.BackColor = isReadOnly ? Color.Beige : Color.White;
 
             this.cmbMagnifyFactorFid1.BackColor = isReadOnly ? Color.Beige : Color.White;
-            this.cmbMagnifyFactorFid2.BackColor = isReadOnly ? Color.Beige : Color.White;
 
             this._bIsEdit = !isReadOnly;
 
@@ -244,36 +217,23 @@ namespace ChromatoCore.solu.AntiCon
                 this._dtoAntiControl.dtoFid = new FidDto();
             }
 
-            this.cb1.SelectedIndex = 0;
-            this.cb2.SelectedIndex = 0;
+            this.gb1.Text = "FID1";
 
             this.txtInitTemp1.Text = DefaultFid.InitTemp1.ToString();
             this.txtAlertTemp1.Text = DefaultFid.AlertTemp1.ToString();
 
-            this.txtInitTemp2.Text = DefaultFid.InitTemp2.ToString();
-            this.txtAlertTemp2.Text = DefaultFid.AlertTemp2.ToString();
-
             this.cbxPolarityFid1.Checked = DefaultFid.Polarity1;
-            this.cbxPolarityFid2.Checked = DefaultFid.Polarity2;
 
             this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
-            this.cbxPolarityFid2.Text = this.cbxPolarityFid2.Checked ? Polarity.Positive : Polarity.Nagative;
 
             this.cmbMagnifyFactorFid1.Items.Clear();
-            this.cmbMagnifyFactorFid2.Items.Clear();
 
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.One));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
 
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.One));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
-
             this.cmbMagnifyFactorFid1.SelectedIndex = DefaultFid.MagnifyFactor1;
-            this.cmbMagnifyFactorFid2.SelectedIndex = DefaultFid.MagnifyFactor2;
 
             this._dtoAntiControl.dtoFid.FID1Used = true;
             this._dtoAntiControl.dtoFid.FID2Used = true;
@@ -303,17 +263,11 @@ namespace ChromatoCore.solu.AntiCon
             }
 
             this.cmbMagnifyFactorFid1.Items.Clear();
-            this.cmbMagnifyFactorFid2.Items.Clear();
             
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.One));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
-
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.One));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
-            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
 
 
             switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor1)
@@ -329,22 +283,6 @@ namespace ChromatoCore.solu.AntiCon
                     break;
                 case Magnify.Three:
                     this.cmbMagnifyFactorFid1.SelectedIndex = 3;
-                    break;
-            }
-
-            switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor2)
-            {
-                case Magnify.Zero:
-                    this.cmbMagnifyFactorFid2.SelectedIndex = 0;
-                    break;
-                case Magnify.One:
-                    this.cmbMagnifyFactorFid2.SelectedIndex = 1;
-                    break;
-                case Magnify.Two:
-                    this.cmbMagnifyFactorFid2.SelectedIndex = 2;
-                    break;
-                case Magnify.Three:
-                    this.cmbMagnifyFactorFid2.SelectedIndex = 3;
                     break;
             }
 
@@ -366,7 +304,6 @@ namespace ChromatoCore.solu.AntiCon
             this.LoadViewOrSaveAs();
             
             this.cmbMagnifyFactorFid1.Items.Clear();
-            this.cmbMagnifyFactorFid2.Items.Clear();
 
             switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor1)
             {
@@ -383,26 +320,8 @@ namespace ChromatoCore.solu.AntiCon
                     this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
                     break;
 
-            }
-
-            switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor2)
-            {
-                case Magnify.Zero:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
-                    break;
-                case Magnify.One:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.One));
-                    break;
-                case Magnify.Two:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
-                    break;
-                case Magnify.Three:
-                    this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
-                    break;
-
-            }
+            }        
             this.cmbMagnifyFactorFid1.SelectedIndex = 0;
-            this.cmbMagnifyFactorFid2.SelectedIndex = 0;
 
         }
 
@@ -422,16 +341,6 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.dtoFid.Polarity1 = this.cbxPolarityFid1.Checked;
         }
 
-        /// <summary>
-        /// 极性2按钮按下
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cbxPolarityFid2_CheckedChanged(object sender, EventArgs e)
-        {
-            this.cbxPolarityFid2.Text = this.cbxPolarityFid2.Checked ? Polarity.Positive : Polarity.Nagative;
-            this._dtoAntiControl.dtoFid.Polarity2 = this.cbxPolarityFid2.Checked;
-        }
 
         /// <summary>
         /// 放大倍数1选项改变
@@ -447,19 +356,6 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.dtoFid.MagnifyFactor1 = this.cmbMagnifyFactorFid1.SelectedIndex;
         }
 
-        /// <summary>
-        /// 放大倍数2选项改变
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void cmbMagnifyFactorFid2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (!this._bIsEdit)
-            {
-                return;
-            }
-            this._dtoAntiControl.dtoFid.MagnifyFactor2 = this.cmbMagnifyFactorFid2.SelectedIndex;
-        }
 
         /// <summary>
         /// FID1报警温度焦点离开事件，合法性检验
@@ -504,51 +400,6 @@ namespace ChromatoCore.solu.AntiCon
             }
             this._dtoAntiControl.dtoFid.InitTemp1 = Convert.ToSingle(this.txtInitTemp1.Text);
         }
-
-        /// <summary>
-        /// FID2报警温度焦点离开事件，合法性检验
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void txtAlertTemp2_TextChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(this.txtAlertTemp2.Text))
-            {
-                MessageBox.Show("报警温度不能为空！", "报警温度");
-                this.txtAlertTemp2.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.txtAlertTemp2.Text))
-            {
-                MessageBox.Show("报警温度不是数值！", "报警温度");
-                this.txtAlertTemp2.Focus();
-                return;
-            }
-            this._dtoAntiControl.dtoFid.AlertTemp2 = Convert.ToSingle(this.txtAlertTemp2.Text);
-        }
-
-        /// <summary>
-        /// FID2初   温焦点离开事件，合法性检验
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void txtInitTemp2_TextChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(this.txtInitTemp2.Text))
-            {
-                MessageBox.Show("初温不能为空！", "初   温");
-                this.txtInitTemp2.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.txtInitTemp2.Text))
-            {
-                MessageBox.Show("初温不是数值！", "初   温");
-                this.txtInitTemp2.Focus();
-                return;
-            }
-            this._dtoAntiControl.dtoFid.InitTemp2 = Convert.ToSingle(this.txtInitTemp2.Text);
-        }
-
 
         #endregion
 

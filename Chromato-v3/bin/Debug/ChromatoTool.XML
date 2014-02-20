@@ -2336,6 +2336,26 @@
             FIDK2极性
             </summary>
         </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactorECD">
+            <summary>
+            ECD放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.PolarityECD">
+            <summary>
+            ECD极性
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.MagnifyFactorFPD">
+            <summary>
+            FPD放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FidDto.PolarityFPD">
+            <summary>
+            FPD极性
+            </summary>
+        </member>
         <member name="T:ChromatoTool.util.ListViewColumnSorter">
             <summary>
             继承自IComparer

@@ -12707,23 +12707,9 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.FidUser.cbxPolarityFid2_CheckedChanged(System.Object,System.EventArgs)">
-            <summary>
-            极性2按钮按下
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
         <member name="M:ChromatoCore.solu.AntiCon.FidUser.cmbMagnifyFactorFid1_SelectedIndexChanged(System.Object,System.EventArgs)">
             <summary>
             放大倍数1选项改变
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.FidUser.cmbMagnifyFactorFid2_SelectedIndexChanged(System.Object,System.EventArgs)">
-            <summary>
-            放大倍数2选项改变
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -12738,20 +12724,6 @@
         <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtInitTemp1_TextChanged(System.Object,System.EventArgs)">
             <summary>
             FID1初   温焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtAlertTemp2_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            FID2报警温度焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.FidUser.txtInitTemp2_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            FID2初   温焦点离开事件，合法性检验
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -13265,16 +13237,6 @@
         <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewAux">
             <summary>
             Aux参数
-            </summary>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewEcd">
-            <summary>
-            Ecd参数
-            </summary>
-        </member>
-        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewFpd">
-            <summary>
-            Fpd参数
             </summary>
         </member>
         <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._bizAntiControl">

@@ -121,6 +121,17 @@ namespace ChromatoCore.solu.AntiCon
 
             this.txtInitTempAux2.Text = this._dtoAntiControl.dtoAux.InitTempAux2.ToString();
             this.txtAlertTempAux2.Text = this._dtoAntiControl.dtoAux.AlertTempAux2.ToString();
+
+            //当Tcd2存在时，Aux2被其占用
+            if (this._dtoAntiControl.dtoTcd.TcdIndex == 0 || this._dtoAntiControl.dtoTcd.TcdIndex == 2)
+            {
+                this.cbAux2.Checked = true;
+                this.cbAux2.Enabled = false;
+                this.txtInitTempAux2.Enabled = false;
+                this.txtAlertTempAux2.Enabled = false;
+                this.txtInitTempAux2.Text = this._dtoAntiControl.dtoTcd.InitTemp2.ToString();
+                this.txtAlertTempAux2.Text = this._dtoAntiControl.dtoTcd.AlertTemp2.ToString();
+            }
         }
 
         /// <summary>

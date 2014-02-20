@@ -107,6 +107,7 @@
             // cbAux1
             // 
             this.cbAux1.AutoSize = true;
+            this.cbAux1.Enabled = false;
             this.cbAux1.Location = new System.Drawing.Point(45, 30);
             this.cbAux1.Name = "cbAux1";
             this.cbAux1.Size = new System.Drawing.Size(49, 16);
@@ -118,6 +119,7 @@
             // cbAux2
             // 
             this.cbAux2.AutoSize = true;
+            this.cbAux2.Enabled = false;
             this.cbAux2.Location = new System.Drawing.Point(100, 30);
             this.cbAux2.Name = "cbAux2";
             this.cbAux2.Size = new System.Drawing.Size(49, 16);

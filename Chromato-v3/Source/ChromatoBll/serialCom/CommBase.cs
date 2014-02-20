@@ -240,12 +240,10 @@ namespace ChromatoBll.serialCom
                 }
                 else if (Port.tag == 1)
                 {
-                    _sictPort.Parity = Port.Parity;
-                    _sictPort.DataBits = Port.DataBits;
-                    _sictPort.StopBits = Port.StopBits;
-                    _sictPort.Handshake = Port.Handshake;
-                    ns.ReadTimeout = SerialOption.TimerInterval;
-                    ns.WriteTimeout = SerialOption.TimerInterval;
+                   // _sictPort.Parity = Port.Parity;
+                    //_sictPort.DataBits = Port.DataBits;
+                   // _sictPort.StopBits = Port.StopBits;
+                    //ns.ReadTimeout = SerialOption.TimerInterval;
 
                     client = new TcpClient(Port.Ip, Port.PortNum);
                     ns = client.GetStream();
@@ -518,11 +516,15 @@ namespace ChromatoBll.serialCom
         {
             byte[] buffer = null;
             if (Port.tag == 0)
-            {
-                this._sictPort.Read(buffer, 0, 10000);
+            {    
+                buffer = new byte[_sictPort.ReadBufferSize];
+                this._sictPort.Read(buffer, 0, (int)_sictPort.ReadBufferSize);
             }
             else if (Port.tag == 1)
-                this.ns.Read(buffer, 0, 10000);
+            {
+                buffer = new byte[client.ReceiveBufferSize];
+                this.ns.Read(buffer, 0, (int)client.ReceiveBufferSize);
+            }
             return buffer;
         }
 
@@ -1213,7 +1215,7 @@ namespace ChromatoBll.serialCom
             try
             {
                 List<string> sArr = new List<string>();
-                for (int i = 0; i < s.Length % 2 + 1; i++)
+                for (int i = 0; i < s.Length / 2; i++)
                 {
                     sArr.Add(s.Substring(2 * i, 2));
                 }

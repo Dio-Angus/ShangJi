@@ -490,7 +490,7 @@ namespace ChromatoTool.ini
         /// <summary>
         /// 信息传输方式，0为COM，1为TCP
         /// </summary>
-        public static int tag = 0;
+        public static int tag = 1;
         /// <summary>
         /// Ai模块串口
         /// </summary>
@@ -790,10 +790,8 @@ namespace ChromatoTool.ini
         public const String HeatingSource = "加热源";
         public const String Inject = "进样口";
         public const String Tcd = "TCD";
-        public const String Fid = "FID";
+        public const String Fid = "检测器";
         public const String Aux = "AUX";
-        public const String Ecd = "ECD";
-        public const String Fpd = "FPD";
     }
 
     /// <summary>
