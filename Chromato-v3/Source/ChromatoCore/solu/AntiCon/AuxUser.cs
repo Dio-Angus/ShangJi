@@ -80,7 +80,7 @@ namespace ChromatoCore.solu.AntiCon
                 return;
             }
 
-            switch (this._dtoAntiControl.dtoAux.InitTempAux1.ToString())
+            switch (this._dtoAntiControl.dtoAux.UserIndex.ToString())
             {
                 case "0":
                     this.cbAux1.Checked = true;
@@ -123,7 +123,7 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAlertTempAux2.Text = this._dtoAntiControl.dtoAux.AlertTempAux2.ToString();
 
             //当Tcd2存在时，Aux2被其占用
-            if (this._dtoAntiControl.dtoTcd.TcdIndex == 0 || this._dtoAntiControl.dtoTcd.TcdIndex == 2)
+            if (this._dtoAntiControl.dtoNetworkBoard.TCD2Used==true)
             {
                 this.cbAux2.Checked = true;
                 this.cbAux2.Enabled = false;

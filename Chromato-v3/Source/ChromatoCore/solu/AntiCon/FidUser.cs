@@ -105,42 +105,202 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         public void LoadViewOrSaveAs()
         {
-            if (this._dtoAntiControl.dtoFid.FID1Used)
-            {
-                this.gb1.Text="FID1";
-                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTemp1.ToString();
-                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTemp1.ToString();
-                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactor1;
-                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.Polarity1;
-                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
-            }
-            else if (this._dtoAntiControl.dtoFid.FIDK1Used)
-            {
-                this.gb1.Text = "FIDK1";
-                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTempK1.ToString();
-                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTempK1.ToString();
-                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactorK1;
-                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.PolarityK1;
-                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
-            }
+            this.txtInitTemp1.Text = _dtoAntiControl.dtoFid.InitTemp1.ToString();
+            this.txtAlertTemp1.Text = _dtoAntiControl.dtoFid.AlertTemp1.ToString();
 
-            else if (this._dtoAntiControl.dtoFid.FID2Used)
+            gb1.Visible = false;
+            gb2.Visible = false;
+            gb3.Visible = false;
+
+            int n = 1;
+            if (_dtoAntiControl.dtoNetworkBoard.FID1Used == true)
             {
-                this.gb1.Text = "FID2";
-                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTemp2.ToString();
-                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTemp2.ToString();
-                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactor2;
-                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.Polarity2;
-                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FID1";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor1;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.Polarity1;
+                        break;
+                    case 2:
+                        gb2.Visible = true;
+                        n++;
+                        this.gb2.Text = "FID1";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor1;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.Polarity1;
+                        break;
+                    case 3:
+                        gb3.Visible = true;
+                        n++;
+                        this.gb3.Text = "FID1";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor1;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFid.Polarity1;
+                        break;
+                }
             }
-            else if (this._dtoAntiControl.dtoFid.FIDK2Used)
+            if (_dtoAntiControl.dtoNetworkBoard.FID2Used == true)
             {
-                this.gb1.Text = "FIDK2";
-                this.txtInitTemp1.Text = this._dtoAntiControl.dtoFid.InitTempK2.ToString();
-                this.txtAlertTemp1.Text = this._dtoAntiControl.dtoFid.AlertTempK2.ToString();
-                this.cmbMagnifyFactorFid1.SelectedIndex = this._dtoAntiControl.dtoFid.MagnifyFactorK2;
-                this.cbxPolarityFid1.Checked = this._dtoAntiControl.dtoFid.PolarityK2;
-                this.cbxPolarityFid1.Text = this.cbxPolarityFid1.Checked ? Polarity.Positive : Polarity.Nagative;
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FID2";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor2;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.Polarity2;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "FID2";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor2;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.Polarity2;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "FID2";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor2;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFid.Polarity2;
+                        break;
+                }
+            }
+            if (_dtoAntiControl.dtoNetworkBoard.FIDK1Used == true)
+            {
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FIDK1";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK1;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK1;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "FIDK1";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK1;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK1;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "FIDK1";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK1;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFid.PolarityK1;
+                        break;
+                }
+            }
+            if (_dtoAntiControl.dtoNetworkBoard.FIDK2Used == true)
+            {
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                }
+            }
+            if (_dtoAntiControl.dtoNetworkBoard.FIDK2Used == true)
+            {
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "FIDK2";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFid.PolarityK2;
+                        break;
+                }
+            }
+            if (_dtoAntiControl.dtoNetworkBoard.ECDUsed == true)
+            {
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "ECD";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "ECD";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "ECD";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        break;
+                }
+            }
+            if (_dtoAntiControl.dtoNetworkBoard.FPDUsed == true)
+            {
+                switch (n)
+                {
+                    case 1:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb1.Text = "FPD";
+                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
+                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        break;
+                    case 2:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb2.Text = "FPD";
+                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
+                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        break;
+                    case 3:
+                        gb1.Visible = true;
+                        n++;
+                        this.gb3.Text = "FPD";
+                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
+                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        break;
+                }
             }
         }
 

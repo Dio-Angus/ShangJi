@@ -21,6 +21,34 @@ namespace ChromatoTool.dto
     /// </summary>
     public class NetworkBoardDto
     {
+        //设备状态字
+        public bool HeatingSourceUsed { get; set; }
+        public bool FlowUsed { get; set; }
+        public bool TCD2Used { get; set; }
+        public bool TCD1Used { get; set; }
+        public bool FID2Used { get; set; }
+        public bool FID1Used { get; set; }
+        public bool FPDUsed { get; set; }
+        public bool ECDUsed { get; set; }
+
+        public bool FIDK2Used { get; set; }
+        public bool FIDK1Used { get; set; }
+
+        //设备实际温度
+        public Single ColCurrentTem { get; set; }
+        public Single FID1CurrentTem { get; set; }
+        public Single FID2CurrentTem { get; set; }
+        public Single FIDK1CurrentTem { get; set; }
+        public Single FIDK2CurrentTem { get; set; }
+        public Single INJCurrentTem { get; set; }
+        public Single AUX1CurrentTem { get; set; }
+        public Single AUX2CurrentTem { get; set; }
+        public Single TCD1CurrentTem { get; set; }
+        public Single TCD2CurrentTem { get; set; }
+        public Single ECDCurrentTem { get; set; }
+        public Single FPDCurrentTem { get; set; }
+
+
         /// <summary>
         /// 网关IP地址
         /// </summary>

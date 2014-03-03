@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbAntiControl = new System.Windows.Forms.GroupBox();
+            this.btRefresh = new System.Windows.Forms.Button();
+            this.btWrite = new System.Windows.Forms.Button();
             this.txtAntiControlName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tvAntiControl = new System.Windows.Forms.TreeView();
-            this.btWrite = new System.Windows.Forms.Button();
-            this.btRefresh = new System.Windows.Forms.Button();
             this.gbAntiControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,10 +46,30 @@
             this.gbAntiControl.Controls.Add(this.tvAntiControl);
             this.gbAntiControl.Location = new System.Drawing.Point(3, 2);
             this.gbAntiControl.Name = "gbAntiControl";
-            this.gbAntiControl.Size = new System.Drawing.Size(565, 277);
+            this.gbAntiControl.Size = new System.Drawing.Size(564, 277);
             this.gbAntiControl.TabIndex = 0;
             this.gbAntiControl.TabStop = false;
             this.gbAntiControl.Text = "反控方法";
+            // 
+            // btRefresh
+            // 
+            this.btRefresh.Location = new System.Drawing.Point(403, 249);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btRefresh.TabIndex = 101;
+            this.btRefresh.Text = "更新";
+            this.btRefresh.UseVisualStyleBackColor = true;
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
+            // 
+            // btWrite
+            // 
+            this.btWrite.Location = new System.Drawing.Point(484, 249);
+            this.btWrite.Name = "btWrite";
+            this.btWrite.Size = new System.Drawing.Size(75, 23);
+            this.btWrite.TabIndex = 101;
+            this.btWrite.Text = "修改";
+            this.btWrite.UseVisualStyleBackColor = true;
+            this.btWrite.Click += new System.EventHandler(this.btWrite_Click);
             // 
             // txtAntiControlName
             // 
@@ -76,26 +96,6 @@
             this.tvAntiControl.Size = new System.Drawing.Size(87, 251);
             this.tvAntiControl.TabIndex = 1;
             // 
-            // btWrite
-            // 
-            this.btWrite.Location = new System.Drawing.Point(484, 249);
-            this.btWrite.Name = "btWrite";
-            this.btWrite.Size = new System.Drawing.Size(75, 23);
-            this.btWrite.TabIndex = 101;
-            this.btWrite.Text = "修改";
-            this.btWrite.UseVisualStyleBackColor = true;
-            this.btWrite.Click += new System.EventHandler(this.btWrite_Click);
-            // 
-            // btRefresh
-            // 
-            this.btRefresh.Location = new System.Drawing.Point(403, 249);
-            this.btRefresh.Name = "btRefresh";
-            this.btRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btRefresh.TabIndex = 101;
-            this.btRefresh.Text = "更新";
-            this.btRefresh.UseVisualStyleBackColor = true;
-            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
-            // 
             // AntiControlViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -103,7 +103,7 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.gbAntiControl);
             this.Name = "AntiControlViewer";
-            this.Size = new System.Drawing.Size(572, 284);
+            this.Size = new System.Drawing.Size(732, 284);
             this.gbAntiControl.ResumeLayout(false);
             this.gbAntiControl.PerformLayout();
             this.ResumeLayout(false);

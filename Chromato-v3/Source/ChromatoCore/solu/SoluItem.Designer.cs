@@ -53,14 +53,14 @@
             this.tbMain.Location = new System.Drawing.Point(0, 0);
             this.tbMain.Name = "tbMain";
             this.tbMain.SelectedIndex = 0;
-            this.tbMain.Size = new System.Drawing.Size(475, 27);
+            this.tbMain.Size = new System.Drawing.Size(743, 27);
             this.tbMain.TabIndex = 4;
             // 
             // Info
             // 
-            this.Info.Location = new System.Drawing.Point(4, 24);
+            this.Info.Location = new System.Drawing.Point(4, 25);
             this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(467, 0);
+            this.Info.Size = new System.Drawing.Size(735, 0);
             this.Info.TabIndex = 4;
             this.Info.Tag = "Info";
             this.Info.Text = "信息";
@@ -68,7 +68,7 @@
             // 
             // SamplePara
             // 
-            this.SamplePara.Location = new System.Drawing.Point(4, 24);
+            this.SamplePara.Location = new System.Drawing.Point(4, 25);
             this.SamplePara.Name = "SamplePara";
             this.SamplePara.Size = new System.Drawing.Size(467, 0);
             this.SamplePara.TabIndex = 5;
@@ -78,7 +78,7 @@
             // 
             // AnalyPara
             // 
-            this.AnalyPara.Location = new System.Drawing.Point(4, 24);
+            this.AnalyPara.Location = new System.Drawing.Point(4, 25);
             this.AnalyPara.Name = "AnalyPara";
             this.AnalyPara.Size = new System.Drawing.Size(467, 0);
             this.AnalyPara.TabIndex = 6;
@@ -88,7 +88,7 @@
             // 
             // TimeProc
             // 
-            this.TimeProc.Location = new System.Drawing.Point(4, 24);
+            this.TimeProc.Location = new System.Drawing.Point(4, 25);
             this.TimeProc.Name = "TimeProc";
             this.TimeProc.Size = new System.Drawing.Size(467, 0);
             this.TimeProc.TabIndex = 7;
@@ -98,7 +98,7 @@
             // 
             // IdTable
             // 
-            this.IdTable.Location = new System.Drawing.Point(4, 24);
+            this.IdTable.Location = new System.Drawing.Point(4, 25);
             this.IdTable.Name = "IdTable";
             this.IdTable.Size = new System.Drawing.Size(467, 0);
             this.IdTable.TabIndex = 8;
@@ -108,7 +108,7 @@
             // 
             // AntiMethod
             // 
-            this.AntiMethod.Location = new System.Drawing.Point(4, 24);
+            this.AntiMethod.Location = new System.Drawing.Point(4, 25);
             this.AntiMethod.Name = "AntiMethod";
             this.AntiMethod.Size = new System.Drawing.Size(467, 0);
             this.AntiMethod.TabIndex = 9;
@@ -118,7 +118,7 @@
             // 
             // Remark
             // 
-            this.Remark.Location = new System.Drawing.Point(4, 24);
+            this.Remark.Location = new System.Drawing.Point(4, 25);
             this.Remark.Name = "Remark";
             this.Remark.Size = new System.Drawing.Size(467, 0);
             this.Remark.TabIndex = 10;
@@ -132,7 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tbMain);
             this.Name = "SoluItem";
-            this.Size = new System.Drawing.Size(475, 208);
+            this.Size = new System.Drawing.Size(743, 279);
             this.tbMain.ResumeLayout(false);
             this.ResumeLayout(false);
 

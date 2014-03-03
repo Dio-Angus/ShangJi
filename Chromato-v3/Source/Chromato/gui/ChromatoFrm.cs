@@ -129,7 +129,7 @@ namespace Chromato.gui
             this.LoadTree();
 
             //测试
-            this.SelectNodeToFocus(MainTreeName.Online);
+           // this.SelectNodeToFocus(MainTreeName.Online);
 
             this._boot.UpdateLabelText("装载面板", 40);
             this.LoadPanel();

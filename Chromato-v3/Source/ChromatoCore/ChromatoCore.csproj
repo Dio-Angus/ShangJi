@@ -371,6 +371,12 @@
     <Compile Include="solu\AntiCon\TcdUser.Designer.cs">
       <DependentUpon>TcdUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="solu\AntiCon\TemUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solu\AntiCon\TemUser.Designer.cs">
+      <DependentUpon>TemUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="solu\Col\CollectionViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -764,6 +770,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="solu\AntiCon\NetworkBoardUser.resx">
       <DependentUpon>NetworkBoardUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solu\AntiCon\TemUser.resx">
+      <DependentUpon>TemUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="solu\sUi\ArithmaticUi.resx">
       <DependentUpon>ArithmaticUi.cs</DependentUpon>

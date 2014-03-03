@@ -36,21 +36,31 @@
             this.label5 = new System.Windows.Forms.Label();
             this.gbInjectMode = new System.Windows.Forms.GroupBox();
             this.cmbInjectMode1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbColumnType = new System.Windows.Forms.GroupBox();
             this.rbCapillary1 = new System.Windows.Forms.RadioButton();
             this.rbFill1 = new System.Windows.Forms.RadioButton();
             this.txtInjectTime1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.gbINJ2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbInjectMode2 = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rbCapillary2 = new System.Windows.Forms.RadioButton();
             this.rbFill2 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtInjectTime2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtInitTemp2 = new System.Windows.Forms.TextBox();
+            this.txtAlertTemp2 = new System.Windows.Forms.TextBox();
             this.gbINJ3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmbInjectMode3 = new System.Windows.Forms.ComboBox();
@@ -58,21 +68,11 @@
             this.rbCapillary3 = new System.Windows.Forms.RadioButton();
             this.rbFill3 = new System.Windows.Forms.RadioButton();
             this.txtInjectTime3 = new System.Windows.Forms.TextBox();
+            this.txtAlertTemp3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtInitTemp2 = new System.Windows.Forms.TextBox();
-            this.txtAlertTemp2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.txtInitTemp3 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtInitTemp3 = new System.Windows.Forms.TextBox();
-            this.txtAlertTemp3 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.gbINJ1.SuspendLayout();
             this.gbInjectMode.SuspendLayout();
             this.gbColumnType.SuspendLayout();
@@ -145,6 +145,7 @@
             this.label5.Size = new System.Drawing.Size(23, 12);
             this.label5.TabIndex = 96;
             this.label5.Text = "min";
+            this.label5.Visible = false;
             // 
             // gbInjectMode
             // 
@@ -155,6 +156,7 @@
             this.gbInjectMode.TabIndex = 5;
             this.gbInjectMode.TabStop = false;
             this.gbInjectMode.Text = "进样模式";
+            this.gbInjectMode.Visible = false;
             // 
             // cmbInjectMode1
             // 
@@ -164,6 +166,15 @@
             this.cmbInjectMode1.Name = "cmbInjectMode1";
             this.cmbInjectMode1.Size = new System.Drawing.Size(129, 20);
             this.cmbInjectMode1.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(143, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 12);
+            this.label8.TabIndex = 99;
+            this.label8.Text = "℃";
             // 
             // gbColumnType
             // 
@@ -175,6 +186,7 @@
             this.gbColumnType.TabIndex = 3;
             this.gbColumnType.TabStop = false;
             this.gbColumnType.Text = "柱类型";
+            this.gbColumnType.Visible = false;
             // 
             // rbCapillary1
             // 
@@ -204,6 +216,7 @@
             this.txtInjectTime1.Name = "txtInjectTime1";
             this.txtInjectTime1.Size = new System.Drawing.Size(64, 21);
             this.txtInjectTime1.TabIndex = 6;
+            this.txtInjectTime1.Visible = false;
             // 
             // label1
             // 
@@ -213,6 +226,16 @@
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 80;
             this.label1.Text = "进样时间：";
+            this.label1.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(325, 14);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(17, 12);
+            this.label28.TabIndex = 98;
+            this.label28.Text = "℃";
             // 
             // gbINJ2
             // 
@@ -243,6 +266,16 @@
             this.label6.Size = new System.Drawing.Size(23, 12);
             this.label6.TabIndex = 97;
             this.label6.Text = "min";
+            this.label6.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(143, 13);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 12);
+            this.label12.TabIndex = 99;
+            this.label12.Text = "℃";
             // 
             // groupBox2
             // 
@@ -253,6 +286,7 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "进样模式";
+            this.groupBox2.Visible = false;
             // 
             // cmbInjectMode2
             // 
@@ -273,6 +307,7 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "柱类型";
+            this.groupBox3.Visible = false;
             // 
             // rbCapillary2
             // 
@@ -296,12 +331,22 @@
             this.rbFill2.Text = "填充柱";
             this.rbFill2.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(329, 14);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 12);
+            this.label11.TabIndex = 98;
+            this.label11.Text = "℃";
+            // 
             // txtInjectTime2
             // 
             this.txtInjectTime2.Location = new System.Drawing.Point(342, 51);
             this.txtInjectTime2.Name = "txtInjectTime2";
             this.txtInjectTime2.Size = new System.Drawing.Size(64, 21);
             this.txtInjectTime2.TabIndex = 10;
+            this.txtInjectTime2.Visible = false;
             // 
             // label2
             // 
@@ -311,122 +356,7 @@
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 80;
             this.label2.Text = "进样时间：";
-            // 
-            // gbINJ3
-            // 
-            this.gbINJ3.Controls.Add(this.label17);
-            this.gbINJ3.Controls.Add(this.label16);
-            this.gbINJ3.Controls.Add(this.label7);
-            this.gbINJ3.Controls.Add(this.groupBox4);
-            this.gbINJ3.Controls.Add(this.groupBox5);
-            this.gbINJ3.Controls.Add(this.txtInjectTime3);
-            this.gbINJ3.Controls.Add(this.txtAlertTemp3);
-            this.gbINJ3.Controls.Add(this.label4);
-            this.gbINJ3.Controls.Add(this.txtInitTemp3);
-            this.gbINJ3.Controls.Add(this.label13);
-            this.gbINJ3.Controls.Add(this.label15);
-            this.gbINJ3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbINJ3.Location = new System.Drawing.Point(3, 169);
-            this.gbINJ3.Name = "gbINJ3";
-            this.gbINJ3.Size = new System.Drawing.Size(444, 77);
-            this.gbINJ3.TabIndex = 11;
-            this.gbINJ3.TabStop = false;
-            this.gbINJ3.Text = "INJ3";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(411, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 12);
-            this.label7.TabIndex = 98;
-            this.label7.Text = "min";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.cmbInjectMode3);
-            this.groupBox4.Location = new System.Drawing.Point(186, 31);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(144, 43);
-            this.groupBox4.TabIndex = 13;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "进样模式";
-            // 
-            // cmbInjectMode3
-            // 
-            this.cmbInjectMode3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbInjectMode3.FormattingEnabled = true;
-            this.cmbInjectMode3.Location = new System.Drawing.Point(8, 15);
-            this.cmbInjectMode3.Name = "cmbInjectMode3";
-            this.cmbInjectMode3.Size = new System.Drawing.Size(129, 20);
-            this.cmbInjectMode3.TabIndex = 13;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.rbCapillary3);
-            this.groupBox5.Controls.Add(this.rbFill3);
-            this.groupBox5.Location = new System.Drawing.Point(9, 31);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(171, 43);
-            this.groupBox5.TabIndex = 11;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "柱类型";
-            // 
-            // rbCapillary3
-            // 
-            this.rbCapillary3.AutoSize = true;
-            this.rbCapillary3.Location = new System.Drawing.Point(93, 20);
-            this.rbCapillary3.Name = "rbCapillary3";
-            this.rbCapillary3.Size = new System.Drawing.Size(59, 16);
-            this.rbCapillary3.TabIndex = 12;
-            this.rbCapillary3.TabStop = true;
-            this.rbCapillary3.Text = "毛细管";
-            this.rbCapillary3.UseVisualStyleBackColor = true;
-            // 
-            // rbFill3
-            // 
-            this.rbFill3.AutoSize = true;
-            this.rbFill3.Location = new System.Drawing.Point(8, 19);
-            this.rbFill3.Name = "rbFill3";
-            this.rbFill3.Size = new System.Drawing.Size(59, 16);
-            this.rbFill3.TabIndex = 11;
-            this.rbFill3.TabStop = true;
-            this.rbFill3.Text = "填充柱";
-            this.rbFill3.UseVisualStyleBackColor = true;
-            // 
-            // txtInjectTime3
-            // 
-            this.txtInjectTime3.Location = new System.Drawing.Point(341, 48);
-            this.txtInjectTime3.Name = "txtInjectTime3";
-            this.txtInjectTime3.Size = new System.Drawing.Size(64, 21);
-            this.txtInjectTime3.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(340, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 80;
-            this.label4.Text = "进样时间：";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(325, 14);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(17, 12);
-            this.label28.TabIndex = 98;
-            this.label28.Text = "℃";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(143, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 12);
-            this.label8.TabIndex = 99;
-            this.label8.Text = "℃";
+            this.label2.Visible = false;
             // 
             // label9
             // 
@@ -460,23 +390,140 @@
             this.txtAlertTemp2.Size = new System.Drawing.Size(65, 21);
             this.txtAlertTemp2.TabIndex = 2;
             // 
-            // label11
+            // gbINJ3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(329, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 12);
-            this.label11.TabIndex = 98;
-            this.label11.Text = "℃";
+            this.gbINJ3.Controls.Add(this.label17);
+            this.gbINJ3.Controls.Add(this.label16);
+            this.gbINJ3.Controls.Add(this.label7);
+            this.gbINJ3.Controls.Add(this.groupBox4);
+            this.gbINJ3.Controls.Add(this.groupBox5);
+            this.gbINJ3.Controls.Add(this.txtInjectTime3);
+            this.gbINJ3.Controls.Add(this.txtAlertTemp3);
+            this.gbINJ3.Controls.Add(this.label4);
+            this.gbINJ3.Controls.Add(this.txtInitTemp3);
+            this.gbINJ3.Controls.Add(this.label13);
+            this.gbINJ3.Controls.Add(this.label15);
+            this.gbINJ3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbINJ3.Location = new System.Drawing.Point(3, 169);
+            this.gbINJ3.Name = "gbINJ3";
+            this.gbINJ3.Size = new System.Drawing.Size(444, 77);
+            this.gbINJ3.TabIndex = 11;
+            this.gbINJ3.TabStop = false;
+            this.gbINJ3.Text = "INJ3";
             // 
-            // label12
+            // label17
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(143, 13);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 12);
-            this.label12.TabIndex = 99;
-            this.label12.Text = "℃";
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(143, 13);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(17, 12);
+            this.label17.TabIndex = 99;
+            this.label17.Text = "℃";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(329, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(17, 12);
+            this.label16.TabIndex = 98;
+            this.label16.Text = "℃";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(411, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 12);
+            this.label7.TabIndex = 98;
+            this.label7.Text = "min";
+            this.label7.Visible = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.cmbInjectMode3);
+            this.groupBox4.Location = new System.Drawing.Point(186, 31);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(144, 43);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "进样模式";
+            this.groupBox4.Visible = false;
+            // 
+            // cmbInjectMode3
+            // 
+            this.cmbInjectMode3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbInjectMode3.FormattingEnabled = true;
+            this.cmbInjectMode3.Location = new System.Drawing.Point(8, 15);
+            this.cmbInjectMode3.Name = "cmbInjectMode3";
+            this.cmbInjectMode3.Size = new System.Drawing.Size(129, 20);
+            this.cmbInjectMode3.TabIndex = 13;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.rbCapillary3);
+            this.groupBox5.Controls.Add(this.rbFill3);
+            this.groupBox5.Location = new System.Drawing.Point(9, 31);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(171, 43);
+            this.groupBox5.TabIndex = 11;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "柱类型";
+            this.groupBox5.Visible = false;
+            // 
+            // rbCapillary3
+            // 
+            this.rbCapillary3.AutoSize = true;
+            this.rbCapillary3.Location = new System.Drawing.Point(93, 20);
+            this.rbCapillary3.Name = "rbCapillary3";
+            this.rbCapillary3.Size = new System.Drawing.Size(59, 16);
+            this.rbCapillary3.TabIndex = 12;
+            this.rbCapillary3.TabStop = true;
+            this.rbCapillary3.Text = "毛细管";
+            this.rbCapillary3.UseVisualStyleBackColor = true;
+            // 
+            // rbFill3
+            // 
+            this.rbFill3.AutoSize = true;
+            this.rbFill3.Location = new System.Drawing.Point(8, 19);
+            this.rbFill3.Name = "rbFill3";
+            this.rbFill3.Size = new System.Drawing.Size(59, 16);
+            this.rbFill3.TabIndex = 11;
+            this.rbFill3.TabStop = true;
+            this.rbFill3.Text = "填充柱";
+            this.rbFill3.UseVisualStyleBackColor = true;
+            // 
+            // txtInjectTime3
+            // 
+            this.txtInjectTime3.Location = new System.Drawing.Point(341, 48);
+            this.txtInjectTime3.Name = "txtInjectTime3";
+            this.txtInjectTime3.Size = new System.Drawing.Size(64, 21);
+            this.txtInjectTime3.TabIndex = 14;
+            this.txtInjectTime3.Visible = false;
+            // 
+            // txtAlertTemp3
+            // 
+            this.txtAlertTemp3.Location = new System.Drawing.Point(259, 10);
+            this.txtAlertTemp3.Name = "txtAlertTemp3";
+            this.txtAlertTemp3.Size = new System.Drawing.Size(65, 21);
+            this.txtAlertTemp3.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(340, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 80;
+            this.label4.Text = "进样时间：";
+            this.label4.Visible = false;
+            // 
+            // txtInitTemp3
+            // 
+            this.txtInitTemp3.Location = new System.Drawing.Point(80, 8);
+            this.txtInitTemp3.Name = "txtInitTemp3";
+            this.txtInitTemp3.Size = new System.Drawing.Size(57, 21);
+            this.txtInitTemp3.TabIndex = 1;
             // 
             // label13
             // 
@@ -495,38 +542,6 @@
             this.label15.Size = new System.Drawing.Size(65, 12);
             this.label15.TabIndex = 60;
             this.label15.Text = "报警温度：";
-            // 
-            // txtInitTemp3
-            // 
-            this.txtInitTemp3.Location = new System.Drawing.Point(80, 8);
-            this.txtInitTemp3.Name = "txtInitTemp3";
-            this.txtInitTemp3.Size = new System.Drawing.Size(57, 21);
-            this.txtInitTemp3.TabIndex = 1;
-            // 
-            // txtAlertTemp3
-            // 
-            this.txtAlertTemp3.Location = new System.Drawing.Point(259, 10);
-            this.txtAlertTemp3.Name = "txtAlertTemp3";
-            this.txtAlertTemp3.Size = new System.Drawing.Size(65, 21);
-            this.txtAlertTemp3.TabIndex = 2;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(329, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 12);
-            this.label16.TabIndex = 98;
-            this.label16.Text = "℃";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(143, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(17, 12);
-            this.label17.TabIndex = 99;
-            this.label17.Text = "℃";
             // 
             // InjectUser
             // 

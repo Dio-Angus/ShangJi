@@ -838,3 +838,4 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCo
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.EcdUser.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.FpdUser.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoCore.XML
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.TemUser.resources

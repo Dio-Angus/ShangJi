@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 21);
+            this.label1.Location = new System.Drawing.Point(36, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 0;
@@ -73,9 +73,9 @@
             // 
             // tbGateIP
             // 
-            this.tbGateIP.Location = new System.Drawing.Point(108, 18);
+            this.tbGateIP.Location = new System.Drawing.Point(93, 18);
             this.tbGateIP.Name = "tbGateIP";
-            this.tbGateIP.Size = new System.Drawing.Size(100, 21);
+            this.tbGateIP.Size = new System.Drawing.Size(113, 21);
             this.tbGateIP.TabIndex = 1;
             this.tbGateIP.TextChanged += new System.EventHandler(this.tbGateIP_TextChanged);
             // 
@@ -92,14 +92,14 @@
             // 
             this.tbSourceIP.Location = new System.Drawing.Point(280, 18);
             this.tbSourceIP.Name = "tbSourceIP";
-            this.tbSourceIP.Size = new System.Drawing.Size(100, 21);
+            this.tbSourceIP.Size = new System.Drawing.Size(117, 21);
             this.tbSourceIP.TabIndex = 1;
             this.tbSourceIP.TextChanged += new System.EventHandler(this.tbSourceIP_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 52);
+            this.label3.Location = new System.Drawing.Point(36, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 0;
@@ -116,9 +116,9 @@
             // 
             // tbMAC
             // 
-            this.tbMAC.Location = new System.Drawing.Point(108, 49);
+            this.tbMAC.Location = new System.Drawing.Point(93, 49);
             this.tbMAC.Name = "tbMAC";
-            this.tbMAC.Size = new System.Drawing.Size(100, 21);
+            this.tbMAC.Size = new System.Drawing.Size(113, 21);
             this.tbMAC.TabIndex = 1;
             this.tbMAC.TextChanged += new System.EventHandler(this.tbMAC_TextChanged);
             // 
@@ -126,7 +126,7 @@
             // 
             this.tbMask.Location = new System.Drawing.Point(280, 49);
             this.tbMask.Name = "tbMask";
-            this.tbMask.Size = new System.Drawing.Size(100, 21);
+            this.tbMask.Size = new System.Drawing.Size(117, 21);
             this.tbMask.TabIndex = 1;
             this.tbMask.TextChanged += new System.EventHandler(this.tbMask_TextChanged);
             // 

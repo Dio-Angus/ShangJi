@@ -229,12 +229,7 @@ namespace ChromatoCore.solu.AntiCon
                 this.tbGateIP.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.tbGateIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
-                this.tbGateIP.Focus();
-                return;
-            }
+
             this._dtoAntiControl.dtoNetworkBoard.GateIP = this.tbGateIP.Text;
         }
 
@@ -251,12 +246,7 @@ namespace ChromatoCore.solu.AntiCon
                 this.tbSourceIP.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.tbSourceIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
-                this.tbSourceIP.Focus();
-                return;
-            }
+
             this._dtoAntiControl.dtoNetworkBoard.SourceIP = this.tbSourceIP.Text;
         }
 
@@ -273,12 +263,7 @@ namespace ChromatoCore.solu.AntiCon
                 this.tbMAC.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.tbMAC.Text))
-            {
-                MessageBox.Show("输入不是数值！");
-                this.tbMAC.Focus();
-                return;
-            }
+
             this._dtoAntiControl.dtoNetworkBoard.MAC = this.tbMAC.Text;
         }
 
@@ -292,12 +277,6 @@ namespace ChromatoCore.solu.AntiCon
             if (String.IsNullOrEmpty(this.tbMask.Text))
             {
                 MessageBox.Show("输入不能为空！");
-                this.tbMask.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.tbMask.Text))
-            {
-                MessageBox.Show("输入不是数值！");
                 this.tbMask.Focus();
                 return;
             }
@@ -336,12 +315,6 @@ namespace ChromatoCore.solu.AntiCon
             if (String.IsNullOrEmpty(this.tbSocket0AimIP.Text))
             {
                 MessageBox.Show("输入不能为空！");
-                this.tbSocket0AimIP.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.tbSocket0AimIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
                 this.tbSocket0AimIP.Focus();
                 return;
             }
@@ -405,12 +378,6 @@ namespace ChromatoCore.solu.AntiCon
                 this.tbSocket1AimIP.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.tbSocket1AimIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
-                this.tbSocket1AimIP.Focus();
-                return;
-            }
             this._dtoAntiControl.dtoNetworkBoard.Socket1AimIP = this.tbSocket1AimIP.Text;
         }
 
@@ -471,12 +438,6 @@ namespace ChromatoCore.solu.AntiCon
                 this.tbSocket2AimIP.Focus();
                 return;
             }
-            if (!CastString.IsNumeric(this.tbSocket2AimIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
-                this.tbSocket2AimIP.Focus();
-                return;
-            }
             this._dtoAntiControl.dtoNetworkBoard.Socket2AimIP = this.tbSocket2AimIP.Text;
         }
 
@@ -534,12 +495,6 @@ namespace ChromatoCore.solu.AntiCon
             if (String.IsNullOrEmpty(this.tbSocket3AimIP.Text))
             {
                 MessageBox.Show("输入不能为空！");
-                this.tbSocket3AimIP.Focus();
-                return;
-            }
-            if (!CastString.IsNumeric(this.tbSocket3AimIP.Text))
-            {
-                MessageBox.Show("输入不是数值！");
                 this.tbSocket3AimIP.Focus();
                 return;
             }

@@ -18,6 +18,7 @@ using System.Net.Sockets;
 using ChromatoBll.serialCom;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Collections;
 
 
 namespace ChromatoBll.serialCom
@@ -240,9 +241,9 @@ namespace ChromatoBll.serialCom
                 }
                 else if (Port.tag == 1)
                 {
-                   // _sictPort.Parity = Port.Parity;
+                    // _sictPort.Parity = Port.Parity;
                     //_sictPort.DataBits = Port.DataBits;
-                   // _sictPort.StopBits = Port.StopBits;
+                    // _sictPort.StopBits = Port.StopBits;
                     //ns.ReadTimeout = SerialOption.TimerInterval;
 
                     client = new TcpClient(Port.Ip, Port.PortNum);
@@ -516,7 +517,7 @@ namespace ChromatoBll.serialCom
         {
             byte[] buffer = null;
             if (Port.tag == 0)
-            {    
+            {
                 buffer = new byte[_sictPort.ReadBufferSize];
                 this._sictPort.Read(buffer, 0, (int)_sictPort.ReadBufferSize);
             }
@@ -575,6 +576,26 @@ namespace ChromatoBll.serialCom
                         _antiControl.dtoNetworkBoard.Socket3WorkMode = buffer[58];
                     }
                     break;
+
+                case "80":
+                    if (buffer[2].ToString("X2") == "04")
+                    {
+                        BitArray ba1 = new BitArray(buffer[5]);
+                        _antiControl.dtoNetworkBoard.HeatingSourceUsed = ba1[0];
+                        _antiControl.dtoNetworkBoard.FlowUsed = ba1[1];
+                        _antiControl.dtoNetworkBoard.TCD2Used = ba1[2];
+                        _antiControl.dtoNetworkBoard.TCD1Used = ba1[3];
+                        _antiControl.dtoNetworkBoard.FID2Used = ba1[4];
+                        _antiControl.dtoNetworkBoard.FID1Used = ba1[5];
+                        _antiControl.dtoNetworkBoard.FPDUsed = ba1[6];
+                        _antiControl.dtoNetworkBoard.ECDUsed = ba1[7];
+
+                        BitArray ba2 = new BitArray(buffer[6]);
+                        _antiControl.dtoNetworkBoard.FIDK2Used = ba2[6];
+                        _antiControl.dtoNetworkBoard.FIDK1Used = ba2[7];
+                    }
+                    break;
+
                 case "00":
                     if (buffer[2].ToString("X2") == "06")
                     {
@@ -636,20 +657,20 @@ namespace ChromatoBll.serialCom
                 case "08":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket1Address =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket1Address = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "09":
                     if (buffer[2].ToString("X2") == "06")
                     {
-                        _antiControl.dtoNetworkBoard.Socket1AimIP =(buffer[5] * 256 + buffer[6]).ToString()
+                        _antiControl.dtoNetworkBoard.Socket1AimIP = (buffer[5] * 256 + buffer[6]).ToString()
                                                    + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
                     }
                     break;
                 case "0A":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket1AimAddress =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket1AimAddress = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "0B":
@@ -663,20 +684,20 @@ namespace ChromatoBll.serialCom
                 case "0C":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket2Address =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket2Address = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "0D":
                     if (buffer[2].ToString("X2") == "06")
                     {
-                        _antiControl.dtoNetworkBoard.Socket2AimIP =(buffer[5] * 256 + buffer[6]).ToString()
+                        _antiControl.dtoNetworkBoard.Socket2AimIP = (buffer[5] * 256 + buffer[6]).ToString()
                                                    + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
                     }
                     break;
                 case "0E":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket2AimAddress =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket2AimAddress = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "0F":
@@ -690,26 +711,117 @@ namespace ChromatoBll.serialCom
                 case "10":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket3Address =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket3Address = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "11":
                     if (buffer[2].ToString("X2") == "06")
                     {
-                        _antiControl.dtoNetworkBoard.Socket3AimIP =(buffer[5] * 256 + buffer[6]).ToString()
+                        _antiControl.dtoNetworkBoard.Socket3AimIP = (buffer[5] * 256 + buffer[6]).ToString()
                                                    + "." + buffer[7].ToString("") + "." + buffer[8].ToString("");
                     }
                     break;
                 case "12":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        _antiControl.dtoNetworkBoard.Socket3AimAddress =(buffer[5] * 256 + buffer[6]).ToString();
+                        _antiControl.dtoNetworkBoard.Socket3AimAddress = (buffer[5] * 256 + buffer[6]).ToString();
                     }
                     break;
                 case "13":
                     if (buffer[2].ToString("X2") == "03")
                     {
                         _antiControl.dtoNetworkBoard.Socket3WorkMode = buffer[5];
+                    }
+                    break;
+                
+                //实际温度及柱箱状态
+                case "60":
+                    //柱箱升阶状态
+                    switch (buffer[5].ToString())
+                    {
+                        case "00":
+                            _antiControl.dtoHeatingSource.ColState = "初温";
+                            break;
+                        case "01":
+                            _antiControl.dtoHeatingSource.ColState = "初温维持";
+                            break;
+                        case "02":
+                            _antiControl.dtoHeatingSource.ColState = "1阶升温";
+                            break;
+                        case "03":
+                            _antiControl.dtoHeatingSource.ColState = "1阶恒温";
+                            break;
+                        case "04":
+                            _antiControl.dtoHeatingSource.ColState = "2阶升温";
+                            break;
+                        case "05":
+                            _antiControl.dtoHeatingSource.ColState = "2阶恒温";
+                            break;
+                        case "06":
+                            _antiControl.dtoHeatingSource.ColState = "3阶升温";
+                            break;
+                        case "07":
+                            _antiControl.dtoHeatingSource.ColState = "3阶恒温";
+                            break;
+                        case "08":
+                            _antiControl.dtoHeatingSource.ColState = "4阶升温";
+                            break;
+                        case "09":
+                            _antiControl.dtoHeatingSource.ColState = "4阶恒温";
+                            break;
+                        case "10":
+                            _antiControl.dtoHeatingSource.ColState = "5阶升温";
+                            break;
+                        case "11":
+                            _antiControl.dtoHeatingSource.ColState = "5阶恒温";
+                            break;
+                        case "0F":
+                            _antiControl.dtoHeatingSource.ColState = "自由状态";
+                            break;
+                    }
+
+                    //柱箱目标温度和实际温度
+                    _antiControl.dtoHeatingSource.AimTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[6])) + Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])) + Chr(Convert.ToInt32(buffer[10])));
+                    _antiControl.dtoNetworkBoard.ColCurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])) + Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                    
+                    //柱箱温度状态
+                    BitArray ba = new BitArray(buffer[17]);
+                    if (ba[1]) _antiControl.dtoHeatingSource.TemState = "升温";
+                    else if (ba[4]) _antiControl.dtoHeatingSource.TemState = "冷却";
+                    else if (ba[3]) _antiControl.dtoHeatingSource.TemState = "停止";
+                    else if (ba[2]) _antiControl.dtoHeatingSource.TemState = "初温";
+                    else if (ba[1]) _antiControl.dtoHeatingSource.TemState = "准备";
+                    else if (ba[0]) _antiControl.dtoHeatingSource.TemState = "后温";
+                    else _antiControl.dtoHeatingSource.TemState = "";
+
+                    //实际温度
+                    int i=17;
+                    while (i != buffer.Length)
+                    {
+                        //FID1
+                        if (buffer[i].ToString() == "41")
+                        {
+                            _antiControl.dtoNetworkBoard.FID1CurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            i+=6;
+                        }
+                        //INJ
+                        if (buffer[i].ToString() == "28")
+                        {
+                            _antiControl.dtoNetworkBoard.INJCurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            i+=6;
+                        }
+                        //AUX1
+                        if (buffer[i].ToString() == "23")
+                        {
+                            _antiControl.dtoNetworkBoard.AUX1CurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            i+=6;
+                        }
+                        //AUX2
+                        if (buffer[i].ToString() == "24")
+                        {
+                            _antiControl.dtoNetworkBoard.AUX1CurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            i+=6;
+                        }
                     }
                     break;
                 default:
@@ -724,6 +836,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseHeatingBoard(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            int i;
             switch (buffer[4].ToString("X2"))
             {
                 //加热源
@@ -732,121 +845,136 @@ namespace ChromatoBll.serialCom
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7]))  + Convert.ToString(Convert.ToInt32(buffer[8]))  + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10]))  + Convert.ToString(Convert.ToInt32(buffer[11]))  + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[13]))  + Convert.ToString(Convert.ToInt32(buffer[14]))  + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16]))  + Convert.ToString(Convert.ToInt32(buffer[17]))  + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
                     }
                     if (buffer[2].ToString("X2") == "1B")//一阶程升
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])) + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])) + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
-                        //COL1
-                        _antiControl.dtoHeatingSource.RateCol1 =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[20]))    + Convert.ToString(Convert.ToInt32(buffer[21]))   + Convert.ToString(Convert.ToInt32(buffer[22]))  + Convert.ToString(Convert.ToInt32(buffer[23])));
-                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24]))   + Convert.ToString(Convert.ToInt32(buffer[25]))  + Convert.ToString(Convert.ToInt32(buffer[26])));
-                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27]))   + Convert.ToString(Convert.ToInt32(buffer[28]))  + Convert.ToString(Convert.ToInt32(buffer[29])));
+                        //COL1                  
+                        i = 20;
+                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     if (buffer[2].ToString("X2") == "25")//二阶程升
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])) + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])) + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
-                        //COL1
-                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[20])) + Convert.ToString(Convert.ToInt32(buffer[21])) + Convert.ToString(Convert.ToInt32(buffer[22])) + Convert.ToString(Convert.ToInt32(buffer[23])));
-                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24])) + Convert.ToString(Convert.ToInt32(buffer[25])) + Convert.ToString(Convert.ToInt32(buffer[26])));
-                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27])) + Convert.ToString(Convert.ToInt32(buffer[28])) + Convert.ToString(Convert.ToInt32(buffer[29])));
+                        //COL1                  
+                        i = 20;
+                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL2
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[31])) + Convert.ToString(Convert.ToInt32(buffer[32])) + Convert.ToString(Convert.ToInt32(buffer[33])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[35])) + Convert.ToString(Convert.ToInt32(buffer[36])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[38])) + Convert.ToString(Convert.ToInt32(buffer[39])));
+                        i = 30;
+                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     if (buffer[2].ToString("X2") == "2F")//三阶程升
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])) + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])) + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
-                        //COL1
-                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[20])) + Convert.ToString(Convert.ToInt32(buffer[21])) + Convert.ToString(Convert.ToInt32(buffer[22])) + Convert.ToString(Convert.ToInt32(buffer[23])));
-                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24])) + Convert.ToString(Convert.ToInt32(buffer[25])) + Convert.ToString(Convert.ToInt32(buffer[26])));
-                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27])) + Convert.ToString(Convert.ToInt32(buffer[28])) + Convert.ToString(Convert.ToInt32(buffer[29])));
+                        //COL1                  
+                        i = 20;
+                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL2
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[31])) + Convert.ToString(Convert.ToInt32(buffer[32])) + Convert.ToString(Convert.ToInt32(buffer[33])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[35])) + Convert.ToString(Convert.ToInt32(buffer[36])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[38])) + Convert.ToString(Convert.ToInt32(buffer[39])));
+                        i = 30;
+                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL3
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[41])) + Convert.ToString(Convert.ToInt32(buffer[42])) + Convert.ToString(Convert.ToInt32(buffer[43])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[45])) + Convert.ToString(Convert.ToInt32(buffer[46])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[48])) + Convert.ToString(Convert.ToInt32(buffer[49])));
+                        i = 40;
+                        _antiControl.dtoHeatingSource.RateCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     if (buffer[2].ToString("X2") == "39")//四阶程升
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])) + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])) + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
-                        //COL1
-                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[20])) + Convert.ToString(Convert.ToInt32(buffer[21])) + Convert.ToString(Convert.ToInt32(buffer[22])) + Convert.ToString(Convert.ToInt32(buffer[23])));
-                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24])) + Convert.ToString(Convert.ToInt32(buffer[25])) + Convert.ToString(Convert.ToInt32(buffer[26])));
-                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27])) + Convert.ToString(Convert.ToInt32(buffer[28])) + Convert.ToString(Convert.ToInt32(buffer[29])));
+                        //COL1                  
+                        i = 20;
+                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL2
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[31])) + Convert.ToString(Convert.ToInt32(buffer[32])) + Convert.ToString(Convert.ToInt32(buffer[33])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[35])) + Convert.ToString(Convert.ToInt32(buffer[36])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[38])) + Convert.ToString(Convert.ToInt32(buffer[39])));
+                        i = 30;
+                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL3
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[41])) + Convert.ToString(Convert.ToInt32(buffer[42])) + Convert.ToString(Convert.ToInt32(buffer[43])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[45])) + Convert.ToString(Convert.ToInt32(buffer[46])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[48])) + Convert.ToString(Convert.ToInt32(buffer[49])));
+                        i = 40;
+                        _antiControl.dtoHeatingSource.RateCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL4
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[51])) + Convert.ToString(Convert.ToInt32(buffer[52])) + Convert.ToString(Convert.ToInt32(buffer[53])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[55])) + Convert.ToString(Convert.ToInt32(buffer[56])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[58])) + Convert.ToString(Convert.ToInt32(buffer[59])));
+                        i = 50;
+                        _antiControl.dtoHeatingSource.RateCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     if (buffer[2].ToString("X2") == "43")//五阶程升
                     {
                         _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
                         _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
-                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])) + Convert.ToString(Convert.ToInt32(buffer[9])));
-                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])) + Convert.ToString(Convert.ToInt32(buffer[12])));
-                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
+                        _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
+                        _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
+                        _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
+                        _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
                         _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
-                        //COL1
-                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[20])) + Convert.ToString(Convert.ToInt32(buffer[21])) + Convert.ToString(Convert.ToInt32(buffer[22])) + Convert.ToString(Convert.ToInt32(buffer[23])));
-                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24])) + Convert.ToString(Convert.ToInt32(buffer[25])) + Convert.ToString(Convert.ToInt32(buffer[26])));
-                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27])) + Convert.ToString(Convert.ToInt32(buffer[28])) + Convert.ToString(Convert.ToInt32(buffer[29])));
+                        //COL1                  
+                        i = 20;
+                        _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL2
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[31])) + Convert.ToString(Convert.ToInt32(buffer[32])) + Convert.ToString(Convert.ToInt32(buffer[33])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[35])) + Convert.ToString(Convert.ToInt32(buffer[36])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[38])) + Convert.ToString(Convert.ToInt32(buffer[39])));
+                        i = 30;
+                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL3
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[41])) + Convert.ToString(Convert.ToInt32(buffer[42])) + Convert.ToString(Convert.ToInt32(buffer[43])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[45])) + Convert.ToString(Convert.ToInt32(buffer[46])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[48])) + Convert.ToString(Convert.ToInt32(buffer[49])));
+                        i = 40;
+                        _antiControl.dtoHeatingSource.RateCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL4
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[51])) + Convert.ToString(Convert.ToInt32(buffer[52])) + Convert.ToString(Convert.ToInt32(buffer[53])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[55])) + Convert.ToString(Convert.ToInt32(buffer[56])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[58])) + Convert.ToString(Convert.ToInt32(buffer[59])));
+                        i = 50;
+                        _antiControl.dtoHeatingSource.RateCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol4 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         //COL5
-                        _antiControl.dtoHeatingSource.RateCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[61])) + Convert.ToString(Convert.ToInt32(buffer[62])) + Convert.ToString(Convert.ToInt32(buffer[63])));
-                        _antiControl.dtoHeatingSource.TempCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[65])) + Convert.ToString(Convert.ToInt32(buffer[66])));
-                        _antiControl.dtoHeatingSource.TempTimeCol2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[37])) + Convert.ToString(Convert.ToInt32(buffer[68])) + Convert.ToString(Convert.ToInt32(buffer[69])));
+                        i = 60;
+                        _antiControl.dtoHeatingSource.RateCol5 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                        _antiControl.dtoHeatingSource.TempCol5 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                        _antiControl.dtoHeatingSource.TempTimeCol5 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     break;
                 //进样口
@@ -854,23 +982,26 @@ namespace ChromatoBll.serialCom
                     if (buffer[2].ToString("X2") == "23")
                     {
                         //INJ1
-                        _antiControl.dtoInject.InitTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[5]))   + Convert.ToString(Convert.ToInt32(buffer[6]))  + Convert.ToString(Convert.ToInt32(buffer[7])));
-                        _antiControl.dtoInject.AlertTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[8]))   + Convert.ToString(Convert.ToInt32(buffer[9]))  + Convert.ToString(Convert.ToInt32(buffer[10])));
-                        _antiControl.dtoInject.ColumnType1 = buffer[11];
-                        _antiControl.dtoInject.InjectTime1 =Convert.ToInt32( Convert.ToString(Convert.ToInt32(buffer[12]))   + Convert.ToString(Convert.ToInt32(buffer[13]))  + Convert.ToString(Convert.ToInt32(buffer[14])));
-                        _antiControl.dtoInject.InjectMode1 = buffer[15];
+                        i = 5;
+                        _antiControl.dtoInject.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoInject.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        _antiControl.dtoInject.ColumnType1 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 6])));//也是ASCII码。。
+                        _antiControl.dtoInject.InjectTime1 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
+                        _antiControl.dtoInject.InjectMode1 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 10])));
                         //INJ2
-                        _antiControl.dtoInject.InitTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoInject.AlertTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[19])) + Convert.ToString(Convert.ToInt32(buffer[20])) + Convert.ToString(Convert.ToInt32(buffer[21])));
-                        _antiControl.dtoInject.ColumnType2 = buffer[22];
-                        _antiControl.dtoInject.InjectTime2 = Convert.ToInt32(Convert.ToString(Convert.ToInt32(buffer[23])) + Convert.ToString(Convert.ToInt32(buffer[24])) + Convert.ToString(Convert.ToInt32(buffer[25])));
-                        _antiControl.dtoInject.InjectMode2 = buffer[26];
+                        i = 16;
+                        _antiControl.dtoInject.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoInject.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        _antiControl.dtoInject.ColumnType2 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 6])));//也是ASCII码。。
+                        _antiControl.dtoInject.InjectTime2 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
+                        _antiControl.dtoInject.InjectMode2 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 10])));
                         //INJ3
-                        _antiControl.dtoInject.InitTemp3 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[27])) + Convert.ToString(Convert.ToInt32(buffer[28])) + Convert.ToString(Convert.ToInt32(buffer[29])));
-                        _antiControl.dtoInject.AlertTemp3 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[30])) + Convert.ToString(Convert.ToInt32(buffer[31])) + Convert.ToString(Convert.ToInt32(buffer[32])));
-                        _antiControl.dtoInject.ColumnType3 = buffer[33];
-                        _antiControl.dtoInject.InjectTime3 = Convert.ToInt32(Convert.ToString(Convert.ToInt32(buffer[34])) + Convert.ToString(Convert.ToInt32(buffer[35])) + Convert.ToString(Convert.ToInt32(buffer[36])));
-                        _antiControl.dtoInject.InjectMode3 = buffer[37];
+                        i = 27;
+                        _antiControl.dtoInject.InitTemp3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoInject.AlertTemp3 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        _antiControl.dtoInject.ColumnType3 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 6])));//也是ASCII码。。
+                        _antiControl.dtoInject.InjectTime3 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
+                        _antiControl.dtoInject.InjectMode3 = Convert.ToInt32(Chr(Convert.ToInt32(buffer[i + 10])));
                     }
                     break;
                 //AUX
@@ -880,27 +1011,30 @@ namespace ChromatoBll.serialCom
                         //AUX1
                         if (buffer[5].ToString("X2") == "23")
                         {
-                            _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6]))   + Convert.ToString(Convert.ToInt32(buffer[7]))  + Convert.ToString(Convert.ToInt32(buffer[8])));
-                            _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[9]))   + Convert.ToString(Convert.ToInt32(buffer[10]))  + Convert.ToString(Convert.ToInt32(buffer[11])));
+                            i = 6;
+                            _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
                             _antiControl.dtoAux.UserIndex = 1;
                         }
                         //AUX2
                         if (buffer[5].ToString("X2") == "24")
                         {
-                            _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6])) + Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])));
-                            _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[9])) + Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])));
-                            _antiControl.dtoAux.UserIndex = 2;
+                            i = 6;
+                            _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            _antiControl.dtoAux.UserIndex = 1;
                         }
                     }
                     //AUX1&&AUX2
                     if (buffer[2].ToString("X2") == "10")
                     {
-                        _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6])) + Convert.ToString(Convert.ToInt32(buffer[7])) + Convert.ToString(Convert.ToInt32(buffer[8])));
-                        _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[9])) + Convert.ToString(Convert.ToInt32(buffer[10])) + Convert.ToString(Convert.ToInt32(buffer[11])));
-
-                        _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13])) + Convert.ToString(Convert.ToInt32(buffer[14])) + Convert.ToString(Convert.ToInt32(buffer[15])));
-                        _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[16])) + Convert.ToString(Convert.ToInt32(buffer[17])) + Convert.ToString(Convert.ToInt32(buffer[18])));
-
+                        i = 6;
+                        _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        i = 12;
+                        _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        
                         _antiControl.dtoAux.UserIndex = 0;
                     }
                     break;
@@ -951,7 +1085,7 @@ namespace ChromatoBll.serialCom
                     case "14":
                         address.Clear();
                         address.Add(SortFID(_antiControl, buffer, 5));
-                        address.Add(SortFID(_antiControl, buffer, 14));
+                        address.Add(SortFID(_antiControl, buffer, 18));
                         if (address[0] == addressCommand.FID1 || address[1] == addressCommand.FID1)
                         {
                             _antiControl.dtoFid.FID1Used = true;
@@ -980,8 +1114,8 @@ namespace ChromatoBll.serialCom
                     case "1D":
                         address.Clear();
                         address.Add(SortFID(_antiControl, buffer, 5));
-                        address.Add(SortFID(_antiControl, buffer, 14));
-                        address.Add(SortFID(_antiControl, buffer, 23));
+                        address.Add(SortFID(_antiControl, buffer, 18));
+                        address.Add(SortFID(_antiControl, buffer, 31));
 
                         if (address[0] == addressCommand.FID1 || address[1] == addressCommand.FID1 || address[2] == addressCommand.FID1)
                         { _antiControl.dtoFid.FID1Used = true; }
@@ -1002,9 +1136,9 @@ namespace ChromatoBll.serialCom
                         break;
                     case "26":
                         SortFID(_antiControl, buffer, 5);
-                        SortFID(_antiControl, buffer, 14);
-                        SortFID(_antiControl, buffer, 23);
-                        SortFID(_antiControl, buffer, 32);
+                        SortFID(_antiControl, buffer, 18);
+                        SortFID(_antiControl, buffer, 31);
+                        SortFID(_antiControl, buffer, 43);
                         _antiControl.dtoFid.FID1Used = true;
                         _antiControl.dtoFid.FID2Used = true;
                         _antiControl.dtoFid.FIDK1Used = true;
@@ -1026,35 +1160,35 @@ namespace ChromatoBll.serialCom
             {
                 //FID1
                 case "41":
-                    _antiControl.dtoFid.InitTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 1])) + Convert.ToString(Convert.ToInt32(buffer[i + 2])) + Convert.ToString(Convert.ToInt32(buffer[i + 3])));
-                    _antiControl.dtoFid.AlertTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 4])) + Convert.ToString(Convert.ToInt32(buffer[i + 5])) + Convert.ToString(Convert.ToInt32(buffer[i + 6])));
-                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 7];
-                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 8];
+                    _antiControl.dtoFid.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                    _antiControl.dtoFid.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 11];
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 12];
                     return buffer[i].ToString("X2");
                     break;
                 //FID2
                 case "42":
-                    _antiControl.dtoFid.InitTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 1])) + Convert.ToString(Convert.ToInt32(buffer[i + 2])) + Convert.ToString(Convert.ToInt32(buffer[i + 3])));
-                    _antiControl.dtoFid.AlertTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 4])) + Convert.ToString(Convert.ToInt32(buffer[i + 5])) + Convert.ToString(Convert.ToInt32(buffer[i + 6])));
-                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 7];
-                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 8];
+                    _antiControl.dtoFid.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                    _antiControl.dtoFid.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 11];
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 12];
                     return buffer[i].ToString("X2");
                     break;
                 //FIDK1
                 case "43":
-                    _antiControl.dtoFid.InitTempK1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 1])) + Convert.ToString(Convert.ToInt32(buffer[i + 2])) + Convert.ToString(Convert.ToInt32(buffer[i + 3])));
-                    _antiControl.dtoFid.AlertTempK1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 4])) + Convert.ToString(Convert.ToInt32(buffer[i + 5])) + Convert.ToString(Convert.ToInt32(buffer[i + 6])));
-                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 7];
-                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 8];
+                    _antiControl.dtoFid.InitTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                    _antiControl.dtoFid.AlertTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 11];
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 12];
                     return buffer[i].ToString("X2");
                     break;
                 //FIDK2
                 case "44":
-                    _antiControl.dtoFid.InitTempK2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 1])) + Convert.ToString(Convert.ToInt32(buffer[i + 2])) + Convert.ToString(Convert.ToInt32(buffer[i + 3])));
-                    _antiControl.dtoFid.AlertTempK2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[i + 4])) + Convert.ToString(Convert.ToInt32(buffer[i + 5])) + Convert.ToString(Convert.ToInt32(buffer[i + 6])));
-                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 7];
+                    _antiControl.dtoFid.InitTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                    _antiControl.dtoFid.AlertTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 11];
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 12];
                     return buffer[i].ToString("X2");
-                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 8];
                     break;
                 default:
                     return buffer[i].ToString("X2");
@@ -1069,6 +1203,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseTCD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            int i;
             if (buffer[4].ToString() == "00")
             {
                 switch (buffer[2].ToString())
@@ -1076,29 +1211,33 @@ namespace ChromatoBll.serialCom
                     case "0D":
                         if (buffer[5].ToString() == "51")//TCD1
                         {
-                            _antiControl.dtoTcd.InitTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6]))   + Convert.ToString(Convert.ToInt32(buffer[7]))  + Convert.ToString(Convert.ToInt32(buffer[8])));
-                            _antiControl.dtoTcd.AlertTemp1 =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[9]))   + Convert.ToString(Convert.ToInt32(buffer[10]))  + Convert.ToString(Convert.ToInt32(buffer[11])));
-                            _antiControl.dtoTcd.PolarityOne = (buffer[12] == 1) ? true : false;
-                            _antiControl.dtoTcd.CurrentOne =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[13]))   + Convert.ToString(Convert.ToInt32(buffer[14]))  + Convert.ToString(Convert.ToInt32(buffer[15])));
+                            i = 6;
+                            _antiControl.dtoTcd.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoTcd.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            _antiControl.dtoTcd.PolarityOne = (buffer[i + 6] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentOne = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         }
                         if (buffer[5].ToString() == "52")//TCD2
                         {
-                            _antiControl.dtoTcd.InitTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6]))   + Convert.ToString(Convert.ToInt32(buffer[7]))  + Convert.ToString(Convert.ToInt32(buffer[8])));
-                            _antiControl.dtoTcd.AlertTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[9]))   + Convert.ToString(Convert.ToInt32(buffer[10]))  + Convert.ToString(Convert.ToInt32(buffer[11])));
-                            _antiControl.dtoTcd.PolarityTwo = (buffer[12] == 1) ? true : false;
-                            _antiControl.dtoTcd.CurrentTwo = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13]))   + Convert.ToString(Convert.ToInt32(buffer[14]))  + Convert.ToString(Convert.ToInt32(buffer[15])));
+                            i = 6;
+                            _antiControl.dtoTcd.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoTcd.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                            _antiControl.dtoTcd.PolarityTwo = (buffer[i + 6] == 1) ? true : false;
+                            _antiControl.dtoTcd.CurrentTwo = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         }
                         break;
                     case "18"://TCD1+TCD2
-                        _antiControl.dtoTcd.InitTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[6]))   + Convert.ToString(Convert.ToInt32(buffer[7]))  + Convert.ToString(Convert.ToInt32(buffer[8])));
-                        _antiControl.dtoTcd.AlertTemp1 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[9]))   + Convert.ToString(Convert.ToInt32(buffer[10]))  + Convert.ToString(Convert.ToInt32(buffer[11])));
-                        _antiControl.dtoTcd.PolarityOne = (buffer[12] == 1) ? true : false;
-                        _antiControl.dtoTcd.CurrentOne = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[13]))   + Convert.ToString(Convert.ToInt32(buffer[14]))  + Convert.ToString(Convert.ToInt32(buffer[15])));
+                        i = 6;
+                        _antiControl.dtoTcd.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoTcd.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        _antiControl.dtoTcd.PolarityOne = (buffer[i + 6] == 1) ? true : false;
+                        _antiControl.dtoTcd.CurrentOne = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
 
-                        _antiControl.dtoTcd.InitTemp2 =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[17]))   + Convert.ToString(Convert.ToInt32(buffer[18]))  + Convert.ToString(Convert.ToInt32(buffer[19])));
-                        _antiControl.dtoTcd.AlertTemp2 = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[20]))   + Convert.ToString(Convert.ToInt32(buffer[21]))  + Convert.ToString(Convert.ToInt32(buffer[22])));
-                        _antiControl.dtoTcd.PolarityTwo = (buffer[23] == 1) ? true : false;
-                        _antiControl.dtoTcd.CurrentTwo = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[24]))   + Convert.ToString(Convert.ToInt32(buffer[25]))  + Convert.ToString(Convert.ToInt32(buffer[26])));
+                        i = 16;
+                        _antiControl.dtoTcd.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                        _antiControl.dtoTcd.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        _antiControl.dtoTcd.PolarityTwo = (buffer[i + 6] == 1) ? true : false;
+                        _antiControl.dtoTcd.CurrentTwo = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                         break;
                 }
             }
@@ -1116,9 +1255,9 @@ namespace ChromatoBll.serialCom
                 if (buffer[2].ToString() == "08")
                 {
                     //电流
-                    _antiControl.dtoEcd.Current = Convert.ToSingle(Convert.ToString(Convert.ToInt32(buffer[5]))   + Convert.ToString(Convert.ToInt32(buffer[6]))  + Convert.ToString(Convert.ToInt32(buffer[7])));
+                    _antiControl.dtoEcd.Current = Convert.ToSingle(Chr(Convert.ToInt32(buffer[5])) + Chr(Convert.ToInt32(buffer[6])) + Chr(Convert.ToInt32(buffer[7])));
                     //量程
-                    _antiControl.dtoEcd.Capacity =Convert.ToSingle( Convert.ToString(Convert.ToInt32(buffer[8]))   + Convert.ToString(Convert.ToInt32(buffer[9]))  + Convert.ToString(Convert.ToInt32(buffer[10])));
+                    _antiControl.dtoEcd.Capacity = Convert.ToSingle(Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])) + Chr(Convert.ToInt32(buffer[10])));
                 }
             }
         }
@@ -1227,7 +1366,7 @@ namespace ChromatoBll.serialCom
                     {
                         buffer.Add(bit);
                     }
-                } 
+                }
                 if (Port.tag == 0)//RS-232方式
                 {
                     _sictPort.Write(buffer.ToArray(), 0, buffer.Count);
@@ -1237,7 +1376,7 @@ namespace ChromatoBll.serialCom
                     ns.Write(buffer.ToArray(), 0, buffer.Count);
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 MessageBox.Show("发送出错");
             }
@@ -1255,7 +1394,26 @@ namespace ChromatoBll.serialCom
                 bit = default(byte);
                 return false;
             }
-        } 
+        }
+
+        //bit转ascII码
+        public static string Chr(int asciiCode)
+        {
+            if (asciiCode >= 0 && asciiCode <= 255)
+            {
+                System.Text.ASCIIEncoding asciiEncoding = new System.Text.ASCIIEncoding();
+                byte[] byteArray = new byte[] { (byte)asciiCode };
+                string strCharacter = asciiEncoding.GetString(byteArray);
+                if (strCharacter == " ")
+                    return "0";
+                else
+                    return (strCharacter);
+            }
+            else
+            {
+                throw new Exception("ASCII Code is not valid.");
+            }
+        }
 
         /// <summary>
         /// 写串口

@@ -71,8 +71,8 @@
             this.tsInj2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsInj3 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsColumnPara = new System.Windows.Forms.ToolStripMenuItem();
-            this.splitterGraph = new System.Windows.Forms.Splitter();
             this.viewConfig = new ChromatoCore.On.OnConfigViewer();
+            this.splitterGraph = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSampleInfo)).BeginInit();
             this.ctxMenu.SuspendLayout();
             this.splitContainerMain.Panel1.SuspendLayout();
@@ -142,7 +142,7 @@
             this.dgvSampleInfo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSampleInfo.ShowCellToolTips = false;
             this.dgvSampleInfo.ShowEditingIcon = false;
-            this.dgvSampleInfo.Size = new System.Drawing.Size(445, 160);
+            this.dgvSampleInfo.Size = new System.Drawing.Size(445, 231);
             this.dgvSampleInfo.TabIndex = 5;
             this.dgvSampleInfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgvSampleInfo_MouseDown);
             // 
@@ -290,7 +290,7 @@
             this.splitContainerMain.Panel2.Controls.Add(this.splitterGraph);
             this.splitContainerMain.Panel2.Controls.Add(this.dgvSampleInfo);
             this.splitContainerMain.Panel2MinSize = 50;
-            this.splitContainerMain.Size = new System.Drawing.Size(900, 214);
+            this.splitContainerMain.Size = new System.Drawing.Size(1182, 285);
             this.splitContainerMain.TabIndex = 7;
             // 
             // gbQuery
@@ -356,7 +356,7 @@
             this.tsDownload});
             this.tsSample.Location = new System.Drawing.Point(423, 5);
             this.tsSample.Name = "tsSample";
-            this.tsSample.Size = new System.Drawing.Size(238, 39);
+            this.tsSample.Size = new System.Drawing.Size(207, 39);
             this.tsSample.TabIndex = 6;
             this.tsSample.Text = "toolStrip1";
             // 
@@ -475,6 +475,15 @@
             this.tsColumnPara.Size = new System.Drawing.Size(136, 22);
             this.tsColumnPara.Text = "柱箱";
             // 
+            // viewConfig
+            // 
+            this.viewConfig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewConfig.Location = new System.Drawing.Point(450, 0);
+            this.viewConfig.Name = "viewConfig";
+            this.viewConfig.Size = new System.Drawing.Size(732, 231);
+            this.viewConfig.TabIndex = 0;
+            // 
             // splitterGraph
             // 
             this.splitterGraph.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -484,18 +493,9 @@
             this.splitterGraph.MinSize = 15;
             this.splitterGraph.Name = "splitterGraph";
             this.splitterGraph.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitterGraph.Size = new System.Drawing.Size(5, 160);
+            this.splitterGraph.Size = new System.Drawing.Size(5, 231);
             this.splitterGraph.TabIndex = 31;
             this.splitterGraph.TabStop = false;
-            // 
-            // viewConfig
-            // 
-            this.viewConfig.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.viewConfig.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewConfig.Location = new System.Drawing.Point(450, 0);
-            this.viewConfig.Name = "viewConfig";
-            this.viewConfig.Size = new System.Drawing.Size(450, 160);
-            this.viewConfig.TabIndex = 0;
             // 
             // OnList
             // 
@@ -505,7 +505,7 @@
             this.Controls.Add(this.splitContainerMain);
             this.DoubleBuffered = true;
             this.Name = "OnList";
-            this.Size = new System.Drawing.Size(900, 214);
+            this.Size = new System.Drawing.Size(1182, 285);
             this.Load += new System.EventHandler(this.OnList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSampleInfo)).EndInit();
             this.ctxMenu.ResumeLayout(false);

@@ -81,6 +81,12 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private AntiControlDto _dtoAntiControl = null;
 
+        // 
+        // temUser1
+        //             
+        private TemUser _viewTem;
+
+
         private ChromatoBll.serialCom.CommandMaker _makeCommand = null;
 
         #endregion
@@ -103,6 +109,12 @@ namespace ChromatoCore.solu.AntiCon
             this.AddViewer();
             this.InitTreeCategory();
             this.InitPanel();
+ 
+            this._viewTem = new ChromatoCore.solu.AntiCon.TemUser(this._dtoAntiControl);
+            this._viewTem.Location = new System.Drawing.Point(575, -6);
+            this._viewTem.Size = new System.Drawing.Size(144, 283);
+            this._viewTem.TabIndex = 1;
+            this.Controls.Add(this._viewTem);
         }
 
         /// <summary>
@@ -409,6 +421,7 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadView(antiControlID);
             this._viewFid.LoadView(antiControlID);
             this._viewTcd.LoadView(antiControlID);
+       
         }
 
         /// <summary>
@@ -460,6 +473,7 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadEdit();
             this._viewFid.LoadEdit();
             this._viewTcd.LoadEdit();
+            this._viewTem.LoadEdit();
         }
 
         /// <summary>
@@ -482,6 +496,7 @@ namespace ChromatoCore.solu.AntiCon
             this._viewAux.LoadSaveAs();
             this._viewFid.LoadSaveAs();
             this._viewTcd.LoadSaveAs();
+            this._viewTem.LoadSaveAs();
         }
 
         /// <summary>
@@ -639,7 +654,7 @@ namespace ChromatoCore.solu.AntiCon
                         case AntiControl.HeatingSource:
                             para = _makeCommand.getAllCOLData();
                             ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString() );
-                            System.Threading.Thread.Sleep(1000);  //1秒
+                            //System.Threading.Thread.Sleep(1000);  //1秒
                             ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                             this._viewHeatingSource.LoadSaveAs();
                             break;
@@ -876,67 +891,67 @@ namespace ChromatoCore.solu.AntiCon
                 case "00":
                     break;
                 case "01":
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
                     break;
                 case "02":
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
                     break;
                 case "03":
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
                     break;
                 case "04":
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol4.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol4.ToString(), 3));
                     break;
                 case "05":
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol1.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol1.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol2.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol2.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol3.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol3.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol4.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol4.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol4.ToString(), 3));
 
-                    extraData.Append(transformDigit(dtoHeatingSource.RateCol5.ToString(), 4));
+                    extraData.Append(transformDigit(dtoHeatingSource.RateCol5.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempCol5.ToString(), 3));
                     extraData.Append(transformDigit(dtoHeatingSource.TempTimeCol5.ToString(), 3));
                     break;

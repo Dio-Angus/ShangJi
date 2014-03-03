@@ -12639,6 +12639,38 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:ChromatoCore.solu.AntiCon.TemUser.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.TemUser.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.TemUser.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.TemUser._dtoAntiControl">
+            <summary>
+            分析方法dto
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.TemUser.LoadEdit">
+            <summary>
+            编辑当前反控的信息
+            </summary>
+        </member>
+        <member name="M:ChromatoCore.solu.AntiCon.TemUser.LoadSaveAs">
+            <summary>
+            显示反控的信息
+            </summary>
+        </member>
         <member name="T:ChromatoCore.solu.AntiCon.FidUser">
             <summary>
             反控方法FID

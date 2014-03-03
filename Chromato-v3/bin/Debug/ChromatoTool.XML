@@ -1726,6 +1726,21 @@
             5阶恒温时间
             </summary>
         </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.ColState">
+            <summary>
+            升阶状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.TemState">
+            <summary>
+            温度状态
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.AimTem">
+            <summary>
+            目标温度
+            </summary>
+        </member>
         <member name="T:ChromatoTool.pipe.CastPipe">
             <summary>
             管道处理类
@@ -2398,6 +2413,16 @@
         <member name="P:ChromatoTool.util.ListViewColumnSorter.Order">
             <summary>
             获取或设置排序方式.
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.EcdDto.MagnifyFactor">
+            <summary>
+            放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.EcdDto.Polarity">
+            <summary>
+            极性
             </summary>
         </member>
         <member name="P:ChromatoTool.dto.EcdDto.Current">
@@ -3257,6 +3282,16 @@
         <member name="P:ChromatoTool.dto.AvgExportDto.TrendPeak">
             <summary>
             峰的趋势
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FpdDto.MagnifyFactor">
+            <summary>
+            FPD放大倍数
+            </summary>
+        </member>
+        <member name="P:ChromatoTool.dto.FpdDto.Polarity">
+            <summary>
+            FPD极性
             </summary>
         </member>
         <member name="T:ChromatoTool.util.CastString">

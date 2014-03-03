@@ -432,7 +432,7 @@ namespace ChromatoCore.solu
             StringFormat formatText = new StringFormat();
             g.FillRectangle(brushBkColor, e.Bounds);
 
-            rectPage = new Rectangle(e.Bounds.X + 2, e.Bounds.Y + 2, e.Bounds.Width + 2, e.Bounds.Height - 2);
+              rectPage = new Rectangle(e.Bounds.X + 2, e.Bounds.Y + 2, e.Bounds.Width + 2, e.Bounds.Height - 2);
             g.DrawString(txtPageName, fontPage, brushForeColor, rectPage, formatText);
         }
 

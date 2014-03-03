@@ -111,5 +111,19 @@ namespace ChromatoTool.dto
         /// </summary>
         public Single TempTimeCol5 { get; set; }
 
+        /// <summary>
+        /// 升阶状态
+        /// </summary>
+        public string ColState { get; set; }
+
+        /// <summary>
+        /// 温度状态
+        /// </summary>
+        public string TemState { get; set; }
+
+        /// <summary>
+        /// 目标温度
+        /// </summary>
+        public Single AimTem { get; set; }
     }
 }

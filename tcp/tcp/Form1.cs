@@ -146,9 +146,12 @@ namespace tcp
                     }
                 }
 
-                send("aa 55 02 03 00");
+                send("aa 55 02 03 00"); 
+                send("aa 55 02 03 01");
                 get(1);
                 setMessage(this.Data[0], textBox3, 0);
+                get(1);
+                setMessage(this.Data[0], textBox7, 0);
             }
 
             catch (Exception ex)

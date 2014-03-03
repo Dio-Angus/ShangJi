@@ -66,6 +66,10 @@
             this.tbEnablingState = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbHeatingState = new System.Windows.Forms.TextBox();
+            this.lbColState = new System.Windows.Forms.Label();
+            this.lbTemState = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbStep.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -390,10 +394,47 @@
             this.tbHeatingState.Size = new System.Drawing.Size(62, 21);
             this.tbHeatingState.TabIndex = 1;
             // 
+            // lbColState
+            // 
+            this.lbColState.AutoSize = true;
+            this.lbColState.ForeColor = System.Drawing.Color.Blue;
+            this.lbColState.Location = new System.Drawing.Point(316, 9);
+            this.lbColState.Name = "lbColState";
+            this.lbColState.Size = new System.Drawing.Size(0, 12);
+            this.lbColState.TabIndex = 125;
+            // 
+            // lbTemState
+            // 
+            this.lbTemState.AutoSize = true;
+            this.lbTemState.ForeColor = System.Drawing.Color.Blue;
+            this.lbTemState.Location = new System.Drawing.Point(386, 9);
+            this.lbTemState.Name = "lbTemState";
+            this.lbTemState.Size = new System.Drawing.Size(0, 12);
+            this.lbTemState.TabIndex = 125;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(318, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 12);
+            this.label9.TabIndex = 86;
+            this.label9.Text = "目标温度：";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(388, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(78, 21);
+            this.textBox1.TabIndex = 2;
+            // 
             // HeatingSourceUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbTemState);
+            this.Controls.Add(this.lbColState);
             this.Controls.Add(this.tbHeatingState);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMaintainTime);
@@ -401,11 +442,13 @@
             this.Controls.Add(this.txtBalanceTime);
             this.Controls.Add(this.tbEnablingState);
             this.Controls.Add(this.txtAlertTemp);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtInitTemp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtColumnCount);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbStep);
@@ -458,6 +501,10 @@
         private System.Windows.Forms.TextBox tbEnablingState;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbHeatingState;
+        private System.Windows.Forms.Label lbColState;
+        private System.Windows.Forms.Label lbTemState;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }
