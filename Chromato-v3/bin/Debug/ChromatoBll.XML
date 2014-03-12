@@ -2419,15 +2419,15 @@
             从SICT串口读取数据
             </summary>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseResult(ChromatoTool.dto.AntiControlDto)">
+        <member name="M:ChromatoBll.serialCom.CommBase.AnalyseResult(ChromatoTool.dto.AntiControlDto,System.Byte[])">
             <summary>
             分析数据
             </summary>
             <param name="_antiControl"></param>
         </member>
-        <member name="M:ChromatoBll.serialCom.CommBase.Receive">
+        <member name="M:ChromatoBll.serialCom.CommBase.ReceiveAndAnalyse(ChromatoTool.dto.AntiControlDto)">
             <summary>
-            接收串口数据
+            接收并分析串口数据
             </summary>
             <returns></returns>
         </member>

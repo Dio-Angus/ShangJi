@@ -38,7 +38,7 @@ D:\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
 \\vmware-host\Shared Folders\Chromato-v3-通用版\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPeak.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPeak.pdb
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoPeak.XML
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoPeak\obj\Debug\ChromatoPeak.csprojResolveAssemblyReference.cache

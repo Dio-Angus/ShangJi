@@ -62,14 +62,6 @@
             this.txtMaintainTime = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.gbStep = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbEnablingState = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbHeatingState = new System.Windows.Forms.TextBox();
-            this.lbColState = new System.Windows.Forms.Label();
-            this.lbTemState = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gbStep.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -227,21 +219,21 @@
             // 
             // txtBalanceTime
             // 
-            this.txtBalanceTime.Location = new System.Drawing.Point(82, 53);
+            this.txtBalanceTime.Location = new System.Drawing.Point(80, 38);
             this.txtBalanceTime.Name = "txtBalanceTime";
             this.txtBalanceTime.Size = new System.Drawing.Size(62, 21);
             this.txtBalanceTime.TabIndex = 3;
             // 
             // txtAlertTemp
             // 
-            this.txtAlertTemp.Location = new System.Drawing.Point(224, 53);
+            this.txtAlertTemp.Location = new System.Drawing.Point(222, 38);
             this.txtAlertTemp.Name = "txtAlertTemp";
             this.txtAlertTemp.Size = new System.Drawing.Size(64, 21);
             this.txtAlertTemp.TabIndex = 4;
             // 
             // txtInitTemp
             // 
-            this.txtInitTemp.Location = new System.Drawing.Point(224, 29);
+            this.txtInitTemp.Location = new System.Drawing.Point(222, 14);
             this.txtInitTemp.Name = "txtInitTemp";
             this.txtInitTemp.Size = new System.Drawing.Size(64, 21);
             this.txtInitTemp.TabIndex = 2;
@@ -267,7 +259,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(300, 56);
+            this.label7.Location = new System.Drawing.Point(298, 41);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 12);
             this.label7.TabIndex = 87;
@@ -283,7 +275,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(159, 60);
+            this.label14.Location = new System.Drawing.Point(157, 45);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 12);
             this.label14.TabIndex = 93;
@@ -291,7 +283,7 @@
             // 
             // txtColumnCount
             // 
-            this.txtColumnCount.Location = new System.Drawing.Point(388, 53);
+            this.txtColumnCount.Location = new System.Drawing.Point(386, 38);
             this.txtColumnCount.Name = "txtColumnCount";
             this.txtColumnCount.Size = new System.Drawing.Size(78, 21);
             this.txtColumnCount.TabIndex = 5;
@@ -299,7 +291,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 35);
+            this.label3.Location = new System.Drawing.Point(163, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 86;
@@ -308,7 +300,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 60);
+            this.label1.Location = new System.Drawing.Point(9, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 89;
@@ -316,7 +308,7 @@
             // 
             // txtMaintainTime
             // 
-            this.txtMaintainTime.Location = new System.Drawing.Point(82, 29);
+            this.txtMaintainTime.Location = new System.Drawing.Point(80, 14);
             this.txtMaintainTime.Name = "txtMaintainTime";
             this.txtMaintainTime.Size = new System.Drawing.Size(62, 21);
             this.txtMaintainTime.TabIndex = 1;
@@ -324,7 +316,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 35);
+            this.label20.Location = new System.Drawing.Point(9, 20);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(65, 12);
             this.label20.TabIndex = 124;
@@ -355,105 +347,30 @@
             this.gbStep.Controls.Add(this.txtRateCol2);
             this.gbStep.Controls.Add(this.txtTempCol3);
             this.gbStep.Controls.Add(this.txtRateCol1);
-            this.gbStep.Location = new System.Drawing.Point(0, 78);
+            this.gbStep.Location = new System.Drawing.Point(-2, 63);
             this.gbStep.Name = "gbStep";
             this.gbStep.Size = new System.Drawing.Size(466, 163);
             this.gbStep.TabIndex = 6;
             this.gbStep.TabStop = false;
             this.gbStep.Text = "程升设置";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(159, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
-            this.label5.TabIndex = 86;
-            this.label5.Text = "使能状态：";
-            // 
-            // tbEnablingState
-            // 
-            this.tbEnablingState.Location = new System.Drawing.Point(224, 6);
-            this.tbEnablingState.Name = "tbEnablingState";
-            this.tbEnablingState.Size = new System.Drawing.Size(64, 21);
-            this.tbEnablingState.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
-            this.label6.TabIndex = 124;
-            this.label6.Text = "加热状态：";
-            // 
-            // tbHeatingState
-            // 
-            this.tbHeatingState.Location = new System.Drawing.Point(82, 6);
-            this.tbHeatingState.Name = "tbHeatingState";
-            this.tbHeatingState.Size = new System.Drawing.Size(62, 21);
-            this.tbHeatingState.TabIndex = 1;
-            // 
-            // lbColState
-            // 
-            this.lbColState.AutoSize = true;
-            this.lbColState.ForeColor = System.Drawing.Color.Blue;
-            this.lbColState.Location = new System.Drawing.Point(316, 9);
-            this.lbColState.Name = "lbColState";
-            this.lbColState.Size = new System.Drawing.Size(0, 12);
-            this.lbColState.TabIndex = 125;
-            // 
-            // lbTemState
-            // 
-            this.lbTemState.AutoSize = true;
-            this.lbTemState.ForeColor = System.Drawing.Color.Blue;
-            this.lbTemState.Location = new System.Drawing.Point(386, 9);
-            this.lbTemState.Name = "lbTemState";
-            this.lbTemState.Size = new System.Drawing.Size(0, 12);
-            this.lbTemState.TabIndex = 125;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(318, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 12);
-            this.label9.TabIndex = 86;
-            this.label9.Text = "目标温度：";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(388, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 21);
-            this.textBox1.TabIndex = 2;
-            // 
             // HeatingSourceUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbTemState);
-            this.Controls.Add(this.lbColState);
-            this.Controls.Add(this.tbHeatingState);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMaintainTime);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtBalanceTime);
-            this.Controls.Add(this.tbEnablingState);
             this.Controls.Add(this.txtAlertTemp);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtInitTemp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtColumnCount);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbStep);
             this.Name = "HeatingSourceUser";
-            this.Size = new System.Drawing.Size(469, 248);
+            this.Size = new System.Drawing.Size(469, 237);
             this.gbStep.ResumeLayout(false);
             this.gbStep.PerformLayout();
             this.ResumeLayout(false);
@@ -497,14 +414,6 @@
         private System.Windows.Forms.TextBox txtMaintainTime;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox gbStep;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbEnablingState;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbHeatingState;
-        private System.Windows.Forms.Label lbColState;
-        private System.Windows.Forms.Label lbTemState;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
 
     }
 }

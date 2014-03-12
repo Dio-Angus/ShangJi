@@ -7,13 +7,14 @@
 //  ---------------------------------------------------------------------------
 //---------------------------------------------------------------------------*/
 
+using System;
+using System.Drawing;
+using System.Text;
 using System.Windows.Forms;
+using ChromatoBll.bll;
 using ChromatoTool.dto;
 using ChromatoTool.ini;
-using System.Drawing;
-using ChromatoBll.bll;
-using System;
-using System.Text;
+using System.Threading;
 
 namespace ChromatoCore.solu.AntiCon
 {
@@ -81,13 +82,25 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private AntiControlDto _dtoAntiControl = null;
 
-        // 
-        // temUser1
-        //             
-        private TemUser _viewTem;
+        /// <summary>
+        /// 温度状态面板
+        /// </summary>
+        private TemUser _viewTem = null;
 
-
+        /// <summary>
+        /// 指令生成
+        /// </summary>
         private ChromatoBll.serialCom.CommandMaker _makeCommand = null;
+
+        /// <summary>
+        /// 监听分析指令线程
+        /// </summary>
+        private Thread _receiveThread = null;
+
+        /// <summary>
+        /// 更新界面委托
+        /// </summary>
+        private delegate void LoadViewDelegate();
 
         #endregion
 
@@ -111,8 +124,8 @@ namespace ChromatoCore.solu.AntiCon
             this.InitPanel();
  
             this._viewTem = new ChromatoCore.solu.AntiCon.TemUser(this._dtoAntiControl);
-            this._viewTem.Location = new System.Drawing.Point(575, -6);
-            this._viewTem.Size = new System.Drawing.Size(144, 283);
+            this._viewTem.Location = new System.Drawing.Point(567, -6);
+            this._viewTem.Size = new System.Drawing.Size(450, 283);
             this._viewTem.TabIndex = 1;
             this.Controls.Add(this._viewTem);
         }
@@ -128,6 +141,7 @@ namespace ChromatoCore.solu.AntiCon
             this._viewTcd = new TcdUser(this._dtoAntiControl);
             this._viewFid = new FidUser(this._dtoAntiControl);
             this._viewAux = new AuxUser(this._dtoAntiControl);
+            this._viewTem = new TemUser(this._dtoAntiControl);
 
             this.Controls.Add(this._viewNetworkBoard);
             this.Controls.Add(this._viewHeatingSource);
@@ -415,6 +429,9 @@ namespace ChromatoCore.solu.AntiCon
             this.txtAntiControlName.Text = this._dtoAntiControl.AntiControlName;
             this.LoadControlStyle(true);
 
+            //this._dtoAntiControl.dtoEcd.Current = 1;
+            //this._dtoAntiControl.dtoEcd.Capacity = 1;
+
             this._viewNetworkBoard.LoadView(antiControlID);
             this._viewHeatingSource.LoadView(antiControlID);
             this._viewInject.LoadView(antiControlID);
@@ -485,7 +502,7 @@ namespace ChromatoCore.solu.AntiCon
             this._dtoAntiControl.AntiControlID = this._dto.AntiMethodID;
 
             //查询反控方法的具体内容
-            this._bizAntiControl.GetMethodByID(this._dtoAntiControl);
+            //this._bizAntiControl.GetMethodByID(this._dtoAntiControl);
 
             this.txtAntiControlName.Text = this._dtoAntiControl.AntiControlName + DateTime.Now.ToString("_yyyyMMdd");
             this.LoadControlStyle(true);
@@ -627,6 +644,20 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         /// <summary>
+        /// 接收数据监听线程
+        /// </summary>
+        public void ReceiveThread()
+        {
+            while (true)
+            {
+                ChromatoBll.serialCom.CommPort.Instance.ReceiveAndAnalyse(this._dtoAntiControl);
+                LoadViewDelegate LoadView = new LoadViewDelegate(this.LoadSaveAs);
+                this.Invoke(LoadView);
+            }
+        }
+
+
+        /// <summary>
         /// 刷新反控信息
         /// </summary>
         /// <param name="sender"></param>
@@ -638,6 +669,19 @@ namespace ChromatoCore.solu.AntiCon
                 ChromatoBll.serialCom.CommPort.Instance.Open();
                 
                 ChromatoBll.serialCom.CommPort.Instance.Send("AA55020380");
+
+                String para = null;
+                para = _makeCommand.getAllNetworkData();
+                ChromatoBll.serialCom.CommPort.Instance.Send(para.ToString());
+
+                ChromatoBll.serialCom.CommPort.Instance.ReceiveAndAnalyse(this._dtoAntiControl);
+
+                //监听线程启动
+                //_receiveThread = new Thread(ReceiveThread);
+                //_receiveThread.IsBackground = true;
+                //_receiveThread.Start();
+                
+                /*
                 ChromatoBll.serialCom.CommPort.Instance.AnalyseResult(this._dtoAntiControl);
                 if (MessageBox.Show("是否刷新反控数据？", "确认", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
@@ -688,8 +732,9 @@ namespace ChromatoCore.solu.AntiCon
                             break;
 
                     }
-                    ChromatoBll.serialCom.CommPort.Instance.Close();
-                }
+              
+                } 
+                 */
             }
             catch
             {
@@ -881,8 +926,7 @@ namespace ChromatoCore.solu.AntiCon
         /// <returns></returns>
         private string getHeatingSourceData(HeatingSourceDto dtoHeatingSource)
         {
-            string baseData = transformDigit(dtoHeatingSource.HeatingState, 1) + transformDigit(dtoHeatingSource.EnablingState, 1)
-                + transformDigit(dtoHeatingSource.InitTemp.ToString(), 3) + transformDigit(dtoHeatingSource.AlertTemp.ToString(), 3)
+            string baseData =  transformDigit(dtoHeatingSource.InitTemp.ToString(), 3) + transformDigit(dtoHeatingSource.AlertTemp.ToString(), 3)
                 + transformDigit(dtoHeatingSource.MaintainTime.ToString(), 3) + transformDigit(dtoHeatingSource.BalanceTime.ToString(), 3)
                 + transformDigit(dtoHeatingSource.ColumnCount.ToString(), 1);
             StringBuilder extraData = null;
@@ -962,5 +1006,21 @@ namespace ChromatoCore.solu.AntiCon
         }
 
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ChromatoBll.serialCom.CommPort.Instance.Open();
+            ChromatoBll.serialCom.CommPort.Instance.Send(textBox1.Text);
+            ChromatoBll.serialCom.CommPort.Instance.Send("aa55020314");
+            //监听线程启动
+            _receiveThread = new Thread(ReceiveThread);
+            _receiveThread.IsBackground = true;
+            _receiveThread.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ChromatoBll.serialCom.CommPort.Instance.Open();
+        }
     }
 }

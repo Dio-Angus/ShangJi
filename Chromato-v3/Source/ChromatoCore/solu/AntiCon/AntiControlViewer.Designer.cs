@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.gbAntiControl = new System.Windows.Forms.GroupBox();
-            this.btRefresh = new System.Windows.Forms.Button();
             this.btWrite = new System.Windows.Forms.Button();
             this.txtAntiControlName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tvAntiControl = new System.Windows.Forms.TreeView();
+            this.btRefresh = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.gbAntiControl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,16 +53,6 @@
             this.gbAntiControl.TabIndex = 0;
             this.gbAntiControl.TabStop = false;
             this.gbAntiControl.Text = "反控方法";
-            // 
-            // btRefresh
-            // 
-            this.btRefresh.Location = new System.Drawing.Point(403, 249);
-            this.btRefresh.Name = "btRefresh";
-            this.btRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btRefresh.TabIndex = 101;
-            this.btRefresh.Text = "更新";
-            this.btRefresh.UseVisualStyleBackColor = true;
-            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
             // btWrite
             // 
@@ -96,17 +89,59 @@
             this.tvAntiControl.Size = new System.Drawing.Size(87, 251);
             this.tvAntiControl.TabIndex = 1;
             // 
+            // btRefresh
+            // 
+            this.btRefresh.Location = new System.Drawing.Point(403, 249);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btRefresh.TabIndex = 101;
+            this.btRefresh.Text = "更新";
+            this.btRefresh.UseVisualStyleBackColor = true;
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(706, 256);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 25);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(600, 258);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "aa55020380";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(573, 260);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(21, 21);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // AntiControlViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gbAntiControl);
             this.Name = "AntiControlViewer";
-            this.Size = new System.Drawing.Size(732, 284);
+            this.Size = new System.Drawing.Size(739, 284);
             this.gbAntiControl.ResumeLayout(false);
             this.gbAntiControl.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -116,7 +151,10 @@
         private System.Windows.Forms.TreeView tvAntiControl;
         private System.Windows.Forms.TextBox txtAntiControlName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btRefresh;
         private System.Windows.Forms.Button btWrite;
+        private System.Windows.Forms.Button btRefresh;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

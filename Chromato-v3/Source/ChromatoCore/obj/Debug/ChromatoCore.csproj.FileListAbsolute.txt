@@ -731,7 +731,6 @@ D:\Chromato-v3-通用版\Source\ChromatoCore\obj\Debug\ChromatoCore.pdb
 D:\Chromato-v3-通用版\Source\ChromatoCore\obj\Debug\ChromatoCore.uiConf.TcpUser.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoCore.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoCore.pdb
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.csproj.ResolveComReference.cache
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.control.HeaderGroupBox.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.Off.OffResultViewer.resources
@@ -829,8 +828,6 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCo
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.IdT.AutoBuildBase.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.IdT.AutoBuildGasFrm.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.tabCtrl.CompareUser.resources
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\GenerateResource-ResGen.read.1.tlog
-C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\GenerateResource-ResGen.write.1.tlog
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.dll
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.pdb
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.HeatingSourceUser.resources
@@ -839,3 +836,5 @@ C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCo
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.FpdUser.resources
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\bin\Debug\ChromatoCore.XML
 C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.solu.AntiCon.TemUser.resources
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.csprojResolveAssemblyReference.cache
+C:\Users\Dio\Documents\Visual Studio 2010\Projects\Chromato-v3\Source\ChromatoCore\obj\Debug\ChromatoCore.csproj.GenerateResource.Cache

@@ -420,7 +420,9 @@ namespace ChromatoBll.serialCom
         public StringBuilder ReadSict()
         {
             TimeSpan waitTime = new TimeSpan(0, 0, 0, 0, 50);
-            byte[] readBuffer = new byte[this._sictPort.ReadBufferSize + 1];
+            byte[] readBuffer=null;
+            if (Port.tag == 0) readBuffer = new byte[200];
+            else if (Port.tag == 1) readBuffer = new byte[200];
             String temp = "";
             this._tSictCount = 0;
             //Thread.Sleep(waitTime);
@@ -428,9 +430,9 @@ namespace ChromatoBll.serialCom
             {
                 int count = 0;
                 if (Port.tag == 0)
-                    count = this._sictPort.Read(readBuffer, 0, this._sictPort.ReadBufferSize);
+                    count = this._sictPort.Read(readBuffer, 0, 200);
                 else if (Port.tag == 1)
-                    count = this.ns.Read(readBuffer, 0, this._sictPort.ReadBufferSize);
+                    count = this.ns.Read(readBuffer, 0, 200);
 
                 for (int i = 0; i < count; i++)
                 {
@@ -465,9 +467,8 @@ namespace ChromatoBll.serialCom
         /// 分析数据
         /// </summary>
         /// <param name="_antiControl"></param>
-        public void AnalyseResult(ChromatoTool.dto.AntiControlDto _antiControl)
+        public void AnalyseResult(ChromatoTool.dto.AntiControlDto _antiControl,byte[] buffer)
         {
-            byte[] buffer = Receive();
             if (buffer[0].ToString("X2") != "AA" || buffer[1].ToString("X2") != "55")
             {
                 return;
@@ -510,23 +511,35 @@ namespace ChromatoBll.serialCom
         }
 
         /// <summary>
-        /// 接收串口数据
+        /// 接收并分析串口数据
         /// </summary>
         /// <returns></returns>
-        private byte[] Receive()
+        public void ReceiveAndAnalyse(ChromatoTool.dto.AntiControlDto _antiControl)
         {
+            _antiControl.dtoNetworkBoard.logText = null;
+
             byte[] buffer = null;
             if (Port.tag == 0)
             {
-                buffer = new byte[_sictPort.ReadBufferSize];
-                this._sictPort.Read(buffer, 0, (int)_sictPort.ReadBufferSize);
+                buffer = new byte[this._sictPort.ReadBufferSize];
+                this._sictPort.Read(buffer, 0, this._sictPort.ReadBufferSize);
             }
             else if (Port.tag == 1)
             {
-                buffer = new byte[client.ReceiveBufferSize];
-                this.ns.Read(buffer, 0, (int)client.ReceiveBufferSize);
+                buffer = new byte[this.client.ReceiveBufferSize];
+                this.ns.Read(buffer, 0, this.client.ReceiveBufferSize);
             }
-            return buffer;
+            byte[] buf = null;
+            int i = 0;
+            while (buffer[i].ToString("X2") == "AA" && buffer[i + 1].ToString("X2") == "55")
+            {
+                buf = new byte[buffer[i + 2] + 3];
+                Array.Copy(buffer, i, buf, 0, buffer[i + 2] + 3);
+                AnalyseResult(_antiControl, buf);
+                i += buffer[i + 2] + 3;
+            }
+
+            //_antiControl.dtoNetworkBoard.logText = "连接成功";
         }
 
         /// <summary>
@@ -536,8 +549,10 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseNetwork(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            _antiControl.dtoNetworkBoard.logText += "\r\n网络板发生修改";
             switch (buffer[4].ToString("X2"))
             {
+                #region 地址，端口
                 case "14":
                     if (buffer[2].ToString("X2") == "38")
                     {
@@ -580,7 +595,8 @@ namespace ChromatoBll.serialCom
                 case "80":
                     if (buffer[2].ToString("X2") == "04")
                     {
-                        BitArray ba1 = new BitArray(buffer[5]);
+                        byte[] bt1 = new byte[1] { buffer[5] };
+                        BitArray ba1 = new BitArray(bt1);
                         _antiControl.dtoNetworkBoard.HeatingSourceUsed = ba1[0];
                         _antiControl.dtoNetworkBoard.FlowUsed = ba1[1];
                         _antiControl.dtoNetworkBoard.TCD2Used = ba1[2];
@@ -590,7 +606,8 @@ namespace ChromatoBll.serialCom
                         _antiControl.dtoNetworkBoard.FPDUsed = ba1[6];
                         _antiControl.dtoNetworkBoard.ECDUsed = ba1[7];
 
-                        BitArray ba2 = new BitArray(buffer[6]);
+                        byte[] bt2 = new byte[1] { buffer[6] };
+                        BitArray ba2 = new BitArray(bt2);
                         _antiControl.dtoNetworkBoard.FIDK2Used = ba2[6];
                         _antiControl.dtoNetworkBoard.FIDK1Used = ba2[7];
                     }
@@ -733,7 +750,8 @@ namespace ChromatoBll.serialCom
                         _antiControl.dtoNetworkBoard.Socket3WorkMode = buffer[5];
                     }
                     break;
-                
+                #endregion
+
                 //实际温度及柱箱状态
                 case "60":
                     //柱箱升阶状态
@@ -783,9 +801,10 @@ namespace ChromatoBll.serialCom
                     //柱箱目标温度和实际温度
                     _antiControl.dtoHeatingSource.AimTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[6])) + Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])) + Chr(Convert.ToInt32(buffer[10])));
                     _antiControl.dtoNetworkBoard.ColCurrentTem = Convert.ToSingle(Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])) + Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
-                    
+
                     //柱箱温度状态
-                    BitArray ba = new BitArray(buffer[17]);
+                    byte[] bt = new byte[1] { buffer[16] };
+                    BitArray ba = new BitArray(bt);
                     if (ba[1]) _antiControl.dtoHeatingSource.TemState = "升温";
                     else if (ba[4]) _antiControl.dtoHeatingSource.TemState = "冷却";
                     else if (ba[3]) _antiControl.dtoHeatingSource.TemState = "停止";
@@ -839,27 +858,90 @@ namespace ChromatoBll.serialCom
             int i;
             switch (buffer[4].ToString("X2"))
             {
-                //加热源
+                #region 加热源
                 case "00":
+                    _antiControl.dtoNetworkBoard.logText += "\r\n加热源发生修改";
                     if (buffer[2].ToString("X2") == "11")//无程升
-                    {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                    { 
+                        byte[] bt=null;
+                        BitArray ba=null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount = Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                     }
                     if (buffer[2].ToString("X2") == "1B")//一阶程升
                     {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        byte[] bt = null;
+                        BitArray ba = null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount =Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                         //COL1                  
                         i = 20;
                         _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
@@ -868,13 +950,44 @@ namespace ChromatoBll.serialCom
                     }
                     if (buffer[2].ToString("X2") == "25")//二阶程升
                     {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        byte[] bt = null;
+                        BitArray ba = null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount = Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                         //COL1                  
                         i = 20;
                         _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
@@ -888,13 +1001,44 @@ namespace ChromatoBll.serialCom
                     }
                     if (buffer[2].ToString("X2") == "2F")//三阶程升
                     {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        byte[] bt = null;
+                        BitArray ba = null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount = Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                         //COL1                  
                         i = 20;
                         _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
@@ -913,13 +1057,44 @@ namespace ChromatoBll.serialCom
                     }
                     if (buffer[2].ToString("X2") == "39")//四阶程升
                     {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        byte[] bt = null;
+                        BitArray ba = null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount = Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                         //COL1                  
                         i = 20;
                         _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
@@ -943,13 +1118,44 @@ namespace ChromatoBll.serialCom
                     }
                     if (buffer[2].ToString("X2") == "43")//五阶程升
                     {
-                        _antiControl.dtoHeatingSource.HeatingState = buffer[5].ToString();
-                        _antiControl.dtoHeatingSource.EnablingState = buffer[6].ToString();
+                        byte[] bt = null;
+                        BitArray ba = null;
+                        bt = new byte[1] { buffer[5] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX2State = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1State = "加热";
+                        else _antiControl.dtoHeatingSource.AUX1State = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJState = "加热";
+                        else _antiControl.dtoHeatingSource.INJState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDState = "加热";
+                        else _antiControl.dtoHeatingSource.FIDState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1State = "加热";
+                        else _antiControl.dtoHeatingSource.TCD1State = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLState = "加热";
+                        else _antiControl.dtoHeatingSource.COLState = "无";
+
+                        //加热使能状态
+                        bt = new byte[1] { buffer[6] };
+                        ba = new BitArray(bt);
+                        if (ba[2]) _antiControl.dtoHeatingSource.AUX2AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX2AvailableState = "无";
+                        if (ba[3]) _antiControl.dtoHeatingSource.AUX1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.AUX1AvailableState = "无";
+                        if (ba[4]) _antiControl.dtoHeatingSource.INJAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.INJAvailableState = "无";
+                        if (ba[5]) _antiControl.dtoHeatingSource.FIDAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.FIDAvailableState = "无";
+                        if (ba[6]) _antiControl.dtoHeatingSource.TCD1AvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.TCD1AvailableState = "无";
+                        if (ba[7]) _antiControl.dtoHeatingSource.COLAvailableState = "可加热";
+                        else _antiControl.dtoHeatingSource.COLAvailableState = "无";
+
                         _antiControl.dtoHeatingSource.InitTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[7])) + Chr(Convert.ToInt32(buffer[8])) + Chr(Convert.ToInt32(buffer[9])));
                         _antiControl.dtoHeatingSource.AlertTemp = Convert.ToSingle(Chr(Convert.ToInt32(buffer[10])) + Chr(Convert.ToInt32(buffer[11])) + Chr(Convert.ToInt32(buffer[12])));
                         _antiControl.dtoHeatingSource.MaintainTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[13])) + Chr(Convert.ToInt32(buffer[14])) + Chr(Convert.ToInt32(buffer[15])));
                         _antiControl.dtoHeatingSource.BalanceTime = Convert.ToSingle(Chr(Convert.ToInt32(buffer[16])) + Chr(Convert.ToInt32(buffer[17])) + Chr(Convert.ToInt32(buffer[18])));
-                        _antiControl.dtoHeatingSource.ColumnCount = buffer[19];
+                        _antiControl.dtoHeatingSource.ColumnCount = Convert.ToSingle(Chr(Convert.ToInt32(buffer[19])));
                         //COL1                  
                         i = 20;
                         _antiControl.dtoHeatingSource.RateCol1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
@@ -977,8 +1183,11 @@ namespace ChromatoBll.serialCom
                         _antiControl.dtoHeatingSource.TempTimeCol5 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])));
                     }
                     break;
+                #endregion
+
                 //进样口
                 case "80":
+                    _antiControl.dtoNetworkBoard.logText += "\r\n进样口发生修改";
                     if (buffer[2].ToString("X2") == "23")
                     {
                         //INJ1
@@ -1006,6 +1215,7 @@ namespace ChromatoBll.serialCom
                     break;
                 //AUX
                 case "A0":
+                    _antiControl.dtoNetworkBoard.logText += "\r\nAUX发生修改";
                     if (buffer[2].ToString("X2") == "09")
                     {
                         //AUX1
@@ -1028,14 +1238,23 @@ namespace ChromatoBll.serialCom
                     //AUX1&&AUX2
                     if (buffer[2].ToString("X2") == "10")
                     {
-                        i = 6;
-                        _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
-                        _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                        i = 12;
-                        _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
-                        _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                        
-                        _antiControl.dtoAux.UserIndex = 0;
+                        //AUX1
+                        if (buffer[5].ToString("X2") == "23")
+                        {
+                            i = 6;
+                            _antiControl.dtoAux.InitTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoAux.AlertTempAux1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+                        }
+
+                        //AUX2
+                        if (buffer[12].ToString("X2") == "24")
+                        {
+                            i = 13;
+                            _antiControl.dtoAux.InitTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 0])) + Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])));
+                            _antiControl.dtoAux.AlertTempAux2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
+
+                            _antiControl.dtoAux.UserIndex = 0;
+                        }
                     }
                     break;
             }
@@ -1048,6 +1267,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseFID(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            _antiControl.dtoNetworkBoard.logText += "\r\nFID发生修改";
             if (buffer[3].ToString("X2") == "40" && buffer[4].ToString("X2") == "00")
             {
                 List<string> address = new List<string>();
@@ -1160,34 +1380,34 @@ namespace ChromatoBll.serialCom
             {
                 //FID1
                 case "41":
-                    _antiControl.dtoFid.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                    _antiControl.dtoFid.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
-                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 11];
-                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 12];
+                    _antiControl.dtoFid.InitTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                    _antiControl.dtoFid.AlertTemp1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactor1 = buffer[i + 8];
                     return buffer[i].ToString("X2");
                     break;
                 //FID2
                 case "42":
-                    _antiControl.dtoFid.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                    _antiControl.dtoFid.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
-                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 11];
-                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 12];
+                    _antiControl.dtoFid.InitTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                    _antiControl.dtoFid.AlertTemp2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactor2 = buffer[i + 8];
                     return buffer[i].ToString("X2");
                     break;
                 //FIDK1
                 case "43":
-                    _antiControl.dtoFid.InitTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                    _antiControl.dtoFid.AlertTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
-                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 11];
-                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 12];
+                    _antiControl.dtoFid.InitTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                    _antiControl.dtoFid.AlertTempK1 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactorK1 = buffer[i + 8];
                     return buffer[i].ToString("X2");
                     break;
                 //FIDK2
                 case "44":
-                    _antiControl.dtoFid.InitTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])) + Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])));
-                    _antiControl.dtoFid.AlertTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 6])) + Chr(Convert.ToInt32(buffer[i + 7])) + Chr(Convert.ToInt32(buffer[i + 8])) + Chr(Convert.ToInt32(buffer[i + 9])) + Chr(Convert.ToInt32(buffer[i + 10])));
-                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 11];
-                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 12];
+                    _antiControl.dtoFid.InitTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 1])) + Chr(Convert.ToInt32(buffer[i + 2])) + Chr(Convert.ToInt32(buffer[i + 3])));
+                    _antiControl.dtoFid.AlertTempK2 = Convert.ToSingle(Chr(Convert.ToInt32(buffer[i + 4])) + Chr(Convert.ToInt32(buffer[i + 5])) + Chr(Convert.ToInt32(buffer[i + 6])));
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 7];
+                    _antiControl.dtoFid.MagnifyFactorK2 = buffer[i + 8];
                     return buffer[i].ToString("X2");
                     break;
                 default:
@@ -1203,6 +1423,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseTCD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            _antiControl.dtoNetworkBoard.logText += "\r\nTCD发生修改";
             int i;
             if (buffer[4].ToString() == "00")
             {
@@ -1250,6 +1471,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseECD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            _antiControl.dtoNetworkBoard.logText += "\r\nECD发生修改";
             if (buffer[4].ToString() == "00")
             {
                 if (buffer[2].ToString() == "08")
@@ -1269,6 +1491,7 @@ namespace ChromatoBll.serialCom
         /// <param name="buffer"></param>
         private void AnalyseFPD(ChromatoTool.dto.AntiControlDto _antiControl, Byte[] buffer)
         {
+            _antiControl.dtoNetworkBoard.logText += "\r\nFPD发生修改";
         }
 
         #endregion

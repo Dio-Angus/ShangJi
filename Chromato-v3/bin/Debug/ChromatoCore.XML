@@ -4626,20 +4626,6 @@
             显示反控的信息
             </summary>
         </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.tbHeatingState_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            平衡时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.tbEnablingState_TextChanged(System.Object,System.EventArgs)">
-            <summary>
-            平衡时间焦点离开事件，合法性检验
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
         <member name="M:ChromatoCore.solu.AntiCon.HeatingSourceUser.txtBalanceTime_TextChanged(System.Object,System.EventArgs)">
             <summary>
             平衡时间焦点离开事件，合法性检验
@@ -13281,6 +13267,21 @@
             分析方法dto
             </summary>
         </member>
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._viewTem">
+            <summary>
+            温度状态面板
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._makeCommand">
+            <summary>
+            指令生成
+            </summary>
+        </member>
+        <member name="F:ChromatoCore.solu.AntiCon.AntiControlViewer._receiveThread">
+            <summary>
+            监听分析指令线程
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.#ctor(ChromatoTool.ini.AccessMethod)">
             <summary>
             构造
@@ -13393,6 +13394,11 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.ReceiveThread">
+            <summary>
+            接收数据监听线程
+            </summary>
+        </member>
         <member name="M:ChromatoCore.solu.AntiCon.AntiControlViewer.btRefresh_Click(System.Object,System.EventArgs)">
             <summary>
             刷新反控信息
@@ -13435,6 +13441,11 @@
             </summary>
             <param name="dtoHeatingSource"></param>
             <returns></returns>
+        </member>
+        <member name="T:ChromatoCore.solu.AntiCon.AntiControlViewer.LoadViewDelegate">
+            <summary>
+            更新界面委托
+            </summary>
         </member>
     </members>
 </doc>

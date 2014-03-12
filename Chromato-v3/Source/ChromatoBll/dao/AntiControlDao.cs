@@ -141,8 +141,6 @@ namespace ChromatoBll.dao
             dto.dtoNetworkBoard.Socket3WorkMode = Convert.ToSingle(ds.Tables[0].Rows[0]["Socket3WorkMode"]);
 
             dto.dtoHeatingSource = new HeatingSourceDto();
-            dto.dtoHeatingSource.HeatingState = ds.Tables[0].Rows[0]["HeatingState"].ToString();
-            dto.dtoHeatingSource.EnablingState = ds.Tables[0].Rows[0]["EnablingState"].ToString();
             dto.dtoHeatingSource.BalanceTime = Convert.ToSingle(ds.Tables[0].Rows[0]["BalanceTime"].ToString());
             dto.dtoHeatingSource.InitTemp = Convert.ToSingle(ds.Tables[0].Rows[0]["thsInitTemp"].ToString());
             dto.dtoHeatingSource.MaintainTime = Convert.ToSingle(ds.Tables[0].Rows[0]["MaintainTime"].ToString());
@@ -217,6 +215,10 @@ namespace ChromatoBll.dao
             dto.dtoTcd.AlertOne = Convert.ToSingle(ds.Tables[0].Rows[0]["AlertOne"].ToString());
             dto.dtoTcd.AlertTwo = Convert.ToSingle(ds.Tables[0].Rows[0]["AlertTwo"].ToString());
 
+            dto.dtoEcd = new EcdDto();
+            dto.dtoEcd.Current = 1;
+            dto.dtoEcd.Capacity = 1;
+
         }
 
         /// <summary>
@@ -256,8 +258,6 @@ namespace ChromatoBll.dao
             bRet = this._sqlHelper.ExecuteSql(sql);
 
             sql = "UPDATE [T_HeatingSource] SET "
-                + "HeatingState = '" + dto.dtoHeatingSource.HeatingState + "', "
-                + "EnablingState = '" + dto.dtoHeatingSource.EnablingState + "', "
                 + "BalanceTime = '" + dto.dtoHeatingSource.BalanceTime + "', "
                 + "InitTemp = '" + dto.dtoHeatingSource.InitTemp + "', "
                 + "MaintainTime = '" + dto.dtoHeatingSource.MaintainTime + "', "
@@ -420,8 +420,6 @@ namespace ChromatoBll.dao
             + "InitTemp,RateCol1,RateCol2,RateCol3,RateCol4,RateCol5,TempCol1,TempCol2,TempCol3,TempCol4,TempCol5,"
             + "TempTimeCol1,TempTimeCol2,TempTimeCol3,TempTimeCol4,TempTimeCol5) VALUES ('"
                 + dto.AntiControlID + "','"
-                + dto.dtoHeatingSource.HeatingState + "','"
-                + dto.dtoHeatingSource.EnablingState + "','"
                 + dto.dtoHeatingSource.AlertTemp + "','"
                 + dto.dtoHeatingSource.BalanceTime + "','"
                 + dto.dtoHeatingSource.MaintainTime + "','"

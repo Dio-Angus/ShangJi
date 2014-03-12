@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb12 = new System.Windows.Forms.Label();
+            this.lb11 = new System.Windows.Forms.Label();
             this.txtAlertTemp1 = new System.Windows.Forms.TextBox();
             this.txtInitTemp1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -39,36 +39,42 @@
             this.gb1 = new System.Windows.Forms.GroupBox();
             this.gb2 = new System.Windows.Forms.GroupBox();
             this.cmbMagnifyFactorFid2 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lb21 = new System.Windows.Forms.Label();
             this.cbxPolarityFid2 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb22 = new System.Windows.Forms.Label();
             this.gb3 = new System.Windows.Forms.GroupBox();
             this.cmbMagnifyFactorFid3 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lb31 = new System.Windows.Forms.Label();
             this.cbxPolarityFid3 = new System.Windows.Forms.CheckBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb32 = new System.Windows.Forms.Label();
+            this.txtECDCapacity = new System.Windows.Forms.TextBox();
+            this.txtECDCurrent = new System.Windows.Forms.TextBox();
             this.gb1.SuspendLayout();
             this.gb2.SuspendLayout();
             this.gb3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lb12
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 80;
-            this.label1.Text = "极性：";
+            this.lb12.AutoSize = true;
+            this.lb12.Location = new System.Drawing.Point(23, 35);
+            this.lb12.Name = "lb12";
+            this.lb12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb12.Size = new System.Drawing.Size(41, 12);
+            this.lb12.TabIndex = 80;
+            this.lb12.Text = "极性：";
+            this.lb12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lb11
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
-            this.label2.TabIndex = 79;
-            this.label2.Text = "放大倍数：";
+            this.lb11.AutoSize = true;
+            this.lb11.Location = new System.Drawing.Point(23, 17);
+            this.lb11.Name = "lb11";
+            this.lb11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb11.Size = new System.Drawing.Size(65, 12);
+            this.lb11.TabIndex = 79;
+            this.lb11.Text = "放大倍数：";
+            this.lb11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtAlertTemp1
             // 
@@ -131,12 +137,12 @@
             // gb1
             // 
             this.gb1.Controls.Add(this.cmbMagnifyFactorFid1);
-            this.gb1.Controls.Add(this.label2);
+            this.gb1.Controls.Add(this.lb11);
             this.gb1.Controls.Add(this.cbxPolarityFid1);
-            this.gb1.Controls.Add(this.label1);
+            this.gb1.Controls.Add(this.lb12);
             this.gb1.Location = new System.Drawing.Point(19, 39);
             this.gb1.Name = "gb1";
-            this.gb1.Size = new System.Drawing.Size(357, 53);
+            this.gb1.Size = new System.Drawing.Size(357, 56);
             this.gb1.TabIndex = 3;
             this.gb1.TabStop = false;
             this.gb1.Text = "FID1";
@@ -144,9 +150,9 @@
             // gb2
             // 
             this.gb2.Controls.Add(this.cmbMagnifyFactorFid2);
-            this.gb2.Controls.Add(this.label4);
+            this.gb2.Controls.Add(this.lb21);
             this.gb2.Controls.Add(this.cbxPolarityFid2);
-            this.gb2.Controls.Add(this.label5);
+            this.gb2.Controls.Add(this.lb22);
             this.gb2.Location = new System.Drawing.Point(19, 98);
             this.gb2.Name = "gb2";
             this.gb2.Size = new System.Drawing.Size(357, 53);
@@ -169,14 +175,16 @@
             this.cmbMagnifyFactorFid2.TabIndex = 3;
             this.cmbMagnifyFactorFid2.SelectedIndexChanged += new System.EventHandler(this.cmbMagnifyFactorFid1_SelectedIndexChanged);
             // 
-            // label4
+            // lb21
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 79;
-            this.label4.Text = "放大倍数：";
+            this.lb21.AutoSize = true;
+            this.lb21.Location = new System.Drawing.Point(23, 17);
+            this.lb21.Name = "lb21";
+            this.lb21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb21.Size = new System.Drawing.Size(65, 12);
+            this.lb21.TabIndex = 79;
+            this.lb21.Text = "放大倍数：";
+            this.lb21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbxPolarityFid2
             // 
@@ -189,21 +197,23 @@
             this.cbxPolarityFid2.UseVisualStyleBackColor = true;
             this.cbxPolarityFid2.CheckedChanged += new System.EventHandler(this.cbxPolarityFid1_CheckedChanged);
             // 
-            // label5
+            // lb22
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(47, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 12);
-            this.label5.TabIndex = 80;
-            this.label5.Text = "极性：";
+            this.lb22.AutoSize = true;
+            this.lb22.Location = new System.Drawing.Point(23, 36);
+            this.lb22.Name = "lb22";
+            this.lb22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb22.Size = new System.Drawing.Size(41, 12);
+            this.lb22.TabIndex = 80;
+            this.lb22.Text = "极性：";
+            this.lb22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // gb3
             // 
             this.gb3.Controls.Add(this.cmbMagnifyFactorFid3);
-            this.gb3.Controls.Add(this.label6);
+            this.gb3.Controls.Add(this.lb31);
             this.gb3.Controls.Add(this.cbxPolarityFid3);
-            this.gb3.Controls.Add(this.label7);
+            this.gb3.Controls.Add(this.lb32);
             this.gb3.Location = new System.Drawing.Point(19, 157);
             this.gb3.Name = "gb3";
             this.gb3.Size = new System.Drawing.Size(357, 53);
@@ -226,14 +236,16 @@
             this.cmbMagnifyFactorFid3.TabIndex = 3;
             this.cmbMagnifyFactorFid3.SelectedIndexChanged += new System.EventHandler(this.cmbMagnifyFactorFid1_SelectedIndexChanged);
             // 
-            // label6
+            // lb31
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
-            this.label6.TabIndex = 79;
-            this.label6.Text = "放大倍数：";
+            this.lb31.AutoSize = true;
+            this.lb31.Location = new System.Drawing.Point(23, 17);
+            this.lb31.Name = "lb31";
+            this.lb31.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb31.Size = new System.Drawing.Size(65, 12);
+            this.lb31.TabIndex = 79;
+            this.lb31.Text = "放大倍数：";
+            this.lb31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbxPolarityFid3
             // 
@@ -246,14 +258,32 @@
             this.cbxPolarityFid3.UseVisualStyleBackColor = true;
             this.cbxPolarityFid3.CheckedChanged += new System.EventHandler(this.cbxPolarityFid1_CheckedChanged);
             // 
-            // label7
+            // lb32
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(47, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
-            this.label7.TabIndex = 80;
-            this.label7.Text = "极性：";
+            this.lb32.AutoSize = true;
+            this.lb32.Location = new System.Drawing.Point(23, 36);
+            this.lb32.Name = "lb32";
+            this.lb32.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lb32.Size = new System.Drawing.Size(41, 12);
+            this.lb32.TabIndex = 80;
+            this.lb32.Text = "极性：";
+            this.lb32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtECDCapacity
+            // 
+            this.txtECDCapacity.Location = new System.Drawing.Point(44, 216);
+            this.txtECDCapacity.Name = "txtECDCapacity";
+            this.txtECDCapacity.Size = new System.Drawing.Size(234, 21);
+            this.txtECDCapacity.TabIndex = 1;
+            this.txtECDCapacity.Visible = false;
+            // 
+            // txtECDCurrent
+            // 
+            this.txtECDCurrent.Location = new System.Drawing.Point(44, 235);
+            this.txtECDCurrent.Name = "txtECDCurrent";
+            this.txtECDCurrent.Size = new System.Drawing.Size(234, 21);
+            this.txtECDCurrent.TabIndex = 1;
+            this.txtECDCurrent.Visible = false;
             // 
             // FidUser
             // 
@@ -263,11 +293,13 @@
             this.Controls.Add(this.gb2);
             this.Controls.Add(this.gb1);
             this.Controls.Add(this.txtAlertTemp1);
+            this.Controls.Add(this.txtECDCurrent);
+            this.Controls.Add(this.txtECDCapacity);
             this.Controls.Add(this.txtInitTemp1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label14);
             this.Name = "FidUser";
-            this.Size = new System.Drawing.Size(397, 220);
+            this.Size = new System.Drawing.Size(385, 270);
             this.gb1.ResumeLayout(false);
             this.gb1.PerformLayout();
             this.gb2.ResumeLayout(false);
@@ -281,8 +313,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb12;
+        private System.Windows.Forms.Label lb11;
         private System.Windows.Forms.TextBox txtAlertTemp1;
         private System.Windows.Forms.TextBox txtInitTemp1;
         private System.Windows.Forms.Label label14;
@@ -292,14 +324,16 @@
         private System.Windows.Forms.GroupBox gb1;
         private System.Windows.Forms.GroupBox gb2;
         private System.Windows.Forms.ComboBox cmbMagnifyFactorFid2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb21;
         private System.Windows.Forms.CheckBox cbxPolarityFid2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lb22;
         private System.Windows.Forms.GroupBox gb3;
         private System.Windows.Forms.ComboBox cmbMagnifyFactorFid3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lb31;
         private System.Windows.Forms.CheckBox cbxPolarityFid3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb32;
+        private System.Windows.Forms.TextBox txtECDCapacity;
+        private System.Windows.Forms.TextBox txtECDCurrent;
 
     }
 }

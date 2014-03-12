@@ -50,8 +50,6 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         private void LoadEvent()
         {
-            this.tbHeatingState.TextChanged += new EventHandler(tbHeatingState_TextChanged);
-            this.tbEnablingState.TextChanged += new EventHandler(tbEnablingState_TextChanged);
             this.txtBalanceTime.TextChanged += new System.EventHandler(this.txtBalanceTime_TextChanged);
             this.txtInitTemp.TextChanged += new System.EventHandler(this.txtInitTemp_TextChanged);
             this.txtMaintainTime.TextChanged += new System.EventHandler(this.txtMaintainTime_TextChanged);
@@ -102,8 +100,6 @@ namespace ChromatoCore.solu.AntiCon
             {
                 return;
             }
-            this.tbHeatingState.Text = this._dtoAntiControl.dtoHeatingSource.HeatingState;
-            this.tbEnablingState.Text = this._dtoAntiControl.dtoHeatingSource.EnablingState;
             this.txtBalanceTime.Text = this._dtoAntiControl.dtoHeatingSource .BalanceTime.ToString();
             this.txtInitTemp.Text = this._dtoAntiControl.dtoHeatingSource .InitTemp.ToString();
             this.txtMaintainTime.Text = this._dtoAntiControl.dtoHeatingSource .MaintainTime.ToString();
@@ -268,8 +264,6 @@ namespace ChromatoCore.solu.AntiCon
         /// </summary>
         public void Export()
         {
-            this._dtoAntiControl.dtoHeatingSource.HeatingState = this.tbHeatingState.Text;
-            this._dtoAntiControl.dtoHeatingSource.EnablingState = this.tbEnablingState.Text;
             this._dtoAntiControl.dtoHeatingSource.BalanceTime = Convert.ToInt32(this.txtBalanceTime.Text);
             this._dtoAntiControl.dtoHeatingSource.InitTemp = Convert.ToInt32(this.txtInitTemp.Text);
             this._dtoAntiControl.dtoHeatingSource.MaintainTime = Convert.ToInt32(this.txtMaintainTime.Text);
@@ -304,8 +298,6 @@ namespace ChromatoCore.solu.AntiCon
             {
                 this._dtoAntiControl.dtoHeatingSource  = new HeatingSourceDto();
             }
-            this._dtoAntiControl.dtoHeatingSource.HeatingState = DefaultHeatingSource.HeatingState;
-            this._dtoAntiControl.dtoHeatingSource.EnablingState = DefaultHeatingSource.EnablingState;
             this._dtoAntiControl.dtoHeatingSource .BalanceTime = DefaultHeatingSource.BalanceTime;
             this._dtoAntiControl.dtoHeatingSource .InitTemp = DefaultHeatingSource.InitTemp;
             this._dtoAntiControl.dtoHeatingSource .MaintainTime = DefaultHeatingSource.MaintainTime;
@@ -356,37 +348,6 @@ namespace ChromatoCore.solu.AntiCon
 
         #region 事件
 
-        /// <summary>
-        /// 平衡时间焦点离开事件，合法性检验
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tbHeatingState_TextChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(this.tbHeatingState.Text))
-            {
-                MessageBox.Show("平衡时间不能为空！", "平衡时间");
-                this.tbHeatingState.Focus();
-                return;
-            }
-            this._dtoAntiControl.dtoHeatingSource.HeatingState = this.tbHeatingState.Text;
-        }
-
-        /// <summary>
-        /// 平衡时间焦点离开事件，合法性检验
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tbEnablingState_TextChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(this.tbEnablingState.Text))
-            {
-                MessageBox.Show("平衡时间不能为空！", "平衡时间");
-                this.tbEnablingState.Focus();
-                return;
-            }
-            this._dtoAntiControl.dtoHeatingSource.EnablingState = this.tbEnablingState.Text;
-        }
 
         /// <summary>
         /// 平衡时间焦点离开事件，合法性检验

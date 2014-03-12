@@ -112,6 +112,9 @@ namespace ChromatoCore.solu.AntiCon
             gb2.Visible = false;
             gb3.Visible = false;
 
+            txtECDCapacity.Visible = false;
+            txtECDCurrent.Visible = false;
+
             int n = 1;
             if (_dtoAntiControl.dtoNetworkBoard.FID1Used == true)
             {
@@ -152,14 +155,14 @@ namespace ChromatoCore.solu.AntiCon
                         this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.Polarity2;
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "FID2";
                         this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor2;
                         this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.Polarity2;
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "FID2";
                         this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactor2;
@@ -179,14 +182,14 @@ namespace ChromatoCore.solu.AntiCon
                         this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK1;
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "FIDK1";
                         this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK1;
                         this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK1;
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "FIDK1";
                         this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK1;
@@ -206,14 +209,14 @@ namespace ChromatoCore.solu.AntiCon
                         this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK2;
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "FIDK2";
                         this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
                         this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK2;
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "FIDK2";
                         this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
@@ -233,14 +236,14 @@ namespace ChromatoCore.solu.AntiCon
                         this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFid.PolarityK2;
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "FIDK2";
                         this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
                         this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFid.PolarityK2;
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "FIDK2";
                         this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFid.MagnifyFactorK2;
@@ -256,22 +259,52 @@ namespace ChromatoCore.solu.AntiCon
                         gb1.Visible = true;
                         n++;
                         this.gb1.Text = "ECD";
-                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
-                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        this.cmbMagnifyFactorFid1.Visible=false;
+                        this.cbxPolarityFid1.Visible=false;
+                        this.lb11.Text = "电流：";
+                        this.lb12.Text = "量程：";
+                        this.txtECDCurrent.Location = new Point(119, 49);
+                        this.txtECDCapacity.Location = new Point(119,68);
+                        this.txtECDCapacity.Visible = true;
+                        this.txtECDCurrent.Visible = true;
+                         this.txtECDCurrent.BringToFront();
+                        this.txtECDCapacity.BringToFront();
+                        this.txtECDCurrent.Text = this._dtoAntiControl.dtoEcd.Current.ToString();
+                        this.txtECDCapacity.Text = this._dtoAntiControl.dtoEcd.Capacity.ToString();
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "ECD";
-                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
-                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        this.cmbMagnifyFactorFid2.Visible = false;
+                        this.cbxPolarityFid2.Visible = false;
+                        this.lb21.Text = "电流：";
+                        this.lb22.Text = "量程：";
+                        this.txtECDCurrent.Location = new Point(119, 108);
+                        this.txtECDCapacity.Location = new Point(119,127);
+                        this.txtECDCapacity.Visible = true;
+                        this.txtECDCurrent.Visible = true;
+                         this.txtECDCurrent.BringToFront();
+                        this.txtECDCapacity.BringToFront();
+                        this.txtECDCurrent.Text = this._dtoAntiControl.dtoEcd.Current.ToString();
+                        this.txtECDCapacity.Text = this._dtoAntiControl.dtoEcd.Capacity.ToString();
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "ECD";
-                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoEcd.MagnifyFactor;
-                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoEcd.Polarity;
+                        this.cmbMagnifyFactorFid3.Visible = false;
+                        this.cbxPolarityFid3.Visible = false;
+                        this.lb31.Text = "电流:";
+                        this.lb32.Text = "量程：";
+                        this.txtECDCurrent.Location = new Point(119, 167);
+                        this.txtECDCapacity.Location = new Point(119,186);
+                        this.txtECDCapacity.Visible = true;
+                        this.txtECDCurrent.Visible = true;
+                        this.txtECDCurrent.BringToFront();
+                        this.txtECDCapacity.BringToFront();
+                        this.txtECDCurrent.Text = this._dtoAntiControl.dtoEcd.Current.ToString();
+                        this.txtECDCapacity.Text = this._dtoAntiControl.dtoEcd.Capacity.ToString();
                         break;
                 }
             }
@@ -283,22 +316,28 @@ namespace ChromatoCore.solu.AntiCon
                         gb1.Visible = true;
                         n++;
                         this.gb1.Text = "FPD";
-                        this.cmbMagnifyFactorFid1.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
-                        this.cbxPolarityFid1.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        this.lb11.Visible = false;
+                        this.lb12.Visible = false;
+                        this.cmbMagnifyFactorFid1.Visible=false;
+                        this.cbxPolarityFid1.Visible = false;
                         break;
                     case 2:
-                        gb1.Visible = true;
+                        gb2.Visible = true;
                         n++;
                         this.gb2.Text = "FPD";
-                        this.cmbMagnifyFactorFid2.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
-                        this.cbxPolarityFid2.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        this.lb21.Visible = false;
+                        this.lb22.Visible = false;
+                        this.cmbMagnifyFactorFid2.Visible = false;
+                        this.cbxPolarityFid2.Visible = false;
                         break;
                     case 3:
-                        gb1.Visible = true;
+                        gb3.Visible = true;
                         n++;
                         this.gb3.Text = "FPD";
-                        this.cmbMagnifyFactorFid3.SelectedIndex = _dtoAntiControl.dtoFpd.MagnifyFactor;
-                        this.cbxPolarityFid3.Checked = _dtoAntiControl.dtoFpd.Polarity;
+                        this.lb31.Visible = false;
+                        this.lb32.Visible = false;
+                        this.cmbMagnifyFactorFid3.Visible = false;
+                        this.cbxPolarityFid3.Visible = false;
                         break;
                 }
             }
@@ -423,12 +462,23 @@ namespace ChromatoCore.solu.AntiCon
             }
 
             this.cmbMagnifyFactorFid1.Items.Clear();
+            this.cmbMagnifyFactorFid2.Items.Clear(); 
+            this.cmbMagnifyFactorFid3.Items.Clear();
             
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.One));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
             this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
 
+            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
+            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.One));
+            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
+            this.cmbMagnifyFactorFid2.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
+
+            this.cmbMagnifyFactorFid3.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
+            this.cmbMagnifyFactorFid3.Items.Add(EnumDescription.GetFieldText(Magnify.One));
+            this.cmbMagnifyFactorFid3.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
+            this.cmbMagnifyFactorFid3.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
 
             switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor1)
             {
@@ -463,26 +513,6 @@ namespace ChromatoCore.solu.AntiCon
 
             this.LoadViewOrSaveAs();
             
-            this.cmbMagnifyFactorFid1.Items.Clear();
-
-            switch ((Magnify)this._dtoAntiControl.dtoFid.MagnifyFactor1)
-            {
-                case Magnify.Zero:
-                    this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Zero));
-                    break;
-                case Magnify.One:
-                    this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.One));
-                    break;
-                case Magnify.Two:
-                    this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Two));
-                    break;
-                case Magnify.Three:
-                    this.cmbMagnifyFactorFid1.Items.Add(EnumDescription.GetFieldText(Magnify.Three));
-                    break;
-
-            }        
-            this.cmbMagnifyFactorFid1.SelectedIndex = 0;
-
         }
 
         #endregion

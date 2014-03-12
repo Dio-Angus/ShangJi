@@ -1616,12 +1616,12 @@
             反控方法->柱箱表
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.HeatingSourceDto.HeatingState">
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.COLState">
             <summary>
             加热状态
             </summary>
         </member>
-        <member name="P:ChromatoTool.dto.HeatingSourceDto.EnablingState">
+        <member name="P:ChromatoTool.dto.HeatingSourceDto.COLAvailableState">
             <summary>
             加热使能状态
             </summary>

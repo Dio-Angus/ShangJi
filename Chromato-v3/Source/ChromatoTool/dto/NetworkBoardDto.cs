@@ -21,6 +21,9 @@ namespace ChromatoTool.dto
     /// </summary>
     public class NetworkBoardDto
     {
+        //修改状态记录字段
+        public string logText { get; set; }
+
         //设备状态字
         public bool HeatingSourceUsed { get; set; }
         public bool FlowUsed { get; set; }

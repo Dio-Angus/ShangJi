@@ -20,11 +20,23 @@ namespace ChromatoTool.dto
         /// <summary>
         /// 加热状态
         /// </summary>
-        public String HeatingState{ get; set; }
+        public String COLState{ get; set; }
+        public String FIDState { get; set; }
+        public String INJState{ get; set; }
+        public String AUX1State { get; set; }
+        public String AUX2State { get; set; }
+        public String TCD1State { get; set; }
+
         /// <summary>
         /// 加热使能状态
         /// </summary>
-        public String EnablingState { get; set; }
+        public String COLAvailableState { get; set; }
+        public String FIDAvailableState { get; set; }
+        public String INJAvailableState { get; set; }
+        public String TCD1AvailableState { get; set; }
+        public String AUX1AvailableState { get; set; }
+        public String AUX2AvailableState { get; set; }
+
         /// <summary>
         /// 平衡时间
         /// </summary>

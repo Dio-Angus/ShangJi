@@ -8,10 +8,10 @@
 
 using System;
 using System.Threading;
-using ChromatoTool.log;
-using ChromatoTool.ini;
 using ChromatoBll.ocx.biz;
 using ChromatoTool.dto;
+using ChromatoTool.ini;
+using ChromatoTool.log;
 using ChromatoTool.util;
 
 namespace ChromatoBll.serialCom
